@@ -11,3 +11,9 @@
 
 - The register allocator now uses a simpler algorithm.  It omits the
   backtracking (ToSpill and NoSpill) in previous versions.
+
+実行方法
+ディレクトリmytest以下にmlファイルを作って、(test1.ml)
+$ make native-code
+$ ./min-caml.opt mytest/test1　(.mlはつけない)
+を実行すると、mytest内に、中間ファイル(*.t)及びアセンブリコード(*.s)が生成される。
