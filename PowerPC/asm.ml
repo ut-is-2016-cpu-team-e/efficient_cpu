@@ -33,7 +33,7 @@ and exp = (* 一つ一つの命令に対応する式 *)
   | IfFEq of Id.t * Id.t * t * t
   | IfFLE of Id.t * Id.t * t * t
   (* closure address, integer arguments, and float arguments *)
-  | CallCls of Id.t * Id.t list * Id.t list
+  | CallCls of Id.t * Id.t * Id.t list * Id.t list
   | CallDir of Id.l * Id.t list * Id.t list
   | Save of Id.t * Id.t (* レジスタ変数の値をスタック変数へ保存 *)
   | Restore of Id.t (* スタック変数から値を復元 *)
@@ -93,7 +93,7 @@ let rec fv_exp = function
       x :: y :: remove_and_uniq S.empty (fv e1 @ fv e2)
   | IfFEq (x, y, e1, e2) | IfFLE (x, y, e1, e2) ->
       x :: y :: remove_and_uniq S.empty (fv e1 @ fv e2)
-  | CallCls (x, ys, zs) -> x :: ys @ zs
+  | CallCls (x1, x2, ys, zs) -> x1 :: ys @ zs
   | CallDir (_, ys, zs) -> ys @ zs
 and fv = function
   | Ans (exp) -> fv_exp exp

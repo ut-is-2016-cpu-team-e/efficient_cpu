@@ -73,17 +73,17 @@ let rec g env = function (* 式の仮想マシンコード生成 *)
       let (offset, store_fv) =
 	expand
 	  (List.map (fun y -> (y, M.find y env)) ys)
-	  (0, e2')                                      (*初期値を4から0に変更(10月16日)*)
+	  (4, e2')                                      (*初期値を4から0に変更(10月16日)*)
 	  (fun y offset store_fv -> seq (Stfd (y, x, C (offset)), store_fv))
 	  (fun y _ offset store_fv -> seq (Stw (y, x, C (offset)), store_fv)) in
 	Let ((x, t), Mr (reg_hp),
 	     Let ((reg_hp, Type.Int), Add (reg_hp, C (align offset)),
-	     (*let z = Id.genid "l" in
+	     let z = Id.genid "l" in
 	       Let ((z, Type.Int), SetL(l),
-		       seq (Stw (z, x, C (0)))), *) store_fv))
+		       (seq ((Stw (z, x, C (0)), store_fv))))))
   | Closure.AppCls (x, ys) ->
       let (int, float) = separate (List.map (fun y -> (y, M.find y env)) ys) in
-	Ans (CallCls (x, int, float))
+	Ans (CallCls (x, x, int, float))
   | Closure.AppDir (Id.L(x), ys) ->
       let (int, float) = separate (List.map (fun y -> (y, M.find y env)) ys) in
 	Ans (CallDir (Id.L(x), int, float))
@@ -141,7 +141,7 @@ let h { Closure.name = (Id.L(x), t); Closure.args = yts;
   let (offset, load) =
     expand
       zts
-      (0, g (M.add x t (M.add_list yts (M.add_list zts M.empty))) e) (*4から0に変更(10/16)*)
+      (4, g (M.add x t (M.add_list yts (M.add_list zts M.empty))) e) (*4から0に変更(10/16)*)
       (fun z offset load -> fletd (z, Lfd (reg_cl, C (offset)), load))
       (fun z t offset load -> Let ((z, t), Lwz (reg_cl, C (offset)), load)) in
     match t with

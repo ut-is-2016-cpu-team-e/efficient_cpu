@@ -16,7 +16,7 @@ let rec target' src (dest, t) = function
       let c1, rs1 = target src (dest, t) e1 in
       let c2, rs2 = target src (dest, t) e2 in
       c1 && c2, rs1 @ rs2
-  | CallCls(x, ys, zs) ->
+  | CallCls(x, x2, ys, zs) ->
       true, (target_args src regs 0 ys @
 	     target_args src fregs 0 zs @
              if x = src then [reg_cl] else [])
@@ -97,6 +97,7 @@ let find' x' regenv =
 let rec g dest cont regenv = function (* 命令列のレジスタ割り当て (caml2html: regalloc_g) *)
   | Ans(exp) -> g'_and_restore dest cont regenv exp
   | Let((x, t) as xt, exp, e) ->
+      Printf.fprintf stdout "Let %s\n" x;
       assert (not (M.mem x regenv));
       let cont' = concat e dest cont in
       let (e1', regenv1) = g'_and_restore xt cont' regenv exp in
@@ -112,9 +113,13 @@ let rec g dest cont regenv = function (* 命令列のレジスタ割り当て (c
 	  let (e2', regenv2) = g dest cont (add x r regenv1) e in
 	  (concat e1' (r, t) e2', regenv2))
 and g'_and_restore dest cont regenv exp = (* 使用される変数をスタックからレジスタへRestore (caml2html: regalloc_unspill) *)
+  (*match exp with
+   CallCls(f, il, fl) when (M.mem f regenv) -> let (x, t) = dest in g dest cont regenv (Let((f, t), Restore(f), Ans(exp)))
+  | _ ->*)
   try g' dest cont regenv exp
   with NoReg(x, t) ->
-    ((* Format.eprintf "restoring %s@." x; *)
+    (Format.eprintf "restoring %s@." x;
+     (if t = Type.Int then (Format.eprintf "Type.Int\n") else (Format.eprintf "others\n"));
      g dest cont regenv (Let((x, t), Restore(x), Ans(exp))))
 and g' dest cont regenv = function (* 各命令のレジスタ割り当て (caml2html: regalloc_gprime) *)
   | Nop | Li _ | SetL _ | Comment _ | Restore _ | FLi _ as exp -> (Ans(exp), regenv)
@@ -139,7 +144,7 @@ and g' dest cont regenv = function (* 各命令のレジスタ割り当て (caml
   | IfGE(x, y, e1, e2) as exp -> g'_if dest cont regenv exp (fun e1' e2' -> IfGE(find x Type.Int regenv, find y Type.Int regenv, e1', e2')) e1 e2
   | IfFEq(x, y, e1, e2) as exp -> g'_if dest cont regenv exp (fun e1' e2' -> IfFEq(find x Type.Float regenv, find y Type.Float regenv, e1', e2')) e1 e2
   | IfFLE(x, y, e1, e2) as exp -> g'_if dest cont regenv exp (fun e1' e2' -> IfFLE(find x Type.Float regenv, find y Type.Float regenv, e1', e2')) e1 e2
-  | CallCls(x, ys, zs) as exp -> g'_call dest cont regenv exp (fun ys zs -> CallCls(x (*find x Type.Int regenv*), ys, zs)) ys zs
+  | CallCls(x, x2, ys, zs) as exp -> g'_call dest cont regenv exp (fun ys zs -> CallCls((*x*)find x Type.Int regenv, x, ys, zs)) ys zs
   | CallDir(l, ys, zs) as exp -> g'_call dest cont regenv exp (fun ys zs -> CallDir(l, ys, zs)) ys zs
   | Save(x, y) -> assert false
 and g'_if dest cont regenv exp constr e1 e2 = (* ifのレジスタ割り当て (caml2html: regalloc_if) *)

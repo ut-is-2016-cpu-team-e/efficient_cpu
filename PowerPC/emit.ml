@@ -185,21 +185,21 @@ and g' oc = function (* 各命令のアセンブリ生成 *)
       (*Printf.fprintf oc "\tfcmpu\tcr7, %s, %s\n" (reg x) (reg y); *)
       g'_non_tail_if x y oc (NonTail(z)) e1 e2 "ble" "bgt"
   (* 関数呼び出しの仮想命令の実装 *)
-  | (Tail, CallCls(x, ys, zs)) -> (* 末尾呼び出し *)
+  | (Tail, CallCls(x, x2, ys, zs)) -> (* 末尾呼び出し *)
       g'_args oc [(x, reg_cl)] ys zs;
       Printf.fprintf oc "\tlw\t%s, 0(%s)\n" (reg reg_sw) (reg reg_cl);
       Printf.fprintf oc "\tmtctr\t%s\n\tbctr\n" (reg reg_sw);
   | (Tail, CallDir(Id.L(x), ys, zs)) -> (* 末尾呼び出し *)
       g'_args oc [] ys zs;
       Printf.fprintf oc "\tb\t%s\n" x
-  | (NonTail(a), CallCls(x, ys, zs)) ->
+  | (NonTail(a), CallCls(x, x2, ys, zs)) ->
       (*Printf.fprintf oc "\tmflr\t%s\n" reg_tmp;*)
-      g'_args oc [](*(x, reg_cl)*) ys zs;              (*関数名を引数として見るのをやめた*)
+      g'_args oc (*[]*)[(x, reg_cl)] ys zs;              (*関数名を引数として見るのをやめた*)
       let ss = stacksize () in
 	Printf.fprintf oc "\tsw\t%s, %d(%s)\n" reg_tmp (ss - 4) reg_sp;
 	Printf.fprintf oc "\taddi\t%s, %s, %d\n" reg_sp reg_sp ss;
-	(*Printf.fprintf oc "\tlw\t%s, 0(%s)\n" reg_next (reg reg_cl); *)
-  Printf.fprintf oc "\tjal\t%s\n" x;
+	Printf.fprintf oc "\tlw\t%s, 0(%s)\n" reg_next (reg reg_cl);
+  Printf.fprintf oc "\tjal\t%s\n" x2;
 	(*Printf.fprintf oc "\tmtctr\t%s\n" reg_tmp;
 	Printf.fprintf oc "\tbctrl\n"; *)
 	Printf.fprintf oc "\tsubi\t%s, %s, %d\n" reg_sp reg_sp ss;
