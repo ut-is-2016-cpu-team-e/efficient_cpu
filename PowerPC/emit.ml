@@ -1,7 +1,8 @@
 open Asm
 
-external gethi : float -> int32 = "gethi"
+external getfloat : float -> int32 = "gethi"
 external getlo : float -> int32 = "getlo"
+external getfloat : float -> int32 = "getfloat"
 
 let stackset = ref S.empty (* すでに Save された変数の集合 *)
 let stackmap = ref [] (* Save された変数のスタックにおける位置 *)
@@ -66,11 +67,12 @@ and g' oc = function (* 各命令のアセンブリ生成 *)
       let m = n2 lxor (n lsl 16) in
       let r = reg x in
 	Printf.fprintf oc "\tli\t%s, %d\n" r n;
-  Printf.fprintf oc "\tsli\t%s, 16\n" r;
+  Printf.fprintf oc "\tsll\t%s, %s, 16\n" r r;
 	Printf.fprintf oc "\tori\t%s, %s, %d\n" r r m
   | (NonTail(x), FLi(Id.L(l))) ->
-      let s = load_label "$f31" l in
-      Printf.fprintf oc "%s\tlfd\t%s, 0($f31)\n" s (reg x)
+      (*let s = load_label "$f31" l in*)
+      Printf.fprintf oc "\tjal %s\n" l;
+      Printf.fprintf oc "\tmove\t%s, $fv\n" (reg x)
   | (NonTail(x), SetL(Id.L(y))) ->
       let s = load_label x y in
       Printf.fprintf oc "%s" s
@@ -229,7 +231,10 @@ and g' oc = function (* 各命令のアセンブリ生成 *)
   Printf.fprintf oc "\tjal\t%s\n" x;
 	Printf.fprintf oc "\tsubi\t%s, %s, %d\n" reg_sp reg_sp ss;
 	Printf.fprintf oc "\tlw\t%s, %d(%s)\n" reg_tmp (ss - 4) reg_sp; (*次の戻り先のアドレスを獲得*)
-  Printf.fprintf oc "\tmove\t%s, %s\n" (reg a) reg_re; (*返り値をもとのレジスタに退避(もとのレジスタがすでに使われていることは無いはず...)*)
+  (if (String.contains (reg a) 'a') then
+  Printf.fprintf oc "\tmove\t%s, %s\n" (reg a) reg_re (*返り値をもとのレジスタに退避(もとのレジスタがすでに使われていることは無いはず...)*)
+  else
+    Printf.fprintf oc "\tfmove\t%s, $fv\n" (reg a)); 
 	(if List.mem a allregs && a <> regs.(0) then
 	   Printf.fprintf oc "\tmove\t%s, %s\n" (reg a) (reg regs.(0))
 	 else if List.mem a allfregs && a <> fregs.(0) then
@@ -287,9 +292,15 @@ let f oc (Prog(data, fundefs, e)) =
        (fun (Id.L(x), d) ->
 	 Printf.fprintf oc "\t.align 3\n";
 	 Printf.fprintf oc "%s:\t # %f\n" x d;
-	 Printf.fprintf oc "\t.long\t%ld\n" (gethi d);
-	 Printf.fprintf oc "\t.long\t%ld\n" (getlo d))
-       data));
+   let fnum = getfloat d in
+   let n = Int32.shift_right fnum 16 in
+   let m = Int32.logxor fnum (Int32.shift_left n 16) in
+   Printf.fprintf oc "\tli\t$fv, %ld\n" n;
+   Printf.fprintf oc "\tsll\t$fv, $fv, 16\n";
+   Printf.fprintf oc "\tori\t$fv, $fv, %ld\n" m
+ 	 (*Printf.fprintf oc "\t.long\t%ld\n" (getfloat d); *)
+   (*Printf.fprintf oc "\t.long\t%ld\n" (getlo d) *)
+       ) data));
   (*Printf.fprintf oc "\t.text\n";
   Printf.fprintf oc "\t.globl  _min_caml_start\n";
   Printf.fprintf oc "\t.align 2\n"; *)

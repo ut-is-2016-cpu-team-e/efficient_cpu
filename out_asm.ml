@@ -4,6 +4,9 @@ let rec outtab oc tabnum =
   if tabnum > 0 then (Printf.fprintf oc "\t"; outtab oc (tabnum-1))
   else ()
 
+let rec out_data oc = function
+  | [] -> Printf.fprintf oc "\n";
+  | d::ds -> let (Id.L(l), f) = d in Printf.fprintf oc "%s : %f\n" l f; out_data oc ds
 
 let rec out_asm_t oc t1 tabnum =
   outtab oc tabnum;
@@ -57,7 +60,6 @@ and out_asm_e oc e tabnum =
   | Restore(t1) -> Printf.fprintf oc "Restore %s\n" t1
 
 let rec out_top_and_asm oc p =
-    Printf.fprintf oc "fundefs\n";
     let rec out_tlist = function
     | [] -> ()
     | t::ts -> Printf.fprintf oc "%s " t in
@@ -72,6 +74,9 @@ let rec out_top_and_asm oc p =
     out_fundefs fs in
 
     let Prog(data, fundefs, t) = p in
+      Printf.fprintf oc "data\n";
+      out_data oc data;
+      Printf.fprintf oc "fundefs\n";
       out_fundefs fundefs;
-      Printf.fprintf oc "main\n";
+      Printf.fprintf oc "\nmain\n";
       out_asm_t oc t 0

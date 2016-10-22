@@ -18,3 +18,14 @@ value getlo(value v) {
   d.d = Double_val(v);
   return copy_int32(d.i[1]);
 }
+
+typedef union {
+  int32 i;
+  float f;
+}fl;
+
+value getfloat(value v) {
+  fl f;
+  f.f = Double_val(v);
+  return copy_int32(f.i);
+}
