@@ -116,11 +116,11 @@ and g' oc = function (* 各命令のアセンブリ生成 *)
   | (NonTail(x), Lfd(y, V(z))) ->
       Printf.fprintf oc "\tlfdx\t%s, %s, %s\n" (reg x) (reg y) (reg z)
   | (NonTail(x), Lfd(y, C(z))) ->
-      Printf.fprintf oc "\tlfd\t%s, %d(%s)\n" (reg x) z (reg y)
+      Printf.fprintf oc "\tlw\t%s, %d(%s)\n" (reg x) z (reg y)
   | (NonTail(_), Stfd(x, y, V(z))) ->
       Printf.fprintf oc "\tstfdx\t%s, %s, %s\n" (reg x) (reg y) (reg z)
   | (NonTail(_), Stfd(x, y, C(z))) ->
-      Printf.fprintf oc "\tstfd\t%s, %d(%s)\n" (reg x) z (reg y)
+      Printf.fprintf oc "\tsw\t%s, %d(%s)\n" (reg x) z (reg y)
   | (NonTail(_), Comment(s)) -> Printf.fprintf oc "#\t%s\n" s
   (* 退避の仮想命令の実装 *)
   | (NonTail(_), Save(x, y))
@@ -130,14 +130,14 @@ and g' oc = function (* 各命令のアセンブリ生成 *)
   | (NonTail(_), Save(x, y))
       when List.mem x allfregs && not (S.mem y !stackset) ->
       savef y;
-	Printf.fprintf oc "\tstfd\t%s, %d(%s)\n" (reg x) (offset y) reg_sp
+	Printf.fprintf oc "\tsw\t%s, %d(%s)\n" (*stfd*) (reg x) (offset y) reg_sp
   | (NonTail(_), Save(x, y)) -> assert (S.mem y !stackset); ()
   (* 復帰の仮想命令の実装 *)
   | (NonTail(x), Restore(y)) when List.mem x allregs ->
       Printf.fprintf oc "\tlw\t%s, %d(%s)\n" (reg x) (offset y) reg_sp
   | (NonTail(x), Restore(y)) ->
       assert (List.mem x allfregs);
-      Printf.fprintf oc "\tlfd\t%s, %d(%s)\n" (reg x) (offset y) reg_sp
+      Printf.fprintf oc "\tlw\t%s, %d(%s)\n" (reg x) (offset y) reg_sp
   (* 末尾だったら計算結果を第一レジスタにセット *)
   | (Tail, (Nop | Stw _ | Stfd _ | Comment _ | Save _ as exp)) ->
       g' oc (NonTail(Id.gentmp Type.Unit), exp);
@@ -148,7 +148,7 @@ and g' oc = function (* 各命令のアセンブリ生成 *)
       Printf.fprintf oc "\tjr $ra\n";
   | (Tail, (FLi _ | FMr _ | FNeg _ | FAdd _ | FSub _ | FMul _ | FDiv _ | FReciprocal _ |
             Lfd _ as exp)) ->
-      g' oc (NonTail(fregs.(0)), exp);
+      g' oc (NonTail(freg_re), exp);
       Printf.fprintf oc "\tjr $ra\n";
   | (Tail, (Restore(x) as exp)) ->
       (match locate x with
@@ -234,7 +234,7 @@ and g' oc = function (* 各命令のアセンブリ生成 *)
   (if (String.contains (reg a) 'a') then
   Printf.fprintf oc "\tmove\t%s, %s\n" (reg a) reg_re (*返り値をもとのレジスタに退避(もとのレジスタがすでに使われていることは無いはず...)*)
   else
-    Printf.fprintf oc "\tfmove\t%s, $fv\n" (reg a)); 
+    Printf.fprintf oc "\tfmove\t%s, $fv\n" (reg a));
 	(if List.mem a allregs && a <> regs.(0) then
 	   Printf.fprintf oc "\tmove\t%s, %s\n" (reg a) (reg regs.(0))
 	 else if List.mem a allfregs && a <> fregs.(0) then
@@ -287,10 +287,10 @@ let h oc { name = Id.L(x); args = _; fargs = _; body = e; ret = _ } =
 let f oc (Prog(data, fundefs, e)) =
   Format.eprintf "generating assembly...@.";
   (if data <> [] then
-    (Printf.fprintf oc "\t.data\n\t.literal8\n";
+    ((*Printf.fprintf oc "\t.data\n\t.literal8\n";*)
      List.iter
        (fun (Id.L(x), d) ->
-	 Printf.fprintf oc "\t.align 3\n";
+	 (*Printf.fprintf oc "\t.align 3\n";*)
 	 Printf.fprintf oc "%s:\t # %f\n" x d;
    let fnum = getfloat d in
    let n = Int32.shift_right fnum 16 in

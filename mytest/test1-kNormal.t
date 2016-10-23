@@ -1,9 +1,17 @@
-LetRec fadd x y 
-	FAdd x y
-	Let Td3
-		Let Td1
-			Float:3.000000
-			Let Td2
-				Float:4.000000
-				App faddTd1 Td2 
-		ExtFunApp print_float Td3,
+Let x
+	Float:3.000000
+	LetRec f z 
+		FAdd x z
+		LetRec g z 
+			FMul x z
+			Let y
+				Let Td2
+					Let Td1
+						Float:2.000000
+						App fTd1 
+					Let Td4
+						Let Td3
+							Float:4.000000
+							App gTd3 
+						FAdd Td2 Td4
+				ExtFunApp print_float y,

@@ -54,6 +54,7 @@ val reg_sp : Id.t
 val reg_next : Id.t
 val reg_tmp : Id.t
 val reg_re : Id.t
+val freg_re : Id.t
 val is_reg : Id.t -> bool
 
 

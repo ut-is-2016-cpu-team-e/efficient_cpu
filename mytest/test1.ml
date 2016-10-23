@@ -1,3 +1,5 @@
-let rec fadd x y =
-  x +. y in
-    print_float(fadd 3.0 4.0)
+let x = 3.0 in
+  let rec f z = x +. z in
+    let rec g z = x *. z in
+      let y = f 2.0 +. g 4.0 in
+        print_float(y)

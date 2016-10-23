@@ -66,6 +66,7 @@ let reg_hp = "$a0"
 let reg_re = "$v0"
 let reg_sp = "$sp"
 let reg_tmp = "$ra"
+let freg_re = "$fv"
 
 
 (* is_reg : Id.t -> bool *)
