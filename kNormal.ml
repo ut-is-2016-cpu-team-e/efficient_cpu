@@ -7,6 +7,10 @@ type t = (* K正規化後の式 (caml2html: knormal_t) *)
   | Neg of Id.t
   | Add of Id.t * Id.t
   | Sub of Id.t * Id.t
+  | Mul of Id.t * Id.t
+  | Div of Id.t * Id.t
+  | ShiftL2 of Id.t
+  | ShiftR1 of Id.t
   | FNeg of Id.t
   | FAdd of Id.t * Id.t
   | FSub of Id.t * Id.t
@@ -29,8 +33,8 @@ and fundef = { name : Id.t * Type.t; args : (Id.t * Type.t) list; body : t }
 
 let rec fv = function (* 式に出現する（自由な）変数 (caml2html: knormal_fv) *)
   | Unit | Int(_) | Float(_) | ExtArray(_) -> S.empty
-  | Neg(x) | FNeg(x) | FReciprocal(x)-> S.singleton x
-  | Add(x, y) | Sub(x, y) | FAdd(x, y) | FSub(x, y) | FMul(x, y) | FDiv(x, y) | Get(x, y) -> S.of_list [x; y]
+  | Neg(x) | FNeg(x) | ShiftR1(x) | ShiftL2(x) | FReciprocal(x)-> S.singleton x
+  | Add(x, y) | Sub(x, y) | Mul(x, y) | FAdd(x, y) | FSub(x, y) | FMul(x, y) | FDiv(x, y) | Get(x, y) -> S.of_list [x; y]
   | IfEq(x, y, e1, e2) | IfLE(x, y, e1, e2) -> S.add x (S.add y (S.union (fv e1) (fv e2)))
   | Let((x, t), e1, e2) -> S.union (fv e1) (S.remove x (fv e2))
   | Var(x) -> S.singleton x
@@ -67,6 +71,18 @@ let rec g env = function (* K正規化ルーチン本体 (caml2html: knormal_g) 
       insert_let (g env e1)
 	(fun x -> insert_let (g env e2)
 	    (fun y -> Sub(x, y), Type.Int))
+  | Syntax.Mul(e1, e2) ->
+      if e2 = Syntax.Int(4) then insert_let (g env e1) (fun x -> ShiftL2(x), Type.Int)
+      else
+      insert_let (g env e1)
+  (fun x -> insert_let (g env e2)
+      (fun y -> Mul(x, y), Type.Int))
+  | Syntax.Div(e1, e2) ->
+      if e2 = Syntax.Int(2) then insert_let (g env e1) (fun x -> ShiftR1(x), Type.Int)
+      else
+      insert_let (g env e1)
+	(fun x -> insert_let (g env e2)
+	    (fun y -> Div(x, y), Type.Int))
   | Syntax.FNeg(e) ->
       insert_let (g env e)
 	(fun x -> FNeg(x), Type.Float)

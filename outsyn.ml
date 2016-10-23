@@ -15,6 +15,8 @@ let rec outsyntax oc e tabnum =
    | Neg(t) -> Printf.fprintf oc "Neg\n"; outsyntax oc t (tabnum+1)
    | Add(t1, t2) -> Printf.fprintf oc "Add\n"; outsyntax oc t1 (tabnum+1); outsyntax oc t2 (tabnum+1)
    | Sub(t1, t2) -> Printf.fprintf oc "Sub\n"; outsyntax oc t1 (tabnum+1); outsyntax oc t2 (tabnum+1)
+   | Mul(t1, t2) -> Printf.fprintf oc "Mul\n"; outsyntax oc t1 (tabnum+1); outsyntax oc t2 (tabnum+1)
+   | Div(t1, t2) -> Printf.fprintf oc "Div\n"; outsyntax oc t1 (tabnum+1); outsyntax oc t2 (tabnum+1)
    | FNeg(t) -> Printf.fprintf oc "FNeg\n"; outsyntax oc t (tabnum+1)
    | FAdd(t1, t2) -> Printf.fprintf oc "FAdd\n"; outsyntax oc t1 (tabnum+1); outsyntax oc t2 (tabnum+1)
    | FSub(t1, t2) -> Printf.fprintf oc "FSub\n"; outsyntax oc t1 (tabnum+1); outsyntax oc t2 (tabnum+1)

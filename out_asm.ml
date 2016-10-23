@@ -29,6 +29,12 @@ and out_asm_e oc e tabnum =
   | Add(t1,  C(x)) -> Printf.fprintf oc "Add %s %d\n" t1 x
   | Sub(t1, V(t2)) -> Printf.fprintf oc "Sub %s %s\n" t1 t2
   | Sub(t1,  C(x)) -> Printf.fprintf oc "Sub %s %d\n" t1 x
+  | Mul(t1, V(t2)) -> Printf.fprintf oc "Mul %s %s\n" t1 t2
+  | Mul(t1,  C(x)) -> Printf.fprintf oc "Mul %s %d\n" t1 x
+  | Div(t1, V(t2)) -> Printf.fprintf oc "Div %s %s\n" t1 t2
+  | Div(t1,  C(x)) -> Printf.fprintf oc "Div %s %d\n" t1 x
+  | ShiftL2(t) -> Printf.fprintf oc "ShiftL2 %s\n" t
+  | ShiftR1(t) -> Printf.fprintf oc "ShiftR1 %s\n" t
   | Slw(t1, V(t2)) -> Printf.fprintf oc "Slw %s %s\n" t1 t2
   | Slw(t1,  C(x)) -> Printf.fprintf oc "Slw %s %d\n" t1 x
   | Lwz(t1, V(t2)) -> Printf.fprintf oc "Lwz %s %s\n" t1 t2

@@ -17,6 +17,10 @@ let rec cse e csel =
     | Neg(x) -> Neg(x)
     | Add(x, y) -> cse_find e csel
     | Sub(x, y) -> cse_find e csel
+    | Mul(x, y) -> cse_find e csel
+    | Div(x, y) -> cse_find e csel
+    | ShiftL2(x) -> cse_find e csel
+    | ShiftR1(x) -> cse_find e csel
     | FNeg(x) -> cse_find e csel
     | FAdd(x, y) -> cse_find e csel
     | FSub(x, y) -> cse_find e csel
@@ -28,7 +32,7 @@ let rec cse e csel =
     | Let(x, e1, e2) ->
       let e1' = cse e1 csel in
         (match e1' with
-        | Neg _ | Add _ | Sub _ | FAdd _ | FSub _ | FMul _ | FDiv _ | IfEq _ | IfLE _ | App _ | ExtFunApp _ ->
+        | Neg _ | Add _ | Sub _ | Mul _ | ShiftL2 _ | ShiftR1 _ | Div _ | FAdd _ | FSub _ | FMul _ | FDiv _ | IfEq _ | IfLE _ | App _ | ExtFunApp _ ->
           let csel' = let (xx, xt) = x in cse_add (e1, xx) csel in
           Printf.eprintf "Let\n"; Let(x, e1', cse e2 csel')
         | _ -> Printf.eprintf"nLet\n"; Let(x, e1', cse e2 csel))
@@ -52,6 +56,10 @@ let rec g env = function (* α変換ルーチン本体 (caml2html: alpha_g) *)
   | Neg(x) -> Neg(find x env)
   | Add(x, y) -> Add(find x env, find y env)
   | Sub(x, y) -> Sub(find x env, find y env)
+  | Mul(x, y) -> Mul(find x env, find y env)
+  | ShiftL2(x) -> ShiftL2(find x env)
+  | ShiftR1(x) -> ShiftR1(find x env)
+  | Div(x, y) -> Div(find x env, find y env)
   | FNeg(x) -> FNeg(find x env)
   | FAdd(x, y) -> FAdd(find x env, find y env)
   | FSub(x, y) -> FSub(find x env, find y env)

@@ -13,6 +13,10 @@ let rec out_kNormal oc e tabnum =
   | Neg(id) -> Printf.fprintf oc "Neg %s\n" id
   | Add(id1, id2) -> Printf.fprintf oc "Add %s %s\n" id1 id2
   | Sub(id1, id2) -> Printf.fprintf oc "Sub %s %s\n" id1 id2
+  | Mul(id1, id2) -> Printf.fprintf oc "Mul %s %s\n" id1 id2
+  | ShiftL2(id) -> Printf.fprintf oc "ShiftL2 %s\n" id
+  | ShiftR1(id) -> Printf.fprintf oc "ShiftR1 %s\n" id
+  | Div(id1, id2) -> Printf.fprintf oc "Div %s %s\n" id1 id2
   | FNeg(id) -> Printf.fprintf oc "FNeg %s\n" id
   | FAdd(id1, id2) -> Printf.fprintf oc "FAdd %s %s\n" id1 id2
   | FSub(id1, id2) -> Printf.fprintf oc "FSub %s %s\n" id1 id2
