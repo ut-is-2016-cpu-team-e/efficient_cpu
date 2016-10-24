@@ -1,5 +1,6 @@
+let _ =
 (*円周率定義*)
-let pi = 3.14159265 in
+let pi = 3.1415926535897932384 in
 
 (*aの符号が正なら1,負なら-1を返す*)
 let rec a_flag a =
@@ -10,12 +11,12 @@ let rec a_flag a =
 let rec a_abs a =
 	if (a >= 0.0) then
 		a
-	else a *. -1.0 in
+	else -. a in
 
 (*aを2πで割った余りを求める*)
 let rec reduction_pi2 a = 
 	let pidouble = pi *. 2.0 in
-	if (a < pi) then a
+	if (a < pidouble) then a
 	else reduction_pi2 (a -. pidouble) in
 
 (*cに符号を加える*)
@@ -39,7 +40,6 @@ let rec cos_kernel a =
 
 (*sin(a) を求める*)
 let rec mysin a =
-
 	let rec sin3 a flag =
 		if(a <= (pi /. 4.0)) then
 			let tmp = sin_kernel a in
@@ -56,13 +56,15 @@ let rec mysin a =
 
 		let abs = a_abs a in
 		let flag = a_flag a in
-		if ((reduction_pi2 abs) >= pi) then
-			sin2 (pi -. abs) flag
+		let r_abs = reduction_pi2 abs in
+
+		if (r_abs >= pi) then
+			sin2 (pi -. r_abs) flag
 		else
-			sin2 abs flag in
+			sin2 r_abs flag in
 
+(*cos(a)を求める*)
 let rec mycos a =
-
 	let rec cos3 a flag =
 		if(a <= (pi /. 4.0)) then
 			let tmp = cos_kernel a in
@@ -71,16 +73,15 @@ let rec mycos a =
 			let tmp = sin_kernel ((pi /. 2.0) -. a) in
 			addflag tmp flag in
 
-	let rec sin2 a flag =
+	let rec cos2 a flag =
 		if(a >= (pi /. 2.0)) then
-			cos3 (pi -. a) flag
+			cos3 (pi -. a) (- flag)
 		else
 			cos3 a flag in
 	
 	let abs = a_abs a in
-	if((reduction_pi2 abs) >= pi) then
-		cos2 (pi -. abs) 1
+	let r_abs = reduction_pi2 abs in
+	if(r_abs >= pi) then
+		cos2 (pi -. r_abs) (-1)
 	else
-		cos2 abs 1 in
-
-print_float (sin 1.0)
+		cos2 r_abs 1 in
