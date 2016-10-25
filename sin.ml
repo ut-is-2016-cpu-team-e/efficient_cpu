@@ -1,5 +1,7 @@
+let _ =
 (*円周率定義*)
 let pi = 3.1415926535897932384 in
+let pidouble = 6.28318530718 in
 
 (*aの符号が正なら1,負なら-1を返す*)
 let rec a_flag a =
@@ -14,8 +16,7 @@ let rec a_abs a =
 
 (*aを2πで割った余りを求める*)
 let rec reduction_pi2 a = 
-	let pidouble = pi *. 2.0 in
-	if (a < pidouble) then a
+	if (a <= pidouble) then a
 	else reduction_pi2 (a -. pidouble) in
 
 (*cに符号を加える*)
@@ -58,11 +59,10 @@ let rec mysin a =
 		let r_abs = reduction_pi2 abs in
 
 		if (r_abs >= pi) then
-			sin2 (pi -. r_abs) flag
+			sin2 (r_abs -. pi) (- flag)
 		else
 			sin2 r_abs flag in
 
-(*cos(a)を求める*)
 let rec mycos a =
 	let rec cos3 a flag =
 		if(a <= (pi /. 4.0)) then
@@ -81,6 +81,6 @@ let rec mycos a =
 	let abs = a_abs a in
 	let r_abs = reduction_pi2 abs in
 	if(r_abs >= pi) then
-		cos2 (pi -. r_abs) (-1)
+		cos2 (r_abs -. pi) (-1)
 	else
 		cos2 r_abs 1 in
