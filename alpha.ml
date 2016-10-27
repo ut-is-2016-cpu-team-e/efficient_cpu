@@ -34,8 +34,8 @@ let rec cse e csel =
         (match e1' with
         | Neg _ | Add _ | Sub _ | Mul _ | ShiftL2 _ | ShiftR1 _ | Div _ | FAdd _ | FSub _ | FMul _ | FDiv _ | IfEq _ | IfLE _ | App _ | ExtFunApp _ ->
           let csel' = let (xx, xt) = x in cse_add (e1, xx) csel in
-          Printf.eprintf "Let\n"; Let(x, e1', cse e2 csel')
-        | _ -> Printf.eprintf"nLet\n"; Let(x, e1', cse e2 csel))
+          Let(x, e1', cse e2 csel')
+        | _ -> Let(x, e1', cse e2 csel))
     | Var(x) -> Var(x)
     | LetRec({ name = (x,t); args = yts; body = e1 }, e2) ->
       let e1' = cse e1 csel in
@@ -46,6 +46,7 @@ let rec cse e csel =
     | Get(x,y) -> Get(x,y)
     | Put(x,y,z) -> Put(x,y,z)
     | ExtArray(x) -> ExtArray(x)
+    | ExtTuple(x) -> ExtTuple(x)
     | ExtFunApp(x,ys) -> cse_find e csel
 
 (*envは変数名を付け替える前と後の組*)
@@ -91,6 +92,7 @@ let rec g env = function (* α変換ルーチン本体 (caml2html: alpha_g) *)
   | Get(x, y) -> Get(find x env, find y env)
   | Put(x, y, z) -> Put(find x env, find y env, find z env)
   | ExtArray(x) -> ExtArray(x)
+  | ExtTuple(x) -> ExtTuple(x)
   | ExtFunApp(x, ys) -> ExtFunApp(x, List.map (fun y -> find y env) ys)
 
 let f e = cse (g M.empty e) [] (*g M.empty e*)

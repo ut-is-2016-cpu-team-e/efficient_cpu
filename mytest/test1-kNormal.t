@@ -1,7 +1,9 @@
-LetRec f y 
-	ShiftL2 y
-	Let Ti2
-		Let Ti1
-			Int:5
-			App fTi1 
-		ExtFunApp print_int Ti2,
+Let x
+	Float:3.000000
+	LetRec f y 
+		FAdd x y
+		Let Td2
+			Let Td1
+				Float:4.000000
+				App fTd1 
+			ExtFunApp print_float Td2,

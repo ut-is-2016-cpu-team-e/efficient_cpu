@@ -51,6 +51,7 @@ let rec out_kNormal oc e tabnum =
   | Get(id1,id2) -> Printf.fprintf oc "Get %s %s\n" id1 id2
   | Put(id1,id2,id3) -> Printf.fprintf oc "Put %s %s %s\n" id1 id2 id3
   | ExtArray(id1) -> Printf.fprintf oc "ExtArray %s\n" id1
+  | ExtTuple(id1) -> Printf.fprintf oc "ExtTuple %s\n" id1
   | ExtFunApp(id1,idlist) ->
     let rec print_idlist = function
       | [] -> Printf.fprintf oc "\n";

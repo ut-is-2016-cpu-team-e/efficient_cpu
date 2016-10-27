@@ -51,6 +51,37 @@ let rec deref_term = function
   | Put(e1, e2, e3) -> Put(deref_term e1, deref_term e2, deref_term e3)
   | e -> e
 
+let rec out_term = function
+  | Unit -> Printf.fprintf stdout "Unit\n";
+  | Bool(_) -> Printf.fprintf stdout "Bool\n";
+  | Int(_) -> Printf.fprintf stdout "Int\n";
+  | Get(_) -> Printf.fprintf stdout "Get\n";
+  | Put(_) -> Printf.fprintf stdout "Put\n";
+  | Tuple(_) -> Printf.fprintf stdout "Tuple\n";
+  | App(e, es) -> Printf.fprintf stdout "App\n"; out_term e;
+    let t1::t2::ts = es in out_term t1; out_term t2;
+  | Array(_) -> Printf.fprintf stdout "Array\n";
+  | Add(_) -> Printf.fprintf stdout "Add\n";
+  | Let((x, t), e, _) -> Printf.fprintf stdout "Let %s\n" x; out_term e;
+  | Int(_) -> Printf.fprintf stdout "Int\n";
+  | Float(_) -> Printf.fprintf stdout "Float\n"
+  | Var(s) -> Printf.fprintf stdout "Var %s\n" s;
+  | Not(_) -> Printf.fprintf stdout "Not\n";
+  | Neg(_) -> Printf.fprintf stdout "Neg\n";
+  | Sub(_) -> Printf.fprintf stdout "Sub\n";
+  | Mul(_) -> Printf.fprintf stdout "Mul\n";
+  | Div(_) -> Printf.fprintf stdout "Div\n";
+  | FNeg(_) -> Printf.fprintf stdout "FNeg\n";
+  | FAdd(_) -> Printf.fprintf stdout "FAdd\n";
+  | FSub(_) -> Printf.fprintf stdout "FSub\n";
+  | FMul(_) -> Printf.fprintf stdout "FMul\n";
+  | LetRec(_) -> Printf.fprintf stdout "LetRec\n";
+  | If(_) -> Printf.fprintf stdout "If\n";
+  | Eq(_) -> Printf.fprintf stdout "Eq\n";
+  | LE(_) -> Printf.fprintf stdout "LE\n";
+  | LetTuple(_) -> Printf.fprintf stdout "LetTuple\n";
+  | _ -> Printf.fprintf stdout "others\n"
+
 let rec occur r1 = function (* occur check (caml2html: typing_occur) *)
   | Type.Fun(t2s, t2) -> List.exists (occur r1) t2s || occur r1 t2
   | Type.Tuple(t2s) -> List.exists (occur r1) t2s
@@ -123,6 +154,7 @@ let rec g env e = (* 型推論ルーチン (caml2html: typing_g) *)
     | Var(x) -> (* 外部変数の型推論 (caml2html: typing_extvar) *)
 	Format.eprintf "free variable %s assumed as external@." x;
 	let t = Type.gentyp () in
+  Printf.fprintf stdout "gentyp %s %s\n" x, t;
 	extenv := M.add x t !extenv;
 	t
     | LetRec({ name = (x, t); args = yts; body = e1 }, e2) -> (* let recの型推論 (caml2html: typing_letrec) *)
@@ -150,7 +182,7 @@ let rec g env e = (* 型推論ルーチン (caml2html: typing_g) *)
 	unify (Type.Array(t)) (g env e1);
 	unify Type.Int (g env e2);
 	Type.Unit
-  with Unify(t1, t2) -> raise (Error(deref_term e, deref_typ t1, deref_typ t2))
+  with Unify(t1, t2) -> out_term e; raise (Error(deref_term e, deref_typ t1, deref_typ t2))
 
 let f e =
   extenv := M.empty;

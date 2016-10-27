@@ -11,13 +11,13 @@ let lexbuf outchan outmsynchan out_kNormal_chan out_alpha_chan out_iter_chan out
   Id.counter := 0;
   Typing.extenv := M.empty;
   let par_and_lex = Parser.exp Lexer.token l in
+  Outsyn.outsyntax outmsynchan par_and_lex 0;
   let kNormal_and_Typing = KNormal.f (Typing.f par_and_lex) in
   let alpha = Alpha.f kNormal_and_Typing in
   let after_iter= iter !limit alpha in
   let clos= Closure.f after_iter in
   let simm_and_virtual = Simm.f (Virtual.f clos) in
-  let after_regalloc = RegAlloc.f simm_and_virtual in
-  Outsyn.outsyntax outmsynchan par_and_lex 0; (* this is wrong -> solved*)
+  let after_regalloc = RegAlloc.f simm_and_virtual in (* this is wrong -> solved*)
   Out_kNormal.out_kNormal out_kNormal_chan kNormal_and_Typing 0;
   Out_kNormal.out_kNormal out_alpha_chan alpha 0;
   Out_iter.out_iter out_iter_chan after_iter 0;

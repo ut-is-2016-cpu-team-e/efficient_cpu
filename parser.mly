@@ -47,7 +47,7 @@ let addtyp x = (x, Type.gentyp ())
 %left COMMA
 %left EQUAL LESS_GREATER LESS GREATER LESS_EQUAL GREATER_EQUAL
 %left PLUS MINUS PLUS_DOT MINUS_DOT
-%left AST_DOT SLASH_DOT
+%left MUL DIV AST_DOT SLASH_DOT
 %right prec_unary_minus
 %left prec_app
 %left DOT
