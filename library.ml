@@ -125,9 +125,9 @@ let rec myint_of_float a =
 				b
 			else
 				if ((a -. a_sub *. 2.0) < 1.0) then
-					ftoi_ret_sub a_sub b (c * 2)
+					ftoi_ret_sub a_sub b (mulint c 2)
 				else
-					ftoi_ret_sub a_sub (b + c) (c * 2) in
+					ftoi_ret_sub a_sub (b + c) (mulint c 2) in
 			ftoi_ret_sub a 0 1 in
 		let rec ftoi_big a b =
 			let a_sub = a -. 8388608.0 in
@@ -164,7 +164,7 @@ let rec myfloat_of_int a =
 			if (a = 0) then
 				b
 			else
-				if ((a - a_sub * 2) > 0) then
+				if ((mulint (a - a_sub) 2) > 0) then
 					itof_ret_sub a_sub (b +. c) (c *. 2.0)
 				else
 					itof_ret_sub a_sub b (c *. 2.0) in
