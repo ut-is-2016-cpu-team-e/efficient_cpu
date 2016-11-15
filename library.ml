@@ -76,12 +76,6 @@ let rec mulfloat a b =
 let rec divfloat a b =
 	a /. b in
 
-(*
-(*divfloat 逆数化ver.*)
-let rec divfloat a b =
-
-*)
-
 let rec fhalf x = x *. 0.5 in
 let rec fsqr x = x *. x in
 
