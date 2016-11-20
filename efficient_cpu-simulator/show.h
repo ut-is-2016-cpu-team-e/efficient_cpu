@@ -3,7 +3,9 @@
 
 #include "cpu.h"
 
-void showReg(Cpu&);
-void showInstCnt(Cpu&);
+void showInstAll(Cpu&);
+void showInst(Cpu&);
+void showStatus(Cpu&);
+void showCurrentInst(Cpu&);
 
 #endif

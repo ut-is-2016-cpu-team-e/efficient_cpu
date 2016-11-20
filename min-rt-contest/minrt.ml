@@ -1920,15 +1920,15 @@ in
  *****************************************************************************)
 let rec write_ppm_header _ =
   (
-    print_char 80; (* 'P' *)
-    print_char (48 + 3); (* +6 if binary *) (* 48 = '0' *)
-    print_char 10;
+    (*print_char 80;*) (* 'P' *)
+    (*print_char (48 + 3);*) (* +6 if binary *) (* 48 = '0' *)
+    (*print_char 10;*)
     print_int image_size.(0);
-    print_char 32;
+    (*print_char 32;*)
     print_int image_size.(1);
-    print_char 32;
-    print_int 255;
-    print_char 10
+    (*print_char 32;*)
+    print_int 255
+    (*print_char 10*)
   )
 in
 
@@ -1940,11 +1940,11 @@ in
 
 let rec write_rgb _ =
    write_rgb_element rgb.(0); (* Red   *)
-   print_char 32;
+   (*print_char 32;*)
    write_rgb_element rgb.(1); (* Green *)
-   print_char 32;
-   write_rgb_element rgb.(2); (* Blue  *)
-   print_char 10
+   (*print_char 32;*)
+   write_rgb_element rgb.(2) (* Blue  *)
+   (*print_char 10*)
 in
 
 (******************************************************************************
@@ -2244,7 +2244,7 @@ let rec setup_rect_reflection obj_id obj =
   add_reflection (nr+1) (sid+2) br n0 light.(1) n2;
   add_reflection (nr+2) (sid+3) br n0 n1 light.(2);
   n_reflections.(0) <- nr + 3
-in
+  in
 
 (* 平面について情報を追加する *)
 let rec setup_surface_reflection obj_id obj =
@@ -2305,6 +2305,6 @@ let rec rt size_x size_y =
 )
 in
 
-let _ = rt 512 512
+let _ = rt 128 128
 
 in print_int(0)

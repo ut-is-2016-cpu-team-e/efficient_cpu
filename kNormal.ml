@@ -23,6 +23,7 @@ type t = (* K正規化後の式 (caml2html: knormal_t) *)
   | Var of Id.t
   | LetRec of fundef * t
   | App of Id.t * Id.t list
+  | App2 of Id.t * Id.t list
   | Tuple of Id.t list
   | LetTuple of (Id.t * Type.t) list * Id.t * t
   | Get of Id.t * Id.t
@@ -43,6 +44,7 @@ let rec fv = function (* 式に出現する（自由な）変数 (caml2html: kno
       let zs = S.diff (fv e1) (S.of_list (List.map fst yts)) in
       S.diff (S.union zs (fv e2)) (S.singleton x)
   | App(x, ys) -> S.of_list (x :: ys)
+  | App2(x, ys) -> S.of_list (x :: ys)
   | Tuple(xs) | ExtFunApp(_, xs) -> S.of_list xs
   | Put(x, y, z) -> S.of_list [x; y; z]
   | LetTuple(xs, y, e) -> S.add y (S.diff (fv e) (S.of_list (List.map fst xs)))

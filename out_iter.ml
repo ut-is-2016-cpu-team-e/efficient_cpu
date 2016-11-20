@@ -38,6 +38,11 @@ let rec out_iter oc e tabnum =
       | [] -> Printf.fprintf oc "\n"
       | b::bs -> Printf.fprintf oc "%s " b; print_idlist bs in
       Printf.fprintf oc "App %s " id; print_idlist idlist
+  | App2(id, idlist) ->
+    let rec print_idlist = function
+      | [] -> Printf.fprintf oc "\n"
+      | b::bs -> Printf.fprintf oc "%s " b; print_idlist bs in
+      Printf.fprintf oc "App %s " id; print_idlist idlist
   | Tuple(xs) ->
     let rec print_idlist = function
       | [] -> Printf.fprintf oc ")\n"

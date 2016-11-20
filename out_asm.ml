@@ -59,6 +59,8 @@ and out_asm_e oc e tabnum =
   | IfFEq(t1, t2, e1, e2) -> Printf.fprintf oc "IfFEq %s %s\n" t1 t2; out_asm_t oc e1 (tabnum+1); out_asm_t oc e2 (tabnum+1)
   | IfFLE(t1, t2, e1, e2) -> Printf.fprintf oc "IfFLE %s %s\n" t1 t2; out_asm_t oc e1 (tabnum+1); out_asm_t oc e2 (tabnum+1)
   | CallCls(t1, t1name, t2list, t3list) -> Printf.fprintf oc "CallCls %s (%s) d:" t1 t1name; out_tlist t2list; Printf.fprintf oc "f:"; out_tlist t3list; Printf.fprintf oc "\n"
+  | CallCls2(t1, t2list, t3list) -> Printf.fprintf oc "CallCls2 %s d: " t1;
+    out_tlist t2list; Printf.fprintf oc "f:"; out_tlist t3list; Printf.fprintf oc "\n"
   | CallDir(l1, t2list, t3list) ->
     let Id.L(t1) = l1 in
       Printf.fprintf oc "CallCls %s d:" t1; out_tlist t2list; Printf.fprintf oc "f:"; out_tlist t3list; Printf.fprintf oc "\n"
@@ -68,7 +70,7 @@ and out_asm_e oc e tabnum =
 let rec out_top_and_asm oc p =
     let rec out_tlist = function
     | [] -> ()
-    | t::ts -> Printf.fprintf oc "%s " t in
+    | t::ts -> Printf.fprintf oc "%s " t; out_tlist ts in
     let rec out_fundefs = function
     | [] -> ()
     | {name = Id.L(n); args = alist; fargs = falist; body = t; _}::fs -> Printf.fprintf oc "%s (args) : " n;

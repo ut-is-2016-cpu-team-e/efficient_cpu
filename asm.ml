@@ -38,6 +38,7 @@ and exp = (* 一つ一つの命令に対応する式 *)
   | IfFLE of Id.t * Id.t * t * t
   (* closure address, integer arguments, and float arguments *)
   | CallCls of Id.t * Id.t * Id.t list * Id.t list
+  | CallCls2 of Id.t * Id.t list * Id.t list
   | CallDir of Id.l * Id.t list * Id.t list
   | Save of Id.t * Id.t (* レジスタ変数の値をスタック変数へ保存 *)
   | Restore of Id.t (* スタック変数から値を復元 *)
@@ -53,9 +54,9 @@ let fletd (x, e1, e2) = Let ((x, Type.Float), e1, e2)
 (* seq : exp * t -> t *)
 let seq (e1, e2) = Let ((Id.gentmp Type.Unit, Type.Unit), e1, e2)
 
-let regs = [| "$a1"; "$a2"; "$a3"; "$a4"; "$a5"; "$a6"; "$a7"; "$a8"; "$a9";
+let regs = [| "$a0"; "$a1"; "$a2"; "$a3"; "$a4"; "$a5"; "$a6"; "$a7"; "$a8"; "$a9";
 "$a10"; "$a11"; "$a12"; "$a13"; "$a14"; "$a15"; "$a16"; "$a17"; "$a18";
-  "$a19"; "$a20"; "$a21"; "$a22"; "$a23"; "$a24"; "$a25"; "$a26"; |]
+  "$a19"; "$a20"; "$a21"; "$a22"; "$a23"; "$a24"; "$a25"; "$a26" |]
 (* let regs = Array.init 27 (fun i -> Printf.sprintf "_R_%d" i) *)
 let fregs = Array.init 31 (fun i -> Printf.sprintf "$f%d" i)
 let allregs = Array.to_list regs
@@ -64,12 +65,12 @@ let reg_cl = regs.(Array.length regs - 1) (* closure address *)
 let reg_sw = regs.(Array.length regs - 2) (* temporary for swap *)
 let reg_next = regs.(Array.length regs - 3)
 let reg_fsw = fregs.(Array.length fregs - 1) (* temporary for swap *)
-let reg_hp = "$a0"
 
 (*MIPSレジスタ*)
-let reg_re = "$v0"
-let reg_sp = "$sp"
-let reg_tmp = "$ra"
+let reg_re = "$v0" (*28番*)
+let reg_hp = "$fp" (*29番*)
+let reg_sp = "$sp" (*30番*)
+let reg_tmp = "$ra" (*31番*)
 let freg_re = "$fv"
 
 
@@ -99,6 +100,7 @@ let rec fv_exp = function
   | IfFEq (x, y, e1, e2) | IfFLE (x, y, e1, e2) ->
       x :: y :: remove_and_uniq S.empty (fv e1 @ fv e2)
   | CallCls (x1, x2, ys, zs) -> x1 :: ys @ zs
+  | CallCls2 (x, ys, zs) -> x::ys@zs
   | CallDir (_, ys, zs) -> ys @ zs
 and fv = function
   | Ans (exp) -> fv_exp exp

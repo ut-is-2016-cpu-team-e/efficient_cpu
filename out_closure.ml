@@ -37,6 +37,11 @@ let rec out_closure oc e tabnum =
       | [] -> Printf.fprintf oc ")\n"
       | x::xs -> Printf.fprintf oc "%s " x; print_idlist xs in
       Printf.fprintf oc "AppCls %s " id; print_idlist idlist
+  | AppCls2(id, idlist) ->
+      let rec print_idlist = function
+      | [] -> Printf.fprintf oc ")\n"
+      | x::xs -> Printf.fprintf oc "%s " x; print_idlist xs in
+      Printf.fprintf oc "AppCls2 %s " id; print_idlist idlist
   | AppDir(Id.L(id), idlist) ->
       let rec print_idlist = function
       | [] -> Printf.fprintf oc ")\n"

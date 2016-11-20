@@ -9,9 +9,8 @@ fib:
 		sw	$ra,	0($sp)
 
 		li	$a1,	1
-		slt	$a2,    $a1,    $a0	# if (1 < n)
-		beq	$a2,	$a1,	true
-		move	$v0,	$a0		# n <= 1
+		blt	$a1,    $a0,    true	# if (1 < n)
+		move	$v0,	$a0	    	# n <= 1
 		j	return
 		
 true:

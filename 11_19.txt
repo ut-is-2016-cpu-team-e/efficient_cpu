@@ -1,0 +1,11 @@
+こちらでいじったところ
+-min_calm_print_intのとき、print_int:という表示をなくした。そして、毎回動作が止まるのをやめた。
+-min_caml_print_intで、引数を返り値として返すようにした。
+-呼び出されるときの規約を、min_caml_ftoiをmin_caml_int_of_floatに、min_caml_itofをmin_caml_float_of_intに変えた。
+
+追加で実装してほしい点
+-min_caml_print_byteという外部関数int型を受け取って、その値に対応するascii文字を出力
+例:min_caml_print_byte 10 -> 改行
+   min_caml_print_byte 32 -> スペース
+   min_caml_print_byte 80 -> P
+   

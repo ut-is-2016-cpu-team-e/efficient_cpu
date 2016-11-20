@@ -1,0 +1,20 @@
+----------------------------------------------------------------------
+<Instraction>
+f.11:
+g.13:
+exit:
+_min_caml_start:
+jout:
+
+"bin.log" and "asm.log" have just been generated from mytest/test1.s
+----------------------------------------------------------------------
+<Instraction>
+f.11:
+g.13:
+exit:
+_min_caml_start:
+jout:
+
+"bin.log" and "asm.log" have just been generated from mytest/test1.s
+(debug mode)
+>

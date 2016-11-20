@@ -4,6 +4,10 @@ open KNormal
 
 let find x env = try M.find x env with Not_found -> x
 
+let rec find2 x = function
+  | [] -> false
+  | e::es -> if x = e then true else find2 x es
+
 let rec cse_find e = function
   | [] -> e
   | (ex,x)::ls -> if e = ex then Var(x) else cse_find e ls
@@ -41,6 +45,7 @@ let rec cse e csel =
       let e1' = cse e1 csel in
       LetRec({ name = (x,t); args = yts; body = e1' }, cse e2 csel)
     | App(x, ys) -> cse_find e csel
+    | App2(x, ys) -> cse_find e csel
     | Tuple(xs) -> Tuple(xs)
     | LetTuple(xts, y, e) -> LetTuple(xts, y, cse e csel)
     | Get(x,y) -> Get(x,y)
@@ -81,7 +86,8 @@ let rec g env = function (* α変換ルーチン本体 (caml2html: alpha_g) *)
 	       args = List.map (fun (y, t) -> (find y env', t)) yts;
 	       body = g env' e1 },
 	     g env e2)
-  | App(x, ys) -> App(find x env, List.map (fun y -> find y env) ys)
+  | App(x, ys) -> (*App2は関数が引数としてまだ不定の場合*)
+    App(find x env, List.map (fun y -> find y env) ys)
   | Tuple(xs) -> Tuple(List.map (fun x -> find x env) xs)
   | LetTuple(xts, y, e) -> (* LetTupleのα変換 (caml2html: alpha_lettuple) *)
       let xs = List.map fst xts in
@@ -95,4 +101,18 @@ let rec g env = function (* α変換ルーチン本体 (caml2html: alpha_g) *)
   | ExtTuple(x) -> ExtTuple(x)
   | ExtFunApp(x, ys) -> ExtFunApp(x, List.map (fun y -> find y env) ys)
 
-let f e = cse (g M.empty e) [] (*g M.empty e*)
+let rec h env2 = function
+  | IfEq(x, y, e1, e2) -> IfEq(x, y, h env2 e1, h env2 e2)
+  | IfLE(x, y, e1, e2) -> IfLE(x, y, h env2 e1, h env2 e2)
+  | Let((x, t), e1, e2) -> Let((x, t), h env2 e1, h env2 e2)
+  | LetRec({ name = (x, t); args = yts; body = e1 }, e2) ->
+      let ys = List.map fst yts in
+      let env2' = ys@env2 in
+      LetRec({ name = (x, t); args = yts; body = h env2' e1}, h env2 e2)
+  | App(x, ys) ->
+      if find2 x env2 then App2(x, ys)
+      else App(x, ys)
+  | LetTuple(xts, y, e) -> LetTuple(xts, y, h env2 e)
+  | _  as e -> e
+
+let f e = cse (h [] (g M.empty e)) [] (*g M.empty e*)

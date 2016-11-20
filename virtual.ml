@@ -23,7 +23,7 @@ let expand xts ini addf addi =
     xts
     ini
     (fun (offset, acc) x -> let offset = align offset in
-       (offset + 8, addf x offset acc))
+       (offset + 4, addf x offset acc))
     (fun (offset, acc) x t -> (offset + 4, addi x t offset acc))
 
 let rec g env = function (* 式の仮想マシンコード生成 *)
@@ -87,10 +87,13 @@ let rec g env = function (* 式の仮想マシンコード生成 *)
 		       (seq ((Stw (z, x, C (0)), store_fv))))))
   | Closure.AppCls (x, ys) ->
       let (int, float) = separate (List.map (fun y -> (y, M.find y env)) ys) in
-	Ans (CallCls (x, x, int, float))
+      Ans (CallCls (x, x, int, float))
+  | Closure.AppCls2 (x, ys) ->
+      let (int, float) = separate (List.map (fun y -> (y, M.find y env)) ys) in
+      Ans (CallCls2 (x, int, float))
   | Closure.AppDir (Id.L(x), ys) ->
       let (int, float) = separate (List.map (fun y -> (y, M.find y env)) ys) in
-	Ans (CallDir (Id.L(x), int, float))
+  	Ans (CallDir (Id.L(x), int, float))
   | Closure.Tuple (xs) -> (* 組の生成 *)
       let y = Id.genid "t" in
       let (offset, store) =
@@ -119,7 +122,7 @@ let rec g env = function (* 式の仮想マシンコード生成 *)
 	(match M.find x env with
 	   | Type.Array (Type.Unit) -> Ans (Nop)
 	   | Type.Array (Type.Float) ->
-	       Let ((offset, Type.Int), Slw (y, C (3)),
+	       Let ((offset, Type.Int), Slw (y, C (2)),
 		    Ans (Lfd (x, V (offset))))
 	   | Type.Array (_) ->
 	       Let ((offset, Type.Int), Slw (y, C (2)),
@@ -130,7 +133,7 @@ let rec g env = function (* 式の仮想マシンコード生成 *)
 	(match M.find x env with
 	   | Type.Array (Type.Unit) -> Ans (Nop)
 	   | Type.Array (Type.Float) ->
-	       Let ((offset, Type.Int), Slw (y, C (3)),
+	       Let ((offset, Type.Int), Slw (y, C (2)),
 		    Ans (Stfd (z, x, V (offset))))
 	   | Type.Array (_) ->
 	       Let ((offset, Type.Int), Slw (y, C (2)),
