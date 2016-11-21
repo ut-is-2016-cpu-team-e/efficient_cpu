@@ -37,15 +37,6 @@ let rec addint a b =
 let rec subint a b =
 	a - b in
 
-let rec divint a b =
-	let rec divint_sub a b c =
-		if(a < b) then
-			c
-		else
-			divint_sub (a - b) b (c + 1) in
-	divint_sub a b 0 in
-
-
 
 
 (*logic*)
@@ -88,10 +79,16 @@ let rec fflag a =
 let rec fneg a =
 	(-. a) in
 
-(*let rec mysqrt a =
-	if *)
+let rec sqrt a =
+	let rec newton x =
+		let y = (x +. a /. x) *. 0.5 in
+		if (fabs (x -. y) < 0.0000000001) then
+			y
+		else
+			newton y in
+	newton 1.0 in
 
-let rec myint_of_float a =
+let rec int_of_float a =
 	let abs = fabs a in
 	let flag = fflag a in
 	let rec ftoi_ret a =
@@ -130,7 +127,7 @@ let rec myint_of_float a =
 		else
 			- (ftoi_ret abs) in
 
-let rec myfloat_of_int a =
+let rec float_of_int a =
 	let abs = 
 		if (a > 0) then
 			a
@@ -143,7 +140,7 @@ let rec myfloat_of_int a =
 			-1 in
 	let rec itof_ret a =
 		let rec itof_ret_sub a b c =
-			let a_sub = divint a 2 in
+			let a_sub = a/2 in
 			if (a = 0) then
 				b
 			else
@@ -171,7 +168,15 @@ let rec myfloat_of_int a =
 			-. (itof_ret abs) in
 
 let rec floor a =
-	myfloat_of_int (myint_of_float a) in
+	let abs = fabs a in
+	let flag = fflag a in
+	let c = float_of_int (int_of_float (a /. 32767.)) in
+	let kernel = abs -. 32767. *. c in
+	let ans_abs = c *. 32767. +. (float_of_int (int_of_float kernel)) in
+	if (flag = 1) then
+		ans_abs
+	else
+		-. ans_abs in
 
 
 
