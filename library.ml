@@ -88,13 +88,8 @@ let rec fflag a =
 let rec fneg a =
 	(-. a) in
 
-let rec sqrt a =
-	let rec newton x k =
-		if ((fabs (x *. x -. k)) < 0.001) then
-			x
-		else
-			newton ((k /. x +. x) /. 2.0) k in
-	newton 1.0 a in
+(*let rec mysqrt a =
+	if *)
 
 let rec myint_of_float a =
 	let abs = fabs a in
@@ -276,10 +271,3 @@ let rec atan a =
 			addflag (pi *. 0.25 -. (atan_kernel ((1.0 -. abs) /. (abs +. 1.0)))) flag
 		else
 			addflag (pi *. 0.5 -. (atan_kernel (1.0 /. abs))) flag in
-for i = 0 to 10000000 do
-let fi = (float_of_int i) *. 0.0000001 in
-let x = int_of_float fi in
-let y = myint_of_float fi in
-if (x - y = 0) then Printf.printf ""
-else Printf.printf "error!\n"
-done
