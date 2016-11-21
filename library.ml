@@ -46,12 +46,6 @@ let rec divint a b =
 	divint_sub a b 0 in
 
 
-let rec mulint a b =
-	if (b > 0) then
-		mulint (a + a) (b - 1)
-	else
-		a in
-
 
 
 (*logic*)
@@ -119,9 +113,9 @@ let rec myint_of_float a =
 				b
 			else
 				if ((a -. a_sub *. 2.0) < 1.0) then
-					ftoi_ret_sub a_sub b (mulint c 2)
+					ftoi_ret_sub a_sub b (c + c)
 				else
-					ftoi_ret_sub a_sub (b + c) (mulint c 2) in
+					ftoi_ret_sub a_sub (b + c) (c + c) in
 			ftoi_ret_sub a 0 1 in
 		let rec ftoi_big a b =
 			let a_sub = a -. 8388608.0 in
@@ -143,22 +137,22 @@ let rec myint_of_float a =
 
 let rec myfloat_of_int a =
 	let abs = 
-		if (a < 0) then
-			- a
+		if (a > 0) then
+			a
 		else
-			a in
+			- a in
 	let flag = 
-		if (a < 0) then
-			-1
+		if (a > 0) then
+			1
 		else
-			1 in
+			-1 in
 	let rec itof_ret a =
 		let rec itof_ret_sub a b c =
 			let a_sub = divint a 2 in
 			if (a = 0) then
 				b
 			else
-				if ((mulint (a - a_sub) 2) > 0) then
+				if ((a - a_sub - a_sub ) > 0) then
 					itof_ret_sub a_sub (b +. c) (c *. 2.0)
 				else
 					itof_ret_sub a_sub b (c *. 2.0) in
@@ -282,3 +276,10 @@ let rec atan a =
 			addflag (pi *. 0.25 -. (atan_kernel ((1.0 -. abs) /. (abs +. 1.0)))) flag
 		else
 			addflag (pi *. 0.5 -. (atan_kernel (1.0 /. abs))) flag in
+for i = 0 to 10000000 do
+let fi = (float_of_int i) *. 0.0000001 in
+let x = int_of_float fi in
+let y = myint_of_float fi in
+if (x - y = 0) then Printf.printf ""
+else Printf.printf "error!\n"
+done
