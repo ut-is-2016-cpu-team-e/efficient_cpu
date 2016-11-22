@@ -1,6 +1,5 @@
-let v1 = Array.create 3 1.23 in
-let v2 = Array.create 3 4.56 in
-let i = 2 in
-let rec f x = v1.(i) +. v1.(i-1) +. v2.(i) +. x in
-let z = int_of_float (f 3.0) in
-print_int(z)
+let rec gcd m n =
+if m <= 0 then n
+else if m <= n then gcd m (n - m)
+else gcd n (m - n) in
+print_int(gcd 21600 337500)
