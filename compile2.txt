@@ -1,0 +1,1081 @@
+free variable sqrt assumed as external
+free variable read_float assumed as external
+free variable cos assumed as external
+free variable sin assumed as external
+free variable read_int assumed as external
+free variable floor assumed as external
+free variable atan assumed as external
+free variable print_byte assumed as external
+free variable print_int assumed as external
+free variable int_of_float assumed as external
+free variable float_of_int assumed as external
+free variable print_float assumed as external
+iteration 1000
+inlining scan_line.3395
+inlining setup_reflections.3459
+inlining setup_dirvec_constants.3224
+inlining veccpy.2998
+inlining d_vec.3095
+inlining init_dirvecs.3444
+inlining write_ppm_header.3369
+inlining read_parameter.3126
+inlining create_pixelline.3408
+inlining create_pixelline.3408
+inlining create_pixelline.3408
+inlining o_form.3036
+inlining fless.2965
+inlining o_diffuse.3058
+inlining o_reflectiontype.3038
+inlining add_reflection.3446
+inlining o_param_c.3048
+inlining o_param_b.3046
+inlining o_param_a.3044
+inlining veciprod.3009
+inlining o_param_abc.3050
+inlining o_diffuse.3058
+inlining add_reflection.3446
+inlining add_reflection.3446
+inlining add_reflection.3446
+inlining fneg.2951
+inlining fneg.2951
+inlining fneg.2951
+inlining o_diffuse.3058
+inlining setup_dirvec_constants.3224
+inlining vecset.2988
+inlining d_vec.3095
+inlining create_dirvec.3432
+inlining init_vecset_constants.3442
+inlining calc_dirvec_rows.3428
+inlining create_dirvecs.3437
+inlining init_vecset_constants.3442
+inlining init_dirvec_constants.3439
+inlining init_dirvec_constants.3439
+inlining setup_dirvec_constants.3224
+inlining create_dirvecs.3437
+inlining create_dirvec_elements.3434
+inlining create_dirvec.3432
+inlining create_dirvec_elements.3434
+inlining create_dirvec.3432
+inlining calc_dirvec_rows.3428
+inlining add_mod5.2985
+inlining add_mod5.2985
+inlining adjust_position.3412
+inlining adjust_position.3412
+inlining vecset.2988
+inlining fneg.2951
+inlining d_vec.3095
+inlining vecset.2988
+inlining fneg.2951
+inlining fneg.2951
+inlining d_vec.3095
+inlining vecset.2988
+inlining fneg.2951
+inlining fneg.2951
+inlining fneg.2951
+inlining d_vec.3095
+inlining vecset.2988
+inlining fneg.2951
+inlining fneg.2951
+inlining d_vec.3095
+inlining vecset.2988
+inlining fneg.2951
+inlining d_vec.3095
+inlining vecset.2988
+inlining d_vec.3095
+inlining fsqr.2961
+inlining fsqr.2961
+inlining tan.3410
+inlining init_line_elements.3405
+inlining create_pixel.3403
+inlining init_line_elements.3405
+inlining create_pixel.3403
+inlining scan_line.3395
+inlining add_mod5.2985
+inlining scan_pixel.3389
+inlining scan_pixel.3389
+inlining write_rgb.3373
+inlining try_exploit_neighbors.3362
+inlining do_without_neighbors.3346
+inlining neighbors_exist.3349
+inlining veccpy.2998
+inlining p_rgb.3076
+inlining add_mod5.2985
+inlining pretrace_diffuse_rays.3375
+inlining p_set_group_id.3090
+inlining veccpy.2998
+inlining p_rgb.3076
+inlining veccpy.2998
+inlining vecbzero.2996
+inlining pretrace_diffuse_rays.3375
+inlining veccpy.2998
+inlining p_received_ray_20percent.3086
+inlining trace_diffuse_rays.3329
+inlining p_intersection_points.3078
+inlining p_nvectors.3093
+inlining vecbzero.2996
+inlining p_group_id.3088
+inlining p_calc_diffuse.3082
+inlining get_surface_id.3353
+inlining write_rgb_element.3371
+inlining write_rgb_element.3371
+inlining write_rgb_element.3371
+inlining try_exploit_neighbors.3362
+inlining p_calc_diffuse.3082
+inlining do_without_neighbors.3346
+inlining neighbors_are_available.3356
+inlining get_surface_id.3353
+inlining get_surface_id.3353
+inlining get_surface_id.3353
+inlining get_surface_id.3353
+inlining get_surface_id.3353
+inlining get_surface_id.3353
+inlining p_surface_ids.3080
+inlining do_without_neighbors.3346
+inlining calc_diffuse_using_1point.3337
+inlining p_calc_diffuse.3082
+inlining p_surface_ids.3080
+inlining p_energy.3084
+inlining vecadd.3021
+inlining vecadd.3021
+inlining vecadd.3021
+inlining vecadd.3021
+inlining veccpy.2998
+inlining p_received_ray_20percent.3086
+inlining p_received_ray_20percent.3086
+inlining p_received_ray_20percent.3086
+inlining p_received_ray_20percent.3086
+inlining p_received_ray_20percent.3086
+inlining trace_diffuse_ray_80percent.3333
+inlining p_group_id.3088
+inlining veccpy.2998
+inlining p_energy.3084
+inlining p_intersection_points.3078
+inlining p_nvectors.3093
+inlining p_received_ray_20percent.3086
+inlining trace_diffuse_rays.3329
+inlining trace_diffuse_rays.3329
+inlining trace_diffuse_rays.3329
+inlining trace_diffuse_rays.3329
+inlining trace_diffuse_rays.3329
+inlining iter_trace_diffuse_rays.3324
+inlining setup_startp.3229
+inlining iter_trace_diffuse_rays.3324
+inlining trace_diffuse_ray.3321
+inlining trace_diffuse_ray.3321
+inlining fisneg.2955
+inlining veciprod.3009
+inlining d_vec.3095
+inlining vecaccum.3017
+inlining o_diffuse.3058
+inlining fispos.2953
+inlining fneg.2951
+inlining veciprod.3009
+inlining get_nvector.3300
+inlining d_vec.3095
+inlining judge_intersection_fast.3292
+inlining o_diffuse.3058
+inlining fless.2965
+inlining setup_startp.3229
+inlining add_light.3306
+inlining fneg.2951
+inlining veciprod.3009
+inlining fneg.2951
+inlining veciprod.3009
+inlining o_hilight.3060
+inlining vecaccum.3017
+inlining veciprod.3009
+inlining veccpy.2998
+inlining p_nvectors.3093
+inlining vecscale.3027
+inlining veccpy.2998
+inlining p_energy.3084
+inlining fless.2965
+inlining o_diffuse.3058
+inlining p_calc_diffuse.3082
+inlining veccpy.2998
+inlining p_intersection_points.3078
+inlining veccpy.2998
+inlining get_nvector.3300
+inlining o_diffuse.3058
+inlining o_reflectiontype.3038
+inlining fsqr.2961
+inlining fispos.2953
+inlining fneg.2951
+inlining veciprod.3009
+inlining judge_intersection.3278
+inlining p_surface_ids.3080
+inlining add_light.3306
+inlining veciprod.3009
+inlining d_vec.3095
+inlining r_bright.3103
+inlining veciprod.3009
+inlining d_vec.3095
+inlining r_surface_id.3099
+inlining judge_intersection_fast.3292
+inlining r_dvec.3101
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fispos.2953
+inlining vecaccum.3017
+inlining fispos.2953
+inlining fisneg.2955
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fabs.2963
+inlining fless.2965
+inlining fabs.2963
+inlining o_param_b.3046
+inlining o_param_y.3054
+inlining fabs.2963
+inlining fless.2965
+inlining fabs.2963
+inlining fsqr.2961
+inlining fsqr.2961
+inlining o_param_c.3048
+inlining o_param_z.3056
+inlining o_param_a.3044
+inlining o_param_x.3052
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining o_param_z.3056
+inlining o_param_x.3052
+inlining fsqr.2961
+inlining fless.2965
+inlining o_param_z.3056
+inlining fless.2965
+inlining o_param_x.3052
+inlining o_color_blue.3066
+inlining o_color_green.3064
+inlining o_color_red.3062
+inlining o_texturetype.3034
+inlining get_nvector_plane.3296
+inlining get_nvector_rect.3294
+inlining o_form.3036
+inlining o_isinvert.3040
+inlining fhalf.2959
+inlining o_param_r1.3068
+inlining o_param_r2.3070
+inlining fhalf.2959
+inlining o_param_r1.3068
+inlining o_param_r3.3072
+inlining fhalf.2959
+inlining o_param_r2.3070
+inlining o_param_r3.3072
+inlining o_isrot.3042
+inlining o_param_c.3048
+inlining o_param_b.3046
+inlining o_param_a.3044
+inlining o_param_z.3056
+inlining o_param_y.3054
+inlining o_param_x.3052
+inlining fneg.2951
+inlining o_param_c.3048
+inlining fneg.2951
+inlining o_param_b.3046
+inlining fneg.2951
+inlining o_param_a.3044
+inlining fneg.2951
+inlining sgn.2980
+inlining vecbzero.2996
+inlining fless.2965
+inlining fless.2965
+inlining trace_or_matrix_fast.3288
+inlining trace_or_matrix_fast.3288
+inlining solve_one_or_network_fast.3284
+inlining fless.2965
+inlining solver_fast2.3209
+inlining solve_one_or_network_fast.3284
+inlining solve_one_or_network_fast.3284
+inlining vecset.2988
+inlining check_all_inside.3251
+inlining fless.2965
+inlining fless.2965
+inlining o_isinvert.3040
+inlining solver_fast2.3209
+inlining d_vec.3095
+inlining fless.2965
+inlining fless.2965
+inlining trace_or_matrix.3274
+inlining trace_or_matrix.3274
+inlining solve_one_or_network.3270
+inlining fless.2965
+inlining solver.3168
+inlining solve_one_or_network.3270
+inlining solve_one_or_network.3270
+inlining vecset.2988
+inlining check_all_inside.3251
+inlining fless.2965
+inlining fless.2965
+inlining o_isinvert.3040
+inlining solver.3168
+inlining shadow_check_one_or_group.3260
+inlining shadow_check_one_or_group.3260
+inlining fless.2965
+inlining solver_fast.3191
+inlining shadow_check_one_or_group.3260
+inlining check_all_inside.3251
+inlining o_isinvert.3040
+inlining fless.2965
+inlining solver_fast.3191
+inlining check_all_inside.3251
+inlining is_outside.3246
+inlining is_second_outside.3241
+inlining is_plane_outside.3236
+inlining is_rect_outside.3231
+inlining o_form.3036
+inlining o_param_z.3056
+inlining o_param_y.3054
+inlining o_param_x.3052
+inlining xor.2977
+inlining fisneg.2955
+inlining o_isinvert.3040
+inlining o_form.3036
+inlining xor.2977
+inlining fisneg.2955
+inlining o_isinvert.3040
+inlining veciprod2.3012
+inlining o_param_abc.3050
+inlining o_isinvert.3040
+inlining o_isinvert.3040
+inlining fless.2965
+inlining o_param_c.3048
+inlining fabs.2963
+inlining fless.2965
+inlining o_param_b.3046
+inlining fabs.2963
+inlining fless.2965
+inlining o_param_a.3044
+inlining fabs.2963
+inlining veccpy.2998
+inlining veciprod2.3012
+inlining o_param_abc.3050
+inlining o_param_z.3056
+inlining o_param_y.3054
+inlining o_param_x.3052
+inlining o_form.3036
+inlining o_param_ctbl.3074
+inlining iter_setup_dirvec_constants.3221
+inlining iter_setup_dirvec_constants.3221
+inlining o_form.3036
+inlining d_vec.3095
+inlining d_const.3097
+inlining fiszero.2957
+inlining fhalf.2959
+inlining o_param_r2.3070
+inlining o_param_r1.3068
+inlining fhalf.2959
+inlining o_param_r3.3072
+inlining o_param_r1.3068
+inlining fhalf.2959
+inlining o_param_r3.3072
+inlining o_param_r2.3070
+inlining o_isrot.3042
+inlining fneg.2951
+inlining o_param_c.3048
+inlining fneg.2951
+inlining o_param_b.3046
+inlining fneg.2951
+inlining o_param_a.3044
+inlining fneg.2951
+inlining o_param_c.3048
+inlining fneg.2951
+inlining o_param_b.3046
+inlining fneg.2951
+inlining o_param_a.3044
+inlining fispos.2953
+inlining o_param_c.3048
+inlining o_param_b.3046
+inlining o_param_a.3044
+inlining fneg_cond.2982
+inlining o_param_c.3048
+inlining xor.2977
+inlining fisneg.2955
+inlining o_isinvert.3040
+inlining fiszero.2957
+inlining fneg_cond.2982
+inlining o_param_b.3046
+inlining xor.2977
+inlining fisneg.2955
+inlining o_isinvert.3040
+inlining fiszero.2957
+inlining fneg_cond.2982
+inlining o_param_a.3044
+inlining xor.2977
+inlining fisneg.2955
+inlining o_isinvert.3040
+inlining fiszero.2957
+inlining solver_surface_fast2.3195
+inlining d_vec.3095
+inlining o_form.3036
+inlining d_const.3097
+inlining o_param_ctbl.3074
+inlining o_isinvert.3040
+inlining fispos.2953
+inlining fsqr.2961
+inlining fiszero.2957
+inlining fisneg.2955
+inlining solver_surface_fast.3179
+inlining d_vec.3095
+inlining o_form.3036
+inlining d_const.3097
+inlining o_param_z.3056
+inlining o_param_y.3054
+inlining o_param_x.3052
+inlining o_isinvert.3040
+inlining fispos.2953
+inlining fsqr.2961
+inlining o_form.3036
+inlining fiszero.2957
+inlining fisneg.2955
+inlining fiszero.2957
+inlining fless.2965
+inlining o_param_b.3046
+inlining fabs.2963
+inlining fless.2965
+inlining o_param_a.3044
+inlining fabs.2963
+inlining fiszero.2957
+inlining fless.2965
+inlining o_param_c.3048
+inlining fabs.2963
+inlining fless.2965
+inlining o_param_a.3044
+inlining fabs.2963
+inlining fiszero.2957
+inlining fless.2965
+inlining o_param_c.3048
+inlining fabs.2963
+inlining fless.2965
+inlining o_param_b.3046
+inlining fabs.2963
+inlining solver_surface.3143
+inlining solver_rect.3137
+inlining o_form.3036
+inlining o_param_z.3056
+inlining o_param_y.3054
+inlining o_param_x.3052
+inlining fneg.2951
+inlining o_isinvert.3040
+inlining fispos.2953
+inlining fsqr.2961
+inlining o_form.3036
+inlining fiszero.2957
+inlining fhalf.2959
+inlining o_param_r3.3072
+inlining o_param_r2.3070
+inlining o_param_r1.3068
+inlining o_isrot.3042
+inlining o_param_c.3048
+inlining o_param_b.3046
+inlining o_param_a.3044
+inlining o_param_r3.3072
+inlining o_param_r2.3070
+inlining o_param_r1.3068
+inlining o_isrot.3042
+inlining o_param_c.3048
+inlining fsqr.2961
+inlining o_param_b.3046
+inlining fsqr.2961
+inlining o_param_a.3044
+inlining fsqr.2961
+inlining fneg.2951
+inlining veciprod2.3012
+inlining fispos.2953
+inlining veciprod.3009
+inlining o_param_abc.3050
+inlining fless.2965
+inlining fabs.2963
+inlining fless.2965
+inlining fabs.2963
+inlining fneg_cond.2982
+inlining xor.2977
+inlining fisneg.2955
+inlining o_isinvert.3040
+inlining o_param_abc.3050
+inlining fiszero.2957
+inlining read_or_network.3122
+inlining read_and_network.3124
+inlining read_all_object.3118
+inlining read_light.3109
+inlining read_and_network.3124
+inlining read_net_item.3120
+inlining read_or_network.3122
+inlining read_net_item.3120
+inlining read_net_item.3120
+inlining read_object.3116
+inlining read_object.3116
+inlining fsqr.2961
+inlining sgn.2980
+inlining fiszero.2957
+inlining fsqr.2961
+inlining sgn.2980
+inlining fiszero.2957
+inlining fsqr.2961
+inlining sgn.2980
+inlining fiszero.2957
+inlining rad.3105
+inlining rad.3105
+inlining rad.3105
+inlining fisneg.2955
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fneg.2951
+inlining rad.3105
+inlining fneg.2951
+inlining rad.3105
+inlining fneg.2951
+inlining fneg.2951
+inlining fneg.2951
+inlining fneg.2951
+inlining rad.3105
+inlining rad.3105
+inlining fiszero.2957
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining vecfill.2993
+inlining fneg.2951
+inlining fispos.2953
+inlining fiszero.2957
+inlining reduction_pi2.2972
+inlining fisneg.2955
+inlining fneg.2951
+inlining reduction_pi2.2916
+inlining fisneg.2899
+inlining fneg.2895
+inlining reduction_pi2.2860
+inlining fisneg.2843
+inlining fneg.2839
+inlining reduction_pi2.2804
+inlining fisneg.2787
+inlining fneg.2783
+eliminating variable Ti813.3749.6972
+Let Ti814.3747.6973
+eliminating variable Ti813.3749.6963
+Let Ti814.3747.6964
+eliminating variable Ti813.3749.6954
+Let Ti814.3747.6955
+eliminating variable Ti960.3968.6918
+Let Ti961.3966.6919
+eliminating variable Ti959.3967.6917
+Let Ti961.3966.6919
+eliminating variable xm_const.5875.6907
+Let m_vec.5874.6906
+eliminating variable Ti1672.4874.6893
+Let Ti1673.4872.6894
+eliminating variable Ti857.3816.6878
+Let Ti858.3815.6879
+eliminating variable Ti860.3812.6874
+Let Ti861.3809.6875
+eliminating variable Ti855.3818.6869
+Let Ti856.3814.6870
+eliminating variable Ti613.3489
+Let Ti614.3487
+eliminating variable Tu609.3492
+Let Tu241.3478
+eliminating variable Tu608.3493
+Let Tu242.3477
+eliminating variable Tu607.3494
+Let Tu243.3476
+eliminating variable Tu606.3495
+Let next.3475
+eliminating variable Tu605.3496
+Let cur.3474
+eliminating variable Tu604.3497
+Let prev.3473
+eliminating function setup_reflections.3459
+eliminating variable Ti656.3527
+Let Ti657.3526
+eliminating variable Ti629.3554
+Let sid.3520
+eliminating variable Ti684.3566
+Let Ti685.3565
+eliminating variable Ti679.3571
+Let Ti680.3568
+eliminating variable Ti677.3572
+Let Ti678.3567
+eliminating variable Ti673.3577
+Let Ti674.3574
+eliminating variable Ti671.3578
+Let Ti672.3573
+eliminating variable Ti667.3582
+Let Ti668.3579
+eliminating function add_reflection.3446
+eliminating function init_dirvecs.3444
+eliminating variable Ti701.3614.7177
+Let Ti702.3613.7178
+eliminating variable Ti699.3611.7174
+Let Tt700.3615.7175
+eliminating variable Ti697.3608.7172
+Let Ti698.3607.7173
+eliminating variable Ti697.3608
+Let Ti698.3607
+eliminating variable Ti1672.4874.7186
+Let Ti1673.4872.7187
+eliminating variable Ti701.3614.7182
+Let Ti702.3613.7183
+eliminating variable Ti701.3614
+Let Ti702.3613
+eliminating variable Ti715.3630.7203
+Let Ti716.3629.7204
+eliminating variable Ti712.3627.7199
+Let Tu713.3632.7200
+eliminating variable Ti710.3620.7197
+Let Ti711.3619.7198
+eliminating variable Ti710.3620
+Let Ti711.3619
+eliminating variable Tu705.3626
+Let Tt706.3625
+eliminating variable Ti715.3630.7215
+Let Ti716.3629.7216
+eliminating variable Ti715.3630
+Let Ti716.3629
+eliminating variable Tu713.3632
+Let Tt714.3631
+eliminating variable Ti2705.6433.7239
+Let Ti.e.10627
+eliminating variable Ti731.3645.7235
+Let Ti732.3644.7236
+eliminating variable Ti727.3647.7231
+Let Ti728.3642.7232
+eliminating variable Ti731.3645
+Let Ti732.3644
+eliminating variable Ti729.3646
+Let Ti730.3643
+eliminating variable Ti727.3647
+Let Ti728.3642
+eliminating variable Ti2705.6433.7242
+Let Ti.e.10634
+eliminating variable Ti752.3660
+Let Ti753.3659
+eliminating variable Ti750.3661
+Let Ti751.3658
+eliminating variable Ti748.3666
+Let Ti749.3665
+eliminating variable Ti795.3682
+Let Ti796.3680
+eliminating variable Ti790.3697
+Let Ti791.3696
+eliminating variable Ti784.3703
+Let Ti785.3702
+eliminating variable Ti777.3710
+Let Ti778.3709
+eliminating variable Ti771.3716
+Let Ti772.3715
+eliminating variable Ti766.3721
+Let Ti767.3720
+eliminating function adjust_position.3412
+eliminating function create_pixelline.3408
+eliminating variable Ti818.3758.7338
+Let Ti819.3757.7339
+eliminating variable Ti818.3758
+Let Ti819.3757
+eliminating variable Tu816.3760
+Let Tt817.3759
+eliminating variable Ti857.3816
+Let Ti858.3815
+eliminating variable Ti874.3826.7388
+Let Ti875.3825.7389
+eliminating variable Ti2705.6433.7377
+Let Ti.e.10649
+eliminating variable Ti857.3816.7373
+Let Ti858.3815.7374
+eliminating variable Ti860.3812.7369
+Let Ti861.3809.7370
+eliminating variable Ti855.3818.7364
+Let Ti856.3814.7365
+eliminating variable Ti862.3811
+Let Ti863.3810
+eliminating variable Ti860.3812
+Let Ti861.3809
+eliminating variable Ti855.3818
+Let Ti856.3814
+eliminating variable Ti1001.4004.7452
+Let Ti1002.4002.7453
+eliminating variable Ti996.4006.7447
+Let Ti997.3999.7448
+eliminating variable Ti979.3979.7432
+Let Ti980.3978.7433
+eliminating variable Ti971.3971.7423
+Let Ti972.3972.7424
+eliminating variable Ti1009.4015.7443
+Let Ti1010.4014.7444
+eliminating variable Ti1004.4008.7435
+Let surface_ids.4009.7436
+eliminating variable Ti874.3826.7403
+Let Ti875.3825.7404
+eliminating variable Ti874.3826
+Let Ti875.3825
+eliminating variable Tu873.3827
+Let Tu201.3824
+eliminating variable Ti899.3842
+Let Ti900.3840
+eliminating variable Ti945.3918.7484
+Let Ti946.3917.7485
+eliminating variable Ti937.3912.7477
+Let sid.3913.7478
+eliminating variable Ti2705.6433.7476
+Let Ti.e.10660
+eliminating variable Ti935.3879
+Let Ti936.3878
+eliminating variable Ti933.3880
+Let Ti934.3877
+eliminating variable Ti945.3918.7543
+Let Ti946.3917.7544
+eliminating variable Ti945.3918
+Let Ti946.3917
+eliminating function write_ppm_header.3369
+eliminating variable Ti990.3990.7664
+Let Ti991.3989.7665
+eliminating variable Ti986.3993.7660
+Let Ti987.3992.7661
+eliminating variable Ti979.3979.7633
+Let Ti980.3978.7634
+eliminating variable Ti979.3979
+Let Ti980.3978
+eliminating variable Ti1009.4015.7652
+Let Ti1010.4014.7653
+eliminating variable Ti990.3990
+Let Ti991.3989
+eliminating variable Ti986.3993
+Let Ti987.3992
+eliminating variable Ti1001.4004
+Let Ti1002.4002
+eliminating variable Ti996.4006
+Let Ti997.3999
+eliminating variable Ti1009.4015.7690
+Let Ti1010.4014.7691
+eliminating variable Ti1009.4015
+Let Ti1010.4014
+eliminating variable Ti1016.4039
+Let Ti1017.4038
+eliminating variable Ti1012.4043
+Let Ti1013.4042
+eliminating variable Ti1629.4823.7961
+Let Ti1630.4821.7962
+eliminating variable Ti1057.4089.7948
+Let Ti1058.4088.7949
+eliminating variable Ti1063.4081.7946
+Let Ti1064.4080.7947
+eliminating variable Ti1048.4077.7939
+Let Tt1049.4095.7940
+eliminating variable Ti1057.4089
+Let Ti1058.4088
+eliminating variable Ti1057.4089.7972
+Let Ti1058.4088.7973
+eliminating variable Ti1063.4081.7970
+Let Ti1064.4080.7971
+eliminating variable Ti1063.4081
+Let Ti1064.4080
+eliminating variable Ti1629.4823.8129
+Let Ti1630.4821.8130
+eliminating variable Ti1149.4155
+Let Ti1150.4154
+eliminating variable Ti1147.4156
+Let Ti1148.4153
+eliminating variable Ti1155.4148
+Let Ti1156.4144
+eliminating variable Ti1141.4160
+Let Ti1142.4158
+eliminating variable Ti1084.4228
+Let Ti1085.4227
+eliminating variable Ti1178.4234
+Let Ti1179.4233
+eliminating function add_light.3306
+eliminating variable Ti1384.4513.8700
+Let Ti1385.4512.8701
+eliminating variable Ti1382.4514.8698
+Let Ti1383.4508.8699
+eliminating variable Ti1384.4513
+Let Ti1385.4512
+eliminating variable Ti1382.4514
+Let Ti1383.4508
+eliminating variable Ti1411.4534.8935
+Let Ti1412.4533.8936
+eliminating variable Ti1400.4546.8931
+Let Ti1401.4531.8932
+eliminating variable Ti1416.4553.8972
+Let Ti1417.4552.8973
+eliminating variable Ti1413.4555.8967
+Let Ti1414.4549.8968
+eliminating variable Ti1416.4553.8995
+Let Ti1417.4552.8996
+eliminating variable Ti1413.4555.8990
+Let Ti1414.4549.8991
+eliminating variable Ti1411.4534.8954
+Let Ti1412.4533.8955
+eliminating variable Ti1400.4546.8950
+Let Ti1401.4531.8951
+eliminating variable Ti1411.4534
+Let Ti1412.4533
+eliminating variable Ti1400.4546
+Let Ti1401.4531
+eliminating variable Ti1416.4553.9003
+Let Ti1417.4552.9004
+eliminating variable Ti1413.4555.8998
+Let Ti1414.4549.8999
+eliminating variable Ti1416.4553
+Let Ti1417.4552
+eliminating variable Ti1413.4555
+Let Ti1414.4549
+eliminating variable Ti1594.4779.9016
+Let Ti1595.4778.9017
+eliminating variable Ti1589.4781.9011
+Let Ti1590.4775.9012
+eliminating variable Ti1456.4564
+Let Ti1457.4563
+eliminating variable Ti1424.4605
+Let Ti1425.4604
+eliminating variable Ti1418.4607
+Let Ti1419.4558
+eliminating function judge_intersection.3278
+eliminating variable Ti1485.4645.9093
+Let Ti1486.4644.9094
+eliminating variable Ti1482.4647.9088
+Let Ti1483.4641.9089
+eliminating variable Ti1485.4645.9118
+Let Ti1486.4644.9119
+eliminating variable Ti1482.4647.9113
+Let Ti1483.4641.9114
+eliminating variable Ti1480.4626.9075
+Let Ti1481.4625.9076
+eliminating variable Ti1469.4638.9071
+Let Ti1470.4623.9072
+eliminating variable Ti1480.4626
+Let Ti1481.4625
+eliminating variable Ti1469.4638
+Let Ti1470.4623
+eliminating variable Ti1485.4645.9126
+Let Ti1486.4644.9127
+eliminating variable Ti1482.4647.9121
+Let Ti1483.4641.9122
+eliminating variable Ti1485.4645
+Let Ti1486.4644
+eliminating variable Ti1482.4647
+Let Ti1483.4641
+eliminating variable Ti1594.4779.9139
+Let Ti1595.4778.9140
+eliminating variable Ti1589.4781.9134
+Let Ti1590.4775.9135
+eliminating variable Ti1525.4655
+Let Ti1526.4654
+eliminating variable Ti1493.4696
+Let Ti1494.4695
+eliminating variable Ti1487.4698
+Let Ti1488.4649
+eliminating variable Ti1553.4730.9186
+Let Ti1554.4729.9187
+eliminating variable Ti1549.4732.9180
+Let Ti1550.4725.9181
+eliminating variable Ti1553.4730.9177
+Let Ti1554.4729.9178
+eliminating variable Ti1549.4732.9171
+Let Ti1550.4725.9172
+eliminating variable Ti1547.4707
+Let Ti1548.4706
+eliminating variable Ti1542.4710
+Let Ti1543.4709
+eliminating variable Ti1528.4722
+Let Ti1529.4701
+eliminating variable Ti1553.4730.9215
+Let Ti1554.4729.9216
+eliminating variable Ti1549.4732.9209
+Let Ti1550.4725.9210
+eliminating variable Ti1553.4730
+Let Ti1554.4729
+eliminating variable Ti1549.4732
+Let Ti1550.4725
+eliminating variable Ti1594.4779.9223
+Let Ti1595.4778.9224
+eliminating variable Ti1589.4781.9218
+Let Ti1590.4775.9219
+eliminating variable Ti1587.4747
+Let Ti1588.4746
+eliminating variable Ti1566.4768
+Let Ti1567.4767
+eliminating variable Ti1556.4773
+Let Ti1557.4734
+eliminating variable Ti1594.4779.9262
+Let Ti1595.4778.9263
+eliminating variable Ti1589.4781.9257
+Let Ti1590.4775.9258
+eliminating variable Ti1594.4779
+Let Ti1595.4778
+eliminating variable Ti1589.4781
+Let Ti1590.4775
+eliminating variable Ti1629.4823
+Let Ti1630.4821
+eliminating variable Ti1668.4834
+Let Ti1669.4833
+eliminating variable Ti1680.4883.9570
+Let Ti1681.4882.9571
+eliminating variable Ti1672.4874
+Let Ti1673.4872
+eliminating variable Ti1680.4883.9583
+Let Ti1681.4882.9584
+eliminating variable Ti1680.4883
+Let Ti1681.4882
+eliminating function solver_fast.3191
+eliminating function read_parameter.3126
+eliminating variable Ti2213.5508.10506
+Let Ti2214.5507.10507
+eliminating variable Ti2211.5511.10512
+Let Ti2212.5510.10513
+eliminating variable Ti2209.5512.10510
+Let Ti2210.5509.10511
+eliminating variable Ti2207.5513.10504
+Let Ti2208.5504.10505
+eliminating variable Ti2195.5487.10500
+Let Ti2196.5486.10501
+eliminating variable Ti2193.5488.10497
+Let Ti2194.5484.10498
+eliminating variable Ti2195.5487
+Let Ti2196.5486
+eliminating variable Ti2193.5488
+Let Ti2194.5484
+eliminating variable Ti2213.5508.10530
+Let Ti2214.5507.10531
+eliminating variable Ti2211.5511.10536
+Let Ti2212.5510.10537
+eliminating variable Ti2209.5512.10534
+Let Ti2210.5509.10535
+eliminating variable Ti2207.5513.10528
+Let Ti2208.5504.10529
+eliminating variable Ti2204.5497.10520
+Let Ti2205.5496.10521
+eliminating variable Ti2202.5499.10524
+Let Ti2203.5498.10525
+eliminating variable Ti2200.5500.10518
+Let Ti2201.5493.10519
+eliminating variable Ti2204.5497
+Let Ti2205.5496
+eliminating variable Ti2202.5499
+Let Ti2203.5498
+eliminating variable Ti2200.5500
+Let Ti2201.5493
+eliminating variable Ti2213.5508.10542
+Let Ti2214.5507.10543
+eliminating variable Ti2211.5511.10548
+Let Ti2212.5510.10549
+eliminating variable Ti2209.5512.10546
+Let Ti2210.5509.10547
+eliminating variable Ti2207.5513.10540
+Let Ti2208.5504.10541
+eliminating variable Ti2213.5508
+Let Ti2214.5507
+eliminating variable Ti2211.5511
+Let Ti2212.5510
+eliminating variable Ti2209.5512
+Let Ti2210.5509
+eliminating variable Ti2207.5513
+Let Ti2208.5504
+eliminating variable Ti2220.5520.10553
+Let Ti2221.5519.10554
+eliminating variable Ti2216.5516.10550
+Let Tb2217.5517.10551
+eliminating variable Ti2220.5520.10559
+Let Ti2221.5519.10560
+eliminating variable Ti2220.5520
+Let Ti2221.5519
+eliminating variable Ti2223.5651
+Let Ti2224.5523
+eliminating function rad.3105
+eliminating function r_bright.3103
+eliminating function r_dvec.3101
+eliminating function r_surface_id.3099
+eliminating function p_set_group_id.3090
+eliminating function o_param_r3.3072
+eliminating function o_param_r2.3070
+eliminating function o_param_r1.3068
+eliminating function o_color_blue.3066
+eliminating function o_color_green.3064
+eliminating function o_color_red.3062
+eliminating function o_hilight.3060
+eliminating function o_isrot.3042
+eliminating function o_texturetype.3034
+eliminating function vecscale.3027
+eliminating function vecmul.3024
+eliminating function vecadd.3021
+eliminating function vecunit.3004
+eliminating function vecdist2.3001
+eliminating variable Ti2705.6433
+Let Ti.e.10728
+eliminating function fneg_cond.2982
+eliminating function addflag.2974
+eliminating function reduction_pi2.2972
+eliminating variable pidouble.2971
+others
+eliminating variable pi.2970
+others
+eliminating function fflag.2968
+eliminating function fhalf.2959
+eliminating variable Ti526.6526
+Let Ti527.6525
+eliminating function addflag.2918
+eliminating function reduction_pi2.2916
+eliminating variable pidouble.2915
+Let Ti505.6545
+eliminating variable pi.2914
+Let Ti505.6545
+eliminating function fflag.2912
+eliminating function fless.2909
+eliminating function fabs.2907
+eliminating function fsqr.2905
+eliminating function fhalf.2903
+eliminating function fiszero.2901
+eliminating function fisneg.2899
+eliminating function fispos.2897
+eliminating function fneg.2895
+eliminating variable light_dirvec.2892
+Let Ti496.6568
+eliminating variable Ti441.6632
+Let Ti442.6631
+eliminating function addflag.2862
+eliminating function reduction_pi2.2860
+eliminating variable pidouble.2859
+Let Ti420.6651
+eliminating variable pi.2858
+Let Ti420.6651
+eliminating function fflag.2856
+eliminating function fless.2853
+eliminating function fabs.2851
+eliminating function fsqr.2849
+eliminating function fhalf.2847
+eliminating function fiszero.2845
+eliminating function fisneg.2843
+eliminating function fispos.2841
+eliminating function fneg.2839
+eliminating variable light_dirvec.2836
+Let Ti411.6674
+eliminating variable Ti356.6738
+Let Ti357.6737
+eliminating function addflag.2806
+eliminating function reduction_pi2.2804
+eliminating variable pidouble.2803
+Let Ti335.6757
+eliminating variable pi.2802
+Let Ti335.6757
+eliminating function fflag.2800
+eliminating function fless.2797
+eliminating function fabs.2795
+eliminating function fsqr.2793
+eliminating function fhalf.2791
+eliminating function fiszero.2789
+eliminating function fisneg.2787
+eliminating function fispos.2785
+eliminating function fneg.2783
+eliminating variable light_dirvec.2780

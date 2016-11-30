@@ -1,0 +1,5087 @@
+free variable sqrt assumed as external
+free variable read_float assumed as external
+free variable cos assumed as external
+free variable sin assumed as external
+free variable read_int assumed as external
+free variable floor assumed as external
+free variable atan assumed as external
+free variable print_byte assumed as external
+free variable print_int assumed as external
+free variable int_of_float assumed as external
+free variable float_of_int assumed as external
+free variable print_float assumed as external
+iteration 2000
+inlining scan_line.3395
+inlining setup_reflections.3459
+inlining setup_dirvec_constants.3224
+inlining veccpy.2998
+inlining d_vec.3095
+inlining init_dirvecs.3444
+inlining write_ppm_header.3369
+inlining read_parameter.3126
+inlining create_pixelline.3408
+inlining create_pixelline.3408
+inlining create_pixelline.3408
+inlining o_form.3036
+inlining fless.2965
+inlining o_diffuse.3058
+inlining o_reflectiontype.3038
+inlining add_reflection.3446
+inlining o_param_c.3048
+inlining o_param_b.3046
+inlining o_param_a.3044
+inlining veciprod.3009
+inlining o_param_abc.3050
+inlining o_diffuse.3058
+inlining add_reflection.3446
+inlining add_reflection.3446
+inlining add_reflection.3446
+inlining fneg.2951
+inlining fneg.2951
+inlining fneg.2951
+inlining o_diffuse.3058
+inlining setup_dirvec_constants.3224
+inlining vecset.2988
+inlining d_vec.3095
+inlining create_dirvec.3432
+inlining init_vecset_constants.3442
+inlining calc_dirvec_rows.3428
+inlining create_dirvecs.3437
+inlining init_vecset_constants.3442
+inlining init_dirvec_constants.3439
+inlining init_dirvec_constants.3439
+inlining setup_dirvec_constants.3224
+inlining create_dirvecs.3437
+inlining create_dirvec_elements.3434
+inlining create_dirvec.3432
+inlining create_dirvec_elements.3434
+inlining create_dirvec.3432
+inlining calc_dirvec_rows.3428
+inlining add_mod5.2985
+inlining add_mod5.2985
+inlining adjust_position.3412
+inlining adjust_position.3412
+inlining vecset.2988
+inlining fneg.2951
+inlining d_vec.3095
+inlining vecset.2988
+inlining fneg.2951
+inlining fneg.2951
+inlining d_vec.3095
+inlining vecset.2988
+inlining fneg.2951
+inlining fneg.2951
+inlining fneg.2951
+inlining d_vec.3095
+inlining vecset.2988
+inlining fneg.2951
+inlining fneg.2951
+inlining d_vec.3095
+inlining vecset.2988
+inlining fneg.2951
+inlining d_vec.3095
+inlining vecset.2988
+inlining d_vec.3095
+inlining fsqr.2961
+inlining fsqr.2961
+inlining tan.3410
+inlining init_line_elements.3405
+inlining create_pixel.3403
+inlining init_line_elements.3405
+inlining create_pixel.3403
+inlining scan_line.3395
+inlining add_mod5.2985
+inlining scan_pixel.3389
+inlining scan_pixel.3389
+inlining write_rgb.3373
+inlining try_exploit_neighbors.3362
+inlining do_without_neighbors.3346
+inlining neighbors_exist.3349
+inlining veccpy.2998
+inlining p_rgb.3076
+inlining add_mod5.2985
+inlining pretrace_diffuse_rays.3375
+inlining p_set_group_id.3090
+inlining veccpy.2998
+inlining p_rgb.3076
+inlining veccpy.2998
+inlining vecbzero.2996
+inlining pretrace_diffuse_rays.3375
+inlining veccpy.2998
+inlining p_received_ray_20percent.3086
+inlining trace_diffuse_rays.3329
+inlining p_intersection_points.3078
+inlining p_nvectors.3093
+inlining vecbzero.2996
+inlining p_group_id.3088
+inlining p_calc_diffuse.3082
+inlining get_surface_id.3353
+inlining write_rgb_element.3371
+inlining write_rgb_element.3371
+inlining write_rgb_element.3371
+inlining try_exploit_neighbors.3362
+inlining p_calc_diffuse.3082
+inlining do_without_neighbors.3346
+inlining neighbors_are_available.3356
+inlining get_surface_id.3353
+inlining get_surface_id.3353
+inlining get_surface_id.3353
+inlining get_surface_id.3353
+inlining get_surface_id.3353
+inlining get_surface_id.3353
+inlining p_surface_ids.3080
+inlining do_without_neighbors.3346
+inlining calc_diffuse_using_1point.3337
+inlining p_calc_diffuse.3082
+inlining p_surface_ids.3080
+inlining p_energy.3084
+inlining vecadd.3021
+inlining vecadd.3021
+inlining vecadd.3021
+inlining vecadd.3021
+inlining veccpy.2998
+inlining p_received_ray_20percent.3086
+inlining p_received_ray_20percent.3086
+inlining p_received_ray_20percent.3086
+inlining p_received_ray_20percent.3086
+inlining p_received_ray_20percent.3086
+inlining trace_diffuse_ray_80percent.3333
+inlining p_group_id.3088
+inlining veccpy.2998
+inlining p_energy.3084
+inlining p_intersection_points.3078
+inlining p_nvectors.3093
+inlining p_received_ray_20percent.3086
+inlining trace_diffuse_rays.3329
+inlining trace_diffuse_rays.3329
+inlining trace_diffuse_rays.3329
+inlining trace_diffuse_rays.3329
+inlining trace_diffuse_rays.3329
+inlining iter_trace_diffuse_rays.3324
+inlining setup_startp.3229
+inlining iter_trace_diffuse_rays.3324
+inlining trace_diffuse_ray.3321
+inlining trace_diffuse_ray.3321
+inlining fisneg.2955
+inlining veciprod.3009
+inlining d_vec.3095
+inlining vecaccum.3017
+inlining o_diffuse.3058
+inlining fispos.2953
+inlining fneg.2951
+inlining veciprod.3009
+inlining get_nvector.3300
+inlining d_vec.3095
+inlining judge_intersection_fast.3292
+inlining o_diffuse.3058
+inlining fless.2965
+inlining setup_startp.3229
+inlining add_light.3306
+inlining fneg.2951
+inlining veciprod.3009
+inlining fneg.2951
+inlining veciprod.3009
+inlining o_hilight.3060
+inlining vecaccum.3017
+inlining veciprod.3009
+inlining veccpy.2998
+inlining p_nvectors.3093
+inlining vecscale.3027
+inlining veccpy.2998
+inlining p_energy.3084
+inlining fless.2965
+inlining o_diffuse.3058
+inlining p_calc_diffuse.3082
+inlining veccpy.2998
+inlining p_intersection_points.3078
+inlining veccpy.2998
+inlining get_nvector.3300
+inlining o_diffuse.3058
+inlining o_reflectiontype.3038
+inlining fsqr.2961
+inlining fispos.2953
+inlining fneg.2951
+inlining veciprod.3009
+inlining judge_intersection.3278
+inlining p_surface_ids.3080
+inlining add_light.3306
+inlining veciprod.3009
+inlining d_vec.3095
+inlining r_bright.3103
+inlining veciprod.3009
+inlining d_vec.3095
+inlining r_surface_id.3099
+inlining judge_intersection_fast.3292
+inlining r_dvec.3101
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fispos.2953
+inlining vecaccum.3017
+inlining fispos.2953
+inlining fisneg.2955
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fabs.2963
+inlining fless.2965
+inlining fabs.2963
+inlining o_param_b.3046
+inlining o_param_y.3054
+inlining fabs.2963
+inlining fless.2965
+inlining fabs.2963
+inlining fsqr.2961
+inlining fsqr.2961
+inlining o_param_c.3048
+inlining o_param_z.3056
+inlining o_param_a.3044
+inlining o_param_x.3052
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining o_param_z.3056
+inlining o_param_x.3052
+inlining fsqr.2961
+inlining fless.2965
+inlining o_param_z.3056
+inlining fless.2965
+inlining o_param_x.3052
+inlining o_color_blue.3066
+inlining o_color_green.3064
+inlining o_color_red.3062
+inlining o_texturetype.3034
+inlining get_nvector_plane.3296
+inlining get_nvector_rect.3294
+inlining o_form.3036
+inlining o_isinvert.3040
+inlining fhalf.2959
+inlining o_param_r1.3068
+inlining o_param_r2.3070
+inlining fhalf.2959
+inlining o_param_r1.3068
+inlining o_param_r3.3072
+inlining fhalf.2959
+inlining o_param_r2.3070
+inlining o_param_r3.3072
+inlining o_isrot.3042
+inlining o_param_c.3048
+inlining o_param_b.3046
+inlining o_param_a.3044
+inlining o_param_z.3056
+inlining o_param_y.3054
+inlining o_param_x.3052
+inlining fneg.2951
+inlining o_param_c.3048
+inlining fneg.2951
+inlining o_param_b.3046
+inlining fneg.2951
+inlining o_param_a.3044
+inlining fneg.2951
+inlining sgn.2980
+inlining vecbzero.2996
+inlining fless.2965
+inlining fless.2965
+inlining trace_or_matrix_fast.3288
+inlining trace_or_matrix_fast.3288
+inlining solve_one_or_network_fast.3284
+inlining fless.2965
+inlining solver_fast2.3209
+inlining solve_one_or_network_fast.3284
+inlining solve_one_or_network_fast.3284
+inlining vecset.2988
+inlining check_all_inside.3251
+inlining fless.2965
+inlining fless.2965
+inlining o_isinvert.3040
+inlining solver_fast2.3209
+inlining d_vec.3095
+inlining fless.2965
+inlining fless.2965
+inlining trace_or_matrix.3274
+inlining trace_or_matrix.3274
+inlining solve_one_or_network.3270
+inlining fless.2965
+inlining solver.3168
+inlining solve_one_or_network.3270
+inlining solve_one_or_network.3270
+inlining vecset.2988
+inlining check_all_inside.3251
+inlining fless.2965
+inlining fless.2965
+inlining o_isinvert.3040
+inlining solver.3168
+inlining shadow_check_one_or_group.3260
+inlining shadow_check_one_or_group.3260
+inlining fless.2965
+inlining solver_fast.3191
+inlining shadow_check_one_or_group.3260
+inlining check_all_inside.3251
+inlining o_isinvert.3040
+inlining fless.2965
+inlining solver_fast.3191
+inlining check_all_inside.3251
+inlining is_outside.3246
+inlining is_second_outside.3241
+inlining is_plane_outside.3236
+inlining is_rect_outside.3231
+inlining o_form.3036
+inlining o_param_z.3056
+inlining o_param_y.3054
+inlining o_param_x.3052
+inlining xor.2977
+inlining fisneg.2955
+inlining o_isinvert.3040
+inlining o_form.3036
+inlining xor.2977
+inlining fisneg.2955
+inlining o_isinvert.3040
+inlining veciprod2.3012
+inlining o_param_abc.3050
+inlining o_isinvert.3040
+inlining o_isinvert.3040
+inlining fless.2965
+inlining o_param_c.3048
+inlining fabs.2963
+inlining fless.2965
+inlining o_param_b.3046
+inlining fabs.2963
+inlining fless.2965
+inlining o_param_a.3044
+inlining fabs.2963
+inlining veccpy.2998
+inlining veciprod2.3012
+inlining o_param_abc.3050
+inlining o_param_z.3056
+inlining o_param_y.3054
+inlining o_param_x.3052
+inlining o_form.3036
+inlining o_param_ctbl.3074
+inlining iter_setup_dirvec_constants.3221
+inlining iter_setup_dirvec_constants.3221
+inlining o_form.3036
+inlining d_vec.3095
+inlining d_const.3097
+inlining fiszero.2957
+inlining fhalf.2959
+inlining o_param_r2.3070
+inlining o_param_r1.3068
+inlining fhalf.2959
+inlining o_param_r3.3072
+inlining o_param_r1.3068
+inlining fhalf.2959
+inlining o_param_r3.3072
+inlining o_param_r2.3070
+inlining o_isrot.3042
+inlining fneg.2951
+inlining o_param_c.3048
+inlining fneg.2951
+inlining o_param_b.3046
+inlining fneg.2951
+inlining o_param_a.3044
+inlining fneg.2951
+inlining o_param_c.3048
+inlining fneg.2951
+inlining o_param_b.3046
+inlining fneg.2951
+inlining o_param_a.3044
+inlining fispos.2953
+inlining o_param_c.3048
+inlining o_param_b.3046
+inlining o_param_a.3044
+inlining fneg_cond.2982
+inlining o_param_c.3048
+inlining xor.2977
+inlining fisneg.2955
+inlining o_isinvert.3040
+inlining fiszero.2957
+inlining fneg_cond.2982
+inlining o_param_b.3046
+inlining xor.2977
+inlining fisneg.2955
+inlining o_isinvert.3040
+inlining fiszero.2957
+inlining fneg_cond.2982
+inlining o_param_a.3044
+inlining xor.2977
+inlining fisneg.2955
+inlining o_isinvert.3040
+inlining fiszero.2957
+inlining solver_surface_fast2.3195
+inlining d_vec.3095
+inlining o_form.3036
+inlining d_const.3097
+inlining o_param_ctbl.3074
+inlining o_isinvert.3040
+inlining fispos.2953
+inlining fsqr.2961
+inlining fiszero.2957
+inlining fisneg.2955
+inlining solver_surface_fast.3179
+inlining d_vec.3095
+inlining o_form.3036
+inlining d_const.3097
+inlining o_param_z.3056
+inlining o_param_y.3054
+inlining o_param_x.3052
+inlining o_isinvert.3040
+inlining fispos.2953
+inlining fsqr.2961
+inlining o_form.3036
+inlining fiszero.2957
+inlining fisneg.2955
+inlining fiszero.2957
+inlining fless.2965
+inlining o_param_b.3046
+inlining fabs.2963
+inlining fless.2965
+inlining o_param_a.3044
+inlining fabs.2963
+inlining fiszero.2957
+inlining fless.2965
+inlining o_param_c.3048
+inlining fabs.2963
+inlining fless.2965
+inlining o_param_a.3044
+inlining fabs.2963
+inlining fiszero.2957
+inlining fless.2965
+inlining o_param_c.3048
+inlining fabs.2963
+inlining fless.2965
+inlining o_param_b.3046
+inlining fabs.2963
+inlining solver_surface.3143
+inlining solver_rect.3137
+inlining o_form.3036
+inlining o_param_z.3056
+inlining o_param_y.3054
+inlining o_param_x.3052
+inlining fneg.2951
+inlining o_isinvert.3040
+inlining fispos.2953
+inlining fsqr.2961
+inlining o_form.3036
+inlining fiszero.2957
+inlining fhalf.2959
+inlining o_param_r3.3072
+inlining o_param_r2.3070
+inlining o_param_r1.3068
+inlining o_isrot.3042
+inlining o_param_c.3048
+inlining o_param_b.3046
+inlining o_param_a.3044
+inlining o_param_r3.3072
+inlining o_param_r2.3070
+inlining o_param_r1.3068
+inlining o_isrot.3042
+inlining o_param_c.3048
+inlining fsqr.2961
+inlining o_param_b.3046
+inlining fsqr.2961
+inlining o_param_a.3044
+inlining fsqr.2961
+inlining fneg.2951
+inlining veciprod2.3012
+inlining fispos.2953
+inlining veciprod.3009
+inlining o_param_abc.3050
+inlining fless.2965
+inlining fabs.2963
+inlining fless.2965
+inlining fabs.2963
+inlining fneg_cond.2982
+inlining xor.2977
+inlining fisneg.2955
+inlining o_isinvert.3040
+inlining o_param_abc.3050
+inlining fiszero.2957
+inlining read_or_network.3122
+inlining read_and_network.3124
+inlining read_all_object.3118
+inlining read_light.3109
+inlining read_and_network.3124
+inlining read_net_item.3120
+inlining read_or_network.3122
+inlining read_net_item.3120
+inlining read_net_item.3120
+inlining read_object.3116
+inlining read_object.3116
+inlining fsqr.2961
+inlining sgn.2980
+inlining fiszero.2957
+inlining fsqr.2961
+inlining sgn.2980
+inlining fiszero.2957
+inlining fsqr.2961
+inlining sgn.2980
+inlining fiszero.2957
+inlining rad.3105
+inlining rad.3105
+inlining rad.3105
+inlining fisneg.2955
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fneg.2951
+inlining rad.3105
+inlining fneg.2951
+inlining rad.3105
+inlining fneg.2951
+inlining fneg.2951
+inlining fneg.2951
+inlining fneg.2951
+inlining rad.3105
+inlining rad.3105
+inlining fiszero.2957
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fsqr.2961
+inlining vecfill.2993
+inlining fneg.2951
+inlining fispos.2953
+inlining fiszero.2957
+inlining reduction_pi2.2972
+inlining fisneg.2955
+inlining fneg.2951
+inlining reduction_pi2.2916
+inlining fisneg.2899
+inlining fneg.2895
+inlining reduction_pi2.2860
+inlining fisneg.2843
+inlining fneg.2839
+inlining reduction_pi2.2804
+inlining fisneg.2787
+inlining fneg.2783
+eliminating variable Ti960.3968.6918
+Let Ti961.3966.6919
+eliminating variable Ti959.3967.6917
+Let Ti961.3966.6919
+eliminating variable xm_const.5875.6907
+Let m_vec.5874.6906
+eliminating variable Ti857.3816.6878
+Let Ti858.3815.6879
+eliminating variable Ti860.3812.6874
+Let Ti861.3809.6875
+eliminating variable Tu609.3492
+Let Tu241.3478
+eliminating variable Tu608.3493
+Let Tu242.3477
+eliminating variable Tu607.3494
+Let Tu243.3476
+eliminating variable Tu606.3495
+Let next.3475
+eliminating variable Tu605.3496
+Let cur.3474
+eliminating variable Tu604.3497
+Let prev.3473
+eliminating function setup_reflections.3459
+eliminating function add_reflection.3446
+eliminating function init_dirvecs.3444
+eliminating variable Ti701.3614.7177
+Let Ti702.3613.7178
+eliminating variable Ti699.3611.7174
+Let Tt700.3615.7175
+eliminating variable Ti715.3630.7203
+Let Ti716.3629.7204
+eliminating variable Ti712.3627.7199
+Let Tu713.3632.7200
+eliminating variable Tu705.3626
+Let Tt706.3625
+eliminating variable Tu713.3632
+Let Tt714.3631
+eliminating function adjust_position.3412
+eliminating function create_pixelline.3408
+eliminating variable Tu816.3760
+Let Tt817.3759
+eliminating variable Ti874.3826.7388
+Let Ti875.3825.7389
+eliminating variable Ti979.3979.7432
+Let Ti980.3978.7433
+eliminating variable Ti971.3971.7423
+Let Ti972.3972.7424
+eliminating variable Ti1009.4015.7443
+Let Ti1010.4014.7444
+eliminating variable Ti1004.4008.7435
+Let surface_ids.4009.7436
+eliminating variable Tu873.3827
+Let Tu201.3824
+eliminating variable Ti945.3918.7484
+Let Ti946.3917.7485
+eliminating variable Ti937.3912.7477
+Let sid.3913.7478
+eliminating function write_ppm_header.3369
+eliminating variable Ti1057.4089.7948
+Let Ti1058.4088.7949
+eliminating variable Ti1063.4081.7946
+Let Ti1064.4080.7947
+eliminating variable Ti1048.4077.7939
+Let Tt1049.4095.7940
+eliminating variable Ti1149.4155
+Let Ti1150.4154
+eliminating variable Ti1084.4228
+Let Ti1085.4227
+eliminating function add_light.3306
+eliminating variable Ti1411.4534.8935
+Let Ti1412.4533.8936
+eliminating variable Ti1400.4546.8931
+Let Ti1401.4531.8932
+eliminating variable Ti1416.4553.8972
+Let Ti1417.4552.8973
+eliminating variable Ti1413.4555.8967
+Let Ti1414.4549.8968
+eliminating variable Ti1416.4553.8995
+Let Ti1417.4552.8996
+eliminating variable Ti1413.4555.8990
+Let Ti1414.4549.8991
+eliminating variable Ti1400.4546.8950
+Let Ti1401.4531.8951
+eliminating variable Ti1400.4546
+Let Ti1401.4531
+eliminating variable Ti1413.4555.8998
+Let Ti1414.4549.8999
+eliminating variable Ti1413.4555
+Let Ti1414.4549
+eliminating variable Ti1594.4779.9016
+Let Ti1595.4778.9017
+eliminating variable Ti1589.4781.9011
+Let Ti1590.4775.9012
+eliminating variable Ti1418.4607
+Let Ti1419.4558
+eliminating function judge_intersection.3278
+eliminating variable Ti1485.4645.9093
+Let Ti1486.4644.9094
+eliminating variable Ti1482.4647.9088
+Let Ti1483.4641.9089
+eliminating variable Ti1485.4645.9118
+Let Ti1486.4644.9119
+eliminating variable Ti1482.4647.9113
+Let Ti1483.4641.9114
+eliminating variable Ti1469.4638.9071
+Let Ti1470.4623.9072
+eliminating variable Ti1469.4638
+Let Ti1470.4623
+eliminating variable Ti1482.4647.9121
+Let Ti1483.4641.9122
+eliminating variable Ti1482.4647
+Let Ti1483.4641
+eliminating variable Ti1594.4779.9139
+Let Ti1595.4778.9140
+eliminating variable Ti1589.4781.9134
+Let Ti1590.4775.9135
+eliminating variable Ti1487.4698
+Let Ti1488.4649
+eliminating variable Ti1553.4730.9186
+Let Ti1554.4729.9187
+eliminating variable Ti1549.4732.9180
+Let Ti1550.4725.9181
+eliminating variable Ti1553.4730.9177
+Let Ti1554.4729.9178
+eliminating variable Ti1549.4732.9171
+Let Ti1550.4725.9172
+eliminating variable Ti1528.4722
+Let Ti1529.4701
+eliminating variable Ti1549.4732.9209
+Let Ti1550.4725.9210
+eliminating variable Ti1549.4732
+Let Ti1550.4725
+eliminating variable Ti1594.4779.9223
+Let Ti1595.4778.9224
+eliminating variable Ti1589.4781.9218
+Let Ti1590.4775.9219
+eliminating variable Ti1556.4773
+Let Ti1557.4734
+eliminating variable Ti1589.4781.9257
+Let Ti1590.4775.9258
+eliminating variable Ti1589.4781
+Let Ti1590.4775
+eliminating function solver_fast.3191
+eliminating function read_parameter.3126
+eliminating variable Ti2213.5508.10506
+Let Ti2214.5507.10507
+eliminating variable Ti2211.5511.10512
+Let Ti2212.5510.10513
+eliminating variable Ti2209.5512.10510
+Let Ti2210.5509.10511
+eliminating variable Ti2207.5513.10504
+Let Ti2208.5504.10505
+eliminating variable Ti2193.5488.10497
+Let Ti2194.5484.10498
+eliminating variable Ti2193.5488
+Let Ti2194.5484
+eliminating variable Ti2213.5508.10530
+Let Ti2214.5507.10531
+eliminating variable Ti2211.5511.10536
+Let Ti2212.5510.10537
+eliminating variable Ti2209.5512.10534
+Let Ti2210.5509.10535
+eliminating variable Ti2207.5513.10528
+Let Ti2208.5504.10529
+eliminating variable Ti2200.5500.10518
+Let Ti2201.5493.10519
+eliminating variable Ti2200.5500
+Let Ti2201.5493
+eliminating variable Ti2211.5511.10548
+Let Ti2212.5510.10549
+eliminating variable Ti2207.5513.10540
+Let Ti2208.5504.10541
+eliminating variable Ti2211.5511
+Let Ti2212.5510
+eliminating variable Ti2207.5513
+Let Ti2208.5504
+eliminating variable Ti2220.5520.10553
+Let Ti2221.5519.10554
+eliminating variable Ti2216.5516.10550
+Let Tb2217.5517.10551
+eliminating variable Ti2223.5651
+Let Ti2224.5523
+eliminating function rad.3105
+eliminating function r_bright.3103
+eliminating function r_dvec.3101
+eliminating function r_surface_id.3099
+eliminating function p_set_group_id.3090
+eliminating function o_param_r3.3072
+eliminating function o_param_r2.3070
+eliminating function o_param_r1.3068
+eliminating function o_color_blue.3066
+eliminating function o_color_green.3064
+eliminating function o_color_red.3062
+eliminating function o_hilight.3060
+eliminating function o_isrot.3042
+eliminating function o_texturetype.3034
+eliminating function vecscale.3027
+eliminating function vecmul.3024
+eliminating function vecadd.3021
+eliminating function vecunit.3004
+eliminating function vecdist2.3001
+eliminating function fneg_cond.2982
+eliminating function addflag.2974
+eliminating function reduction_pi2.2972
+eliminating variable pidouble.2971
+others
+eliminating variable pi.2970
+others
+eliminating function fflag.2968
+eliminating function fhalf.2959
+eliminating variable Ti526.6526
+Let Ti527.6525
+eliminating function addflag.2918
+eliminating function reduction_pi2.2916
+eliminating variable pidouble.2915
+Let Ti505.6545
+eliminating variable pi.2914
+Let Ti505.6545
+eliminating function fflag.2912
+eliminating function fless.2909
+eliminating function fabs.2907
+eliminating function fsqr.2905
+eliminating function fhalf.2903
+eliminating function fiszero.2901
+eliminating function fisneg.2899
+eliminating function fispos.2897
+eliminating function fneg.2895
+eliminating variable light_dirvec.2892
+Let Ti496.6568
+eliminating variable Ti441.6632
+Let Ti442.6631
+eliminating function addflag.2862
+eliminating function reduction_pi2.2860
+eliminating variable pidouble.2859
+Let Ti420.6651
+eliminating variable pi.2858
+Let Ti420.6651
+eliminating function fflag.2856
+eliminating function fless.2853
+eliminating function fabs.2851
+eliminating function fsqr.2849
+eliminating function fhalf.2847
+eliminating function fiszero.2845
+eliminating function fisneg.2843
+eliminating function fispos.2841
+eliminating function fneg.2839
+eliminating variable light_dirvec.2836
+Let Ti411.6674
+eliminating variable Ti356.6738
+Let Ti357.6737
+eliminating function addflag.2806
+eliminating function reduction_pi2.2804
+eliminating variable pidouble.2803
+Let Ti335.6757
+eliminating variable pi.2802
+Let Ti335.6757
+eliminating function fflag.2800
+eliminating function fless.2797
+eliminating function fabs.2795
+eliminating function fsqr.2793
+eliminating function fhalf.2791
+eliminating function fiszero.2789
+eliminating function fisneg.2787
+eliminating function fispos.2785
+eliminating function fneg.2783
+eliminating variable light_dirvec.2780
+Let Ti326.6780
+eliminating variable Ti271.6844
+Let Ti272.6843
+iteration 1999
+beta-reducing m_vec.5874.6906 = v3.6465
+beta-reducing Ta610.3491 = v3.6465
+inlining add_mod5.2985
+inlining o_form.3036
+inlining fless.2965
+inlining o_diffuse.3058
+inlining o_reflectiontype.3038
+inlining init_vecset_constants.3442
+inlining read_all_object.3118
+inlining create_pixel.3403
+inlining create_pixel.3403
+inlining create_pixel.3403
+inlining setup_dirvec_constants.3224
+inlining vecset.2988
+inlining d_vec.3095
+inlining create_dirvec.3432
+inlining setup_dirvec_constants.3224
+inlining vecset.2988
+inlining d_vec.3095
+inlining create_dirvec.3432
+inlining setup_dirvec_constants.3224
+inlining vecset.2988
+inlining d_vec.3095
+inlining create_dirvec.3432
+inlining setup_dirvec_constants.3224
+inlining vecset.2988
+inlining d_vec.3095
+inlining create_dirvec.3432
+inlining init_vecset_constants.3442
+inlining init_dirvec_constants.3439
+inlining init_dirvec_constants.3439
+inlining setup_dirvec_constants.3224
+inlining init_dirvec_constants.3439
+inlining setup_dirvec_constants.3224
+inlining create_dirvec_elements.3434
+inlining create_dirvec.3432
+inlining create_dirvec_elements.3434
+inlining create_dirvec.3432
+inlining create_dirvec_elements.3434
+inlining create_dirvec.3432
+inlining add_mod5.2985
+inlining tan.3410
+inlining tan.3410
+inlining create_pixel.3403
+inlining add_mod5.2985
+inlining neighbors_exist.3349
+inlining veccpy.2998
+inlining p_rgb.3076
+inlining neighbors_exist.3349
+inlining veccpy.2998
+inlining p_rgb.3076
+inlining write_rgb_element.3371
+inlining write_rgb_element.3371
+inlining write_rgb_element.3371
+inlining p_calc_diffuse.3082
+inlining neighbors_are_available.3356
+inlining get_surface_id.3353
+inlining p_calc_diffuse.3082
+inlining p_surface_ids.3080
+inlining veccpy.2998
+inlining p_received_ray_20percent.3086
+inlining trace_diffuse_rays.3329
+inlining p_intersection_points.3078
+inlining p_nvectors.3093
+inlining vecbzero.2996
+inlining p_group_id.3088
+inlining p_calc_diffuse.3082
+inlining get_surface_id.3353
+inlining vecfill.2993
+inlining veccpy.2998
+inlining p_received_ray_20percent.3086
+inlining trace_diffuse_rays.3329
+inlining p_intersection_points.3078
+inlining p_nvectors.3093
+inlining vecbzero.2996
+inlining p_group_id.3088
+inlining p_calc_diffuse.3082
+inlining get_surface_id.3353
+inlining setup_startp.3229
+inlining vecfill.2993
+inlining p_surface_ids.3080
+inlining p_calc_diffuse.3082
+inlining neighbors_are_available.3356
+inlining get_surface_id.3353
+inlining p_calc_diffuse.3082
+inlining p_surface_ids.3080
+inlining get_surface_id.3353
+inlining get_surface_id.3353
+inlining get_surface_id.3353
+inlining get_surface_id.3353
+inlining get_surface_id.3353
+inlining p_surface_ids.3080
+inlining p_surface_ids.3080
+inlining p_surface_ids.3080
+inlining p_surface_ids.3080
+inlining p_surface_ids.3080
+inlining p_surface_ids.3080
+inlining p_calc_diffuse.3082
+inlining p_surface_ids.3080
+inlining p_group_id.3088
+inlining veccpy.2998
+inlining p_energy.3084
+inlining p_intersection_points.3078
+inlining p_nvectors.3093
+inlining p_received_ray_20percent.3086
+inlining trace_diffuse_rays.3329
+inlining trace_diffuse_rays.3329
+inlining trace_diffuse_rays.3329
+inlining trace_diffuse_rays.3329
+inlining trace_diffuse_rays.3329
+inlining setup_startp.3229
+inlining setup_startp.3229
+inlining setup_startp.3229
+inlining setup_startp.3229
+inlining setup_startp.3229
+inlining fisneg.2955
+inlining veciprod.3009
+inlining d_vec.3095
+inlining veccpy.2998
+inlining fisneg.2955
+inlining veciprod.3009
+inlining d_vec.3095
+inlining vecaccum.3017
+inlining o_diffuse.3058
+inlining fispos.2953
+inlining fneg.2951
+inlining veciprod.3009
+inlining d_vec.3095
+inlining vecaccum.3017
+inlining o_diffuse.3058
+inlining fispos.2953
+inlining fneg.2951
+inlining veciprod.3009
+inlining d_vec.3095
+inlining get_nvector_plane.3296
+inlining get_nvector_rect.3294
+inlining o_form.3036
+inlining fless.2965
+inlining fless.2965
+inlining fisneg.2955
+inlining veccpy.2998
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fispos.2953
+inlining vecaccum.3017
+inlining fispos.2953
+inlining fisneg.2955
+inlining get_nvector_plane.3296
+inlining get_nvector_rect.3294
+inlining o_form.3036
+inlining fless.2965
+inlining fless.2965
+inlining fsqr.2961
+inlining fsqr.2961
+inlining fispos.2953
+inlining vecaccum.3017
+inlining fispos.2953
+inlining fless.2965
+inlining fless.2965
+inlining fneg.2951
+inlining fisneg.2955
+inlining fneg.2951
+inlining fneg.2951
+inlining fisneg.2955
+inlining fneg.2951
+inlining fisneg.2955
+inlining fisneg.2955
+inlining fneg.2951
+inlining o_param_c.3048
+inlining fneg.2951
+inlining o_param_b.3046
+inlining fneg.2951
+inlining o_param_a.3044
+inlining fneg.2951
+inlining sgn.2980
+inlining vecbzero.2996
+inlining fispos.2953
+inlining fiszero.2957
+inlining vecfill.2993
+inlining fisneg.2955
+inlining fisneg.2955
+inlining solve_one_or_network_fast.3284
+inlining fless.2965
+inlining solve_one_or_network_fast.3284
+inlining solve_one_or_network_fast.3284
+inlining fless.2965
+inlining solve_one_or_network_fast.3284
+inlining solve_one_or_network_fast.3284
+inlining fisneg.2955
+inlining solver_surface_fast2.3195
+inlining d_vec.3095
+inlining o_form.3036
+inlining d_const.3097
+inlining o_param_ctbl.3074
+inlining solve_one_or_network_fast.3284
+inlining solve_one_or_network_fast.3284
+inlining fisneg.2955
+inlining fisneg.2955
+inlining solver_surface_fast2.3195
+inlining d_vec.3095
+inlining o_form.3036
+inlining d_const.3097
+inlining o_param_ctbl.3074
+inlining solve_one_or_network.3270
+inlining fless.2965
+inlining solve_one_or_network.3270
+inlining solve_one_or_network.3270
+inlining fisneg.2955
+inlining solver_rect.3137
+inlining o_form.3036
+inlining o_param_z.3056
+inlining o_param_y.3054
+inlining o_param_x.3052
+inlining solve_one_or_network.3270
+inlining solve_one_or_network.3270
+inlining fisneg.2955
+inlining fisneg.2955
+inlining solver_rect.3137
+inlining o_form.3036
+inlining o_param_z.3056
+inlining o_param_y.3054
+inlining o_param_x.3052
+inlining shadow_check_one_or_group.3260
+inlining shadow_check_one_or_group.3260
+inlining fisneg.2955
+inlining solver_surface_fast.3179
+inlining d_vec.3095
+inlining o_form.3036
+inlining d_const.3097
+inlining o_param_z.3056
+inlining o_param_y.3054
+inlining o_param_x.3052
+inlining shadow_check_one_or_group.3260
+inlining fisneg.2955
+inlining solver_surface_fast.3179
+inlining d_vec.3095
+inlining o_form.3036
+inlining d_const.3097
+inlining o_param_z.3056
+inlining o_param_y.3054
+inlining o_param_x.3052
+inlining is_second_outside.3241
+inlining is_plane_outside.3236
+inlining o_form.3036
+inlining o_param_z.3056
+inlining o_param_y.3054
+inlining o_param_x.3052
+inlining xor.2977
+inlining fisneg.2955
+inlining o_isinvert.3040
+inlining o_form.3036
+inlining xor.2977
+inlining fisneg.2955
+inlining o_isinvert.3040
+inlining veciprod2.3012
+inlining o_param_abc.3050
+inlining o_isinvert.3040
+inlining o_isinvert.3040
+inlining fless.2965
+inlining o_param_c.3048
+inlining fabs.2963
+inlining fless.2965
+inlining o_param_b.3046
+inlining fabs.2963
+inlining fless.2965
+inlining o_param_a.3044
+inlining fabs.2963
+inlining fisneg.2955
+inlining fneg.2951
+inlining fisneg.2955
+inlining fneg.2951
+inlining fisneg.2955
+inlining fneg.2951
+inlining o_form.3036
+inlining d_vec.3095
+inlining d_const.3097
+inlining o_form.3036
+inlining d_vec.3095
+inlining d_const.3097
+inlining fneg.2951
+inlining fneg.2951
+inlining fneg.2951
+inlining fisneg.2955
+inlining fisneg.2955
+inlining fneg.2951
+inlining fisneg.2955
+inlining fneg.2951
+inlining fisneg.2955
+inlining fneg.2951
+inlining fisneg.2955
+inlining fneg.2951
+inlining fisneg.2955
+inlining fneg.2951
+inlining fisneg.2955
+inlining fneg.2951
+inlining fneg.2951
+inlining veciprod2.3012
+inlining fispos.2953
+inlining veciprod.3009
+inlining o_param_abc.3050
+inlining fisneg.2955
+inlining fneg.2951
+inlining fisneg.2955
+inlining fneg.2951
+inlining fneg.2951
+inlining read_net_item.3120
+inlining read_net_item.3120
+inlining read_net_item.3120
+inlining read_net_item.3120
+inlining read_net_item.3120
+inlining read_object.3116
+inlining read_object.3116
+inlining fispos.2953
+inlining fiszero.2957
+inlining fispos.2953
+inlining fiszero.2957
+inlining fispos.2953
+inlining fiszero.2957
+eliminating variable Ti697.3608.7172.10653
+Let Ti698.3607.7173.10654
+eliminating variable Ti694.3605.7168.10649
+Let Ta695.3609.7169.10650
+eliminating variable Ti697.3608.10647
+Let Ti698.3607.10648
+eliminating variable Ti694.3605.10640
+Let Ta695.3609.10641
+eliminating variable Ti2704.6432.10602
+others
+eliminating variable sum.6431.10601
+others
+eliminating variable Ti862.3811.6876
+Let Ti863.3810.6877
+eliminating variable Tu2185.5479.6940
+Let Tu70.5473.6941
+eliminating variable Tu809.3753.6949
+Let Tt810.3752.6950
+eliminating variable Tu809.3753.6958
+Let Tt810.3752.6959
+eliminating variable Tu809.3753.6967
+Let Tt810.3752.6968
+eliminating variable Tu686.3597.7009
+Let dvec.3592.7010
+eliminating variable Tu686.3597.7090
+Let dvec.3592.7091
+eliminating variable Tu686.3597.7096
+Let dvec.3592.7097
+eliminating variable Tu686.3597.7102
+Let dvec.3592.7103
+eliminating variable Ti701.3614.7182.10881
+Let Ti702.3613.7183.10882
+eliminating variable Ti699.3611.7179.10878
+Let Tt700.3615.7180.10879
+eliminating variable Ti701.3614.10876
+Let Ti702.3613.10877
+eliminating variable Ti699.3611.10869
+Let Tt700.3615.10870
+eliminating variable Ti701.3614.7182.10867
+Let Ti702.3613.7183.10868
+eliminating variable Ti699.3611.7179.10864
+Let Tt700.3615.7180.10865
+eliminating variable Ti701.3614.10862
+Let Ti702.3613.10863
+eliminating variable Ti699.3611.10855
+Let Tt700.3615.10856
+eliminating variable Ti715.3630.7215.10969
+Let Ti716.3629.7216.10970
+eliminating variable Ti712.3627.7211.10965
+Let Tu713.3632.7212.10966
+eliminating variable Ti715.3630.10963
+Let Ti716.3629.10964
+eliminating variable Ti712.3627.10954
+Let Ti717.3637.7217.10955
+eliminating variable Ti715.3630.7215.10946
+Let Ti716.3629.7216.10947
+eliminating variable Ti712.3627.7211.10942
+Let Tu713.3632.7212.10943
+eliminating variable Ti715.3630.10940
+Let Ti716.3629.10941
+eliminating variable Ti712.3627.10931
+Let Ti717.3637.7217.10932
+eliminating variable Tu705.3626.7190
+Let Tt706.3625.7191
+eliminating variable Tu713.3632.7200
+Let Tt714.3631.7201
+eliminating variable Tu713.3632.7212
+Let Tt714.3631.7213
+eliminating function tan.3410
+eliminating variable Tu816.3760.7335
+Let Tt817.3759.7336
+eliminating function create_pixel.3403
+eliminating variable Ti1003.4003.11041
+others
+eliminating variable Ti1001.4004.11039
+Let Ti1002.4002.11040
+eliminating function write_rgb_element.3371
+eliminating function neighbors_are_available.3356
+eliminating function get_surface_id.3353
+eliminating function neighbors_exist.3349
+eliminating function trace_diffuse_rays.3329
+eliminating function get_nvector_plane.3296
+eliminating function get_nvector_rect.3294
+eliminating variable Ti1416.4553.9003.12227
+Let Ti1417.4552.9004.12228
+eliminating variable Ti1416.4553.12220
+Let Ti1417.4552.12221
+eliminating variable Ti1416.4553.9003.12243
+Let Ti1417.4552.9004.12244
+eliminating variable Ti1416.4553.12236
+Let Ti1417.4552.12237
+eliminating variable Ti1416.4553.9003.12287
+Let Ti1417.4552.9004.12288
+eliminating variable Ti1416.4553.12280
+Let Ti1417.4552.12281
+eliminating variable Ti1416.4553.9003.12340
+Let Ti1417.4552.9004.12341
+eliminating variable Ti1416.4553.12333
+Let Ti1417.4552.12334
+eliminating variable Ti1416.4553.9003.12257
+Let Ti1417.4552.9004.12258
+eliminating variable Ti1416.4553.12250
+Let Ti1417.4552.12251
+eliminating variable Ti1416.4553.9003.12273
+Let Ti1417.4552.9004.12274
+eliminating variable Ti1416.4553.12266
+Let Ti1417.4552.12267
+eliminating variable Ti1485.4645.9126.12438
+Let Ti1486.4644.9127.12439
+eliminating variable Ti1485.4645.12431
+Let Ti1486.4644.12432
+eliminating variable Ti1485.4645.9126.12515
+Let Ti1486.4644.9127.12516
+eliminating variable Ti1485.4645.12508
+Let Ti1486.4644.12509
+eliminating variable Ti1485.4645.9126.12408
+Let Ti1486.4644.9127.12409
+eliminating variable Ti1485.4645.12401
+Let Ti1486.4644.12402
+eliminating variable Ti1485.4645.9126.12424
+Let Ti1486.4644.9127.12425
+eliminating variable Ti1485.4645.12417
+Let Ti1486.4644.12418
+eliminating variable dm_vec.5872.12659
+others
+eliminating variable xm_const.5875.12647
+Let m_vec.5874.12646
+eliminating variable Ti1553.4730.9215.12625
+Let Ti1554.4729.9216.12626
+eliminating variable Ti1553.4730.12617
+Let Ti1554.4729.12618
+eliminating variable Ti1553.4730.9215.12609
+Let Ti1554.4729.9216.12610
+eliminating variable Ti1553.4730.12601
+Let Ti1554.4729.12602
+eliminating variable dm_vec.5872.12745
+others
+eliminating variable xm_const.5875.12733
+Let m_vec.5874.12732
+eliminating function is_second_outside.3241
+eliminating function is_plane_outside.3236
+eliminating function setup_startp.3229
+eliminating function solver_surface_fast2.3195
+eliminating function solver_surface_fast.3179
+eliminating function solver_rect.3137
+eliminating variable Ti2213.5508.10542.13142
+Let Ti2214.5507.10543.13143
+eliminating variable Ti2209.5512.10546.13146
+Let Ti2210.5509.10547.13147
+eliminating variable Ti2213.5508.13135
+Let Ti2214.5507.13136
+eliminating variable Ti2209.5512.13149
+Let Ti2210.5509.13150
+eliminating variable Ti2213.5508.10542.13122
+Let Ti2214.5507.10543.13123
+eliminating variable Ti2209.5512.10546.13126
+Let Ti2210.5509.10547.13127
+eliminating variable Ti2213.5508.13115
+Let Ti2214.5507.13116
+eliminating variable Ti2209.5512.13129
+Let Ti2210.5509.13130
+eliminating variable Ti2213.5508.10542.13182
+Let Ti2214.5507.10543.13183
+eliminating variable Ti2209.5512.10546.13186
+Let Ti2210.5509.10547.13187
+eliminating variable Ti2213.5508.13175
+Let Ti2214.5507.13176
+eliminating variable Ti2209.5512.13189
+Let Ti2210.5509.13190
+eliminating variable Ti2213.5508.10542.13162
+Let Ti2214.5507.10543.13163
+eliminating variable Ti2209.5512.10546.13166
+Let Ti2210.5509.10547.13167
+eliminating variable Ti2213.5508.13155
+Let Ti2214.5507.13156
+eliminating variable Ti2209.5512.13169
+Let Ti2210.5509.13170
+eliminating function read_all_object.3118
+eliminating function p_nvectors.3093
+eliminating function p_group_id.3088
+eliminating function p_received_ray_20percent.3086
+eliminating function p_energy.3084
+eliminating function p_calc_diffuse.3082
+eliminating function p_intersection_points.3078
+eliminating function p_rgb.3076
+eliminating function o_param_ctbl.3074
+eliminating function o_diffuse.3058
+eliminating function o_param_z.3056
+eliminating function o_param_y.3054
+eliminating function o_param_x.3052
+eliminating function o_param_abc.3050
+eliminating function o_param_c.3048
+eliminating function o_param_b.3046
+eliminating function o_param_a.3044
+eliminating function o_isinvert.3040
+eliminating function o_reflectiontype.3038
+eliminating function vecaccum.3017
+eliminating function veciprod2.3012
+eliminating function vecbzero.2996
+eliminating function vecset.2988
+eliminating function add_mod5.2985
+eliminating function sgn.2980
+eliminating function xor.2977
+eliminating function fless.2965
+eliminating function fabs.2963
+eliminating function fsqr.2961
+eliminating function fneg.2951
+iteration 1998
+beta-reducing Ta633.3549 = m_abc.6097.7071
+beta-reducing Ta765.3722 = m_vec.5874.7303
+beta-reducing Ta769.3717 = m_vec.5874.7296
+beta-reducing Ta774.3711 = m_vec.5874.7289
+beta-reducing Ta780.3704 = m_vec.5874.7282
+beta-reducing Ta787.3698 = m_vec.5874.7275
+beta-reducing Ta793.3693 = m_vec.5874.7268
+beta-reducing Ta867.3833 = m_rgb.5942.7466
+beta-reducing surface_ids.3997.11137 = m_sids.5928.7676.11131
+beta-reducing Ta929.3884 = m_rgb.5942.7516
+beta-reducing surface_ids.3997.11243 = m_sids.5928.7676.11237
+beta-reducing calc_diffuse.3915 = m_cdif.5921.7605
+beta-reducing nvectors.3923 = m_nvectors.5883.7591
+beta-reducing intersection_points.3924 = m_isect_ps.5935.7577
+beta-reducing ray20p.3926 = m_r20p.5907.7571
+beta-reducing surface_ids.3997.11338 = m_sids.5928.7676.11332
+beta-reducing surface_ids.3997.11464 = m_sids.5928.7676.11458
+beta-reducing surface_ids.3997.11455 = m_sids.5928.7676.11449
+beta-reducing surface_ids.3997.11446 = m_sids.5928.7676.11440
+beta-reducing surface_ids.3997.11437 = m_sids.5928.7676.11431
+beta-reducing surface_ids.3997.11428 = m_sids.5928.7676.11422
+beta-reducing calc_diffuse.3976 = m_cdif.5921.7639
+beta-reducing surface_ids.3997.11403 = m_sids.5928.7676.11397
+beta-reducing surface_ids.4009 = m_sids.5928.7713
+beta-reducing calc_diffuse.4012 = m_cdif.5921.7706
+beta-reducing r_up.4018 = m_r20p.5907.7855
+beta-reducing r_left.4019 = m_r20p.5907.7847
+beta-reducing r_center.4020 = m_r20p.5907.7839
+beta-reducing r_right.4021 = m_r20p.5907.7831
+beta-reducing r_down.4022 = m_r20p.5907.7823
+beta-reducing energya.4028 = m_engy.5914.7723
+beta-reducing ray20p.4045 = m_r20p.5907.7926
+beta-reducing nvectors.4046 = m_nvectors.5883.7920
+beta-reducing intersection_points.4047 = m_isect_ps.5935.7906
+beta-reducing energya.4048 = m_engy.5914.7901
+beta-reducing Ta1050.4094 = m_vec.5874.8041
+beta-reducing Ta1069.4114 = m_vec.5874.8098
+beta-reducing surface_ids.4118 = m_sids.5928.8397
+beta-reducing m_surface.4123 = m_surface.6164.8356
+beta-reducing intersection_points.4129 = m_isect_ps.5935.8321
+beta-reducing calc_diffuse.4131 = m_cdif.5921.8304
+beta-reducing energya.4179 = m_engy.5914.8284
+beta-reducing nvectors.4182 = m_nvectors.5883.8254
+beta-reducing dvec.4231 = m_dvec.5867.8481
+beta-reducing Ti1168.4238 = m_sid.5869.8464
+beta-reducing Ta1174.4248 = m_vec.5874.8462
+beta-reducing scale.4242 = m_br.5865.8445
+beta-reducing Ta1176.4246 = m_vec.5874.8441
+beta-reducing m_tex.4279 = m_tex.6184.8673
+beta-reducing m_shape.4439 = m_shape.6174.8706
+beta-reducing Ti1342.4450 = m_isrot.6143.8805
+beta-reducing Tb1371.4449 = m_invert.6157.8722
+beta-reducing vec.4556 = m_vec.5874.9045
+beta-reducing Tb1422.4602 = m_invert.6157.9026
+beta-reducing Tb1491.4693 = m_invert.6157.9149
+beta-reducing m_const.5873.12660 = consts.6466
+beta-reducing dconsts.5148.9202 = consts.6466
+beta-reducing m_vec.5874.12646 = v3.6465
+beta-reducing Ta1908.5153.9207 = v3.6465
+beta-reducing m_const.5873.12746 = consts.6466
+beta-reducing dconsts.5148.9250 = consts.6466
+beta-reducing m_vec.5874.12732 = v3.6465
+beta-reducing Ta1908.5153.9255 = v3.6465
+beta-reducing Tb1564.4765 = m_invert.6157.9231
+beta-reducing Ti1601.4797.12795 = m_shape.6174.9364.12785
+beta-reducing Tb1604.4795.12809 = m_invert.6157.9358.12804
+beta-reducing Ta1608.4805.12828 = m_abc.6097.9402.12821
+beta-reducing Tb1609.4803.12851 = m_invert.6157.9383.12846
+beta-reducing m_shape.4785 = m_shape.6174.9303
+beta-reducing Tb1625.4808 = m_invert.6157.9426
+beta-reducing sconst.4827 = m_ctbl.5960.9562
+beta-reducing m_shape.4828 = m_shape.6174.9542
+beta-reducing Ta1649.4850 = m_abc.6097.9498
+beta-reducing dconst.4878 = m_const.5873.9603
+beta-reducing v.4879 = m_vec.5874.9600
+beta-reducing m_shape.4880 = m_shape.6174.9590
+beta-reducing Ti1703.4903 = m_isrot.6143.9683
+beta-reducing Tb1795.5074 = m_invert.6157.9878
+beta-reducing Tb1815.5053 = m_invert.6157.9850
+beta-reducing Tb1835.5032 = m_invert.6157.9822
+beta-reducing sconst.5083 = m_ctbl.5960.9920
+beta-reducing dconsts.5087 = m_const.5873.9909
+beta-reducing m_shape.5089 = m_shape.6174.9898
+beta-reducing Ta1854.5092 = m_vec.5874.9895
+beta-reducing Tb1874.5105 = m_invert.6157.9927
+beta-reducing Ti1923.5189 = m_shape.6174.10016
+beta-reducing Tb1930.5173 = m_invert.6157.10009
+beta-reducing m_shape.5314 = m_shape.6174.10141
+beta-reducing Ti2069.5346 = m_shape.6174.10200
+beta-reducing Tb2076.5342 = m_invert.6157.10193
+beta-reducing Ti2092.5362 = m_isrot.6143.10251
+beta-reducing Ti2122.5393 = m_isrot.6143.10334
+beta-reducing abc.5416 = m_abc.6097.10409
+beta-reducing abc.5443 = m_abc.6097.10439
+beta-reducing Tb2160.5467 = m_invert.6157.10430
+inlining setup_dirvec_constants.3224
+inlining o_form.3036
+inlining d_vec.3095
+inlining d_const.3097
+inlining o_form.3036
+inlining d_vec.3095
+inlining d_const.3097
+inlining o_form.3036
+inlining d_vec.3095
+inlining d_const.3097
+inlining o_form.3036
+inlining d_vec.3095
+inlining d_const.3097
+inlining setup_dirvec_constants.3224
+inlining setup_dirvec_constants.3224
+inlining setup_dirvec_constants.3224
+inlining o_form.3036
+inlining d_vec.3095
+inlining d_const.3097
+inlining setup_dirvec_constants.3224
+inlining o_form.3036
+inlining d_vec.3095
+inlining d_const.3097
+inlining create_dirvec.3432
+inlining create_dirvec.3432
+inlining create_dirvec.3432
+inlining p_surface_ids.3080
+inlining p_surface_ids.3080
+inlining p_surface_ids.3080
+inlining p_surface_ids.3080
+inlining p_surface_ids.3080
+inlining fisneg.2955
+inlining veciprod.3009
+inlining d_vec.3095
+inlining veccpy.2998
+inlining fisneg.2955
+inlining veciprod.3009
+inlining d_vec.3095
+inlining veccpy.2998
+inlining p_surface_ids.3080
+inlining p_surface_ids.3080
+inlining p_surface_ids.3080
+inlining p_surface_ids.3080
+inlining p_surface_ids.3080
+inlining fisneg.2955
+inlining veciprod.3009
+inlining d_vec.3095
+inlining veccpy.2998
+inlining fisneg.2955
+inlining veciprod.3009
+inlining d_vec.3095
+inlining veccpy.2998
+inlining fisneg.2955
+inlining veciprod.3009
+inlining d_vec.3095
+inlining veccpy.2998
+inlining fisneg.2955
+inlining veciprod.3009
+inlining d_vec.3095
+inlining veccpy.2998
+inlining fisneg.2955
+inlining veciprod.3009
+inlining d_vec.3095
+inlining veccpy.2998
+inlining fispos.2953
+inlining fiszero.2957
+inlining vecfill.2993
+inlining fispos.2953
+inlining fiszero.2957
+inlining vecfill.2993
+eliminating variable dm_vec.5872.13287
+others
+eliminating variable xm_const.5875.13286
+Let m_vec.5874.13285
+eliminating variable xm_const.5875.10743
+Let m_vec.5874.10742
+eliminating variable dm_vec.5872.13332
+others
+eliminating variable xm_const.5875.13331
+Let m_vec.5874.13330
+eliminating variable dm_vec.5872.13317
+others
+eliminating variable xm_const.5875.13316
+Let m_vec.5874.13315
+eliminating variable dm_vec.5872.13302
+others
+eliminating variable xm_const.5875.13301
+Let m_vec.5874.13300
+eliminating variable xm_const.5875.10773
+Let m_vec.5874.10772
+eliminating variable xm_const.5875.10803
+Let m_vec.5874.10802
+eliminating variable xm_const.5875.10833
+Let m_vec.5874.10832
+eliminating variable Tu713.3632.7212.10943
+Let Tt714.3631.7213.10944
+eliminating variable Tu713.3632.7212.10966
+Let Tt714.3631.7213.10967
+eliminating variable Tu713.3632.7212.10989
+Let Tt714.3631.7213.10990
+eliminating function create_dirvec.3432
+eliminating function setup_dirvec_constants.3224
+eliminating function d_const.3097
+eliminating function d_vec.3095
+eliminating function p_surface_ids.3080
+eliminating function o_form.3036
+eliminating function veciprod.3009
+eliminating function veccpy.2998
+eliminating function vecfill.2993
+eliminating function fiszero.2957
+eliminating function fisneg.2955
+eliminating function fispos.2953
+iteration 1997
+beta-reducing dconst.4878.9565.13250 = m_const.5873.13049.13249
+beta-reducing v.4879.9566.13253 = m_vec.5874.13046.13251
+beta-reducing m_shape.4880.9567.13265 = m_shape.6174.13036.13255
+beta-reducing Ti620.3511.6882 = m_surface.6164.10631
+beta-reducing m_shape.3515.6888 = m_shape.6174.10605
+beta-reducing m_vec.5874.10742 = v3.3633.10746
+beta-reducing Ta687.3596.7011 = v3.3633.10746
+beta-reducing m_const.5873.13288 = consts.3634.10749
+beta-reducing dconst.4878.9565.10726 = consts.3634.10749
+beta-reducing m_vec.5874.13285 = v3.3633.10746
+beta-reducing v.4879.9566.10727 = v3.3633.10746
+beta-reducing m_vec.5874.10832 = v3.3633.10836
+beta-reducing Ta687.3596.7104 = v3.3633.10836
+beta-reducing m_const.5873.13333 = consts.3634.10839
+beta-reducing dconst.4878.9565.10816 = consts.3634.10839
+beta-reducing m_vec.5874.13330 = v3.3633.10836
+beta-reducing v.4879.9566.10817 = v3.3633.10836
+beta-reducing m_vec.5874.10802 = v3.3633.10806
+beta-reducing Ta687.3596.7098 = v3.3633.10806
+beta-reducing m_const.5873.13318 = consts.3634.10809
+beta-reducing dconst.4878.9565.10786 = consts.3634.10809
+beta-reducing m_vec.5874.13315 = v3.3633.10806
+beta-reducing v.4879.9566.10787 = v3.3633.10806
+beta-reducing m_vec.5874.10772 = v3.3633.10776
+beta-reducing Ta687.3596.7092 = v3.3633.10776
+beta-reducing m_const.5873.13303 = consts.3634.10779
+beta-reducing dconst.4878.9565.10756 = consts.3634.10779
+beta-reducing m_vec.5874.13300 = v3.3633.10776
+beta-reducing v.4879.9566.10757 = v3.3633.10776
+beta-reducing dconst.4878.9565.13406 = m_const.5873.13049.13405
+beta-reducing v.4879.9566.13409 = m_vec.5874.13046.13407
+beta-reducing m_shape.4880.9567.13421 = m_shape.6174.13036.13411
+beta-reducing dconst.4878.9565.13374 = m_const.5873.13049.13373
+beta-reducing v.4879.9566.13377 = m_vec.5874.13046.13375
+beta-reducing m_shape.4880.9567.13389 = m_shape.6174.13036.13379
+beta-reducing dconst.4878.9565.13342 = m_const.5873.13049.13341
+beta-reducing v.4879.9566.13345 = m_vec.5874.13046.13343
+beta-reducing m_shape.4880.9567.13357 = m_shape.6174.13036.13347
+beta-reducing dconst.4878.9565.13453 = m_const.5873.13049.13452
+beta-reducing v.4879.9566.13456 = m_vec.5874.13046.13454
+beta-reducing m_shape.4880.9567.13468 = m_shape.6174.13036.13458
+beta-reducing Ta867.3833.7381 = m_rgb.5942.11053
+beta-reducing calc_diffuse.3976.7428 = m_cdif.5921.11105
+beta-reducing surface_ids.4009.7436 = m_sids.5928.11148
+beta-reducing calc_diffuse.4012.7439 = m_cdif.5921.11141
+beta-reducing Ta867.3833.7396 = m_rgb.5942.11082
+beta-reducing calc_diffuse.3915.7480 = m_cdif.5921.11230
+beta-reducing nvectors.3923.7488 = m_nvectors.5883.11211
+beta-reducing intersection_points.3924.7489 = m_isect_ps.5935.11197
+beta-reducing ray20p.3926.7494 = m_r20p.5907.11170
+beta-reducing surface_ids.3997.7610 = m_sids.5928.11362
+beta-reducing calc_diffuse.3915.7539 = m_cdif.5921.11325
+beta-reducing nvectors.3923.7547 = m_nvectors.5883.11306
+beta-reducing intersection_points.3924.7548 = m_isect_ps.5935.11292
+beta-reducing ray20p.3926.7553 = m_r20p.5907.11265
+beta-reducing surface_ids.3997.7668 = m_sids.5928.11467
+beta-reducing calc_diffuse.3976.7629 = m_cdif.5921.11371
+beta-reducing surface_ids.4009.7645 = m_sids.5928.11414
+beta-reducing calc_diffuse.4012.7648 = m_cdif.5921.11407
+beta-reducing ray20p.4045.7692 = m_r20p.5907.11578
+beta-reducing nvectors.4046.7693 = m_nvectors.5883.11572
+beta-reducing intersection_points.4047.7694 = m_isect_ps.5935.11558
+beta-reducing energya.4048.7695 = m_engy.5914.11553
+beta-reducing surface_ids.4009.7683 = m_sids.5928.11523
+beta-reducing calc_diffuse.4012.7686 = m_cdif.5921.11516
+beta-reducing Ta1069.4114.7987 = m_vec.5874.11877
+beta-reducing Ta1069.4114.8008 = m_vec.5874.11931
+beta-reducing Ta1050.4094.7965 = m_vec.5874.11823
+beta-reducing m_shape.4439.8095 = m_shape.6174.11996
+beta-reducing m_shape.4439.8339 = m_shape.6174.12111
+beta-reducing sconst.5083.8976 = m_ctbl.5960.12327
+beta-reducing dconsts.5087.8983 = m_const.5873.12316
+beta-reducing m_shape.5089.8985 = m_shape.6174.12305
+beta-reducing Ta1854.5092.8988 = m_vec.5874.12302
+beta-reducing sconst.5083.9032 = m_ctbl.5960.12395
+beta-reducing dconsts.5087.9039 = m_const.5873.12384
+beta-reducing m_shape.5089.9041 = m_shape.6174.12373
+beta-reducing Ta1854.5092.9044 = m_vec.5874.12370
+beta-reducing m_shape.5314.9109 = m_shape.6174.12457
+beta-reducing m_shape.5314.9167 = m_shape.6174.12549
+beta-reducing m_shape.5150.9204 = m_shape.6174.12649
+beta-reducing m_shape.5150.9252 = m_shape.6174.12735
+beta-reducing m_shape.4785.9270 = m_shape.6174.12859
+beta-reducing Ti1601.4797.9274 = m_shape.6174.12920
+beta-reducing Tb1604.4795.9277 = m_invert.6157.12914
+beta-reducing Ta1608.4805.9282 = m_abc.6097.12958
+beta-reducing Tb1609.4803.9284 = m_invert.6157.12939
+beta-reducing Tb1625.4808.9294 = m_invert.6157.12982
+beta-reducing dconst.4878.9578 = m_const.5873.13064
+beta-reducing v.4879.9579 = m_vec.5874.13061
+beta-reducing m_shape.4880.9580 = m_shape.6174.13051
+beta-reducing abc.5416.10115 = m_abc.6097.13103
+iteration 1996
+beta-reducing m_shape.4880.9567.10728 = m_shape.6174.13275
+beta-reducing m_shape.4880.9567.10818 = m_shape.6174.13320
+beta-reducing m_shape.4880.9567.10788 = m_shape.6174.13305
+beta-reducing m_shape.4880.9567.10758 = m_shape.6174.13290
+beta-reducing dconst.4878.9565.10889 = m_const.5873.13444
+beta-reducing v.4879.9566.10890 = m_vec.5874.13441
+beta-reducing m_shape.4880.9567.10891 = m_shape.6174.13431
+beta-reducing dconst.4878.9565.10920 = m_const.5873.13491
+beta-reducing v.4879.9566.10921 = m_vec.5874.13488
+beta-reducing m_shape.4880.9567.10922 = m_shape.6174.13478
+beta-reducing surface_ids.3997.7673.11111 = m_sids.5928.13544
+beta-reducing surface_ids.3997.7672.11114 = m_sids.5928.13536
+beta-reducing surface_ids.3997.7671.11117 = m_sids.5928.13528
+beta-reducing surface_ids.3997.7670.11122 = m_sids.5928.13520
+beta-reducing surface_ids.3997.7669.11127 = m_sids.5928.13512
+beta-reducing Ta1050.4094.7941.11181 = m_vec.5874.13567
+beta-reducing Ta1050.4094.7941.11276 = m_vec.5874.13597
+beta-reducing surface_ids.3997.7673.11377 = m_sids.5928.13644
+beta-reducing surface_ids.3997.7672.11380 = m_sids.5928.13636
+beta-reducing surface_ids.3997.7671.11383 = m_sids.5928.13628
+beta-reducing surface_ids.3997.7670.11388 = m_sids.5928.13620
+beta-reducing surface_ids.3997.7669.11393 = m_sids.5928.13612
+beta-reducing Ta1050.4094.7941.11681 = m_vec.5874.13787
+beta-reducing Ta1050.4094.7941.11658 = m_vec.5874.13757
+beta-reducing Ta1050.4094.7941.11635 = m_vec.5874.13727
+beta-reducing Ta1050.4094.7941.11612 = m_vec.5874.13697
+beta-reducing Ta1050.4094.7941.11589 = m_vec.5874.13667
+iteration 1995
+free variable(s) screen.2923 screenx_dir.2943 screeny_dir.2944 screenz_dir.2945 viewpoint.2924 found in function read_screen_settings.3107
+function read_screen_settings.3107 cannot be directly applied in fact
+free variable(s) beam.2926 light.2925 found in function read_light.3109
+function read_light.3109 cannot be directly applied in fact
+directly applying rotate_quadratic_matrix.3111
+directly applying vecunit_sgn.3006
+free variable(s) objects.2922 found in function read_nth_object.3114
+function read_nth_object.3114 cannot be directly applied in fact
+directly applying rotate_quadratic_matrix.3111
+directly applying vecunit_sgn.3006
+directly applying read_object.3116
+free variable(s) n_objects.2921 read_nth_object.3114 found in function read_object.3116
+function read_object.3116 cannot be directly applied in fact
+directly applying read_net_item.3120
+directly applying read_or_network.3122
+directly applying read_net_item.3120
+directly applying read_net_item.3120
+directly applying read_and_network.3124
+directly applying read_net_item.3120
+directly applying read_net_item.3120
+free variable(s) and_net.2927 found in function read_and_network.3124
+function read_and_network.3124 cannot be directly applied in fact
+directly applying read_net_item.3120
+directly applying read_net_item.3120
+free variable(s) solver_dist.2929 found in function solver_rect_surface.3128
+function solver_rect_surface.3128 cannot be directly applied in fact
+free variable(s) solver_dist.2929 found in function solver_surface.3143
+function solver_surface.3143 cannot be directly applied in fact
+directly applying quadratic.3149
+directly applying bilinear.3154
+directly applying quadratic.3149
+free variable(s) solver_dist.2929 found in function solver_second.3162
+function solver_second.3162 cannot be directly applied in fact
+directly applying quadratic.3149
+directly applying bilinear.3154
+directly applying quadratic.3149
+free variable(s) objects.2922 solver_dist.2929 solver_rect_surface.3128 solver_second.3162 found in function solver.3168
+function solver.3168 cannot be directly applied in fact
+free variable(s) solver_dist.2929 found in function solver_rect_fast.3172
+function solver_rect_fast.3172 cannot be directly applied in fact
+directly applying quadratic.3149
+free variable(s) solver_dist.2929 found in function solver_second_fast.3185
+function solver_second_fast.3185 cannot be directly applied in fact
+directly applying quadratic.3149
+free variable(s) solver_dist.2929 found in function solver_second_fast2.3202
+function solver_second_fast2.3202 cannot be directly applied in fact
+free variable(s) objects.2922 solver_dist.2929 solver_rect_fast.3172 solver_second_fast2.3202 found in function solver_fast2.3209
+function solver_fast2.3209 cannot be directly applied in fact
+directly applying quadratic.3149
+directly applying iter_setup_dirvec_constants.3221
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+free variable(s) objects.2922 found in function iter_setup_dirvec_constants.3221
+function iter_setup_dirvec_constants.3221 cannot be directly applied in fact
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_startp_constants.3226
+directly applying quadratic.3149
+free variable(s) objects.2922 found in function setup_startp_constants.3226
+function setup_startp_constants.3226 cannot be directly applied in fact
+directly applying quadratic.3149
+directly applying quadratic.3149
+directly applying check_all_inside.3251
+directly applying is_outside.3246
+directly applying quadratic.3149
+directly applying is_rect_outside.3231
+free variable(s) objects.2922 found in function check_all_inside.3251
+function check_all_inside.3251 cannot be directly applied in fact
+directly applying is_outside.3246
+directly applying quadratic.3149
+directly applying is_rect_outside.3231
+directly applying shadow_check_and_group.3257
+directly applying is_outside.3246
+directly applying shadow_check_and_group.3257
+free variable(s) check_all_inside.3251 consts.6466 intersection_point.2932 light.2925 objects.2922 solver_dist.2929 solver_rect_fast.3172 solver_second_fast.3185 v3.6465 found in function shadow_check_and_group.3257
+function shadow_check_and_group.3257 cannot be directly applied in fact
+directly applying is_outside.3246
+directly applying shadow_check_one_or_group.3260
+free variable(s) and_net.2927 shadow_check_and_group.3257 found in function shadow_check_one_or_group.3260
+function shadow_check_one_or_group.3260 cannot be directly applied in fact
+directly applying shadow_check_one_or_matrix.3263
+directly applying shadow_check_one_or_matrix.3263
+free variable(s) and_net.2927 consts.6466 intersection_point.2932 objects.2922 shadow_check_and_group.3257 shadow_check_one_or_group.3260 solver_dist.2929 solver_rect_fast.3172 solver_second_fast.3185 v3.6465 found in function shadow_check_one_or_matrix.3263
+function shadow_check_one_or_matrix.3263 cannot be directly applied in fact
+directly applying solve_each_element.3266
+directly applying is_outside.3246
+directly applying solve_each_element.3266
+free variable(s) check_all_inside.3251 intersected_object_id.2933 intersection_point.2932 intsec_rectside.2930 objects.2922 solver_dist.2929 solver_rect_surface.3128 solver_second.3162 solver_surface.3143 startp.2941 tmin.2931 found in function solve_each_element.3266
+function solve_each_element.3266 cannot be directly applied in fact
+directly applying is_outside.3246
+directly applying solve_one_or_network.3270
+free variable(s) and_net.2927 solve_each_element.3266 found in function solve_one_or_network.3270
+function solve_one_or_network.3270 cannot be directly applied in fact
+directly applying trace_or_matrix.3274
+free variable(s) and_net.2927 objects.2922 solve_each_element.3266 solve_one_or_network.3270 solver.3168 solver_dist.2929 solver_rect_surface.3128 solver_second.3162 solver_surface.3143 startp.2941 tmin.2931 found in function trace_or_matrix.3274
+function trace_or_matrix.3274 cannot be directly applied in fact
+directly applying solve_each_element_fast.3280
+directly applying is_outside.3246
+directly applying solve_each_element_fast.3280
+free variable(s) check_all_inside.3251 intersected_object_id.2933 intersection_point.2932 intsec_rectside.2930 objects.2922 solver_dist.2929 solver_rect_fast.3172 solver_second_fast2.3202 startp_fast.2942 tmin.2931 found in function solve_each_element_fast.3280
+function solve_each_element_fast.3280 cannot be directly applied in fact
+directly applying is_outside.3246
+directly applying solve_one_or_network_fast.3284
+free variable(s) and_net.2927 solve_each_element_fast.3280 found in function solve_one_or_network_fast.3284
+function solve_one_or_network_fast.3284 cannot be directly applied in fact
+directly applying trace_or_matrix_fast.3288
+free variable(s) and_net.2927 objects.2922 solve_each_element_fast.3280 solve_one_or_network_fast.3284 solver_dist.2929 solver_fast2.3209 solver_rect_fast.3172 solver_second_fast2.3202 tmin.2931 found in function trace_or_matrix_fast.3288
+function trace_or_matrix_fast.3288 cannot be directly applied in fact
+free variable(s) and_net.2927 or_net.2928 solve_each_element_fast.3280 solve_one_or_network_fast.3284 solver_dist.2929 solver_fast2.3209 tmin.2931 trace_or_matrix_fast.3288 found in function judge_intersection_fast.3292
+function judge_intersection_fast.3292 cannot be directly applied in fact
+directly applying vecunit_sgn.3006
+free variable(s) intersection_point.2932 nvector.2934 found in function get_nvector_second.3298
+function get_nvector_second.3298 cannot be directly applied in fact
+directly applying vecunit_sgn.3006
+free variable(s) get_nvector_second.3298 intsec_rectside.2930 nvector.2934 found in function get_nvector.3300
+function get_nvector.3300 cannot be directly applied in fact
+free variable(s) texture_color.2935 found in function utexture.3303
+function utexture.3303 cannot be directly applied in fact
+directly applying trace_reflections.3310
+free variable(s) intersected_object_id.2933 intsec_rectside.2930 nvector.2934 or_net.2928 reflections.2949 rgb.2937 shadow_check_one_or_matrix.3263 texture_color.2935 tmin.2931 trace_or_matrix_fast.3288 found in function trace_reflections.3310
+function trace_reflections.3310 cannot be directly applied in fact
+directly applying trace_ray.3315
+free variable(s) beam.2926 get_nvector_second.3298 intersected_object_id.2933 intersection_point.2932 intsec_rectside.2930 light.2925 n_objects.2921 n_reflections.2950 nvector.2934 objects.2922 or_net.2928 rgb.2937 setup_startp_constants.3226 shadow_check_one_or_matrix.3263 startp.2941 startp_fast.2942 texture_color.2935 tmin.2931 trace_or_matrix.3274 trace_reflections.3310 utexture.3303 found in function trace_ray.3315
+function trace_ray.3315 cannot be directly applied in fact
+free variable(s) diffuse_ray.2936 get_nvector_second.3298 intersected_object_id.2933 intersection_point.2932 intsec_rectside.2930 light.2925 nvector.2934 objects.2922 or_net.2928 shadow_check_one_or_matrix.3263 texture_color.2935 tmin.2931 trace_or_matrix_fast.3288 utexture.3303 found in function trace_diffuse_ray.3321
+function trace_diffuse_ray.3321 cannot be directly applied in fact
+directly applying iter_trace_diffuse_rays.3324
+free variable(s) diffuse_ray.2936 get_nvector.3300 intersected_object_id.2933 intersection_point.2932 judge_intersection_fast.3292 light.2925 nvector.2934 objects.2922 or_net.2928 shadow_check_one_or_matrix.3263 texture_color.2935 trace_diffuse_ray.3321 utexture.3303 found in function iter_trace_diffuse_rays.3324
+function iter_trace_diffuse_rays.3324 cannot be directly applied in fact
+free variable(s) dirvecs.2947 iter_trace_diffuse_rays.3324 n_objects.2921 setup_startp_constants.3226 startp_fast.2942 found in function trace_diffuse_ray_80percent.3333
+function trace_diffuse_ray_80percent.3333 cannot be directly applied in fact
+directly applying vecaccumv.3030
+free variable(s) diffuse_ray.2936 dirvecs.2947 iter_trace_diffuse_rays.3324 n_objects.2921 rgb.2937 setup_startp_constants.3226 startp_fast.2942 trace_diffuse_ray.3321 found in function calc_diffuse_using_1point.3337
+function calc_diffuse_using_1point.3337 cannot be directly applied in fact
+directly applying vecaccumv.3030
+directly applying vecaccumv.3030
+free variable(s) diffuse_ray.2936 rgb.2937 found in function calc_diffuse_using_5points.3340
+function calc_diffuse_using_5points.3340 cannot be directly applied in fact
+directly applying vecaccumv.3030
+directly applying do_without_neighbors.3346
+directly applying vecaccumv.3030
+free variable(s) calc_diffuse_using_1point.3337 diffuse_ray.2936 rgb.2937 trace_diffuse_ray_80percent.3333 found in function do_without_neighbors.3346
+function do_without_neighbors.3346 cannot be directly applied in fact
+directly applying vecaccumv.3030
+directly applying try_exploit_neighbors.3362
+free variable(s) calc_diffuse_using_1point.3337 calc_diffuse_using_5points.3340 do_without_neighbors.3346 found in function try_exploit_neighbors.3362
+function try_exploit_neighbors.3362 cannot be directly applied in fact
+free variable(s) rgb.2937 found in function write_rgb.3373
+function write_rgb.3373 cannot be directly applied in fact
+directly applying pretrace_diffuse_rays.3375
+free variable(s) diffuse_ray.2936 dirvecs.2947 iter_trace_diffuse_rays.3324 n_objects.2921 setup_startp_constants.3226 startp_fast.2942 trace_diffuse_ray.3321 found in function pretrace_diffuse_rays.3375
+function pretrace_diffuse_rays.3375 cannot be directly applied in fact
+directly applying pretrace_pixels.3378
+directly applying vecunit_sgn.3006
+free variable(s) diffuse_ray.2936 dirvecs.2947 image_center.2939 iter_trace_diffuse_rays.3324 n_objects.2921 pretrace_diffuse_rays.3375 ptrace_dirvec.2946 rgb.2937 scan_pitch.2940 screenx_dir.2943 setup_startp_constants.3226 startp.2941 startp_fast.2942 trace_diffuse_ray.3321 trace_ray.3315 viewpoint.2924 found in function pretrace_pixels.3378
+function pretrace_pixels.3378 cannot be directly applied in fact
+directly applying vecunit_sgn.3006
+free variable(s) image_center.2939 image_size.2938 pretrace_pixels.3378 scan_pitch.2940 screeny_dir.2944 screenz_dir.2945 found in function pretrace_line.3385
+function pretrace_line.3385 cannot be directly applied in fact
+directly applying scan_pixel.3389
+free variable(s) calc_diffuse_using_1point.3337 calc_diffuse_using_5points.3340 do_without_neighbors.3346 image_size.2938 rgb.2937 try_exploit_neighbors.3362 write_rgb.3373 found in function scan_pixel.3389
+function scan_pixel.3389 cannot be directly applied in fact
+directly applying scan_line.3395
+free variable(s) do_without_neighbors.3346 image_size.2938 pretrace_line.3385 rgb.2937 scan_pixel.3389 try_exploit_neighbors.3362 write_rgb.3373 found in function scan_line.3395
+function scan_line.3395 cannot be directly applied in fact
+directly applying init_line_elements.3405
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying calc_dirvec.3415
+free variable(s) dirvecs.2947 found in function calc_dirvec.3415
+function calc_dirvec.3415 cannot be directly applied in fact
+directly applying calc_dirvecs.3423
+free variable(s) calc_dirvec.3415 found in function calc_dirvecs.3423
+function calc_dirvecs.3423 cannot be directly applied in fact
+directly applying calc_dirvec_rows.3428
+free variable(s) calc_dirvecs.3423 found in function calc_dirvec_rows.3428
+function calc_dirvec_rows.3428 cannot be directly applied in fact
+directly applying create_dirvec_elements.3434
+free variable(s) n_objects.2921 found in function create_dirvec_elements.3434
+function create_dirvec_elements.3434 cannot be directly applied in fact
+directly applying create_dirvecs.3437
+free variable(s) create_dirvec_elements.3434 dirvecs.2947 n_objects.2921 found in function create_dirvecs.3437
+function create_dirvecs.3437 cannot be directly applied in fact
+directly applying init_dirvec_constants.3439
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+free variable(s) iter_setup_dirvec_constants.3221 n_objects.2921 objects.2922 found in function init_dirvec_constants.3439
+function init_dirvec_constants.3439 cannot be directly applied in fact
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying init_vecset_constants.3442
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+free variable(s) dirvecs.2947 init_dirvec_constants.3439 iter_setup_dirvec_constants.3221 n_objects.2921 objects.2922 found in function init_vecset_constants.3442
+function init_vecset_constants.3442 cannot be directly applied in fact
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+free variable(s) iter_setup_dirvec_constants.3221 light.2925 n_objects.2921 n_reflections.2950 objects.2922 reflections.2949 found in function setup_rect_reflection.3453
+function setup_rect_reflection.3453 cannot be directly applied in fact
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+free variable(s) iter_setup_dirvec_constants.3221 light.2925 n_objects.2921 n_reflections.2950 objects.2922 reflections.2949 found in function setup_surface_reflection.3456
+function setup_surface_reflection.3456 cannot be directly applied in fact
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying read_or_network.3122
+directly applying init_line_elements.3405
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying init_line_elements.3405
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying init_line_elements.3405
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+free variable(s) calc_dirvec_rows.3428 create_dirvecs.3437 dirvecs.2947 image_center.2939 image_size.2938 init_dirvec_constants.3439 init_vecset_constants.3442 iter_setup_dirvec_constants.3221 light.2925 light_dirvec.2948 n_objects.2921 objects.2922 or_net.2928 pretrace_line.3385 read_and_network.3124 read_light.3109 read_nth_object.3114 read_object.3116 read_screen_settings.3107 scan_line.3395 scan_pitch.2940 scan_pixel.3389 setup_rect_reflection.3453 setup_surface_reflection.3456 v3.6465 found in function rt.3461
+function rt.3461 cannot be directly applied in fact
+directly applying setup_second_table.3218
+directly applying setup_surface_table.3215
+directly applying setup_rect_table.3212
+directly applying read_or_network.3122
+directly applying init_line_elements.3405
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying init_line_elements.3405
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying init_line_elements.3405
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+directly applying create_float5x3array.3401
+eliminating closure(s) init_line_elements.3405
+eliminating closure(s) create_float5x3array.3401
+eliminating closure(s) is_outside.3246
+eliminating closure(s) is_rect_outside.3231
+eliminating closure(s) setup_second_table.3218
+eliminating closure(s) setup_surface_table.3215
+eliminating closure(s) setup_rect_table.3212
+eliminating closure(s) bilinear.3154
+eliminating closure(s) quadratic.3149
+eliminating closure(s) read_or_network.3122
+eliminating closure(s) read_net_item.3120
+eliminating closure(s) rotate_quadratic_matrix.3111
+eliminating closure(s) vecaccumv.3030
+eliminating closure(s) vecunit_sgn.3006
+register allocation: may take some time (up to a few minutes, depending on the size of functions)
+restoring inv.3008
+Type.Int
+restoring v.3007
+Type.Int
+restoring screen.2923
+Type.Int
+restoring screen.2923
+Type.Int
+restoring screen.2923
+Type.Int
+restoring v1.5790
+others
+restoring v2.5793
+others
+restoring cos_v1.5791
+others
+restoring screenz_dir.2945
+Type.Int
+restoring sin_v1.5792
+others
+restoring cos_v2.5794
+others
+restoring screenx_dir.2943
+Type.Int
+restoring screeny_dir.2944
+Type.Int
+restoring screen.2923
+Type.Int
+restoring viewpoint.2924
+Type.Int
+restoring light.2925
+Type.Int
+restoring l1.5764
+others
+restoring l2.5767
+others
+restoring cl1.5768
+others
+restoring light.2925
+Type.Int
+restoring l2.5767
+others
+restoring cl1.5768
+others
+restoring light.2925
+Type.Int
+restoring beam.2926
+Type.Int
+restoring rot.3113
+Type.Int
+restoring rot.3113
+Type.Int
+restoring rot.3113
+Type.Int
+restoring rot.3113
+Type.Int
+restoring rot.3113
+Type.Int
+restoring cos_z.5657
+others
+restoring cos_y.5655
+others
+restoring sin_y.5656
+others
+restoring sin_x.5654
+others
+restoring cos_x.5653
+others
+restoring abc.3112
+Type.Int
+restoring rot.3113
+Type.Int
+restoring abc.5527
+Type.Int
+restoring abc.5527
+Type.Int
+restoring abc.5527
+Type.Int
+restoring xyz.5531
+Type.Int
+restoring xyz.5531
+Type.Int
+restoring xyz.5531
+Type.Int
+restoring reflparam.5536
+Type.Int
+restoring reflparam.5536
+Type.Int
+restoring color.5539
+Type.Int
+restoring color.5539
+Type.Int
+restoring color.5539
+Type.Int
+restoring rotation.5543
+Type.Int
+restoring rotation.5543
+Type.Int
+restoring rotation.5543
+Type.Int
+restoring isrot_p.5526
+Type.Int
+restoring rotation.5543
+Type.Int
+restoring rotation.5543
+Type.Int
+restoring rotation.5543
+Type.Int
+restoring m_invert.5535
+Type.Int
+restoring form.5524
+Type.Int
+restoring m_invert.5535
+Type.Int
+restoring rotation.5543
+Type.Int
+restoring color.5539
+Type.Int
+restoring reflparam.5536
+Type.Int
+restoring m_invert2.5545
+Type.Int
+restoring xyz.5531
+Type.Int
+restoring abc.5527
+Type.Int
+restoring isrot_p.5526
+Type.Int
+restoring refltype.5525
+Type.Int
+restoring form.5524
+Type.Int
+restoring texture.5522
+Type.Int
+restoring n.3115
+Type.Int
+restoring objects.2922
+Type.Int
+restoring m_invert.5535
+Type.Int
+restoring abc.5527
+Type.Int
+restoring rotation.5543
+Type.Int
+restoring isrot_p.5526
+Type.Int
+restoring abc.5527
+Type.Int
+restoring rotation.5543
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring n.3117
+Type.Int
+restoring n.3117
+Type.Int
+restoring read_nth_object.3114
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring Ti2221.5519
+Type.Int
+restoring Ti2221.5519
+Type.Int
+restoring read_nth_object.3114
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring Ti2221.5519.10560
+Type.Int
+restoring Ti2221.5519.10560
+Type.Int
+restoring read_nth_object.3114
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring Ti2221.5519.13228
+Type.Int
+restoring Ti2221.5519.13228
+Type.Int
+restoring read_object.3116
+Type.Int
+restoring length.3121
+Type.Int
+restoring length.3121
+Type.Int
+restoring Ti2214.5507
+Type.Int
+restoring Ti2214.5507
+Type.Int
+restoring Ti2214.5507.10543
+Type.Int
+restoring Ti2214.5507.10543
+Type.Int
+restoring Ti2214.5507.13196
+Type.Int
+restoring Ti2214.5507.13196
+Type.Int
+restoring Ti2214.5507.13196
+Type.Int
+restoring item.5503.10539.13198
+Type.Int
+restoring Ti2214.5507.10543
+Type.Int
+restoring item.5503.13193
+Type.Int
+restoring Ti2214.5507
+Type.Int
+restoring item.5503.10539
+Type.Int
+restoring length.3121
+Type.Int
+restoring item.5503
+Type.Int
+restoring item.5503.10539.13178
+Type.Int
+restoring item.5503.13173
+Type.Int
+restoring item.5503.10527
+Type.Int
+restoring length.3123
+Type.Int
+restoring length.3123
+Type.Int
+restoring item.5503.10539.13158
+Type.Int
+restoring item.5503.13153
+Type.Int
+restoring Ti2205.5496
+Type.Int
+restoring Ti2205.5496
+Type.Int
+restoring Ti2205.5496
+Type.Int
+restoring net.5491.10515
+Type.Int
+restoring length.3123
+Type.Int
+restoring net.5491
+Type.Int
+restoring item.5503.10539.13138
+Type.Int
+restoring item.5503.13133
+Type.Int
+restoring item.5503.10503
+Type.Int
+restoring n.3125
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring item.5503.10539.13118
+Type.Int
+restoring item.5503.13113
+Type.Int
+restoring Ti2196.5486
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring read_and_network.3124
+Type.Int
+restoring dirvec.3164
+Type.Int
+restoring b0.3165
+others
+restoring b1.3166
+others
+restoring b2.3167
+others
+restoring m.3163
+Type.Int
+restoring b0.3165
+others
+restoring b1.3166
+others
+restoring b2.3167
+others
+restoring m.3163
+Type.Int
+restoring m.3163
+Type.Int
+restoring bb.5329
+others
+restoring aa.5326
+others
+restoring m.3163
+Type.Int
+restoring bb.5329
+others
+restoring aa.5326
+others
+restoring solver_dist.2929
+Type.Int
+restoring b1.5312
+others
+restoring b2.5313
+others
+restoring b0.5311
+others
+restoring m.5310
+Type.Int
+restoring dirvec.3170
+Type.Int
+restoring solver_rect_surface.3128
+Type.Int
+restoring b2.5313
+others
+restoring b0.5311
+others
+restoring b1.5312
+others
+restoring m.5310
+Type.Int
+restoring dirvec.3170
+Type.Int
+restoring solver_rect_surface.3128
+Type.Int
+restoring m.3186
+Type.Int
+restoring neg_bb.5166
+others
+restoring aa.5163
+others
+restoring neg_bb.5166
+others
+restoring dconst.3187
+Type.Int
+restoring solver_dist.2929
+Type.Int
+restoring neg_bb.5166
+others
+restoring dconst.3187
+Type.Int
+restoring solver_dist.2929
+Type.Int
+restoring neg_bb.5099
+others
+restoring dconst.3204
+Type.Int
+restoring solver_dist.2929
+Type.Int
+restoring neg_bb.5099
+others
+restoring dconst.3204
+Type.Int
+restoring solver_dist.2929
+Type.Int
+restoring vec.3213
+Type.Int
+restoring m.3214
+Type.Int
+restoring m.3214
+Type.Int
+restoring m.3214
+Type.Int
+restoring vec.3216
+Type.Int
+restoring m.3217
+Type.Int
+restoring v.3219
+Type.Int
+restoring m.3220
+Type.Int
+restoring v.3219
+Type.Int
+restoring m.3220
+Type.Int
+restoring const.4889
+Type.Int
+restoring index.3223
+Type.Int
+restoring m_const.5873.9603
+Type.Int
+restoring index.3223
+Type.Int
+restoring m_const.5873.9603
+Type.Int
+restoring index.3223
+Type.Int
+restoring m_const.5873.9603
+Type.Int
+restoring objects.2922
+Type.Int
+restoring dirvec.3222
+Type.Int
+restoring Ti1681.4882
+Type.Int
+restoring m_const.5873.13064
+Type.Int
+restoring Ti1681.4882
+Type.Int
+restoring m_const.5873.13064
+Type.Int
+restoring Ti1681.4882
+Type.Int
+restoring m_const.5873.13064
+Type.Int
+restoring dirvec.3222
+Type.Int
+restoring iter_setup_dirvec_constants.3221
+Type.Int
+restoring m_shape.6174.9542
+Type.Int
+restoring m_ctbl.5960.9562
+Type.Int
+restoring index.3228
+Type.Int
+restoring p.3227
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring m.3247
+Type.Int
+restoring Tt1591.4780
+Type.Int
+restoring ofs.3252
+Type.Int
+restoring iand.3253
+Type.Int
+restoring objects.2922
+Type.Int
+restoring q0.3254
+others
+restoring q1.3255
+others
+restoring q2.3256
+others
+restoring Ti1595.4778
+Type.Int
+restoring q0.3254
+others
+restoring q1.3255
+others
+restoring q2.3256
+others
+restoring iand.3253
+Type.Int
+restoring check_all_inside.3251
+Type.Int
+restoring solver_dist.2929
+Type.Int
+restoring obj.4735
+Type.Int
+restoring objects.2922
+Type.Int
+restoring iand_ofs.3258
+Type.Int
+restoring and_group.3259
+Type.Int
+restoring shadow_check_and_group.3257
+Type.Int
+restoring light.2925
+Type.Int
+restoring intersection_point.2932
+Type.Int
+restoring and_group.3259
+Type.Int
+restoring objects.2922
+Type.Int
+restoring q0.4741
+others
+restoring q1.4742
+others
+restoring q2.4743
+others
+restoring and_group.3259
+Type.Int
+restoring check_all_inside.3251
+Type.Int
+restoring iand_ofs.3258
+Type.Int
+restoring and_group.3259
+Type.Int
+restoring shadow_check_and_group.3257
+Type.Int
+restoring ofs.3261
+Type.Int
+restoring or_group.3262
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring shadow_check_and_group.3257
+Type.Int
+restoring Ti1554.4729
+Type.Int
+restoring or_group.3262
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring shadow_check_and_group.3257
+Type.Int
+restoring Ti1554.4729.9216
+Type.Int
+restoring or_group.3262
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring shadow_check_and_group.3257
+Type.Int
+restoring Ti1554.4729.12704
+Type.Int
+restoring or_group.3262
+Type.Int
+restoring shadow_check_one_or_group.3260
+Type.Int
+restoring solver_dist.2929
+Type.Int
+restoring head.4699
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring shadow_check_and_group.3257
+Type.Int
+restoring head.4699
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring shadow_check_and_group.3257
+Type.Int
+restoring head.4699
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring shadow_check_and_group.3257
+Type.Int
+restoring head.4699
+Type.Int
+restoring shadow_check_one_or_group.3260
+Type.Int
+restoring ofs.3264
+Type.Int
+restoring or_matrix.3265
+Type.Int
+restoring shadow_check_one_or_matrix.3263
+Type.Int
+restoring head.4699
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring shadow_check_and_group.3257
+Type.Int
+restoring head.4699
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring shadow_check_and_group.3257
+Type.Int
+restoring head.4699
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring shadow_check_and_group.3257
+Type.Int
+restoring head.4699
+Type.Int
+restoring shadow_check_one_or_group.3260
+Type.Int
+restoring ofs.3264
+Type.Int
+restoring or_matrix.3265
+Type.Int
+restoring shadow_check_one_or_matrix.3263
+Type.Int
+restoring b1.5312.9162
+others
+restoring b2.5313.9166
+others
+restoring b0.5311.9158
+others
+restoring m.5310.9154
+Type.Int
+restoring dirvec.3269
+Type.Int
+restoring solver_rect_surface.3128
+Type.Int
+restoring b2.5313.9166
+others
+restoring b0.5311.9158
+others
+restoring b1.5312.9162
+others
+restoring m.5310.9154
+Type.Int
+restoring dirvec.3269
+Type.Int
+restoring solver_rect_surface.3128
+Type.Int
+restoring iobj.4648
+Type.Int
+restoring objects.2922
+Type.Int
+restoring iand_ofs.3267
+Type.Int
+restoring and_group.3268
+Type.Int
+restoring dirvec.3269
+Type.Int
+restoring solve_each_element.3266
+Type.Int
+restoring solver_dist.2929
+Type.Int
+restoring tmin.2931
+Type.Int
+restoring dirvec.3269
+Type.Int
+restoring startp.2941
+Type.Int
+restoring and_group.3268
+Type.Int
+restoring objects.2922
+Type.Int
+restoring q0.4661
+others
+restoring q1.4662
+others
+restoring q2.4663
+others
+restoring and_group.3268
+Type.Int
+restoring check_all_inside.3251
+Type.Int
+restoring tmin.2931
+Type.Int
+restoring t.4660
+others
+restoring intersection_point.2932
+Type.Int
+restoring q0.4661
+others
+restoring q1.4662
+others
+restoring q2.4663
+others
+restoring intersected_object_id.2933
+Type.Int
+restoring iobj.4648
+Type.Int
+restoring intsec_rectside.2930
+Type.Int
+restoring t0.4650
+Type.Int
+restoring iand_ofs.3267
+Type.Int
+restoring and_group.3268
+Type.Int
+restoring dirvec.3269
+Type.Int
+restoring solve_each_element.3266
+Type.Int
+restoring ofs.3271
+Type.Int
+restoring or_group.3272
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3273
+Type.Int
+restoring solve_each_element.3266
+Type.Int
+restoring Ti1486.4644
+Type.Int
+restoring or_group.3272
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3273
+Type.Int
+restoring solve_each_element.3266
+Type.Int
+restoring Ti1486.4644.9127
+Type.Int
+restoring or_group.3272
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3273
+Type.Int
+restoring solve_each_element.3266
+Type.Int
+restoring Ti1486.4644.12523
+Type.Int
+restoring or_group.3272
+Type.Int
+restoring dirvec.3273
+Type.Int
+restoring solve_one_or_network.3270
+Type.Int
+restoring head.4621
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3277
+Type.Int
+restoring solve_each_element.3266
+Type.Int
+restoring head.4621
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3277
+Type.Int
+restoring solve_each_element.3266
+Type.Int
+restoring head.4621
+Type.Int
+restoring dirvec.3277
+Type.Int
+restoring solve_one_or_network.3270
+Type.Int
+restoring b1.5312.9104
+others
+restoring b2.5313.9108
+others
+restoring b0.5311.9100
+others
+restoring m.5310.9096
+Type.Int
+restoring dirvec.3277
+Type.Int
+restoring solver_rect_surface.3128
+Type.Int
+restoring b2.5313.9108
+others
+restoring b0.5311.9100
+others
+restoring b1.5312.9104
+others
+restoring m.5310.9096
+Type.Int
+restoring dirvec.3277
+Type.Int
+restoring solver_rect_surface.3128
+Type.Int
+restoring solver_dist.2929
+Type.Int
+restoring tmin.2931
+Type.Int
+restoring head.4621
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3277
+Type.Int
+restoring solve_each_element.3266
+Type.Int
+restoring head.4621
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3277
+Type.Int
+restoring solve_each_element.3266
+Type.Int
+restoring head.4621
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3277
+Type.Int
+restoring solve_each_element.3266
+Type.Int
+restoring head.4621
+Type.Int
+restoring dirvec.3277
+Type.Int
+restoring solve_one_or_network.3270
+Type.Int
+restoring ofs.3275
+Type.Int
+restoring or_network.3276
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3277
+Type.Int
+restoring solve_each_element.3266
+Type.Int
+restoring head.4621.9068
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3277
+Type.Int
+restoring solve_each_element.3266
+Type.Int
+restoring head.4621.9068
+Type.Int
+restoring dirvec.3277
+Type.Int
+restoring solve_one_or_network.3270
+Type.Int
+restoring dirvec.3277
+Type.Int
+restoring startp.2941
+Type.Int
+restoring solver.3168
+Type.Int
+restoring solver_dist.2929
+Type.Int
+restoring tmin.2931
+Type.Int
+restoring head.4621.9068
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3277
+Type.Int
+restoring solve_each_element.3266
+Type.Int
+restoring head.4621.9068
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3277
+Type.Int
+restoring solve_each_element.3266
+Type.Int
+restoring head.4621.9068
+Type.Int
+restoring dirvec.3277
+Type.Int
+restoring solve_one_or_network.3270
+Type.Int
+restoring Ti1481.4625
+Type.Int
+restoring or_network.3276
+Type.Int
+restoring dirvec.3277
+Type.Int
+restoring trace_or_matrix.3274
+Type.Int
+restoring iobj.4557
+Type.Int
+restoring objects.2922
+Type.Int
+restoring iand_ofs.3281
+Type.Int
+restoring and_group.3282
+Type.Int
+restoring dirvec.3283
+Type.Int
+restoring solve_each_element_fast.3280
+Type.Int
+restoring solver_dist.2929
+Type.Int
+restoring tmin.2931
+Type.Int
+restoring m_vec.5874.9045
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring and_group.3282
+Type.Int
+restoring objects.2922
+Type.Int
+restoring q0.4570
+others
+restoring q1.4571
+others
+restoring q2.4572
+others
+restoring and_group.3282
+Type.Int
+restoring check_all_inside.3251
+Type.Int
+restoring tmin.2931
+Type.Int
+restoring t.4569
+others
+restoring intersection_point.2932
+Type.Int
+restoring q0.4570
+others
+restoring q1.4571
+others
+restoring q2.4572
+others
+restoring intersected_object_id.2933
+Type.Int
+restoring iobj.4557
+Type.Int
+restoring intsec_rectside.2930
+Type.Int
+restoring t0.4559
+Type.Int
+restoring iand_ofs.3281
+Type.Int
+restoring and_group.3282
+Type.Int
+restoring dirvec.3283
+Type.Int
+restoring solve_each_element_fast.3280
+Type.Int
+restoring ofs.3285
+Type.Int
+restoring or_group.3286
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3287
+Type.Int
+restoring solve_each_element_fast.3280
+Type.Int
+restoring Ti1417.4552
+Type.Int
+restoring or_group.3286
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3287
+Type.Int
+restoring solve_each_element_fast.3280
+Type.Int
+restoring Ti1417.4552.9004
+Type.Int
+restoring or_group.3286
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3287
+Type.Int
+restoring solve_each_element_fast.3280
+Type.Int
+restoring Ti1417.4552.12348
+Type.Int
+restoring or_group.3286
+Type.Int
+restoring dirvec.3287
+Type.Int
+restoring solve_one_or_network_fast.3284
+Type.Int
+restoring head.4529
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3291
+Type.Int
+restoring solve_each_element_fast.3280
+Type.Int
+restoring head.4529
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3291
+Type.Int
+restoring solve_each_element_fast.3280
+Type.Int
+restoring head.4529
+Type.Int
+restoring dirvec.3291
+Type.Int
+restoring solve_one_or_network_fast.3284
+Type.Int
+restoring solver_dist.2929
+Type.Int
+restoring tmin.2931
+Type.Int
+restoring head.4529
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3291
+Type.Int
+restoring solve_each_element_fast.3280
+Type.Int
+restoring head.4529
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3291
+Type.Int
+restoring solve_each_element_fast.3280
+Type.Int
+restoring head.4529
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3291
+Type.Int
+restoring solve_each_element_fast.3280
+Type.Int
+restoring head.4529
+Type.Int
+restoring dirvec.3291
+Type.Int
+restoring solve_one_or_network_fast.3284
+Type.Int
+restoring ofs.3289
+Type.Int
+restoring or_network.3290
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3291
+Type.Int
+restoring solve_each_element_fast.3280
+Type.Int
+restoring head.4529.8947
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3291
+Type.Int
+restoring solve_each_element_fast.3280
+Type.Int
+restoring head.4529.8947
+Type.Int
+restoring dirvec.3291
+Type.Int
+restoring solve_one_or_network_fast.3284
+Type.Int
+restoring dirvec.3291
+Type.Int
+restoring solver_fast2.3209
+Type.Int
+restoring solver_dist.2929
+Type.Int
+restoring tmin.2931
+Type.Int
+restoring head.4529.8947
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3291
+Type.Int
+restoring solve_each_element_fast.3280
+Type.Int
+restoring head.4529.8947
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3291
+Type.Int
+restoring solve_each_element_fast.3280
+Type.Int
+restoring head.4529.8947
+Type.Int
+restoring dirvec.3291
+Type.Int
+restoring solve_one_or_network_fast.3284
+Type.Int
+restoring Ti1412.4533
+Type.Int
+restoring or_network.3290
+Type.Int
+restoring dirvec.3291
+Type.Int
+restoring trace_or_matrix_fast.3288
+Type.Int
+restoring head.4529.8928
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3293
+Type.Int
+restoring solve_each_element_fast.3280
+Type.Int
+restoring head.4529.8928
+Type.Int
+restoring dirvec.3293
+Type.Int
+restoring solve_one_or_network_fast.3284
+Type.Int
+restoring solver_dist.2929
+Type.Int
+restoring tmin.2931
+Type.Int
+restoring head.4529.8928
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3293
+Type.Int
+restoring solve_each_element_fast.3280
+Type.Int
+restoring head.4529.8928
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring dirvec.3293
+Type.Int
+restoring solve_each_element_fast.3280
+Type.Int
+restoring head.4529.8928
+Type.Int
+restoring dirvec.3293
+Type.Int
+restoring solve_one_or_network_fast.3284
+Type.Int
+restoring Ta1393.4525
+Type.Int
+restoring dirvec.3293
+Type.Int
+restoring trace_or_matrix_fast.3288
+Type.Int
+restoring tmin.2931
+Type.Int
+restoring w1.4404
+others
+restoring p.3305
+Type.Int
+restoring m.3304
+Type.Int
+restoring w3.4406
+others
+restoring flag1.4405
+Type.Int
+restoring texture_color.2935
+Type.Int
+restoring texture_color.2935
+Type.Int
+restoring w2.4361
+others
+restoring texture_color.2935
+Type.Int
+restoring Td1271.4353
+others
+restoring p.3305
+Type.Int
+restoring m.3304
+Type.Int
+restoring Td1277.4347
+others
+restoring w1.4287
+others
+restoring w7.4290
+others
+restoring p.3305
+Type.Int
+restoring m.3304
+Type.Int
+restoring Td1297.4326
+others
+restoring w4.4289
+others
+restoring w4.4289
+others
+restoring w4.4289
+others
+restoring w8.4293
+others
+restoring w9.4291
+others
+restoring texture_color.2935
+Type.Int
+restoring tmin.2931
+Type.Int
+restoring intersected_object_id.2933
+Type.Int
+restoring intsec_rectside.2930
+Type.Int
+restoring rinfo.4230
+Type.Int
+restoring or_net.2928
+Type.Int
+restoring shadow_check_one_or_matrix.3263
+Type.Int
+restoring m_dvec.5867.8481
+Type.Int
+restoring nvector.2934
+Type.Int
+restoring rinfo.4230
+Type.Int
+restoring diffuse.3312
+others
+restoring dirvec.3314
+Type.Int
+restoring rgb.2937
+Type.Int
+restoring texture_color.2935
+Type.Int
+restoring hilight_scale.3313
+others
+restoring rgb.2937
+Type.Int
+restoring index.3311
+Type.Int
+restoring diffuse.3312
+others
+restoring hilight_scale.3313
+others
+restoring dirvec.3314
+Type.Int
+restoring trace_reflections.3310
+Type.Int
+register allocation failed for Ta1462.4617.8387
+spilling trace_ray.3315 from $a26
+restoring tmin.2931
+Type.Int
+restoring nref.3316
+Type.Int
+restoring m_sids.5928.8397
+Type.Int
+restoring dirvec.3318
+Type.Int
+restoring light.2925
+Type.Int
+restoring energy.3317
+others
+restoring beam.2926
+Type.Int
+restoring rgb.2937
+Type.Int
+restoring intersected_object_id.2933
+Type.Int
+restoring objects.2922
+Type.Int
+restoring energy.3317
+others
+restoring intsec_rectside.2930
+Type.Int
+restoring nvector.2934
+Type.Int
+restoring dirvec.3318
+Type.Int
+restoring nvector.2934
+Type.Int
+restoring get_nvector_second.3298
+Type.Int
+restoring intersection_point.2932
+Type.Int
+restoring startp.2941
+Type.Int
+restoring obj.4122
+Type.Int
+restoring utexture.3303
+Type.Int
+restoring obj_id.4121
+Type.Int
+restoring intsec_rectside.2930
+Type.Int
+restoring nref.3316
+Type.Int
+restoring m_sids.5928.8397
+Type.Int
+restoring pixel.3319
+Type.Int
+restoring intersection_point.2932
+Type.Int
+restoring obj.4122
+Type.Int
+restoring texture_color.2935
+Type.Int
+restoring diffuse.4124
+others
+restoring nvector.2934
+Type.Int
+restoring dirvec.3318
+Type.Int
+restoring nvector.2934
+Type.Int
+restoring energy.3317
+others
+restoring or_net.2928
+Type.Int
+restoring shadow_check_one_or_matrix.3263
+Type.Int
+restoring nvector.2934
+Type.Int
+restoring light.2925
+Type.Int
+restoring diffuse.4124
+others
+restoring dirvec.3318
+Type.Int
+restoring rgb.2937
+Type.Int
+restoring texture_color.2935
+Type.Int
+restoring hilight_scale.4135
+others
+restoring rgb.2937
+Type.Int
+restoring intersection_point.2932
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring n_reflections.2950
+Type.Int
+restoring diffuse.4124
+others
+restoring hilight_scale.4135
+others
+restoring dirvec.3318
+Type.Int
+restoring trace_reflections.3310
+Type.Int
+restoring energy.3317
+others
+restoring nref.3316
+Type.Int
+restoring m_sids.5928.8397
+Type.Int
+restoring nref.3316
+Type.Int
+restoring m_sids.5928.8397
+Type.Int
+restoring obj.4122
+Type.Int
+restoring tmin.2931
+Type.Int
+restoring dist.3320
+others
+restoring dirvec.3318
+Type.Int
+restoring pixel.3319
+Type.Int
+restoring trace_ray.3315
+Type.Int
+restoring m_surface.6164.8356
+Type.Int
+restoring obj.4122
+Type.Int
+restoring tmin.2931
+Type.Int
+restoring dist.3320
+others
+restoring dirvec.3318
+Type.Int
+restoring pixel.3319
+Type.Int
+restoring trace_ray.3315
+Type.Int
+restoring tmin.2931
+Type.Int
+restoring intersected_object_id.2933
+Type.Int
+restoring objects.2922
+Type.Int
+restoring dirvec.3322
+Type.Int
+restoring intsec_rectside.2930
+Type.Int
+restoring nvector.2934
+Type.Int
+restoring nvector.2934
+Type.Int
+restoring get_nvector_second.3298
+Type.Int
+restoring obj.4098
+Type.Int
+restoring intersection_point.2932
+Type.Int
+restoring utexture.3303
+Type.Int
+restoring or_net.2928
+Type.Int
+restoring shadow_check_one_or_matrix.3263
+Type.Int
+restoring nvector.2934
+Type.Int
+restoring light.2925
+Type.Int
+restoring energy.3323
+others
+restoring obj.4098
+Type.Int
+restoring diffuse_ray.2936
+Type.Int
+restoring texture_color.2935
+Type.Int
+restoring intersected_object_id.2933
+Type.Int
+restoring objects.2922
+Type.Int
+restoring Tt1053.4090
+Type.Int
+restoring get_nvector.3300
+Type.Int
+restoring obj.4098.8007
+Type.Int
+restoring intersection_point.2932
+Type.Int
+restoring utexture.3303
+Type.Int
+restoring or_net.2928
+Type.Int
+restoring shadow_check_one_or_matrix.3263
+Type.Int
+restoring nvector.2934
+Type.Int
+restoring light.2925
+Type.Int
+restoring Td1056.4091
+others
+restoring obj.4098.8007
+Type.Int
+restoring diffuse_ray.2936
+Type.Int
+restoring texture_color.2935
+Type.Int
+restoring intersected_object_id.2933
+Type.Int
+restoring objects.2922
+Type.Int
+restoring Tt1059.4084
+Type.Int
+restoring get_nvector.3300
+Type.Int
+restoring obj.4098.7986
+Type.Int
+restoring intersection_point.2932
+Type.Int
+restoring utexture.3303
+Type.Int
+restoring or_net.2928
+Type.Int
+restoring shadow_check_one_or_matrix.3263
+Type.Int
+restoring nvector.2934
+Type.Int
+restoring light.2925
+Type.Int
+restoring Td1062.4085
+others
+restoring obj.4098.7986
+Type.Int
+restoring diffuse_ray.2936
+Type.Int
+restoring texture_color.2935
+Type.Int
+restoring index.3328
+Type.Int
+restoring dirvec_group.3325
+Type.Int
+restoring nvector.3326
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring Ti1064.4080
+Type.Int
+restoring dirvec_group.3325
+Type.Int
+restoring nvector.3326
+Type.Int
+restoring org.3327
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring Ta1034.4073
+Type.Int
+restoring nvector.3335
+Type.Int
+restoring org.3336
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring org.3336
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta1037.4070
+Type.Int
+restoring nvector.3335
+Type.Int
+restoring org.3336
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring group_id.3334
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring org.3336
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta1037.4070
+Type.Int
+restoring nvector.3335
+Type.Int
+restoring org.3336
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring org.3336
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta1040.4067
+Type.Int
+restoring nvector.3335
+Type.Int
+restoring org.3336
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring group_id.3334
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring org.3336
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta1040.4067
+Type.Int
+restoring nvector.3335
+Type.Int
+restoring org.3336
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring org.3336
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta1043.4064
+Type.Int
+restoring nvector.3335
+Type.Int
+restoring org.3336
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring group_id.3334
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring org.3336
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta1043.4064
+Type.Int
+restoring nvector.3335
+Type.Int
+restoring org.3336
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring org.3336
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta1046.4061
+Type.Int
+restoring nvector.3335
+Type.Int
+restoring org.3336
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring group_id.3334
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring org.3336
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta1046.4061
+Type.Int
+restoring nvector.3335
+Type.Int
+restoring org.3336
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring Ta1034.4073.7876
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring Ta1034.4073.7876
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring Ta1030.4054
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring Ta1030.4054
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta1037.4070.7874
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring Ta1037.4070.7874
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring Ta1030.4054
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring Ti1028.4052
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring Ta1030.4054
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta1037.4070.7874
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring Ta1037.4070.7874
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring Ta1030.4054
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring Ta1030.4054
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta1040.4067.7872
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring Ta1040.4067.7872
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring Ta1030.4054
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring Ti1028.4052
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring Ta1030.4054
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta1040.4067.7872
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring Ta1040.4067.7872
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring Ta1030.4054
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring Ta1030.4054
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta1043.4064.7870
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring Ta1043.4064.7870
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring Ta1030.4054
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring Ti1028.4052
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring Ta1030.4054
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta1043.4064.7870
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring Ta1043.4064.7870
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring Ta1030.4054
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring Ta1030.4054
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta1046.4061.7868
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring Ta1046.4061.7868
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring Ta1030.4054
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring Ti1028.4052
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring Ta1030.4054
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta1046.4061.7868
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring Ta1046.4061.7868
+Type.Int
+restoring Ta1029.4053
+Type.Int
+restoring Ta1030.4054
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring nref.3339
+Type.Int
+restoring m_engy.5914.7901
+Type.Int
+restoring rgb.2937
+Type.Int
+restoring diffuse_ray.2936
+Type.Int
+restoring nref.3348
+Type.Int
+restoring m_engy.5914.11553
+Type.Int
+restoring rgb.2937
+Type.Int
+restoring diffuse_ray.2936
+Type.Int
+restoring nref.3348
+Type.Int
+restoring pixel.3347
+Type.Int
+restoring calc_diffuse_using_1point.3337
+Type.Int
+restoring Ti1010.4014
+Type.Int
+restoring pixel.3347
+Type.Int
+restoring do_without_neighbors.3346
+Type.Int
+restoring nref.3368
+Type.Int
+restoring Tt976.3982
+Type.Int
+restoring do_without_neighbors.3346
+Type.Int
+restoring nref.3368
+Type.Int
+restoring x.3363
+Type.Int
+restoring cur.3366
+Type.Int
+restoring prev.3365
+Type.Int
+restoring next.3367
+Type.Int
+restoring do_without_neighbors.3346
+Type.Int
+restoring next.3367
+Type.Int
+restoring calc_diffuse_using_5points.3340
+Type.Int
+restoring Ti980.3978
+Type.Int
+restoring x.3363
+Type.Int
+restoring y.3364
+Type.Int
+restoring prev.3365
+Type.Int
+restoring cur.3366
+Type.Int
+restoring next.3367
+Type.Int
+restoring try_exploit_neighbors.3362
+Type.Int
+restoring rgb.2937
+Type.Int
+restoring rgb.2937
+Type.Int
+restoring Ta941.3928
+Type.Int
+restoring Ta942.3929
+Type.Int
+restoring Ta943.3930
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring pixel.3376
+Type.Int
+restoring nref.3377
+Type.Int
+restoring diffuse_ray.2936
+Type.Int
+restoring nref.3377
+Type.Int
+restoring diffuse_ray.2936
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta941.3928.7549
+Type.Int
+restoring Ta942.3929.7550
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring Ta941.3928.7549
+Type.Int
+restoring Ta942.3929.7550
+Type.Int
+restoring Ta943.3930.7551
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring pixel.3376
+Type.Int
+restoring Ti946.3917
+Type.Int
+restoring diffuse_ray.2936
+Type.Int
+restoring Ti946.3917
+Type.Int
+restoring pretrace_diffuse_rays.3375
+Type.Int
+restoring Td903.3906
+others
+restoring screenx_dir.2943
+Type.Int
+restoring lc0.3382
+others
+restoring ptrace_dirvec.2946
+Type.Int
+restoring lc1.3383
+others
+restoring lc2.3384
+others
+restoring rgb.2937
+Type.Int
+restoring viewpoint.2924
+Type.Int
+restoring startp.2941
+Type.Int
+restoring x.3380
+Type.Int
+restoring line.3379
+Type.Int
+restoring ptrace_dirvec.2946
+Type.Int
+restoring trace_ray.3315
+Type.Int
+restoring x.3380
+Type.Int
+restoring line.3379
+Type.Int
+restoring rgb.2937
+Type.Int
+restoring group_id.3381
+Type.Int
+restoring diffuse_ray.2936
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring startp_fast.2942
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring setup_startp_constants.3226
+Type.Int
+restoring Ta941.3928.7490
+Type.Int
+restoring Ta942.3929.7491
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring trace_diffuse_ray.3321
+Type.Int
+restoring Ta941.3928.7490
+Type.Int
+restoring Ta942.3929.7491
+Type.Int
+restoring Ta943.3930.7492
+Type.Int
+restoring iter_trace_diffuse_rays.3324
+Type.Int
+restoring Tt931.3881
+Type.Int
+restoring diffuse_ray.2936
+Type.Int
+restoring Tt931.3881
+Type.Int
+restoring pretrace_diffuse_rays.3375
+Type.Int
+restoring x.3380
+Type.Int
+restoring group_id.3381
+Type.Int
+restoring lc0.3382
+others
+restoring lc1.3383
+others
+restoring lc2.3384
+others
+restoring line.3379
+Type.Int
+restoring pretrace_pixels.3378
+Type.Int
+restoring Td877.3859
+others
+restoring screeny_dir.2944
+Type.Int
+restoring screenz_dir.2945
+Type.Int
+restoring image_size.2938
+Type.Int
+restoring line.3386
+Type.Int
+restoring group_id.3388
+Type.Int
+restoring pretrace_pixels.3378
+Type.Int
+restoring Tt870.3831
+Type.Int
+restoring do_without_neighbors.3346
+Type.Int
+restoring x.3390
+Type.Int
+restoring y.3391
+Type.Int
+restoring prev.3392
+Type.Int
+restoring cur.3393
+Type.Int
+restoring next.3394
+Type.Int
+restoring try_exploit_neighbors.3362
+Type.Int
+restoring rgb.2937
+Type.Int
+restoring rgb.2937
+Type.Int
+restoring rgb.2937
+Type.Int
+restoring x.3390
+Type.Int
+restoring image_size.2938
+Type.Int
+restoring cur.3393
+Type.Int
+restoring rgb.2937
+Type.Int
+restoring y.3391
+Type.Int
+restoring do_without_neighbors.3346
+Type.Int
+restoring prev.3392
+Type.Int
+restoring next.3394
+Type.Int
+restoring try_exploit_neighbors.3362
+Type.Int
+restoring write_rgb.3373
+Type.Int
+restoring Ti875.3825
+Type.Int
+restoring y.3391
+Type.Int
+restoring prev.3392
+Type.Int
+restoring cur.3393
+Type.Int
+restoring next.3394
+Type.Int
+restoring scan_pixel.3389
+Type.Int
+restoring image_size.2938
+Type.Int
+restoring cur.3398
+Type.Int
+restoring rgb.2937
+Type.Int
+restoring y.3396
+Type.Int
+restoring do_without_neighbors.3346
+Type.Int
+restoring prev.3397
+Type.Int
+restoring next.3399
+Type.Int
+restoring try_exploit_neighbors.3362
+Type.Int
+restoring write_rgb.3373
+Type.Int
+restoring y.3396
+Type.Int
+restoring prev.3397
+Type.Int
+restoring cur.3398
+Type.Int
+restoring next.3399
+Type.Int
+restoring scan_pixel.3389
+Type.Int
+restoring y.3396
+Type.Int
+restoring group_id.3400
+Type.Int
+restoring image_size.2938
+Type.Int
+restoring prev.3397
+Type.Int
+restoring pretrace_line.3385
+Type.Int
+restoring Ti861.3809
+Type.Int
+restoring cur.3398
+Type.Int
+restoring next.3399
+Type.Int
+restoring prev.3397
+Type.Int
+restoring scan_pixel.3389
+Type.Int
+restoring Ti861.3809
+Type.Int
+restoring Ti863.3810
+Type.Int
+restoring next.3399
+Type.Int
+restoring prev.3397
+Type.Int
+restoring cur.3398
+Type.Int
+restoring scan_line.3395
+Type.Int
+restoring array.3782
+Type.Int
+restoring array.3782
+Type.Int
+restoring array.3782
+Type.Int
+restoring array.3782
+Type.Int
+restoring m_gid.3767.7357
+Type.Int
+restoring m_r20p.3766.7354
+Type.Int
+restoring m_engy.3765.7352
+Type.Int
+restoring m_cdif.3764.7350
+Type.Int
+restoring m_sids.3763.7347
+Type.Int
+restoring m_isect_ps.3762.7344
+Type.Int
+restoring m_rgb.3761.7342
+Type.Int
+restoring n.3407
+Type.Int
+restoring line.3406
+Type.Int
+restoring m_gid.3767.11026
+Type.Int
+restoring m_r20p.3766.11023
+Type.Int
+restoring m_engy.3765.11021
+Type.Int
+restoring m_cdif.3764.11019
+Type.Int
+restoring m_sids.3763.11016
+Type.Int
+restoring m_isect_ps.3762.11013
+Type.Int
+restoring m_rgb.3761.11011
+Type.Int
+restoring Ti819.3757
+Type.Int
+restoring line.3406
+Type.Int
+restoring x.3417
+others
+restoring y.3418
+others
+restoring group_id.3421
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring index.3422
+Type.Int
+restoring rx.3419
+others
+restoring Td803.3737.7261
+others
+restoring Td804.3743.11006
+others
+restoring l.3733.7256
+others
+restoring icount.3416
+Type.Int
+restoring ry.3420
+others
+restoring Td803.3737.7251
+others
+restoring Td804.3743.11003
+others
+restoring l.3733.7246
+others
+restoring x2.3679
+others
+restoring rx.3419
+others
+restoring ry.3420
+others
+restoring Ti796.3680
+Type.Int
+restoring group_id.3421
+Type.Int
+restoring index.3422
+Type.Int
+restoring calc_dirvec.3415
+Type.Int
+restoring ry.3425
+others
+restoring group_id.3426
+Type.Int
+restoring index.3427
+Type.Int
+restoring calc_dirvec.3415
+Type.Int
+restoring col.3424
+Type.Int
+restoring index.3427
+Type.Int
+restoring ry.3425
+others
+restoring group_id.3426
+Type.Int
+restoring calc_dirvec.3415
+Type.Int
+restoring col.3424
+Type.Int
+restoring group_id.3426
+Type.Int
+restoring ry.3425
+others
+restoring index.3427
+Type.Int
+restoring calc_dirvecs.3423
+Type.Int
+restoring group_id.3430
+Type.Int
+restoring index.3431
+Type.Int
+restoring calc_dirvecs.3423
+Type.Int
+restoring row.3429
+Type.Int
+restoring group_id.3430
+Type.Int
+restoring index.3431
+Type.Int
+restoring Ti730.3643
+Type.Int
+restoring Ti732.3644
+Type.Int
+restoring calc_dirvecs.3423
+Type.Int
+restoring Ti728.3642
+Type.Int
+restoring Ti730.3643
+Type.Int
+restoring Ti732.3644
+Type.Int
+restoring calc_dirvec_rows.3428
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring v3.3633.7219
+Type.Int
+restoring index.3436
+Type.Int
+restoring d.3435
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring v3.3633.10996
+Type.Int
+restoring Ti716.3629
+Type.Int
+restoring d.3435
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring v3.3633.7219.10980
+Type.Int
+restoring Ti716.3629.7216
+Type.Int
+restoring d.3435
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring v3.3633.13506
+Type.Int
+restoring Ti716.3629.10987
+Type.Int
+restoring d.3435
+Type.Int
+restoring create_dirvec_elements.3434
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring v3.3633.7207
+Type.Int
+restoring Ti704.3624
+Type.Int
+restoring index.3438
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring v3.3633.10973
+Type.Int
+restoring Ta708.3621
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring v3.3633.7219.10957
+Type.Int
+restoring Ta708.3621
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring v3.3633.13500
+Type.Int
+restoring Ta708.3621
+Type.Int
+restoring create_dirvec_elements.3434
+Type.Int
+restoring index.3438
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring v3.3633.10950
+Type.Int
+restoring Ti704.3624.7189
+Type.Int
+restoring Ti711.3619
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring v3.3633.7219.10934
+Type.Int
+restoring Ta708.3621.7194
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring v3.3633.13494
+Type.Int
+restoring Ta708.3621.7194
+Type.Int
+restoring create_dirvec_elements.3434
+Type.Int
+restoring Ti711.3619
+Type.Int
+restoring create_dirvecs.3437
+Type.Int
+restoring index.3441
+Type.Int
+restoring vecset.3440
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring objects.2922
+Type.Int
+restoring Ti1673.4872.10917
+Type.Int
+restoring m_const.5873.13491
+Type.Int
+restoring Ti1673.4872.10917
+Type.Int
+restoring m_const.5873.13491
+Type.Int
+restoring Ti1673.4872.10917
+Type.Int
+restoring m_const.5873.13491
+Type.Int
+restoring Tt700.3615.7180
+Type.Int
+restoring iter_setup_dirvec_constants.3221
+Type.Int
+restoring Ti702.3613
+Type.Int
+restoring vecset.3440
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring iter_setup_dirvec_constants.3221
+Type.Int
+restoring Ti702.3613.7183
+Type.Int
+restoring vecset.3440
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring objects.2922
+Type.Int
+restoring Ti1673.4872.13448
+Type.Int
+restoring m_const.5873.13049.13452
+Type.Int
+restoring Ti1673.4872.13448
+Type.Int
+restoring m_const.5873.13049.13452
+Type.Int
+restoring Ti1673.4872.13448
+Type.Int
+restoring m_const.5873.13049.13452
+Type.Int
+restoring Tt700.3615.7180.10910
+Type.Int
+restoring iter_setup_dirvec_constants.3221
+Type.Int
+restoring Ti702.3613.10908
+Type.Int
+restoring vecset.3440
+Type.Int
+restoring init_dirvec_constants.3439
+Type.Int
+restoring Ti1673.4872.10886
+Type.Int
+restoring m_const.5873.13444
+Type.Int
+restoring Ti1673.4872.10886
+Type.Int
+restoring m_const.5873.13444
+Type.Int
+restoring Ti1673.4872.10886
+Type.Int
+restoring m_const.5873.13444
+Type.Int
+restoring Tt700.3615.7175
+Type.Int
+restoring iter_setup_dirvec_constants.3221
+Type.Int
+restoring Ta695.3609
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring iter_setup_dirvec_constants.3221
+Type.Int
+restoring Ta695.3609
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring objects.2922
+Type.Int
+restoring Ti1673.4872.13401
+Type.Int
+restoring m_const.5873.13049.13405
+Type.Int
+restoring Ti1673.4872.13401
+Type.Int
+restoring m_const.5873.13049.13405
+Type.Int
+restoring Ti1673.4872.13401
+Type.Int
+restoring m_const.5873.13049.13405
+Type.Int
+restoring Tt700.3615.7180.10879
+Type.Int
+restoring iter_setup_dirvec_constants.3221
+Type.Int
+restoring Ta695.3609
+Type.Int
+restoring init_dirvec_constants.3439
+Type.Int
+restoring index.3443
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring iter_setup_dirvec_constants.3221
+Type.Int
+restoring Ta695.3609.7169
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring objects.2922
+Type.Int
+restoring Ti1673.4872.13369
+Type.Int
+restoring m_const.5873.13049.13373
+Type.Int
+restoring Ti1673.4872.13369
+Type.Int
+restoring m_const.5873.13049.13373
+Type.Int
+restoring Ti1673.4872.13369
+Type.Int
+restoring m_const.5873.13049.13373
+Type.Int
+restoring Tt700.3615.7180.10865
+Type.Int
+restoring iter_setup_dirvec_constants.3221
+Type.Int
+restoring Ta695.3609.7169
+Type.Int
+restoring init_dirvec_constants.3439
+Type.Int
+restoring Ti698.3607
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring objects.2922
+Type.Int
+restoring Ti1673.4872.13337
+Type.Int
+restoring m_const.5873.13049.13341
+Type.Int
+restoring Ti1673.4872.13337
+Type.Int
+restoring m_const.5873.13049.13341
+Type.Int
+restoring Ti1673.4872.13337
+Type.Int
+restoring m_const.5873.13049.13341
+Type.Int
+restoring Tt700.3615.7175.10843
+Type.Int
+restoring iter_setup_dirvec_constants.3221
+Type.Int
+restoring Ta695.3609.10841
+Type.Int
+restoring init_dirvec_constants.3439
+Type.Int
+restoring Ti698.3607.7173
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring init_dirvec_constants.3439
+Type.Int
+restoring Ti698.3607.10848
+Type.Int
+restoring init_vecset_constants.3442
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring v3.3633.10836
+Type.Int
+restoring Td670.3580
+others
+restoring n1.3559
+others
+restoring n2.3560
+others
+restoring n_objects.2921
+Type.Int
+restoring objects.2922
+Type.Int
+restoring Ti1673.4872.10813
+Type.Int
+restoring consts.3634.10839
+Type.Int
+restoring Ti1673.4872.10813
+Type.Int
+restoring consts.3634.10839
+Type.Int
+restoring Ti1673.4872.10813
+Type.Int
+restoring consts.3634.10839
+Type.Int
+restoring dvec.3592.7103
+Type.Int
+restoring iter_setup_dirvec_constants.3221
+Type.Int
+restoring br.3557
+others
+restoring dvec.3592.7103
+Type.Int
+restoring Ti668.3579
+Type.Int
+restoring nr.3556
+Type.Int
+restoring reflections.2949
+Type.Int
+restoring sid.3555
+Type.Int
+restoring light.2925
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring v3.3633.10806
+Type.Int
+restoring n0.3558
+others
+restoring Td676.3575
+others
+restoring n2.3560
+others
+restoring n_objects.2921
+Type.Int
+restoring objects.2922
+Type.Int
+restoring Ti1673.4872.10783
+Type.Int
+restoring consts.3634.10809
+Type.Int
+restoring Ti1673.4872.10783
+Type.Int
+restoring consts.3634.10809
+Type.Int
+restoring Ti1673.4872.10783
+Type.Int
+restoring consts.3634.10809
+Type.Int
+restoring dvec.3592.7097
+Type.Int
+restoring iter_setup_dirvec_constants.3221
+Type.Int
+restoring br.3557
+others
+restoring dvec.3592.7097
+Type.Int
+restoring Ti674.3574
+Type.Int
+restoring Ti672.3573
+Type.Int
+restoring reflections.2949
+Type.Int
+restoring nr.3556
+Type.Int
+restoring sid.3555
+Type.Int
+restoring light.2925
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring v3.3633.10776
+Type.Int
+restoring n0.3558
+others
+restoring n1.3559
+others
+restoring Td682.3569
+others
+restoring n_objects.2921
+Type.Int
+restoring objects.2922
+Type.Int
+restoring Ti1673.4872.10753
+Type.Int
+restoring consts.3634.10779
+Type.Int
+restoring Ti1673.4872.10753
+Type.Int
+restoring consts.3634.10779
+Type.Int
+restoring Ti1673.4872.10753
+Type.Int
+restoring consts.3634.10779
+Type.Int
+restoring dvec.3592.7091
+Type.Int
+restoring iter_setup_dirvec_constants.3221
+Type.Int
+restoring br.3557
+others
+restoring dvec.3592.7091
+Type.Int
+restoring Ti680.3568
+Type.Int
+restoring Ti678.3567
+Type.Int
+restoring reflections.2949
+Type.Int
+restoring nr.3556
+Type.Int
+restoring n_reflections.2950
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring v3.3633.10746
+Type.Int
+restoring Td640.3528
+others
+restoring Td647.3529
+others
+restoring Td654.3530
+others
+restoring n_objects.2921
+Type.Int
+restoring objects.2922
+Type.Int
+restoring Ti1673.4872.10723
+Type.Int
+restoring consts.3634.10749
+Type.Int
+restoring Ti1673.4872.10723
+Type.Int
+restoring consts.3634.10749
+Type.Int
+restoring Ti1673.4872.10723
+Type.Int
+restoring consts.3634.10749
+Type.Int
+restoring dvec.3592.7010
+Type.Int
+restoring iter_setup_dirvec_constants.3221
+Type.Int
+restoring br.3522
+others
+restoring dvec.3592.7010
+Type.Int
+restoring sid.3520
+Type.Int
+restoring nr.3521
+Type.Int
+restoring reflections.2949
+Type.Int
+restoring n_reflections.2950
+Type.Int
+register allocation failed for Ti596.3506
+spilling scan_line.3395 from $a7
+restoring Td600.3500
+others
+restoring scan_pitch.2940
+Type.Int
+restoring image_size.2938
+Type.Int
+restoring m_gid.3767.10717
+Type.Int
+restoring m_r20p.3766.10714
+Type.Int
+restoring m_engy.3765.10712
+Type.Int
+restoring m_cdif.3764.10710
+Type.Int
+restoring m_sids.3763.10707
+Type.Int
+restoring m_isect_ps.3762.10704
+Type.Int
+restoring m_rgb.3761.10702
+Type.Int
+restoring Ti808.3751.6966
+Type.Int
+restoring image_size.2938
+Type.Int
+restoring image_size.2938
+Type.Int
+restoring m_gid.3767.10697
+Type.Int
+restoring m_r20p.3766.10694
+Type.Int
+restoring m_engy.3765.10692
+Type.Int
+restoring m_cdif.3764.10690
+Type.Int
+restoring m_sids.3763.10687
+Type.Int
+restoring m_isect_ps.3762.10684
+Type.Int
+restoring m_rgb.3761.10682
+Type.Int
+restoring Ti808.3751.6957
+Type.Int
+restoring image_size.2938
+Type.Int
+restoring image_size.2938
+Type.Int
+restoring m_gid.3767.10677
+Type.Int
+restoring m_r20p.3766.10674
+Type.Int
+restoring m_engy.3765.10672
+Type.Int
+restoring m_cdif.3764.10670
+Type.Int
+restoring m_sids.3763.10667
+Type.Int
+restoring m_isect_ps.3762.10664
+Type.Int
+restoring m_rgb.3761.10662
+Type.Int
+restoring Ti808.3751.6948
+Type.Int
+restoring image_size.2938
+Type.Int
+restoring read_screen_settings.3107
+Type.Int
+restoring read_light.3109
+Type.Int
+restoring read_nth_object.3114
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring Ti2215.5515.10655
+Type.Int
+restoring read_object.3116
+Type.Int
+restoring read_and_network.3124
+Type.Int
+restoring or_net.2928
+Type.Int
+restoring image_size.2938
+Type.Int
+restoring image_size.2938
+Type.Int
+restoring create_dirvecs.3437
+Type.Int
+restoring calc_dirvec_rows.3428
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring objects.2922
+Type.Int
+restoring Ti1673.4872.13245
+Type.Int
+restoring m_const.5873.13049.13249
+Type.Int
+restoring Ti1673.4872.13245
+Type.Int
+restoring m_const.5873.13049.13249
+Type.Int
+restoring Ti1673.4872.13245
+Type.Int
+restoring m_const.5873.13049.13249
+Type.Int
+restoring Tt700.3615.7175.10643
+Type.Int
+restoring iter_setup_dirvec_constants.3221
+Type.Int
+restoring Ta695.3609.10641
+Type.Int
+restoring init_dirvec_constants.3439
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring init_dirvec_constants.3439
+Type.Int
+restoring init_vecset_constants.3442
+Type.Int
+restoring light.2925
+Type.Int
+restoring v3.6465
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring light_dirvec.2948
+Type.Int
+restoring iter_setup_dirvec_constants.3221
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring objects.2922
+Type.Int
+restoring setup_rect_reflection.3453
+Type.Int
+restoring setup_surface_reflection.3456
+Type.Int
+restoring cur.3474
+Type.Int
+restoring pretrace_line.3385
+Type.Int
+restoring image_size.2938
+Type.Int
+restoring next.3475
+Type.Int
+restoring pretrace_line.3385
+Type.Int
+restoring Ti617.3483
+Type.Int
+restoring prev.3473
+Type.Int
+restoring cur.3474
+Type.Int
+restoring next.3475
+Type.Int
+restoring scan_pixel.3389
+Type.Int
+restoring cur.3474
+Type.Int
+restoring next.3475
+Type.Int
+restoring prev.3473
+Type.Int
+restoring scan_line.3395
+Type.Int
+restoring Ti269.6840
+Type.Int
+restoring Ti274.6835
+Type.Int
+restoring dummyf.6790
+Type.Int
+restoring dummyf2.6782
+Type.Int
+restoring dummyf3.6772
+Type.Int
+restoring Ti354.6734
+Type.Int
+restoring Ti359.6729
+Type.Int
+restoring dummyf.6684
+Type.Int
+restoring dummyf2.6676
+Type.Int
+restoring dummyf3.6666
+Type.Int
+restoring Ti439.6628
+Type.Int
+restoring Ti444.6623
+Type.Int
+restoring dummyf.6578
+Type.Int
+restoring dummyf2.6570
+Type.Int
+restoring dummyf3.6560
+Type.Int
+restoring Ti524.6522
+Type.Int
+restoring Ti529.6517
+Type.Int
+restoring dummyf.6472
+Type.Int
+restoring dummyf2.6464
+Type.Int
+restoring v3.6465
+Type.Int
+restoring dummyf3.6454
+Type.Int
+restoring viewpoint.2924
+Type.Int
+restoring screenz_dir.2945
+Type.Int
+restoring screeny_dir.2944
+Type.Int
+restoring screenx_dir.2943
+Type.Int
+restoring screen.2923
+Type.Int
+restoring light.2925
+Type.Int
+restoring beam.2926
+Type.Int
+restoring objects.2922
+Type.Int
+restoring n_objects.2921
+Type.Int
+restoring and_net.2927
+Type.Int
+restoring solver_dist.2929
+Type.Int
+register allocation failed for l.15837
+spilling read_and_network.3124 from $a13
+register allocation failed for l.15834
+spilling read_light.3109 from $a6
+restoring v3.6465
+Type.Int
+restoring intersection_point.2932
+Type.Int
+register allocation failed for intersection_point.2932
+spilling read_nth_object.3114 from $a9
+restoring consts.6466
+Type.Int
+register allocation failed for consts.6466
+spilling read_object.3116 from $a11
+register allocation failed for shadow_check_one_or_group.3260
+spilling read_screen_settings.3107 from $a1
+register allocation failed for l.15823
+spilling iter_setup_dirvec_constants.3221 from $a24
+register allocation failed for l.15819
+spilling screeny_dir.2944 from $a4
+restoring tmin.2931
+Type.Int
+restoring startp.2941
+Type.Int
+restoring intsec_rectside.2930
+Type.Int
+restoring intersected_object_id.2933
+Type.Int
+register allocation failed for solve_one_or_network.3270
+spilling v3.6465 from $a6
+register allocation failed for l.15794
+spilling screenz_dir.2945 from $a3
+register allocation failed for l.15790
+spilling screenx_dir.2943 from a5
+restoring startp_fast.2942
+Type.Int
+restoring or_net.2928
+Type.Int
+restoring nvector.2934
+Type.Int
+restoring texture_color.2935
+Type.Int
+restoring rgb.2937
+Type.Int
+restoring reflections.2949
+Type.Int
+register allocation failed for l.15716
+spilling reflections.2949 from $a23
+restoring diffuse_ray.2936
+Type.Int
+restoring dirvecs.2947
+Type.Int
+restoring screenx_dir.2943
+Type.Int
+restoring scan_pitch.2940
+Type.Int
+restoring ptrace_dirvec.2946
+Type.Int
+restoring image_center.2939
+Type.Int
+restoring screenz_dir.2945
+Type.Int
+restoring screeny_dir.2944
+Type.Int
+restoring image_size.2938
+Type.Int
+restoring iter_setup_dirvec_constants.3221
+Type.Int
+restoring reflections.2949
+Type.Int
+restoring v3.6465
+Type.Int
+restoring read_screen_settings.3107
+Type.Int
+restoring read_object.3116
+Type.Int
+restoring read_nth_object.3114
+Type.Int
+restoring read_light.3109
+Type.Int
+restoring read_and_network.3124
+Type.Int
+restoring light_dirvec.2948
+Type.Int
+generating assembly...
