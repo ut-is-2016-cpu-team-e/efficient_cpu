@@ -100,44 +100,7 @@ let rec fless x y = let z = x -. y in fisneg z in
 let rec fflag a =
 	if (a >= 0.0) then 1
 	else -1 in
-(*)
-let rec sqrt a =
-	let rec count2_big a b =
-		if (a > 2.) then
-			count2_big (a *. 0.5) (b + 1)
-		else
-			b in
-	let rec count2_small a b =
-		if (a < 1.) then
-			count2_small (a *. 2.) (b - 1)
-		else
-			b in
-	let rec count2 a =
-		if (a > 2.) then
-			count2_big a 0
-		else
-			count2_small a 0 in
-	let sqrt_sub1 =
-		let n = count2 a in
-		let rec mul2 b n =
-			if (n > 0) then
-				mul2 (b *. 2.0) (n - 1)
-			else
-				b in
-		let rec div2 b n =
-			if (n < 0) then
-				div2 (b *. 0.5) (n + 1) in
-		if (n > 0) then
-			mul2 1.0 (n / 2)
-		else div2 1.0 (n / 2) in
-	let rec newton x n =
-			let y = (x +. a /. x) *. 0.5 in
-			if (n > 0) then
-				newton y (n - 1)
-			else
-				y in
-	newton 100.0 10 in
-*)
+
 
 (*)
 let rec int_of_float a =
@@ -222,11 +185,11 @@ let rec float_of_int a =
 let rec floor a =
 	let abs = fabs a in
 	let rec floor_pos_ker a =
-		a -. 1.0 in
+		a -. 1. in
 	let rec floor_pos_small a =
 		let b = a +. 8388608. in
 		let c = b -. 8388608. in
-		if  (c < a) then
+		if  (a < c) then
 			floor_pos_ker c
 		else
 			c in
@@ -236,9 +199,7 @@ let rec floor a =
 		else
 			floor_pos_small a in
 	let rec floor_neg_ker a =
-		let b = a +. 8388608. in
-		let c = b +. 1. in
-		c -. 8388608. in
+		a +. 1. in
 	let rec floor_neg_small a =
 		let b = a +. 8388608. in
 		let c = b -. 8388608. in
@@ -248,16 +209,47 @@ let rec floor a =
 			-. c in
 	let rec floor_neg a =
 		if (a > 8388608.) then
-			-. a 
+			-. (floor_neg_ker a)
 		else
 			floor_neg_small a in
 	if (a > 0.) then
 		floor_pos abs
 	else
 		floor_neg abs in
+*)
+let rec sqrt a =
+	let rec count2 a n =
+		if (a >= 2.) then
+			count2 (a *. 0.5) (n + 1)
+		else if (a < 1.) then
+			count2 (a *. 2.) (n - 1)
+		else
+			n in
+	let rec pow2 n x =
+		if (n > 0) then
+			pow2 (n - 1) (x *. 2.0)
+		else if (n < 0) then
+			pow2 (n + 1) (x *. 0.5)
+		else
+			x in
+	let n = count2 a 0 in
+	let flag = n - (n / 2)*2 in
+	let a_i2 = pow2 (n / 2) 1.0 in
+	let a_m = a *. (pow2 (- n) 1.0) in
+	let rec newton x k =
+		if (fabs (x *. x -. k) < 0.0000005) then
+			x
+		else
+			newton ((x +. k /. x) *. 0.5) k in
+	let sqrt_sub = newton 1.0 a_m in
+	if (flag = 1) then
+		a_i2 *. sqrt_sub *. 1.41421356
+	else if (flag = (-1)) then
+		a_i2 *. sqrt_sub *. 0.70710678
+	else
+		a_i2 *. sqrt_sub in
 
-
-
+(*)
 (*三角関数*)
 (*円周率定義*)
 let pi = 3.1415926535897932384 in
@@ -355,3 +347,60 @@ let rec atan a =
 		else
 addflag (pi *. 0.5 -. (atan_kernel (1.0 /. abs))) flag in
 *)
+(*)
+let rec countn a b c =
+	if (a < b) then
+		c
+	else
+		countn (a-b) b (c+1) in
+
+let rec print_int a =
+	let b =
+		if (a < 0) then
+			(print_char 45;
+			(-a))
+		else a in
+
+	let x = countn b 10000 0 in
+	let b = b - x*10000 in
+	let flag =
+		if (x > 0) then
+			(print_char (48 + x);
+				1)
+		else 0 in
+
+	let x = countn b 1000 0 in
+	let b = b - x*1000 in
+	let flag =
+		if (x > 0) then
+			(print_char (48 + x);
+			1)
+		else if (flag = 1) then
+			(print_char 48;
+			1)
+		else 0 in
+
+	let x = countn b 100 0 in
+	let b = b - x*100 in
+	let flag =
+		if (x > 0) then
+			(print_char (48 + x);
+			1)
+		else if (flag = 1) then
+			(print_char 48;
+			1)
+		else 0 in
+
+	let x = countn b 10 0 in
+	let b = b - x*10 in
+	let flag =
+		if (x > 0) then
+			(print_char (48 + x);
+			1)
+		else if (flag = 1) then
+			(print_char 48;
+			1)
+		else 0 in
+
+	(print_char (48 + b);
+	a) in*)
