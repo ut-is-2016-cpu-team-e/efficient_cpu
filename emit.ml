@@ -14,13 +14,18 @@ let put_initialize oc gd heap =
       | Syntax.Int(i) ->
           Printf.fprintf oc "\tli\t$a0, %d\n" i
       | Syntax.Float(d) ->
-          let fnum = getfloat d in
+          if (d = 0.0) then
+            Printf.fprintf oc "\tmtc1\t$f0, $zero\n"
+            (*(Printf.fprintf oc "\tli\t$v0, 0\n";
+            Printf.fprintf oc "\tmtc1\t$f0, $v0\n") *)
+          else
+          (let fnum = getfloat d in
           let n = Int32.shift_right fnum 16 in
           let m = Int32.logxor fnum (Int32.shift_left n 16) in
           Printf.fprintf oc "\tli\t$v0, %ld\n" n;
           Printf.fprintf oc "\tsll\t$v0, $v0, 16\n";
           Printf.fprintf oc "\tori\t$v0, $v0, %ld\n" m;
-          Printf.fprintf oc "\tmtc1\t$f0, $v0\n"
+          Printf.fprintf oc "\tmtc1\t$f0, $v0\n")
       | Syntax.Neg(Syntax.Int(i)) ->
           let i2 = -i in
           Printf.fprintf oc "\tli\t$a0, %d\n" i2
@@ -34,13 +39,16 @@ let put_initialize oc gd heap =
                                  Printf.fprintf oc "\tsw\t$a1, %d($a0)\n" !offset;
                                  offset := !offset + 4
               | Syntax.Float(d) ->
+                  (if d = 0.0 then
+                    Printf.fprintf oc "\tmtc1\t$f0, $zero\n"
+                  else
                   let fnum = getfloat d in
                   let n = Int32.shift_right fnum 16 in
                   let m = Int32.logxor fnum (Int32.shift_left n 16) in
                   Printf.fprintf oc "\tli\t$v0, %ld\n" n;
                   Printf.fprintf oc "\tsll\t$v0, $v0, 16\n";
                   Printf.fprintf oc "\tori\t$v0, $v0, %ld\n" m;
-                  Printf.fprintf oc "\tmtc1\t$f0, $v0\n";
+                  Printf.fprintf oc "\tmtc1\t$f0, $v0\n");
                   Printf.fprintf oc "\tfsw\t$f0, %d($a0)\n" !offset;
                   offset := !offset + 4
               | Syntax.Bool(b) ->
@@ -78,6 +86,8 @@ let put_initialize oc gd heap =
       else () in
     putinit 0)) in
   List.iter putg gd;
+  Printf.fprintf oc "\tsub\t$zero, $zero, $zero\n";
+  (*Printf.fprintf oc "\tli\t$sp, 32768\n"; *)
   Printf.fprintf oc "\tli\t$fp, %d\n" heap;
   Printf.fprintf oc "\tj _min_caml_start2\n"
 
@@ -147,13 +157,22 @@ and g' oc = function (* 各命令のアセンブリ生成 *)
 	Printf.fprintf oc "\tori\t%s, %s, %d\n" r r m
   | (NonTail(x), FLi(d)) ->
       (*let s = load_label "$f31" l in*)
+      if d = 0.0 then
+      (*)  (Printf.fprintf oc "\tli\t$v0, 0\n"; *)
+        (Printf.fprintf oc "\tmtc1\t%s, $zero\n" (reg x))
+      else
+      (
       let fnum = getfloat d in
       let n = Int32.shift_right fnum 16 in
       let m = Int32.logxor fnum (Int32.shift_left n 16) in
-      Printf.fprintf oc "\tli\t$v0, %ld\n" n;
-      Printf.fprintf oc "\tsll\t$v0, $v0, 16\n";
-      Printf.fprintf oc "\tori\t$v0, $v0, %ld\n" m;
-      Printf.fprintf oc "\tmtc1\t%s, $v0\n" (reg x)
+        if Int32.to_int fnum < 2097152 && Int32.to_int fnum >= 0 then
+          (Printf.fprintf oc "\tli\t$v0, %ld\n" fnum;
+          Printf.fprintf oc "\tmtc1\t%s, $v0\n" (reg x))
+        else
+          (Printf.fprintf oc "\tli\t$v0, %ld\n" n;
+          Printf.fprintf oc "\tsll\t$v0, $v0, 16\n";
+          Printf.fprintf oc "\tori\t$v0, $v0, %ld\n" m;
+          Printf.fprintf oc "\tmtc1\t%s, $v0\n" (reg x)))
 
       (*let ss = stacksize () in
       Printf.fprintf oc "\tsw\t%s, %d(%s)\n" reg_tmp (ss - 4) reg_sp;
@@ -162,10 +181,13 @@ and g' oc = function (* 各命令のアセンブリ生成 *)
       Printf.fprintf oc "\tsubi\t%s, %s, %d\n" reg_sp reg_sp ss;
     	Printf.fprintf oc "\tlw\t%s, %d(%s)\n" reg_tmp (ss - 4) reg_sp;
       Printf.fprintf oc "\tmtc1\t%s, %s\n" (reg x) reg_sw*)
-  | (NonTail(x), SetL(Id.L(y))) ->
-      let s = load_label x y in
-      Printf.fprintf oc "%s" s
-  | (NonTail(x), SetExt(y)) -> Printf.fprintf oc "\tli\t%s, %d\n" (reg x) y (*yの上限は1800以下*)
+  | (NonTail(x), SetL(Id.L(y))) -> ()
+      (*let s = load_label x y in
+      Printf.fprintf oc "%s" s *)
+  | (NonTail(x), SetExt(y)) ->
+  (*  (if y = 0 then Printf.fprintf oc "\tnop\n"
+    else ()); *)
+    Printf.fprintf oc "\tli\t%s, %d\n" (reg x) y (*yの上限は1800以下*)
   | (NonTail(x), Mr(y)) when x = y -> ()
   | (NonTail(x), Mr(y)) -> Printf.fprintf oc "\tmove\t%s, %s\n" (reg x) (reg y)
   | (NonTail(x), Neg(y)) -> Printf.fprintf oc "\tneg\t%s, %s\n" (reg x) (reg y)
@@ -215,6 +237,17 @@ and g' oc = function (* 各命令のアセンブリ生成 *)
       Printf.fprintf oc "\tfdiv\t%s, %s, %s\n" (reg x) (reg y) (reg z)
   | (NonTail(x), FReciprocal(y)) ->
       Printf.fprintf oc "\tfinv\t%s, %s\n" (reg x) (reg y)
+  | (NonTail(x), Xor(y, z)) ->
+      Printf.fprintf oc "\txor\t%s, %s, %s\n" (reg x) (reg y) (reg z)
+  | (NonTail(x), FAbs(y)) ->
+      Printf.fprintf oc "\tfabs\t%s, %s\n" (reg x) (reg y)
+  | (NonTail(x), Sqrt(y)) ->
+      Printf.fprintf oc "\tsqrt\t%s, %s\n" (reg x) (reg y)
+  | (NonTail(_), Printchar(C(y))) ->
+      Printf.fprintf oc "\tli\t$a23, %d\n" y;
+      Printf.fprintf oc "\tprint_byte\t$a23\n";
+  | (NonTail(_), Printchar(V(y))) ->
+      Printf.fprintf oc "\tprint_byte\t%s\n" (reg y)
   | (NonTail(x), Lfd(y, V(z))) ->
       Printf.fprintf oc "\tadd\t%s, %s, %s\n" (reg z) (reg y) (reg z);
       Printf.fprintf oc "\tflw\t%s, 0(%s)\n" (reg x) (reg z)
@@ -243,15 +276,14 @@ and g' oc = function (* 各命令のアセンブリ生成 *)
       assert (List.mem x allfregs);
       Printf.fprintf oc "\tflw\t%s, %d(%s)\n" (reg x) (offset y) reg_sp
   (* 末尾だったら計算結果を第一レジスタにセット *)
-  | (Tail, (Nop | Stw _ | Stfd _ | Comment _ | Save _ as exp)) ->
+  | (Tail, (Nop | Stw _ | Stfd _ | Comment _ | Save _  | Printchar _ as exp)) ->
       g' oc (NonTail(Id.gentmp Type.Unit), exp);
       Printf.fprintf oc "\tjr\t$ra\n";
-  | (Tail, (Li _ | SetL _ | SetExt _ | Mr _ | Neg _ | Add _ | Sub _ | Mul _ | Div _ | ShiftL2 _ | ShiftR1 _ | Slw _ |
+  | (Tail, (Li _ | SetL _ | SetExt _ | Mr _ | Neg _ | Add _ | Sub _ | Mul _ | Div _ | ShiftL2 _ | ShiftR1 _ | Slw _ | Xor _ |
             Lwz _ as exp)) ->
       g' oc (NonTail(reg_re), exp);
       Printf.fprintf oc "\tjr\t$ra\n";
-  | (Tail, (FLi _ | FMr _ | FNeg _ | FAdd _ | FSub _ | FMul _ | FDiv _ | FReciprocal _ |
-            Lfd _ as exp)) ->
+  | (Tail, (FLi _ | FMr _ | FNeg _ | FAdd _ | FSub _ | FMul _ | FDiv _ | FReciprocal _ | FAbs _ | Sqrt _ | Lfd _ as exp)) ->
       g' oc (NonTail(freg_re), exp);
       Printf.fprintf oc "\tjr $ra\n";
   | (Tail, (Restore(x) as exp)) ->

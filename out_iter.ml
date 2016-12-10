@@ -23,6 +23,10 @@ let rec out_iter oc e tabnum =
   | FMul(id1, id2) -> Printf.fprintf oc "FMul %s %s\n" id1 id2
   | FDiv(id1, id2) -> Printf.fprintf oc "FDiv %s %s\n" id1 id2
   | FReciprocal(id1) -> Printf.fprintf oc "FReciprocal %s\n" id1
+  | Xor(t1, t2) -> Printf.fprintf oc "xor %s %s\n" t1 t2
+  | FAbs(t1) -> Printf.fprintf oc "fabs %s\n" t1
+  | Sqrt(t1) -> Printf.fprintf oc "sqrt %s\n" t1
+  | Printchar(t1) -> Printf.fprintf oc "printchar %s\n" t1
   | IfEq(id1, id2, e1, e2) -> Printf.fprintf oc "IfEq %s %s\n" id1 id2; out_iter oc e1 (tabnum+1); out_iter oc e2 (tabnum+1)
   | IfLE(id1, id2, e1, e2) -> Printf.fprintf oc "IfLE %s %s\n" id1 id2; out_iter oc e1 (tabnum+1); out_iter oc e2 (tabnum+1)
   | Let((id, t'), e1, e2) -> Printf.fprintf oc "Let %s\n" id; out_iter oc e1 (tabnum+1); out_iter oc e2 (tabnum+1)

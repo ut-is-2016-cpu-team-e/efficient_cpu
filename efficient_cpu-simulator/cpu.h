@@ -11,10 +11,11 @@ using namespace std;
 
 class Cpu {
 public:
-  Cpu(unordered_map<string, string>& option);
+  Cpu();
   ~Cpu();
   bool isHltOn;
   unordered_map<uint32_t, string> mLabel;
+  unordered_map<uint32_t, uint32_t> mLabelCnt;
   vector<string> mAssembly;
   FILE* ppm; // ppm output
 
@@ -29,6 +30,7 @@ public:
     NUM_AND,
     NUM_ANDI,
     NUM_OR,
+    NUM_XOR,
     NUM_ORI,
     NUM_NEG,
     NUM_SLL,
@@ -49,7 +51,9 @@ public:
     NUM_FADD,
     NUM_FSUB,
     NUM_FMUL,
+    NUM_FDIV,
     NUM_FINV,
+    NUM_FABS,
     NUM_FLW,
     NUM_FSW,
     NUM_FBEQ,
@@ -86,7 +90,6 @@ public:
   uint32_t& getCurrentPc();
   void setDiffPc(int32_t diffPc);
   uint32_t getInstLine() const;
-  unsigned long getInstSize() const;
   
 private:
   uint32_t* mRom; // store instruction
@@ -108,7 +111,6 @@ private:
   uint32_t mCurrentPc;
   int32_t mDiffPc; // for the branch
   uint32_t mInstLines;
-  unsigned long mInstSize; // determined by argv[2]
   map<Cpu::InstNumber, uint64_t> mInstCnt; // the counter of executed instructions
 };
 

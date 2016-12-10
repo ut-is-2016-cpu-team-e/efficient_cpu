@@ -31,12 +31,16 @@ let rec cse e csel =
     | FMul(x, y) -> cse_find e csel
     | FDiv(x, y) -> cse_find e csel
     | FReciprocal(x) -> cse_find e csel
+    | Xor(x, y) -> cse_find e csel
+    | FAbs(x) -> cse_find e csel
+    | Sqrt(x) -> cse_find e csel
+    | Printchar(x) -> cse_find e csel
     | IfEq(x, y, e1, e2) -> IfEq(x, y, cse_find e1 csel, cse_find e2 csel)
     | IfLE(x, y, e1, e2) -> IfLE(x, y, cse_find e1 csel, cse_find e2 csel)
     | Let(x, e1, e2) ->
       let e1' = cse e1 csel in
         (match e1' with
-        | Neg _ | Add _ | Sub _ | Mul _ | ShiftL2 _ | ShiftR1 _ | Div _ | FAdd _ | FSub _ | FMul _ | FDiv _ | IfEq _ | IfLE _ | App _ | ExtFunApp _ ->
+        | Neg _ | Add _ | Sub _ | Mul _ | ShiftL2 _ | ShiftR1 _ | Div _ | FAdd _ | FSub _ | FMul _ | FDiv _ | Xor _ | FAbs _ | Sqrt _ | IfEq _ | IfLE _ | App _ | ExtFunApp _ ->
           let csel' = let (xx, xt) = x in cse_add (e1, xx) csel in
           Let(x, e1', cse e2 csel')
         | _ -> Let(x, e1', cse e2 csel))
@@ -72,6 +76,10 @@ let rec g env = function (* α変換ルーチン本体 (caml2html: alpha_g) *)
   | FMul(x, y) -> FMul(find x env, find y env)
   | FDiv(x, y) -> FDiv(find x env, find y env)
   | FReciprocal(x) -> FReciprocal(find x env)
+  | Xor(x, y) -> Xor(find x env, find y env)
+  | FAbs(x) -> FAbs(find x env)
+  | Sqrt(x) -> Sqrt(find x env)
+  | Printchar(x) -> Printchar(find x env)
   | IfEq(x, y, e1, e2) -> IfEq(find x env, find y env, g env e1, g env e2)
   | IfLE(x, y, e1, e2) -> IfLE(find x env, find y env, g env e1, g env e2)
   | Let((x, t), e1, e2) -> (* letのα変換 (caml2html: alpha_let) *)

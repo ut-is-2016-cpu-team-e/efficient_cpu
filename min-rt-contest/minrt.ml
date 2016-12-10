@@ -14,7 +14,7 @@
 (*NOMINCAML open Globals;;*)
 (*MINCAML*) (* let true = 1 in
 (*MINCAML*) let false = 0 in *)  (*minrtのtrue, falseの定義を削除* 2016/10/24 *)
-(*MINCAML*) let rec xor x y = if x then not y else y in
+(*MINCAML*) (*let rec xor x y = if x then not y else y in*)
 
 (******************************************************************************
    ユーティリティー
@@ -2308,4 +2308,4 @@ in
 
 let _ = rt 128 128
 
-in print_float(0)
+in ()

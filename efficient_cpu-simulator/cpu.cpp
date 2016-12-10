@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdlib>
 #include <cstdint>
 #include <string>
 #include <fstream>
@@ -8,26 +7,22 @@
 #include "cpu.h"
 #include "tools.h"
 #include "assembler.h"
-#include "debugger.h"
 using namespace std;
 
-Cpu::Cpu(unordered_map<string, string>& option) 
+Cpu::Cpu() 
   : isHltOn(false), mRom(0), mRam(0), mReg(0), mFReg(0), 
-  mPc(0), mCurrentPc(0), mDiffPc(1), mInstLines(0), mInstSize(0) {
+  mPc(0), mCurrentPc(0), mDiffPc(1), mInstLines(0) {
     mRom = new uint32_t [ADDR]{};
     mRam = new int32_t [ADDR]{};
     mReg = new int32_t [32]{};
     mFReg = new uint32_t [32]{};
     mReg[29] = SP_VAL; // the address that stack pointer has
 
-    if (option.find("-asm") != option.end()) {
-      genMachineBin(option["-asm"].c_str());
-    } 
+    ppm = fopen("sim.ppm", "w+");
+
     char* filename1 = (char*)"bin.log";
     ifstream in1(filename1);
 
-    ppm = fopen("sim.ppm", "w+");
-    
     string command;
     if (in1) {
       while (getline(in1, command)) {
@@ -38,30 +33,21 @@ Cpu::Cpu(unordered_map<string, string>& option)
       assert(false);
     }
 
-    if (option.find("-debug") != option.end()) {
-      char* filename2 = (char*)"asm.log";
-      ifstream in2(filename2);
-      if (in2) {
-        uint32_t cnt = 0;
-        while (getline(in2, command)) {
-          if (command[command.size() - 1] == ':') {
-            mLabel[cnt] = command;
-          } else {
-            mAssembly.push_back(command);
-            cnt++;
-          }
+    char* filename2 = (char*)"asm.log";
+    ifstream in2(filename2);
+    if (in2) {
+      uint32_t cnt = 0;
+      while (getline(in2, command)) {
+        if (command[command.size() - 1] == ':') {
+          mLabel[cnt] = command;
+        } else {
+          mAssembly.push_back(command);
+          cnt++;
         }
-      } else {
-        cerr << "can't open \"asm.log\" file." << endl;
-        assert(false);
       }
-    } else if (option.find("-all") != option.end()) {
-      ;
-    } else if (option.find("-num") != option.end()) {
-      mInstSize = stoul(option["-num"]);
     } else {
-      cerr << "please give [-num size] or [-all] as a option" << endl;
-      exit(EXIT_FAILURE);
+      cerr << "can't open \"asm.log\" file." << endl;
+      assert(false);
     }
   }
 
@@ -116,8 +102,4 @@ void Cpu::setDiffPc(int32_t diffPc) {
 
 uint32_t Cpu::getInstLine() const {
   return mInstLines;
-}
-
-unsigned long Cpu::getInstSize() const {
-  return mInstSize;
 }

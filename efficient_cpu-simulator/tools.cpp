@@ -83,26 +83,3 @@ bool isDigit(const string& str) {
   }
   return true;
 }
-
-// check command line options (= getopt in <unistd.h>)
-int checkOpt(int argc, char* argv[], unordered_map<string, string>& option) {
-  if (argc < 2 || argc > 7) { return -1; }
-
-  for (int i = 1; i < argc; i++) {
-    if (string(argv[i]) == string("-num")) {
-      option[argv[i]] = string(argv[i + 1]);
-      i++;
-    } 
-    if (string(argv[i]) == string("-asm")) {
-      option[argv[i]] = string(argv[i + 1]);
-      i++;
-    }
-    if (string(argv[i]) == string("-all")) {
-      option[argv[i]] = "";
-    }
-    if (string(argv[i]) == string("-debug")) {
-      option[argv[i]] = "";
-    }
-  }
-  return 0;
-}

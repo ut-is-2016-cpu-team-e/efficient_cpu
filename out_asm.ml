@@ -49,6 +49,11 @@ and out_asm_e oc e tabnum =
   | FMul(t1, t2) -> Printf.fprintf oc "FMul %s %s\n" t1 t2
   | FDiv(t1, t2) -> Printf.fprintf oc "FDiv %s %s\n" t1 t2
   | FReciprocal(t1) -> Printf.fprintf oc "FReciprocal %s\n" t1
+  | Xor(t1, t2) -> Printf.fprintf oc "xor %s %s\n" t1 t2
+  | FAbs(t1) -> Printf.fprintf oc "fabs %s\n" t1
+  | Sqrt(t1) -> Printf.fprintf oc "sqrt %s\n" t1
+  | Printchar(V(t1)) -> Printf.fprintf oc "printchar %s\n" t1
+  | Printchar(C(t1)) -> Printf.fprintf oc "printchar %d\n" t1
   | Lfd(t1, V(t2)) -> Printf.fprintf oc "Lfd %s %s\n" t1 t2
   | Lfd(t1,  C(x)) -> Printf.fprintf oc "Lfd %s %d\n" t1 x
   | Stfd(t1, t2, V(t3)) -> Printf.fprintf oc "Stfd %s %s %s\n" t1 t2 t3

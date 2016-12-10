@@ -13,6 +13,5 @@ string i2bin(int a, int bitNum);
 uint32_t bitRange(uint32_t buf, int m, int n);
 void extendSign16(int32_t& bits);
 bool isDigit(const string& str);
-int checkOpt(int argc, char* argv[], unordered_map<string, string>& option);
 
 #endif

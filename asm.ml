@@ -27,6 +27,10 @@ and exp = (* 一つ一つの命令に対応する式 *)
   | FMul of Id.t * Id.t
   | FDiv of Id.t * Id.t
   | FReciprocal of Id.t
+  | Xor of Id.t * Id.t
+  | FAbs of Id.t
+  | Sqrt of Id.t
+  | Printchar of id_or_imm
   | Lfd of Id.t * id_or_imm
   | Stfd of Id.t * Id.t * id_or_imm
   | Comment of string
@@ -89,11 +93,11 @@ let rec remove_and_uniq xs = function
 let fv_id_or_imm = function V (x) -> [x] | _ -> []
 (* fv_exp : Id.t list -> t -> S.t list *)
 let rec fv_exp = function
-  | Nop | Li (_) | FLi (_) | SetL (_) | SetExt (_) | Comment (_) | Restore (_) -> []
-  | Mr (x) | Neg (x) | ShiftL2(x) | ShiftR1(x) | FMr (x) | FNeg (x) | FReciprocal (x) | Save (x, _) -> [x]
+  | Nop | Li (_) | FLi (_) | SetL (_) | SetExt (_) | Comment (_) | Restore (_) | Printchar(_)-> []
+  | Mr (x) | Neg (x) | ShiftL2(x) | ShiftR1(x) | FMr (x) | FNeg (x) | FReciprocal (x) | Save (x, _) | FAbs(x) | Sqrt(x) -> [x]
   | Add (x, y') | Sub (x, y') | Mul (x, y') | Div (x, y') | Slw (x, y') | Lfd (x, y') | Lwz (x, y') ->
       x :: fv_id_or_imm y'
-  | FAdd (x, y) | FSub (x, y) | FMul (x, y) | FDiv (x, y) ->
+  | FAdd (x, y) | FSub (x, y) | FMul (x, y) | FDiv (x, y) | Xor(x, y) ->
       [x; y]
   | Stw (x, y, z') | Stfd (x, y, z') -> x :: y :: fv_id_or_imm z'
   | IfEq (x, y, e1, e2) | IfLE (x, y, e1, e2) | IfGE (x, y, e1, e2) ->

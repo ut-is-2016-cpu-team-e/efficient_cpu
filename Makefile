@@ -21,7 +21,7 @@ clean:: nobackup
 SOURCES = float.c type.ml id.ml m.ml s.ml \
 syntax.ml parser.mly lexer.mll typing.mli typing.ml global_alloc.mli global_alloc.ml kNormal.mli kNormal.ml \
 alpha.mli alpha.ml beta.mli beta.ml assoc.mli assoc.ml \
-inline.mli inline.ml constFold.mli constFold.ml elim.mli elim.ml \
+inline.mli inline.ml constFold.mli constFold.ml elim.mli elim.ml csv.mli csv.ml\
 closure.mli closure.ml asm.mli asm.ml virtual.mli virtual.ml \
 simm.mli simm.ml regAlloc.mli regAlloc.ml emit.mli emit.ml \
 outsyn.ml out_kNormal.ml out_iter.ml out_closure.ml out_asm.ml\
@@ -53,7 +53,7 @@ test/%.cmp: test/%.res test/%.ans
 min-caml.html: main.mli main.ml id.ml m.ml s.ml \
 		syntax.ml type.ml parser.mly lexer.mll typing.mli typing.ml kNormal.mli kNormal.ml \
 		alpha.mli alpha.ml beta.mli beta.ml assoc.mli assoc.ml \
-		inline.mli inline.ml constFold.mli constFold.ml elim.mli elim.ml \
+		inline.mli inline.ml constFold.mli constFold.ml elim.mli elim.ml csv.mli csv.ml\
 		closure.mli closure.ml asm.mli asm.ml virtual.mli virtual.ml \
 		simm.mli simm.ml regAlloc.mli regAlloc.ml emit.mli emit.ml
 	./to_sparc

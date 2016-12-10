@@ -1,17 +1,15 @@
         nop
-        jal     min_caml_read_int
-        move    $a0     $v0
+        li      $a2     15000
+loop:
+        li      $a0     15
         nop
         jal     min_caml_print_int
         nop
-        jal     min_caml_read_int
-        move    $a0     $v0
+        li      $a0     65
         nop
         jal     min_caml_print_byte
         nop 
-        jal     min_caml_read_int
-        move    $a0     $v0
-        nop
-        jal     min_caml_print_int
+        addi    $a1     $a1     1
+        bne     $a1     $a2   loop  
         nop
         hlt

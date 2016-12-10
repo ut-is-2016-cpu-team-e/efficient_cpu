@@ -18,6 +18,10 @@ let addtyp x = (x, Type.gentyp ())
 %token AST_DOT
 %token SLASH_DOT
 %token EQUAL
+%token FLESS
+%token FISPOS
+%token FISZERO
+%token FISNEG
 %token LESS_GREATER
 %token LESS_EQUAL
 %token GREATER_EQUAL
@@ -38,12 +42,16 @@ let addtyp x = (x, Type.gentyp ())
 %token LPAREN
 %token RPAREN
 %token EOF
+%token XOR
+%token SQRT
+%token PRINTCHAR
+%token FABS
 
 /* 優先順位とassociativityの定義（低い方から高い方へ） (caml2html: parser_prior) */
 %right prec_let
 %right SEMICOLON
 %right prec_if
-%right LESS_MINUS
+%right LESS_MINUS PRINTCHAR
 %left COMMA
 %left EQUAL LESS_GREATER LESS GREATER LESS_EQUAL GREATER_EQUAL
 %left PLUS MINUS PLUS_DOT MINUS_DOT
@@ -108,6 +116,22 @@ exp: /* 一般の式 (caml2html: parser_exp) */
 | IF exp THEN exp ELSE exp
     %prec prec_if
     { If($2, $4, $6) }
+| FLESS exp exp
+    { Not(LE($3, $2)) }
+| FISPOS exp
+    { Not(LE($2, Float(0.0))) }
+| FISZERO exp
+    { Eq($2, Float(0.0)) }
+| FISNEG exp
+    { Not(LE(Float(0.0), $2)) }
+| PRINTCHAR exp
+    { Printchar($2) }
+| FABS exp
+    { FAbs($2) }
+| SQRT exp
+    { Sqrt($2) }
+| XOR exp exp
+    { Xor($2, $3) }
 | MINUS_DOT exp
     %prec prec_unary_minus
     { FNeg($2) }

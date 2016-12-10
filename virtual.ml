@@ -52,6 +52,10 @@ let rec g env = function (* 式の仮想マシンコード生成 *)
   | Closure.FMul (x, y) -> Ans (FMul (x, y))
   | Closure.FDiv (x, y) -> Ans (FDiv (x, y))
   | Closure.FReciprocal(x) -> Ans(FReciprocal (x))
+  | Closure.Xor(x, y) -> Ans(Xor(x, y))
+  | Closure.FAbs(x) -> Ans(FAbs(x))
+  | Closure.Sqrt(x) -> Ans(Sqrt(x))
+  | Closure.Printchar(x) -> Ans(Printchar(V(x)))
   | Closure.IfEq (x, y, e1, e2) ->
       (match M.find x env with
 	 | Type.Bool | Type.Int -> Ans (IfEq (x, y, g env e1, g env e2))

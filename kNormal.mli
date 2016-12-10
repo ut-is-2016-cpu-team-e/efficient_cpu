@@ -15,6 +15,10 @@ type t =
   | FMul of Id.t * Id.t
   | FDiv of Id.t * Id.t
   | FReciprocal of Id.t
+  | Xor of Id.t * Id.t
+  | FAbs of Id.t
+  | Sqrt of Id.t
+  | Printchar of Id.t
   | IfEq of Id.t * Id.t * t * t
   | IfLE of Id.t * Id.t * t * t
   | Let of (Id.t * Type.t) * t * t

@@ -14,6 +14,22 @@ public:
   AsmT() { AsmT(0, 0, "", "", "", ""); }
 };
 
-void genMachineBin(const char* filename);
+class Asm {
+  unordered_map<string, AsmT> gAsmb;
+  unordered_map<string, string> gReg2bin;
+  bool isJoutOn;
+  bool isDumpOn;
+  
+  void removeComment(string& cmd);
+  void removeComma(string& cmd);
+  void removeSpaces(string& cmd);
+  int initializeInst(string& cmd, int& addr, unordered_map<string, int>& lab, vector<string>& inst);
+  void divideRegOff(string& s, string& t);
+  void setLibLab(int& addr, unordered_map<string, int>& label, vector<string>& inst);
+  string assemble(string& cmd, const int addr, unordered_map<string, int>& label);
+  void setInit();
+public:
+  Asm(const char* filename);
+};
 
 #endif

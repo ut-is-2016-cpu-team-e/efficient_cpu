@@ -36,6 +36,10 @@ let rec deref_term = function
   | FSub(e1, e2) -> FSub(deref_term e1, deref_term e2)
   | FMul(e1, e2) -> FMul(deref_term e1, deref_term e2)
   | FDiv(e1, e2) -> FDiv(deref_term e1, deref_term e2)
+  | Xor(e1, e2) -> Xor(deref_term e1, deref_term e2)
+  | FAbs(e1) -> FAbs(deref_term e1)
+  | Sqrt(e1) -> Sqrt(deref_term e1)
+  | Printchar(e1) -> Printchar(deref_term e1)
   | If(e1, e2, e3) -> If(deref_term e1, deref_term e2, deref_term e3)
   | Let(xt, e1, e2) -> Let(deref_id_typ xt, deref_term e1, deref_term e2)
   | LetRec({ name = xt; args = yts; body = e1 }, e2) ->
@@ -80,6 +84,10 @@ let rec out_term = function
   | Eq(_) -> Printf.fprintf stdout "Eq\n";
   | LE(_) -> Printf.fprintf stdout "LE\n";
   | LetTuple(_) -> Printf.fprintf stdout "LetTuple\n";
+  | Xor(_) -> Printf.fprintf stdout "xor\n";
+  | Printchar(_) -> Printf.fprintf stdout "printchar\n";
+  | FAbs(_) -> Printf.fprintf stdout "fabs\n";
+  | Sqrt(_) -> Printf.fprintf stdout "sqrt\n";
   | _ -> Printf.fprintf stdout "others\n"
 
 let rec occur r1 = function (* occur check (caml2html: typing_occur) *)
@@ -123,14 +131,21 @@ let rec g env e = (* 型推論ルーチン (caml2html: typing_g) *)
     | Not(e) ->
 	unify Type.Bool (g env e);
 	Type.Bool
+    | Xor(e1, e2) ->
+  unify Type.Bool (g env e1);
+  unify Type.Bool (g env e2);
+  Type.Bool
     | Neg(e) ->
 	unify Type.Int (g env e);
 	Type.Int
+    | Printchar(e) ->
+  unify Type.Int (g env e);
+  Type.Unit
     | Add(e1, e2) | Sub(e1, e2) | Mul(e1, e2) | Div(e1, e2) -> (* 足し算（と引き算）(と掛け算)の型推論 (caml2html: typing_add) *)
 	unify Type.Int (g env e1);
 	unify Type.Int (g env e2);
 	Type.Int
-    | FNeg(e) ->
+    | FNeg(e) | FAbs(e) | Sqrt(e) ->
 	unify Type.Float (g env e);
 	Type.Float
     | FAdd(e1, e2) | FSub(e1, e2) | FMul(e1, e2) | FDiv(e1, e2) ->

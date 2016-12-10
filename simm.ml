@@ -19,6 +19,7 @@ and g' env = function (* 各命令の 16 bit 即値最適化 *)
   | Stw(x, y, V(z)) when M.mem z env -> Stw(x, y, C(M.find z env))
   | Lfd(x, V(y)) when M.mem y env -> Lfd(x, C(M.find y env))
   | Stfd(x, y, V(z)) when M.mem z env -> Stfd(x, y, C(M.find z env))
+  | Printchar(V(x)) when M.mem x env -> Printchar(C(M.find x env))
   (*)| IfEq(x, V(y), e1, e2) when M.mem y env ->
       IfEq(x, V(y), g env e1, g env e2)
   | IfLE(x, V(y), e1, e2) when M.mem y env ->

@@ -25,6 +25,10 @@ and exp =
   | FMul of Id.t * Id.t
   | FDiv of Id.t * Id.t
   | FReciprocal of Id.t
+  | Xor of Id.t * Id.t
+  | FAbs of Id.t
+  | Sqrt of Id.t
+  | Printchar of id_or_imm
   | Lfd of Id.t * id_or_imm
   | Stfd of Id.t * Id.t * id_or_imm
   | Comment of string

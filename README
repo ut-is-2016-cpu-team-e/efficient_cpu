@@ -14,6 +14,12 @@
 
 実行方法
 ディレクトリmytest以下にmlファイルを作って、(test1.ml)
-$ make native-code
+$ make native-codeでビルド
+
+1 グローバル変数を使わないとき
 $ ./min-caml.opt mytest/test1　(.mlはつけない)
 を実行すると、mytest内に、中間ファイル(*.t)及びアセンブリコード(*.s)が生成される。
+
+2 グローバル変数を使うとき -> 中にあるシェルスクリプトexec.shを使う
+$ ./exec.sh mytest/test1 library.ml
+(ライブラリ関数を使わないときはlibrary.mlはなくてもよい)

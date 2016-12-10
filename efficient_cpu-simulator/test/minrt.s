@@ -24,939 +24,972 @@ create_float_array_cont:
   subi  $a1, $a1, 1
   addi  $fp, $fp, 4
   j create_float_array_loop
-l.6626:	 # 128.000000
-	li	$a25, 17152
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-l.6593:	 # 0.900000
-	li	$a25, 16230
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 26214
-	jr	$ra
-l.6592:	 # 0.200000
-	li	$a25, 15948
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 52429
-	jr	$ra
-l.6498:	 # 150.000000
-	li	$a25, 17174
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-l.6496:	 # -150.000000
-	li	$a25, -15594
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-l.6480:	 # 0.100000
-	li	$a25, 15820
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 52429
-	jr	$ra
-l.6477:	 # -2.000000
-	li	$a25, -16384
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-l.6475:	 # 256.000000
-	li	$a25, 17280
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-l.6453:	 # 20.000000
-	li	$a25, 16800
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-l.6452:	 # 0.050000
-	li	$a25, 15692
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 52429
-	jr	$ra
-l.6448:	 # 0.250000
-	li	$a25, 16000
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-l.6444:	 # 10.000000
-	li	$a25, 16672
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-l.6440:	 # 0.300000
-	li	$a25, 16025
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 39322
-	jr	$ra
-l.6439:	 # 255.000000
-	li	$a25, 17279
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-l.6438:	 # 0.150000
-	li	$a25, 15897
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 39322
-	jr	$ra
-l.6436:	 # 3.141593
-	li	$a25, 16457
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 4059
-	jr	$ra
-l.6435:	 # 30.000000
-	li	$a25, 16880
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-l.6434:	 # 15.000000
-	li	$a25, 16752
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-l.6433:	 # 0.000100
-	li	$a25, 14545
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 46871
-	jr	$ra
-l.6390:	 # 100000000.000000
-	li	$a25, 19646
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 48160
-	jr	$ra
-l.6386:	 # 1000000000.000000
-	li	$a25, 20078
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 27432
-	jr	$ra
-l.6366:	 # -0.100000
-	li	$a25, -16948
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 52429
-	jr	$ra
-l.6353:	 # 0.010000
-	li	$a25, 15395
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 55050
-	jr	$ra
-l.6352:	 # -0.200000
-	li	$a25, -16820
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 52429
-	jr	$ra
-l.6161:	 # 2.000000
-	li	$a25, 16384
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-l.6127:	 # -200.000000
-	li	$a25, -15544
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-l.6125:	 # 200.000000
-	li	$a25, 17224
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-l.6121:	 # 0.017453
-	li	$a25, 15502
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 64053
-	jr	$ra
-l.6038:	 # -1.000000
-	li	$a25, -16512
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-l.6037:	 # 1.000000
-	li	$a25, 16256
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-l.6036:	 # 0.500000
-	li	$a25, 16128
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-l.6035:	 # 0.000000
-	li	$a25, 0
-	sll	$a25, $a25, 16
-	ori	$a25, $a25, 0
-	jr	$ra
-fneg.2473:
-	fneg	$fv, $f0
-	jr $ra
-fispos.2475:
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6035
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f1, $a25
-	fblt	$f1, $f0, fbge_else.8695
-	li	$v0, 0
-	jr	$ra
-fbge_else.8695:
-	li	$v0, 1
-	jr	$ra
-fisneg.2477:
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6035
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f1, $a25
-	fblt	$f0, $f1, fbge_else.8696
-	li	$v0, 0
-	jr	$ra
-fbge_else.8696:
-	li	$v0, 1
-	jr	$ra
-fiszero.2479:
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6035
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f1, $a25
-	fbne	$f0, $f1, fbeq_else.8697
-	li	$v0, 1
-	jr	$ra
-fbeq_else.8697:
-	li	$v0, 0
-	jr	$ra
-fhalf.2481:
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6036
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f1, $a25
-	fmul	$fv, $f0, $f1
-	jr $ra
-fsqr.2483:
-	fmul	$fv, $f0, $f0
-	jr $ra
-fabs.2485:
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6035
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f1, $a25
-	fblt	$f1, $f0, fbge_else.8698
-	j	fneg.2473
-fbge_else.8698:
-	fmove	$fv, $f0
-	jr $ra
-fless.2487:
-	fsub	$f0, $f0, $f1
-	j	fisneg.2477
-xor.2490:
-	li	$a2, 0
-	bne	$a0, $a2, beq_else.8699
-	move	$v0, $a1
-	jr	$ra
-beq_else.8699:
+_min_caml_start: #entry_point
+_global_variable n_objects:
 	li	$a0, 0
-	bne	$a1, $a0, beq_else.8700
-	li	$v0, 1
-	jr	$ra
-beq_else.8700:
+	li	$a1, 0
+	sw	$a0, 0($a1)
+_global_variable dummy:
 	li	$v0, 0
-	jr	$ra
-sgn.2493:
-	fsw	$f0, 0($sp)
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	fiszero.2479
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	move	$a0, $v0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 4
+_global_variable Tt250:
+	li	$a0, 4
 	li	$a1, 0
-	bne	$a0, $a1, beq_else.8701
-	flw	$f0, 0($sp)
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	fispos.2475
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8702
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	l.6038
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	mtc1	$fv, $a25
-	jr $ra
-beq_else.8702:
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	l.6037
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	mtc1	$fv, $a25
-	jr $ra
-beq_else.8701:
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	l.6035
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	mtc1	$fv, $a25
-	jr $ra
-fneg_cond.2495:
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8703
-	j	fneg.2473
-beq_else.8703:
-	fmove	$fv, $f0
-	jr $ra
-add_mod5.2498:
-	add	$a0, $a0, $a1
-	li	$a1, 5
-	blt	$a0, $a1, bge_else.8704
-	subi	$v0, $a0, 5
-	jr	$ra
-bge_else.8704:
-	move	$v0, $a0
-	jr	$ra
-vecset.2501:
-	fsw	$f0, 0($a0)
-	fsw	$f1, 4($a0)
-	fsw	$f2, 8($a0)
-	jr	$ra
-vecfill.2506:
-	fsw	$f0, 0($a0)
-	fsw	$f0, 4($a0)
-	fsw	$f0, 8($a0)
-	jr	$ra
-vecbzero.2509:
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6035
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	j	vecfill.2506
-veccpy.2511:
-	flw	$f0, 0($a1)
-	fsw	$f0, 0($a0)
-	flw	$f0, 4($a1)
-	fsw	$f0, 4($a0)
-	flw	$f0, 8($a1)
-	fsw	$f0, 8($a0)
-	jr	$ra
-vecunit_sgn.2519:
-	flw	$f0, 0($a0)
-	sw	$a1, 0($sp)
-	sw	$a0, 4($sp)
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	fsqr.2483
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	fmove	$f0, $fv
-	lw	$a0, 4($sp)
-	flw	$f1, 4($a0)
-	fsw	$f0, 8($sp)
-	fmove	$f0, $f1
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	fsqr.2483
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	flw	$f1, 8($sp)
-	fadd	$f0, $f1, $f0
-	lw	$a0, 4($sp)
-	flw	$f1, 8($a0)
-	fsw	$f0, 16($sp)
-	fmove	$f0, $f1
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	fsqr.2483
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	fmove	$f0, $fv
-	flw	$f1, 16($sp)
-	fadd	$f0, $f1, $f0
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	min_caml_sqrt
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	fmove	$f0, $fv
-	fsw	$f0, 24($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	fiszero.2479
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8708
-	li	$a0, 0
-	lw	$a1, 0($sp)
-	bne	$a1, $a0, bne_else.8710
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	l.6037
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	mtc1	$f0, $a25
-	flw	$f1, 24($sp)
-	finv	$f1, $f1
-	fmul	$f0, $f0, $f1
-	j	bne_cont.8711
-bne_else.8710:
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	l.6038
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	mtc1	$f0, $a25
-	flw	$f1, 24($sp)
-	finv	$f1, $f1
-	fmul	$f0, $f0, $f1
-bne_cont.8711:
-	j	bne_cont.8709
-bne_else.8708:
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	l.6037
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	mtc1	$f0, $a25
-bne_cont.8709:
-	lw	$a0, 4($sp)
-	flw	$f1, 0($a0)
-	fmul	$f1, $f1, $f0
-	fsw	$f1, 0($a0)
-	flw	$f1, 4($a0)
-	fmul	$f1, $f1, $f0
-	fsw	$f1, 4($a0)
-	flw	$f1, 8($a0)
-	fmul	$f0, $f1, $f0
-	fsw	$f0, 8($a0)
-	jr	$ra
-veciprod.2522:
-	flw	$f0, 0($a0)
-	flw	$f1, 0($a1)
-	fmul	$f0, $f0, $f1
-	flw	$f1, 4($a0)
-	flw	$f2, 4($a1)
-	fmul	$f1, $f1, $f2
-	fadd	$f0, $f0, $f1
-	flw	$f1, 8($a0)
-	flw	$f2, 8($a1)
-	fmul	$f1, $f1, $f2
-	fadd	$fv, $f0, $f1
-	jr $ra
-veciprod2.2525:
-	flw	$f3, 0($a0)
-	fmul	$f0, $f3, $f0
-	flw	$f3, 4($a0)
-	fmul	$f1, $f3, $f1
-	fadd	$f0, $f0, $f1
-	flw	$f1, 8($a0)
-	fmul	$f1, $f1, $f2
-	fadd	$fv, $f0, $f1
-	jr $ra
-vecaccum.2530:
-	flw	$f1, 0($a0)
-	flw	$f2, 0($a1)
-	fmul	$f2, $f0, $f2
-	fadd	$f1, $f1, $f2
-	fsw	$f1, 0($a0)
-	flw	$f1, 4($a0)
-	flw	$f2, 4($a1)
-	fmul	$f2, $f0, $f2
-	fadd	$f1, $f1, $f2
-	fsw	$f1, 4($a0)
-	flw	$f1, 8($a0)
-	flw	$f2, 8($a1)
-	fmul	$f0, $f0, $f2
-	fadd	$f0, $f1, $f0
-	fsw	$f0, 8($a0)
-	jr	$ra
-vecadd.2534:
-	flw	$f0, 0($a0)
-	flw	$f1, 0($a1)
-	fadd	$f0, $f0, $f1
-	fsw	$f0, 0($a0)
-	flw	$f0, 4($a0)
-	flw	$f1, 4($a1)
-	fadd	$f0, $f0, $f1
-	fsw	$f0, 4($a0)
-	flw	$f0, 8($a0)
-	flw	$f1, 8($a1)
-	fadd	$f0, $f0, $f1
-	fsw	$f0, 8($a0)
-	jr	$ra
-vecscale.2540:
-	flw	$f1, 0($a0)
-	fmul	$f1, $f1, $f0
-	fsw	$f1, 0($a0)
-	flw	$f1, 4($a0)
-	fmul	$f1, $f1, $f0
-	fsw	$f1, 4($a0)
-	flw	$f1, 8($a0)
-	fmul	$f0, $f1, $f0
-	fsw	$f0, 8($a0)
-	jr	$ra
-vecaccumv.2543:
-	flw	$f0, 0($a0)
-	flw	$f1, 0($a1)
-	flw	$f2, 0($a2)
-	fmul	$f1, $f1, $f2
-	fadd	$f0, $f0, $f1
-	fsw	$f0, 0($a0)
-	flw	$f0, 4($a0)
-	flw	$f1, 4($a1)
-	flw	$f2, 4($a2)
-	fmul	$f1, $f1, $f2
-	fadd	$f0, $f0, $f1
-	fsw	$f0, 4($a0)
-	flw	$f0, 8($a0)
-	flw	$f1, 8($a1)
-	flw	$f2, 8($a2)
-	fmul	$f1, $f1, $f2
-	fadd	$f0, $f0, $f1
-	fsw	$f0, 8($a0)
-	jr	$ra
-o_texturetype.2547:
-	lw	$a0, 0($a0)
-	move	$v0, $a0
-	jr	$ra
-o_form.2549:
-	lw	$a0, 4($a0)
-	move	$v0, $a0
-	jr	$ra
-o_reflectiontype.2551:
-	lw	$a0, 8($a0)
-	move	$v0, $a0
-	jr	$ra
-o_isinvert.2553:
-	lw	$a0, 24($a0)
-	move	$v0, $a0
-	jr	$ra
-o_isrot.2555:
-	lw	$a0, 12($a0)
-	move	$v0, $a0
-	jr	$ra
-o_param_a.2557:
-	lw	$a0, 16($a0)
-	flw	$fv, 0($a0)
-	jr $ra
-o_param_b.2559:
-	lw	$a0, 16($a0)
-	flw	$fv, 4($a0)
-	jr $ra
-o_param_c.2561:
-	lw	$a0, 16($a0)
-	flw	$fv, 8($a0)
-	jr $ra
-o_param_abc.2563:
-	lw	$a0, 16($a0)
-	move	$v0, $a0
-	jr	$ra
-o_param_x.2565:
-	lw	$a0, 20($a0)
-	flw	$fv, 0($a0)
-	jr $ra
-o_param_y.2567:
-	lw	$a0, 20($a0)
-	flw	$fv, 4($a0)
-	jr $ra
-o_param_z.2569:
-	lw	$a0, 20($a0)
-	flw	$fv, 8($a0)
-	jr $ra
-o_diffuse.2571:
-	lw	$a0, 28($a0)
-	flw	$fv, 0($a0)
-	jr $ra
-o_hilight.2573:
-	lw	$a0, 28($a0)
-	flw	$fv, 4($a0)
-	jr $ra
-o_color_red.2575:
-	lw	$a0, 32($a0)
-	flw	$fv, 0($a0)
-	jr $ra
-o_color_green.2577:
-	lw	$a0, 32($a0)
-	flw	$fv, 4($a0)
-	jr $ra
-o_color_blue.2579:
-	lw	$a0, 32($a0)
-	flw	$fv, 8($a0)
-	jr $ra
-o_param_r1.2581:
-	lw	$a0, 36($a0)
-	flw	$fv, 0($a0)
-	jr $ra
-o_param_r2.2583:
-	lw	$a0, 36($a0)
-	flw	$fv, 4($a0)
-	jr $ra
-o_param_r3.2585:
-	lw	$a0, 36($a0)
-	flw	$fv, 8($a0)
-	jr $ra
-o_param_ctbl.2587:
-	lw	$a0, 40($a0)
-	move	$v0, $a0
-	jr	$ra
-p_rgb.2589:
-	lw	$a0, 0($a0)
-	move	$v0, $a0
-	jr	$ra
-p_intersection_points.2591:
-	lw	$a0, 4($a0)
-	move	$v0, $a0
-	jr	$ra
-p_surface_ids.2593:
-	lw	$a0, 8($a0)
-	move	$v0, $a0
-	jr	$ra
-p_calc_diffuse.2595:
-	lw	$a0, 12($a0)
-	move	$v0, $a0
-	jr	$ra
-p_energy.2597:
-	lw	$a0, 16($a0)
-	move	$v0, $a0
-	jr	$ra
-p_received_ray_20percent.2599:
-	lw	$a0, 20($a0)
-	move	$v0, $a0
-	jr	$ra
-p_group_id.2601:
-	lw	$a0, 24($a0)
-	lw	$v0, 0($a0)
-	jr	$ra
-p_set_group_id.2603:
-	lw	$a0, 24($a0)
 	sw	$a1, 0($a0)
+	li	$a1, 0
+	sw	$a1, 4($a0)
+	li	$a1, 0
+	sw	$a1, 8($a0)
+	li	$a1, 0
+	sw	$a1, 12($a0)
+	li	$a1, 4
+	sw	$a1, 16($a0)
+	li	$a1, 4
+	sw	$a1, 20($a0)
+	li	$a1, 0
+	sw	$a1, 24($a0)
+	li	$a1, 4
+	sw	$a1, 28($a0)
+	li	$a1, 4
+	sw	$a1, 32($a0)
+	li	$a1, 4
+	sw	$a1, 36($a0)
+	li	$a1, 4
+	sw	$a1, 40($a0)
+_global_variable objects:
+	li	$a0, 4
+	li	$a1, 48
+	sw	$a0, 0($a1)
+	sw	$a0, 4($a1)
+	sw	$a0, 8($a1)
+	sw	$a0, 12($a1)
+	sw	$a0, 16($a1)
+	sw	$a0, 20($a1)
+	sw	$a0, 24($a1)
+	sw	$a0, 28($a1)
+	sw	$a0, 32($a1)
+	sw	$a0, 36($a1)
+	sw	$a0, 40($a1)
+	sw	$a0, 44($a1)
+	sw	$a0, 48($a1)
+	sw	$a0, 52($a1)
+	sw	$a0, 56($a1)
+	sw	$a0, 60($a1)
+	sw	$a0, 64($a1)
+	sw	$a0, 68($a1)
+	sw	$a0, 72($a1)
+	sw	$a0, 76($a1)
+	sw	$a0, 80($a1)
+	sw	$a0, 84($a1)
+	sw	$a0, 88($a1)
+	sw	$a0, 92($a1)
+	sw	$a0, 96($a1)
+	sw	$a0, 100($a1)
+	sw	$a0, 104($a1)
+	sw	$a0, 108($a1)
+	sw	$a0, 112($a1)
+	sw	$a0, 116($a1)
+	sw	$a0, 120($a1)
+	sw	$a0, 124($a1)
+	sw	$a0, 128($a1)
+	sw	$a0, 132($a1)
+	sw	$a0, 136($a1)
+	sw	$a0, 140($a1)
+	sw	$a0, 144($a1)
+	sw	$a0, 148($a1)
+	sw	$a0, 152($a1)
+	sw	$a0, 156($a1)
+	sw	$a0, 160($a1)
+	sw	$a0, 164($a1)
+	sw	$a0, 168($a1)
+	sw	$a0, 172($a1)
+	sw	$a0, 176($a1)
+	sw	$a0, 180($a1)
+	sw	$a0, 184($a1)
+	sw	$a0, 188($a1)
+	sw	$a0, 192($a1)
+	sw	$a0, 196($a1)
+	sw	$a0, 200($a1)
+	sw	$a0, 204($a1)
+	sw	$a0, 208($a1)
+	sw	$a0, 212($a1)
+	sw	$a0, 216($a1)
+	sw	$a0, 220($a1)
+	sw	$a0, 224($a1)
+	sw	$a0, 228($a1)
+	sw	$a0, 232($a1)
+	sw	$a0, 236($a1)
+_global_variable screen:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 288
+	fsw	$f0, 0($a1)
+	fsw	$f0, 4($a1)
+	fsw	$f0, 8($a1)
+_global_variable viewpoint:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 300
+	fsw	$f0, 0($a1)
+	fsw	$f0, 4($a1)
+	fsw	$f0, 8($a1)
+_global_variable light:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 312
+	fsw	$f0, 0($a1)
+	fsw	$f0, 4($a1)
+	fsw	$f0, 8($a1)
+_global_variable beam:
+	li	$v0, 17279
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 324
+	fsw	$f0, 0($a1)
+_global_variable Ta251:
+	li	$a0, -1
+	li	$a1, 328
+	sw	$a0, 0($a1)
+_global_variable and_net:
+	li	$a0, 328
+	li	$a1, 332
+	sw	$a0, 0($a1)
+	sw	$a0, 4($a1)
+	sw	$a0, 8($a1)
+	sw	$a0, 12($a1)
+	sw	$a0, 16($a1)
+	sw	$a0, 20($a1)
+	sw	$a0, 24($a1)
+	sw	$a0, 28($a1)
+	sw	$a0, 32($a1)
+	sw	$a0, 36($a1)
+	sw	$a0, 40($a1)
+	sw	$a0, 44($a1)
+	sw	$a0, 48($a1)
+	sw	$a0, 52($a1)
+	sw	$a0, 56($a1)
+	sw	$a0, 60($a1)
+	sw	$a0, 64($a1)
+	sw	$a0, 68($a1)
+	sw	$a0, 72($a1)
+	sw	$a0, 76($a1)
+	sw	$a0, 80($a1)
+	sw	$a0, 84($a1)
+	sw	$a0, 88($a1)
+	sw	$a0, 92($a1)
+	sw	$a0, 96($a1)
+	sw	$a0, 100($a1)
+	sw	$a0, 104($a1)
+	sw	$a0, 108($a1)
+	sw	$a0, 112($a1)
+	sw	$a0, 116($a1)
+	sw	$a0, 120($a1)
+	sw	$a0, 124($a1)
+	sw	$a0, 128($a1)
+	sw	$a0, 132($a1)
+	sw	$a0, 136($a1)
+	sw	$a0, 140($a1)
+	sw	$a0, 144($a1)
+	sw	$a0, 148($a1)
+	sw	$a0, 152($a1)
+	sw	$a0, 156($a1)
+	sw	$a0, 160($a1)
+	sw	$a0, 164($a1)
+	sw	$a0, 168($a1)
+	sw	$a0, 172($a1)
+	sw	$a0, 176($a1)
+	sw	$a0, 180($a1)
+	sw	$a0, 184($a1)
+	sw	$a0, 188($a1)
+	sw	$a0, 192($a1)
+	sw	$a0, 196($a1)
+_global_variable Ta252:
+	li	$a1, 332
+	lw	$a0, 0($a1)
+	li	$a1, 532
+	sw	$a0, 0($a1)
+_global_variable or_net:
+	li	$a0, 532
+	li	$a1, 536
+	sw	$a0, 0($a1)
+_global_variable solver_dist:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 540
+	fsw	$f0, 0($a1)
+_global_variable intsec_rectside:
+	li	$a0, 0
+	li	$a1, 544
+	sw	$a0, 0($a1)
+_global_variable tmin:
+	li	$v0, 20078
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 27432
+	mtc1	$f0, $v0
+	li	$a1, 548
+	fsw	$f0, 0($a1)
+_global_variable intersection_point:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 552
+	fsw	$f0, 0($a1)
+	fsw	$f0, 4($a1)
+	fsw	$f0, 8($a1)
+_global_variable intersected_object_id:
+	li	$a0, 0
+	li	$a1, 564
+	sw	$a0, 0($a1)
+_global_variable nvector:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 568
+	fsw	$f0, 0($a1)
+	fsw	$f0, 4($a1)
+	fsw	$f0, 8($a1)
+_global_variable texture_color:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 580
+	fsw	$f0, 0($a1)
+	fsw	$f0, 4($a1)
+	fsw	$f0, 8($a1)
+_global_variable diffuse_ray:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 592
+	fsw	$f0, 0($a1)
+	fsw	$f0, 4($a1)
+	fsw	$f0, 8($a1)
+_global_variable rgb:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 604
+	fsw	$f0, 0($a1)
+	fsw	$f0, 4($a1)
+	fsw	$f0, 8($a1)
+_global_variable image_size:
+	li	$a0, 0
+	li	$a1, 616
+	sw	$a0, 0($a1)
+	sw	$a0, 4($a1)
+_global_variable image_center:
+	li	$a0, 0
+	li	$a1, 624
+	sw	$a0, 0($a1)
+	sw	$a0, 4($a1)
+_global_variable scan_pitch:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 632
+	fsw	$f0, 0($a1)
+_global_variable startp:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 636
+	fsw	$f0, 0($a1)
+	fsw	$f0, 4($a1)
+	fsw	$f0, 8($a1)
+_global_variable startp_fast:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 648
+	fsw	$f0, 0($a1)
+	fsw	$f0, 4($a1)
+	fsw	$f0, 8($a1)
+_global_variable screenx_dir:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 660
+	fsw	$f0, 0($a1)
+	fsw	$f0, 4($a1)
+	fsw	$f0, 8($a1)
+_global_variable screeny_dir:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 672
+	fsw	$f0, 0($a1)
+	fsw	$f0, 4($a1)
+	fsw	$f0, 8($a1)
+_global_variable screenz_dir:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 684
+	fsw	$f0, 0($a1)
+	fsw	$f0, 4($a1)
+	fsw	$f0, 8($a1)
+_global_variable ptrace_dirvec:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 696
+	fsw	$f0, 0($a1)
+	fsw	$f0, 4($a1)
+	fsw	$f0, 8($a1)
+_global_variable dummyf:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 708
+_global_variable dummyff:
+	li	$a0, 708
+	li	$a1, 708
+_global_variable Tt253:
+	li	$a0, 708
+	li	$a1, 708
+	sw	$a1, 0($a0)
+	li	$a1, 708
+	sw	$a1, 4($a0)
+_global_variable dummy_vs:
+	li	$a0, 708
+	li	$a1, 716
+_global_variable dirvecs:
+	li	$a0, 716
+	li	$a1, 716
+	sw	$a0, 0($a1)
+	sw	$a0, 4($a1)
+	sw	$a0, 8($a1)
+	sw	$a0, 12($a1)
+	sw	$a0, 16($a1)
+_global_variable dummyf2:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 736
+_global_variable v3:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 736
+	fsw	$f0, 0($a1)
+	fsw	$f0, 4($a1)
+	fsw	$f0, 8($a1)
+_global_variable consts:
+	li	$a0, 736
+	li	$a1, 748
+	sw	$a0, 0($a1)
+	sw	$a0, 4($a1)
+	sw	$a0, 8($a1)
+	sw	$a0, 12($a1)
+	sw	$a0, 16($a1)
+	sw	$a0, 20($a1)
+	sw	$a0, 24($a1)
+	sw	$a0, 28($a1)
+	sw	$a0, 32($a1)
+	sw	$a0, 36($a1)
+	sw	$a0, 40($a1)
+	sw	$a0, 44($a1)
+	sw	$a0, 48($a1)
+	sw	$a0, 52($a1)
+	sw	$a0, 56($a1)
+	sw	$a0, 60($a1)
+	sw	$a0, 64($a1)
+	sw	$a0, 68($a1)
+	sw	$a0, 72($a1)
+	sw	$a0, 76($a1)
+	sw	$a0, 80($a1)
+	sw	$a0, 84($a1)
+	sw	$a0, 88($a1)
+	sw	$a0, 92($a1)
+	sw	$a0, 96($a1)
+	sw	$a0, 100($a1)
+	sw	$a0, 104($a1)
+	sw	$a0, 108($a1)
+	sw	$a0, 112($a1)
+	sw	$a0, 116($a1)
+	sw	$a0, 120($a1)
+	sw	$a0, 124($a1)
+	sw	$a0, 128($a1)
+	sw	$a0, 132($a1)
+	sw	$a0, 136($a1)
+	sw	$a0, 140($a1)
+	sw	$a0, 144($a1)
+	sw	$a0, 148($a1)
+	sw	$a0, 152($a1)
+	sw	$a0, 156($a1)
+	sw	$a0, 160($a1)
+	sw	$a0, 164($a1)
+	sw	$a0, 168($a1)
+	sw	$a0, 172($a1)
+	sw	$a0, 176($a1)
+	sw	$a0, 180($a1)
+	sw	$a0, 184($a1)
+	sw	$a0, 188($a1)
+	sw	$a0, 192($a1)
+	sw	$a0, 196($a1)
+	sw	$a0, 200($a1)
+	sw	$a0, 204($a1)
+	sw	$a0, 208($a1)
+	sw	$a0, 212($a1)
+	sw	$a0, 216($a1)
+	sw	$a0, 220($a1)
+	sw	$a0, 224($a1)
+	sw	$a0, 228($a1)
+	sw	$a0, 232($a1)
+	sw	$a0, 236($a1)
+_global_variable light_dirvec:
+	li	$a0, 988
+	li	$a1, 736
+	sw	$a1, 0($a0)
+	li	$a1, 748
+	sw	$a1, 4($a0)
+_global_variable dummyf3:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 996
+_global_variable dummyff3:
+	li	$a0, 996
+	li	$a1, 996
+_global_variable dummydv:
+	li	$a0, 996
+	li	$a1, 996
+	sw	$a1, 0($a0)
+	li	$a1, 996
+	sw	$a1, 4($a0)
+_global_variable Tt254:
+	li	$a0, 1004
+	li	$a1, 0
+	sw	$a1, 0($a0)
+	li	$a1, 996
+	sw	$a1, 4($a0)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	fsw	$f0, 8($a0)
+_global_variable reflections:
+	li	$a0, 1004
+	li	$a1, 1016
+	sw	$a0, 0($a1)
+	sw	$a0, 4($a1)
+	sw	$a0, 8($a1)
+	sw	$a0, 12($a1)
+	sw	$a0, 16($a1)
+	sw	$a0, 20($a1)
+	sw	$a0, 24($a1)
+	sw	$a0, 28($a1)
+	sw	$a0, 32($a1)
+	sw	$a0, 36($a1)
+	sw	$a0, 40($a1)
+	sw	$a0, 44($a1)
+	sw	$a0, 48($a1)
+	sw	$a0, 52($a1)
+	sw	$a0, 56($a1)
+	sw	$a0, 60($a1)
+	sw	$a0, 64($a1)
+	sw	$a0, 68($a1)
+	sw	$a0, 72($a1)
+	sw	$a0, 76($a1)
+	sw	$a0, 80($a1)
+	sw	$a0, 84($a1)
+	sw	$a0, 88($a1)
+	sw	$a0, 92($a1)
+	sw	$a0, 96($a1)
+	sw	$a0, 100($a1)
+	sw	$a0, 104($a1)
+	sw	$a0, 108($a1)
+	sw	$a0, 112($a1)
+	sw	$a0, 116($a1)
+	sw	$a0, 120($a1)
+	sw	$a0, 124($a1)
+	sw	$a0, 128($a1)
+	sw	$a0, 132($a1)
+	sw	$a0, 136($a1)
+	sw	$a0, 140($a1)
+	sw	$a0, 144($a1)
+	sw	$a0, 148($a1)
+	sw	$a0, 152($a1)
+	sw	$a0, 156($a1)
+	sw	$a0, 160($a1)
+	sw	$a0, 164($a1)
+	sw	$a0, 168($a1)
+	sw	$a0, 172($a1)
+	sw	$a0, 176($a1)
+	sw	$a0, 180($a1)
+	sw	$a0, 184($a1)
+	sw	$a0, 188($a1)
+	sw	$a0, 192($a1)
+	sw	$a0, 196($a1)
+	sw	$a0, 200($a1)
+	sw	$a0, 204($a1)
+	sw	$a0, 208($a1)
+	sw	$a0, 212($a1)
+	sw	$a0, 216($a1)
+	sw	$a0, 220($a1)
+	sw	$a0, 224($a1)
+	sw	$a0, 228($a1)
+	sw	$a0, 232($a1)
+	sw	$a0, 236($a1)
+	sw	$a0, 240($a1)
+	sw	$a0, 244($a1)
+	sw	$a0, 248($a1)
+	sw	$a0, 252($a1)
+	sw	$a0, 256($a1)
+	sw	$a0, 260($a1)
+	sw	$a0, 264($a1)
+	sw	$a0, 268($a1)
+	sw	$a0, 272($a1)
+	sw	$a0, 276($a1)
+	sw	$a0, 280($a1)
+	sw	$a0, 284($a1)
+	sw	$a0, 288($a1)
+	sw	$a0, 292($a1)
+	sw	$a0, 296($a1)
+	sw	$a0, 300($a1)
+	sw	$a0, 304($a1)
+	sw	$a0, 308($a1)
+	sw	$a0, 312($a1)
+	sw	$a0, 316($a1)
+	sw	$a0, 320($a1)
+	sw	$a0, 324($a1)
+	sw	$a0, 328($a1)
+	sw	$a0, 332($a1)
+	sw	$a0, 336($a1)
+	sw	$a0, 340($a1)
+	sw	$a0, 344($a1)
+	sw	$a0, 348($a1)
+	sw	$a0, 352($a1)
+	sw	$a0, 356($a1)
+	sw	$a0, 360($a1)
+	sw	$a0, 364($a1)
+	sw	$a0, 368($a1)
+	sw	$a0, 372($a1)
+	sw	$a0, 376($a1)
+	sw	$a0, 380($a1)
+	sw	$a0, 384($a1)
+	sw	$a0, 388($a1)
+	sw	$a0, 392($a1)
+	sw	$a0, 396($a1)
+	sw	$a0, 400($a1)
+	sw	$a0, 404($a1)
+	sw	$a0, 408($a1)
+	sw	$a0, 412($a1)
+	sw	$a0, 416($a1)
+	sw	$a0, 420($a1)
+	sw	$a0, 424($a1)
+	sw	$a0, 428($a1)
+	sw	$a0, 432($a1)
+	sw	$a0, 436($a1)
+	sw	$a0, 440($a1)
+	sw	$a0, 444($a1)
+	sw	$a0, 448($a1)
+	sw	$a0, 452($a1)
+	sw	$a0, 456($a1)
+	sw	$a0, 460($a1)
+	sw	$a0, 464($a1)
+	sw	$a0, 468($a1)
+	sw	$a0, 472($a1)
+	sw	$a0, 476($a1)
+	sw	$a0, 480($a1)
+	sw	$a0, 484($a1)
+	sw	$a0, 488($a1)
+	sw	$a0, 492($a1)
+	sw	$a0, 496($a1)
+	sw	$a0, 500($a1)
+	sw	$a0, 504($a1)
+	sw	$a0, 508($a1)
+	sw	$a0, 512($a1)
+	sw	$a0, 516($a1)
+	sw	$a0, 520($a1)
+	sw	$a0, 524($a1)
+	sw	$a0, 528($a1)
+	sw	$a0, 532($a1)
+	sw	$a0, 536($a1)
+	sw	$a0, 540($a1)
+	sw	$a0, 544($a1)
+	sw	$a0, 548($a1)
+	sw	$a0, 552($a1)
+	sw	$a0, 556($a1)
+	sw	$a0, 560($a1)
+	sw	$a0, 564($a1)
+	sw	$a0, 568($a1)
+	sw	$a0, 572($a1)
+	sw	$a0, 576($a1)
+	sw	$a0, 580($a1)
+	sw	$a0, 584($a1)
+	sw	$a0, 588($a1)
+	sw	$a0, 592($a1)
+	sw	$a0, 596($a1)
+	sw	$a0, 600($a1)
+	sw	$a0, 604($a1)
+	sw	$a0, 608($a1)
+	sw	$a0, 612($a1)
+	sw	$a0, 616($a1)
+	sw	$a0, 620($a1)
+	sw	$a0, 624($a1)
+	sw	$a0, 628($a1)
+	sw	$a0, 632($a1)
+	sw	$a0, 636($a1)
+	sw	$a0, 640($a1)
+	sw	$a0, 644($a1)
+	sw	$a0, 648($a1)
+	sw	$a0, 652($a1)
+	sw	$a0, 656($a1)
+	sw	$a0, 660($a1)
+	sw	$a0, 664($a1)
+	sw	$a0, 668($a1)
+	sw	$a0, 672($a1)
+	sw	$a0, 676($a1)
+	sw	$a0, 680($a1)
+	sw	$a0, 684($a1)
+	sw	$a0, 688($a1)
+	sw	$a0, 692($a1)
+	sw	$a0, 696($a1)
+	sw	$a0, 700($a1)
+	sw	$a0, 704($a1)
+	sw	$a0, 708($a1)
+	sw	$a0, 712($a1)
+	sw	$a0, 716($a1)
+_global_variable n_reflections:
+	li	$a0, 0
+	li	$a1, 1736
+	sw	$a0, 0($a1)
+	li	$fp, 1740
+	j _min_caml_start2
+vecunit_sgn.2687:
+	flw	$f0, 0($a0)
+	fmul	$f0, $f0, $f0
+	flw	$f1, 4($a0)
+	fmul	$f1, $f1, $f1
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a0)
+	fmul	$f1, $f1, $f1
+	fadd	$f0, $f0, $f1
+	sw	$a0, 0($sp)
+	sw	$a1, 4($sp)
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_sqrt
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	fmove	$f0, $fv
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fbne	$f0, $f1, fbne_else.17333
+	li	$a0, 1
+	j	fbne_cont.17334
+fbne_else.17333:
+	li	$a0, 0
+fbne_cont.17334:
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17335
+	li	$a0, 0
+	lw	$a1, 4($sp)
+	bne	$a1, $a0, bne_else.17337
+	finv	$f0, $f0
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f1, $f0
+	j	bne_cont.17338
+bne_else.17337:
+	finv	$f0, $f0
+	li	$v0, -16512
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f1, $f0
+bne_cont.17338:
+	j	bne_cont.17336
+bne_else.17335:
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+bne_cont.17336:
+	lw	$a0, 0($sp)
+	flw	$f1, 0($a0)
+	fmul	$f1, $f1, $f0
+	fsw	$f1, 0($a0)
+	flw	$f1, 4($a0)
+	fmul	$f1, $f1, $f0
+	fsw	$f1, 4($a0)
+	flw	$f1, 8($a0)
+	fmul	$f0, $f1, $f0
+	fsw	$f0, 8($a0)
 	jr	$ra
-p_nvectors.2606:
-	lw	$a0, 28($a0)
-	move	$v0, $a0
-	jr	$ra
-d_vec.2608:
-	lw	$a0, 0($a0)
-	move	$v0, $a0
-	jr	$ra
-d_const.2610:
-	lw	$a0, 4($a0)
-	move	$v0, $a0
-	jr	$ra
-r_surface_id.2612:
-	lw	$a0, 0($a0)
-	move	$v0, $a0
-	jr	$ra
-r_dvec.2614:
-	lw	$a0, 4($a0)
-	move	$v0, $a0
-	jr	$ra
-r_bright.2616:
-	flw	$f0, 8($a0)
-	fmove	$fv, $f0
-	jr $ra
-rad.2618:
+read_screen_settings.2788:
+	li	$a0, 288
+	sw	$a0, 0($sp)
 	sw	$ra, 4($sp)
 	addi	$sp, $sp, 8
-	jal	l.6121
+	jal	min_caml_read_float
 	subi	$sp, $sp, 8
 	lw	$ra, 4($sp)
-	mtc1	$f1, $a25
-	fmul	$fv, $f0, $f1
-	jr $ra
-read_screen_settings.2620:
-	lw	$a0, 20($a26)
-	lw	$a1, 16($a26)
-	lw	$a2, 12($a26)
-	lw	$a3, 8($a26)
-	lw	$a4, 4($a26)
-	sw	$a0, 0($sp)
-	sw	$a2, 4($sp)
-	sw	$a3, 8($sp)
-	sw	$a1, 12($sp)
-	sw	$a4, 16($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	min_caml_read_float
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	lw	$a0, 16($sp)
-	fsw	$f0, 0($a0)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	min_caml_read_float
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	lw	$a0, 16($sp)
-	fsw	$f0, 4($a0)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	min_caml_read_float
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	lw	$a0, 16($sp)
-	fsw	$f0, 8($a0)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	min_caml_read_float
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	rad.2618
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	fsw	$f0, 24($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	min_caml_cos
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	flw	$f1, 24($sp)
-	fsw	$f0, 32($sp)
-	fmove	$f0, $f1
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	min_caml_sin
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f0, $fv
-	fsw	$f0, 40($sp)
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	min_caml_read_float
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	rad.2618
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	fsw	$f0, 48($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	min_caml_cos
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	fmove	$f0, $fv
-	flw	$f1, 48($sp)
-	fsw	$f0, 56($sp)
-	fmove	$f0, $f1
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	min_caml_sin
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	flw	$f1, 32($sp)
-	fmul	$f2, $f1, $f0
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	l.6125
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	mtc1	$f3, $a25
-	fmul	$f2, $f2, $f3
-	lw	$a0, 12($sp)
-	fsw	$f2, 0($a0)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	l.6127
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	mtc1	$f2, $a25
-	flw	$f3, 40($sp)
-	fmul	$f2, $f3, $f2
-	fsw	$f2, 4($a0)
-	flw	$f2, 56($sp)
-	fmul	$f4, $f1, $f2
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	l.6125
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	mtc1	$f5, $a25
-	fmul	$f4, $f4, $f5
-	fsw	$f4, 8($a0)
-	lw	$a1, 8($sp)
-	fsw	$f2, 0($a1)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	l.6035
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	mtc1	$f4, $a25
-	fsw	$f4, 4($a1)
-	fsw	$f0, 64($sp)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	fneg.2473
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	fmove	$f0, $fv
-	lw	$a0, 8($sp)
-	fsw	$f0, 8($a0)
-	flw	$f0, 40($sp)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	fneg.2473
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	fmove	$f0, $fv
-	flw	$f1, 64($sp)
-	fmul	$f0, $f0, $f1
-	lw	$a0, 4($sp)
-	fsw	$f0, 0($a0)
-	flw	$f0, 32($sp)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	fneg.2473
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	fmove	$f0, $fv
-	lw	$a0, 4($sp)
-	fsw	$f0, 4($a0)
-	flw	$f0, 40($sp)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	fneg.2473
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	fmul	$f0, $f0, $f1
-	lw	$a0, 4($sp)
-	fsw	$f0, 8($a0)
-	lw	$a0, 16($sp)
-	flw	$f0, 0($a0)
-	lw	$a1, 12($sp)
-	flw	$f1, 0($a1)
-	fsub	$f0, $f0, $f1
-	lw	$a2, 0($sp)
-	fsw	$f0, 0($a2)
-	flw	$f0, 4($a0)
-	flw	$f1, 4($a1)
-	fsub	$f0, $f0, $f1
-	fsw	$f0, 4($a2)
-	flw	$f0, 8($a0)
-	flw	$f1, 8($a1)
-	fsub	$f0, $f0, $f1
-	fsw	$f0, 8($a2)
-	jr	$ra
-read_light.2622:
-	lw	$a0, 8($a26)
-	lw	$a1, 4($a26)
-	sw	$a1, 0($sp)
-	sw	$a0, 4($sp)
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	min_caml_read_int
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	move	$a0, $v0
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	min_caml_read_float
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	fmove	$f0, $fv
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	rad.2618
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	fmove	$f0, $fv
-	fsw	$f0, 8($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	min_caml_sin
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	fneg.2473
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	lw	$a0, 4($sp)
-	fsw	$f0, 4($a0)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	min_caml_read_float
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	rad.2618
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	flw	$f1, 8($sp)
-	fsw	$f0, 16($sp)
-	fmove	$f0, $f1
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	min_caml_cos
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	fmove	$f0, $fv
-	flw	$f1, 16($sp)
-	fsw	$f0, 24($sp)
-	fmove	$f0, $f1
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	min_caml_sin
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	flw	$f1, 24($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a0, 4($sp)
-	fsw	$f0, 0($a0)
-	flw	$f0, 16($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	min_caml_cos
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	flw	$f1, 24($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a0, 4($sp)
-	fsw	$f0, 8($a0)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	min_caml_read_float
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
 	fmove	$f0, $fv
 	lw	$a0, 0($sp)
 	fsw	$f0, 0($a0)
+	li	$a0, 288
+	sw	$a0, 4($sp)
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_read_float
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	fmove	$f0, $fv
+	lw	$a0, 4($sp)
+	fsw	$f0, 4($a0)
+	li	$a0, 288
+	sw	$a0, 8($sp)
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_read_float
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	fmove	$f0, $fv
+	lw	$a0, 8($sp)
+	fsw	$f0, 8($a0)
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_read_float
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	fmove	$f0, $fv
+	li	$v0, 15502
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 64053
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	fsw	$f0, 16($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_cos
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f0, $fv
+	flw	$f1, 16($sp)
+	fsw	$f0, 24($sp)
+	fmove	$f0, $f1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_sin
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f0, $fv
+	fsw	$f0, 32($sp)
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	min_caml_read_float
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f0, $fv
+	li	$v0, 15502
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 64053
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	fsw	$f0, 40($sp)
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	min_caml_cos
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	fmove	$f0, $fv
+	flw	$f1, 40($sp)
+	fsw	$f0, 48($sp)
+	fmove	$f0, $f1
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	min_caml_sin
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	fmove	$f0, $fv
+	li	$a0, 684
+	flw	$f1, 24($sp)
+	fmul	$f2, $f1, $f0
+	li	$v0, 17224
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fmul	$f2, $f2, $f3
+	fsw	$f2, 0($a0)
+	li	$a0, 684
+	li	$v0, -15544
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	flw	$f3, 32($sp)
+	fmul	$f2, $f3, $f2
+	fsw	$f2, 4($a0)
+	li	$a0, 684
+	flw	$f2, 48($sp)
+	fmul	$f4, $f1, $f2
+	li	$v0, 17224
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f5, $v0
+	fmul	$f4, $f4, $f5
+	fsw	$f4, 8($a0)
+	li	$a0, 660
+	fsw	$f2, 0($a0)
+	li	$a0, 660
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f4, $v0
+	fsw	$f4, 4($a0)
+	li	$a0, 660
+	fneg	$f4, $f0
+	fsw	$f4, 8($a0)
+	li	$a0, 672
+	fneg	$f4, $f3
+	fmul	$f0, $f4, $f0
+	fsw	$f0, 0($a0)
+	li	$a0, 672
+	fneg	$f0, $f1
+	fsw	$f0, 4($a0)
+	li	$a0, 672
+	fneg	$f0, $f3
+	fmul	$f0, $f0, $f2
+	fsw	$f0, 8($a0)
+	li	$a0, 300
+	li	$a1, 288
+	flw	$f0, 0($a1)
+	li	$a1, 684
+	flw	$f1, 0($a1)
+	fsub	$f0, $f0, $f1
+	fsw	$f0, 0($a0)
+	li	$a0, 300
+	li	$a1, 288
+	flw	$f0, 4($a1)
+	li	$a1, 684
+	flw	$f1, 4($a1)
+	fsub	$f0, $f0, $f1
+	fsw	$f0, 4($a0)
+	li	$a0, 300
+	li	$a1, 288
+	flw	$f0, 8($a1)
+	li	$a1, 684
+	flw	$f1, 8($a1)
+	fsub	$f0, $f0, $f1
+	fsw	$f0, 8($a0)
 	jr	$ra
-rotate_quadratic_matrix.2624:
+read_light.2790:
+	sw	$ra, 4($sp)
+	addi	$sp, $sp, 8
+	jal	min_caml_read_int
+	subi	$sp, $sp, 8
+	lw	$ra, 4($sp)
+	move	$a0, $v0
+	sw	$ra, 4($sp)
+	addi	$sp, $sp, 8
+	jal	min_caml_read_float
+	subi	$sp, $sp, 8
+	lw	$ra, 4($sp)
+	fmove	$f0, $fv
+	li	$v0, 15502
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 64053
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	fsw	$f0, 0($sp)
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_sin
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	fmove	$f0, $fv
+	li	$a0, 312
+	fneg	$f0, $f0
+	fsw	$f0, 4($a0)
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_read_float
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	fmove	$f0, $fv
+	li	$v0, 15502
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 64053
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	flw	$f1, 0($sp)
+	fsw	$f0, 8($sp)
+	fmove	$f0, $f1
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_cos
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f0, $fv
+	flw	$f1, 8($sp)
+	fsw	$f0, 16($sp)
+	fmove	$f0, $f1
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_sin
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f0, $fv
+	li	$a0, 312
+	flw	$f1, 16($sp)
+	fmul	$f0, $f1, $f0
+	fsw	$f0, 0($a0)
+	flw	$f0, 8($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_cos
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f0, $fv
+	li	$a0, 312
+	flw	$f1, 16($sp)
+	fmul	$f0, $f1, $f0
+	fsw	$f0, 8($a0)
+	li	$a0, 324
+	sw	$a0, 24($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_read_float
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f0, $fv
+	lw	$a0, 24($sp)
+	fsw	$f0, 0($a0)
+	jr	$ra
+rotate_quadratic_matrix.2792:
 	flw	$f0, 0($a1)
 	sw	$a0, 0($sp)
 	sw	$a1, 4($sp)
@@ -1039,210 +1072,97 @@ rotate_quadratic_matrix.2624:
 	fmul	$f0, $f11, $f0
 	fmul	$f1, $f5, $f1
 	fsub	$f0, $f0, $f1
-	fsw	$f0, 48($sp)
-	fsw	$f8, 56($sp)
-	fsw	$f10, 64($sp)
-	fsw	$f6, 72($sp)
-	fsw	$f9, 80($sp)
-	fsw	$f3, 88($sp)
-	fmove	$f0, $f4
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	fneg.2473
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	fmove	$f0, $fv
-	flw	$f1, 24($sp)
-	flw	$f2, 16($sp)
-	fmul	$f2, $f2, $f1
-	flw	$f3, 8($sp)
-	fmul	$f1, $f3, $f1
+	fneg	$f1, $f4
+	fmul	$f4, $f5, $f2
+	fmul	$f2, $f7, $f2
 	lw	$a0, 0($sp)
-	flw	$f3, 0($a0)
-	flw	$f4, 4($a0)
-	flw	$f5, 8($a0)
-	flw	$f6, 88($sp)
-	fsw	$f1, 96($sp)
-	fsw	$f2, 104($sp)
-	fsw	$f5, 112($sp)
-	fsw	$f0, 120($sp)
-	fsw	$f4, 128($sp)
-	fsw	$f3, 136($sp)
-	fmove	$f0, $f6
-	sw	$ra, 148($sp)
-	addi	$sp, $sp, 152
-	jal	fsqr.2483
-	subi	$sp, $sp, 152
-	lw	$ra, 148($sp)
-	fmove	$f0, $fv
-	flw	$f1, 136($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f2, 80($sp)
-	fsw	$f0, 144($sp)
-	fmove	$f0, $f2
-	sw	$ra, 156($sp)
-	addi	$sp, $sp, 160
-	jal	fsqr.2483
-	subi	$sp, $sp, 160
-	lw	$ra, 156($sp)
-	fmove	$f0, $fv
-	flw	$f1, 128($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f2, 144($sp)
-	fadd	$f0, $f2, $f0
-	flw	$f2, 120($sp)
-	fsw	$f0, 152($sp)
-	fmove	$f0, $f2
-	sw	$ra, 164($sp)
-	addi	$sp, $sp, 168
-	jal	fsqr.2483
-	subi	$sp, $sp, 168
-	lw	$ra, 164($sp)
-	fmove	$f0, $fv
-	flw	$f1, 112($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f2, 152($sp)
-	fadd	$f0, $f2, $f0
-	lw	$a0, 0($sp)
-	fsw	$f0, 0($a0)
-	flw	$f0, 72($sp)
-	sw	$ra, 164($sp)
-	addi	$sp, $sp, 168
-	jal	fsqr.2483
-	subi	$sp, $sp, 168
-	lw	$ra, 164($sp)
-	fmove	$f0, $fv
-	flw	$f1, 136($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f2, 64($sp)
-	fsw	$f0, 160($sp)
-	fmove	$f0, $f2
-	sw	$ra, 172($sp)
-	addi	$sp, $sp, 176
-	jal	fsqr.2483
-	subi	$sp, $sp, 176
-	lw	$ra, 172($sp)
-	fmove	$f0, $fv
-	flw	$f1, 128($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f2, 160($sp)
-	fadd	$f0, $f2, $f0
-	flw	$f2, 104($sp)
-	fsw	$f0, 168($sp)
-	fmove	$f0, $f2
-	sw	$ra, 180($sp)
-	addi	$sp, $sp, 184
-	jal	fsqr.2483
-	subi	$sp, $sp, 184
-	lw	$ra, 180($sp)
-	fmove	$f0, $fv
-	flw	$f1, 112($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f2, 168($sp)
-	fadd	$f0, $f2, $f0
-	lw	$a0, 0($sp)
-	fsw	$f0, 4($a0)
-	flw	$f0, 56($sp)
-	sw	$ra, 180($sp)
-	addi	$sp, $sp, 184
-	jal	fsqr.2483
-	subi	$sp, $sp, 184
-	lw	$ra, 180($sp)
-	fmove	$f0, $fv
-	flw	$f1, 136($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f2, 48($sp)
-	fsw	$f0, 176($sp)
-	fmove	$f0, $f2
-	sw	$ra, 188($sp)
-	addi	$sp, $sp, 192
-	jal	fsqr.2483
-	subi	$sp, $sp, 192
-	lw	$ra, 188($sp)
-	fmove	$f0, $fv
-	flw	$f1, 128($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f2, 176($sp)
-	fadd	$f0, $f2, $f0
-	flw	$f2, 96($sp)
-	fsw	$f0, 184($sp)
-	fmove	$f0, $f2
-	sw	$ra, 196($sp)
-	addi	$sp, $sp, 200
-	jal	fsqr.2483
-	subi	$sp, $sp, 200
-	lw	$ra, 196($sp)
-	fmove	$f0, $fv
-	flw	$f1, 112($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f2, 184($sp)
-	fadd	$f0, $f2, $f0
-	lw	$a0, 0($sp)
-	fsw	$f0, 8($a0)
-	sw	$ra, 196($sp)
-	addi	$sp, $sp, 200
-	jal	l.6161
-	subi	$sp, $sp, 200
-	lw	$ra, 196($sp)
-	mtc1	$f0, $a25
-	flw	$f2, 72($sp)
-	flw	$f3, 136($sp)
-	fmul	$f4, $f3, $f2
-	flw	$f5, 56($sp)
-	fmul	$f4, $f4, $f5
-	flw	$f6, 64($sp)
-	flw	$f7, 128($sp)
-	fmul	$f8, $f7, $f6
-	flw	$f9, 48($sp)
-	fmul	$f8, $f8, $f9
-	fadd	$f4, $f4, $f8
-	flw	$f8, 104($sp)
-	fmul	$f10, $f1, $f8
-	flw	$f11, 96($sp)
-	fmul	$f10, $f10, $f11
-	fadd	$f4, $f4, $f10
-	fmul	$f0, $f0, $f4
+	flw	$f5, 0($a0)
+	flw	$f7, 4($a0)
+	flw	$f11, 8($a0)
+	fmul	$f12, $f3, $f3
+	fmul	$f12, $f5, $f12
+	fmul	$f13, $f9, $f9
+	fmul	$f13, $f7, $f13
+	fadd	$f12, $f12, $f13
+	fmul	$f13, $f1, $f1
+	fmul	$f13, $f11, $f13
+	fadd	$f12, $f12, $f13
+	fsw	$f12, 0($a0)
+	fmul	$f12, $f6, $f6
+	fmul	$f12, $f5, $f12
+	fmul	$f13, $f10, $f10
+	fmul	$f13, $f7, $f13
+	fadd	$f12, $f12, $f13
+	fmul	$f13, $f4, $f4
+	fmul	$f13, $f11, $f13
+	fadd	$f12, $f12, $f13
+	fsw	$f12, 4($a0)
+	fmul	$f12, $f8, $f8
+	fmul	$f12, $f5, $f12
+	fmul	$f13, $f0, $f0
+	fmul	$f13, $f7, $f13
+	fadd	$f12, $f12, $f13
+	fmul	$f13, $f2, $f2
+	fmul	$f13, $f11, $f13
+	fadd	$f12, $f12, $f13
+	fsw	$f12, 8($a0)
+	fmul	$f12, $f5, $f6
+	fmul	$f12, $f12, $f8
+	fmul	$f13, $f7, $f10
+	fmul	$f13, $f13, $f0
+	fadd	$f12, $f12, $f13
+	fmul	$f13, $f11, $f4
+	fmul	$f13, $f13, $f2
+	fadd	$f12, $f12, $f13
+	li	$v0, 16384
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f13, $v0
+	fmul	$f12, $f13, $f12
 	lw	$a0, 4($sp)
-	fsw	$f0, 0($a0)
-	sw	$ra, 196($sp)
-	addi	$sp, $sp, 200
-	jal	l.6161
-	subi	$sp, $sp, 200
-	lw	$ra, 196($sp)
-	mtc1	$f0, $a25
-	flw	$f4, 88($sp)
-	fmul	$f10, $f3, $f4
-	fmul	$f5, $f10, $f5
-	flw	$f10, 80($sp)
-	fmul	$f12, $f7, $f10
-	fmul	$f9, $f12, $f9
-	fadd	$f5, $f5, $f9
-	flw	$f9, 120($sp)
-	fmul	$f12, $f1, $f9
-	fmul	$f11, $f12, $f11
-	fadd	$f5, $f5, $f11
-	fmul	$f0, $f0, $f5
+	fsw	$f12, 0($a0)
+	fmul	$f12, $f5, $f3
+	fmul	$f8, $f12, $f8
+	fmul	$f12, $f7, $f9
+	fmul	$f0, $f12, $f0
+	fadd	$f0, $f8, $f0
+	fmul	$f8, $f11, $f1
+	fmul	$f2, $f8, $f2
+	fadd	$f0, $f0, $f2
+	li	$v0, 16384
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fmul	$f0, $f2, $f0
 	fsw	$f0, 4($a0)
-	sw	$ra, 196($sp)
-	addi	$sp, $sp, 200
-	jal	l.6161
-	subi	$sp, $sp, 200
-	lw	$ra, 196($sp)
-	mtc1	$f0, $a25
-	fmul	$f3, $f3, $f4
-	fmul	$f2, $f3, $f2
-	fmul	$f3, $f7, $f10
-	fmul	$f3, $f3, $f6
-	fadd	$f2, $f2, $f3
-	fmul	$f1, $f1, $f9
-	fmul	$f1, $f1, $f8
-	fadd	$f1, $f2, $f1
-	fmul	$f0, $f0, $f1
+	fmul	$f0, $f5, $f3
+	fmul	$f0, $f0, $f6
+	fmul	$f2, $f7, $f9
+	fmul	$f2, $f2, $f10
+	fadd	$f0, $f0, $f2
+	fmul	$f1, $f11, $f1
+	fmul	$f1, $f1, $f4
+	fadd	$f0, $f0, $f1
+	li	$v0, 16384
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f1, $f0
 	fsw	$f0, 8($a0)
 	jr	$ra
-read_nth_object.2627:
-	lw	$a1, 4($a26)
-	sw	$a1, 0($sp)
+read_nth_object.2795:
+	sw	$a0, 0($sp)
+	sw	$ra, 4($sp)
+	addi	$sp, $sp, 8
+	jal	min_caml_read_int
+	subi	$sp, $sp, 8
+	lw	$ra, 4($sp)
+	move	$a0, $v0
+	li	$a1, -1
+	bne	$a0, $a1, beq_else.17344
+	li	$v0, 0
+	jr	$ra
+beq_else.17344:
 	sw	$a0, 4($sp)
 	sw	$ra, 12($sp)
 	addi	$sp, $sp, 16
@@ -1250,11 +1170,6 @@ read_nth_object.2627:
 	subi	$sp, $sp, 16
 	lw	$ra, 12($sp)
 	move	$a0, $v0
-	li	$a1, -1
-	bne	$a0, $a1, beq_else.8722
-	li	$v0, 0
-	jr	$ra
-beq_else.8722:
 	sw	$a0, 8($sp)
 	sw	$ra, 12($sp)
 	addi	$sp, $sp, 16
@@ -1269,21 +1184,49 @@ beq_else.8722:
 	subi	$sp, $sp, 24
 	lw	$ra, 20($sp)
 	move	$a0, $v0
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	sw	$a0, 16($sp)
+	move	$a0, $a1
 	sw	$ra, 20($sp)
 	addi	$sp, $sp, 24
-	jal	min_caml_read_int
+	jal	min_caml_create_float_array
 	subi	$sp, $sp, 24
 	lw	$ra, 20($sp)
 	move	$a0, $v0
-	li	$a1, 3
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	l.6035
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	mtc1	$f0, $a25
 	sw	$a0, 20($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_read_float
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f0, $fv
+	lw	$a0, 20($sp)
+	fsw	$f0, 0($a0)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_read_float
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f0, $fv
+	lw	$a0, 20($sp)
+	fsw	$f0, 4($a0)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_read_float
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f0, $fv
+	lw	$a0, 20($sp)
+	fsw	$f0, 8($a0)
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	move	$a0, $a1
 	sw	$ra, 28($sp)
 	addi	$sp, $sp, 32
@@ -1316,28 +1259,43 @@ beq_else.8722:
 	fmove	$f0, $fv
 	lw	$a0, 24($sp)
 	fsw	$f0, 8($a0)
-	li	$a1, 3
 	sw	$ra, 28($sp)
 	addi	$sp, $sp, 32
-	jal	l.6035
+	jal	min_caml_read_float
 	subi	$sp, $sp, 32
 	lw	$ra, 28($sp)
-	mtc1	$f0, $a25
-	move	$a0, $a1
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
+	fmove	$f0, $fv
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17345
+	li	$a0, 0
+	j	fbge_cont.17346
+fbge_else.17345:
+	li	$a0, 1
+fbge_cont.17346:
+	li	$a1, 2
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	sw	$a0, 28($sp)
+	move	$a0, $a1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	sw	$a0, 32($sp)
 	sw	$ra, 36($sp)
 	addi	$sp, $sp, 40
 	jal	min_caml_read_float
 	subi	$sp, $sp, 40
 	lw	$ra, 36($sp)
 	fmove	$f0, $fv
-	lw	$a0, 28($sp)
+	lw	$a0, 32($sp)
 	fsw	$f0, 0($a0)
 	sw	$ra, 36($sp)
 	addi	$sp, $sp, 40
@@ -1345,36 +1303,13 @@ beq_else.8722:
 	subi	$sp, $sp, 40
 	lw	$ra, 36($sp)
 	fmove	$f0, $fv
-	lw	$a0, 28($sp)
+	lw	$a0, 32($sp)
 	fsw	$f0, 4($a0)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	min_caml_read_float
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	lw	$a0, 28($sp)
-	fsw	$f0, 8($a0)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	min_caml_read_float
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	fisneg.2477
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	li	$a1, 2
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	l.6035
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 32($sp)
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	move	$a0, $a1
 	sw	$ra, 36($sp)
 	addi	$sp, $sp, 40
@@ -1399,52 +1334,19 @@ beq_else.8722:
 	fmove	$f0, $fv
 	lw	$a0, 36($sp)
 	fsw	$f0, 4($a0)
-	li	$a1, 3
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	l.6035
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	mtc1	$f0, $a25
-	move	$a0, $a1
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	move	$a0, $v0
-	sw	$a0, 40($sp)
 	sw	$ra, 44($sp)
 	addi	$sp, $sp, 48
 	jal	min_caml_read_float
 	subi	$sp, $sp, 48
 	lw	$ra, 44($sp)
 	fmove	$f0, $fv
-	lw	$a0, 40($sp)
-	fsw	$f0, 0($a0)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	min_caml_read_float
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f0, $fv
-	lw	$a0, 40($sp)
-	fsw	$f0, 4($a0)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	min_caml_read_float
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f0, $fv
-	lw	$a0, 40($sp)
+	lw	$a0, 36($sp)
 	fsw	$f0, 8($a0)
 	li	$a1, 3
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	l.6035
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	mtc1	$f0, $a25
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	move	$a0, $a1
 	sw	$ra, 44($sp)
 	addi	$sp, $sp, 48
@@ -1453,71 +1355,66 @@ beq_else.8722:
 	lw	$ra, 44($sp)
 	move	$a0, $v0
 	li	$a1, 0
-	lw	$a2, 20($sp)
-	bne	$a2, $a1, bne_else.8723
-	j	bne_cont.8724
-bne_else.8723:
-	sw	$a0, 44($sp)
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
+	lw	$a2, 16($sp)
+	bne	$a2, $a1, bne_else.17347
+	j	bne_cont.17348
+bne_else.17347:
+	sw	$a0, 40($sp)
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
 	jal	min_caml_read_float
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
 	fmove	$f0, $fv
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	rad.2618
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	lw	$a0, 44($sp)
+	li	$v0, 15502
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 64053
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	lw	$a0, 40($sp)
 	fsw	$f0, 0($a0)
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
 	jal	min_caml_read_float
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
 	fmove	$f0, $fv
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	rad.2618
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	lw	$a0, 44($sp)
+	li	$v0, 15502
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 64053
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	lw	$a0, 40($sp)
 	fsw	$f0, 4($a0)
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
 	jal	min_caml_read_float
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
 	fmove	$f0, $fv
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	rad.2618
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	lw	$a0, 44($sp)
+	li	$v0, 15502
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 64053
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	lw	$a0, 40($sp)
 	fsw	$f0, 8($a0)
-bne_cont.8724:
+bne_cont.17348:
 	li	$a1, 2
-	lw	$a2, 12($sp)
-	bne	$a2, $a1, bne_else.8725
+	lw	$a2, 8($sp)
+	bne	$a2, $a1, bne_else.17349
 	li	$a1, 1
-	j	bne_cont.8726
-bne_else.8725:
-	lw	$a1, 32($sp)
-bne_cont.8726:
+	j	bne_cont.17350
+bne_else.17349:
+	lw	$a1, 28($sp)
+bne_cont.17350:
 	li	$a3, 4
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	l.6035
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	mtc1	$f0, $a25
-	sw	$a1, 48($sp)
-	sw	$a0, 44($sp)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$a1, 44($sp)
+	sw	$a0, 40($sp)
 	move	$a0, $a3
 	sw	$ra, 52($sp)
 	addi	$sp, $sp, 56
@@ -1528,227 +1425,353 @@ bne_cont.8726:
 	move	$a1, $fp
 	addi	$fp, $fp, 48
 	sw	$a0, 40($a1)
-	lw	$a0, 44($sp)
+	lw	$a0, 40($sp)
 	sw	$a0, 36($a1)
-	lw	$a2, 40($sp)
-	sw	$a2, 32($a1)
 	lw	$a2, 36($sp)
+	sw	$a2, 32($a1)
+	lw	$a2, 32($sp)
 	sw	$a2, 28($a1)
-	lw	$a2, 48($sp)
+	lw	$a2, 44($sp)
 	sw	$a2, 24($a1)
-	lw	$a2, 28($sp)
-	sw	$a2, 20($a1)
 	lw	$a2, 24($sp)
+	sw	$a2, 20($a1)
+	lw	$a2, 20($sp)
 	sw	$a2, 16($a1)
-	lw	$a3, 20($sp)
+	lw	$a3, 16($sp)
 	sw	$a3, 12($a1)
-	lw	$a4, 16($sp)
-	sw	$a4, 8($a1)
 	lw	$a4, 12($sp)
+	sw	$a4, 8($a1)
+	lw	$a4, 8($sp)
 	sw	$a4, 4($a1)
-	lw	$a5, 8($sp)
-	sw	$a5, 0($a1)
 	lw	$a5, 4($sp)
-	sll	$a5, $a5, 2
+	sw	$a5, 0($a1)
+	li	$a5, 48
 	lw	$a6, 0($sp)
-	add	$a5, $a6, $a5
-	sw	$a1, 0($a5)
+	sll	$a6, $a6, 2
+	add	$a6, $a5, $a6
+	sw	$a1, 0($a6)
 	li	$a1, 3
-	bne	$a4, $a1, bne_else.8727
+	bne	$a4, $a1, bne_else.17351
 	flw	$f0, 0($a2)
-	fsw	$f0, 56($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	fiszero.2479
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8730
-	flw	$f0, 56($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	sgn.2493
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	fsw	$f0, 64($sp)
-	fmove	$f0, $f1
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	fsqr.2483
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	fmove	$f0, $fv
-	finv	$f0, $f0
-	flw	$f1, 64($sp)
-	fmul	$f0, $f1, $f0
-	j	bne_cont.8731
-bne_else.8730:
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	l.6035
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	mtc1	$f0, $a25
-bne_cont.8731:
-	lw	$a0, 24($sp)
-	fsw	$f0, 0($a0)
-	flw	$f0, 4($a0)
-	fsw	$f0, 72($sp)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	fiszero.2479
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8732
-	flw	$f0, 72($sp)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	sgn.2493
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	fmove	$f0, $fv
-	flw	$f1, 72($sp)
-	fsw	$f0, 80($sp)
-	fmove	$f0, $f1
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	fsqr.2483
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f0, $fv
-	finv	$f0, $f0
-	flw	$f1, 80($sp)
-	fmul	$f0, $f1, $f0
-	j	bne_cont.8733
-bne_else.8732:
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	l.6035
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	mtc1	$f0, $a25
-bne_cont.8733:
-	lw	$a0, 24($sp)
-	fsw	$f0, 4($a0)
-	flw	$f0, 8($a0)
-	fsw	$f0, 88($sp)
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	fiszero.2479
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8734
-	flw	$f0, 88($sp)
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	sgn.2493
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	fmove	$f0, $fv
-	flw	$f1, 88($sp)
-	fsw	$f0, 96($sp)
-	fmove	$f0, $f1
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	fsqr.2483
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	fmove	$f0, $fv
-	finv	$f0, $f0
-	flw	$f1, 96($sp)
-	fmul	$f0, $f1, $f0
-	j	bne_cont.8735
-bne_else.8734:
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	l.6035
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	mtc1	$f0, $a25
-bne_cont.8735:
-	lw	$a0, 24($sp)
-	fsw	$f0, 8($a0)
-	j	bne_cont.8728
-bne_else.8727:
-	li	$a1, 2
-	bne	$a4, $a1, bne_else.8736
-	li	$a1, 0
-	lw	$a4, 32($sp)
-	bne	$a4, $a1, bne_else.8738
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fbne	$f0, $f1, fbne_else.17353
 	li	$a1, 1
-	j	bne_cont.8739
-bne_else.8738:
+	j	fbne_cont.17354
+fbne_else.17353:
 	li	$a1, 0
-bne_cont.8739:
+fbne_cont.17354:
+	li	$a4, 0
+	bne	$a1, $a4, bne_else.17355
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fbne	$f0, $f1, fbne_else.17357
+	li	$a1, 1
+	j	fbne_cont.17358
+fbne_else.17357:
+	li	$a1, 0
+fbne_cont.17358:
+	li	$a4, 0
+	bne	$a1, $a4, bne_else.17359
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f1, $f0, fbge_else.17361
+	li	$a1, 0
+	j	fbge_cont.17362
+fbge_else.17361:
+	li	$a1, 1
+fbge_cont.17362:
+	li	$a4, 0
+	bne	$a1, $a4, bne_else.17363
+	li	$v0, -16512
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	j	bne_cont.17364
+bne_else.17363:
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+bne_cont.17364:
+	j	bne_cont.17360
+bne_else.17359:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+bne_cont.17360:
+	fmul	$f0, $f0, $f0
+	finv	$f0, $f0
+	fmul	$f0, $f1, $f0
+	j	bne_cont.17356
+bne_else.17355:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+bne_cont.17356:
+	fsw	$f0, 0($a2)
+	flw	$f0, 4($a2)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fbne	$f0, $f1, fbne_else.17365
+	li	$a1, 1
+	j	fbne_cont.17366
+fbne_else.17365:
+	li	$a1, 0
+fbne_cont.17366:
+	li	$a4, 0
+	bne	$a1, $a4, bne_else.17367
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fbne	$f0, $f1, fbne_else.17369
+	li	$a1, 1
+	j	fbne_cont.17370
+fbne_else.17369:
+	li	$a1, 0
+fbne_cont.17370:
+	li	$a4, 0
+	bne	$a1, $a4, bne_else.17371
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f1, $f0, fbge_else.17373
+	li	$a1, 0
+	j	fbge_cont.17374
+fbge_else.17373:
+	li	$a1, 1
+fbge_cont.17374:
+	li	$a4, 0
+	bne	$a1, $a4, bne_else.17375
+	li	$v0, -16512
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	j	bne_cont.17376
+bne_else.17375:
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+bne_cont.17376:
+	j	bne_cont.17372
+bne_else.17371:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+bne_cont.17372:
+	fmul	$f0, $f0, $f0
+	finv	$f0, $f0
+	fmul	$f0, $f1, $f0
+	j	bne_cont.17368
+bne_else.17367:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+bne_cont.17368:
+	fsw	$f0, 4($a2)
+	flw	$f0, 8($a2)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fbne	$f0, $f1, fbne_else.17377
+	li	$a1, 1
+	j	fbne_cont.17378
+fbne_else.17377:
+	li	$a1, 0
+fbne_cont.17378:
+	li	$a4, 0
+	bne	$a1, $a4, bne_else.17379
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fbne	$f0, $f1, fbne_else.17381
+	li	$a1, 1
+	j	fbne_cont.17382
+fbne_else.17381:
+	li	$a1, 0
+fbne_cont.17382:
+	li	$a4, 0
+	bne	$a1, $a4, bne_else.17383
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f1, $f0, fbge_else.17385
+	li	$a1, 0
+	j	fbge_cont.17386
+fbge_else.17385:
+	li	$a1, 1
+fbge_cont.17386:
+	li	$a4, 0
+	bne	$a1, $a4, bne_else.17387
+	li	$v0, -16512
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	j	bne_cont.17388
+bne_else.17387:
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+bne_cont.17388:
+	j	bne_cont.17384
+bne_else.17383:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+bne_cont.17384:
+	fmul	$f0, $f0, $f0
+	finv	$f0, $f0
+	fmul	$f0, $f1, $f0
+	j	bne_cont.17380
+bne_else.17379:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+bne_cont.17380:
+	fsw	$f0, 8($a2)
+	j	bne_cont.17352
+bne_else.17351:
+	li	$a1, 2
+	bne	$a4, $a1, bne_else.17389
+	li	$a1, 0
+	lw	$a4, 28($sp)
+	bne	$a4, $a1, bne_else.17391
+	li	$a1, 1
+	j	bne_cont.17392
+bne_else.17391:
+	li	$a1, 0
+bne_cont.17392:
 	move	$a0, $a2
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	vecunit_sgn.2519
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	vecunit_sgn.2687
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
 	fmove	$f30, $fv
-	j	bne_cont.8737
-bne_else.8736:
-bne_cont.8737:
-bne_cont.8728:
+	j	bne_cont.17390
+bne_else.17389:
+bne_cont.17390:
+bne_cont.17352:
 	li	$a0, 0
-	lw	$a1, 20($sp)
-	bne	$a1, $a0, bne_else.8740
-	j	bne_cont.8741
-bne_else.8740:
-	lw	$a0, 24($sp)
-	lw	$a1, 44($sp)
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	rotate_quadratic_matrix.2624
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
+	lw	$a1, 16($sp)
+	bne	$a1, $a0, bne_else.17393
+	j	bne_cont.17394
+bne_else.17393:
+	lw	$a0, 20($sp)
+	lw	$a1, 40($sp)
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	rotate_quadratic_matrix.2792
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
 	fmove	$f30, $fv
-bne_cont.8741:
+bne_cont.17394:
 	li	$v0, 1
 	jr	$ra
-read_object.2629:
-	lw	$a1, 8($a26)
-	lw	$a2, 4($a26)
-	li	$a3, 60
-	blt	$a0, $a3, bge_else.8742
+read_object.2797:
+	li	$a1, 60
+	blt	$a0, $a1, bge_else.17395
 	jr	$ra
-bge_else.8742:
-	sw	$a26, 0($sp)
-	sw	$a2, 4($sp)
-	sw	$a0, 8($sp)
-	move	$a26, $a1
+bge_else.17395:
+	sw	$a0, 0($sp)
+	sw	$ra, 4($sp)
+	addi	$sp, $sp, 8
+	jal	read_nth_object.2795
+	subi	$sp, $sp, 8
+	lw	$ra, 4($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17397
+	li	$a0, 0
+	lw	$a1, 0($sp)
+	sw	$a1, 0($a0)
+	jr	$ra
+beq_else.17397:
+	lw	$a0, 0($sp)
+	addi	$a0, $a0, 1
+	li	$a1, 60
+	blt	$a0, $a1, bge_else.17399
+	jr	$ra
+bge_else.17399:
+	sw	$a0, 4($sp)
 	sw	$ra, 12($sp)
 	addi	$sp, $sp, 16
-	jal	read_nth_object.2627
+	jal	read_nth_object.2795
 	subi	$sp, $sp, 16
 	lw	$ra, 12($sp)
 	move	$a0, $v0
 	li	$a1, 0
-	bne	$a0, $a1, beq_else.8744
+	bne	$a0, $a1, beq_else.17401
+	li	$a0, 0
+	lw	$a1, 4($sp)
+	sw	$a1, 0($a0)
+	jr	$ra
+beq_else.17401:
 	lw	$a0, 4($sp)
+	addi	$a0, $a0, 1
+	li	$a1, 60
+	blt	$a0, $a1, bge_else.17403
+	jr	$ra
+bge_else.17403:
+	sw	$a0, 8($sp)
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	read_nth_object.2795
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17405
+	li	$a0, 0
 	lw	$a1, 8($sp)
 	sw	$a1, 0($a0)
 	jr	$ra
-beq_else.8744:
+beq_else.17405:
 	lw	$a0, 8($sp)
 	addi	$a0, $a0, 1
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	read_object.2629
-read_all_object.2631:
-	lw	$a26, 4($a26)
+	li	$a1, 60
+	blt	$a0, $a1, bge_else.17407
+	jr	$ra
+bge_else.17407:
+	sw	$a0, 12($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	read_nth_object.2795
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17409
 	li	$a0, 0
-	lw	$a25, 0($a26)
-	j	read_object.2629
-read_net_item.2633:
+	lw	$a1, 12($sp)
+	sw	$a1, 0($a0)
+	jr	$ra
+beq_else.17409:
+	lw	$a0, 12($sp)
+	addi	$a0, $a0, 1
+	j	read_object.2797
+read_net_item.2801:
 	sw	$a0, 0($sp)
 	sw	$ra, 4($sp)
 	addi	$sp, $sp, 8
@@ -1757,22 +1780,109 @@ read_net_item.2633:
 	lw	$ra, 4($sp)
 	move	$a0, $v0
 	li	$a1, -1
-	bne	$a0, $a1, beq_else.8746
+	bne	$a0, $a1, beq_else.17411
 	lw	$a0, 0($sp)
 	addi	$a0, $a0, 1
 	li	$a1, -1
 	j	min_caml_create_array
-beq_else.8746:
+beq_else.17411:
 	lw	$a1, 0($sp)
 	addi	$a2, $a1, 1
 	sw	$a0, 4($sp)
-	move	$a0, $a2
+	sw	$a2, 8($sp)
 	sw	$ra, 12($sp)
 	addi	$sp, $sp, 16
-	jal	read_net_item.2633
+	jal	min_caml_read_int
 	subi	$sp, $sp, 16
 	lw	$ra, 12($sp)
 	move	$a0, $v0
+	li	$a1, -1
+	bne	$a0, $a1, bne_else.17412
+	lw	$a0, 8($sp)
+	addi	$a0, $a0, 1
+	li	$a1, -1
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_create_array
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	j	bne_cont.17413
+bne_else.17412:
+	lw	$a1, 8($sp)
+	addi	$a2, $a1, 1
+	sw	$a0, 12($sp)
+	sw	$a2, 16($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_read_int
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	li	$a1, -1
+	bne	$a0, $a1, bne_else.17414
+	lw	$a0, 16($sp)
+	addi	$a0, $a0, 1
+	li	$a1, -1
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	j	bne_cont.17415
+bne_else.17414:
+	lw	$a1, 16($sp)
+	addi	$a2, $a1, 1
+	sw	$a0, 20($sp)
+	sw	$a2, 24($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_read_int
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	li	$a1, -1
+	bne	$a0, $a1, bne_else.17416
+	lw	$a0, 24($sp)
+	addi	$a0, $a0, 1
+	li	$a1, -1
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	j	bne_cont.17417
+bne_else.17416:
+	lw	$a1, 24($sp)
+	addi	$a2, $a1, 1
+	sw	$a0, 28($sp)
+	move	$a0, $a2
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	read_net_item.2801
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	lw	$a1, 24($sp)
+	sll	$a1, $a1, 2
+	lw	$a2, 28($sp)
+	add	$a1, $a0, $a1
+	sw	$a2, 0($a1)
+bne_cont.17417:
+	lw	$a1, 16($sp)
+	sll	$a1, $a1, 2
+	lw	$a2, 20($sp)
+	add	$a1, $a0, $a1
+	sw	$a2, 0($a1)
+bne_cont.17415:
+	lw	$a1, 8($sp)
+	sll	$a1, $a1, 2
+	lw	$a2, 12($sp)
+	add	$a1, $a0, $a1
+	sw	$a2, 0($a1)
+bne_cont.17413:
 	lw	$a1, 0($sp)
 	sll	$a1, $a1, 2
 	lw	$a2, 4($sp)
@@ -1780,266 +1890,847 @@ beq_else.8746:
 	sw	$a2, 0($a1)
 	move	$v0, $a0
 	jr	$ra
-read_or_network.2635:
-	li	$a1, 0
+read_or_network.2803:
 	sw	$a0, 0($sp)
-	move	$a0, $a1
 	sw	$ra, 4($sp)
 	addi	$sp, $sp, 8
-	jal	read_net_item.2633
+	jal	min_caml_read_int
+	subi	$sp, $sp, 8
+	lw	$ra, 4($sp)
+	move	$a0, $v0
+	li	$a1, -1
+	bne	$a0, $a1, bne_else.17418
+	li	$a0, 1
+	li	$a1, -1
+	sw	$ra, 4($sp)
+	addi	$sp, $sp, 8
+	jal	min_caml_create_array
 	subi	$sp, $sp, 8
 	lw	$ra, 4($sp)
 	move	$a1, $v0
-	lw	$a0, 0($a1)
-	li	$a2, -1
-	bne	$a0, $a2, beq_else.8747
-	lw	$a0, 0($sp)
-	addi	$a0, $a0, 1
-	j	min_caml_create_array
-beq_else.8747:
-	lw	$a0, 0($sp)
-	addi	$a2, $a0, 1
-	sw	$a1, 4($sp)
-	move	$a0, $a2
+	j	bne_cont.17419
+bne_else.17418:
+	sw	$a0, 4($sp)
 	sw	$ra, 12($sp)
 	addi	$sp, $sp, 16
-	jal	read_or_network.2635
+	jal	min_caml_read_int
 	subi	$sp, $sp, 16
 	lw	$ra, 12($sp)
 	move	$a0, $v0
+	li	$a1, -1
+	bne	$a0, $a1, bne_else.17420
+	li	$a0, 2
+	li	$a1, -1
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_create_array
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	j	bne_cont.17421
+bne_else.17420:
+	sw	$a0, 8($sp)
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_read_int
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	li	$a1, -1
+	bne	$a0, $a1, bne_else.17422
+	li	$a0, 3
+	li	$a1, -1
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_create_array
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	j	bne_cont.17423
+bne_else.17422:
+	li	$a1, 3
+	sw	$a0, 12($sp)
+	move	$a0, $a1
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	read_net_item.2801
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	lw	$a1, 12($sp)
+	sw	$a1, 8($a0)
+bne_cont.17423:
+	lw	$a1, 8($sp)
+	sw	$a1, 4($a0)
+bne_cont.17421:
+	lw	$a1, 4($sp)
+	sw	$a1, 0($a0)
+	move	$a1, $a0
+bne_cont.17419:
+	lw	$a0, 0($a1)
+	li	$a2, -1
+	bne	$a0, $a2, beq_else.17424
+	lw	$a0, 0($sp)
+	addi	$a0, $a0, 1
+	j	min_caml_create_array
+beq_else.17424:
+	lw	$a0, 0($sp)
+	addi	$a2, $a0, 1
+	sw	$a1, 16($sp)
+	sw	$a2, 20($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_read_int
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	li	$a1, -1
+	bne	$a0, $a1, bne_else.17425
+	li	$a0, 1
+	li	$a1, -1
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a1, $v0
+	j	bne_cont.17426
+bne_else.17425:
+	sw	$a0, 24($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_read_int
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	li	$a1, -1
+	bne	$a0, $a1, bne_else.17427
+	li	$a0, 2
+	li	$a1, -1
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	j	bne_cont.17428
+bne_else.17427:
+	li	$a1, 2
+	sw	$a0, 28($sp)
+	move	$a0, $a1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	read_net_item.2801
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	lw	$a1, 28($sp)
+	sw	$a1, 4($a0)
+bne_cont.17428:
+	lw	$a1, 24($sp)
+	sw	$a1, 0($a0)
+	move	$a1, $a0
+bne_cont.17426:
+	lw	$a0, 0($a1)
+	li	$a2, -1
+	bne	$a0, $a2, bne_else.17429
+	lw	$a0, 20($sp)
+	addi	$a0, $a0, 1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_create_array
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	j	bne_cont.17430
+bne_else.17429:
+	lw	$a0, 20($sp)
+	addi	$a2, $a0, 1
+	sw	$a1, 32($sp)
+	move	$a0, $a2
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	read_or_network.2803
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	lw	$a1, 20($sp)
+	sll	$a1, $a1, 2
+	lw	$a2, 32($sp)
+	add	$a1, $a0, $a1
+	sw	$a2, 0($a1)
+bne_cont.17430:
 	lw	$a1, 0($sp)
 	sll	$a1, $a1, 2
-	lw	$a2, 4($sp)
+	lw	$a2, 16($sp)
 	add	$a1, $a0, $a1
 	sw	$a2, 0($a1)
 	move	$v0, $a0
 	jr	$ra
-read_and_network.2637:
-	lw	$a1, 4($a26)
-	li	$a2, 0
-	sw	$a26, 0($sp)
-	sw	$a1, 4($sp)
-	sw	$a0, 8($sp)
-	move	$a0, $a2
+read_and_network.2805:
+	sw	$a0, 0($sp)
+	sw	$ra, 4($sp)
+	addi	$sp, $sp, 8
+	jal	min_caml_read_int
+	subi	$sp, $sp, 8
+	lw	$ra, 4($sp)
+	move	$a0, $v0
+	li	$a1, -1
+	bne	$a0, $a1, bne_else.17431
+	li	$a0, 1
+	li	$a1, -1
+	sw	$ra, 4($sp)
+	addi	$sp, $sp, 8
+	jal	min_caml_create_array
+	subi	$sp, $sp, 8
+	lw	$ra, 4($sp)
+	move	$a0, $v0
+	j	bne_cont.17432
+bne_else.17431:
+	sw	$a0, 4($sp)
 	sw	$ra, 12($sp)
 	addi	$sp, $sp, 16
-	jal	read_net_item.2633
+	jal	min_caml_read_int
 	subi	$sp, $sp, 16
 	lw	$ra, 12($sp)
 	move	$a0, $v0
-	lw	$a1, 0($a0)
-	li	$a2, -1
-	bne	$a1, $a2, beq_else.8748
-	jr	$ra
-beq_else.8748:
-	lw	$a1, 8($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 4($sp)
-	add	$a2, $a3, $a2
-	sw	$a0, 0($a2)
-	addi	$a0, $a1, 1
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	read_and_network.2637
-read_parameter.2639:
-	lw	$a0, 20($a26)
-	lw	$a1, 16($a26)
-	lw	$a2, 12($a26)
-	lw	$a3, 8($a26)
-	lw	$a4, 4($a26)
-	sw	$a4, 0($sp)
-	sw	$a2, 4($sp)
-	sw	$a3, 8($sp)
-	sw	$a1, 12($sp)
-	move	$a26, $a0
+	li	$a1, -1
+	bne	$a0, $a1, bne_else.17433
+	li	$a0, 2
+	li	$a1, -1
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_create_array
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	j	bne_cont.17434
+bne_else.17433:
+	sw	$a0, 8($sp)
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_read_int
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	li	$a1, -1
+	bne	$a0, $a1, bne_else.17435
+	li	$a0, 3
+	li	$a1, -1
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_create_array
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	j	bne_cont.17436
+bne_else.17435:
+	li	$a1, 3
+	sw	$a0, 12($sp)
+	move	$a0, $a1
 	sw	$ra, 20($sp)
 	addi	$sp, $sp, 24
-	jal	read_screen_settings.2620
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f30, $fv
-	lw	$a26, 12($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	read_light.2622
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f30, $fv
-	lw	$a26, 8($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	read_all_object.2631
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f30, $fv
-	li	$a0, 0
-	lw	$a26, 4($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	read_and_network.2637
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f30, $fv
-	li	$a0, 0
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	read_or_network.2635
+	jal	read_net_item.2801
 	subi	$sp, $sp, 24
 	lw	$ra, 20($sp)
 	move	$a0, $v0
-	lw	$a1, 0($sp)
-	sw	$a0, 0($a1)
+	lw	$a1, 12($sp)
+	sw	$a1, 8($a0)
+bne_cont.17436:
+	lw	$a1, 8($sp)
+	sw	$a1, 4($a0)
+bne_cont.17434:
+	lw	$a1, 4($sp)
+	sw	$a1, 0($a0)
+bne_cont.17432:
+	lw	$a1, 0($a0)
+	li	$a2, -1
+	bne	$a1, $a2, beq_else.17437
 	jr	$ra
-solver_rect_surface.2641:
-	lw	$a5, 4($a26)
+beq_else.17437:
+	li	$a1, 332
+	lw	$a2, 0($sp)
+	sll	$a3, $a2, 2
+	add	$a3, $a1, $a3
+	sw	$a0, 0($a3)
+	addi	$a0, $a2, 1
+	sw	$a0, 16($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_read_int
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	li	$a1, -1
+	bne	$a0, $a1, bne_else.17439
+	li	$a0, 1
+	li	$a1, -1
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	j	bne_cont.17440
+bne_else.17439:
+	sw	$a0, 20($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_read_int
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	li	$a1, -1
+	bne	$a0, $a1, bne_else.17441
+	li	$a0, 2
+	li	$a1, -1
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	j	bne_cont.17442
+bne_else.17441:
+	li	$a1, 2
+	sw	$a0, 24($sp)
+	move	$a0, $a1
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	read_net_item.2801
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	lw	$a1, 24($sp)
+	sw	$a1, 4($a0)
+bne_cont.17442:
+	lw	$a1, 20($sp)
+	sw	$a1, 0($a0)
+bne_cont.17440:
+	lw	$a1, 0($a0)
+	li	$a2, -1
+	bne	$a1, $a2, beq_else.17443
+	jr	$ra
+beq_else.17443:
+	li	$a1, 332
+	lw	$a2, 16($sp)
+	sll	$a3, $a2, 2
+	add	$a3, $a1, $a3
+	sw	$a0, 0($a3)
+	addi	$a0, $a2, 1
+	sw	$a0, 28($sp)
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_read_int
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	li	$a1, -1
+	bne	$a0, $a1, bne_else.17445
+	li	$a0, 1
+	li	$a1, -1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_create_array
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	j	bne_cont.17446
+bne_else.17445:
+	li	$a1, 1
+	sw	$a0, 32($sp)
+	move	$a0, $a1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	read_net_item.2801
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	lw	$a1, 32($sp)
+	sw	$a1, 0($a0)
+bne_cont.17446:
+	lw	$a1, 0($a0)
+	li	$a2, -1
+	bne	$a1, $a2, beq_else.17447
+	jr	$ra
+beq_else.17447:
+	li	$a1, 332
+	lw	$a2, 28($sp)
+	sll	$a3, $a2, 2
+	add	$a3, $a1, $a3
+	sw	$a0, 0($a3)
+	addi	$a0, $a2, 1
+	li	$a1, 0
+	sw	$a0, 36($sp)
+	move	$a0, $a1
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	read_net_item.2801
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	lw	$a1, 0($a0)
+	li	$a2, -1
+	bne	$a1, $a2, beq_else.17449
+	jr	$ra
+beq_else.17449:
+	li	$a1, 332
+	lw	$a2, 36($sp)
+	sll	$a3, $a2, 2
+	add	$a3, $a1, $a3
+	sw	$a0, 0($a3)
+	addi	$a0, $a2, 1
+	j	read_and_network.2805
+solver_rect_surface.2809:
+	sll	$a5, $a2, 2
+	add	$a5, $a1, $a5
+	flw	$f3, 0($a5)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f4, $v0
+	fbne	$f3, $f4, fbne_else.17451
+	li	$a5, 1
+	j	fbne_cont.17452
+fbne_else.17451:
+	li	$a5, 0
+fbne_cont.17452:
+	li	$a6, 0
+	bne	$a5, $a6, beq_else.17453
+	lw	$a5, 16($a0)
+	lw	$a0, 24($a0)
 	sll	$a6, $a2, 2
 	add	$a6, $a1, $a6
 	flw	$f3, 0($a6)
-	sw	$a5, 0($sp)
-	fsw	$f2, 8($sp)
-	sw	$a4, 16($sp)
-	fsw	$f1, 24($sp)
-	sw	$a3, 32($sp)
-	fsw	$f0, 40($sp)
-	sw	$a1, 48($sp)
-	sw	$a2, 52($sp)
-	sw	$a0, 56($sp)
-	fmove	$f0, $f3
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	fiszero.2479
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8754
-	lw	$a0, 56($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	o_param_abc.2563
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	move	$a0, $v0
-	lw	$a1, 56($sp)
-	sw	$a0, 60($sp)
-	move	$a0, $a1
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	o_isinvert.2553
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	move	$a0, $v0
-	lw	$a1, 52($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 48($sp)
-	add	$a2, $a3, $a2
-	flw	$f0, 0($a2)
-	sw	$a0, 64($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	fisneg.2477
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	move	$a1, $v0
-	lw	$a0, 64($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	xor.2490
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	move	$a0, $v0
-	lw	$a1, 52($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 60($sp)
-	add	$a2, $a3, $a2
-	flw	$f0, 0($a2)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	fneg_cond.2495
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	flw	$f1, 40($sp)
-	fsub	$f0, $f0, $f1
-	lw	$a0, 52($sp)
-	sll	$a0, $a0, 2
-	lw	$a1, 48($sp)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f4, $v0
+	fblt	$f3, $f4, fbge_else.17454
+	li	$a6, 0
+	j	fbge_cont.17455
+fbge_else.17454:
+	li	$a6, 1
+fbge_cont.17455:
+	li	$a7, 0
+	bne	$a0, $a7, bne_else.17456
+	move	$a0, $a6
+	j	bne_cont.17457
+bne_else.17456:
+	li	$a0, 0
+	bne	$a6, $a0, bne_else.17458
+	li	$a0, 1
+	j	bne_cont.17459
+bne_else.17458:
+	li	$a0, 0
+bne_cont.17459:
+bne_cont.17457:
+	sll	$a6, $a2, 2
+	add	$a6, $a5, $a6
+	flw	$f3, 0($a6)
+	li	$a6, 0
+	bne	$a0, $a6, bne_else.17460
+	fneg	$f3, $f3
+	j	bne_cont.17461
+bne_else.17460:
+bne_cont.17461:
+	fsub	$f0, $f3, $f0
+	sll	$a0, $a2, 2
+	add	$a0, $a1, $a0
+	flw	$f3, 0($a0)
+	finv	$f3, $f3
+	fmul	$f0, $f0, $f3
+	sll	$a0, $a3, 2
+	add	$a0, $a1, $a0
+	flw	$f3, 0($a0)
+	fmul	$f3, $f0, $f3
+	fadd	$f1, $f3, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fblt	$f1, $f3, fbge_else.17462
+	j	fbge_cont.17463
+fbge_else.17462:
+	fneg	$f1, $f1
+fbge_cont.17463:
+	sll	$a0, $a3, 2
+	add	$a0, $a5, $a0
+	flw	$f3, 0($a0)
+	fsub	$f1, $f1, $f3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fblt	$f1, $f3, fbge_else.17464
+	li	$a0, 0
+	j	fbge_cont.17465
+fbge_else.17464:
+	li	$a0, 1
+fbge_cont.17465:
+	li	$a2, 0
+	bne	$a0, $a2, beq_else.17466
+	li	$v0, 0
+	jr	$ra
+beq_else.17466:
+	sll	$a0, $a4, 2
 	add	$a0, $a1, $a0
 	flw	$f1, 0($a0)
-	finv	$f1, $f1
-	fmul	$f0, $f0, $f1
-	lw	$a0, 32($sp)
-	sll	$a2, $a0, 2
-	add	$a2, $a1, $a2
-	flw	$f1, 0($a2)
 	fmul	$f1, $f0, $f1
-	flw	$f2, 24($sp)
 	fadd	$f1, $f1, $f2
-	fsw	$f0, 72($sp)
-	fmove	$f0, $f1
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	fabs.2485
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	fmove	$f0, $fv
-	lw	$a0, 32($sp)
-	sll	$a0, $a0, 2
-	lw	$a1, 60($sp)
-	add	$a0, $a1, $a0
-	flw	$f1, 0($a0)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	fless.2487
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	move	$a0, $v0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fblt	$f1, $f2, fbge_else.17467
+	j	fbge_cont.17468
+fbge_else.17467:
+	fneg	$f1, $f1
+fbge_cont.17468:
+	sll	$a0, $a4, 2
+	add	$a0, $a5, $a0
+	flw	$f2, 0($a0)
+	fsub	$f1, $f1, $f2
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fblt	$f1, $f2, fbge_else.17469
+	li	$a0, 0
+	j	fbge_cont.17470
+fbge_else.17469:
+	li	$a0, 1
+fbge_cont.17470:
 	li	$a1, 0
-	bne	$a0, $a1, beq_else.8756
+	bne	$a0, $a1, beq_else.17471
 	li	$v0, 0
 	jr	$ra
-beq_else.8756:
-	lw	$a0, 16($sp)
-	sll	$a1, $a0, 2
-	lw	$a2, 48($sp)
-	add	$a1, $a2, $a1
-	flw	$f0, 0($a1)
-	flw	$f1, 72($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f2, 8($sp)
-	fadd	$f0, $f0, $f2
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	fabs.2485
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	fmove	$f0, $fv
-	lw	$a0, 16($sp)
-	sll	$a0, $a0, 2
-	lw	$a1, 60($sp)
-	add	$a0, $a1, $a0
-	flw	$f1, 0($a0)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	fless.2487
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8757
-	li	$v0, 0
-	jr	$ra
-beq_else.8757:
-	lw	$a0, 0($sp)
-	flw	$f0, 72($sp)
+beq_else.17471:
+	li	$a0, 540
 	fsw	$f0, 0($a0)
 	li	$v0, 1
 	jr	$ra
-beq_else.8754:
+beq_else.17453:
 	li	$v0, 0
 	jr	$ra
-solver_rect.2650:
-	lw	$a26, 4($a26)
+solver_surface.2824:
+	lw	$a0, 16($a0)
+	flw	$f3, 0($a1)
+	flw	$f4, 0($a0)
+	fmul	$f3, $f3, $f4
+	flw	$f4, 4($a1)
+	flw	$f5, 4($a0)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	flw	$f4, 8($a1)
+	flw	$f5, 8($a0)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f4, $v0
+	fblt	$f4, $f3, fbge_else.17472
+	li	$a1, 0
+	j	fbge_cont.17473
+fbge_else.17472:
+	li	$a1, 1
+fbge_cont.17473:
+	li	$a2, 0
+	bne	$a1, $a2, beq_else.17474
+	li	$v0, 0
+	jr	$ra
+beq_else.17474:
+	li	$a1, 540
+	flw	$f4, 0($a0)
+	fmul	$f0, $f4, $f0
+	flw	$f4, 4($a0)
+	fmul	$f1, $f4, $f1
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a0)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	fneg	$f0, $f0
+	finv	$f1, $f3
+	fmul	$f0, $f0, $f1
+	fsw	$f0, 0($a1)
+	li	$v0, 1
+	jr	$ra
+quadratic.2830:
+	fmul	$f3, $f0, $f0
+	lw	$a1, 16($a0)
+	flw	$f4, 0($a1)
+	fmul	$f3, $f3, $f4
+	fmul	$f4, $f1, $f1
+	lw	$a1, 16($a0)
+	flw	$f5, 4($a1)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	fmul	$f4, $f2, $f2
+	lw	$a1, 16($a0)
+	flw	$f5, 8($a1)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	lw	$a1, 12($a0)
+	li	$a2, 0
+	bne	$a1, $a2, beq_else.17475
+	fmove	$fv, $f3
+	jr $ra
+beq_else.17475:
+	fmul	$f4, $f1, $f2
+	lw	$a1, 36($a0)
+	flw	$f5, 0($a1)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	fmul	$f2, $f2, $f0
+	lw	$a1, 36($a0)
+	flw	$f4, 4($a1)
+	fmul	$f2, $f2, $f4
+	fadd	$f2, $f3, $f2
+	fmul	$f0, $f0, $f1
+	lw	$a0, 36($a0)
+	flw	$f1, 8($a0)
+	fmul	$f0, $f0, $f1
+	fadd	$fv, $f2, $f0
+	jr $ra
+bilinear.2835:
+	fmul	$f6, $f0, $f3
+	lw	$a1, 16($a0)
+	flw	$f7, 0($a1)
+	fmul	$f6, $f6, $f7
+	fmul	$f7, $f1, $f4
+	lw	$a1, 16($a0)
+	flw	$f8, 4($a1)
+	fmul	$f7, $f7, $f8
+	fadd	$f6, $f6, $f7
+	fmul	$f7, $f2, $f5
+	lw	$a1, 16($a0)
+	flw	$f8, 8($a1)
+	fmul	$f7, $f7, $f8
+	fadd	$f6, $f6, $f7
+	lw	$a1, 12($a0)
+	li	$a2, 0
+	bne	$a1, $a2, beq_else.17476
+	fmove	$fv, $f6
+	jr $ra
+beq_else.17476:
+	fmul	$f7, $f2, $f4
+	fmul	$f8, $f1, $f5
+	fadd	$f7, $f7, $f8
+	lw	$a1, 36($a0)
+	flw	$f8, 0($a1)
+	fmul	$f7, $f7, $f8
+	fmul	$f5, $f0, $f5
+	fmul	$f2, $f2, $f3
+	fadd	$f2, $f5, $f2
+	lw	$a1, 36($a0)
+	flw	$f5, 4($a1)
+	fmul	$f2, $f2, $f5
+	fadd	$f2, $f7, $f2
+	fmul	$f0, $f0, $f4
+	fmul	$f1, $f1, $f3
+	fadd	$f0, $f0, $f1
+	lw	$a0, 36($a0)
+	flw	$f1, 8($a0)
+	fmul	$f0, $f0, $f1
+	fadd	$f0, $f2, $f0
+	li	$v0, 16128
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	fadd	$fv, $f6, $f0
+	jr $ra
+solver_second.2843:
+	flw	$f3, 0($a1)
+	flw	$f4, 4($a1)
+	flw	$f5, 8($a1)
+	fmul	$f6, $f3, $f3
+	lw	$a2, 16($a0)
+	flw	$f7, 0($a2)
+	fmul	$f6, $f6, $f7
+	fmul	$f7, $f4, $f4
+	lw	$a2, 16($a0)
+	flw	$f8, 4($a2)
+	fmul	$f7, $f7, $f8
+	fadd	$f6, $f6, $f7
+	fmul	$f7, $f5, $f5
+	lw	$a2, 16($a0)
+	flw	$f8, 8($a2)
+	fmul	$f7, $f7, $f8
+	fadd	$f6, $f6, $f7
+	lw	$a2, 12($a0)
+	li	$a3, 0
+	bne	$a2, $a3, bne_else.17477
+	fmove	$f3, $f6
+	j	bne_cont.17478
+bne_else.17477:
+	fmul	$f7, $f4, $f5
+	lw	$a2, 36($a0)
+	flw	$f8, 0($a2)
+	fmul	$f7, $f7, $f8
+	fadd	$f6, $f6, $f7
+	fmul	$f5, $f5, $f3
+	lw	$a2, 36($a0)
+	flw	$f7, 4($a2)
+	fmul	$f5, $f5, $f7
+	fadd	$f5, $f6, $f5
+	fmul	$f3, $f3, $f4
+	lw	$a2, 36($a0)
+	flw	$f4, 8($a2)
+	fmul	$f3, $f3, $f4
+	fadd	$f3, $f5, $f3
+bne_cont.17478:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f4, $v0
+	fbne	$f3, $f4, fbne_else.17479
+	li	$a2, 1
+	j	fbne_cont.17480
+fbne_else.17479:
+	li	$a2, 0
+fbne_cont.17480:
+	li	$a3, 0
+	bne	$a2, $a3, beq_else.17481
+	flw	$f4, 0($a1)
+	flw	$f5, 4($a1)
+	flw	$f6, 8($a1)
+	fsw	$f3, 0($sp)
+	fsw	$f2, 8($sp)
+	fsw	$f1, 16($sp)
+	sw	$a0, 24($sp)
+	fsw	$f0, 32($sp)
+	fmove	$f3, $f0
+	fmove	$f0, $f4
+	fmove	$f4, $f1
+	fmove	$f1, $f5
+	fmove	$f5, $f2
+	fmove	$f2, $f6
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	bilinear.2835
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f0, $fv
+	flw	$f1, 32($sp)
+	fmul	$f2, $f1, $f1
+	lw	$a0, 24($sp)
+	lw	$a1, 16($a0)
+	flw	$f3, 0($a1)
+	fmul	$f2, $f2, $f3
+	flw	$f3, 16($sp)
+	fmul	$f4, $f3, $f3
+	lw	$a1, 16($a0)
+	flw	$f5, 4($a1)
+	fmul	$f4, $f4, $f5
+	fadd	$f2, $f2, $f4
+	flw	$f4, 8($sp)
+	fmul	$f5, $f4, $f4
+	lw	$a1, 16($a0)
+	flw	$f6, 8($a1)
+	fmul	$f5, $f5, $f6
+	fadd	$f2, $f2, $f5
+	lw	$a1, 12($a0)
+	li	$a2, 0
+	bne	$a1, $a2, bne_else.17483
+	fmove	$f1, $f2
+	j	bne_cont.17484
+bne_else.17483:
+	fmul	$f5, $f3, $f4
+	lw	$a1, 36($a0)
+	flw	$f6, 0($a1)
+	fmul	$f5, $f5, $f6
+	fadd	$f2, $f2, $f5
+	fmul	$f4, $f4, $f1
+	lw	$a1, 36($a0)
+	flw	$f5, 4($a1)
+	fmul	$f4, $f4, $f5
+	fadd	$f2, $f2, $f4
+	fmul	$f1, $f1, $f3
+	lw	$a1, 36($a0)
+	flw	$f3, 8($a1)
+	fmul	$f1, $f1, $f3
+	fadd	$f1, $f2, $f1
+bne_cont.17484:
+	lw	$a1, 4($a0)
+	li	$a2, 3
+	bne	$a1, $a2, bne_else.17485
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fsub	$f1, $f1, $f2
+	j	bne_cont.17486
+bne_else.17485:
+bne_cont.17486:
+	fmul	$f2, $f0, $f0
+	flw	$f3, 0($sp)
+	fmul	$f1, $f3, $f1
+	fsub	$f1, $f2, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fblt	$f2, $f1, fbge_else.17487
+	li	$a1, 0
+	j	fbge_cont.17488
+fbge_else.17487:
+	li	$a1, 1
+fbge_cont.17488:
+	li	$a2, 0
+	bne	$a1, $a2, beq_else.17489
+	li	$v0, 0
+	jr	$ra
+beq_else.17489:
+	fsw	$f0, 40($sp)
+	fmove	$f0, $f1
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	min_caml_sqrt
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	fmove	$f0, $fv
+	lw	$a0, 24($sp)
+	lw	$a0, 24($a0)
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17490
+	fneg	$f0, $f0
+	j	bne_cont.17491
+bne_else.17490:
+bne_cont.17491:
+	li	$a0, 540
+	flw	$f1, 40($sp)
+	fsub	$f0, $f0, $f1
+	flw	$f1, 0($sp)
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	fsw	$f0, 0($a0)
+	li	$v0, 1
+	jr	$ra
+beq_else.17481:
+	li	$v0, 0
+	jr	$ra
+solver.2849:
+	li	$a3, 48
+	sll	$a0, $a0, 2
+	add	$a0, $a3, $a0
+	lw	$a0, 0($a0)
+	flw	$f0, 0($a2)
+	lw	$a3, 20($a0)
+	flw	$f1, 0($a3)
+	fsub	$f0, $f0, $f1
+	flw	$f1, 4($a2)
+	lw	$a3, 20($a0)
+	flw	$f2, 4($a3)
+	fsub	$f1, $f1, $f2
+	flw	$f2, 8($a2)
+	lw	$a2, 20($a0)
+	flw	$f3, 8($a2)
+	fsub	$f2, $f2, $f3
+	lw	$a2, 4($a0)
+	li	$a3, 1
+	bne	$a2, $a3, beq_else.17492
 	li	$a2, 0
 	li	$a3, 1
 	li	$a4, 2
@@ -2048,15 +2739,14 @@ solver_rect.2650:
 	fsw	$f1, 16($sp)
 	sw	$a1, 24($sp)
 	sw	$a0, 28($sp)
-	sw	$a26, 32($sp)
 	sw	$ra, 36($sp)
 	addi	$sp, $sp, 40
-	jal	solver_rect_surface.2641
+	jal	solver_rect_surface.2809
 	subi	$sp, $sp, 40
 	lw	$ra, 36($sp)
 	move	$a0, $v0
 	li	$a1, 0
-	bne	$a0, $a1, beq_else.8758
+	bne	$a0, $a1, beq_else.17493
 	li	$a2, 1
 	li	$a3, 2
 	li	$a4, 0
@@ -2065,15 +2755,14 @@ solver_rect.2650:
 	flw	$f2, 0($sp)
 	lw	$a0, 28($sp)
 	lw	$a1, 24($sp)
-	lw	$a26, 32($sp)
 	sw	$ra, 36($sp)
 	addi	$sp, $sp, 40
-	jal	solver_rect_surface.2641
+	jal	solver_rect_surface.2809
 	subi	$sp, $sp, 40
 	lw	$ra, 36($sp)
 	move	$a0, $v0
 	li	$a1, 0
-	bne	$a0, $a1, beq_else.8759
+	bne	$a0, $a1, beq_else.17494
 	li	$a2, 2
 	li	$a3, 0
 	li	$a4, 1
@@ -2082,572 +2771,73 @@ solver_rect.2650:
 	flw	$f2, 16($sp)
 	lw	$a0, 28($sp)
 	lw	$a1, 24($sp)
-	lw	$a26, 32($sp)
 	sw	$ra, 36($sp)
 	addi	$sp, $sp, 40
-	jal	solver_rect_surface.2641
+	jal	solver_rect_surface.2809
 	subi	$sp, $sp, 40
 	lw	$ra, 36($sp)
 	move	$a0, $v0
 	li	$a1, 0
-	bne	$a0, $a1, beq_else.8760
+	bne	$a0, $a1, beq_else.17495
 	li	$v0, 0
 	jr	$ra
-beq_else.8760:
+beq_else.17495:
 	li	$v0, 3
 	jr	$ra
-beq_else.8759:
+beq_else.17494:
 	li	$v0, 2
 	jr	$ra
-beq_else.8758:
+beq_else.17493:
 	li	$v0, 1
 	jr	$ra
-solver_surface.2656:
-	lw	$a2, 4($a26)
-	sw	$a2, 0($sp)
-	fsw	$f2, 8($sp)
-	fsw	$f1, 16($sp)
-	fsw	$f0, 24($sp)
-	sw	$a1, 32($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	o_param_abc.2563
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a1, $v0
-	lw	$a0, 32($sp)
-	sw	$a1, 36($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	veciprod.2522
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f0, $fv
-	fsw	$f0, 40($sp)
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	fispos.2475
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8762
-	li	$v0, 0
-	jr	$ra
-beq_else.8762:
-	flw	$f0, 24($sp)
-	flw	$f1, 16($sp)
-	flw	$f2, 8($sp)
-	lw	$a0, 36($sp)
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	veciprod2.2525
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	fneg.2473
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	flw	$f1, 40($sp)
-	finv	$f1, $f1
-	fmul	$f0, $f0, $f1
-	lw	$a0, 0($sp)
-	fsw	$f0, 0($a0)
-	li	$v0, 1
-	jr	$ra
-quadratic.2662:
-	fsw	$f0, 0($sp)
-	fsw	$f2, 8($sp)
-	fsw	$f1, 16($sp)
-	sw	$a0, 24($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	fsqr.2483
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	fmove	$f0, $fv
-	lw	$a0, 24($sp)
-	fsw	$f0, 32($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	o_param_a.2557
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f0, $fv
-	flw	$f1, 32($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 16($sp)
-	fsw	$f0, 40($sp)
-	fmove	$f0, $f1
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	fsqr.2483
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	lw	$a0, 24($sp)
-	fsw	$f0, 48($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	o_param_b.2559
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	fmove	$f0, $fv
-	flw	$f1, 48($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 40($sp)
-	fadd	$f0, $f1, $f0
-	flw	$f1, 8($sp)
-	fsw	$f0, 56($sp)
-	fmove	$f0, $f1
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	fsqr.2483
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	lw	$a0, 24($sp)
-	fsw	$f0, 64($sp)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	o_param_c.2561
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	fmove	$f0, $fv
-	flw	$f1, 64($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 56($sp)
-	fadd	$f0, $f1, $f0
-	lw	$a0, 24($sp)
-	fsw	$f0, 72($sp)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	o_isrot.2555
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8764
-	flw	$f0, 72($sp)
-	fmove	$fv, $f0
-	jr $ra
-beq_else.8764:
-	flw	$f0, 8($sp)
-	flw	$f1, 16($sp)
-	fmul	$f2, $f1, $f0
-	lw	$a0, 24($sp)
-	fsw	$f2, 80($sp)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	o_param_r1.2581
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f0, $fv
-	flw	$f1, 80($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 72($sp)
-	fadd	$f0, $f1, $f0
-	flw	$f1, 0($sp)
-	flw	$f2, 8($sp)
-	fmul	$f2, $f2, $f1
-	lw	$a0, 24($sp)
-	fsw	$f0, 88($sp)
-	fsw	$f2, 96($sp)
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	o_param_r2.2583
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	fmove	$f0, $fv
-	flw	$f1, 96($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 88($sp)
-	fadd	$f0, $f1, $f0
-	flw	$f1, 16($sp)
-	flw	$f2, 0($sp)
-	fmul	$f1, $f2, $f1
-	lw	$a0, 24($sp)
-	fsw	$f0, 104($sp)
-	fsw	$f1, 112($sp)
-	sw	$ra, 124($sp)
-	addi	$sp, $sp, 128
-	jal	o_param_r3.2585
-	subi	$sp, $sp, 128
-	lw	$ra, 124($sp)
-	fmove	$f0, $fv
-	flw	$f1, 112($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 104($sp)
-	fadd	$fv, $f1, $f0
-	jr $ra
-bilinear.2667:
-	fmul	$f6, $f0, $f3
-	fsw	$f3, 0($sp)
-	fsw	$f0, 8($sp)
-	fsw	$f5, 16($sp)
-	fsw	$f2, 24($sp)
-	sw	$a0, 32($sp)
-	fsw	$f4, 40($sp)
-	fsw	$f1, 48($sp)
-	fsw	$f6, 56($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	o_param_a.2557
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 40($sp)
-	flw	$f2, 48($sp)
-	fmul	$f3, $f2, $f1
-	lw	$a0, 32($sp)
-	fsw	$f0, 64($sp)
-	fsw	$f3, 72($sp)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	o_param_b.2559
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	fmove	$f0, $fv
-	flw	$f1, 72($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 64($sp)
-	fadd	$f0, $f1, $f0
-	flw	$f1, 16($sp)
-	flw	$f2, 24($sp)
-	fmul	$f3, $f2, $f1
-	lw	$a0, 32($sp)
-	fsw	$f0, 80($sp)
-	fsw	$f3, 88($sp)
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	o_param_c.2561
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	fmove	$f0, $fv
-	flw	$f1, 88($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 80($sp)
-	fadd	$f0, $f1, $f0
-	lw	$a0, 32($sp)
-	fsw	$f0, 96($sp)
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	o_isrot.2555
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8766
-	flw	$f0, 96($sp)
-	fmove	$fv, $f0
-	jr $ra
-beq_else.8766:
-	flw	$f0, 40($sp)
-	flw	$f1, 24($sp)
-	fmul	$f2, $f1, $f0
-	flw	$f3, 16($sp)
-	flw	$f4, 48($sp)
-	fmul	$f5, $f4, $f3
-	fadd	$f2, $f2, $f5
-	lw	$a0, 32($sp)
-	fsw	$f2, 104($sp)
-	sw	$ra, 116($sp)
-	addi	$sp, $sp, 120
-	jal	o_param_r1.2581
-	subi	$sp, $sp, 120
-	lw	$ra, 116($sp)
-	fmove	$f0, $fv
-	flw	$f1, 104($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 16($sp)
-	flw	$f2, 8($sp)
-	fmul	$f1, $f2, $f1
-	flw	$f3, 0($sp)
-	flw	$f4, 24($sp)
-	fmul	$f4, $f4, $f3
-	fadd	$f1, $f1, $f4
-	lw	$a0, 32($sp)
-	fsw	$f0, 112($sp)
-	fsw	$f1, 120($sp)
-	sw	$ra, 132($sp)
-	addi	$sp, $sp, 136
-	jal	o_param_r2.2583
-	subi	$sp, $sp, 136
-	lw	$ra, 132($sp)
-	fmove	$f0, $fv
-	flw	$f1, 120($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 112($sp)
-	fadd	$f0, $f1, $f0
-	flw	$f1, 40($sp)
-	flw	$f2, 8($sp)
-	fmul	$f1, $f2, $f1
-	flw	$f2, 0($sp)
-	flw	$f3, 48($sp)
-	fmul	$f2, $f3, $f2
-	fadd	$f1, $f1, $f2
-	lw	$a0, 32($sp)
-	fsw	$f0, 128($sp)
-	fsw	$f1, 136($sp)
-	sw	$ra, 148($sp)
-	addi	$sp, $sp, 152
-	jal	o_param_r3.2585
-	subi	$sp, $sp, 152
-	lw	$ra, 148($sp)
-	fmove	$f0, $fv
-	flw	$f1, 136($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 128($sp)
-	fadd	$f0, $f1, $f0
-	sw	$ra, 148($sp)
-	addi	$sp, $sp, 152
-	jal	fhalf.2481
-	subi	$sp, $sp, 152
-	lw	$ra, 148($sp)
-	fmove	$f0, $fv
-	flw	$f1, 96($sp)
-	fadd	$fv, $f1, $f0
-	jr $ra
-solver_second.2675:
-	lw	$a2, 4($a26)
+beq_else.17492:
+	li	$a3, 2
+	bne	$a2, $a3, beq_else.17496
+	lw	$a0, 16($a0)
 	flw	$f3, 0($a1)
+	flw	$f4, 0($a0)
+	fmul	$f3, $f3, $f4
 	flw	$f4, 4($a1)
-	flw	$f5, 8($a1)
-	sw	$a2, 0($sp)
-	fsw	$f2, 8($sp)
-	fsw	$f1, 16($sp)
-	fsw	$f0, 24($sp)
-	sw	$a0, 32($sp)
-	sw	$a1, 36($sp)
-	fmove	$f2, $f5
-	fmove	$f1, $f4
-	fmove	$f0, $f3
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	quadratic.2662
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f0, $fv
-	fsw	$f0, 40($sp)
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	fiszero.2479
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	move	$a0, $v0
+	flw	$f5, 4($a0)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	flw	$f4, 8($a1)
+	flw	$f5, 8($a0)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f4, $v0
+	fblt	$f4, $f3, fbge_else.17497
 	li	$a1, 0
-	bne	$a0, $a1, beq_else.8768
-	lw	$a0, 36($sp)
-	flw	$f0, 0($a0)
-	flw	$f1, 4($a0)
-	flw	$f2, 8($a0)
-	flw	$f3, 24($sp)
-	flw	$f4, 16($sp)
-	flw	$f5, 8($sp)
-	lw	$a0, 32($sp)
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	bilinear.2667
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	flw	$f1, 24($sp)
-	flw	$f2, 16($sp)
-	flw	$f3, 8($sp)
-	lw	$a0, 32($sp)
-	fsw	$f0, 48($sp)
-	fmove	$f0, $f1
-	fmove	$f1, $f2
-	fmove	$f2, $f3
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	quadratic.2662
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	fmove	$f0, $fv
-	lw	$a0, 32($sp)
-	fsw	$f0, 56($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	o_form.2549
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	move	$a0, $v0
-	li	$a1, 3
-	bne	$a0, $a1, bne_else.8769
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	l.6037
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	mtc1	$f0, $a25
-	flw	$f1, 56($sp)
-	fsub	$f0, $f1, $f0
-	j	bne_cont.8770
-bne_else.8769:
-	flw	$f0, 56($sp)
-bne_cont.8770:
-	flw	$f1, 48($sp)
-	fsw	$f0, 64($sp)
-	fmove	$f0, $f1
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	fsqr.2483
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	fmove	$f0, $fv
-	flw	$f1, 64($sp)
-	flw	$f2, 40($sp)
-	fmul	$f1, $f2, $f1
-	fsub	$f0, $f0, $f1
-	fsw	$f0, 72($sp)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	fispos.2475
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8771
+	j	fbge_cont.17498
+fbge_else.17497:
+	li	$a1, 1
+fbge_cont.17498:
+	li	$a2, 0
+	bne	$a1, $a2, beq_else.17499
 	li	$v0, 0
 	jr	$ra
-beq_else.8771:
-	flw	$f0, 72($sp)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	min_caml_sqrt
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	fmove	$f0, $fv
-	lw	$a0, 32($sp)
-	fsw	$f0, 80($sp)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	o_isinvert.2553
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8772
-	flw	$f0, 80($sp)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	fneg.2473
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f0, $fv
-	j	bne_cont.8773
-bne_else.8772:
-	flw	$f0, 80($sp)
-bne_cont.8773:
-	flw	$f1, 48($sp)
-	fsub	$f0, $f0, $f1
-	flw	$f1, 40($sp)
-	finv	$f1, $f1
+beq_else.17499:
+	li	$a1, 540
+	flw	$f4, 0($a0)
+	fmul	$f0, $f4, $f0
+	flw	$f4, 4($a0)
+	fmul	$f1, $f4, $f1
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a0)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	fneg	$f0, $f0
+	finv	$f1, $f3
 	fmul	$f0, $f0, $f1
-	lw	$a0, 0($sp)
-	fsw	$f0, 0($a0)
+	fsw	$f0, 0($a1)
 	li	$v0, 1
 	jr	$ra
-beq_else.8768:
-	li	$v0, 0
-	jr	$ra
-solver.2681:
-	lw	$a3, 16($a26)
-	lw	$a4, 12($a26)
-	lw	$a5, 8($a26)
-	lw	$a6, 4($a26)
-	sll	$a0, $a0, 2
-	add	$a0, $a6, $a0
-	lw	$a0, 0($a0)
-	flw	$f0, 0($a2)
-	sw	$a4, 0($sp)
-	sw	$a3, 4($sp)
-	sw	$a1, 8($sp)
-	sw	$a5, 12($sp)
-	sw	$a0, 16($sp)
-	sw	$a2, 20($sp)
-	fsw	$f0, 24($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	o_param_x.2565
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	flw	$f1, 24($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 20($sp)
-	flw	$f1, 4($a0)
-	lw	$a1, 16($sp)
-	fsw	$f0, 32($sp)
-	fsw	$f1, 40($sp)
-	move	$a0, $a1
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	o_param_y.2567
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	flw	$f1, 40($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 20($sp)
-	flw	$f1, 8($a0)
-	lw	$a0, 16($sp)
-	fsw	$f0, 48($sp)
-	fsw	$f1, 56($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	o_param_z.2569
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 16($sp)
-	fsw	$f0, 64($sp)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	o_form.2549
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	move	$a0, $v0
-	li	$a1, 1
-	bne	$a0, $a1, beq_else.8774
-	flw	$f0, 32($sp)
-	flw	$f1, 48($sp)
-	flw	$f2, 64($sp)
-	lw	$a0, 16($sp)
-	lw	$a1, 8($sp)
-	lw	$a26, 12($sp)
-	lw	$a25, 0($a26)
-	j	solver_rect.2650
-beq_else.8774:
-	li	$a1, 2
-	bne	$a0, $a1, beq_else.8775
-	flw	$f0, 32($sp)
-	flw	$f1, 48($sp)
-	flw	$f2, 64($sp)
-	lw	$a0, 16($sp)
-	lw	$a1, 8($sp)
-	lw	$a26, 4($sp)
-	lw	$a25, 0($a26)
-	j	solver_surface.2656
-beq_else.8775:
-	flw	$f0, 32($sp)
-	flw	$f1, 48($sp)
-	flw	$f2, 64($sp)
-	lw	$a0, 16($sp)
-	lw	$a1, 8($sp)
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	solver_second.2675
-solver_rect_fast.2685:
-	lw	$a3, 4($a26)
+beq_else.17496:
+	j	solver_second.2843
+solver_rect_fast.2853:
 	flw	$f3, 0($a2)
 	fsub	$f3, $f3, $f0
 	flw	$f4, 4($a2)
@@ -2655,3595 +2845,4488 @@ solver_rect_fast.2685:
 	flw	$f4, 4($a1)
 	fmul	$f4, $f3, $f4
 	fadd	$f4, $f4, $f1
-	sw	$a3, 0($sp)
-	fsw	$f0, 8($sp)
-	fsw	$f1, 16($sp)
-	sw	$a2, 24($sp)
-	fsw	$f2, 32($sp)
-	fsw	$f3, 40($sp)
-	sw	$a1, 48($sp)
-	sw	$a0, 52($sp)
-	fmove	$f0, $f4
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	fabs.2485
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	fmove	$f0, $fv
-	lw	$a0, 52($sp)
-	fsw	$f0, 56($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	o_param_b.2559
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f1, $fv
-	flw	$f0, 56($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	fless.2487
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8778
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f5, $v0
+	fblt	$f4, $f5, fbge_else.17500
+	j	fbge_cont.17501
+fbge_else.17500:
+	fneg	$f4, $f4
+fbge_cont.17501:
+	lw	$a3, 16($a0)
+	flw	$f5, 4($a3)
+	fsub	$f4, $f4, $f5
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f5, $v0
+	fblt	$f4, $f5, fbge_else.17502
+	li	$a3, 0
+	j	fbge_cont.17503
+fbge_else.17502:
+	li	$a3, 1
+fbge_cont.17503:
+	li	$a4, 0
+	bne	$a3, $a4, bne_else.17504
+	li	$a3, 0
+	j	bne_cont.17505
+bne_else.17504:
+	flw	$f4, 8($a1)
+	fmul	$f4, $f3, $f4
+	fadd	$f4, $f4, $f2
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f5, $v0
+	fblt	$f4, $f5, fbge_else.17506
+	j	fbge_cont.17507
+fbge_else.17506:
+	fneg	$f4, $f4
+fbge_cont.17507:
+	lw	$a3, 16($a0)
+	flw	$f5, 8($a3)
+	fsub	$f4, $f4, $f5
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f5, $v0
+	fblt	$f4, $f5, fbge_else.17508
+	li	$a3, 0
+	j	fbge_cont.17509
+fbge_else.17508:
+	li	$a3, 1
+fbge_cont.17509:
+	li	$a4, 0
+	bne	$a3, $a4, bne_else.17510
+	li	$a3, 0
+	j	bne_cont.17511
+bne_else.17510:
+	flw	$f4, 4($a2)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f5, $v0
+	fbne	$f4, $f5, fbne_else.17512
+	li	$a3, 1
+	j	fbne_cont.17513
+fbne_else.17512:
+	li	$a3, 0
+fbne_cont.17513:
+	li	$a4, 0
+	bne	$a3, $a4, bne_else.17514
+	li	$a3, 1
+	j	bne_cont.17515
+bne_else.17514:
+	li	$a3, 0
+bne_cont.17515:
+bne_cont.17511:
+bne_cont.17505:
+	li	$a4, 0
+	bne	$a3, $a4, beq_else.17516
+	flw	$f3, 8($a2)
+	fsub	$f3, $f3, $f1
+	flw	$f4, 12($a2)
+	fmul	$f3, $f3, $f4
+	flw	$f4, 0($a1)
+	fmul	$f4, $f3, $f4
+	fadd	$f4, $f4, $f0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f5, $v0
+	fblt	$f4, $f5, fbge_else.17517
+	j	fbge_cont.17518
+fbge_else.17517:
+	fneg	$f4, $f4
+fbge_cont.17518:
+	lw	$a3, 16($a0)
+	flw	$f5, 0($a3)
+	fsub	$f4, $f4, $f5
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f5, $v0
+	fblt	$f4, $f5, fbge_else.17519
+	li	$a3, 0
+	j	fbge_cont.17520
+fbge_else.17519:
+	li	$a3, 1
+fbge_cont.17520:
+	li	$a4, 0
+	bne	$a3, $a4, bne_else.17521
+	li	$a3, 0
+	j	bne_cont.17522
+bne_else.17521:
+	flw	$f4, 8($a1)
+	fmul	$f4, $f3, $f4
+	fadd	$f4, $f4, $f2
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f5, $v0
+	fblt	$f4, $f5, fbge_else.17523
+	j	fbge_cont.17524
+fbge_else.17523:
+	fneg	$f4, $f4
+fbge_cont.17524:
+	lw	$a3, 16($a0)
+	flw	$f5, 8($a3)
+	fsub	$f4, $f4, $f5
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f5, $v0
+	fblt	$f4, $f5, fbge_else.17525
+	li	$a3, 0
+	j	fbge_cont.17526
+fbge_else.17525:
+	li	$a3, 1
+fbge_cont.17526:
+	li	$a4, 0
+	bne	$a3, $a4, bne_else.17527
+	li	$a3, 0
+	j	bne_cont.17528
+bne_else.17527:
+	flw	$f4, 12($a2)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f5, $v0
+	fbne	$f4, $f5, fbne_else.17529
+	li	$a3, 1
+	j	fbne_cont.17530
+fbne_else.17529:
+	li	$a3, 0
+fbne_cont.17530:
+	li	$a4, 0
+	bne	$a3, $a4, bne_else.17531
+	li	$a3, 1
+	j	bne_cont.17532
+bne_else.17531:
+	li	$a3, 0
+bne_cont.17532:
+bne_cont.17528:
+bne_cont.17522:
+	li	$a4, 0
+	bne	$a3, $a4, beq_else.17533
+	flw	$f3, 16($a2)
+	fsub	$f2, $f3, $f2
+	flw	$f3, 20($a2)
+	fmul	$f2, $f2, $f3
+	flw	$f3, 0($a1)
+	fmul	$f3, $f2, $f3
+	fadd	$f0, $f3, $f0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fblt	$f0, $f3, fbge_else.17534
+	j	fbge_cont.17535
+fbge_else.17534:
+	fneg	$f0, $f0
+fbge_cont.17535:
+	lw	$a3, 16($a0)
+	flw	$f3, 0($a3)
+	fsub	$f0, $f0, $f3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fblt	$f0, $f3, fbge_else.17536
+	li	$a3, 0
+	j	fbge_cont.17537
+fbge_else.17536:
+	li	$a3, 1
+fbge_cont.17537:
+	li	$a4, 0
+	bne	$a3, $a4, bne_else.17538
 	li	$a0, 0
-	j	bne_cont.8779
-bne_else.8778:
-	lw	$a0, 48($sp)
-	flw	$f0, 8($a0)
-	flw	$f1, 40($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f2, 32($sp)
-	fadd	$f0, $f0, $f2
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	fabs.2485
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	lw	$a0, 52($sp)
-	fsw	$f0, 64($sp)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	o_param_c.2561
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	fmove	$f1, $fv
-	flw	$f0, 64($sp)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	fless.2487
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8780
-	li	$a0, 0
-	j	bne_cont.8781
-bne_else.8780:
-	lw	$a0, 24($sp)
-	flw	$f0, 4($a0)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	fiszero.2479
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8782
-	li	$a0, 1
-	j	bne_cont.8783
-bne_else.8782:
-	li	$a0, 0
-bne_cont.8783:
-bne_cont.8781:
-bne_cont.8779:
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8784
-	lw	$a0, 24($sp)
-	flw	$f0, 8($a0)
-	flw	$f1, 16($sp)
+	j	bne_cont.17539
+bne_else.17538:
+	flw	$f0, 4($a1)
+	fmul	$f0, $f2, $f0
+	fadd	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17540
+	j	fbge_cont.17541
+fbge_else.17540:
+	fneg	$f0, $f0
+fbge_cont.17541:
+	lw	$a0, 16($a0)
+	flw	$f1, 4($a0)
 	fsub	$f0, $f0, $f1
-	flw	$f2, 12($a0)
-	fmul	$f0, $f0, $f2
-	lw	$a1, 48($sp)
-	flw	$f2, 0($a1)
-	fmul	$f2, $f0, $f2
-	flw	$f3, 8($sp)
-	fadd	$f2, $f2, $f3
-	fsw	$f0, 72($sp)
-	fmove	$f0, $f2
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	fabs.2485
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	fmove	$f0, $fv
-	lw	$a0, 52($sp)
-	fsw	$f0, 80($sp)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	o_param_a.2557
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f1, $fv
-	flw	$f0, 80($sp)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	fless.2487
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8785
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17542
 	li	$a0, 0
-	j	bne_cont.8786
-bne_else.8785:
-	lw	$a0, 48($sp)
-	flw	$f0, 8($a0)
-	flw	$f1, 72($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f2, 32($sp)
-	fadd	$f0, $f0, $f2
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	fabs.2485
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f0, $fv
-	lw	$a0, 52($sp)
-	fsw	$f0, 88($sp)
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	o_param_c.2561
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	fmove	$f1, $fv
-	flw	$f0, 88($sp)
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	fless.2487
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8787
-	li	$a0, 0
-	j	bne_cont.8788
-bne_else.8787:
-	lw	$a0, 24($sp)
-	flw	$f0, 12($a0)
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	fiszero.2479
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8789
+	j	fbge_cont.17543
+fbge_else.17542:
 	li	$a0, 1
-	j	bne_cont.8790
-bne_else.8789:
+fbge_cont.17543:
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17544
 	li	$a0, 0
-bne_cont.8790:
-bne_cont.8788:
-bne_cont.8786:
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8791
-	lw	$a0, 24($sp)
-	flw	$f0, 16($a0)
-	flw	$f1, 32($sp)
-	fsub	$f0, $f0, $f1
-	flw	$f1, 20($a0)
-	fmul	$f0, $f0, $f1
-	lw	$a1, 48($sp)
-	flw	$f1, 0($a1)
-	fmul	$f1, $f0, $f1
-	flw	$f2, 8($sp)
-	fadd	$f1, $f1, $f2
-	fsw	$f0, 96($sp)
-	fmove	$f0, $f1
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	fabs.2485
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	fmove	$f0, $fv
-	lw	$a0, 52($sp)
-	fsw	$f0, 104($sp)
-	sw	$ra, 116($sp)
-	addi	$sp, $sp, 120
-	jal	o_param_a.2557
-	subi	$sp, $sp, 120
-	lw	$ra, 116($sp)
-	fmove	$f1, $fv
-	flw	$f0, 104($sp)
-	sw	$ra, 116($sp)
-	addi	$sp, $sp, 120
-	jal	fless.2487
-	subi	$sp, $sp, 120
-	lw	$ra, 116($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8792
-	li	$a0, 0
-	j	bne_cont.8793
-bne_else.8792:
-	lw	$a0, 48($sp)
-	flw	$f0, 4($a0)
-	flw	$f1, 96($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f2, 16($sp)
-	fadd	$f0, $f0, $f2
-	sw	$ra, 116($sp)
-	addi	$sp, $sp, 120
-	jal	fabs.2485
-	subi	$sp, $sp, 120
-	lw	$ra, 116($sp)
-	fmove	$f0, $fv
-	lw	$a0, 52($sp)
-	fsw	$f0, 112($sp)
-	sw	$ra, 124($sp)
-	addi	$sp, $sp, 128
-	jal	o_param_b.2559
-	subi	$sp, $sp, 128
-	lw	$ra, 124($sp)
-	fmove	$f1, $fv
-	flw	$f0, 112($sp)
-	sw	$ra, 124($sp)
-	addi	$sp, $sp, 128
-	jal	fless.2487
-	subi	$sp, $sp, 128
-	lw	$ra, 124($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8794
-	li	$a0, 0
-	j	bne_cont.8795
-bne_else.8794:
-	lw	$a0, 24($sp)
-	flw	$f0, 20($a0)
-	sw	$ra, 124($sp)
-	addi	$sp, $sp, 128
-	jal	fiszero.2479
-	subi	$sp, $sp, 128
-	lw	$ra, 124($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8796
+	j	bne_cont.17545
+bne_else.17544:
+	flw	$f0, 20($a2)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fbne	$f0, $f1, fbne_else.17546
 	li	$a0, 1
-	j	bne_cont.8797
-bne_else.8796:
+	j	fbne_cont.17547
+fbne_else.17546:
 	li	$a0, 0
-bne_cont.8797:
-bne_cont.8795:
-bne_cont.8793:
+fbne_cont.17547:
 	li	$a1, 0
-	bne	$a0, $a1, beq_else.8798
+	bne	$a0, $a1, bne_else.17548
+	li	$a0, 1
+	j	bne_cont.17549
+bne_else.17548:
+	li	$a0, 0
+bne_cont.17549:
+bne_cont.17545:
+bne_cont.17539:
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17550
 	li	$v0, 0
 	jr	$ra
-beq_else.8798:
-	lw	$a0, 0($sp)
-	flw	$f0, 96($sp)
-	fsw	$f0, 0($a0)
+beq_else.17550:
+	li	$a0, 540
+	fsw	$f2, 0($a0)
 	li	$v0, 3
 	jr	$ra
-beq_else.8791:
-	lw	$a0, 0($sp)
-	flw	$f0, 72($sp)
-	fsw	$f0, 0($a0)
+beq_else.17533:
+	li	$a0, 540
+	fsw	$f3, 0($a0)
 	li	$v0, 2
 	jr	$ra
-beq_else.8784:
-	lw	$a0, 0($sp)
-	flw	$f0, 40($sp)
-	fsw	$f0, 0($a0)
+beq_else.17516:
+	li	$a0, 540
+	fsw	$f3, 0($a0)
 	li	$v0, 1
 	jr	$ra
-solver_surface_fast.2692:
-	lw	$a0, 4($a26)
+solver_second_fast.2866:
 	flw	$f3, 0($a1)
-	sw	$a0, 0($sp)
-	fsw	$f2, 8($sp)
-	fsw	$f1, 16($sp)
-	fsw	$f0, 24($sp)
-	sw	$a1, 32($sp)
-	fmove	$f0, $f3
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	fisneg.2477
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8800
 	li	$v0, 0
-	jr	$ra
-beq_else.8800:
-	lw	$a0, 32($sp)
-	flw	$f0, 4($a0)
-	flw	$f1, 24($sp)
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f4, $v0
+	fbne	$f3, $f4, fbne_else.17551
+	li	$a2, 1
+	j	fbne_cont.17552
+fbne_else.17551:
+	li	$a2, 0
+fbne_cont.17552:
+	li	$a3, 0
+	bne	$a2, $a3, beq_else.17553
+	flw	$f4, 4($a1)
+	fmul	$f4, $f4, $f0
+	flw	$f5, 8($a1)
+	fmul	$f5, $f5, $f1
+	fadd	$f4, $f4, $f5
+	flw	$f5, 12($a1)
+	fmul	$f5, $f5, $f2
+	fadd	$f4, $f4, $f5
+	fmul	$f5, $f0, $f0
+	lw	$a2, 16($a0)
+	flw	$f6, 0($a2)
+	fmul	$f5, $f5, $f6
+	fmul	$f6, $f1, $f1
+	lw	$a2, 16($a0)
+	flw	$f7, 4($a2)
+	fmul	$f6, $f6, $f7
+	fadd	$f5, $f5, $f6
+	fmul	$f6, $f2, $f2
+	lw	$a2, 16($a0)
+	flw	$f7, 8($a2)
+	fmul	$f6, $f6, $f7
+	fadd	$f5, $f5, $f6
+	lw	$a2, 12($a0)
+	li	$a3, 0
+	bne	$a2, $a3, bne_else.17554
+	fmove	$f0, $f5
+	j	bne_cont.17555
+bne_else.17554:
+	fmul	$f6, $f1, $f2
+	lw	$a2, 36($a0)
+	flw	$f7, 0($a2)
+	fmul	$f6, $f6, $f7
+	fadd	$f5, $f5, $f6
+	fmul	$f2, $f2, $f0
+	lw	$a2, 36($a0)
+	flw	$f6, 4($a2)
+	fmul	$f2, $f2, $f6
+	fadd	$f2, $f5, $f2
 	fmul	$f0, $f0, $f1
-	flw	$f1, 8($a0)
-	flw	$f2, 16($sp)
-	fmul	$f1, $f1, $f2
-	fadd	$f0, $f0, $f1
-	flw	$f1, 12($a0)
-	flw	$f2, 8($sp)
-	fmul	$f1, $f1, $f2
-	fadd	$f0, $f0, $f1
-	lw	$a0, 0($sp)
-	fsw	$f0, 0($a0)
-	li	$v0, 1
-	jr	$ra
-solver_second_fast.2698:
-	lw	$a2, 4($a26)
-	flw	$f3, 0($a1)
-	sw	$a2, 0($sp)
-	fsw	$f3, 8($sp)
-	sw	$a0, 16($sp)
-	fsw	$f2, 24($sp)
-	fsw	$f1, 32($sp)
-	fsw	$f0, 40($sp)
-	sw	$a1, 48($sp)
-	fmove	$f0, $f3
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	fiszero.2479
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8803
-	lw	$a0, 48($sp)
-	flw	$f0, 4($a0)
-	flw	$f1, 40($sp)
+	lw	$a2, 36($a0)
+	flw	$f1, 8($a2)
 	fmul	$f0, $f0, $f1
-	flw	$f2, 8($a0)
-	flw	$f3, 32($sp)
-	fmul	$f2, $f2, $f3
-	fadd	$f0, $f0, $f2
-	flw	$f2, 12($a0)
-	flw	$f4, 24($sp)
-	fmul	$f2, $f2, $f4
-	fadd	$f0, $f0, $f2
-	lw	$a1, 16($sp)
-	fsw	$f0, 56($sp)
-	move	$a0, $a1
-	fmove	$f2, $f4
-	fmove	$f0, $f1
-	fmove	$f1, $f3
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	quadratic.2662
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	lw	$a0, 16($sp)
-	fsw	$f0, 64($sp)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	o_form.2549
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	move	$a0, $v0
-	li	$a1, 3
-	bne	$a0, $a1, bne_else.8805
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	l.6037
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	mtc1	$f0, $a25
-	flw	$f1, 64($sp)
-	fsub	$f0, $f1, $f0
-	j	bne_cont.8806
-bne_else.8805:
-	flw	$f0, 64($sp)
-bne_cont.8806:
-	flw	$f1, 56($sp)
-	fsw	$f0, 72($sp)
-	fmove	$f0, $f1
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	fsqr.2483
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	fmove	$f0, $fv
-	flw	$f1, 72($sp)
-	flw	$f2, 8($sp)
-	fmul	$f1, $f2, $f1
+	fadd	$f0, $f2, $f0
+bne_cont.17555:
+	lw	$a2, 4($a0)
+	li	$a3, 3
+	bne	$a2, $a3, bne_else.17556
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
 	fsub	$f0, $f0, $f1
-	fsw	$f0, 80($sp)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	fispos.2475
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8807
+	j	bne_cont.17557
+bne_else.17556:
+bne_cont.17557:
+	fmul	$f1, $f4, $f4
+	fmul	$f0, $f3, $f0
+	fsub	$f0, $f1, $f0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f1, $f0, fbge_else.17558
+	li	$a2, 0
+	j	fbge_cont.17559
+fbge_else.17558:
+	li	$a2, 1
+fbge_cont.17559:
+	li	$a3, 0
+	bne	$a2, $a3, beq_else.17560
 	li	$v0, 0
 	jr	$ra
-beq_else.8807:
-	lw	$a0, 16($sp)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	o_isinvert.2553
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8808
-	flw	$f0, 80($sp)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	min_caml_sqrt
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 48($sp)
-	flw	$f1, 16($a0)
-	fmul	$f0, $f0, $f1
-	lw	$a0, 0($sp)
-	fsw	$f0, 0($a0)
-	j	bne_cont.8809
-bne_else.8808:
-	flw	$f0, 80($sp)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	min_caml_sqrt
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	fadd	$f0, $f1, $f0
-	lw	$a0, 48($sp)
-	flw	$f1, 16($a0)
-	fmul	$f0, $f0, $f1
-	lw	$a0, 0($sp)
-	fsw	$f0, 0($a0)
-bne_cont.8809:
-	li	$v0, 1
-	jr	$ra
-beq_else.8803:
-	li	$v0, 0
-	jr	$ra
-solver_fast.2704:
-	lw	$a3, 16($a26)
-	lw	$a4, 12($a26)
-	lw	$a5, 8($a26)
-	lw	$a6, 4($a26)
-	sll	$a7, $a0, 2
-	add	$a7, $a6, $a7
-	lw	$a6, 0($a7)
-	flw	$f0, 0($a2)
-	sw	$a4, 0($sp)
-	sw	$a3, 4($sp)
-	sw	$a5, 8($sp)
-	sw	$a0, 12($sp)
-	sw	$a1, 16($sp)
-	sw	$a6, 20($sp)
-	sw	$a2, 24($sp)
-	fsw	$f0, 32($sp)
-	move	$a0, $a6
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	o_param_x.2565
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f0, $fv
-	flw	$f1, 32($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 24($sp)
-	flw	$f1, 4($a0)
-	lw	$a1, 20($sp)
-	fsw	$f0, 40($sp)
-	fsw	$f1, 48($sp)
-	move	$a0, $a1
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	o_param_y.2567
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	fmove	$f0, $fv
-	flw	$f1, 48($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 24($sp)
-	flw	$f1, 8($a0)
-	lw	$a0, 20($sp)
-	fsw	$f0, 56($sp)
-	fsw	$f1, 64($sp)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	o_param_z.2569
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	fmove	$f0, $fv
-	flw	$f1, 64($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 16($sp)
-	fsw	$f0, 72($sp)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	d_const.2610
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	move	$a0, $v0
-	lw	$a1, 12($sp)
-	sll	$a1, $a1, 2
-	add	$a1, $a0, $a1
-	lw	$a0, 0($a1)
-	lw	$a1, 20($sp)
-	sw	$a0, 80($sp)
-	move	$a0, $a1
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	o_form.2549
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	move	$a0, $v0
-	li	$a1, 1
-	bne	$a0, $a1, beq_else.8811
-	lw	$a0, 16($sp)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	d_vec.2608
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	move	$a1, $v0
-	flw	$f0, 40($sp)
-	flw	$f1, 56($sp)
-	flw	$f2, 72($sp)
-	lw	$a0, 20($sp)
-	lw	$a2, 80($sp)
-	lw	$a26, 8($sp)
-	lw	$a25, 0($a26)
-	j	solver_rect_fast.2685
-beq_else.8811:
-	li	$a1, 2
-	bne	$a0, $a1, beq_else.8812
-	flw	$f0, 40($sp)
-	flw	$f1, 56($sp)
-	flw	$f2, 72($sp)
-	lw	$a0, 20($sp)
-	lw	$a1, 80($sp)
-	lw	$a26, 4($sp)
-	lw	$a25, 0($a26)
-	j	solver_surface_fast.2692
-beq_else.8812:
-	flw	$f0, 40($sp)
-	flw	$f1, 56($sp)
-	flw	$f2, 72($sp)
-	lw	$a0, 20($sp)
-	lw	$a1, 80($sp)
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	solver_second_fast.2698
-solver_surface_fast2.2708:
-	lw	$a0, 4($a26)
-	flw	$f0, 0($a1)
+beq_else.17560:
+	lw	$a0, 24($a0)
+	li	$a2, 0
+	bne	$a0, $a2, bne_else.17561
+	li	$a0, 540
 	sw	$a0, 0($sp)
-	sw	$a2, 4($sp)
-	sw	$a1, 8($sp)
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	fisneg.2477
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8813
-	li	$v0, 0
-	jr	$ra
-beq_else.8813:
-	lw	$a0, 8($sp)
-	flw	$f0, 0($a0)
+	sw	$a1, 4($sp)
+	fsw	$f4, 8($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_sqrt
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f0, $fv
+	flw	$f1, 8($sp)
+	fsub	$f0, $f1, $f0
 	lw	$a0, 4($sp)
-	flw	$f1, 12($a0)
+	flw	$f1, 16($a0)
 	fmul	$f0, $f0, $f1
 	lw	$a0, 0($sp)
 	fsw	$f0, 0($a0)
+	j	bne_cont.17562
+bne_else.17561:
+	li	$a0, 540
+	sw	$a0, 16($sp)
+	sw	$a1, 4($sp)
+	fsw	$f4, 8($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_sqrt
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f0, $fv
+	flw	$f1, 8($sp)
+	fadd	$f0, $f1, $f0
+	lw	$a0, 4($sp)
+	flw	$f1, 16($a0)
+	fmul	$f0, $f0, $f1
+	lw	$a0, 16($sp)
+	fsw	$f0, 0($a0)
+bne_cont.17562:
 	li	$v0, 1
 	jr	$ra
-solver_second_fast2.2715:
-	lw	$a3, 4($a26)
+beq_else.17553:
+	li	$v0, 0
+	jr	$ra
+solver_second_fast2.2883:
 	flw	$f3, 0($a1)
-	sw	$a3, 0($sp)
-	sw	$a0, 4($sp)
-	fsw	$f3, 8($sp)
-	sw	$a2, 16($sp)
-	fsw	$f2, 24($sp)
-	fsw	$f1, 32($sp)
-	fsw	$f0, 40($sp)
-	sw	$a1, 48($sp)
-	fmove	$f0, $f3
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	fiszero.2479
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8815
-	lw	$a0, 48($sp)
-	flw	$f0, 4($a0)
-	flw	$f1, 40($sp)
-	fmul	$f0, $f0, $f1
-	flw	$f1, 8($a0)
-	flw	$f2, 32($sp)
-	fmul	$f1, $f1, $f2
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f4, $v0
+	fbne	$f3, $f4, fbne_else.17563
+	li	$a3, 1
+	j	fbne_cont.17564
+fbne_else.17563:
+	li	$a3, 0
+fbne_cont.17564:
+	li	$a4, 0
+	bne	$a3, $a4, beq_else.17565
+	flw	$f4, 4($a1)
+	fmul	$f0, $f4, $f0
+	flw	$f4, 8($a1)
+	fmul	$f1, $f4, $f1
 	fadd	$f0, $f0, $f1
-	flw	$f1, 12($a0)
-	flw	$f2, 24($sp)
-	fmul	$f1, $f1, $f2
-	fadd	$f0, $f0, $f1
-	lw	$a1, 16($sp)
 	flw	$f1, 12($a1)
-	fsw	$f0, 56($sp)
-	fsw	$f1, 64($sp)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	fsqr.2483
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	fmove	$f0, $fv
-	flw	$f1, 64($sp)
-	flw	$f2, 8($sp)
-	fmul	$f1, $f2, $f1
-	fsub	$f0, $f0, $f1
-	fsw	$f0, 72($sp)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	fispos.2475
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8817
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	flw	$f1, 12($a2)
+	fmul	$f2, $f0, $f0
+	fmul	$f1, $f3, $f1
+	fsub	$f1, $f2, $f1
 	li	$v0, 0
-	jr	$ra
-beq_else.8817:
-	lw	$a0, 4($sp)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	o_isinvert.2553
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8818
-	flw	$f0, 72($sp)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	min_caml_sqrt
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 48($sp)
-	flw	$f1, 16($a0)
-	fmul	$f0, $f0, $f1
-	lw	$a0, 0($sp)
-	fsw	$f0, 0($a0)
-	j	bne_cont.8819
-bne_else.8818:
-	flw	$f0, 72($sp)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	min_caml_sqrt
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	fadd	$f0, $f1, $f0
-	lw	$a0, 48($sp)
-	flw	$f1, 16($a0)
-	fmul	$f0, $f0, $f1
-	lw	$a0, 0($sp)
-	fsw	$f0, 0($a0)
-bne_cont.8819:
-	li	$v0, 1
-	jr	$ra
-beq_else.8815:
-	li	$v0, 0
-	jr	$ra
-solver_fast2.2722:
-	lw	$a2, 16($a26)
-	lw	$a3, 12($a26)
-	lw	$a4, 8($a26)
-	lw	$a5, 4($a26)
-	sll	$a6, $a0, 2
-	add	$a6, $a5, $a6
-	lw	$a5, 0($a6)
-	sw	$a3, 0($sp)
-	sw	$a2, 4($sp)
-	sw	$a4, 8($sp)
-	sw	$a5, 12($sp)
-	sw	$a0, 16($sp)
-	sw	$a1, 20($sp)
-	move	$a0, $a5
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	o_param_ctbl.2587
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	flw	$f0, 0($a0)
-	flw	$f1, 4($a0)
-	flw	$f2, 8($a0)
-	lw	$a1, 20($sp)
-	sw	$a0, 24($sp)
-	fsw	$f2, 32($sp)
-	fsw	$f1, 40($sp)
-	fsw	$f0, 48($sp)
-	move	$a0, $a1
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	d_const.2610
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	move	$a0, $v0
-	lw	$a1, 16($sp)
-	sll	$a1, $a1, 2
-	add	$a1, $a0, $a1
-	lw	$a0, 0($a1)
-	lw	$a1, 12($sp)
-	sw	$a0, 56($sp)
-	move	$a0, $a1
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	o_form.2549
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	move	$a0, $v0
-	li	$a1, 1
-	bne	$a0, $a1, beq_else.8821
-	lw	$a0, 20($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	d_vec.2608
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	move	$a1, $v0
-	flw	$f0, 48($sp)
-	flw	$f1, 40($sp)
-	flw	$f2, 32($sp)
-	lw	$a0, 12($sp)
-	lw	$a2, 56($sp)
-	lw	$a26, 8($sp)
-	lw	$a25, 0($a26)
-	j	solver_rect_fast.2685
-beq_else.8821:
-	li	$a1, 2
-	bne	$a0, $a1, beq_else.8822
-	flw	$f0, 48($sp)
-	flw	$f1, 40($sp)
-	flw	$f2, 32($sp)
-	lw	$a0, 12($sp)
-	lw	$a1, 56($sp)
-	lw	$a2, 24($sp)
-	lw	$a26, 4($sp)
-	lw	$a25, 0($a26)
-	j	solver_surface_fast2.2708
-beq_else.8822:
-	flw	$f0, 48($sp)
-	flw	$f1, 40($sp)
-	flw	$f2, 32($sp)
-	lw	$a0, 12($sp)
-	lw	$a1, 56($sp)
-	lw	$a2, 24($sp)
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	solver_second_fast2.2715
-setup_rect_table.2725:
-	li	$a2, 6
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6035
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	sw	$a1, 0($sp)
-	sw	$a0, 4($sp)
-	move	$a0, $a2
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	move	$a0, $v0
-	lw	$a1, 4($sp)
-	flw	$f0, 0($a1)
-	sw	$a0, 8($sp)
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	fiszero.2479
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8823
-	lw	$a0, 0($sp)
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	o_isinvert.2553
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	move	$a0, $v0
-	lw	$a1, 4($sp)
-	flw	$f0, 0($a1)
-	sw	$a0, 12($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	fisneg.2477
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a1, $v0
-	lw	$a0, 12($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	xor.2490
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	lw	$a1, 0($sp)
-	sw	$a0, 16($sp)
-	move	$a0, $a1
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	o_param_a.2557
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	lw	$a0, 16($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	fneg_cond.2495
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	lw	$a0, 8($sp)
-	fsw	$f0, 0($a0)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	l.6037
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	mtc1	$f0, $a25
-	lw	$a1, 4($sp)
-	flw	$f1, 0($a1)
-	finv	$f1, $f1
-	fmul	$f0, $f0, $f1
-	fsw	$f0, 4($a0)
-	j	bne_cont.8824
-bne_else.8823:
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	l.6035
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	mtc1	$f0, $a25
-	lw	$a0, 8($sp)
-	fsw	$f0, 4($a0)
-bne_cont.8824:
-	lw	$a1, 4($sp)
-	flw	$f0, 4($a1)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	fiszero.2479
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8825
-	lw	$a0, 0($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	o_isinvert.2553
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	lw	$a1, 4($sp)
-	flw	$f0, 4($a1)
-	sw	$a0, 20($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	fisneg.2477
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a1, $v0
-	lw	$a0, 20($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	xor.2490
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	lw	$a1, 0($sp)
-	sw	$a0, 24($sp)
-	move	$a0, $a1
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	o_param_b.2559
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	fmove	$f0, $fv
-	lw	$a0, 24($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	fneg_cond.2495
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	fmove	$f0, $fv
-	lw	$a0, 8($sp)
-	fsw	$f0, 8($a0)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	l.6037
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	mtc1	$f0, $a25
-	lw	$a1, 4($sp)
-	flw	$f1, 4($a1)
-	finv	$f1, $f1
-	fmul	$f0, $f0, $f1
-	fsw	$f0, 12($a0)
-	j	bne_cont.8826
-bne_else.8825:
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	l.6035
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	mtc1	$f0, $a25
-	lw	$a0, 8($sp)
-	fsw	$f0, 12($a0)
-bne_cont.8826:
-	lw	$a1, 4($sp)
-	flw	$f0, 8($a1)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	fiszero.2479
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8827
-	lw	$a0, 0($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	o_isinvert.2553
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	lw	$a1, 4($sp)
-	flw	$f0, 8($a1)
-	sw	$a0, 28($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	fisneg.2477
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a1, $v0
-	lw	$a0, 28($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	xor.2490
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	lw	$a1, 0($sp)
-	sw	$a0, 32($sp)
-	move	$a0, $a1
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	o_param_c.2561
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	lw	$a0, 32($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	fneg_cond.2495
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	lw	$a0, 8($sp)
-	fsw	$f0, 16($a0)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	l.6037
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	mtc1	$f0, $a25
-	lw	$a1, 4($sp)
-	flw	$f1, 8($a1)
-	finv	$f1, $f1
-	fmul	$f0, $f0, $f1
-	fsw	$f0, 20($a0)
-	j	bne_cont.8828
-bne_else.8827:
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	l.6035
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	mtc1	$f0, $a25
-	lw	$a0, 8($sp)
-	fsw	$f0, 20($a0)
-bne_cont.8828:
-	move	$v0, $a0
-	jr	$ra
-setup_surface_table.2728:
-	li	$a2, 4
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6035
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	sw	$a1, 0($sp)
-	sw	$a0, 4($sp)
-	move	$a0, $a2
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	move	$a0, $v0
-	lw	$a1, 4($sp)
-	flw	$f0, 0($a1)
-	lw	$a2, 0($sp)
-	sw	$a0, 8($sp)
-	fsw	$f0, 16($sp)
-	move	$a0, $a2
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	o_param_a.2557
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	fmove	$f0, $fv
-	flw	$f1, 16($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a0, 4($sp)
-	flw	$f1, 4($a0)
-	lw	$a1, 0($sp)
-	fsw	$f0, 24($sp)
-	fsw	$f1, 32($sp)
-	move	$a0, $a1
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	o_param_b.2559
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f0, $fv
-	flw	$f1, 32($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 24($sp)
-	fadd	$f0, $f1, $f0
-	lw	$a0, 4($sp)
-	flw	$f1, 8($a0)
-	lw	$a0, 0($sp)
-	fsw	$f0, 40($sp)
-	fsw	$f1, 48($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	o_param_c.2561
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	fmove	$f0, $fv
-	flw	$f1, 48($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 40($sp)
-	fadd	$f0, $f1, $f0
-	fsw	$f0, 56($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	fispos.2475
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8830
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	l.6035
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	mtc1	$f0, $a25
-	lw	$a0, 8($sp)
-	fsw	$f0, 0($a0)
-	j	bne_cont.8831
-bne_else.8830:
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	l.6038
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	mtc1	$f0, $a25
-	flw	$f1, 56($sp)
-	finv	$f2, $f1
-	fmul	$f0, $f0, $f2
-	lw	$a0, 8($sp)
-	fsw	$f0, 0($a0)
-	lw	$a1, 0($sp)
-	move	$a0, $a1
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	o_param_a.2557
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	finv	$f2, $f1
-	fmul	$f0, $f0, $f2
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	fneg.2473
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	lw	$a0, 8($sp)
-	fsw	$f0, 4($a0)
-	lw	$a1, 0($sp)
-	move	$a0, $a1
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	o_param_b.2559
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	finv	$f2, $f1
-	fmul	$f0, $f0, $f2
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	fneg.2473
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	lw	$a0, 8($sp)
-	fsw	$f0, 8($a0)
-	lw	$a1, 0($sp)
-	move	$a0, $a1
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	o_param_c.2561
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	finv	$f1, $f1
-	fmul	$f0, $f0, $f1
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	fneg.2473
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	lw	$a0, 8($sp)
-	fsw	$f0, 12($a0)
-bne_cont.8831:
-	move	$v0, $a0
-	jr	$ra
-setup_second_table.2731:
-	li	$a2, 5
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6035
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	sw	$a1, 0($sp)
-	sw	$a0, 4($sp)
-	move	$a0, $a2
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	move	$a0, $v0
-	lw	$a1, 4($sp)
-	flw	$f0, 0($a1)
-	flw	$f1, 4($a1)
-	flw	$f2, 8($a1)
-	lw	$a2, 0($sp)
-	sw	$a0, 8($sp)
-	move	$a0, $a2
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	quadratic.2662
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	fmove	$f0, $fv
-	lw	$a0, 4($sp)
-	flw	$f1, 0($a0)
-	lw	$a1, 0($sp)
-	fsw	$f0, 16($sp)
-	fsw	$f1, 24($sp)
-	move	$a0, $a1
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	o_param_a.2557
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	flw	$f1, 24($sp)
-	fmul	$f0, $f1, $f0
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	fneg.2473
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	lw	$a0, 4($sp)
-	flw	$f1, 4($a0)
-	lw	$a1, 0($sp)
-	fsw	$f0, 32($sp)
-	fsw	$f1, 40($sp)
-	move	$a0, $a1
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	o_param_b.2559
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	flw	$f1, 40($sp)
-	fmul	$f0, $f1, $f0
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	fneg.2473
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	lw	$a0, 4($sp)
-	flw	$f1, 8($a0)
-	lw	$a1, 0($sp)
-	fsw	$f0, 48($sp)
-	fsw	$f1, 56($sp)
-	move	$a0, $a1
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	o_param_c.2561
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	fmul	$f0, $f1, $f0
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	fneg.2473
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	lw	$a0, 8($sp)
-	flw	$f1, 16($sp)
-	fsw	$f1, 0($a0)
-	lw	$a1, 0($sp)
-	fsw	$f0, 64($sp)
-	move	$a0, $a1
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	o_isrot.2555
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8833
-	lw	$a0, 8($sp)
-	flw	$f0, 32($sp)
-	fsw	$f0, 4($a0)
-	flw	$f0, 48($sp)
-	fsw	$f0, 8($a0)
-	flw	$f0, 64($sp)
-	fsw	$f0, 12($a0)
-	j	bne_cont.8834
-bne_else.8833:
-	lw	$a0, 4($sp)
-	flw	$f0, 8($a0)
-	lw	$a1, 0($sp)
-	fsw	$f0, 72($sp)
-	move	$a0, $a1
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	o_param_r2.2583
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	fmove	$f0, $fv
-	flw	$f1, 72($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a0, 4($sp)
-	flw	$f1, 4($a0)
-	lw	$a1, 0($sp)
-	fsw	$f0, 80($sp)
-	fsw	$f1, 88($sp)
-	move	$a0, $a1
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	o_param_r3.2585
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	fmove	$f0, $fv
-	flw	$f1, 88($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 80($sp)
-	fadd	$f0, $f1, $f0
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	fhalf.2481
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	fmove	$f0, $fv
-	flw	$f1, 32($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 8($sp)
-	fsw	$f0, 4($a0)
-	lw	$a1, 4($sp)
-	flw	$f0, 8($a1)
-	lw	$a2, 0($sp)
-	fsw	$f0, 96($sp)
-	move	$a0, $a2
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	o_param_r1.2581
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	fmove	$f0, $fv
-	flw	$f1, 96($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a0, 4($sp)
-	flw	$f1, 0($a0)
-	lw	$a1, 0($sp)
-	fsw	$f0, 104($sp)
-	fsw	$f1, 112($sp)
-	move	$a0, $a1
-	sw	$ra, 124($sp)
-	addi	$sp, $sp, 128
-	jal	o_param_r3.2585
-	subi	$sp, $sp, 128
-	lw	$ra, 124($sp)
-	fmove	$f0, $fv
-	flw	$f1, 112($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 104($sp)
-	fadd	$f0, $f1, $f0
-	sw	$ra, 124($sp)
-	addi	$sp, $sp, 128
-	jal	fhalf.2481
-	subi	$sp, $sp, 128
-	lw	$ra, 124($sp)
-	fmove	$f0, $fv
-	flw	$f1, 48($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 8($sp)
-	fsw	$f0, 8($a0)
-	lw	$a1, 4($sp)
-	flw	$f0, 4($a1)
-	lw	$a2, 0($sp)
-	fsw	$f0, 120($sp)
-	move	$a0, $a2
-	sw	$ra, 132($sp)
-	addi	$sp, $sp, 136
-	jal	o_param_r1.2581
-	subi	$sp, $sp, 136
-	lw	$ra, 132($sp)
-	fmove	$f0, $fv
-	flw	$f1, 120($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a0, 4($sp)
-	flw	$f1, 0($a0)
-	lw	$a0, 0($sp)
-	fsw	$f0, 128($sp)
-	fsw	$f1, 136($sp)
-	sw	$ra, 148($sp)
-	addi	$sp, $sp, 152
-	jal	o_param_r2.2583
-	subi	$sp, $sp, 152
-	lw	$ra, 148($sp)
-	fmove	$f0, $fv
-	flw	$f1, 136($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 128($sp)
-	fadd	$f0, $f1, $f0
-	sw	$ra, 148($sp)
-	addi	$sp, $sp, 152
-	jal	fhalf.2481
-	subi	$sp, $sp, 152
-	lw	$ra, 148($sp)
-	fmove	$f0, $fv
-	flw	$f1, 64($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 8($sp)
-	fsw	$f0, 12($a0)
-bne_cont.8834:
-	flw	$f0, 16($sp)
-	sw	$ra, 148($sp)
-	addi	$sp, $sp, 152
-	jal	fiszero.2479
-	subi	$sp, $sp, 152
-	lw	$ra, 148($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8835
-	sw	$ra, 148($sp)
-	addi	$sp, $sp, 152
-	jal	l.6037
-	subi	$sp, $sp, 152
-	lw	$ra, 148($sp)
-	mtc1	$f0, $a25
-	flw	$f1, 16($sp)
-	finv	$f1, $f1
-	fmul	$f0, $f0, $f1
-	lw	$a0, 8($sp)
-	fsw	$f0, 16($a0)
-	j	bne_cont.8836
-bne_else.8835:
-bne_cont.8836:
-	lw	$a0, 8($sp)
-	move	$v0, $a0
-	jr	$ra
-iter_setup_dirvec_constants.2734:
-	lw	$a2, 4($a26)
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fblt	$f2, $f1, fbge_else.17566
+	li	$a2, 0
+	j	fbge_cont.17567
+fbge_else.17566:
+	li	$a2, 1
+fbge_cont.17567:
 	li	$a3, 0
-	blt	$a1, $a3, bge_else.8837
-	sll	$a3, $a1, 2
-	add	$a3, $a2, $a3
-	lw	$a2, 0($a3)
-	sw	$a26, 0($sp)
-	sw	$a1, 4($sp)
-	sw	$a2, 8($sp)
-	sw	$a0, 12($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	d_const.2610
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	lw	$a1, 12($sp)
-	sw	$a0, 16($sp)
-	move	$a0, $a1
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	d_vec.2608
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	lw	$a1, 8($sp)
-	sw	$a0, 20($sp)
-	move	$a0, $a1
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	o_form.2549
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	li	$a1, 1
-	bne	$a0, $a1, bne_else.8838
-	lw	$a0, 20($sp)
-	lw	$a1, 8($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	setup_rect_table.2725
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	lw	$a1, 4($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 16($sp)
-	add	$a2, $a3, $a2
-	sw	$a0, 0($a2)
-	j	bne_cont.8839
-bne_else.8838:
-	li	$a1, 2
-	bne	$a0, $a1, bne_else.8840
-	lw	$a0, 20($sp)
-	lw	$a1, 8($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	setup_surface_table.2728
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	lw	$a1, 4($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 16($sp)
-	add	$a2, $a3, $a2
-	sw	$a0, 0($a2)
-	j	bne_cont.8841
-bne_else.8840:
-	lw	$a0, 20($sp)
-	lw	$a1, 8($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	setup_second_table.2731
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	lw	$a1, 4($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 16($sp)
-	add	$a2, $a3, $a2
-	sw	$a0, 0($a2)
-bne_cont.8841:
-bne_cont.8839:
-	subi	$a1, $a1, 1
-	lw	$a0, 12($sp)
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	iter_setup_dirvec_constants.2734
-bge_else.8837:
-	jr	$ra
-setup_dirvec_constants.2737:
-	lw	$a1, 8($a26)
-	lw	$a26, 4($a26)
-	lw	$a1, 0($a1)
-	subi	$a1, $a1, 1
-	lw	$a25, 0($a26)
-	j	iter_setup_dirvec_constants.2734
-setup_startp_constants.2739:
-	lw	$a2, 4($a26)
-	li	$a3, 0
-	blt	$a1, $a3, bge_else.8843
-	sll	$a3, $a1, 2
-	add	$a3, $a2, $a3
-	lw	$a2, 0($a3)
-	sw	$a26, 0($sp)
-	sw	$a1, 4($sp)
-	sw	$a0, 8($sp)
-	sw	$a2, 12($sp)
-	move	$a0, $a2
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	o_param_ctbl.2587
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	lw	$a1, 12($sp)
-	sw	$a0, 16($sp)
-	move	$a0, $a1
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	o_form.2549
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	lw	$a1, 8($sp)
-	flw	$f0, 0($a1)
-	lw	$a2, 12($sp)
-	sw	$a0, 20($sp)
-	fsw	$f0, 24($sp)
-	move	$a0, $a2
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	o_param_x.2565
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	flw	$f1, 24($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 16($sp)
-	fsw	$f0, 0($a0)
-	lw	$a1, 8($sp)
-	flw	$f0, 4($a1)
-	lw	$a2, 12($sp)
-	fsw	$f0, 32($sp)
-	move	$a0, $a2
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	o_param_y.2567
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f0, $fv
-	flw	$f1, 32($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 16($sp)
-	fsw	$f0, 4($a0)
-	lw	$a1, 8($sp)
-	flw	$f0, 8($a1)
-	lw	$a2, 12($sp)
-	fsw	$f0, 40($sp)
-	move	$a0, $a2
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	o_param_z.2569
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	flw	$f1, 40($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 16($sp)
-	fsw	$f0, 8($a0)
-	li	$a1, 2
-	lw	$a2, 20($sp)
-	bne	$a2, $a1, bne_else.8844
-	lw	$a1, 12($sp)
-	move	$a0, $a1
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	o_param_abc.2563
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	move	$a0, $v0
-	lw	$a1, 16($sp)
-	flw	$f0, 0($a1)
-	flw	$f1, 4($a1)
-	flw	$f2, 8($a1)
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	veciprod2.2525
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	lw	$a0, 16($sp)
-	fsw	$f0, 12($a0)
-	j	bne_cont.8845
-bne_else.8844:
-	li	$a1, 2
-	blt	$a1, $a2, bge_else.8846
-	j	bge_cont.8847
-bge_else.8846:
-	flw	$f0, 0($a0)
-	flw	$f1, 4($a0)
-	flw	$f2, 8($a0)
-	lw	$a1, 12($sp)
-	move	$a0, $a1
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	quadratic.2662
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	li	$a0, 3
-	lw	$a1, 20($sp)
-	bne	$a1, $a0, bne_else.8848
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	l.6037
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	mtc1	$f1, $a25
-	fsub	$f0, $f0, $f1
-	j	bne_cont.8849
-bne_else.8848:
-bne_cont.8849:
-	lw	$a0, 16($sp)
-	fsw	$f0, 12($a0)
-bge_cont.8847:
-bne_cont.8845:
-	lw	$a0, 4($sp)
-	subi	$a1, $a0, 1
-	lw	$a0, 8($sp)
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	setup_startp_constants.2739
-bge_else.8843:
-	jr	$ra
-setup_startp.2742:
-	lw	$a1, 12($a26)
-	lw	$a2, 8($a26)
-	lw	$a3, 4($a26)
-	sw	$a0, 0($sp)
-	sw	$a2, 4($sp)
-	sw	$a3, 8($sp)
-	move	$a25, $a1
-	move	$a1, $a0
-	move	$a0, $a25
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	veccpy.2511
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	fmove	$f30, $fv
-	lw	$a0, 8($sp)
-	lw	$a0, 0($a0)
-	subi	$a1, $a0, 1
-	lw	$a0, 0($sp)
-	lw	$a26, 4($sp)
-	lw	$a25, 0($a26)
-	j	setup_startp_constants.2739
-is_rect_outside.2744:
-	fsw	$f2, 0($sp)
-	fsw	$f1, 8($sp)
-	sw	$a0, 16($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	fabs.2485
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	lw	$a0, 16($sp)
-	fsw	$f0, 24($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	o_param_a.2557
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f1, $fv
-	flw	$f0, 24($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	fless.2487
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8852
-	li	$a0, 0
-	j	bne_cont.8853
-bne_else.8852:
-	flw	$f0, 8($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	fabs.2485
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	lw	$a0, 16($sp)
-	fsw	$f0, 32($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	o_param_b.2559
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f1, $fv
-	flw	$f0, 32($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	fless.2487
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8854
-	li	$a0, 0
-	j	bne_cont.8855
-bne_else.8854:
-	flw	$f0, 0($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	fabs.2485
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f0, $fv
-	lw	$a0, 16($sp)
-	fsw	$f0, 40($sp)
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	o_param_c.2561
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f1, $fv
-	flw	$f0, 40($sp)
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	fless.2487
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	move	$a0, $v0
-bne_cont.8855:
-bne_cont.8853:
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8856
-	lw	$a0, 16($sp)
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	o_isinvert.2553
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8857
-	li	$v0, 1
-	jr	$ra
-beq_else.8857:
+	bne	$a2, $a3, beq_else.17568
 	li	$v0, 0
 	jr	$ra
-beq_else.8856:
-	lw	$a0, 16($sp)
-	j	o_isinvert.2553
-is_plane_outside.2749:
+beq_else.17568:
+	lw	$a0, 24($a0)
+	li	$a2, 0
+	bne	$a0, $a2, bne_else.17569
+	li	$a0, 540
 	sw	$a0, 0($sp)
-	fsw	$f2, 8($sp)
-	fsw	$f1, 16($sp)
-	fsw	$f0, 24($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	o_param_abc.2563
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	flw	$f0, 24($sp)
-	flw	$f1, 16($sp)
-	flw	$f2, 8($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	veciprod2.2525
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	lw	$a0, 0($sp)
-	fsw	$f0, 32($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	o_isinvert.2553
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	move	$a0, $v0
-	flw	$f0, 32($sp)
-	sw	$a0, 40($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	fisneg.2477
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	move	$a1, $v0
-	lw	$a0, 40($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	xor.2490
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8859
-	li	$v0, 1
-	jr	$ra
-beq_else.8859:
-	li	$v0, 0
-	jr	$ra
-is_second_outside.2754:
-	sw	$a0, 0($sp)
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	quadratic.2662
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	fmove	$f0, $fv
-	lw	$a0, 0($sp)
+	sw	$a1, 4($sp)
 	fsw	$f0, 8($sp)
+	fmove	$f0, $f1
 	sw	$ra, 20($sp)
 	addi	$sp, $sp, 24
-	jal	o_form.2549
+	jal	min_caml_sqrt
 	subi	$sp, $sp, 24
 	lw	$ra, 20($sp)
-	move	$a0, $v0
-	li	$a1, 3
-	bne	$a0, $a1, bne_else.8861
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	l.6037
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	mtc1	$f0, $a25
+	fmove	$f0, $fv
 	flw	$f1, 8($sp)
 	fsub	$f0, $f1, $f0
-	j	bne_cont.8862
-bne_else.8861:
-	flw	$f0, 8($sp)
-bne_cont.8862:
+	lw	$a0, 4($sp)
+	flw	$f1, 16($a0)
+	fmul	$f0, $f0, $f1
 	lw	$a0, 0($sp)
-	fsw	$f0, 16($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	o_isinvert.2553
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	flw	$f0, 16($sp)
-	sw	$a0, 24($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	fisneg.2477
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a1, $v0
-	lw	$a0, 24($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	xor.2490
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8863
+	fsw	$f0, 0($a0)
+	j	bne_cont.17570
+bne_else.17569:
+	li	$a0, 540
+	sw	$a0, 16($sp)
+	sw	$a1, 4($sp)
+	fsw	$f0, 8($sp)
+	fmove	$f0, $f1
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_sqrt
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f0, $fv
+	flw	$f1, 8($sp)
+	fadd	$f0, $f1, $f0
+	lw	$a0, 4($sp)
+	flw	$f1, 16($a0)
+	fmul	$f0, $f0, $f1
+	lw	$a0, 16($sp)
+	fsw	$f0, 0($a0)
+bne_cont.17570:
 	li	$v0, 1
 	jr	$ra
-beq_else.8863:
+beq_else.17565:
 	li	$v0, 0
 	jr	$ra
-is_outside.2759:
-	fsw	$f2, 0($sp)
-	fsw	$f1, 8($sp)
-	sw	$a0, 16($sp)
-	fsw	$f0, 24($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	o_param_x.2565
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	flw	$f1, 24($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 16($sp)
-	fsw	$f0, 32($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	o_param_y.2567
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f0, $fv
-	flw	$f1, 8($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 16($sp)
-	fsw	$f0, 40($sp)
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	o_param_z.2569
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	flw	$f1, 0($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 16($sp)
-	fsw	$f0, 48($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	o_form.2549
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	move	$a0, $v0
-	li	$a1, 1
-	bne	$a0, $a1, beq_else.8865
-	flw	$f0, 32($sp)
-	flw	$f1, 40($sp)
-	flw	$f2, 48($sp)
-	lw	$a0, 16($sp)
-	j	is_rect_outside.2744
-beq_else.8865:
-	li	$a1, 2
-	bne	$a0, $a1, beq_else.8866
-	flw	$f0, 32($sp)
-	flw	$f1, 40($sp)
-	flw	$f2, 48($sp)
-	lw	$a0, 16($sp)
-	j	is_plane_outside.2749
-beq_else.8866:
-	flw	$f0, 32($sp)
-	flw	$f1, 40($sp)
-	flw	$f2, 48($sp)
-	lw	$a0, 16($sp)
-	j	is_second_outside.2754
-check_all_inside.2764:
-	lw	$a2, 4($a26)
+solver_fast2.2890:
+	li	$a2, 48
 	sll	$a3, $a0, 2
-	add	$a3, $a1, $a3
-	lw	$a3, 0($a3)
-	li	$a4, -1
-	bne	$a3, $a4, beq_else.8867
-	li	$v0, 1
-	jr	$ra
-beq_else.8867:
-	sll	$a3, $a3, 2
 	add	$a3, $a2, $a3
 	lw	$a2, 0($a3)
+	lw	$a3, 40($a2)
+	flw	$f0, 0($a3)
+	flw	$f1, 4($a3)
+	flw	$f2, 8($a3)
+	lw	$a4, 4($a1)
+	sll	$a0, $a0, 2
+	add	$a0, $a4, $a0
+	lw	$a0, 0($a0)
+	lw	$a4, 4($a2)
+	li	$a5, 1
+	bne	$a4, $a5, beq_else.17571
+	lw	$a1, 0($a1)
+	move	$a25, $a2
+	move	$a2, $a0
+	move	$a0, $a25
+	j	solver_rect_fast.2853
+beq_else.17571:
+	li	$a1, 2
+	bne	$a4, $a1, beq_else.17572
+	flw	$f0, 0($a0)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17573
+	li	$a1, 0
+	j	fbge_cont.17574
+fbge_else.17573:
+	li	$a1, 1
+fbge_cont.17574:
+	li	$a2, 0
+	bne	$a1, $a2, beq_else.17575
+	li	$v0, 0
+	jr	$ra
+beq_else.17575:
+	li	$a1, 540
+	flw	$f0, 0($a0)
+	flw	$f1, 12($a3)
+	fmul	$f0, $f0, $f1
+	fsw	$f0, 0($a1)
+	li	$v0, 1
+	jr	$ra
+beq_else.17572:
+	move	$a1, $a0
+	move	$a0, $a2
+	move	$a2, $a3
+	j	solver_second_fast2.2883
+setup_rect_table.2893:
+	li	$a2, 6
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$a1, 0($sp)
+	sw	$a0, 4($sp)
+	move	$a0, $a2
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	lw	$a1, 4($sp)
+	flw	$f0, 0($a1)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fbne	$f0, $f1, fbne_else.17576
+	li	$a2, 1
+	j	fbne_cont.17577
+fbne_else.17576:
+	li	$a2, 0
+fbne_cont.17577:
+	li	$a3, 0
+	bne	$a2, $a3, bne_else.17578
+	lw	$a2, 0($sp)
+	lw	$a3, 24($a2)
+	flw	$f0, 0($a1)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17580
+	li	$a4, 0
+	j	fbge_cont.17581
+fbge_else.17580:
+	li	$a4, 1
+fbge_cont.17581:
+	li	$a5, 0
+	bne	$a3, $a5, bne_else.17582
+	move	$a3, $a4
+	j	bne_cont.17583
+bne_else.17582:
+	li	$a3, 0
+	bne	$a4, $a3, bne_else.17584
+	li	$a3, 1
+	j	bne_cont.17585
+bne_else.17584:
+	li	$a3, 0
+bne_cont.17585:
+bne_cont.17583:
+	lw	$a4, 16($a2)
+	flw	$f0, 0($a4)
+	li	$a4, 0
+	bne	$a3, $a4, bne_else.17586
+	fneg	$f0, $f0
+	j	bne_cont.17587
+bne_else.17586:
+bne_cont.17587:
+	fsw	$f0, 0($a0)
+	flw	$f0, 0($a1)
+	finv	$f0, $f0
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f1, $f0
+	fsw	$f0, 4($a0)
+	j	bne_cont.17579
+bne_else.17578:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	fsw	$f0, 4($a0)
+bne_cont.17579:
+	flw	$f0, 4($a1)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fbne	$f0, $f1, fbne_else.17588
+	li	$a2, 1
+	j	fbne_cont.17589
+fbne_else.17588:
+	li	$a2, 0
+fbne_cont.17589:
+	li	$a3, 0
+	bne	$a2, $a3, bne_else.17590
+	lw	$a2, 0($sp)
+	lw	$a3, 24($a2)
+	flw	$f0, 4($a1)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17592
+	li	$a4, 0
+	j	fbge_cont.17593
+fbge_else.17592:
+	li	$a4, 1
+fbge_cont.17593:
+	li	$a5, 0
+	bne	$a3, $a5, bne_else.17594
+	move	$a3, $a4
+	j	bne_cont.17595
+bne_else.17594:
+	li	$a3, 0
+	bne	$a4, $a3, bne_else.17596
+	li	$a3, 1
+	j	bne_cont.17597
+bne_else.17596:
+	li	$a3, 0
+bne_cont.17597:
+bne_cont.17595:
+	lw	$a4, 16($a2)
+	flw	$f0, 4($a4)
+	li	$a4, 0
+	bne	$a3, $a4, bne_else.17598
+	fneg	$f0, $f0
+	j	bne_cont.17599
+bne_else.17598:
+bne_cont.17599:
+	fsw	$f0, 8($a0)
+	flw	$f0, 4($a1)
+	finv	$f0, $f0
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f1, $f0
+	fsw	$f0, 12($a0)
+	j	bne_cont.17591
+bne_else.17590:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	fsw	$f0, 12($a0)
+bne_cont.17591:
+	flw	$f0, 8($a1)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fbne	$f0, $f1, fbne_else.17600
+	li	$a2, 1
+	j	fbne_cont.17601
+fbne_else.17600:
+	li	$a2, 0
+fbne_cont.17601:
+	li	$a3, 0
+	bne	$a2, $a3, bne_else.17602
+	lw	$a2, 0($sp)
+	lw	$a3, 24($a2)
+	flw	$f0, 8($a1)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17604
+	li	$a4, 0
+	j	fbge_cont.17605
+fbge_else.17604:
+	li	$a4, 1
+fbge_cont.17605:
+	li	$a5, 0
+	bne	$a3, $a5, bne_else.17606
+	move	$a3, $a4
+	j	bne_cont.17607
+bne_else.17606:
+	li	$a3, 0
+	bne	$a4, $a3, bne_else.17608
+	li	$a3, 1
+	j	bne_cont.17609
+bne_else.17608:
+	li	$a3, 0
+bne_cont.17609:
+bne_cont.17607:
+	lw	$a2, 16($a2)
+	flw	$f0, 8($a2)
+	li	$a2, 0
+	bne	$a3, $a2, bne_else.17610
+	fneg	$f0, $f0
+	j	bne_cont.17611
+bne_else.17610:
+bne_cont.17611:
+	fsw	$f0, 16($a0)
+	flw	$f0, 8($a1)
+	finv	$f0, $f0
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f1, $f0
+	fsw	$f0, 20($a0)
+	j	bne_cont.17603
+bne_else.17602:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	fsw	$f0, 20($a0)
+bne_cont.17603:
+	move	$v0, $a0
+	jr	$ra
+setup_surface_table.2896:
+	li	$a2, 4
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$a1, 0($sp)
+	sw	$a0, 4($sp)
+	move	$a0, $a2
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	lw	$a1, 4($sp)
+	flw	$f0, 0($a1)
+	lw	$a2, 0($sp)
+	lw	$a3, 16($a2)
+	flw	$f1, 0($a3)
+	fmul	$f0, $f0, $f1
+	flw	$f1, 4($a1)
+	lw	$a3, 16($a2)
+	flw	$f2, 4($a3)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a1)
+	lw	$a1, 16($a2)
+	flw	$f2, 8($a1)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f1, $f0, fbge_else.17612
+	li	$a1, 0
+	j	fbge_cont.17613
+fbge_else.17612:
+	li	$a1, 1
+fbge_cont.17613:
+	li	$a3, 0
+	bne	$a1, $a3, bne_else.17614
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	fsw	$f0, 0($a0)
+	j	bne_cont.17615
+bne_else.17614:
+	finv	$f1, $f0
+	li	$v0, -16512
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fmul	$f1, $f2, $f1
+	fsw	$f1, 0($a0)
+	lw	$a1, 16($a2)
+	flw	$f1, 0($a1)
+	finv	$f2, $f0
+	fmul	$f1, $f1, $f2
+	fneg	$f1, $f1
+	fsw	$f1, 4($a0)
+	lw	$a1, 16($a2)
+	flw	$f1, 4($a1)
+	finv	$f2, $f0
+	fmul	$f1, $f1, $f2
+	fneg	$f1, $f1
+	fsw	$f1, 8($a0)
+	lw	$a1, 16($a2)
+	flw	$f1, 8($a1)
+	finv	$f0, $f0
+	fmul	$f0, $f1, $f0
+	fneg	$f0, $f0
+	fsw	$f0, 12($a0)
+bne_cont.17615:
+	move	$v0, $a0
+	jr	$ra
+setup_second_table.2899:
+	li	$a2, 5
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$a1, 0($sp)
+	sw	$a0, 4($sp)
+	move	$a0, $a2
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	lw	$a1, 4($sp)
+	flw	$f0, 0($a1)
+	flw	$f1, 4($a1)
+	flw	$f2, 8($a1)
+	fmul	$f3, $f0, $f0
+	lw	$a2, 0($sp)
+	lw	$a3, 16($a2)
+	flw	$f4, 0($a3)
+	fmul	$f3, $f3, $f4
+	fmul	$f4, $f1, $f1
+	lw	$a3, 16($a2)
+	flw	$f5, 4($a3)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	fmul	$f4, $f2, $f2
+	lw	$a3, 16($a2)
+	flw	$f5, 8($a3)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	lw	$a3, 12($a2)
+	li	$a4, 0
+	bne	$a3, $a4, bne_else.17616
+	fmove	$f0, $f3
+	j	bne_cont.17617
+bne_else.17616:
+	fmul	$f4, $f1, $f2
+	lw	$a3, 36($a2)
+	flw	$f5, 0($a3)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	fmul	$f2, $f2, $f0
+	lw	$a3, 36($a2)
+	flw	$f4, 4($a3)
+	fmul	$f2, $f2, $f4
+	fadd	$f2, $f3, $f2
+	fmul	$f0, $f0, $f1
+	lw	$a3, 36($a2)
+	flw	$f1, 8($a3)
+	fmul	$f0, $f0, $f1
+	fadd	$f0, $f2, $f0
+bne_cont.17617:
+	flw	$f1, 0($a1)
+	lw	$a3, 16($a2)
+	flw	$f2, 0($a3)
+	fmul	$f1, $f1, $f2
+	fneg	$f1, $f1
+	flw	$f2, 4($a1)
+	lw	$a3, 16($a2)
+	flw	$f3, 4($a3)
+	fmul	$f2, $f2, $f3
+	fneg	$f2, $f2
+	flw	$f3, 8($a1)
+	lw	$a3, 16($a2)
+	flw	$f4, 8($a3)
+	fmul	$f3, $f3, $f4
+	fneg	$f3, $f3
+	fsw	$f0, 0($a0)
+	lw	$a3, 12($a2)
+	li	$a4, 0
+	bne	$a3, $a4, bne_else.17618
+	fsw	$f1, 4($a0)
+	fsw	$f2, 8($a0)
+	fsw	$f3, 12($a0)
+	j	bne_cont.17619
+bne_else.17618:
+	flw	$f4, 8($a1)
+	lw	$a3, 36($a2)
+	flw	$f5, 4($a3)
+	fmul	$f4, $f4, $f5
+	flw	$f5, 4($a1)
+	lw	$a3, 36($a2)
+	flw	$f6, 8($a3)
+	fmul	$f5, $f5, $f6
+	fadd	$f4, $f4, $f5
+	li	$v0, 16128
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f5, $v0
+	fmul	$f4, $f4, $f5
+	fsub	$f1, $f1, $f4
+	fsw	$f1, 4($a0)
+	flw	$f1, 8($a1)
+	lw	$a3, 36($a2)
+	flw	$f4, 0($a3)
+	fmul	$f1, $f1, $f4
+	flw	$f4, 0($a1)
+	lw	$a3, 36($a2)
+	flw	$f5, 8($a3)
+	fmul	$f4, $f4, $f5
+	fadd	$f1, $f1, $f4
+	li	$v0, 16128
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f4, $v0
+	fmul	$f1, $f1, $f4
+	fsub	$f1, $f2, $f1
+	fsw	$f1, 8($a0)
+	flw	$f1, 4($a1)
+	lw	$a3, 36($a2)
+	flw	$f2, 0($a3)
+	fmul	$f1, $f1, $f2
+	flw	$f2, 0($a1)
+	lw	$a1, 36($a2)
+	flw	$f4, 4($a1)
+	fmul	$f2, $f2, $f4
+	fadd	$f1, $f1, $f2
+	li	$v0, 16128
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fmul	$f1, $f1, $f2
+	fsub	$f1, $f3, $f1
+	fsw	$f1, 12($a0)
+bne_cont.17619:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fbne	$f0, $f1, fbne_else.17620
+	li	$a1, 1
+	j	fbne_cont.17621
+fbne_else.17620:
+	li	$a1, 0
+fbne_cont.17621:
+	li	$a2, 0
+	bne	$a1, $a2, bne_else.17622
+	finv	$f0, $f0
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f1, $f0
+	fsw	$f0, 16($a0)
+	j	bne_cont.17623
+bne_else.17622:
+bne_cont.17623:
+	move	$v0, $a0
+	jr	$ra
+iter_setup_dirvec_constants.2902:
+	li	$a2, 0
+	blt	$a1, $a2, bge_else.17624
+	li	$a2, 48
+	sll	$a3, $a1, 2
+	add	$a3, $a2, $a3
+	lw	$a2, 0($a3)
+	lw	$a3, 4($a0)
+	lw	$a4, 0($a0)
+	lw	$a5, 4($a2)
+	li	$a6, 1
+	sw	$a0, 0($sp)
+	bne	$a5, $a6, bne_else.17625
+	sw	$a3, 4($sp)
+	sw	$a1, 8($sp)
+	move	$a1, $a2
+	move	$a0, $a4
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	setup_rect_table.2893
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	lw	$a1, 8($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 4($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.17626
+bne_else.17625:
+	li	$a6, 2
+	bne	$a5, $a6, bne_else.17627
+	sw	$a3, 4($sp)
+	sw	$a1, 8($sp)
+	move	$a1, $a2
+	move	$a0, $a4
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	setup_surface_table.2896
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	lw	$a1, 8($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 4($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.17628
+bne_else.17627:
+	sw	$a3, 4($sp)
+	sw	$a1, 8($sp)
+	move	$a1, $a2
+	move	$a0, $a4
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	setup_second_table.2899
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	lw	$a1, 8($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 4($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+bne_cont.17628:
+bne_cont.17626:
+	subi	$a0, $a1, 1
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.17629
+	li	$a1, 48
+	sll	$a2, $a0, 2
+	add	$a2, $a1, $a2
+	lw	$a1, 0($a2)
+	lw	$a2, 0($sp)
+	lw	$a3, 4($a2)
+	lw	$a4, 0($a2)
+	lw	$a5, 4($a1)
+	li	$a6, 1
+	bne	$a5, $a6, bne_else.17630
+	sw	$a3, 12($sp)
+	sw	$a0, 16($sp)
+	move	$a0, $a4
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	setup_rect_table.2893
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	lw	$a1, 16($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 12($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.17631
+bne_else.17630:
+	li	$a6, 2
+	bne	$a5, $a6, bne_else.17632
+	sw	$a3, 12($sp)
+	sw	$a0, 16($sp)
+	move	$a0, $a4
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	setup_surface_table.2896
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	lw	$a1, 16($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 12($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.17633
+bne_else.17632:
+	sw	$a3, 12($sp)
+	sw	$a0, 16($sp)
+	move	$a0, $a4
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	setup_second_table.2899
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	lw	$a1, 16($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 12($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+bne_cont.17633:
+bne_cont.17631:
+	subi	$a1, $a1, 1
+	lw	$a0, 0($sp)
+	j	iter_setup_dirvec_constants.2902
+bge_else.17629:
+	jr	$ra
+bge_else.17624:
+	jr	$ra
+setup_startp_constants.2907:
+	li	$a2, 0
+	blt	$a1, $a2, bge_else.17636
+	li	$a2, 48
+	sll	$a3, $a1, 2
+	add	$a3, $a2, $a3
+	lw	$a2, 0($a3)
+	lw	$a3, 40($a2)
+	lw	$a4, 4($a2)
+	flw	$f0, 0($a0)
+	lw	$a5, 20($a2)
+	flw	$f1, 0($a5)
+	fsub	$f0, $f0, $f1
+	fsw	$f0, 0($a3)
+	flw	$f0, 4($a0)
+	lw	$a5, 20($a2)
+	flw	$f1, 4($a5)
+	fsub	$f0, $f0, $f1
+	fsw	$f0, 4($a3)
+	flw	$f0, 8($a0)
+	lw	$a5, 20($a2)
+	flw	$f1, 8($a5)
+	fsub	$f0, $f0, $f1
+	fsw	$f0, 8($a3)
+	li	$a5, 2
+	bne	$a4, $a5, bne_else.17637
+	lw	$a2, 16($a2)
+	flw	$f0, 0($a3)
+	flw	$f1, 4($a3)
+	flw	$f2, 8($a3)
+	flw	$f3, 0($a2)
+	fmul	$f0, $f3, $f0
+	flw	$f3, 4($a2)
+	fmul	$f1, $f3, $f1
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 12($a3)
+	j	bne_cont.17638
+bne_else.17637:
+	li	$a5, 2
+	blt	$a5, $a4, bge_else.17639
+	j	bge_cont.17640
+bge_else.17639:
+	flw	$f0, 0($a3)
+	flw	$f1, 4($a3)
+	flw	$f2, 8($a3)
+	fmul	$f3, $f0, $f0
+	lw	$a5, 16($a2)
+	flw	$f4, 0($a5)
+	fmul	$f3, $f3, $f4
+	fmul	$f4, $f1, $f1
+	lw	$a5, 16($a2)
+	flw	$f5, 4($a5)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	fmul	$f4, $f2, $f2
+	lw	$a5, 16($a2)
+	flw	$f5, 8($a5)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	lw	$a5, 12($a2)
+	li	$a6, 0
+	bne	$a5, $a6, bne_else.17641
+	fmove	$f0, $f3
+	j	bne_cont.17642
+bne_else.17641:
+	fmul	$f4, $f1, $f2
+	lw	$a5, 36($a2)
+	flw	$f5, 0($a5)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	fmul	$f2, $f2, $f0
+	lw	$a5, 36($a2)
+	flw	$f4, 4($a5)
+	fmul	$f2, $f2, $f4
+	fadd	$f2, $f3, $f2
+	fmul	$f0, $f0, $f1
+	lw	$a2, 36($a2)
+	flw	$f1, 8($a2)
+	fmul	$f0, $f0, $f1
+	fadd	$f0, $f2, $f0
+bne_cont.17642:
+	li	$a2, 3
+	bne	$a4, $a2, bne_else.17643
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fsub	$f0, $f0, $f1
+	j	bne_cont.17644
+bne_else.17643:
+bne_cont.17644:
+	fsw	$f0, 12($a3)
+bge_cont.17640:
+bne_cont.17638:
+	subi	$a1, $a1, 1
+	j	setup_startp_constants.2907
+bge_else.17636:
+	jr	$ra
+is_rect_outside.2912:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fblt	$f0, $f3, fbge_else.17646
+	j	fbge_cont.17647
+fbge_else.17646:
+	fneg	$f0, $f0
+fbge_cont.17647:
+	lw	$a1, 16($a0)
+	flw	$f3, 0($a1)
+	fsub	$f0, $f0, $f3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fblt	$f0, $f3, fbge_else.17648
+	li	$a1, 0
+	j	fbge_cont.17649
+fbge_else.17648:
+	li	$a1, 1
+fbge_cont.17649:
+	li	$a2, 0
+	bne	$a1, $a2, bne_else.17650
+	li	$a1, 0
+	j	bne_cont.17651
+bne_else.17650:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	fblt	$f1, $f0, fbge_else.17652
+	fmove	$f0, $f1
+	j	fbge_cont.17653
+fbge_else.17652:
+	fneg	$f0, $f1
+fbge_cont.17653:
+	lw	$a1, 16($a0)
+	flw	$f1, 4($a1)
+	fsub	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17654
+	li	$a1, 0
+	j	fbge_cont.17655
+fbge_else.17654:
+	li	$a1, 1
+fbge_cont.17655:
+	li	$a2, 0
+	bne	$a1, $a2, bne_else.17656
+	li	$a1, 0
+	j	bne_cont.17657
+bne_else.17656:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	fblt	$f2, $f0, fbge_else.17658
+	fmove	$f0, $f2
+	j	fbge_cont.17659
+fbge_else.17658:
+	fneg	$f0, $f2
+fbge_cont.17659:
+	lw	$a1, 16($a0)
+	flw	$f1, 8($a1)
+	fsub	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17660
+	li	$a1, 0
+	j	fbge_cont.17661
+fbge_else.17660:
+	li	$a1, 1
+fbge_cont.17661:
+bne_cont.17657:
+bne_cont.17651:
+	li	$a2, 0
+	bne	$a1, $a2, beq_else.17662
+	lw	$a0, 24($a0)
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17663
+	li	$v0, 1
+	jr	$ra
+beq_else.17663:
+	li	$v0, 0
+	jr	$ra
+beq_else.17662:
+	lw	$a0, 24($a0)
+	move	$v0, $a0
+	jr	$ra
+is_second_outside.2922:
+	fmul	$f3, $f0, $f0
+	lw	$a1, 16($a0)
+	flw	$f4, 0($a1)
+	fmul	$f3, $f3, $f4
+	fmul	$f4, $f1, $f1
+	lw	$a1, 16($a0)
+	flw	$f5, 4($a1)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	fmul	$f4, $f2, $f2
+	lw	$a1, 16($a0)
+	flw	$f5, 8($a1)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	lw	$a1, 12($a0)
+	li	$a2, 0
+	bne	$a1, $a2, bne_else.17664
+	fmove	$f0, $f3
+	j	bne_cont.17665
+bne_else.17664:
+	fmul	$f4, $f1, $f2
+	lw	$a1, 36($a0)
+	flw	$f5, 0($a1)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	fmul	$f2, $f2, $f0
+	lw	$a1, 36($a0)
+	flw	$f4, 4($a1)
+	fmul	$f2, $f2, $f4
+	fadd	$f2, $f3, $f2
+	fmul	$f0, $f0, $f1
+	lw	$a1, 36($a0)
+	flw	$f1, 8($a1)
+	fmul	$f0, $f0, $f1
+	fadd	$f0, $f2, $f0
+bne_cont.17665:
+	lw	$a1, 4($a0)
+	li	$a2, 3
+	bne	$a1, $a2, bne_else.17666
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fsub	$f0, $f0, $f1
+	j	bne_cont.17667
+bne_else.17666:
+bne_cont.17667:
+	lw	$a0, 24($a0)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17668
+	li	$a1, 0
+	j	fbge_cont.17669
+fbge_else.17668:
+	li	$a1, 1
+fbge_cont.17669:
+	li	$a2, 0
+	bne	$a0, $a2, bne_else.17670
+	move	$a0, $a1
+	j	bne_cont.17671
+bne_else.17670:
+	li	$a0, 0
+	bne	$a1, $a0, bne_else.17672
+	li	$a0, 1
+	j	bne_cont.17673
+bne_else.17672:
+	li	$a0, 0
+bne_cont.17673:
+bne_cont.17671:
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17674
+	li	$v0, 1
+	jr	$ra
+beq_else.17674:
+	li	$v0, 0
+	jr	$ra
+is_outside.2927:
+	lw	$a1, 20($a0)
+	flw	$f3, 0($a1)
+	fsub	$f0, $f0, $f3
+	lw	$a1, 20($a0)
+	flw	$f3, 4($a1)
+	fsub	$f1, $f1, $f3
+	lw	$a1, 20($a0)
+	flw	$f3, 8($a1)
+	fsub	$f2, $f2, $f3
+	lw	$a1, 4($a0)
+	li	$a2, 1
+	bne	$a1, $a2, beq_else.17675
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fblt	$f0, $f3, fbge_else.17676
+	j	fbge_cont.17677
+fbge_else.17676:
+	fneg	$f0, $f0
+fbge_cont.17677:
+	lw	$a1, 16($a0)
+	flw	$f3, 0($a1)
+	fsub	$f0, $f0, $f3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fblt	$f0, $f3, fbge_else.17678
+	li	$a1, 0
+	j	fbge_cont.17679
+fbge_else.17678:
+	li	$a1, 1
+fbge_cont.17679:
+	li	$a2, 0
+	bne	$a1, $a2, bne_else.17680
+	li	$a1, 0
+	j	bne_cont.17681
+bne_else.17680:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	fblt	$f1, $f0, fbge_else.17682
+	fmove	$f0, $f1
+	j	fbge_cont.17683
+fbge_else.17682:
+	fneg	$f0, $f1
+fbge_cont.17683:
+	lw	$a1, 16($a0)
+	flw	$f1, 4($a1)
+	fsub	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17684
+	li	$a1, 0
+	j	fbge_cont.17685
+fbge_else.17684:
+	li	$a1, 1
+fbge_cont.17685:
+	li	$a2, 0
+	bne	$a1, $a2, bne_else.17686
+	li	$a1, 0
+	j	bne_cont.17687
+bne_else.17686:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	fblt	$f2, $f0, fbge_else.17688
+	fmove	$f0, $f2
+	j	fbge_cont.17689
+fbge_else.17688:
+	fneg	$f0, $f2
+fbge_cont.17689:
+	lw	$a1, 16($a0)
+	flw	$f1, 8($a1)
+	fsub	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17690
+	li	$a1, 0
+	j	fbge_cont.17691
+fbge_else.17690:
+	li	$a1, 1
+fbge_cont.17691:
+bne_cont.17687:
+bne_cont.17681:
+	li	$a2, 0
+	bne	$a1, $a2, beq_else.17692
+	lw	$a0, 24($a0)
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17693
+	li	$v0, 1
+	jr	$ra
+beq_else.17693:
+	li	$v0, 0
+	jr	$ra
+beq_else.17692:
+	lw	$a0, 24($a0)
+	move	$v0, $a0
+	jr	$ra
+beq_else.17675:
+	li	$a2, 2
+	bne	$a1, $a2, beq_else.17694
+	lw	$a1, 16($a0)
+	flw	$f3, 0($a1)
+	fmul	$f0, $f3, $f0
+	flw	$f3, 4($a1)
+	fmul	$f1, $f3, $f1
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a1)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	lw	$a0, 24($a0)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17695
+	li	$a1, 0
+	j	fbge_cont.17696
+fbge_else.17695:
+	li	$a1, 1
+fbge_cont.17696:
+	li	$a2, 0
+	bne	$a0, $a2, bne_else.17697
+	move	$a0, $a1
+	j	bne_cont.17698
+bne_else.17697:
+	li	$a0, 0
+	bne	$a1, $a0, bne_else.17699
+	li	$a0, 1
+	j	bne_cont.17700
+bne_else.17699:
+	li	$a0, 0
+bne_cont.17700:
+bne_cont.17698:
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17701
+	li	$v0, 1
+	jr	$ra
+beq_else.17701:
+	li	$v0, 0
+	jr	$ra
+beq_else.17694:
+	sw	$a0, 0($sp)
+	sw	$ra, 4($sp)
+	addi	$sp, $sp, 8
+	jal	quadratic.2830
+	subi	$sp, $sp, 8
+	lw	$ra, 4($sp)
+	fmove	$f0, $fv
+	lw	$a0, 0($sp)
+	lw	$a1, 4($a0)
+	li	$a2, 3
+	bne	$a1, $a2, bne_else.17702
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fsub	$f0, $f0, $f1
+	j	bne_cont.17703
+bne_else.17702:
+bne_cont.17703:
+	lw	$a0, 24($a0)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17704
+	li	$a1, 0
+	j	fbge_cont.17705
+fbge_else.17704:
+	li	$a1, 1
+fbge_cont.17705:
+	li	$a2, 0
+	bne	$a0, $a2, bne_else.17706
+	move	$a0, $a1
+	j	bne_cont.17707
+bne_else.17706:
+	li	$a0, 0
+	bne	$a1, $a0, bne_else.17708
+	li	$a0, 1
+	j	bne_cont.17709
+bne_else.17708:
+	li	$a0, 0
+bne_cont.17709:
+bne_cont.17707:
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17710
+	li	$v0, 1
+	jr	$ra
+beq_else.17710:
+	li	$v0, 0
+	jr	$ra
+check_all_inside.2932:
+	sll	$a2, $a0, 2
+	add	$a2, $a1, $a2
+	lw	$a2, 0($a2)
+	li	$a3, -1
+	bne	$a2, $a3, beq_else.17711
+	li	$v0, 1
+	jr	$ra
+beq_else.17711:
+	li	$a3, 48
+	sll	$a2, $a2, 2
+	add	$a2, $a3, $a2
+	lw	$a2, 0($a2)
+	lw	$a3, 20($a2)
+	flw	$f3, 0($a3)
+	fsub	$f3, $f0, $f3
+	lw	$a3, 20($a2)
+	flw	$f4, 4($a3)
+	fsub	$f4, $f1, $f4
+	lw	$a3, 20($a2)
+	flw	$f5, 8($a3)
+	fsub	$f5, $f2, $f5
+	lw	$a3, 4($a2)
+	li	$a4, 1
 	fsw	$f2, 0($sp)
 	fsw	$f1, 8($sp)
 	fsw	$f0, 16($sp)
 	sw	$a1, 24($sp)
-	sw	$a26, 28($sp)
-	sw	$a0, 32($sp)
+	sw	$a0, 28($sp)
+	bne	$a3, $a4, bne_else.17712
 	move	$a0, $a2
+	fmove	$f2, $f5
+	fmove	$f1, $f4
+	fmove	$f0, $f3
 	sw	$ra, 36($sp)
 	addi	$sp, $sp, 40
-	jal	is_outside.2759
+	jal	is_rect_outside.2912
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	j	bne_cont.17713
+bne_else.17712:
+	li	$a4, 2
+	bne	$a3, $a4, bne_else.17714
+	lw	$a3, 16($a2)
+	flw	$f6, 0($a3)
+	fmul	$f3, $f6, $f3
+	flw	$f6, 4($a3)
+	fmul	$f4, $f6, $f4
+	fadd	$f3, $f3, $f4
+	flw	$f4, 8($a3)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	lw	$a2, 24($a2)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f4, $v0
+	fblt	$f3, $f4, fbge_else.17716
+	li	$a3, 0
+	j	fbge_cont.17717
+fbge_else.17716:
+	li	$a3, 1
+fbge_cont.17717:
+	li	$a4, 0
+	bne	$a2, $a4, bne_else.17718
+	move	$a2, $a3
+	j	bne_cont.17719
+bne_else.17718:
+	li	$a2, 0
+	bne	$a3, $a2, bne_else.17720
+	li	$a2, 1
+	j	bne_cont.17721
+bne_else.17720:
+	li	$a2, 0
+bne_cont.17721:
+bne_cont.17719:
+	li	$a3, 0
+	bne	$a2, $a3, bne_else.17722
+	li	$a0, 1
+	j	bne_cont.17723
+bne_else.17722:
+	li	$a0, 0
+bne_cont.17723:
+	j	bne_cont.17715
+bne_else.17714:
+	move	$a0, $a2
+	fmove	$f2, $f5
+	fmove	$f1, $f4
+	fmove	$f0, $f3
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	is_second_outside.2922
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+bne_cont.17715:
+bne_cont.17713:
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17724
+	lw	$a0, 28($sp)
+	addi	$a0, $a0, 1
+	sll	$a1, $a0, 2
+	lw	$a2, 24($sp)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a3, -1
+	bne	$a1, $a3, beq_else.17725
+	li	$v0, 1
+	jr	$ra
+beq_else.17725:
+	li	$a3, 48
+	sll	$a1, $a1, 2
+	add	$a1, $a3, $a1
+	lw	$a1, 0($a1)
+	flw	$f0, 16($sp)
+	flw	$f1, 8($sp)
+	flw	$f2, 0($sp)
+	sw	$a0, 32($sp)
+	move	$a0, $a1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	is_outside.2927
 	subi	$sp, $sp, 40
 	lw	$ra, 36($sp)
 	move	$a0, $v0
 	li	$a1, 0
-	bne	$a0, $a1, beq_else.8868
+	bne	$a0, $a1, beq_else.17726
 	lw	$a0, 32($sp)
 	addi	$a0, $a0, 1
 	flw	$f0, 16($sp)
 	flw	$f1, 8($sp)
 	flw	$f2, 0($sp)
 	lw	$a1, 24($sp)
-	lw	$a26, 28($sp)
-	lw	$a25, 0($a26)
-	j	check_all_inside.2764
-beq_else.8868:
+	j	check_all_inside.2932
+beq_else.17726:
 	li	$v0, 0
 	jr	$ra
-shadow_check_and_group.2770:
-	lw	$a2, 28($a26)
-	lw	$a3, 24($a26)
-	lw	$a4, 20($a26)
-	lw	$a5, 16($a26)
-	lw	$a6, 12($a26)
-	lw	$a7, 8($a26)
-	lw	$a8, 4($a26)
-	sll	$a9, $a0, 2
-	add	$a9, $a1, $a9
-	lw	$a9, 0($a9)
-	li	$a10, -1
-	bne	$a9, $a10, beq_else.8869
+beq_else.17724:
 	li	$v0, 0
 	jr	$ra
-beq_else.8869:
-	sll	$a9, $a0, 2
-	add	$a9, $a1, $a9
-	lw	$a9, 0($a9)
-	sw	$a8, 0($sp)
-	sw	$a7, 4($sp)
-	sw	$a6, 8($sp)
-	sw	$a1, 12($sp)
-	sw	$a26, 16($sp)
-	sw	$a0, 20($sp)
-	sw	$a4, 24($sp)
-	sw	$a9, 28($sp)
-	sw	$a3, 32($sp)
-	move	$a1, $a5
-	move	$a0, $a9
-	move	$a26, $a2
-	move	$a2, $a7
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	solver_fast.2704
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
+shadow_check_and_group.2938:
+	sll	$a2, $a0, 2
+	add	$a2, $a1, $a2
+	lw	$a2, 0($a2)
+	li	$a3, -1
+	bne	$a2, $a3, beq_else.17727
+	li	$v0, 0
+	jr	$ra
+beq_else.17727:
+	sll	$a2, $a0, 2
+	add	$a2, $a1, $a2
+	lw	$a2, 0($a2)
+	li	$a3, 988
+	li	$a4, 552
+	li	$a5, 48
+	sll	$a6, $a2, 2
+	add	$a6, $a5, $a6
+	lw	$a5, 0($a6)
+	flw	$f0, 0($a4)
+	lw	$a6, 20($a5)
+	flw	$f1, 0($a6)
+	fsub	$f0, $f0, $f1
+	flw	$f1, 4($a4)
+	lw	$a6, 20($a5)
+	flw	$f2, 4($a6)
+	fsub	$f1, $f1, $f2
+	flw	$f2, 8($a4)
+	lw	$a4, 20($a5)
+	flw	$f3, 8($a4)
+	fsub	$f2, $f2, $f3
+	lw	$a4, 4($a3)
+	sll	$a6, $a2, 2
+	add	$a6, $a4, $a6
+	lw	$a4, 0($a6)
+	lw	$a6, 4($a5)
+	li	$a7, 1
+	sw	$a1, 0($sp)
+	sw	$a0, 4($sp)
+	sw	$a2, 8($sp)
+	bne	$a6, $a7, bne_else.17728
+	lw	$a3, 0($a3)
+	move	$a2, $a4
+	move	$a1, $a3
+	move	$a0, $a5
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	solver_rect_fast.2853
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
 	move	$a0, $v0
-	lw	$a1, 32($sp)
+	j	bne_cont.17729
+bne_else.17728:
+	li	$a3, 2
+	bne	$a6, $a3, bne_else.17730
+	flw	$f3, 0($a4)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f4, $v0
+	fblt	$f3, $f4, fbge_else.17732
+	li	$a3, 0
+	j	fbge_cont.17733
+fbge_else.17732:
+	li	$a3, 1
+fbge_cont.17733:
+	li	$a5, 0
+	bne	$a3, $a5, bne_else.17734
+	li	$a0, 0
+	j	bne_cont.17735
+bne_else.17734:
+	li	$a3, 540
+	flw	$f3, 4($a4)
+	fmul	$f0, $f3, $f0
+	flw	$f3, 8($a4)
+	fmul	$f1, $f3, $f1
+	fadd	$f0, $f0, $f1
+	flw	$f1, 12($a4)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 0($a3)
+	li	$a0, 1
+bne_cont.17735:
+	j	bne_cont.17731
+bne_else.17730:
+	move	$a1, $a4
+	move	$a0, $a5
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	solver_second_fast.2866
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+bne_cont.17731:
+bne_cont.17729:
+	li	$a1, 540
 	flw	$f0, 0($a1)
 	li	$a1, 0
-	fsw	$f0, 40($sp)
-	bne	$a0, $a1, bne_else.8871
+	bne	$a0, $a1, bne_else.17736
 	li	$a0, 0
-	j	bne_cont.8872
-bne_else.8871:
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	l.6352
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	mtc1	$f1, $a25
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	fless.2487
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	move	$a0, $v0
-bne_cont.8872:
+	j	bne_cont.17737
+bne_else.17736:
+	li	$v0, -16820
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fsub	$f1, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fblt	$f1, $f2, fbge_else.17738
+	li	$a0, 0
+	j	fbge_cont.17739
+fbge_else.17738:
+	li	$a0, 1
+fbge_cont.17739:
+bne_cont.17737:
 	li	$a1, 0
-	bne	$a0, $a1, beq_else.8873
-	lw	$a0, 28($sp)
-	sll	$a0, $a0, 2
-	lw	$a1, 24($sp)
-	add	$a0, $a1, $a0
-	lw	$a0, 0($a0)
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	o_isinvert.2553
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	move	$a0, $v0
+	bne	$a0, $a1, beq_else.17740
+	li	$a0, 48
+	lw	$a1, 8($sp)
+	sll	$a1, $a1, 2
+	add	$a1, $a0, $a1
+	lw	$a0, 0($a1)
+	lw	$a0, 24($a0)
 	li	$a1, 0
-	bne	$a0, $a1, beq_else.8874
+	bne	$a0, $a1, beq_else.17741
 	li	$v0, 0
 	jr	$ra
-beq_else.8874:
-	lw	$a0, 20($sp)
+beq_else.17741:
+	lw	$a0, 4($sp)
 	addi	$a0, $a0, 1
-	lw	$a1, 12($sp)
-	lw	$a26, 16($sp)
-	lw	$a25, 0($a26)
-	j	shadow_check_and_group.2770
-beq_else.8873:
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	l.6353
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	mtc1	$f0, $a25
-	flw	$f1, 40($sp)
-	fadd	$f0, $f1, $f0
-	lw	$a0, 8($sp)
+	lw	$a1, 0($sp)
+	j	shadow_check_and_group.2938
+beq_else.17740:
+	li	$v0, 15395
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 55050
+	mtc1	$f1, $v0
+	fadd	$f0, $f0, $f1
+	li	$a0, 312
 	flw	$f1, 0($a0)
 	fmul	$f1, $f1, $f0
-	lw	$a1, 4($sp)
-	flw	$f2, 0($a1)
+	li	$a0, 552
+	flw	$f2, 0($a0)
 	fadd	$f1, $f1, $f2
+	li	$a0, 312
 	flw	$f2, 4($a0)
 	fmul	$f2, $f2, $f0
-	flw	$f3, 4($a1)
+	li	$a0, 552
+	flw	$f3, 4($a0)
 	fadd	$f2, $f2, $f3
+	li	$a0, 312
 	flw	$f3, 8($a0)
 	fmul	$f0, $f3, $f0
-	flw	$f3, 8($a1)
+	li	$a0, 552
+	flw	$f3, 8($a0)
 	fadd	$f0, $f0, $f3
-	li	$a0, 0
-	lw	$a1, 12($sp)
-	lw	$a26, 0($sp)
+	lw	$a1, 0($sp)
+	lw	$a0, 0($a1)
+	li	$a2, -1
+	bne	$a0, $a2, bne_else.17742
+	li	$a0, 1
+	j	bne_cont.17743
+bne_else.17742:
+	li	$a2, 48
+	sll	$a0, $a0, 2
+	add	$a0, $a2, $a0
+	lw	$a0, 0($a0)
+	fsw	$f0, 16($sp)
+	fsw	$f2, 24($sp)
+	fsw	$f1, 32($sp)
 	fmove	$f30, $f2
 	fmove	$f2, $f0
 	fmove	$f0, $f1
 	fmove	$f1, $f30
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	is_outside.2927
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17745
+	li	$a0, 1
+	flw	$f0, 32($sp)
+	flw	$f1, 24($sp)
+	flw	$f2, 16($sp)
+	lw	$a1, 0($sp)
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	check_all_inside.2932
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	j	bne_cont.17746
+bne_else.17745:
+	li	$a0, 0
+bne_cont.17746:
+bne_cont.17743:
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17747
+	lw	$a0, 4($sp)
+	addi	$a0, $a0, 1
+	lw	$a1, 0($sp)
+	j	shadow_check_and_group.2938
+beq_else.17747:
+	li	$v0, 1
+	jr	$ra
+shadow_check_one_or_group.2941:
+	sll	$a2, $a0, 2
+	add	$a2, $a1, $a2
+	lw	$a2, 0($a2)
+	li	$a3, -1
+	bne	$a2, $a3, beq_else.17748
+	li	$v0, 0
+	jr	$ra
+beq_else.17748:
+	li	$a3, 332
+	sll	$a2, $a2, 2
+	add	$a2, $a3, $a2
+	lw	$a2, 0($a2)
+	li	$a3, 0
+	sw	$a1, 0($sp)
+	sw	$a0, 4($sp)
+	move	$a1, $a2
+	move	$a0, $a3
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	shadow_check_and_group.2938
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17749
+	lw	$a0, 4($sp)
+	addi	$a0, $a0, 1
+	sll	$a1, $a0, 2
+	lw	$a2, 0($sp)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a3, -1
+	bne	$a1, $a3, beq_else.17750
+	li	$v0, 0
+	jr	$ra
+beq_else.17750:
+	li	$a3, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a3, $a1
+	lw	$a1, 0($a1)
+	li	$a3, 0
+	sw	$a0, 8($sp)
+	move	$a0, $a3
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	shadow_check_and_group.2938
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17751
+	lw	$a0, 8($sp)
+	addi	$a0, $a0, 1
+	sll	$a1, $a0, 2
+	lw	$a2, 0($sp)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a3, -1
+	bne	$a1, $a3, beq_else.17752
+	li	$v0, 0
+	jr	$ra
+beq_else.17752:
+	li	$a3, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a3, $a1
+	lw	$a1, 0($a1)
+	li	$a3, 0
+	sw	$a0, 12($sp)
+	move	$a0, $a3
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	shadow_check_and_group.2938
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17753
+	lw	$a0, 12($sp)
+	addi	$a0, $a0, 1
+	sll	$a1, $a0, 2
+	lw	$a2, 0($sp)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a3, -1
+	bne	$a1, $a3, beq_else.17754
+	li	$v0, 0
+	jr	$ra
+beq_else.17754:
+	li	$a3, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a3, $a1
+	lw	$a1, 0($a1)
+	li	$a3, 0
+	sw	$a0, 16($sp)
+	move	$a0, $a3
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	shadow_check_and_group.2938
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17755
+	lw	$a0, 16($sp)
+	addi	$a0, $a0, 1
+	lw	$a1, 0($sp)
+	j	shadow_check_one_or_group.2941
+beq_else.17755:
+	li	$v0, 1
+	jr	$ra
+beq_else.17753:
+	li	$v0, 1
+	jr	$ra
+beq_else.17751:
+	li	$v0, 1
+	jr	$ra
+beq_else.17749:
+	li	$v0, 1
+	jr	$ra
+shadow_check_one_or_matrix.2944:
+	sll	$a2, $a0, 2
+	add	$a2, $a1, $a2
+	lw	$a2, 0($a2)
+	lw	$a3, 0($a2)
+	li	$a4, -1
+	bne	$a3, $a4, beq_else.17756
+	li	$v0, 0
+	jr	$ra
+beq_else.17756:
+	li	$a4, 99
+	sw	$a2, 0($sp)
+	sw	$a1, 4($sp)
+	sw	$a0, 8($sp)
+	bne	$a3, $a4, bne_else.17757
+	li	$a0, 1
+	j	bne_cont.17758
+bne_else.17757:
+	li	$a4, 988
+	li	$a5, 552
+	li	$a6, 48
+	sll	$a7, $a3, 2
+	add	$a7, $a6, $a7
+	lw	$a6, 0($a7)
+	flw	$f0, 0($a5)
+	lw	$a7, 20($a6)
+	flw	$f1, 0($a7)
+	fsub	$f0, $f0, $f1
+	flw	$f1, 4($a5)
+	lw	$a7, 20($a6)
+	flw	$f2, 4($a7)
+	fsub	$f1, $f1, $f2
+	flw	$f2, 8($a5)
+	lw	$a5, 20($a6)
+	flw	$f3, 8($a5)
+	fsub	$f2, $f2, $f3
+	lw	$a5, 4($a4)
+	sll	$a3, $a3, 2
+	add	$a3, $a5, $a3
+	lw	$a3, 0($a3)
+	lw	$a5, 4($a6)
+	li	$a7, 1
+	bne	$a5, $a7, bne_else.17759
+	lw	$a4, 0($a4)
+	move	$a2, $a3
+	move	$a1, $a4
+	move	$a0, $a6
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	solver_rect_fast.2853
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	j	bne_cont.17760
+bne_else.17759:
+	li	$a4, 2
+	bne	$a5, $a4, bne_else.17761
+	flw	$f3, 0($a3)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f4, $v0
+	fblt	$f3, $f4, fbge_else.17763
+	li	$a4, 0
+	j	fbge_cont.17764
+fbge_else.17763:
+	li	$a4, 1
+fbge_cont.17764:
+	li	$a5, 0
+	bne	$a4, $a5, bne_else.17765
+	li	$a0, 0
+	j	bne_cont.17766
+bne_else.17765:
+	li	$a4, 540
+	flw	$f3, 4($a3)
+	fmul	$f0, $f3, $f0
+	flw	$f3, 8($a3)
+	fmul	$f1, $f3, $f1
+	fadd	$f0, $f0, $f1
+	flw	$f1, 12($a3)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 0($a4)
+	li	$a0, 1
+bne_cont.17766:
+	j	bne_cont.17762
+bne_else.17761:
+	move	$a1, $a3
+	move	$a0, $a6
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	solver_second_fast.2866
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+bne_cont.17762:
+bne_cont.17760:
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17767
+	li	$a0, 0
+	j	bne_cont.17768
+bne_else.17767:
+	li	$a0, 540
+	flw	$f0, 0($a0)
+	li	$v0, -16948
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fsub	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17769
+	li	$a0, 0
+	j	fbge_cont.17770
+fbge_else.17769:
+	li	$a0, 1
+fbge_cont.17770:
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17771
+	li	$a0, 0
+	j	bne_cont.17772
+bne_else.17771:
+	lw	$a0, 0($sp)
+	lw	$a1, 4($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17773
+	li	$a0, 0
+	j	bne_cont.17774
+bne_else.17773:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	move	$a0, $a2
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	shadow_check_and_group.2938
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17775
+	lw	$a0, 0($sp)
+	lw	$a1, 8($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17777
+	li	$a0, 0
+	j	bne_cont.17778
+bne_else.17777:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	move	$a0, $a2
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	shadow_check_and_group.2938
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17779
+	lw	$a0, 0($sp)
+	lw	$a1, 12($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17781
+	li	$a0, 0
+	j	bne_cont.17782
+bne_else.17781:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	move	$a0, $a2
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	shadow_check_and_group.2938
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17783
+	li	$a0, 4
+	lw	$a1, 0($sp)
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	shadow_check_one_or_group.2941
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	j	bne_cont.17784
+bne_else.17783:
+	li	$a0, 1
+bne_cont.17784:
+bne_cont.17782:
+	j	bne_cont.17780
+bne_else.17779:
+	li	$a0, 1
+bne_cont.17780:
+bne_cont.17778:
+	j	bne_cont.17776
+bne_else.17775:
+	li	$a0, 1
+bne_cont.17776:
+bne_cont.17774:
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17785
+	li	$a0, 0
+	j	bne_cont.17786
+bne_else.17785:
+	li	$a0, 1
+bne_cont.17786:
+bne_cont.17772:
+bne_cont.17768:
+bne_cont.17758:
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17787
+	lw	$a0, 8($sp)
+	addi	$a0, $a0, 1
+	lw	$a1, 4($sp)
+	j	shadow_check_one_or_matrix.2944
+beq_else.17787:
+	lw	$a0, 0($sp)
+	lw	$a1, 4($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17788
+	li	$a0, 0
+	j	bne_cont.17789
+bne_else.17788:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	move	$a0, $a2
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	shadow_check_and_group.2938
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17790
+	lw	$a0, 0($sp)
+	lw	$a1, 8($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17792
+	li	$a0, 0
+	j	bne_cont.17793
+bne_else.17792:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	move	$a0, $a2
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	shadow_check_and_group.2938
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17794
+	lw	$a0, 0($sp)
+	lw	$a1, 12($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17796
+	li	$a0, 0
+	j	bne_cont.17797
+bne_else.17796:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	move	$a0, $a2
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	shadow_check_and_group.2938
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17798
+	li	$a0, 4
+	lw	$a1, 0($sp)
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	shadow_check_one_or_group.2941
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	j	bne_cont.17799
+bne_else.17798:
+	li	$a0, 1
+bne_cont.17799:
+bne_cont.17797:
+	j	bne_cont.17795
+bne_else.17794:
+	li	$a0, 1
+bne_cont.17795:
+bne_cont.17793:
+	j	bne_cont.17791
+bne_else.17790:
+	li	$a0, 1
+bne_cont.17791:
+bne_cont.17789:
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17800
+	lw	$a0, 8($sp)
+	addi	$a0, $a0, 1
+	lw	$a1, 4($sp)
+	j	shadow_check_one_or_matrix.2944
+beq_else.17800:
+	li	$v0, 1
+	jr	$ra
+solve_each_element.2947:
+	sll	$a3, $a0, 2
+	add	$a3, $a1, $a3
+	lw	$a3, 0($a3)
+	li	$a4, -1
+	bne	$a3, $a4, beq_else.17801
+	jr	$ra
+beq_else.17801:
+	li	$a4, 636
+	li	$a5, 48
+	sll	$a6, $a3, 2
+	add	$a6, $a5, $a6
+	lw	$a5, 0($a6)
+	flw	$f0, 0($a4)
+	lw	$a6, 20($a5)
+	flw	$f1, 0($a6)
+	fsub	$f0, $f0, $f1
+	flw	$f1, 4($a4)
+	lw	$a6, 20($a5)
+	flw	$f2, 4($a6)
+	fsub	$f1, $f1, $f2
+	flw	$f2, 8($a4)
+	lw	$a4, 20($a5)
+	flw	$f3, 8($a4)
+	fsub	$f2, $f2, $f3
+	lw	$a4, 4($a5)
+	li	$a6, 1
+	sw	$a2, 0($sp)
+	sw	$a1, 4($sp)
+	sw	$a0, 8($sp)
+	sw	$a3, 12($sp)
+	bne	$a4, $a6, bne_else.17803
+	li	$a4, 0
+	li	$a6, 1
+	li	$a7, 2
+	fsw	$f0, 16($sp)
+	fsw	$f2, 24($sp)
+	fsw	$f1, 32($sp)
+	sw	$a5, 40($sp)
+	move	$a3, $a6
+	move	$a1, $a2
+	move	$a0, $a5
+	move	$a2, $a4
+	move	$a4, $a7
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	solver_rect_surface.2809
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17805
+	li	$a2, 1
+	li	$a3, 2
+	li	$a4, 0
+	flw	$f0, 32($sp)
+	flw	$f1, 24($sp)
+	flw	$f2, 16($sp)
+	lw	$a0, 40($sp)
+	lw	$a1, 0($sp)
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	solver_rect_surface.2809
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17807
+	li	$a2, 2
+	li	$a3, 0
+	li	$a4, 1
+	flw	$f0, 24($sp)
+	flw	$f1, 16($sp)
+	flw	$f2, 32($sp)
+	lw	$a0, 40($sp)
+	lw	$a1, 0($sp)
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	solver_rect_surface.2809
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17809
+	li	$a0, 0
+	j	bne_cont.17810
+bne_else.17809:
+	li	$a0, 3
+bne_cont.17810:
+	j	bne_cont.17808
+bne_else.17807:
+	li	$a0, 2
+bne_cont.17808:
+	j	bne_cont.17806
+bne_else.17805:
+	li	$a0, 1
+bne_cont.17806:
+	j	bne_cont.17804
+bne_else.17803:
+	li	$a6, 2
+	bne	$a4, $a6, bne_else.17811
+	move	$a1, $a2
+	move	$a0, $a5
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	solver_surface.2824
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	j	bne_cont.17812
+bne_else.17811:
+	move	$a1, $a2
+	move	$a0, $a5
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	solver_second.2843
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+bne_cont.17812:
+bne_cont.17804:
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17813
+	li	$a0, 48
+	lw	$a1, 12($sp)
+	sll	$a1, $a1, 2
+	add	$a1, $a0, $a1
+	lw	$a0, 0($a1)
+	lw	$a0, 24($a0)
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17814
+	jr	$ra
+beq_else.17814:
+	lw	$a0, 8($sp)
+	addi	$a0, $a0, 1
+	lw	$a1, 4($sp)
+	lw	$a2, 0($sp)
+	j	solve_each_element.2947
+beq_else.17813:
+	li	$a1, 540
+	flw	$f0, 0($a1)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fsub	$f1, $f1, $f0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fblt	$f1, $f2, fbge_else.17816
+	li	$a1, 0
+	j	fbge_cont.17817
+fbge_else.17816:
+	li	$a1, 1
+fbge_cont.17817:
+	li	$a2, 0
+	bne	$a1, $a2, bne_else.17818
+	j	bne_cont.17819
+bne_else.17818:
+	li	$a1, 548
+	flw	$f1, 0($a1)
+	fsub	$f1, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fblt	$f1, $f2, fbge_else.17820
+	li	$a1, 0
+	j	fbge_cont.17821
+fbge_else.17820:
+	li	$a1, 1
+fbge_cont.17821:
+	li	$a2, 0
+	bne	$a1, $a2, bne_else.17822
+	j	bne_cont.17823
+bne_else.17822:
+	li	$v0, 15395
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 55050
+	mtc1	$f1, $v0
+	fadd	$f0, $f0, $f1
+	lw	$a2, 0($sp)
+	flw	$f1, 0($a2)
+	fmul	$f1, $f1, $f0
+	li	$a1, 636
+	flw	$f2, 0($a1)
+	fadd	$f1, $f1, $f2
+	flw	$f2, 4($a2)
+	fmul	$f2, $f2, $f0
+	li	$a1, 636
+	flw	$f3, 4($a1)
+	fadd	$f2, $f2, $f3
+	flw	$f3, 8($a2)
+	fmul	$f3, $f3, $f0
+	li	$a1, 636
+	flw	$f4, 8($a1)
+	fadd	$f3, $f3, $f4
+	lw	$a1, 4($sp)
+	lw	$a3, 0($a1)
+	li	$a4, -1
+	sw	$a0, 44($sp)
+	fsw	$f3, 48($sp)
+	fsw	$f2, 56($sp)
+	fsw	$f1, 64($sp)
+	fsw	$f0, 72($sp)
+	bne	$a3, $a4, bne_else.17824
+	li	$a0, 1
+	j	bne_cont.17825
+bne_else.17824:
+	li	$a4, 48
+	sll	$a3, $a3, 2
+	add	$a3, $a4, $a3
+	lw	$a3, 0($a3)
+	move	$a0, $a3
+	fmove	$f0, $f1
+	fmove	$f1, $f2
+	fmove	$f2, $f3
+	sw	$ra, 84($sp)
+	addi	$sp, $sp, 88
+	jal	is_outside.2927
+	subi	$sp, $sp, 88
+	lw	$ra, 84($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17826
+	li	$a0, 1
+	flw	$f0, 64($sp)
+	flw	$f1, 56($sp)
+	flw	$f2, 48($sp)
+	lw	$a1, 4($sp)
+	sw	$ra, 84($sp)
+	addi	$sp, $sp, 88
+	jal	check_all_inside.2932
+	subi	$sp, $sp, 88
+	lw	$ra, 84($sp)
+	move	$a0, $v0
+	j	bne_cont.17827
+bne_else.17826:
+	li	$a0, 0
+bne_cont.17827:
+bne_cont.17825:
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17828
+	j	bne_cont.17829
+bne_else.17828:
+	li	$a0, 548
+	flw	$f0, 72($sp)
+	fsw	$f0, 0($a0)
+	li	$a0, 552
+	flw	$f0, 64($sp)
+	fsw	$f0, 0($a0)
+	flw	$f0, 56($sp)
+	fsw	$f0, 4($a0)
+	flw	$f0, 48($sp)
+	fsw	$f0, 8($a0)
+	li	$a0, 564
+	lw	$a1, 12($sp)
+	sw	$a1, 0($a0)
+	li	$a0, 544
+	lw	$a1, 44($sp)
+	sw	$a1, 0($a0)
+bne_cont.17829:
+bne_cont.17823:
+bne_cont.17819:
+	lw	$a0, 8($sp)
+	addi	$a0, $a0, 1
+	lw	$a1, 4($sp)
+	lw	$a2, 0($sp)
+	j	solve_each_element.2947
+solve_one_or_network.2951:
+	sll	$a3, $a0, 2
+	add	$a3, $a1, $a3
+	lw	$a3, 0($a3)
+	li	$a4, -1
+	bne	$a3, $a4, beq_else.17830
+	jr	$ra
+beq_else.17830:
+	li	$a4, 332
+	sll	$a3, $a3, 2
+	add	$a3, $a4, $a3
+	lw	$a3, 0($a3)
+	li	$a4, 0
+	sw	$a2, 0($sp)
+	sw	$a1, 4($sp)
+	sw	$a0, 8($sp)
+	move	$a1, $a3
+	move	$a0, $a4
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	solve_each_element.2947
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	fmove	$f30, $fv
+	lw	$a0, 8($sp)
+	addi	$a0, $a0, 1
+	sll	$a1, $a0, 2
+	lw	$a2, 4($sp)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a3, -1
+	bne	$a1, $a3, beq_else.17832
+	jr	$ra
+beq_else.17832:
+	li	$a3, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a3, $a1
+	lw	$a1, 0($a1)
+	li	$a3, 0
+	lw	$a4, 0($sp)
+	sw	$a0, 12($sp)
+	move	$a2, $a4
+	move	$a0, $a3
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solve_each_element.2947
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	lw	$a0, 12($sp)
+	addi	$a0, $a0, 1
+	sll	$a1, $a0, 2
+	lw	$a2, 4($sp)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a3, -1
+	bne	$a1, $a3, beq_else.17834
+	jr	$ra
+beq_else.17834:
+	li	$a3, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a3, $a1
+	lw	$a1, 0($a1)
+	li	$a3, 0
+	lw	$a4, 0($sp)
+	sw	$a0, 16($sp)
+	move	$a2, $a4
+	move	$a0, $a3
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solve_each_element.2947
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	lw	$a0, 16($sp)
+	addi	$a0, $a0, 1
+	sll	$a1, $a0, 2
+	lw	$a2, 4($sp)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a3, -1
+	bne	$a1, $a3, beq_else.17836
+	jr	$ra
+beq_else.17836:
+	li	$a3, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a3, $a1
+	lw	$a1, 0($a1)
+	li	$a3, 0
+	lw	$a4, 0($sp)
+	sw	$a0, 20($sp)
+	move	$a2, $a4
+	move	$a0, $a3
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	solve_each_element.2947
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	lw	$a0, 20($sp)
+	addi	$a0, $a0, 1
+	lw	$a1, 4($sp)
+	lw	$a2, 0($sp)
+	j	solve_one_or_network.2951
+trace_or_matrix.2955:
+	sll	$a3, $a0, 2
+	add	$a3, $a1, $a3
+	lw	$a3, 0($a3)
+	lw	$a4, 0($a3)
+	li	$a5, -1
+	bne	$a4, $a5, beq_else.17838
+	jr	$ra
+beq_else.17838:
+	li	$a5, 99
+	sw	$a2, 0($sp)
+	sw	$a1, 4($sp)
+	sw	$a0, 8($sp)
+	bne	$a4, $a5, bne_else.17840
+	lw	$a4, 4($a3)
+	li	$a5, -1
+	bne	$a4, $a5, bne_else.17842
+	j	bne_cont.17843
+bne_else.17842:
+	li	$a5, 332
+	sll	$a4, $a4, 2
+	add	$a4, $a5, $a4
+	lw	$a4, 0($a4)
+	li	$a5, 0
+	sw	$a3, 12($sp)
+	move	$a1, $a4
+	move	$a0, $a5
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solve_each_element.2947
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	lw	$a0, 12($sp)
+	lw	$a1, 8($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17844
+	j	bne_cont.17845
+bne_else.17844:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	lw	$a3, 0($sp)
+	move	$a0, $a2
+	move	$a2, $a3
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solve_each_element.2947
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	lw	$a0, 12($sp)
+	lw	$a1, 12($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17846
+	j	bne_cont.17847
+bne_else.17846:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	lw	$a3, 0($sp)
+	move	$a0, $a2
+	move	$a2, $a3
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solve_each_element.2947
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	li	$a0, 4
+	lw	$a1, 12($sp)
+	lw	$a2, 0($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solve_one_or_network.2951
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+bne_cont.17847:
+bne_cont.17845:
+bne_cont.17843:
+	j	bne_cont.17841
+bne_else.17840:
+	li	$a5, 636
+	li	$a6, 48
+	sll	$a4, $a4, 2
+	add	$a4, $a6, $a4
+	lw	$a4, 0($a4)
+	flw	$f0, 0($a5)
+	lw	$a6, 20($a4)
+	flw	$f1, 0($a6)
+	fsub	$f0, $f0, $f1
+	flw	$f1, 4($a5)
+	lw	$a6, 20($a4)
+	flw	$f2, 4($a6)
+	fsub	$f1, $f1, $f2
+	flw	$f2, 8($a5)
+	lw	$a5, 20($a4)
+	flw	$f3, 8($a5)
+	fsub	$f2, $f2, $f3
+	lw	$a5, 4($a4)
+	li	$a6, 1
+	sw	$a3, 12($sp)
+	bne	$a5, $a6, bne_else.17848
+	li	$a5, 0
+	li	$a6, 1
+	li	$a7, 2
+	fsw	$f0, 16($sp)
+	fsw	$f2, 24($sp)
+	fsw	$f1, 32($sp)
+	sw	$a4, 40($sp)
+	move	$a3, $a6
+	move	$a1, $a2
+	move	$a0, $a4
+	move	$a4, $a7
+	move	$a2, $a5
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	solver_rect_surface.2809
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17850
+	li	$a2, 1
+	li	$a3, 2
+	li	$a4, 0
+	flw	$f0, 32($sp)
+	flw	$f1, 24($sp)
+	flw	$f2, 16($sp)
+	lw	$a0, 40($sp)
+	lw	$a1, 0($sp)
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	solver_rect_surface.2809
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17852
+	li	$a2, 2
+	li	$a3, 0
+	li	$a4, 1
+	flw	$f0, 24($sp)
+	flw	$f1, 16($sp)
+	flw	$f2, 32($sp)
+	lw	$a0, 40($sp)
+	lw	$a1, 0($sp)
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	solver_rect_surface.2809
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17854
+	li	$a0, 0
+	j	bne_cont.17855
+bne_else.17854:
+	li	$a0, 3
+bne_cont.17855:
+	j	bne_cont.17853
+bne_else.17852:
+	li	$a0, 2
+bne_cont.17853:
+	j	bne_cont.17851
+bne_else.17850:
+	li	$a0, 1
+bne_cont.17851:
+	j	bne_cont.17849
+bne_else.17848:
+	li	$a6, 2
+	bne	$a5, $a6, bne_else.17856
+	move	$a1, $a2
+	move	$a0, $a4
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	solver_surface.2824
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	j	bne_cont.17857
+bne_else.17856:
+	move	$a1, $a2
+	move	$a0, $a4
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	solver_second.2843
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+bne_cont.17857:
+bne_cont.17849:
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17858
+	j	bne_cont.17859
+bne_else.17858:
+	li	$a0, 540
+	flw	$f0, 0($a0)
+	li	$a0, 548
+	flw	$f1, 0($a0)
+	fsub	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17860
+	li	$a0, 0
+	j	fbge_cont.17861
+fbge_else.17860:
+	li	$a0, 1
+fbge_cont.17861:
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17862
+	j	bne_cont.17863
+bne_else.17862:
+	lw	$a0, 12($sp)
+	lw	$a1, 4($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17864
+	j	bne_cont.17865
+bne_else.17864:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	lw	$a3, 0($sp)
+	move	$a0, $a2
+	move	$a2, $a3
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	solve_each_element.2947
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	lw	$a0, 12($sp)
+	lw	$a1, 8($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17866
+	j	bne_cont.17867
+bne_else.17866:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	lw	$a3, 0($sp)
+	move	$a0, $a2
+	move	$a2, $a3
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	solve_each_element.2947
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	lw	$a0, 12($sp)
+	lw	$a1, 12($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17868
+	j	bne_cont.17869
+bne_else.17868:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	lw	$a3, 0($sp)
+	move	$a0, $a2
+	move	$a2, $a3
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	solve_each_element.2947
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	li	$a0, 4
+	lw	$a1, 12($sp)
+	lw	$a2, 0($sp)
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	solve_one_or_network.2951
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+bne_cont.17869:
+bne_cont.17867:
+bne_cont.17865:
+bne_cont.17863:
+bne_cont.17859:
+bne_cont.17841:
+	lw	$a0, 8($sp)
+	addi	$a0, $a0, 1
+	sll	$a1, $a0, 2
+	lw	$a2, 4($sp)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	lw	$a3, 0($a1)
+	li	$a4, -1
+	bne	$a3, $a4, beq_else.17870
+	jr	$ra
+beq_else.17870:
+	li	$a4, 99
+	sw	$a0, 44($sp)
+	bne	$a3, $a4, bne_else.17872
+	lw	$a3, 4($a1)
+	li	$a4, -1
+	bne	$a3, $a4, bne_else.17874
+	j	bne_cont.17875
+bne_else.17874:
+	li	$a4, 332
+	sll	$a3, $a3, 2
+	add	$a3, $a4, $a3
+	lw	$a3, 0($a3)
+	li	$a4, 0
+	lw	$a5, 0($sp)
+	sw	$a1, 48($sp)
+	move	$a2, $a5
+	move	$a1, $a3
+	move	$a0, $a4
 	sw	$ra, 52($sp)
 	addi	$sp, $sp, 56
-	jal	check_all_inside.2764
+	jal	solve_each_element.2947
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	fmove	$f30, $fv
+	lw	$a0, 48($sp)
+	lw	$a1, 8($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17876
+	j	bne_cont.17877
+bne_else.17876:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	lw	$a3, 0($sp)
+	move	$a0, $a2
+	move	$a2, $a3
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	solve_each_element.2947
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	fmove	$f30, $fv
+	li	$a0, 3
+	lw	$a1, 48($sp)
+	lw	$a2, 0($sp)
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	solve_one_or_network.2951
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	fmove	$f30, $fv
+bne_cont.17877:
+bne_cont.17875:
+	j	bne_cont.17873
+bne_else.17872:
+	li	$a4, 636
+	lw	$a5, 0($sp)
+	sw	$a1, 48($sp)
+	move	$a2, $a4
+	move	$a1, $a5
+	move	$a0, $a3
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	solver.2849
 	subi	$sp, $sp, 56
 	lw	$ra, 52($sp)
 	move	$a0, $v0
 	li	$a1, 0
-	bne	$a0, $a1, beq_else.8875
-	lw	$a0, 20($sp)
+	bne	$a0, $a1, bne_else.17878
+	j	bne_cont.17879
+bne_else.17878:
+	li	$a0, 540
+	flw	$f0, 0($a0)
+	li	$a0, 548
+	flw	$f1, 0($a0)
+	fsub	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17880
+	li	$a0, 0
+	j	fbge_cont.17881
+fbge_else.17880:
+	li	$a0, 1
+fbge_cont.17881:
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17882
+	j	bne_cont.17883
+bne_else.17882:
+	lw	$a0, 48($sp)
+	lw	$a1, 4($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17884
+	j	bne_cont.17885
+bne_else.17884:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	lw	$a3, 0($sp)
+	move	$a0, $a2
+	move	$a2, $a3
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	solve_each_element.2947
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	fmove	$f30, $fv
+	lw	$a0, 48($sp)
+	lw	$a1, 8($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17886
+	j	bne_cont.17887
+bne_else.17886:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	lw	$a3, 0($sp)
+	move	$a0, $a2
+	move	$a2, $a3
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	solve_each_element.2947
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	fmove	$f30, $fv
+	li	$a0, 3
+	lw	$a1, 48($sp)
+	lw	$a2, 0($sp)
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	solve_one_or_network.2951
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	fmove	$f30, $fv
+bne_cont.17887:
+bne_cont.17885:
+bne_cont.17883:
+bne_cont.17879:
+bne_cont.17873:
+	lw	$a0, 44($sp)
 	addi	$a0, $a0, 1
-	lw	$a1, 12($sp)
-	lw	$a26, 16($sp)
-	lw	$a25, 0($a26)
-	j	shadow_check_and_group.2770
-beq_else.8875:
-	li	$v0, 1
-	jr	$ra
-shadow_check_one_or_group.2773:
-	lw	$a2, 8($a26)
-	lw	$a3, 4($a26)
+	lw	$a1, 4($sp)
+	lw	$a2, 0($sp)
+	j	trace_or_matrix.2955
+solve_each_element_fast.2961:
+	lw	$a3, 0($a2)
 	sll	$a4, $a0, 2
 	add	$a4, $a1, $a4
 	lw	$a4, 0($a4)
 	li	$a5, -1
-	bne	$a4, $a5, beq_else.8876
-	li	$v0, 0
+	bne	$a4, $a5, beq_else.17888
 	jr	$ra
-beq_else.8876:
-	sll	$a4, $a4, 2
-	add	$a4, $a3, $a4
-	lw	$a3, 0($a4)
+beq_else.17888:
+	li	$a5, 48
+	sll	$a6, $a4, 2
+	add	$a6, $a5, $a6
+	lw	$a5, 0($a6)
+	lw	$a6, 40($a5)
+	flw	$f0, 0($a6)
+	flw	$f1, 4($a6)
+	flw	$f2, 8($a6)
+	lw	$a7, 4($a2)
+	sll	$a8, $a4, 2
+	add	$a8, $a7, $a8
+	lw	$a7, 0($a8)
+	lw	$a8, 4($a5)
+	li	$a9, 1
+	sw	$a3, 0($sp)
+	sw	$a2, 4($sp)
+	sw	$a1, 8($sp)
+	sw	$a0, 12($sp)
+	sw	$a4, 16($sp)
+	bne	$a8, $a9, bne_else.17890
+	lw	$a6, 0($a2)
+	move	$a2, $a7
+	move	$a1, $a6
+	move	$a0, $a5
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solver_rect_fast.2853
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	j	bne_cont.17891
+bne_else.17890:
+	li	$a9, 2
+	bne	$a8, $a9, bne_else.17892
+	flw	$f0, 0($a7)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17894
+	li	$a5, 0
+	j	fbge_cont.17895
+fbge_else.17894:
+	li	$a5, 1
+fbge_cont.17895:
+	li	$a8, 0
+	bne	$a5, $a8, bne_else.17896
+	li	$a0, 0
+	j	bne_cont.17897
+bne_else.17896:
+	li	$a5, 540
+	flw	$f0, 0($a7)
+	flw	$f1, 12($a6)
+	fmul	$f0, $f0, $f1
+	fsw	$f0, 0($a5)
+	li	$a0, 1
+bne_cont.17897:
+	j	bne_cont.17893
+bne_else.17892:
+	move	$a2, $a6
+	move	$a1, $a7
+	move	$a0, $a5
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solver_second_fast2.2883
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+bne_cont.17893:
+bne_cont.17891:
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17898
+	li	$a0, 48
+	lw	$a1, 16($sp)
+	sll	$a1, $a1, 2
+	add	$a1, $a0, $a1
+	lw	$a0, 0($a1)
+	lw	$a0, 24($a0)
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.17899
+	jr	$ra
+beq_else.17899:
+	lw	$a0, 12($sp)
+	addi	$a0, $a0, 1
+	lw	$a1, 8($sp)
+	lw	$a2, 4($sp)
+	j	solve_each_element_fast.2961
+beq_else.17898:
+	li	$a1, 540
+	flw	$f0, 0($a1)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fsub	$f1, $f1, $f0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fblt	$f1, $f2, fbge_else.17901
+	li	$a1, 0
+	j	fbge_cont.17902
+fbge_else.17901:
+	li	$a1, 1
+fbge_cont.17902:
+	li	$a2, 0
+	bne	$a1, $a2, bne_else.17903
+	j	bne_cont.17904
+bne_else.17903:
+	li	$a1, 548
+	flw	$f1, 0($a1)
+	fsub	$f1, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fblt	$f1, $f2, fbge_else.17905
+	li	$a1, 0
+	j	fbge_cont.17906
+fbge_else.17905:
+	li	$a1, 1
+fbge_cont.17906:
+	li	$a2, 0
+	bne	$a1, $a2, bne_else.17907
+	j	bne_cont.17908
+bne_else.17907:
+	li	$v0, 15395
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 55050
+	mtc1	$f1, $v0
+	fadd	$f0, $f0, $f1
+	lw	$a1, 0($sp)
+	flw	$f1, 0($a1)
+	fmul	$f1, $f1, $f0
+	li	$a2, 648
+	flw	$f2, 0($a2)
+	fadd	$f1, $f1, $f2
+	flw	$f2, 4($a1)
+	fmul	$f2, $f2, $f0
+	li	$a2, 648
+	flw	$f3, 4($a2)
+	fadd	$f2, $f2, $f3
+	flw	$f3, 8($a1)
+	fmul	$f3, $f3, $f0
+	li	$a1, 648
+	flw	$f4, 8($a1)
+	fadd	$f3, $f3, $f4
+	lw	$a1, 8($sp)
+	lw	$a2, 0($a1)
+	li	$a3, -1
+	sw	$a0, 20($sp)
+	fsw	$f3, 24($sp)
+	fsw	$f2, 32($sp)
+	fsw	$f1, 40($sp)
+	fsw	$f0, 48($sp)
+	bne	$a2, $a3, bne_else.17909
+	li	$a0, 1
+	j	bne_cont.17910
+bne_else.17909:
+	li	$a3, 48
+	sll	$a2, $a2, 2
+	add	$a2, $a3, $a2
+	lw	$a2, 0($a2)
+	move	$a0, $a2
+	fmove	$f0, $f1
+	fmove	$f1, $f2
+	fmove	$f2, $f3
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	is_outside.2927
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17911
+	li	$a0, 1
+	flw	$f0, 40($sp)
+	flw	$f1, 32($sp)
+	flw	$f2, 24($sp)
+	lw	$a1, 8($sp)
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	check_all_inside.2932
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	move	$a0, $v0
+	j	bne_cont.17912
+bne_else.17911:
+	li	$a0, 0
+bne_cont.17912:
+bne_cont.17910:
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17913
+	j	bne_cont.17914
+bne_else.17913:
+	li	$a0, 548
+	flw	$f0, 48($sp)
+	fsw	$f0, 0($a0)
+	li	$a0, 552
+	flw	$f0, 40($sp)
+	fsw	$f0, 0($a0)
+	flw	$f0, 32($sp)
+	fsw	$f0, 4($a0)
+	flw	$f0, 24($sp)
+	fsw	$f0, 8($a0)
+	li	$a0, 564
+	lw	$a1, 16($sp)
+	sw	$a1, 0($a0)
+	li	$a0, 544
+	lw	$a1, 20($sp)
+	sw	$a1, 0($a0)
+bne_cont.17914:
+bne_cont.17908:
+bne_cont.17904:
+	lw	$a0, 12($sp)
+	addi	$a0, $a0, 1
+	lw	$a1, 8($sp)
+	lw	$a2, 4($sp)
+	j	solve_each_element_fast.2961
+solve_one_or_network_fast.2965:
+	sll	$a3, $a0, 2
+	add	$a3, $a1, $a3
+	lw	$a3, 0($a3)
+	li	$a4, -1
+	bne	$a3, $a4, beq_else.17915
+	jr	$ra
+beq_else.17915:
+	li	$a4, 332
+	sll	$a3, $a3, 2
+	add	$a3, $a4, $a3
+	lw	$a3, 0($a3)
 	li	$a4, 0
-	sw	$a1, 0($sp)
-	sw	$a26, 4($sp)
+	sw	$a2, 0($sp)
+	sw	$a1, 4($sp)
 	sw	$a0, 8($sp)
 	move	$a1, $a3
 	move	$a0, $a4
-	move	$a26, $a2
 	sw	$ra, 12($sp)
 	addi	$sp, $sp, 16
-	jal	shadow_check_and_group.2770
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8877
-	lw	$a0, 8($sp)
-	addi	$a0, $a0, 1
-	lw	$a1, 0($sp)
-	lw	$a26, 4($sp)
-	lw	$a25, 0($a26)
-	j	shadow_check_one_or_group.2773
-beq_else.8877:
-	li	$v0, 1
-	jr	$ra
-shadow_check_one_or_matrix.2776:
-	lw	$a2, 20($a26)
-	lw	$a3, 16($a26)
-	lw	$a4, 12($a26)
-	lw	$a5, 8($a26)
-	lw	$a6, 4($a26)
-	sll	$a7, $a0, 2
-	add	$a7, $a1, $a7
-	lw	$a7, 0($a7)
-	lw	$a8, 0($a7)
-	li	$a9, -1
-	bne	$a8, $a9, beq_else.8878
-	li	$v0, 0
-	jr	$ra
-beq_else.8878:
-	li	$a9, 99
-	sw	$a7, 0($sp)
-	sw	$a4, 4($sp)
-	sw	$a1, 8($sp)
-	sw	$a26, 12($sp)
-	sw	$a0, 16($sp)
-	bne	$a8, $a9, bne_else.8879
-	li	$a0, 1
-	j	bne_cont.8880
-bne_else.8879:
-	sw	$a3, 20($sp)
-	move	$a1, $a5
-	move	$a0, $a8
-	move	$a26, $a2
-	move	$a2, $a6
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	solver_fast.2704
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8881
-	li	$a0, 0
-	j	bne_cont.8882
-bne_else.8881:
-	lw	$a0, 20($sp)
-	flw	$f0, 0($a0)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	l.6366
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	mtc1	$f1, $a25
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	fless.2487
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8883
-	li	$a0, 0
-	j	bne_cont.8884
-bne_else.8883:
-	li	$a0, 1
-	lw	$a1, 0($sp)
-	lw	$a26, 4($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	shadow_check_one_or_group.2773
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8885
-	li	$a0, 0
-	j	bne_cont.8886
-bne_else.8885:
-	li	$a0, 1
-bne_cont.8886:
-bne_cont.8884:
-bne_cont.8882:
-bne_cont.8880:
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8887
-	lw	$a0, 16($sp)
-	addi	$a0, $a0, 1
-	lw	$a1, 8($sp)
-	lw	$a26, 12($sp)
-	lw	$a25, 0($a26)
-	j	shadow_check_one_or_matrix.2776
-beq_else.8887:
-	li	$a0, 1
-	lw	$a1, 0($sp)
-	lw	$a26, 4($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	shadow_check_one_or_group.2773
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8888
-	lw	$a0, 16($sp)
-	addi	$a0, $a0, 1
-	lw	$a1, 8($sp)
-	lw	$a26, 12($sp)
-	lw	$a25, 0($a26)
-	j	shadow_check_one_or_matrix.2776
-beq_else.8888:
-	li	$v0, 1
-	jr	$ra
-solve_each_element.2779:
-	lw	$a3, 36($a26)
-	lw	$a4, 32($a26)
-	lw	$a5, 28($a26)
-	lw	$a6, 24($a26)
-	lw	$a7, 20($a26)
-	lw	$a8, 16($a26)
-	lw	$a9, 12($a26)
-	lw	$a10, 8($a26)
-	lw	$a11, 4($a26)
-	sll	$a12, $a0, 2
-	add	$a12, $a1, $a12
-	lw	$a12, 0($a12)
-	li	$a13, -1
-	bne	$a12, $a13, beq_else.8889
-	jr	$ra
-beq_else.8889:
-	sw	$a8, 0($sp)
-	sw	$a10, 4($sp)
-	sw	$a9, 8($sp)
-	sw	$a11, 12($sp)
-	sw	$a4, 16($sp)
-	sw	$a3, 20($sp)
-	sw	$a5, 24($sp)
-	sw	$a2, 28($sp)
-	sw	$a1, 32($sp)
-	sw	$a26, 36($sp)
-	sw	$a0, 40($sp)
-	sw	$a7, 44($sp)
-	sw	$a12, 48($sp)
-	move	$a1, $a2
-	move	$a0, $a12
-	move	$a26, $a6
-	move	$a2, $a4
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	solver.2681
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8891
-	lw	$a0, 48($sp)
-	sll	$a0, $a0, 2
-	lw	$a1, 44($sp)
-	add	$a0, $a1, $a0
-	lw	$a0, 0($a0)
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	o_isinvert.2553
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8892
-	jr	$ra
-beq_else.8892:
-	lw	$a0, 40($sp)
-	addi	$a0, $a0, 1
-	lw	$a1, 32($sp)
-	lw	$a2, 28($sp)
-	lw	$a26, 36($sp)
-	lw	$a25, 0($a26)
-	j	solve_each_element.2779
-beq_else.8891:
-	lw	$a1, 24($sp)
-	flw	$f1, 0($a1)
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	l.6035
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 52($sp)
-	fsw	$f1, 56($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	fless.2487
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8894
-	j	bne_cont.8895
-bne_else.8894:
-	lw	$a0, 20($sp)
-	flw	$f1, 0($a0)
-	flw	$f0, 56($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	fless.2487
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8896
-	j	bne_cont.8897
-bne_else.8896:
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	l.6353
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	mtc1	$f0, $a25
-	flw	$f1, 56($sp)
-	fadd	$f0, $f1, $f0
-	lw	$a0, 28($sp)
-	flw	$f1, 0($a0)
-	fmul	$f1, $f1, $f0
-	lw	$a1, 16($sp)
-	flw	$f2, 0($a1)
-	fadd	$f1, $f1, $f2
-	flw	$f2, 4($a0)
-	fmul	$f2, $f2, $f0
-	flw	$f3, 4($a1)
-	fadd	$f2, $f2, $f3
-	flw	$f3, 8($a0)
-	fmul	$f3, $f3, $f0
-	flw	$f4, 8($a1)
-	fadd	$f3, $f3, $f4
-	li	$a1, 0
-	lw	$a2, 32($sp)
-	lw	$a26, 12($sp)
-	fsw	$f3, 64($sp)
-	fsw	$f2, 72($sp)
-	fsw	$f1, 80($sp)
-	fsw	$f0, 88($sp)
-	move	$a0, $a1
-	move	$a1, $a2
-	fmove	$f0, $f1
-	fmove	$f1, $f2
-	fmove	$f2, $f3
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	check_all_inside.2764
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8898
-	j	bne_cont.8899
-bne_else.8898:
-	lw	$a0, 20($sp)
-	flw	$f0, 88($sp)
-	fsw	$f0, 0($a0)
-	flw	$f0, 80($sp)
-	flw	$f1, 72($sp)
-	flw	$f2, 64($sp)
-	lw	$a0, 8($sp)
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	vecset.2501
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	fmove	$f30, $fv
-	lw	$a0, 4($sp)
-	lw	$a1, 48($sp)
-	sw	$a1, 0($a0)
-	lw	$a0, 0($sp)
-	lw	$a1, 52($sp)
-	sw	$a1, 0($a0)
-bne_cont.8899:
-bne_cont.8897:
-bne_cont.8895:
-	lw	$a0, 40($sp)
-	addi	$a0, $a0, 1
-	lw	$a1, 32($sp)
-	lw	$a2, 28($sp)
-	lw	$a26, 36($sp)
-	lw	$a25, 0($a26)
-	j	solve_each_element.2779
-solve_one_or_network.2783:
-	lw	$a3, 8($a26)
-	lw	$a4, 4($a26)
-	sll	$a5, $a0, 2
-	add	$a5, $a1, $a5
-	lw	$a5, 0($a5)
-	li	$a6, -1
-	bne	$a5, $a6, beq_else.8900
-	jr	$ra
-beq_else.8900:
-	sll	$a5, $a5, 2
-	add	$a5, $a4, $a5
-	lw	$a4, 0($a5)
-	li	$a5, 0
-	sw	$a2, 0($sp)
-	sw	$a1, 4($sp)
-	sw	$a26, 8($sp)
-	sw	$a0, 12($sp)
-	move	$a1, $a4
-	move	$a0, $a5
-	move	$a26, $a3
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	solve_each_element.2779
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f30, $fv
-	lw	$a0, 12($sp)
-	addi	$a0, $a0, 1
-	lw	$a1, 4($sp)
-	lw	$a2, 0($sp)
-	lw	$a26, 8($sp)
-	lw	$a25, 0($a26)
-	j	solve_one_or_network.2783
-trace_or_matrix.2787:
-	lw	$a3, 20($a26)
-	lw	$a4, 16($a26)
-	lw	$a5, 12($a26)
-	lw	$a6, 8($a26)
-	lw	$a7, 4($a26)
-	sll	$a8, $a0, 2
-	add	$a8, $a1, $a8
-	lw	$a8, 0($a8)
-	lw	$a9, 0($a8)
-	li	$a10, -1
-	bne	$a9, $a10, beq_else.8902
-	jr	$ra
-beq_else.8902:
-	li	$a10, 99
-	sw	$a2, 0($sp)
-	sw	$a1, 4($sp)
-	sw	$a26, 8($sp)
-	sw	$a0, 12($sp)
-	bne	$a9, $a10, bne_else.8904
-	li	$a3, 1
-	move	$a1, $a8
-	move	$a0, $a3
-	move	$a26, $a7
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	solve_one_or_network.2783
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f30, $fv
-	j	bne_cont.8905
-bne_else.8904:
-	sw	$a8, 16($sp)
-	sw	$a7, 20($sp)
-	sw	$a3, 24($sp)
-	sw	$a5, 28($sp)
-	move	$a1, $a2
-	move	$a0, $a9
-	move	$a26, $a6
-	move	$a2, $a4
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	solver.2681
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8906
-	j	bne_cont.8907
-bne_else.8906:
-	lw	$a0, 28($sp)
-	flw	$f0, 0($a0)
-	lw	$a0, 24($sp)
-	flw	$f1, 0($a0)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	fless.2487
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8908
-	j	bne_cont.8909
-bne_else.8908:
-	li	$a0, 1
-	lw	$a1, 16($sp)
-	lw	$a2, 0($sp)
-	lw	$a26, 20($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	solve_one_or_network.2783
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f30, $fv
-bne_cont.8909:
-bne_cont.8907:
-bne_cont.8905:
-	lw	$a0, 12($sp)
-	addi	$a0, $a0, 1
-	lw	$a1, 4($sp)
-	lw	$a2, 0($sp)
-	lw	$a26, 8($sp)
-	lw	$a25, 0($a26)
-	j	trace_or_matrix.2787
-judge_intersection.2791:
-	lw	$a1, 12($a26)
-	lw	$a2, 8($a26)
-	lw	$a3, 4($a26)
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6386
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	fsw	$f0, 0($a2)
-	li	$a4, 0
-	lw	$a3, 0($a3)
-	sw	$a2, 0($sp)
-	move	$a2, $a0
-	move	$a26, $a1
-	move	$a1, $a3
-	move	$a0, $a4
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	trace_or_matrix.2787
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	fmove	$f30, $fv
-	lw	$a0, 0($sp)
-	flw	$f1, 0($a0)
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6366
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	fsw	$f1, 8($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	fless.2487
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8911
-	li	$v0, 0
-	jr	$ra
-beq_else.8911:
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	l.6390
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	mtc1	$f1, $a25
-	flw	$f0, 8($sp)
-	j	fless.2487
-solve_each_element_fast.2793:
-	lw	$a3, 36($a26)
-	lw	$a4, 32($a26)
-	lw	$a5, 28($a26)
-	lw	$a6, 24($a26)
-	lw	$a7, 20($a26)
-	lw	$a8, 16($a26)
-	lw	$a9, 12($a26)
-	lw	$a10, 8($a26)
-	lw	$a11, 4($a26)
-	sw	$a8, 0($sp)
-	sw	$a10, 4($sp)
-	sw	$a9, 8($sp)
-	sw	$a11, 12($sp)
-	sw	$a4, 16($sp)
-	sw	$a3, 20($sp)
-	sw	$a6, 24($sp)
-	sw	$a26, 28($sp)
-	sw	$a7, 32($sp)
-	sw	$a2, 36($sp)
-	sw	$a5, 40($sp)
-	sw	$a1, 44($sp)
-	sw	$a0, 48($sp)
-	move	$a0, $a2
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	d_vec.2608
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	move	$a0, $v0
-	lw	$a1, 48($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 44($sp)
-	add	$a2, $a3, $a2
-	lw	$a2, 0($a2)
-	li	$a4, -1
-	bne	$a2, $a4, beq_else.8912
-	jr	$ra
-beq_else.8912:
-	lw	$a4, 36($sp)
-	lw	$a26, 40($sp)
-	sw	$a0, 52($sp)
-	sw	$a2, 56($sp)
-	move	$a1, $a4
-	move	$a0, $a2
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	solver_fast2.2722
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8914
-	lw	$a0, 56($sp)
-	sll	$a0, $a0, 2
-	lw	$a1, 32($sp)
-	add	$a0, $a1, $a0
-	lw	$a0, 0($a0)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	o_isinvert.2553
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8915
-	jr	$ra
-beq_else.8915:
-	lw	$a0, 48($sp)
-	addi	$a0, $a0, 1
-	lw	$a1, 44($sp)
-	lw	$a2, 36($sp)
-	lw	$a26, 28($sp)
-	lw	$a25, 0($a26)
-	j	solve_each_element_fast.2793
-beq_else.8914:
-	lw	$a1, 24($sp)
-	flw	$f1, 0($a1)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	l.6035
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 60($sp)
-	fsw	$f1, 64($sp)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	fless.2487
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8917
-	j	bne_cont.8918
-bne_else.8917:
-	lw	$a0, 20($sp)
-	flw	$f1, 0($a0)
-	flw	$f0, 64($sp)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	fless.2487
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8919
-	j	bne_cont.8920
-bne_else.8919:
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	l.6353
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	mtc1	$f0, $a25
-	flw	$f1, 64($sp)
-	fadd	$f0, $f1, $f0
-	lw	$a0, 52($sp)
-	flw	$f1, 0($a0)
-	fmul	$f1, $f1, $f0
-	lw	$a1, 16($sp)
-	flw	$f2, 0($a1)
-	fadd	$f1, $f1, $f2
-	flw	$f2, 4($a0)
-	fmul	$f2, $f2, $f0
-	flw	$f3, 4($a1)
-	fadd	$f2, $f2, $f3
-	flw	$f3, 8($a0)
-	fmul	$f3, $f3, $f0
-	flw	$f4, 8($a1)
-	fadd	$f3, $f3, $f4
-	li	$a0, 0
-	lw	$a1, 44($sp)
-	lw	$a26, 12($sp)
-	fsw	$f3, 72($sp)
-	fsw	$f2, 80($sp)
-	fsw	$f1, 88($sp)
-	fsw	$f0, 96($sp)
-	fmove	$f0, $f1
-	fmove	$f1, $f2
-	fmove	$f2, $f3
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	check_all_inside.2764
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8921
-	j	bne_cont.8922
-bne_else.8921:
-	lw	$a0, 20($sp)
-	flw	$f0, 96($sp)
-	fsw	$f0, 0($a0)
-	flw	$f0, 88($sp)
-	flw	$f1, 80($sp)
-	flw	$f2, 72($sp)
-	lw	$a0, 8($sp)
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	vecset.2501
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	fmove	$f30, $fv
-	lw	$a0, 4($sp)
-	lw	$a1, 56($sp)
-	sw	$a1, 0($a0)
-	lw	$a0, 0($sp)
-	lw	$a1, 60($sp)
-	sw	$a1, 0($a0)
-bne_cont.8922:
-bne_cont.8920:
-bne_cont.8918:
-	lw	$a0, 48($sp)
-	addi	$a0, $a0, 1
-	lw	$a1, 44($sp)
-	lw	$a2, 36($sp)
-	lw	$a26, 28($sp)
-	lw	$a25, 0($a26)
-	j	solve_each_element_fast.2793
-solve_one_or_network_fast.2797:
-	lw	$a3, 8($a26)
-	lw	$a4, 4($a26)
-	sll	$a5, $a0, 2
-	add	$a5, $a1, $a5
-	lw	$a5, 0($a5)
-	li	$a6, -1
-	bne	$a5, $a6, beq_else.8923
-	jr	$ra
-beq_else.8923:
-	sll	$a5, $a5, 2
-	add	$a5, $a4, $a5
-	lw	$a4, 0($a5)
-	li	$a5, 0
-	sw	$a2, 0($sp)
-	sw	$a1, 4($sp)
-	sw	$a26, 8($sp)
-	sw	$a0, 12($sp)
-	move	$a1, $a4
-	move	$a0, $a5
-	move	$a26, $a3
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	solve_each_element_fast.2793
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f30, $fv
-	lw	$a0, 12($sp)
-	addi	$a0, $a0, 1
-	lw	$a1, 4($sp)
-	lw	$a2, 0($sp)
-	lw	$a26, 8($sp)
-	lw	$a25, 0($a26)
-	j	solve_one_or_network_fast.2797
-trace_or_matrix_fast.2801:
-	lw	$a3, 16($a26)
-	lw	$a4, 12($a26)
-	lw	$a5, 8($a26)
-	lw	$a6, 4($a26)
-	sll	$a7, $a0, 2
-	add	$a7, $a1, $a7
-	lw	$a7, 0($a7)
-	lw	$a8, 0($a7)
-	li	$a9, -1
-	bne	$a8, $a9, beq_else.8925
-	jr	$ra
-beq_else.8925:
-	li	$a9, 99
-	sw	$a2, 0($sp)
-	sw	$a1, 4($sp)
-	sw	$a26, 8($sp)
-	sw	$a0, 12($sp)
-	bne	$a8, $a9, bne_else.8927
-	li	$a3, 1
-	move	$a1, $a7
-	move	$a0, $a3
-	move	$a26, $a6
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	solve_one_or_network_fast.2797
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f30, $fv
-	j	bne_cont.8928
-bne_else.8927:
-	sw	$a7, 16($sp)
-	sw	$a6, 20($sp)
-	sw	$a3, 24($sp)
-	sw	$a5, 28($sp)
-	move	$a1, $a2
-	move	$a0, $a8
-	move	$a26, $a4
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	solver_fast2.2722
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8929
-	j	bne_cont.8930
-bne_else.8929:
-	lw	$a0, 28($sp)
-	flw	$f0, 0($a0)
-	lw	$a0, 24($sp)
-	flw	$f1, 0($a0)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	fless.2487
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8931
-	j	bne_cont.8932
-bne_else.8931:
-	li	$a0, 1
-	lw	$a1, 16($sp)
-	lw	$a2, 0($sp)
-	lw	$a26, 20($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	solve_one_or_network_fast.2797
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f30, $fv
-bne_cont.8932:
-bne_cont.8930:
-bne_cont.8928:
-	lw	$a0, 12($sp)
-	addi	$a0, $a0, 1
-	lw	$a1, 4($sp)
-	lw	$a2, 0($sp)
-	lw	$a26, 8($sp)
-	lw	$a25, 0($a26)
-	j	trace_or_matrix_fast.2801
-judge_intersection_fast.2805:
-	lw	$a1, 12($a26)
-	lw	$a2, 8($a26)
-	lw	$a3, 4($a26)
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6386
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	fsw	$f0, 0($a2)
-	li	$a4, 0
-	lw	$a3, 0($a3)
-	sw	$a2, 0($sp)
-	move	$a2, $a0
-	move	$a26, $a1
-	move	$a1, $a3
-	move	$a0, $a4
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	trace_or_matrix_fast.2801
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	fmove	$f30, $fv
-	lw	$a0, 0($sp)
-	flw	$f1, 0($a0)
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6366
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	fsw	$f1, 8($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	fless.2487
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.8934
-	li	$v0, 0
-	jr	$ra
-beq_else.8934:
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	l.6390
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	mtc1	$f1, $a25
-	flw	$f0, 8($sp)
-	j	fless.2487
-get_nvector_rect.2807:
-	lw	$a1, 8($a26)
-	lw	$a2, 4($a26)
-	lw	$a2, 0($a2)
-	sw	$a1, 0($sp)
-	sw	$a0, 4($sp)
-	sw	$a2, 8($sp)
-	move	$a0, $a1
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	vecbzero.2509
+	jal	solve_each_element_fast.2961
 	subi	$sp, $sp, 16
 	lw	$ra, 12($sp)
 	fmove	$f30, $fv
 	lw	$a0, 8($sp)
-	subi	$a1, $a0, 1
-	subi	$a0, $a0, 1
-	sll	$a0, $a0, 2
+	addi	$a0, $a0, 1
+	sll	$a1, $a0, 2
 	lw	$a2, 4($sp)
-	add	$a0, $a2, $a0
-	flw	$f0, 0($a0)
-	sw	$a1, 12($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	sgn.2493
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	fneg.2473
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	lw	$a0, 12($sp)
-	sll	$a0, $a0, 2
-	lw	$a1, 0($sp)
-	add	$a0, $a1, $a0
-	fsw	$f0, 0($a0)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a3, -1
+	bne	$a1, $a3, beq_else.17917
 	jr	$ra
-get_nvector_plane.2809:
-	lw	$a1, 4($a26)
+beq_else.17917:
+	li	$a3, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a3, $a1
+	lw	$a1, 0($a1)
+	li	$a3, 0
+	lw	$a4, 0($sp)
+	sw	$a0, 12($sp)
+	move	$a2, $a4
+	move	$a0, $a3
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solve_each_element_fast.2961
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	lw	$a0, 12($sp)
+	addi	$a0, $a0, 1
+	sll	$a1, $a0, 2
+	lw	$a2, 4($sp)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a3, -1
+	bne	$a1, $a3, beq_else.17919
+	jr	$ra
+beq_else.17919:
+	li	$a3, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a3, $a1
+	lw	$a1, 0($a1)
+	li	$a3, 0
+	lw	$a4, 0($sp)
+	sw	$a0, 16($sp)
+	move	$a2, $a4
+	move	$a0, $a3
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solve_each_element_fast.2961
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	lw	$a0, 16($sp)
+	addi	$a0, $a0, 1
+	sll	$a1, $a0, 2
+	lw	$a2, 4($sp)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a3, -1
+	bne	$a1, $a3, beq_else.17921
+	jr	$ra
+beq_else.17921:
+	li	$a3, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a3, $a1
+	lw	$a1, 0($a1)
+	li	$a3, 0
+	lw	$a4, 0($sp)
+	sw	$a0, 20($sp)
+	move	$a2, $a4
+	move	$a0, $a3
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	solve_each_element_fast.2961
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	lw	$a0, 20($sp)
+	addi	$a0, $a0, 1
+	lw	$a1, 4($sp)
+	lw	$a2, 0($sp)
+	j	solve_one_or_network_fast.2965
+trace_or_matrix_fast.2969:
+	sll	$a3, $a0, 2
+	add	$a3, $a1, $a3
+	lw	$a3, 0($a3)
+	lw	$a4, 0($a3)
+	li	$a5, -1
+	bne	$a4, $a5, beq_else.17923
+	jr	$ra
+beq_else.17923:
+	li	$a5, 99
+	sw	$a2, 0($sp)
+	sw	$a1, 4($sp)
+	sw	$a0, 8($sp)
+	bne	$a4, $a5, bne_else.17925
+	lw	$a4, 4($a3)
+	li	$a5, -1
+	bne	$a4, $a5, bne_else.17927
+	j	bne_cont.17928
+bne_else.17927:
+	li	$a5, 332
+	sll	$a4, $a4, 2
+	add	$a4, $a5, $a4
+	lw	$a4, 0($a4)
+	li	$a5, 0
+	sw	$a3, 12($sp)
+	move	$a1, $a4
+	move	$a0, $a5
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solve_each_element_fast.2961
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	lw	$a0, 12($sp)
+	lw	$a1, 8($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17929
+	j	bne_cont.17930
+bne_else.17929:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	lw	$a3, 0($sp)
+	move	$a0, $a2
+	move	$a2, $a3
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solve_each_element_fast.2961
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	lw	$a0, 12($sp)
+	lw	$a1, 12($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17931
+	j	bne_cont.17932
+bne_else.17931:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	lw	$a3, 0($sp)
+	move	$a0, $a2
+	move	$a2, $a3
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solve_each_element_fast.2961
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	li	$a0, 4
+	lw	$a1, 12($sp)
+	lw	$a2, 0($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solve_one_or_network_fast.2965
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+bne_cont.17932:
+bne_cont.17930:
+bne_cont.17928:
+	j	bne_cont.17926
+bne_else.17925:
+	li	$a5, 48
+	sll	$a6, $a4, 2
+	add	$a6, $a5, $a6
+	lw	$a5, 0($a6)
+	lw	$a6, 40($a5)
+	flw	$f0, 0($a6)
+	flw	$f1, 4($a6)
+	flw	$f2, 8($a6)
+	lw	$a7, 4($a2)
+	sll	$a4, $a4, 2
+	add	$a4, $a7, $a4
+	lw	$a4, 0($a4)
+	lw	$a7, 4($a5)
+	li	$a8, 1
+	sw	$a3, 12($sp)
+	bne	$a7, $a8, bne_else.17933
+	lw	$a6, 0($a2)
+	move	$a2, $a4
+	move	$a1, $a6
+	move	$a0, $a5
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solver_rect_fast.2853
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	j	bne_cont.17934
+bne_else.17933:
+	li	$a8, 2
+	bne	$a7, $a8, bne_else.17935
+	flw	$f0, 0($a4)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17937
+	li	$a5, 0
+	j	fbge_cont.17938
+fbge_else.17937:
+	li	$a5, 1
+fbge_cont.17938:
+	li	$a7, 0
+	bne	$a5, $a7, bne_else.17939
+	li	$a0, 0
+	j	bne_cont.17940
+bne_else.17939:
+	li	$a5, 540
+	flw	$f0, 0($a4)
+	flw	$f1, 12($a6)
+	fmul	$f0, $f0, $f1
+	fsw	$f0, 0($a5)
+	li	$a0, 1
+bne_cont.17940:
+	j	bne_cont.17936
+bne_else.17935:
+	move	$a2, $a6
+	move	$a1, $a4
+	move	$a0, $a5
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solver_second_fast2.2883
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+bne_cont.17936:
+bne_cont.17934:
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17941
+	j	bne_cont.17942
+bne_else.17941:
+	li	$a0, 540
+	flw	$f0, 0($a0)
+	li	$a0, 548
+	flw	$f1, 0($a0)
+	fsub	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17943
+	li	$a0, 0
+	j	fbge_cont.17944
+fbge_else.17943:
+	li	$a0, 1
+fbge_cont.17944:
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17945
+	j	bne_cont.17946
+bne_else.17945:
+	lw	$a0, 12($sp)
+	lw	$a1, 4($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17947
+	j	bne_cont.17948
+bne_else.17947:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	lw	$a3, 0($sp)
+	move	$a0, $a2
+	move	$a2, $a3
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solve_each_element_fast.2961
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	lw	$a0, 12($sp)
+	lw	$a1, 8($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17949
+	j	bne_cont.17950
+bne_else.17949:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	lw	$a3, 0($sp)
+	move	$a0, $a2
+	move	$a2, $a3
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solve_each_element_fast.2961
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	lw	$a0, 12($sp)
+	lw	$a1, 12($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17951
+	j	bne_cont.17952
+bne_else.17951:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	lw	$a3, 0($sp)
+	move	$a0, $a2
+	move	$a2, $a3
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solve_each_element_fast.2961
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	li	$a0, 4
+	lw	$a1, 12($sp)
+	lw	$a2, 0($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	solve_one_or_network_fast.2965
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+bne_cont.17952:
+bne_cont.17950:
+bne_cont.17948:
+bne_cont.17946:
+bne_cont.17942:
+bne_cont.17926:
+	lw	$a0, 8($sp)
+	addi	$a0, $a0, 1
+	sll	$a1, $a0, 2
+	lw	$a2, 4($sp)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	lw	$a3, 0($a1)
+	li	$a4, -1
+	bne	$a3, $a4, beq_else.17953
+	jr	$ra
+beq_else.17953:
+	li	$a4, 99
+	sw	$a0, 16($sp)
+	bne	$a3, $a4, bne_else.17955
+	lw	$a3, 4($a1)
+	li	$a4, -1
+	bne	$a3, $a4, bne_else.17957
+	j	bne_cont.17958
+bne_else.17957:
+	li	$a4, 332
+	sll	$a3, $a3, 2
+	add	$a3, $a4, $a3
+	lw	$a3, 0($a3)
+	li	$a4, 0
+	lw	$a5, 0($sp)
+	sw	$a1, 20($sp)
+	move	$a2, $a5
+	move	$a1, $a3
+	move	$a0, $a4
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	solve_each_element_fast.2961
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	lw	$a0, 20($sp)
+	lw	$a1, 8($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17959
+	j	bne_cont.17960
+bne_else.17959:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	lw	$a3, 0($sp)
+	move	$a0, $a2
+	move	$a2, $a3
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	solve_each_element_fast.2961
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	li	$a0, 3
+	lw	$a1, 20($sp)
+	lw	$a2, 0($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	solve_one_or_network_fast.2965
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+bne_cont.17960:
+bne_cont.17958:
+	j	bne_cont.17956
+bne_else.17955:
+	lw	$a4, 0($sp)
+	sw	$a1, 20($sp)
+	move	$a1, $a4
+	move	$a0, $a3
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	solver_fast2.2890
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17961
+	j	bne_cont.17962
+bne_else.17961:
+	li	$a0, 540
+	flw	$f0, 0($a0)
+	li	$a0, 548
+	flw	$f1, 0($a0)
+	fsub	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17963
+	li	$a0, 0
+	j	fbge_cont.17964
+fbge_else.17963:
+	li	$a0, 1
+fbge_cont.17964:
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.17965
+	j	bne_cont.17966
+bne_else.17965:
+	lw	$a0, 20($sp)
+	lw	$a1, 4($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17967
+	j	bne_cont.17968
+bne_else.17967:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	lw	$a3, 0($sp)
+	move	$a0, $a2
+	move	$a2, $a3
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	solve_each_element_fast.2961
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	lw	$a0, 20($sp)
+	lw	$a1, 8($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.17969
+	j	bne_cont.17970
+bne_else.17969:
+	li	$a2, 332
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 0
+	lw	$a3, 0($sp)
+	move	$a0, $a2
+	move	$a2, $a3
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	solve_each_element_fast.2961
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	li	$a0, 3
+	lw	$a1, 20($sp)
+	lw	$a2, 0($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	solve_one_or_network_fast.2965
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+bne_cont.17970:
+bne_cont.17968:
+bne_cont.17966:
+bne_cont.17962:
+bne_cont.17956:
+	lw	$a0, 16($sp)
+	addi	$a0, $a0, 1
+	lw	$a1, 4($sp)
+	lw	$a2, 0($sp)
+	j	trace_or_matrix_fast.2969
+get_nvector_second.2979:
+	li	$a1, 552
+	flw	$f0, 0($a1)
+	lw	$a1, 20($a0)
+	flw	$f1, 0($a1)
+	fsub	$f0, $f0, $f1
+	li	$a1, 552
+	flw	$f1, 4($a1)
+	lw	$a1, 20($a0)
+	flw	$f2, 4($a1)
+	fsub	$f1, $f1, $f2
+	li	$a1, 552
+	flw	$f2, 8($a1)
+	lw	$a1, 20($a0)
+	flw	$f3, 8($a1)
+	fsub	$f2, $f2, $f3
+	lw	$a1, 16($a0)
+	flw	$f3, 0($a1)
+	fmul	$f3, $f0, $f3
+	lw	$a1, 16($a0)
+	flw	$f4, 4($a1)
+	fmul	$f4, $f1, $f4
+	lw	$a1, 16($a0)
+	flw	$f5, 8($a1)
+	fmul	$f5, $f2, $f5
+	lw	$a1, 12($a0)
+	li	$a2, 0
+	bne	$a1, $a2, bne_else.17971
+	li	$a1, 568
+	fsw	$f3, 0($a1)
+	li	$a1, 568
+	fsw	$f4, 4($a1)
+	li	$a1, 568
+	fsw	$f5, 8($a1)
+	j	bne_cont.17972
+bne_else.17971:
+	li	$a1, 568
+	lw	$a2, 36($a0)
+	flw	$f6, 8($a2)
+	fmul	$f6, $f1, $f6
+	lw	$a2, 36($a0)
+	flw	$f7, 4($a2)
+	fmul	$f7, $f2, $f7
+	fadd	$f6, $f6, $f7
+	li	$v0, 16128
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f7, $v0
+	fmul	$f6, $f6, $f7
+	fadd	$f3, $f3, $f6
+	fsw	$f3, 0($a1)
+	li	$a1, 568
+	lw	$a2, 36($a0)
+	flw	$f3, 8($a2)
+	fmul	$f3, $f0, $f3
+	lw	$a2, 36($a0)
+	flw	$f6, 0($a2)
+	fmul	$f2, $f2, $f6
+	fadd	$f2, $f3, $f2
+	li	$v0, 16128
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fmul	$f2, $f2, $f3
+	fadd	$f2, $f4, $f2
+	fsw	$f2, 4($a1)
+	li	$a1, 568
+	lw	$a2, 36($a0)
+	flw	$f2, 4($a2)
+	fmul	$f0, $f0, $f2
+	lw	$a2, 36($a0)
+	flw	$f2, 0($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	li	$v0, 16128
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	fadd	$f0, $f5, $f0
+	fsw	$f0, 8($a1)
+bne_cont.17972:
+	li	$a1, 568
+	lw	$a0, 24($a0)
+	move	$a25, $a1
+	move	$a1, $a0
+	move	$a0, $a25
+	j	vecunit_sgn.2687
+utexture.2984:
+	lw	$a2, 0($a0)
+	li	$a3, 580
+	lw	$a4, 32($a0)
+	flw	$f0, 0($a4)
+	fsw	$f0, 0($a3)
+	li	$a3, 580
+	lw	$a4, 32($a0)
+	flw	$f0, 4($a4)
+	fsw	$f0, 4($a3)
+	li	$a3, 580
+	lw	$a4, 32($a0)
+	flw	$f0, 8($a4)
+	fsw	$f0, 8($a3)
+	li	$a3, 1
+	bne	$a2, $a3, beq_else.17973
+	flw	$f0, 0($a1)
+	lw	$a2, 20($a0)
+	flw	$f1, 0($a2)
+	fsub	$f0, $f0, $f1
+	li	$v0, 15692
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fmul	$f1, $f0, $f1
 	sw	$a0, 0($sp)
 	sw	$a1, 4($sp)
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	o_param_a.2557
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
+	fsw	$f0, 8($sp)
+	fmove	$f0, $f1
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_floor
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
 	fmove	$f0, $fv
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	fneg.2473
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	fmove	$f0, $fv
-	lw	$a0, 4($sp)
-	fsw	$f0, 0($a0)
-	lw	$a1, 0($sp)
-	move	$a0, $a1
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	o_param_b.2559
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	fmove	$f0, $fv
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	fneg.2473
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	fmove	$f0, $fv
-	lw	$a0, 4($sp)
-	fsw	$f0, 4($a0)
-	lw	$a1, 0($sp)
-	move	$a0, $a1
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	o_param_c.2561
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	fmove	$f0, $fv
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	fneg.2473
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	fmove	$f0, $fv
-	lw	$a0, 4($sp)
-	fsw	$f0, 8($a0)
-	jr	$ra
-get_nvector_second.2811:
-	lw	$a1, 8($a26)
-	lw	$a2, 4($a26)
-	flw	$f0, 0($a2)
-	sw	$a1, 0($sp)
-	sw	$a0, 4($sp)
-	sw	$a2, 8($sp)
-	fsw	$f0, 16($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	o_param_x.2565
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	fmove	$f0, $fv
-	flw	$f1, 16($sp)
+	li	$v0, 16800
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	flw	$f1, 8($sp)
 	fsub	$f0, $f1, $f0
-	lw	$a0, 8($sp)
-	flw	$f1, 4($a0)
+	li	$v0, 16672
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fsub	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17974
+	li	$a0, 0
+	j	fbge_cont.17975
+fbge_else.17974:
+	li	$a0, 1
+fbge_cont.17975:
 	lw	$a1, 4($sp)
+	flw	$f0, 8($a1)
+	lw	$a1, 0($sp)
+	lw	$a1, 20($a1)
+	flw	$f1, 8($a1)
+	fsub	$f0, $f0, $f1
+	li	$v0, 15692
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fmul	$f1, $f0, $f1
+	sw	$a0, 16($sp)
 	fsw	$f0, 24($sp)
-	fsw	$f1, 32($sp)
-	move	$a0, $a1
+	fmove	$f0, $f1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_floor
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f0, $fv
+	li	$v0, 16800
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	flw	$f1, 24($sp)
+	fsub	$f0, $f1, $f0
+	li	$v0, 16672
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fsub	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17977
+	li	$a0, 0
+	j	fbge_cont.17978
+fbge_else.17977:
+	li	$a0, 1
+fbge_cont.17978:
+	li	$a1, 580
+	li	$a2, 0
+	lw	$a3, 16($sp)
+	bne	$a3, $a2, bne_else.17979
+	li	$a2, 0
+	bne	$a0, $a2, bne_else.17981
+	li	$v0, 17279
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	j	bne_cont.17982
+bne_else.17981:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+bne_cont.17982:
+	j	bne_cont.17980
+bne_else.17979:
+	li	$a2, 0
+	bne	$a0, $a2, bne_else.17983
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	j	bne_cont.17984
+bne_else.17983:
+	li	$v0, 17279
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+bne_cont.17984:
+bne_cont.17980:
+	fsw	$f0, 4($a1)
+	jr	$ra
+beq_else.17973:
+	li	$a3, 2
+	bne	$a2, $a3, beq_else.17986
+	flw	$f0, 4($a1)
+	li	$v0, 16000
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_sin
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f0, $fv
+	fmul	$f0, $f0, $f0
+	li	$a0, 580
+	li	$v0, 17279
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f1, $f1, $f0
+	fsw	$f1, 0($a0)
+	li	$a0, 580
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fsub	$f0, $f1, $f0
+	li	$v0, 17279
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f1, $f0
+	fsw	$f0, 4($a0)
+	jr	$ra
+beq_else.17986:
+	li	$a3, 3
+	bne	$a2, $a3, beq_else.17988
+	flw	$f0, 0($a1)
+	lw	$a2, 20($a0)
+	flw	$f1, 0($a2)
+	fsub	$f0, $f0, $f1
+	flw	$f1, 8($a1)
+	lw	$a0, 20($a0)
+	flw	$f2, 8($a0)
+	fsub	$f1, $f1, $f2
+	fmul	$f0, $f0, $f0
+	fmul	$f1, $f1, $f1
+	fadd	$f0, $f0, $f1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_sqrt
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f0, $fv
+	li	$v0, 16672
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	fsw	$f0, 32($sp)
 	sw	$ra, 44($sp)
 	addi	$sp, $sp, 48
-	jal	o_param_y.2567
+	jal	min_caml_floor
 	subi	$sp, $sp, 48
 	lw	$ra, 44($sp)
 	fmove	$f0, $fv
 	flw	$f1, 32($sp)
 	fsub	$f0, $f1, $f0
-	lw	$a0, 8($sp)
-	flw	$f1, 8($a0)
-	lw	$a0, 4($sp)
-	fsw	$f0, 40($sp)
-	fsw	$f1, 48($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	o_param_z.2569
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
+	li	$v0, 16457
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 4059
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	min_caml_cos
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
 	fmove	$f0, $fv
-	flw	$f1, 48($sp)
+	fmul	$f0, $f0, $f0
+	li	$a0, 580
+	li	$v0, 17279
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f1, $f0, $f1
+	fsw	$f1, 4($a0)
+	li	$a0, 580
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
 	fsub	$f0, $f1, $f0
+	li	$v0, 17279
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	fsw	$f0, 8($a0)
+	jr	$ra
+beq_else.17988:
+	li	$a3, 4
+	bne	$a2, $a3, beq_else.17990
+	flw	$f0, 0($a1)
+	lw	$a2, 20($a0)
+	flw	$f1, 0($a2)
+	fsub	$f0, $f0, $f1
+	lw	$a2, 16($a0)
+	flw	$f1, 0($a2)
+	sw	$a0, 0($sp)
+	sw	$a1, 4($sp)
+	fsw	$f0, 40($sp)
+	fmove	$f0, $f1
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	min_caml_sqrt
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	fmove	$f0, $fv
+	flw	$f1, 40($sp)
+	fmul	$f0, $f1, $f0
 	lw	$a0, 4($sp)
-	fsw	$f0, 56($sp)
+	flw	$f1, 8($a0)
+	lw	$a1, 0($sp)
+	lw	$a2, 20($a1)
+	flw	$f2, 8($a2)
+	fsub	$f1, $f1, $f2
+	lw	$a2, 16($a1)
+	flw	$f2, 8($a2)
+	fsw	$f0, 48($sp)
+	fsw	$f1, 56($sp)
+	fmove	$f0, $f2
 	sw	$ra, 68($sp)
 	addi	$sp, $sp, 72
-	jal	o_param_a.2557
+	jal	min_caml_sqrt
 	subi	$sp, $sp, 72
 	lw	$ra, 68($sp)
 	fmove	$f0, $fv
-	flw	$f1, 24($sp)
+	flw	$f1, 56($sp)
 	fmul	$f0, $f1, $f0
-	lw	$a0, 4($sp)
-	fsw	$f0, 64($sp)
+	flw	$f1, 48($sp)
+	fmul	$f2, $f1, $f1
+	fmul	$f3, $f0, $f0
+	fadd	$f2, $f2, $f3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fblt	$f1, $f3, fbge_else.17991
+	fmove	$f3, $f1
+	j	fbge_cont.17992
+fbge_else.17991:
+	fneg	$f3, $f1
+fbge_cont.17992:
+	li	$v0, 14545
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 46871
+	mtc1	$f4, $v0
+	fsub	$f3, $f3, $f4
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f4, $v0
+	fblt	$f3, $f4, fbge_else.17993
+	li	$a0, 0
+	j	fbge_cont.17994
+fbge_else.17993:
+	li	$a0, 1
+fbge_cont.17994:
+	li	$a1, 0
+	fsw	$f2, 64($sp)
+	bne	$a0, $a1, bne_else.17995
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.17997
+	j	fbge_cont.17998
+fbge_else.17997:
+	fneg	$f0, $f0
+fbge_cont.17998:
 	sw	$ra, 76($sp)
 	addi	$sp, $sp, 80
-	jal	o_param_b.2559
+	jal	min_caml_atan
 	subi	$sp, $sp, 80
 	lw	$ra, 76($sp)
 	fmove	$f0, $fv
-	flw	$f1, 40($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a0, 4($sp)
+	li	$v0, 16880
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	li	$v0, 16457
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 4059
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	j	bne_cont.17996
+bne_else.17995:
+	li	$v0, 16752
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+bne_cont.17996:
 	fsw	$f0, 72($sp)
 	sw	$ra, 84($sp)
 	addi	$sp, $sp, 88
-	jal	o_param_c.2561
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a0, 4($sp)
-	fsw	$f0, 80($sp)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	o_isrot.2555
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8938
-	lw	$a0, 0($sp)
-	flw	$f0, 64($sp)
-	fsw	$f0, 0($a0)
-	flw	$f0, 72($sp)
-	fsw	$f0, 4($a0)
-	flw	$f0, 80($sp)
-	fsw	$f0, 8($a0)
-	j	bne_cont.8939
-bne_else.8938:
-	lw	$a0, 4($sp)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	o_param_r3.2585
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f0, $fv
-	flw	$f1, 40($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a0, 4($sp)
-	fsw	$f0, 88($sp)
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	o_param_r2.2583
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f2, 88($sp)
-	fadd	$f0, $f2, $f0
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	fhalf.2481
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	fmove	$f0, $fv
-	flw	$f1, 64($sp)
-	fadd	$f0, $f1, $f0
-	lw	$a0, 0($sp)
-	fsw	$f0, 0($a0)
-	lw	$a1, 4($sp)
-	move	$a0, $a1
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	o_param_r3.2585
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	fmove	$f0, $fv
-	flw	$f1, 24($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a0, 4($sp)
-	fsw	$f0, 96($sp)
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	o_param_r1.2581
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 96($sp)
-	fadd	$f0, $f1, $f0
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	fhalf.2481
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	fmove	$f0, $fv
-	flw	$f1, 72($sp)
-	fadd	$f0, $f1, $f0
-	lw	$a0, 0($sp)
-	fsw	$f0, 4($a0)
-	lw	$a1, 4($sp)
-	move	$a0, $a1
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	o_param_r2.2583
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	fmove	$f0, $fv
-	flw	$f1, 24($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a0, 4($sp)
-	fsw	$f0, 104($sp)
-	sw	$ra, 116($sp)
-	addi	$sp, $sp, 120
-	jal	o_param_r1.2581
-	subi	$sp, $sp, 120
-	lw	$ra, 116($sp)
-	fmove	$f0, $fv
-	flw	$f1, 40($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 104($sp)
-	fadd	$f0, $f1, $f0
-	sw	$ra, 116($sp)
-	addi	$sp, $sp, 120
-	jal	fhalf.2481
-	subi	$sp, $sp, 120
-	lw	$ra, 116($sp)
-	fmove	$f0, $fv
-	flw	$f1, 80($sp)
-	fadd	$f0, $f1, $f0
-	lw	$a0, 0($sp)
-	fsw	$f0, 8($a0)
-bne_cont.8939:
-	lw	$a1, 4($sp)
-	move	$a0, $a1
-	sw	$ra, 116($sp)
-	addi	$sp, $sp, 120
-	jal	o_isinvert.2553
-	subi	$sp, $sp, 120
-	lw	$ra, 116($sp)
-	move	$a1, $v0
-	lw	$a0, 0($sp)
-	j	vecunit_sgn.2519
-get_nvector.2813:
-	lw	$a2, 12($a26)
-	lw	$a3, 8($a26)
-	lw	$a4, 4($a26)
-	sw	$a2, 0($sp)
-	sw	$a0, 4($sp)
-	sw	$a4, 8($sp)
-	sw	$a1, 12($sp)
-	sw	$a3, 16($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	o_form.2549
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	li	$a1, 1
-	bne	$a0, $a1, beq_else.8940
-	lw	$a0, 12($sp)
-	lw	$a26, 16($sp)
-	lw	$a25, 0($a26)
-	j	get_nvector_rect.2807
-beq_else.8940:
-	li	$a1, 2
-	bne	$a0, $a1, beq_else.8941
-	lw	$a0, 4($sp)
-	lw	$a26, 8($sp)
-	lw	$a25, 0($a26)
-	j	get_nvector_plane.2809
-beq_else.8941:
-	lw	$a0, 4($sp)
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	get_nvector_second.2811
-utexture.2816:
-	lw	$a2, 4($a26)
-	sw	$a1, 0($sp)
-	sw	$a2, 4($sp)
-	sw	$a0, 8($sp)
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	o_texturetype.2547
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	move	$a0, $v0
-	lw	$a1, 8($sp)
-	sw	$a0, 12($sp)
-	move	$a0, $a1
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	o_color_red.2575
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	lw	$a0, 4($sp)
-	fsw	$f0, 0($a0)
-	lw	$a1, 8($sp)
-	move	$a0, $a1
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	o_color_green.2577
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	lw	$a0, 4($sp)
-	fsw	$f0, 4($a0)
-	lw	$a1, 8($sp)
-	move	$a0, $a1
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	o_color_blue.2579
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	lw	$a0, 4($sp)
-	fsw	$f0, 8($a0)
-	li	$a1, 1
-	lw	$a2, 12($sp)
-	bne	$a2, $a1, beq_else.8942
-	lw	$a1, 0($sp)
-	flw	$f0, 0($a1)
-	lw	$a2, 8($sp)
-	fsw	$f0, 16($sp)
-	move	$a0, $a2
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	o_param_x.2565
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	fmove	$f0, $fv
-	flw	$f1, 16($sp)
-	fsub	$f0, $f1, $f0
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	l.6452
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	mtc1	$f1, $a25
-	fmul	$f1, $f0, $f1
-	fsw	$f0, 24($sp)
-	fmove	$f0, $f1
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
 	jal	min_caml_floor
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	l.6453
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	mtc1	$f1, $a25
-	fmul	$f0, $f0, $f1
-	flw	$f1, 24($sp)
-	fsub	$f0, $f1, $f0
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	l.6444
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	mtc1	$f1, $a25
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	fless.2487
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	lw	$a1, 0($sp)
-	flw	$f0, 8($a1)
-	lw	$a1, 8($sp)
-	sw	$a0, 32($sp)
-	fsw	$f0, 40($sp)
-	move	$a0, $a1
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	o_param_z.2569
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	flw	$f1, 40($sp)
-	fsub	$f0, $f1, $f0
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	l.6452
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	mtc1	$f1, $a25
-	fmul	$f1, $f0, $f1
-	fsw	$f0, 48($sp)
-	fmove	$f0, $f1
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	min_caml_floor
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	fmove	$f0, $fv
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	l.6453
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	mtc1	$f1, $a25
-	fmul	$f0, $f0, $f1
-	flw	$f1, 48($sp)
-	fsub	$f0, $f1, $f0
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	l.6444
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	mtc1	$f1, $a25
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	fless.2487
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	lw	$a2, 32($sp)
-	bne	$a2, $a1, bne_else.8944
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8946
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	l.6439
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	mtc1	$f0, $a25
-	j	bne_cont.8947
-bne_else.8946:
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	l.6035
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	mtc1	$f0, $a25
-bne_cont.8947:
-	j	bne_cont.8945
-bne_else.8944:
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8948
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	l.6035
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	mtc1	$f0, $a25
-	j	bne_cont.8949
-bne_else.8948:
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	l.6439
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	mtc1	$f0, $a25
-bne_cont.8949:
-bne_cont.8945:
-	lw	$a0, 4($sp)
-	fsw	$f0, 4($a0)
-	jr	$ra
-beq_else.8942:
-	li	$a1, 2
-	bne	$a2, $a1, beq_else.8951
-	lw	$a1, 0($sp)
-	flw	$f0, 4($a1)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	l.6448
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	mtc1	$f1, $a25
-	fmul	$f0, $f0, $f1
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	min_caml_sin
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	fmove	$f0, $fv
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	fsqr.2483
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	fmove	$f0, $fv
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	l.6439
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	mtc1	$f1, $a25
-	fmul	$f1, $f1, $f0
-	lw	$a0, 4($sp)
-	fsw	$f1, 0($a0)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	l.6439
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	mtc1	$f1, $a25
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	l.6037
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	mtc1	$f2, $a25
-	fsub	$f0, $f2, $f0
-	fmul	$f0, $f1, $f0
-	fsw	$f0, 4($a0)
-	jr	$ra
-beq_else.8951:
-	li	$a1, 3
-	bne	$a2, $a1, beq_else.8953
-	lw	$a1, 0($sp)
-	flw	$f0, 0($a1)
-	lw	$a2, 8($sp)
-	fsw	$f0, 56($sp)
-	move	$a0, $a2
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	o_param_x.2565
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 0($sp)
-	flw	$f1, 8($a0)
-	lw	$a0, 8($sp)
-	fsw	$f0, 64($sp)
-	fsw	$f1, 72($sp)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	o_param_z.2569
 	subi	$sp, $sp, 88
 	lw	$ra, 84($sp)
 	fmove	$f0, $fv
 	flw	$f1, 72($sp)
 	fsub	$f0, $f1, $f0
-	flw	$f1, 64($sp)
+	lw	$a0, 4($sp)
+	flw	$f1, 4($a0)
+	lw	$a0, 0($sp)
+	lw	$a1, 20($a0)
+	flw	$f2, 4($a1)
+	fsub	$f1, $f1, $f2
+	lw	$a0, 16($a0)
+	flw	$f2, 4($a0)
 	fsw	$f0, 80($sp)
-	fmove	$f0, $f1
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	fsqr.2483
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f0, $fv
-	flw	$f1, 80($sp)
-	fsw	$f0, 88($sp)
-	fmove	$f0, $f1
+	fsw	$f1, 88($sp)
+	fmove	$f0, $f2
 	sw	$ra, 100($sp)
 	addi	$sp, $sp, 104
-	jal	fsqr.2483
+	jal	min_caml_sqrt
 	subi	$sp, $sp, 104
 	lw	$ra, 100($sp)
 	fmove	$f0, $fv
 	flw	$f1, 88($sp)
-	fadd	$f0, $f1, $f0
+	fmul	$f0, $f1, $f0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	flw	$f2, 64($sp)
+	fblt	$f2, $f1, fbge_else.17999
+	fmove	$f1, $f2
+	j	fbge_cont.18000
+fbge_else.17999:
+	fneg	$f1, $f2
+fbge_cont.18000:
+	li	$v0, 14545
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 46871
+	mtc1	$f3, $v0
+	fsub	$f1, $f1, $f3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fblt	$f1, $f3, fbge_else.18001
+	li	$a0, 0
+	j	fbge_cont.18002
+fbge_else.18001:
+	li	$a0, 1
+fbge_cont.18002:
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.18003
+	finv	$f1, $f2
+	fmul	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.18005
+	j	fbge_cont.18006
+fbge_else.18005:
+	fneg	$f0, $f0
+fbge_cont.18006:
 	sw	$ra, 100($sp)
 	addi	$sp, $sp, 104
-	jal	min_caml_sqrt
+	jal	min_caml_atan
 	subi	$sp, $sp, 104
 	lw	$ra, 100($sp)
 	fmove	$f0, $fv
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	l.6444
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	mtc1	$f1, $a25
+	li	$v0, 16880
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	li	$v0, 16457
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 4059
+	mtc1	$f1, $v0
 	finv	$f1, $f1
 	fmul	$f0, $f0, $f1
+	j	bne_cont.18004
+bne_else.18003:
+	li	$v0, 16752
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+bne_cont.18004:
 	fsw	$f0, 96($sp)
 	sw	$ra, 108($sp)
 	addi	$sp, $sp, 112
@@ -6253,1992 +7336,2422 @@ beq_else.8951:
 	fmove	$f0, $fv
 	flw	$f1, 96($sp)
 	fsub	$f0, $f1, $f0
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	l.6436
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	mtc1	$f1, $a25
-	fmul	$f0, $f0, $f1
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	min_caml_cos
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	fmove	$f0, $fv
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	fsqr.2483
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	fmove	$f0, $fv
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	l.6439
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	mtc1	$f1, $a25
-	fmul	$f1, $f0, $f1
-	lw	$a0, 4($sp)
-	fsw	$f1, 4($a0)
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	l.6037
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	mtc1	$f1, $a25
-	fsub	$f0, $f1, $f0
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	l.6439
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	mtc1	$f1, $a25
-	fmul	$f0, $f0, $f1
-	fsw	$f0, 8($a0)
-	jr	$ra
-beq_else.8953:
-	li	$a1, 4
-	bne	$a2, $a1, beq_else.8955
-	lw	$a1, 0($sp)
-	flw	$f0, 0($a1)
-	lw	$a2, 8($sp)
-	fsw	$f0, 104($sp)
-	move	$a0, $a2
-	sw	$ra, 116($sp)
-	addi	$sp, $sp, 120
-	jal	o_param_x.2565
-	subi	$sp, $sp, 120
-	lw	$ra, 116($sp)
-	fmove	$f0, $fv
-	flw	$f1, 104($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 8($sp)
-	fsw	$f0, 112($sp)
-	sw	$ra, 124($sp)
-	addi	$sp, $sp, 128
-	jal	o_param_a.2557
-	subi	$sp, $sp, 128
-	lw	$ra, 124($sp)
-	fmove	$f0, $fv
-	sw	$ra, 124($sp)
-	addi	$sp, $sp, 128
-	jal	min_caml_sqrt
-	subi	$sp, $sp, 128
-	lw	$ra, 124($sp)
-	fmove	$f0, $fv
-	flw	$f1, 112($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a0, 0($sp)
-	flw	$f1, 8($a0)
-	lw	$a1, 8($sp)
-	fsw	$f0, 120($sp)
-	fsw	$f1, 128($sp)
-	move	$a0, $a1
-	sw	$ra, 140($sp)
-	addi	$sp, $sp, 144
-	jal	o_param_z.2569
-	subi	$sp, $sp, 144
-	lw	$ra, 140($sp)
-	fmove	$f0, $fv
-	flw	$f1, 128($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 8($sp)
-	fsw	$f0, 136($sp)
-	sw	$ra, 148($sp)
-	addi	$sp, $sp, 152
-	jal	o_param_c.2561
-	subi	$sp, $sp, 152
-	lw	$ra, 148($sp)
-	fmove	$f0, $fv
-	sw	$ra, 148($sp)
-	addi	$sp, $sp, 152
-	jal	min_caml_sqrt
-	subi	$sp, $sp, 152
-	lw	$ra, 148($sp)
-	fmove	$f0, $fv
-	flw	$f1, 136($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 120($sp)
-	fsw	$f0, 144($sp)
-	fmove	$f0, $f1
-	sw	$ra, 156($sp)
-	addi	$sp, $sp, 160
-	jal	fsqr.2483
-	subi	$sp, $sp, 160
-	lw	$ra, 156($sp)
-	fmove	$f0, $fv
-	flw	$f1, 144($sp)
-	fsw	$f0, 152($sp)
-	fmove	$f0, $f1
-	sw	$ra, 164($sp)
-	addi	$sp, $sp, 168
-	jal	fsqr.2483
-	subi	$sp, $sp, 168
-	lw	$ra, 164($sp)
-	fmove	$f0, $fv
-	flw	$f1, 152($sp)
-	fadd	$f0, $f1, $f0
-	flw	$f1, 120($sp)
-	fsw	$f0, 160($sp)
-	fmove	$f0, $f1
-	sw	$ra, 172($sp)
-	addi	$sp, $sp, 176
-	jal	fabs.2485
-	subi	$sp, $sp, 176
-	lw	$ra, 172($sp)
-	fmove	$f0, $fv
-	sw	$ra, 172($sp)
-	addi	$sp, $sp, 176
-	jal	l.6433
-	subi	$sp, $sp, 176
-	lw	$ra, 172($sp)
-	mtc1	$f1, $a25
-	sw	$ra, 172($sp)
-	addi	$sp, $sp, 176
-	jal	fless.2487
-	subi	$sp, $sp, 176
-	lw	$ra, 172($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8956
-	flw	$f0, 120($sp)
-	finv	$f0, $f0
-	flw	$f1, 144($sp)
-	fmul	$f0, $f1, $f0
-	sw	$ra, 172($sp)
-	addi	$sp, $sp, 176
-	jal	fabs.2485
-	subi	$sp, $sp, 176
-	lw	$ra, 172($sp)
-	fmove	$f0, $fv
-	sw	$ra, 172($sp)
-	addi	$sp, $sp, 176
-	jal	min_caml_atan
-	subi	$sp, $sp, 176
-	lw	$ra, 172($sp)
-	fmove	$f0, $fv
-	sw	$ra, 172($sp)
-	addi	$sp, $sp, 176
-	jal	l.6435
-	subi	$sp, $sp, 176
-	lw	$ra, 172($sp)
-	mtc1	$f1, $a25
-	fmul	$f0, $f0, $f1
-	sw	$ra, 172($sp)
-	addi	$sp, $sp, 176
-	jal	l.6436
-	subi	$sp, $sp, 176
-	lw	$ra, 172($sp)
-	mtc1	$f1, $a25
-	finv	$f1, $f1
-	fmul	$f0, $f0, $f1
-	j	bne_cont.8957
-bne_else.8956:
-	sw	$ra, 172($sp)
-	addi	$sp, $sp, 176
-	jal	l.6434
-	subi	$sp, $sp, 176
-	lw	$ra, 172($sp)
-	mtc1	$f0, $a25
-bne_cont.8957:
-	fsw	$f0, 168($sp)
-	sw	$ra, 180($sp)
-	addi	$sp, $sp, 184
-	jal	min_caml_floor
-	subi	$sp, $sp, 184
-	lw	$ra, 180($sp)
-	fmove	$f0, $fv
-	flw	$f1, 168($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 0($sp)
-	flw	$f1, 4($a0)
-	lw	$a0, 8($sp)
-	fsw	$f0, 176($sp)
-	fsw	$f1, 184($sp)
-	sw	$ra, 196($sp)
-	addi	$sp, $sp, 200
-	jal	o_param_y.2567
-	subi	$sp, $sp, 200
-	lw	$ra, 196($sp)
-	fmove	$f0, $fv
-	flw	$f1, 184($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 8($sp)
-	fsw	$f0, 192($sp)
-	sw	$ra, 204($sp)
-	addi	$sp, $sp, 208
-	jal	o_param_b.2559
-	subi	$sp, $sp, 208
-	lw	$ra, 204($sp)
-	fmove	$f0, $fv
-	sw	$ra, 204($sp)
-	addi	$sp, $sp, 208
-	jal	min_caml_sqrt
-	subi	$sp, $sp, 208
-	lw	$ra, 204($sp)
-	fmove	$f0, $fv
-	flw	$f1, 192($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 160($sp)
-	fsw	$f0, 200($sp)
-	fmove	$f0, $f1
-	sw	$ra, 212($sp)
-	addi	$sp, $sp, 216
-	jal	fabs.2485
-	subi	$sp, $sp, 216
-	lw	$ra, 212($sp)
-	fmove	$f0, $fv
-	sw	$ra, 212($sp)
-	addi	$sp, $sp, 216
-	jal	l.6433
-	subi	$sp, $sp, 216
-	lw	$ra, 212($sp)
-	mtc1	$f1, $a25
-	sw	$ra, 212($sp)
-	addi	$sp, $sp, 216
-	jal	fless.2487
-	subi	$sp, $sp, 216
-	lw	$ra, 212($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8958
-	flw	$f0, 160($sp)
-	finv	$f0, $f0
-	flw	$f1, 200($sp)
-	fmul	$f0, $f1, $f0
-	sw	$ra, 212($sp)
-	addi	$sp, $sp, 216
-	jal	fabs.2485
-	subi	$sp, $sp, 216
-	lw	$ra, 212($sp)
-	fmove	$f0, $fv
-	sw	$ra, 212($sp)
-	addi	$sp, $sp, 216
-	jal	min_caml_atan
-	subi	$sp, $sp, 216
-	lw	$ra, 212($sp)
-	fmove	$f0, $fv
-	sw	$ra, 212($sp)
-	addi	$sp, $sp, 216
-	jal	l.6435
-	subi	$sp, $sp, 216
-	lw	$ra, 212($sp)
-	mtc1	$f1, $a25
-	fmul	$f0, $f0, $f1
-	sw	$ra, 212($sp)
-	addi	$sp, $sp, 216
-	jal	l.6436
-	subi	$sp, $sp, 216
-	lw	$ra, 212($sp)
-	mtc1	$f1, $a25
-	finv	$f1, $f1
-	fmul	$f0, $f0, $f1
-	j	bne_cont.8959
-bne_else.8958:
-	sw	$ra, 212($sp)
-	addi	$sp, $sp, 216
-	jal	l.6434
-	subi	$sp, $sp, 216
-	lw	$ra, 212($sp)
-	mtc1	$f0, $a25
-bne_cont.8959:
-	fsw	$f0, 208($sp)
-	sw	$ra, 220($sp)
-	addi	$sp, $sp, 224
-	jal	min_caml_floor
-	subi	$sp, $sp, 224
-	lw	$ra, 220($sp)
-	fmove	$f0, $fv
-	flw	$f1, 208($sp)
-	fsub	$f0, $f1, $f0
-	sw	$ra, 220($sp)
-	addi	$sp, $sp, 224
-	jal	l.6438
-	subi	$sp, $sp, 224
-	lw	$ra, 220($sp)
-	mtc1	$f1, $a25
-	sw	$ra, 220($sp)
-	addi	$sp, $sp, 224
-	jal	l.6036
-	subi	$sp, $sp, 224
-	lw	$ra, 220($sp)
-	mtc1	$f2, $a25
-	flw	$f3, 176($sp)
-	fsub	$f2, $f2, $f3
-	fsw	$f0, 216($sp)
-	fsw	$f1, 224($sp)
-	fmove	$f0, $f2
-	sw	$ra, 236($sp)
-	addi	$sp, $sp, 240
-	jal	fsqr.2483
-	subi	$sp, $sp, 240
-	lw	$ra, 236($sp)
-	fmove	$f0, $fv
-	flw	$f1, 224($sp)
-	fsub	$f0, $f1, $f0
-	sw	$ra, 236($sp)
-	addi	$sp, $sp, 240
-	jal	l.6036
-	subi	$sp, $sp, 240
-	lw	$ra, 236($sp)
-	mtc1	$f1, $a25
-	flw	$f2, 216($sp)
+	li	$v0, 16128
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	flw	$f2, 80($sp)
 	fsub	$f1, $f1, $f2
-	fsw	$f0, 232($sp)
-	fmove	$f0, $f1
-	sw	$ra, 244($sp)
-	addi	$sp, $sp, 248
-	jal	fsqr.2483
-	subi	$sp, $sp, 248
-	lw	$ra, 244($sp)
-	fmove	$f0, $fv
-	flw	$f1, 232($sp)
+	fmul	$f1, $f1, $f1
+	li	$v0, 15897
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 39322
+	mtc1	$f2, $v0
+	fsub	$f1, $f2, $f1
+	li	$v0, 16128
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fsub	$f0, $f2, $f0
+	fmul	$f0, $f0, $f0
 	fsub	$f0, $f1, $f0
-	fsw	$f0, 240($sp)
-	sw	$ra, 252($sp)
-	addi	$sp, $sp, 256
-	jal	fisneg.2477
-	subi	$sp, $sp, 256
-	lw	$ra, 252($sp)
-	move	$a0, $v0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.18007
+	li	$a0, 0
+	j	fbge_cont.18008
+fbge_else.18007:
+	li	$a0, 1
+fbge_cont.18008:
 	li	$a1, 0
-	bne	$a0, $a1, bne_else.8960
-	flw	$f0, 240($sp)
-	j	bne_cont.8961
-bne_else.8960:
-	sw	$ra, 252($sp)
-	addi	$sp, $sp, 256
-	jal	l.6035
-	subi	$sp, $sp, 256
-	lw	$ra, 252($sp)
-	mtc1	$f0, $a25
-bne_cont.8961:
-	sw	$ra, 252($sp)
-	addi	$sp, $sp, 256
-	jal	l.6439
-	subi	$sp, $sp, 256
-	lw	$ra, 252($sp)
-	mtc1	$f1, $a25
+	bne	$a0, $a1, bne_else.18009
+	j	bne_cont.18010
+bne_else.18009:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+bne_cont.18010:
+	li	$a0, 580
+	li	$v0, 17279
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
 	fmul	$f0, $f1, $f0
-	sw	$ra, 252($sp)
-	addi	$sp, $sp, 256
-	jal	l.6440
-	subi	$sp, $sp, 256
-	lw	$ra, 252($sp)
-	mtc1	$f1, $a25
+	li	$v0, 16025
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 39322
+	mtc1	$f1, $v0
 	finv	$f1, $f1
 	fmul	$f0, $f0, $f1
-	lw	$a0, 4($sp)
 	fsw	$f0, 8($a0)
 	jr	$ra
-beq_else.8955:
+beq_else.17990:
 	jr	$ra
-add_light.2819:
-	lw	$a0, 8($a26)
-	lw	$a1, 4($a26)
-	fsw	$f2, 0($sp)
-	fsw	$f1, 8($sp)
-	fsw	$f0, 16($sp)
-	sw	$a0, 24($sp)
-	sw	$a1, 28($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	fispos.2475
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
+add_light.2987:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fblt	$f3, $f0, fbge_else.18013
+	li	$a0, 0
+	j	fbge_cont.18014
+fbge_else.18013:
+	li	$a0, 1
+fbge_cont.18014:
 	li	$a1, 0
-	bne	$a0, $a1, bne_else.8964
-	j	bne_cont.8965
-bne_else.8964:
-	flw	$f0, 16($sp)
-	lw	$a0, 28($sp)
-	lw	$a1, 24($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	vecaccum.2530
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f30, $fv
-bne_cont.8965:
-	flw	$f0, 8($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	fispos.2475
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
+	bne	$a0, $a1, bne_else.18015
+	j	bne_cont.18016
+bne_else.18015:
+	li	$a0, 604
+	li	$a1, 580
+	flw	$f3, 0($a0)
+	flw	$f4, 0($a1)
+	fmul	$f4, $f0, $f4
+	fadd	$f3, $f3, $f4
+	fsw	$f3, 0($a0)
+	flw	$f3, 4($a0)
+	flw	$f4, 4($a1)
+	fmul	$f4, $f0, $f4
+	fadd	$f3, $f3, $f4
+	fsw	$f3, 4($a0)
+	flw	$f3, 8($a0)
+	flw	$f4, 8($a1)
+	fmul	$f0, $f0, $f4
+	fadd	$f0, $f3, $f0
+	fsw	$f0, 8($a0)
+bne_cont.18016:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	fblt	$f0, $f1, fbge_else.18017
+	li	$a0, 0
+	j	fbge_cont.18018
+fbge_else.18017:
+	li	$a0, 1
+fbge_cont.18018:
 	li	$a1, 0
-	bne	$a0, $a1, beq_else.8966
+	bne	$a0, $a1, beq_else.18019
 	jr	$ra
-beq_else.8966:
-	flw	$f0, 8($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	fsqr.2483
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	fsqr.2483
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	flw	$f1, 0($sp)
-	fmul	$f0, $f0, $f1
-	lw	$a0, 28($sp)
-	flw	$f1, 0($a0)
+beq_else.18019:
+	fmul	$f0, $f1, $f1
+	fmul	$f0, $f0, $f0
+	fmul	$f0, $f0, $f2
+	li	$a0, 604
+	li	$a1, 604
+	flw	$f1, 0($a1)
 	fadd	$f1, $f1, $f0
 	fsw	$f1, 0($a0)
-	flw	$f1, 4($a0)
+	li	$a0, 604
+	li	$a1, 604
+	flw	$f1, 4($a1)
 	fadd	$f1, $f1, $f0
 	fsw	$f1, 4($a0)
-	flw	$f1, 8($a0)
+	li	$a0, 604
+	li	$a1, 604
+	flw	$f1, 8($a1)
 	fadd	$f0, $f1, $f0
 	fsw	$f0, 8($a0)
 	jr	$ra
-trace_reflections.2823:
-	lw	$a2, 32($a26)
-	lw	$a3, 28($a26)
-	lw	$a4, 24($a26)
-	lw	$a5, 20($a26)
-	lw	$a6, 16($a26)
-	lw	$a7, 12($a26)
-	lw	$a8, 8($a26)
-	lw	$a9, 4($a26)
-	li	$a10, 0
-	blt	$a0, $a10, bge_else.8969
-	sll	$a10, $a0, 2
-	add	$a10, $a3, $a10
-	lw	$a3, 0($a10)
-	sw	$a26, 0($sp)
-	sw	$a0, 4($sp)
+trace_reflections.2991:
+	li	$a2, 0
+	blt	$a0, $a2, bge_else.18022
+	li	$a2, 1016
+	sll	$a3, $a0, 2
+	add	$a3, $a2, $a3
+	lw	$a2, 0($a3)
+	lw	$a3, 4($a2)
+	li	$a4, 548
+	li	$v0, 20078
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 27432
+	mtc1	$f2, $v0
+	fsw	$f2, 0($a4)
+	li	$a4, 0
+	li	$a5, 536
+	lw	$a5, 0($a5)
+	sw	$a0, 0($sp)
 	fsw	$f1, 8($sp)
-	sw	$a9, 16($sp)
-	sw	$a1, 20($sp)
+	sw	$a1, 16($sp)
 	fsw	$f0, 24($sp)
-	sw	$a5, 32($sp)
+	sw	$a3, 32($sp)
 	sw	$a2, 36($sp)
-	sw	$a4, 40($sp)
-	sw	$a3, 44($sp)
-	sw	$a7, 48($sp)
-	sw	$a8, 52($sp)
-	sw	$a6, 56($sp)
-	move	$a0, $a3
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	r_dvec.2614
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	move	$a0, $v0
-	lw	$a26, 56($sp)
-	sw	$a0, 60($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	judge_intersection_fast.2805
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	move	$a0, $v0
+	move	$a2, $a3
+	move	$a1, $a5
+	move	$a0, $a4
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	trace_or_matrix_fast.2969
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	li	$a0, 548
+	flw	$f0, 0($a0)
+	li	$v0, -16948
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fsub	$f1, $f1, $f0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fblt	$f1, $f2, fbge_else.18025
+	li	$a0, 0
+	j	fbge_cont.18026
+fbge_else.18025:
+	li	$a0, 1
+fbge_cont.18026:
 	li	$a1, 0
-	bne	$a0, $a1, bne_else.8970
-	j	bne_cont.8971
-bne_else.8970:
-	lw	$a0, 52($sp)
+	bne	$a0, $a1, bne_else.18027
+	li	$a0, 0
+	j	bne_cont.18028
+bne_else.18027:
+	li	$v0, 19646
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 48160
+	mtc1	$f1, $v0
+	fsub	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.18029
+	li	$a0, 0
+	j	fbge_cont.18030
+fbge_else.18029:
+	li	$a0, 1
+fbge_cont.18030:
+bne_cont.18028:
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.18031
+	j	bne_cont.18032
+bne_else.18031:
+	li	$a0, 564
 	lw	$a0, 0($a0)
 	sla	$a0, $a0, 2
-	lw	$a1, 48($sp)
+	li	$a1, 544
 	lw	$a1, 0($a1)
 	add	$a0, $a0, $a1
-	lw	$a1, 44($sp)
-	sw	$a0, 64($sp)
-	move	$a0, $a1
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	r_surface_id.2612
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	move	$a0, $v0
-	lw	$a1, 64($sp)
-	bne	$a1, $a0, bne_else.8972
+	lw	$a1, 36($sp)
+	lw	$a2, 0($a1)
+	bne	$a0, $a2, bne_else.18033
 	li	$a0, 0
-	lw	$a1, 40($sp)
-	lw	$a1, 0($a1)
-	lw	$a26, 36($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	shadow_check_one_or_matrix.2776
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
+	li	$a2, 536
+	lw	$a2, 0($a2)
+	move	$a1, $a2
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	shadow_check_one_or_matrix.2944
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
 	move	$a0, $v0
 	li	$a1, 0
-	bne	$a0, $a1, bne_else.8974
-	lw	$a0, 60($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	d_vec.2608
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	move	$a1, $v0
-	lw	$a0, 32($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	veciprod.2522
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f0, $fv
-	lw	$a0, 44($sp)
-	fsw	$f0, 72($sp)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	r_bright.2616
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	fmove	$f0, $fv
-	flw	$f1, 24($sp)
-	fmul	$f2, $f0, $f1
-	flw	$f3, 72($sp)
-	fmul	$f2, $f2, $f3
-	lw	$a0, 60($sp)
-	fsw	$f2, 80($sp)
-	fsw	$f0, 88($sp)
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	d_vec.2608
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	move	$a1, $v0
-	lw	$a0, 20($sp)
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	veciprod.2522
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	fmove	$f0, $fv
-	flw	$f1, 88($sp)
-	fmul	$f1, $f1, $f0
-	flw	$f0, 80($sp)
-	flw	$f2, 8($sp)
-	lw	$a26, 16($sp)
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	add_light.2819
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
+	bne	$a0, $a1, bne_else.18035
+	li	$a0, 568
+	lw	$a1, 32($sp)
+	lw	$a2, 0($a1)
+	flw	$f0, 0($a0)
+	flw	$f1, 0($a2)
+	fmul	$f0, $f0, $f1
+	flw	$f1, 4($a0)
+	flw	$f2, 4($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a0)
+	flw	$f2, 8($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	lw	$a0, 36($sp)
+	flw	$f1, 8($a0)
+	flw	$f2, 24($sp)
+	fmul	$f3, $f1, $f2
+	fmul	$f0, $f3, $f0
+	lw	$a0, 0($a1)
+	lw	$a1, 16($sp)
+	flw	$f3, 0($a1)
+	flw	$f4, 0($a0)
+	fmul	$f3, $f3, $f4
+	flw	$f4, 4($a1)
+	flw	$f5, 4($a0)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	flw	$f4, 8($a1)
+	flw	$f5, 8($a0)
+	fmul	$f4, $f4, $f5
+	fadd	$f3, $f3, $f4
+	fmul	$f1, $f1, $f3
+	flw	$f3, 8($sp)
+	fmove	$f2, $f3
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	add_light.2987
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
 	fmove	$f30, $fv
-	j	bne_cont.8975
-bne_else.8974:
-bne_cont.8975:
-	j	bne_cont.8973
-bne_else.8972:
-bne_cont.8973:
-bne_cont.8971:
-	lw	$a0, 4($sp)
+	j	bne_cont.18036
+bne_else.18035:
+bne_cont.18036:
+	j	bne_cont.18034
+bne_else.18033:
+bne_cont.18034:
+bne_cont.18032:
+	lw	$a0, 0($sp)
 	subi	$a0, $a0, 1
 	flw	$f0, 24($sp)
 	flw	$f1, 8($sp)
-	lw	$a1, 20($sp)
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	trace_reflections.2823
-bge_else.8969:
+	lw	$a1, 16($sp)
+	j	trace_reflections.2991
+bge_else.18022:
 	jr	$ra
-trace_ray.2828:
-	lw	$a3, 80($a26)
-	lw	$a4, 76($a26)
-	lw	$a5, 72($a26)
-	lw	$a6, 68($a26)
-	lw	$a7, 64($a26)
-	lw	$a8, 60($a26)
-	lw	$a9, 56($a26)
-	lw	$a10, 52($a26)
-	lw	$a11, 48($a26)
-	lw	$a12, 44($a26)
-	lw	$a13, 40($a26)
-	lw	$a14, 36($a26)
-	lw	$a15, 32($a26)
-	lw	$a16, 28($a26)
-	lw	$a17, 24($a26)
-	lw	$a18, 20($a26)
-	lw	$a19, 16($a26)
-	lw	$a20, 12($a26)
-	lw	$a21, 8($a26)
-	lw	$a22, 4($a26)
-	li	$a23, 4
-	blt	$a23, $a0, bge_else.8978
-	sw	$a26, 0($sp)
-	fsw	$f1, 8($sp)
-	sw	$a5, 16($sp)
-	sw	$a4, 20($sp)
-	sw	$a14, 24($sp)
-	sw	$a9, 28($sp)
-	sw	$a22, 32($sp)
-	sw	$a8, 36($sp)
-	sw	$a11, 40($sp)
-	sw	$a13, 44($sp)
-	sw	$a6, 48($sp)
-	sw	$a2, 52($sp)
-	sw	$a17, 56($sp)
-	sw	$a3, 60($sp)
-	sw	$a18, 64($sp)
-	sw	$a7, 68($sp)
-	sw	$a20, 72($sp)
-	sw	$a12, 76($sp)
-	sw	$a19, 80($sp)
-	sw	$a10, 84($sp)
-	sw	$a21, 88($sp)
-	fsw	$f0, 96($sp)
-	sw	$a15, 104($sp)
-	sw	$a0, 108($sp)
-	sw	$a1, 112($sp)
-	sw	$a16, 116($sp)
-	move	$a0, $a2
-	sw	$ra, 124($sp)
-	addi	$sp, $sp, 128
-	jal	p_surface_ids.2593
-	subi	$sp, $sp, 128
-	lw	$ra, 124($sp)
-	move	$a0, $v0
-	lw	$a1, 112($sp)
-	lw	$a26, 116($sp)
-	sw	$a0, 120($sp)
-	move	$a0, $a1
-	sw	$ra, 124($sp)
-	addi	$sp, $sp, 128
-	jal	judge_intersection.2791
-	subi	$sp, $sp, 128
-	lw	$ra, 124($sp)
-	move	$a0, $v0
+trace_ray.2996:
+	li	$a3, 4
+	blt	$a3, $a0, bge_else.18038
+	lw	$a3, 8($a2)
+	li	$a4, 548
+	li	$v0, 20078
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 27432
+	mtc1	$f2, $v0
+	fsw	$f2, 0($a4)
+	li	$a4, 0
+	li	$a5, 536
+	lw	$a5, 0($a5)
+	fsw	$f1, 0($sp)
+	sw	$a2, 8($sp)
+	fsw	$f0, 16($sp)
+	sw	$a1, 24($sp)
+	sw	$a3, 28($sp)
+	sw	$a0, 32($sp)
+	move	$a2, $a1
+	move	$a0, $a4
+	move	$a1, $a5
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	trace_or_matrix.2955
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+	li	$a0, 548
+	flw	$f0, 0($a0)
+	li	$v0, -16948
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fsub	$f1, $f1, $f0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fblt	$f1, $f2, fbge_else.18040
+	li	$a0, 0
+	j	fbge_cont.18041
+fbge_else.18040:
+	li	$a0, 1
+fbge_cont.18041:
 	li	$a1, 0
-	bne	$a0, $a1, beq_else.8981
+	bne	$a0, $a1, bne_else.18042
+	li	$a0, 0
+	j	bne_cont.18043
+bne_else.18042:
+	li	$v0, 19646
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 48160
+	mtc1	$f1, $v0
+	fsub	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.18044
+	li	$a0, 0
+	j	fbge_cont.18045
+fbge_else.18044:
+	li	$a0, 1
+fbge_cont.18045:
+bne_cont.18043:
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.18046
 	li	$a0, -1
-	lw	$a1, 108($sp)
+	lw	$a1, 32($sp)
 	sll	$a2, $a1, 2
-	lw	$a3, 120($sp)
+	lw	$a3, 28($sp)
 	add	$a2, $a3, $a2
 	sw	$a0, 0($a2)
 	li	$a0, 0
-	bne	$a1, $a0, beq_else.8982
+	bne	$a1, $a0, beq_else.18047
 	jr	$ra
-beq_else.8982:
-	lw	$a0, 112($sp)
-	lw	$a1, 104($sp)
-	sw	$ra, 124($sp)
-	addi	$sp, $sp, 128
-	jal	veciprod.2522
-	subi	$sp, $sp, 128
-	lw	$ra, 124($sp)
-	fmove	$f0, $fv
-	sw	$ra, 124($sp)
-	addi	$sp, $sp, 128
-	jal	fneg.2473
-	subi	$sp, $sp, 128
-	lw	$ra, 124($sp)
-	fmove	$f0, $fv
-	fsw	$f0, 128($sp)
-	sw	$ra, 140($sp)
-	addi	$sp, $sp, 144
-	jal	fispos.2475
-	subi	$sp, $sp, 144
-	lw	$ra, 140($sp)
-	move	$a0, $v0
+beq_else.18047:
+	li	$a0, 312
+	lw	$a1, 24($sp)
+	flw	$f0, 0($a1)
+	flw	$f1, 0($a0)
+	fmul	$f0, $f0, $f1
+	flw	$f1, 4($a1)
+	flw	$f2, 4($a0)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a1)
+	flw	$f2, 8($a0)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	fneg	$f0, $f0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f1, $f0, fbge_else.18049
+	li	$a0, 0
+	j	fbge_cont.18050
+fbge_else.18049:
+	li	$a0, 1
+fbge_cont.18050:
 	li	$a1, 0
-	bne	$a0, $a1, beq_else.8985
+	bne	$a0, $a1, beq_else.18051
 	jr	$ra
-beq_else.8985:
-	flw	$f0, 128($sp)
-	sw	$ra, 140($sp)
-	addi	$sp, $sp, 144
-	jal	fsqr.2483
-	subi	$sp, $sp, 144
-	lw	$ra, 140($sp)
-	fmove	$f0, $fv
-	flw	$f1, 128($sp)
+beq_else.18051:
+	fmul	$f1, $f0, $f0
+	fmul	$f0, $f1, $f0
+	flw	$f1, 16($sp)
 	fmul	$f0, $f0, $f1
-	flw	$f1, 96($sp)
-	fmul	$f0, $f0, $f1
-	lw	$a0, 88($sp)
+	li	$a0, 324
 	flw	$f1, 0($a0)
 	fmul	$f0, $f0, $f1
-	lw	$a0, 84($sp)
-	flw	$f1, 0($a0)
+	li	$a0, 604
+	li	$a1, 604
+	flw	$f1, 0($a1)
 	fadd	$f1, $f1, $f0
 	fsw	$f1, 0($a0)
-	flw	$f1, 4($a0)
+	li	$a0, 604
+	li	$a1, 604
+	flw	$f1, 4($a1)
 	fadd	$f1, $f1, $f0
 	fsw	$f1, 4($a0)
-	flw	$f1, 8($a0)
+	li	$a0, 604
+	li	$a1, 604
+	flw	$f1, 8($a1)
 	fadd	$f0, $f1, $f0
 	fsw	$f0, 8($a0)
 	jr	$ra
-beq_else.8981:
-	lw	$a0, 80($sp)
+beq_else.18046:
+	li	$a0, 564
 	lw	$a0, 0($a0)
-	sll	$a1, $a0, 2
-	lw	$a2, 76($sp)
-	add	$a1, $a2, $a1
-	lw	$a1, 0($a1)
-	sw	$a0, 136($sp)
-	sw	$a1, 140($sp)
-	move	$a0, $a1
-	sw	$ra, 148($sp)
-	addi	$sp, $sp, 152
-	jal	o_reflectiontype.2551
-	subi	$sp, $sp, 152
-	lw	$ra, 148($sp)
-	move	$a0, $v0
-	lw	$a1, 140($sp)
-	sw	$a0, 144($sp)
-	move	$a0, $a1
-	sw	$ra, 148($sp)
-	addi	$sp, $sp, 152
-	jal	o_diffuse.2571
-	subi	$sp, $sp, 152
-	lw	$ra, 148($sp)
-	fmove	$f0, $fv
-	flw	$f1, 96($sp)
+	li	$a1, 48
+	sll	$a2, $a0, 2
+	add	$a2, $a1, $a2
+	lw	$a1, 0($a2)
+	lw	$a2, 8($a1)
+	lw	$a3, 28($a1)
+	flw	$f0, 0($a3)
+	flw	$f1, 16($sp)
 	fmul	$f0, $f0, $f1
-	lw	$a0, 140($sp)
-	lw	$a1, 112($sp)
-	lw	$a26, 72($sp)
-	fsw	$f0, 152($sp)
-	sw	$ra, 164($sp)
-	addi	$sp, $sp, 168
-	jal	get_nvector.2813
-	subi	$sp, $sp, 168
-	lw	$ra, 164($sp)
+	lw	$a3, 4($a1)
+	li	$a4, 1
+	sw	$a2, 36($sp)
+	fsw	$f0, 40($sp)
+	sw	$a0, 48($sp)
+	sw	$a1, 52($sp)
+	bne	$a3, $a4, bne_else.18054
+	li	$a3, 544
+	lw	$a3, 0($a3)
+	li	$a4, 568
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fsw	$f2, 0($a4)
+	fsw	$f2, 4($a4)
+	fsw	$f2, 8($a4)
+	li	$a4, 568
+	subi	$a5, $a3, 1
+	subi	$a3, $a3, 1
+	sll	$a3, $a3, 2
+	lw	$a6, 24($sp)
+	add	$a3, $a6, $a3
+	flw	$f2, 0($a3)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fbne	$f2, $f3, fbne_else.18056
+	li	$a3, 1
+	j	fbne_cont.18057
+fbne_else.18056:
+	li	$a3, 0
+fbne_cont.18057:
+	li	$a7, 0
+	bne	$a3, $a7, bne_else.18058
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fblt	$f3, $f2, fbge_else.18060
+	li	$a3, 0
+	j	fbge_cont.18061
+fbge_else.18060:
+	li	$a3, 1
+fbge_cont.18061:
+	li	$a7, 0
+	bne	$a3, $a7, bne_else.18062
+	li	$v0, -16512
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	j	bne_cont.18063
+bne_else.18062:
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+bne_cont.18063:
+	j	bne_cont.18059
+bne_else.18058:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+bne_cont.18059:
+	fneg	$f2, $f2
+	sll	$a3, $a5, 2
+	add	$a3, $a4, $a3
+	fsw	$f2, 0($a3)
+	j	bne_cont.18055
+bne_else.18054:
+	li	$a4, 2
+	bne	$a3, $a4, bne_else.18064
+	li	$a3, 568
+	lw	$a4, 16($a1)
+	flw	$f2, 0($a4)
+	fneg	$f2, $f2
+	fsw	$f2, 0($a3)
+	li	$a3, 568
+	lw	$a4, 16($a1)
+	flw	$f2, 4($a4)
+	fneg	$f2, $f2
+	fsw	$f2, 4($a3)
+	li	$a3, 568
+	lw	$a4, 16($a1)
+	flw	$f2, 8($a4)
+	fneg	$f2, $f2
+	fsw	$f2, 8($a3)
+	j	bne_cont.18065
+bne_else.18064:
+	move	$a0, $a1
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	get_nvector_second.2979
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
 	fmove	$f30, $fv
-	lw	$a0, 68($sp)
-	lw	$a1, 64($sp)
-	sw	$ra, 164($sp)
-	addi	$sp, $sp, 168
-	jal	veccpy.2511
-	subi	$sp, $sp, 168
-	lw	$ra, 164($sp)
+bne_cont.18065:
+bne_cont.18055:
+	li	$a0, 636
+	li	$a1, 552
+	flw	$f0, 0($a1)
+	fsw	$f0, 0($a0)
+	flw	$f0, 4($a1)
+	fsw	$f0, 4($a0)
+	flw	$f0, 8($a1)
+	fsw	$f0, 8($a0)
+	li	$a1, 552
+	lw	$a0, 52($sp)
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	utexture.2984
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
 	fmove	$f30, $fv
-	lw	$a0, 140($sp)
-	lw	$a1, 64($sp)
-	lw	$a26, 60($sp)
-	sw	$ra, 164($sp)
-	addi	$sp, $sp, 168
-	jal	utexture.2816
-	subi	$sp, $sp, 168
-	lw	$ra, 164($sp)
-	fmove	$f30, $fv
-	lw	$a0, 136($sp)
+	lw	$a0, 48($sp)
 	sla	$a0, $a0, 2
-	lw	$a1, 56($sp)
+	li	$a1, 544
 	lw	$a1, 0($a1)
 	add	$a0, $a0, $a1
-	lw	$a1, 108($sp)
+	lw	$a1, 32($sp)
 	sll	$a2, $a1, 2
-	lw	$a3, 120($sp)
+	lw	$a3, 28($sp)
 	add	$a2, $a3, $a2
 	sw	$a0, 0($a2)
-	lw	$a0, 52($sp)
-	sw	$ra, 164($sp)
-	addi	$sp, $sp, 168
-	jal	p_intersection_points.2591
-	subi	$sp, $sp, 168
-	lw	$ra, 164($sp)
-	move	$a0, $v0
-	lw	$a1, 108($sp)
-	sll	$a2, $a1, 2
-	add	$a2, $a0, $a2
-	lw	$a0, 0($a2)
-	lw	$a2, 64($sp)
-	move	$a1, $a2
-	sw	$ra, 164($sp)
-	addi	$sp, $sp, 168
-	jal	veccpy.2511
-	subi	$sp, $sp, 168
-	lw	$ra, 164($sp)
-	fmove	$f30, $fv
-	lw	$a0, 52($sp)
-	sw	$ra, 164($sp)
-	addi	$sp, $sp, 168
-	jal	p_calc_diffuse.2595
-	subi	$sp, $sp, 168
-	lw	$ra, 164($sp)
-	move	$a0, $v0
-	lw	$a1, 140($sp)
-	sw	$a0, 160($sp)
-	move	$a0, $a1
-	sw	$ra, 164($sp)
-	addi	$sp, $sp, 168
-	jal	o_diffuse.2571
-	subi	$sp, $sp, 168
-	lw	$ra, 164($sp)
-	fmove	$f0, $fv
-	sw	$ra, 164($sp)
-	addi	$sp, $sp, 168
-	jal	l.6036
-	subi	$sp, $sp, 168
-	lw	$ra, 164($sp)
-	mtc1	$f1, $a25
-	sw	$ra, 164($sp)
-	addi	$sp, $sp, 168
-	jal	fless.2487
-	subi	$sp, $sp, 168
-	lw	$ra, 164($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.8989
-	li	$a0, 1
-	lw	$a1, 108($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 160($sp)
-	add	$a2, $a3, $a2
-	sw	$a0, 0($a2)
-	lw	$a0, 52($sp)
-	sw	$ra, 164($sp)
-	addi	$sp, $sp, 168
-	jal	p_energy.2597
-	subi	$sp, $sp, 168
-	lw	$ra, 164($sp)
-	move	$a0, $v0
-	lw	$a1, 108($sp)
-	sll	$a2, $a1, 2
-	add	$a2, $a0, $a2
-	lw	$a2, 0($a2)
-	lw	$a3, 48($sp)
-	sw	$a0, 164($sp)
-	move	$a1, $a3
+	lw	$a0, 8($sp)
+	lw	$a2, 4($a0)
+	sll	$a4, $a1, 2
+	add	$a4, $a2, $a4
+	lw	$a2, 0($a4)
+	li	$a4, 552
+	flw	$f0, 0($a4)
+	fsw	$f0, 0($a2)
+	flw	$f0, 4($a4)
+	fsw	$f0, 4($a2)
+	flw	$f0, 8($a4)
+	fsw	$f0, 8($a2)
+	lw	$a2, 12($a0)
+	lw	$a4, 52($sp)
+	lw	$a5, 28($a4)
+	flw	$f0, 0($a5)
+	li	$v0, 16128
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fsub	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.18066
+	li	$a5, 0
+	j	fbge_cont.18067
+fbge_else.18066:
+	li	$a5, 1
+fbge_cont.18067:
+	li	$a6, 0
+	bne	$a5, $a6, bne_else.18068
+	li	$a5, 1
+	sll	$a6, $a1, 2
+	add	$a6, $a2, $a6
+	sw	$a5, 0($a6)
+	lw	$a2, 16($a0)
+	sll	$a5, $a1, 2
+	add	$a5, $a2, $a5
+	lw	$a5, 0($a5)
+	li	$a6, 580
+	flw	$f0, 0($a6)
+	fsw	$f0, 0($a5)
+	flw	$f0, 4($a6)
+	fsw	$f0, 4($a5)
+	flw	$f0, 8($a6)
+	fsw	$f0, 8($a5)
+	sll	$a5, $a1, 2
+	add	$a5, $a2, $a5
+	lw	$a2, 0($a5)
+	li	$v0, 17280
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	finv	$f0, $f0
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f1, $f0
+	flw	$f1, 40($sp)
+	fmul	$f0, $f0, $f1
+	flw	$f2, 0($a2)
+	fmul	$f2, $f2, $f0
+	fsw	$f2, 0($a2)
+	flw	$f2, 4($a2)
+	fmul	$f2, $f2, $f0
+	fsw	$f2, 4($a2)
+	flw	$f2, 8($a2)
+	fmul	$f0, $f2, $f0
+	fsw	$f0, 8($a2)
+	lw	$a2, 28($a0)
+	sll	$a5, $a1, 2
+	add	$a5, $a2, $a5
+	lw	$a2, 0($a5)
+	li	$a5, 568
+	flw	$f0, 0($a5)
+	fsw	$f0, 0($a2)
+	flw	$f0, 4($a5)
+	fsw	$f0, 4($a2)
+	flw	$f0, 8($a5)
+	fsw	$f0, 8($a2)
+	j	bne_cont.18069
+bne_else.18068:
+	li	$a5, 0
+	sll	$a6, $a1, 2
+	add	$a6, $a2, $a6
+	sw	$a5, 0($a6)
+bne_cont.18069:
+	li	$a2, 568
+	lw	$a5, 24($sp)
+	flw	$f0, 0($a5)
+	flw	$f1, 0($a2)
+	fmul	$f0, $f0, $f1
+	flw	$f1, 4($a5)
+	flw	$f2, 4($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a5)
+	flw	$f2, 8($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	li	$v0, -16384
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f1, $f0
+	li	$a2, 568
+	flw	$f1, 0($a5)
+	flw	$f2, 0($a2)
+	fmul	$f2, $f0, $f2
+	fadd	$f1, $f1, $f2
+	fsw	$f1, 0($a5)
+	flw	$f1, 4($a5)
+	flw	$f2, 4($a2)
+	fmul	$f2, $f0, $f2
+	fadd	$f1, $f1, $f2
+	fsw	$f1, 4($a5)
+	flw	$f1, 8($a5)
+	flw	$f2, 8($a2)
+	fmul	$f0, $f0, $f2
+	fadd	$f0, $f1, $f0
+	fsw	$f0, 8($a5)
+	lw	$a2, 28($a4)
+	flw	$f0, 4($a2)
+	flw	$f1, 16($sp)
+	fmul	$f0, $f1, $f0
+	li	$a2, 0
+	li	$a6, 536
+	lw	$a6, 0($a6)
+	fsw	$f0, 56($sp)
+	move	$a1, $a6
 	move	$a0, $a2
-	sw	$ra, 172($sp)
-	addi	$sp, $sp, 176
-	jal	veccpy.2511
-	subi	$sp, $sp, 176
-	lw	$ra, 172($sp)
-	fmove	$f30, $fv
-	lw	$a0, 108($sp)
-	sll	$a1, $a0, 2
-	lw	$a2, 164($sp)
-	add	$a1, $a2, $a1
-	lw	$a1, 0($a1)
-	sw	$ra, 172($sp)
-	addi	$sp, $sp, 176
-	jal	l.6037
-	subi	$sp, $sp, 176
-	lw	$ra, 172($sp)
-	mtc1	$f0, $a25
-	sw	$ra, 172($sp)
-	addi	$sp, $sp, 176
-	jal	l.6475
-	subi	$sp, $sp, 176
-	lw	$ra, 172($sp)
-	mtc1	$f1, $a25
-	finv	$f1, $f1
-	fmul	$f0, $f0, $f1
-	flw	$f1, 152($sp)
-	fmul	$f0, $f0, $f1
-	move	$a0, $a1
-	sw	$ra, 172($sp)
-	addi	$sp, $sp, 176
-	jal	vecscale.2540
-	subi	$sp, $sp, 176
-	lw	$ra, 172($sp)
-	fmove	$f30, $fv
-	lw	$a0, 52($sp)
-	sw	$ra, 172($sp)
-	addi	$sp, $sp, 176
-	jal	p_nvectors.2606
-	subi	$sp, $sp, 176
-	lw	$ra, 172($sp)
-	move	$a0, $v0
-	lw	$a1, 108($sp)
-	sll	$a2, $a1, 2
-	add	$a2, $a0, $a2
-	lw	$a0, 0($a2)
-	lw	$a2, 44($sp)
-	move	$a1, $a2
-	sw	$ra, 172($sp)
-	addi	$sp, $sp, 176
-	jal	veccpy.2511
-	subi	$sp, $sp, 176
-	lw	$ra, 172($sp)
-	fmove	$f30, $fv
-	j	bne_cont.8990
-bne_else.8989:
-	li	$a0, 0
-	lw	$a1, 108($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 160($sp)
-	add	$a2, $a3, $a2
-	sw	$a0, 0($a2)
-bne_cont.8990:
-	sw	$ra, 172($sp)
-	addi	$sp, $sp, 176
-	jal	l.6477
-	subi	$sp, $sp, 176
-	lw	$ra, 172($sp)
-	mtc1	$f0, $a25
-	lw	$a0, 112($sp)
-	lw	$a1, 44($sp)
-	fsw	$f0, 168($sp)
-	sw	$ra, 180($sp)
-	addi	$sp, $sp, 184
-	jal	veciprod.2522
-	subi	$sp, $sp, 184
-	lw	$ra, 180($sp)
-	fmove	$f0, $fv
-	flw	$f1, 168($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a0, 112($sp)
-	lw	$a1, 44($sp)
-	sw	$ra, 180($sp)
-	addi	$sp, $sp, 184
-	jal	vecaccum.2530
-	subi	$sp, $sp, 184
-	lw	$ra, 180($sp)
-	fmove	$f30, $fv
-	lw	$a0, 140($sp)
-	sw	$ra, 180($sp)
-	addi	$sp, $sp, 184
-	jal	o_hilight.2573
-	subi	$sp, $sp, 184
-	lw	$ra, 180($sp)
-	fmove	$f0, $fv
-	flw	$f1, 96($sp)
-	fmul	$f0, $f1, $f0
-	li	$a0, 0
-	lw	$a1, 40($sp)
-	lw	$a1, 0($a1)
-	lw	$a26, 36($sp)
-	fsw	$f0, 176($sp)
-	sw	$ra, 188($sp)
-	addi	$sp, $sp, 192
-	jal	shadow_check_one_or_matrix.2776
-	subi	$sp, $sp, 192
-	lw	$ra, 188($sp)
+	sw	$ra, 68($sp)
+	addi	$sp, $sp, 72
+	jal	shadow_check_one_or_matrix.2944
+	subi	$sp, $sp, 72
+	lw	$ra, 68($sp)
 	move	$a0, $v0
 	li	$a1, 0
-	bne	$a0, $a1, bne_else.8991
-	lw	$a0, 44($sp)
-	lw	$a1, 104($sp)
-	sw	$ra, 188($sp)
-	addi	$sp, $sp, 192
-	jal	veciprod.2522
-	subi	$sp, $sp, 192
-	lw	$ra, 188($sp)
-	fmove	$f0, $fv
-	sw	$ra, 188($sp)
-	addi	$sp, $sp, 192
-	jal	fneg.2473
-	subi	$sp, $sp, 192
-	lw	$ra, 188($sp)
-	fmove	$f0, $fv
-	flw	$f1, 152($sp)
+	bne	$a0, $a1, bne_else.18070
+	li	$a0, 568
+	li	$a1, 312
+	flw	$f0, 0($a0)
+	flw	$f1, 0($a1)
 	fmul	$f0, $f0, $f1
-	lw	$a0, 112($sp)
-	lw	$a1, 104($sp)
-	fsw	$f0, 184($sp)
-	sw	$ra, 196($sp)
-	addi	$sp, $sp, 200
-	jal	veciprod.2522
-	subi	$sp, $sp, 200
-	lw	$ra, 196($sp)
-	fmove	$f0, $fv
-	sw	$ra, 196($sp)
-	addi	$sp, $sp, 200
-	jal	fneg.2473
-	subi	$sp, $sp, 200
-	lw	$ra, 196($sp)
-	fmove	$f1, $fv
-	flw	$f0, 184($sp)
-	flw	$f2, 176($sp)
-	lw	$a26, 32($sp)
-	sw	$ra, 196($sp)
-	addi	$sp, $sp, 200
-	jal	add_light.2819
-	subi	$sp, $sp, 200
-	lw	$ra, 196($sp)
+	flw	$f1, 4($a0)
+	flw	$f2, 4($a1)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a0)
+	flw	$f2, 8($a1)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	fneg	$f0, $f0
+	flw	$f1, 40($sp)
+	fmul	$f0, $f0, $f1
+	li	$a0, 312
+	lw	$a1, 24($sp)
+	flw	$f2, 0($a1)
+	flw	$f3, 0($a0)
+	fmul	$f2, $f2, $f3
+	flw	$f3, 4($a1)
+	flw	$f4, 4($a0)
+	fmul	$f3, $f3, $f4
+	fadd	$f2, $f2, $f3
+	flw	$f3, 8($a1)
+	flw	$f4, 8($a0)
+	fmul	$f3, $f3, $f4
+	fadd	$f2, $f2, $f3
+	fneg	$f2, $f2
+	flw	$f3, 56($sp)
+	fmove	$f1, $f2
+	fmove	$f2, $f3
+	sw	$ra, 68($sp)
+	addi	$sp, $sp, 72
+	jal	add_light.2987
+	subi	$sp, $sp, 72
+	lw	$ra, 68($sp)
 	fmove	$f30, $fv
-	j	bne_cont.8992
-bne_else.8991:
-bne_cont.8992:
-	lw	$a0, 64($sp)
-	lw	$a26, 28($sp)
-	sw	$ra, 196($sp)
-	addi	$sp, $sp, 200
-	jal	setup_startp.2742
-	subi	$sp, $sp, 200
-	lw	$ra, 196($sp)
+	j	bne_cont.18071
+bne_else.18070:
+bne_cont.18071:
+	li	$a0, 552
+	li	$a1, 648
+	flw	$f0, 0($a0)
+	fsw	$f0, 0($a1)
+	flw	$f0, 4($a0)
+	fsw	$f0, 4($a1)
+	flw	$f0, 8($a0)
+	fsw	$f0, 8($a1)
+	li	$a1, 0
+	lw	$a1, 0($a1)
+	subi	$a1, $a1, 1
+	sw	$ra, 68($sp)
+	addi	$sp, $sp, 72
+	jal	setup_startp_constants.2907
+	subi	$sp, $sp, 72
+	lw	$ra, 68($sp)
 	fmove	$f30, $fv
-	lw	$a0, 24($sp)
+	li	$a0, 1736
 	lw	$a0, 0($a0)
 	subi	$a0, $a0, 1
-	flw	$f0, 152($sp)
-	flw	$f1, 176($sp)
-	lw	$a1, 112($sp)
-	lw	$a26, 20($sp)
-	sw	$ra, 196($sp)
-	addi	$sp, $sp, 200
-	jal	trace_reflections.2823
-	subi	$sp, $sp, 200
-	lw	$ra, 196($sp)
+	flw	$f0, 40($sp)
+	flw	$f1, 56($sp)
+	lw	$a1, 24($sp)
+	sw	$ra, 68($sp)
+	addi	$sp, $sp, 72
+	jal	trace_reflections.2991
+	subi	$sp, $sp, 72
+	lw	$ra, 68($sp)
 	fmove	$f30, $fv
-	sw	$ra, 196($sp)
-	addi	$sp, $sp, 200
-	jal	l.6480
-	subi	$sp, $sp, 200
-	lw	$ra, 196($sp)
-	mtc1	$f0, $a25
-	flw	$f1, 96($sp)
-	sw	$ra, 196($sp)
-	addi	$sp, $sp, 200
-	jal	fless.2487
-	subi	$sp, $sp, 200
-	lw	$ra, 196($sp)
-	move	$a0, $v0
+	li	$v0, 15820
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f0, $v0
+	flw	$f1, 16($sp)
+	fsub	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fblt	$f0, $f2, fbge_else.18072
+	li	$a0, 0
+	j	fbge_cont.18073
+fbge_else.18072:
+	li	$a0, 1
+fbge_cont.18073:
 	li	$a1, 0
-	bne	$a0, $a1, beq_else.8993
+	bne	$a0, $a1, beq_else.18074
 	jr	$ra
-beq_else.8993:
+beq_else.18074:
 	li	$a0, 4
-	lw	$a1, 108($sp)
-	blt	$a1, $a0, bge_else.8995
-	j	bge_cont.8996
-bge_else.8995:
+	lw	$a1, 32($sp)
+	blt	$a1, $a0, bge_else.18076
+	j	bge_cont.18077
+bge_else.18076:
 	addi	$a0, $a1, 1
 	li	$a2, -1
 	sll	$a0, $a0, 2
-	lw	$a3, 120($sp)
+	lw	$a3, 28($sp)
 	add	$a0, $a3, $a0
 	sw	$a2, 0($a0)
-bge_cont.8996:
+bge_cont.18077:
 	li	$a0, 2
-	lw	$a2, 144($sp)
-	bne	$a2, $a0, beq_else.8997
-	sw	$ra, 196($sp)
-	addi	$sp, $sp, 200
-	jal	l.6037
-	subi	$sp, $sp, 200
-	lw	$ra, 196($sp)
-	mtc1	$f0, $a25
-	lw	$a0, 140($sp)
-	fsw	$f0, 192($sp)
-	sw	$ra, 204($sp)
-	addi	$sp, $sp, 208
-	jal	o_diffuse.2571
-	subi	$sp, $sp, 208
-	lw	$ra, 204($sp)
-	fmove	$f0, $fv
-	flw	$f1, 192($sp)
-	fsub	$f0, $f1, $f0
-	flw	$f1, 96($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a0, 108($sp)
-	addi	$a0, $a0, 1
-	lw	$a1, 16($sp)
-	flw	$f1, 0($a1)
-	flw	$f2, 8($sp)
-	fadd	$f1, $f2, $f1
-	lw	$a1, 112($sp)
-	lw	$a2, 52($sp)
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	trace_ray.2828
-beq_else.8997:
-	jr	$ra
-bge_else.8978:
-	jr	$ra
-trace_diffuse_ray.2834:
-	lw	$a1, 48($a26)
-	lw	$a2, 44($a26)
-	lw	$a3, 40($a26)
-	lw	$a4, 36($a26)
-	lw	$a5, 32($a26)
-	lw	$a6, 28($a26)
-	lw	$a7, 24($a26)
-	lw	$a8, 20($a26)
-	lw	$a9, 16($a26)
-	lw	$a10, 12($a26)
-	lw	$a11, 8($a26)
-	lw	$a12, 4($a26)
-	sw	$a2, 0($sp)
-	sw	$a12, 4($sp)
-	fsw	$f0, 8($sp)
-	sw	$a7, 16($sp)
-	sw	$a6, 20($sp)
-	sw	$a3, 24($sp)
-	sw	$a4, 28($sp)
-	sw	$a9, 32($sp)
-	sw	$a1, 36($sp)
-	sw	$a11, 40($sp)
-	sw	$a0, 44($sp)
-	sw	$a5, 48($sp)
-	sw	$a10, 52($sp)
-	move	$a26, $a8
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	judge_intersection_fast.2805
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.9000
-	jr	$ra
-beq_else.9000:
+	lw	$a2, 36($sp)
+	bne	$a2, $a0, beq_else.18078
 	lw	$a0, 52($sp)
-	lw	$a0, 0($a0)
-	sll	$a0, $a0, 2
-	lw	$a1, 48($sp)
-	add	$a0, $a1, $a0
-	lw	$a0, 0($a0)
-	lw	$a1, 44($sp)
-	sw	$a0, 56($sp)
+	lw	$a0, 28($a0)
+	flw	$f0, 0($a0)
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fsub	$f0, $f2, $f0
+	fmul	$f0, $f1, $f0
+	addi	$a0, $a1, 1
+	li	$a1, 548
+	flw	$f1, 0($a1)
+	flw	$f2, 0($sp)
+	fadd	$f1, $f2, $f1
+	lw	$a1, 24($sp)
+	lw	$a2, 8($sp)
+	j	trace_ray.2996
+beq_else.18078:
+	jr	$ra
+bge_else.18038:
+	jr	$ra
+trace_diffuse_ray.3002:
+	li	$a1, 548
+	li	$v0, 20078
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 27432
+	mtc1	$f1, $v0
+	fsw	$f1, 0($a1)
+	li	$a1, 0
+	li	$a2, 536
+	lw	$a2, 0($a2)
+	fsw	$f0, 0($sp)
+	sw	$a0, 8($sp)
+	move	$a25, $a2
+	move	$a2, $a0
 	move	$a0, $a1
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	d_vec.2608
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	move	$a1, $v0
-	lw	$a0, 56($sp)
-	lw	$a26, 40($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	get_nvector.2813
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
+	move	$a1, $a25
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	trace_or_matrix_fast.2969
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
 	fmove	$f30, $fv
-	lw	$a0, 56($sp)
-	lw	$a1, 32($sp)
-	lw	$a26, 36($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	utexture.2816
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
+	li	$a0, 548
+	flw	$f0, 0($a0)
+	li	$v0, -16948
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fsub	$f1, $f1, $f0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fblt	$f1, $f2, fbge_else.18081
+	li	$a0, 0
+	j	fbge_cont.18082
+fbge_else.18081:
+	li	$a0, 1
+fbge_cont.18082:
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.18083
+	li	$a0, 0
+	j	bne_cont.18084
+bne_else.18083:
+	li	$v0, 19646
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 48160
+	mtc1	$f1, $v0
+	fsub	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.18085
+	li	$a0, 0
+	j	fbge_cont.18086
+fbge_else.18085:
+	li	$a0, 1
+fbge_cont.18086:
+bne_cont.18084:
+	li	$a1, 0
+	bne	$a0, $a1, beq_else.18087
+	jr	$ra
+beq_else.18087:
+	li	$a0, 48
+	li	$a1, 564
+	lw	$a1, 0($a1)
+	sll	$a1, $a1, 2
+	add	$a1, $a0, $a1
+	lw	$a0, 0($a1)
+	lw	$a1, 8($sp)
+	lw	$a1, 0($a1)
+	lw	$a2, 4($a0)
+	li	$a3, 1
+	sw	$a0, 12($sp)
+	bne	$a2, $a3, bne_else.18089
+	li	$a2, 544
+	lw	$a2, 0($a2)
+	li	$a3, 568
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	fsw	$f0, 0($a3)
+	fsw	$f0, 4($a3)
+	fsw	$f0, 8($a3)
+	li	$a3, 568
+	subi	$a4, $a2, 1
+	subi	$a2, $a2, 1
+	sll	$a2, $a2, 2
+	add	$a2, $a1, $a2
+	flw	$f0, 0($a2)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fbne	$f0, $f1, fbne_else.18091
+	li	$a1, 1
+	j	fbne_cont.18092
+fbne_else.18091:
+	li	$a1, 0
+fbne_cont.18092:
+	li	$a2, 0
+	bne	$a1, $a2, bne_else.18093
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f1, $f0, fbge_else.18095
+	li	$a1, 0
+	j	fbge_cont.18096
+fbge_else.18095:
+	li	$a1, 1
+fbge_cont.18096:
+	li	$a2, 0
+	bne	$a1, $a2, bne_else.18097
+	li	$v0, -16512
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	j	bne_cont.18098
+bne_else.18097:
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+bne_cont.18098:
+	j	bne_cont.18094
+bne_else.18093:
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+bne_cont.18094:
+	fneg	$f0, $f0
+	sll	$a1, $a4, 2
+	add	$a1, $a3, $a1
+	fsw	$f0, 0($a1)
+	j	bne_cont.18090
+bne_else.18089:
+	li	$a1, 2
+	bne	$a2, $a1, bne_else.18099
+	li	$a1, 568
+	lw	$a2, 16($a0)
+	flw	$f0, 0($a2)
+	fneg	$f0, $f0
+	fsw	$f0, 0($a1)
+	li	$a1, 568
+	lw	$a2, 16($a0)
+	flw	$f0, 4($a2)
+	fneg	$f0, $f0
+	fsw	$f0, 4($a1)
+	li	$a1, 568
+	lw	$a2, 16($a0)
+	flw	$f0, 8($a2)
+	fneg	$f0, $f0
+	fsw	$f0, 8($a1)
+	j	bne_cont.18100
+bne_else.18099:
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	get_nvector_second.2979
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+bne_cont.18100:
+bne_cont.18090:
+	li	$a1, 552
+	lw	$a0, 12($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	utexture.2984
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
 	fmove	$f30, $fv
 	li	$a0, 0
-	lw	$a1, 28($sp)
+	li	$a1, 536
 	lw	$a1, 0($a1)
-	lw	$a26, 24($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	shadow_check_one_or_matrix.2776
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	shadow_check_one_or_matrix.2944
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
 	move	$a0, $v0
 	li	$a1, 0
-	bne	$a0, $a1, beq_else.9002
-	lw	$a0, 20($sp)
-	lw	$a1, 16($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	veciprod.2522
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	fmove	$f0, $fv
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	fneg.2473
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	fmove	$f0, $fv
-	fsw	$f0, 64($sp)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	fispos.2475
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	move	$a0, $v0
+	bne	$a0, $a1, beq_else.18101
+	li	$a0, 568
+	li	$a1, 312
+	flw	$f0, 0($a0)
+	flw	$f1, 0($a1)
+	fmul	$f0, $f0, $f1
+	flw	$f1, 4($a0)
+	flw	$f2, 4($a1)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a0)
+	flw	$f2, 8($a1)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	fneg	$f0, $f0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f1, $f0, fbge_else.18102
+	li	$a0, 0
+	j	fbge_cont.18103
+fbge_else.18102:
+	li	$a0, 1
+fbge_cont.18103:
 	li	$a1, 0
-	bne	$a0, $a1, bne_else.9004
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	l.6035
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	mtc1	$f0, $a25
-	j	bne_cont.9005
-bne_else.9004:
-	flw	$f0, 64($sp)
-bne_cont.9005:
-	flw	$f1, 8($sp)
+	bne	$a0, $a1, bne_else.18104
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	j	bne_cont.18105
+bne_else.18104:
+bne_cont.18105:
+	li	$a0, 592
+	flw	$f1, 0($sp)
 	fmul	$f0, $f1, $f0
-	lw	$a0, 56($sp)
-	fsw	$f0, 72($sp)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	o_diffuse.2571
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	fmove	$f0, $fv
-	flw	$f1, 72($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a0, 4($sp)
-	lw	$a1, 0($sp)
-	j	vecaccum.2530
-beq_else.9002:
+	lw	$a1, 12($sp)
+	lw	$a1, 28($a1)
+	flw	$f1, 0($a1)
+	fmul	$f0, $f0, $f1
+	li	$a1, 580
+	flw	$f1, 0($a0)
+	flw	$f2, 0($a1)
+	fmul	$f2, $f0, $f2
+	fadd	$f1, $f1, $f2
+	fsw	$f1, 0($a0)
+	flw	$f1, 4($a0)
+	flw	$f2, 4($a1)
+	fmul	$f2, $f0, $f2
+	fadd	$f1, $f1, $f2
+	fsw	$f1, 4($a0)
+	flw	$f1, 8($a0)
+	flw	$f2, 8($a1)
+	fmul	$f0, $f0, $f2
+	fadd	$f0, $f1, $f0
+	fsw	$f0, 8($a0)
 	jr	$ra
-iter_trace_diffuse_rays.2837:
-	lw	$a4, 4($a26)
+beq_else.18101:
+	jr	$ra
+iter_trace_diffuse_rays.3005:
+	li	$a4, 0
+	blt	$a3, $a4, bge_else.18108
+	sll	$a4, $a3, 2
+	add	$a4, $a0, $a4
+	lw	$a4, 0($a4)
+	lw	$a4, 0($a4)
+	flw	$f0, 0($a4)
+	flw	$f1, 0($a1)
+	fmul	$f0, $f0, $f1
+	flw	$f1, 4($a4)
+	flw	$f2, 4($a1)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a4)
+	flw	$f2, 8($a1)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.18109
+	li	$a4, 0
+	j	fbge_cont.18110
+fbge_else.18109:
+	li	$a4, 1
+fbge_cont.18110:
 	li	$a5, 0
-	blt	$a3, $a5, bge_else.9007
-	sll	$a5, $a3, 2
-	add	$a5, $a0, $a5
-	lw	$a5, 0($a5)
-	sw	$a2, 0($sp)
-	sw	$a26, 4($sp)
-	sw	$a4, 8($sp)
-	sw	$a0, 12($sp)
-	sw	$a3, 16($sp)
-	sw	$a1, 20($sp)
-	move	$a0, $a5
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	d_vec.2608
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	lw	$a1, 20($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	veciprod.2522
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	fmove	$f0, $fv
-	fsw	$f0, 24($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	fisneg.2477
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.9008
-	lw	$a0, 16($sp)
-	sll	$a1, $a0, 2
-	lw	$a2, 12($sp)
-	add	$a1, $a2, $a1
-	lw	$a1, 0($a1)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	l.6498
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	mtc1	$f0, $a25
-	finv	$f0, $f0
-	flw	$f1, 24($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a26, 8($sp)
-	move	$a0, $a1
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	trace_diffuse_ray.2834
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f30, $fv
-	j	bne_cont.9009
-bne_else.9008:
-	lw	$a0, 16($sp)
-	addi	$a1, $a0, 1
-	sll	$a1, $a1, 2
-	lw	$a2, 12($sp)
-	add	$a1, $a2, $a1
-	lw	$a1, 0($a1)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	l.6496
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	mtc1	$f0, $a25
-	finv	$f0, $f0
-	flw	$f1, 24($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a26, 8($sp)
-	move	$a0, $a1
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	trace_diffuse_ray.2834
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f30, $fv
-bne_cont.9009:
-	lw	$a0, 16($sp)
-	subi	$a3, $a0, 2
-	lw	$a0, 12($sp)
-	lw	$a1, 20($sp)
-	lw	$a2, 0($sp)
-	lw	$a26, 4($sp)
-	lw	$a25, 0($a26)
-	j	iter_trace_diffuse_rays.2837
-bge_else.9007:
-	jr	$ra
-trace_diffuse_rays.2842:
-	lw	$a3, 8($a26)
-	lw	$a4, 4($a26)
 	sw	$a2, 0($sp)
 	sw	$a1, 4($sp)
 	sw	$a0, 8($sp)
-	sw	$a4, 12($sp)
-	move	$a0, $a2
-	move	$a26, $a3
+	sw	$a3, 12($sp)
+	bne	$a4, $a5, bne_else.18111
+	sll	$a4, $a3, 2
+	add	$a4, $a0, $a4
+	lw	$a4, 0($a4)
+	li	$v0, 17174
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	move	$a0, $a4
 	sw	$ra, 20($sp)
 	addi	$sp, $sp, 24
-	jal	setup_startp.2742
+	jal	trace_diffuse_ray.3002
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	j	bne_cont.18112
+bne_else.18111:
+	addi	$a4, $a3, 1
+	sll	$a4, $a4, 2
+	add	$a4, $a0, $a4
+	lw	$a4, 0($a4)
+	li	$v0, -15594
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	move	$a0, $a4
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	trace_diffuse_ray.3002
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+bne_cont.18112:
+	lw	$a0, 12($sp)
+	subi	$a0, $a0, 2
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18113
+	sll	$a1, $a0, 2
+	lw	$a2, 8($sp)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	lw	$a1, 0($a1)
+	flw	$f0, 0($a1)
+	lw	$a3, 4($sp)
+	flw	$f1, 0($a3)
+	fmul	$f0, $f0, $f1
+	flw	$f1, 4($a1)
+	flw	$f2, 4($a3)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a1)
+	flw	$f2, 8($a3)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.18114
+	li	$a1, 0
+	j	fbge_cont.18115
+fbge_else.18114:
+	li	$a1, 1
+fbge_cont.18115:
+	li	$a4, 0
+	sw	$a0, 16($sp)
+	bne	$a1, $a4, bne_else.18116
+	sll	$a1, $a0, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$v0, 17174
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	move	$a0, $a1
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	trace_diffuse_ray.3002
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	j	bne_cont.18117
+bne_else.18116:
+	addi	$a1, $a0, 1
+	sll	$a1, $a1, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$v0, -15594
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	move	$a0, $a1
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	trace_diffuse_ray.3002
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+bne_cont.18117:
+	lw	$a0, 16($sp)
+	subi	$a3, $a0, 2
+	lw	$a0, 8($sp)
+	lw	$a1, 4($sp)
+	lw	$a2, 0($sp)
+	j	iter_trace_diffuse_rays.3005
+bge_else.18113:
+	jr	$ra
+bge_else.18108:
+	jr	$ra
+trace_diffuse_ray_80percent.3014:
+	li	$a3, 0
+	sw	$a1, 0($sp)
+	sw	$a2, 4($sp)
+	sw	$a0, 8($sp)
+	bne	$a0, $a3, bne_else.18120
+	j	bne_cont.18121
+bne_else.18120:
+	li	$a3, 716
+	lw	$a3, 0($a3)
+	li	$a4, 648
+	flw	$f0, 0($a2)
+	fsw	$f0, 0($a4)
+	flw	$f0, 4($a2)
+	fsw	$f0, 4($a4)
+	flw	$f0, 8($a2)
+	fsw	$f0, 8($a4)
+	li	$a4, 0
+	lw	$a4, 0($a4)
+	subi	$a4, $a4, 1
+	sw	$a3, 12($sp)
+	move	$a1, $a4
+	move	$a0, $a2
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	setup_startp_constants.2907
 	subi	$sp, $sp, 24
 	lw	$ra, 20($sp)
 	fmove	$f30, $fv
 	li	$a3, 118
-	lw	$a0, 8($sp)
-	lw	$a1, 4($sp)
-	lw	$a2, 0($sp)
-	lw	$a26, 12($sp)
-	lw	$a25, 0($a26)
-	j	iter_trace_diffuse_rays.2837
-trace_diffuse_ray_80percent.2846:
-	lw	$a3, 8($a26)
-	lw	$a4, 4($a26)
-	li	$a5, 0
-	sw	$a2, 0($sp)
-	sw	$a1, 4($sp)
-	sw	$a3, 8($sp)
-	sw	$a4, 12($sp)
-	sw	$a0, 16($sp)
-	bne	$a0, $a5, bne_else.9011
-	j	bne_cont.9012
-bne_else.9011:
-	lw	$a5, 0($a4)
-	move	$a0, $a5
-	move	$a26, $a3
+	lw	$a0, 12($sp)
+	lw	$a1, 0($sp)
+	lw	$a2, 4($sp)
 	sw	$ra, 20($sp)
 	addi	$sp, $sp, 24
-	jal	trace_diffuse_rays.2842
+	jal	iter_trace_diffuse_rays.3005
 	subi	$sp, $sp, 24
 	lw	$ra, 20($sp)
 	fmove	$f30, $fv
-bne_cont.9012:
+bne_cont.18121:
 	li	$a0, 1
-	lw	$a1, 16($sp)
-	bne	$a1, $a0, bne_else.9013
-	j	bne_cont.9014
-bne_else.9013:
-	lw	$a0, 12($sp)
-	lw	$a2, 4($a0)
+	lw	$a1, 8($sp)
+	bne	$a1, $a0, bne_else.18122
+	j	bne_cont.18123
+bne_else.18122:
+	li	$a0, 716
+	lw	$a0, 4($a0)
+	li	$a2, 648
 	lw	$a3, 4($sp)
-	lw	$a4, 0($sp)
-	lw	$a26, 8($sp)
-	move	$a1, $a3
-	move	$a0, $a2
-	move	$a2, $a4
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	trace_diffuse_rays.2842
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f30, $fv
-bne_cont.9014:
-	li	$a0, 2
-	lw	$a1, 16($sp)
-	bne	$a1, $a0, bne_else.9015
-	j	bne_cont.9016
-bne_else.9015:
-	lw	$a0, 12($sp)
-	lw	$a2, 8($a0)
-	lw	$a3, 4($sp)
-	lw	$a4, 0($sp)
-	lw	$a26, 8($sp)
-	move	$a1, $a3
-	move	$a0, $a2
-	move	$a2, $a4
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	trace_diffuse_rays.2842
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f30, $fv
-bne_cont.9016:
-	li	$a0, 3
-	lw	$a1, 16($sp)
-	bne	$a1, $a0, bne_else.9017
-	j	bne_cont.9018
-bne_else.9017:
-	lw	$a0, 12($sp)
-	lw	$a2, 12($a0)
-	lw	$a3, 4($sp)
-	lw	$a4, 0($sp)
-	lw	$a26, 8($sp)
-	move	$a1, $a3
-	move	$a0, $a2
-	move	$a2, $a4
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	trace_diffuse_rays.2842
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f30, $fv
-bne_cont.9018:
-	li	$a0, 4
-	lw	$a1, 16($sp)
-	bne	$a1, $a0, beq_else.9019
-	jr	$ra
-beq_else.9019:
-	lw	$a0, 12($sp)
-	lw	$a0, 16($a0)
-	lw	$a1, 4($sp)
-	lw	$a2, 0($sp)
-	lw	$a26, 8($sp)
-	lw	$a25, 0($a26)
-	j	trace_diffuse_rays.2842
-calc_diffuse_using_1point.2850:
-	lw	$a2, 12($a26)
-	lw	$a3, 8($a26)
-	lw	$a4, 4($a26)
-	sw	$a3, 0($sp)
-	sw	$a2, 4($sp)
-	sw	$a4, 8($sp)
-	sw	$a1, 12($sp)
-	sw	$a0, 16($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	p_received_ray_20percent.2599
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	lw	$a1, 16($sp)
-	sw	$a0, 20($sp)
-	move	$a0, $a1
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	p_nvectors.2606
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	lw	$a1, 16($sp)
-	sw	$a0, 24($sp)
-	move	$a0, $a1
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	p_intersection_points.2591
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	lw	$a1, 16($sp)
-	sw	$a0, 28($sp)
-	move	$a0, $a1
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	p_energy.2597
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	lw	$a1, 12($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 20($sp)
-	add	$a2, $a3, $a2
+	flw	$f0, 0($a3)
+	fsw	$f0, 0($a2)
+	flw	$f0, 4($a3)
+	fsw	$f0, 4($a2)
+	flw	$f0, 8($a3)
+	fsw	$f0, 8($a2)
+	li	$a2, 0
 	lw	$a2, 0($a2)
-	lw	$a3, 8($sp)
-	sw	$a0, 32($sp)
+	subi	$a2, $a2, 1
+	sw	$a0, 16($sp)
 	move	$a1, $a2
 	move	$a0, $a3
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	setup_startp_constants.2907
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	li	$a3, 118
+	lw	$a0, 16($sp)
+	lw	$a1, 0($sp)
+	lw	$a2, 4($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	iter_trace_diffuse_rays.3005
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+bne_cont.18123:
+	li	$a0, 2
+	lw	$a1, 8($sp)
+	bne	$a1, $a0, bne_else.18124
+	j	bne_cont.18125
+bne_else.18124:
+	li	$a0, 716
+	lw	$a0, 8($a0)
+	li	$a2, 648
+	lw	$a3, 4($sp)
+	flw	$f0, 0($a3)
+	fsw	$f0, 0($a2)
+	flw	$f0, 4($a3)
+	fsw	$f0, 4($a2)
+	flw	$f0, 8($a3)
+	fsw	$f0, 8($a2)
+	li	$a2, 0
+	lw	$a2, 0($a2)
+	subi	$a2, $a2, 1
+	sw	$a0, 20($sp)
+	move	$a1, $a2
+	move	$a0, $a3
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	setup_startp_constants.2907
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	li	$a3, 118
+	lw	$a0, 20($sp)
+	lw	$a1, 0($sp)
+	lw	$a2, 4($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	iter_trace_diffuse_rays.3005
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+bne_cont.18125:
+	li	$a0, 3
+	lw	$a1, 8($sp)
+	bne	$a1, $a0, bne_else.18126
+	j	bne_cont.18127
+bne_else.18126:
+	li	$a0, 716
+	lw	$a0, 12($a0)
+	li	$a2, 648
+	lw	$a3, 4($sp)
+	flw	$f0, 0($a3)
+	fsw	$f0, 0($a2)
+	flw	$f0, 4($a3)
+	fsw	$f0, 4($a2)
+	flw	$f0, 8($a3)
+	fsw	$f0, 8($a2)
+	li	$a2, 0
+	lw	$a2, 0($a2)
+	subi	$a2, $a2, 1
+	sw	$a0, 24($sp)
+	move	$a1, $a2
+	move	$a0, $a3
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	setup_startp_constants.2907
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	li	$a3, 118
+	lw	$a0, 24($sp)
+	lw	$a1, 0($sp)
+	lw	$a2, 4($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	iter_trace_diffuse_rays.3005
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+bne_cont.18127:
+	li	$a0, 4
+	lw	$a1, 8($sp)
+	bne	$a1, $a0, beq_else.18128
+	jr	$ra
+beq_else.18128:
+	li	$a0, 716
+	lw	$a0, 16($a0)
+	li	$a1, 648
+	lw	$a2, 4($sp)
+	flw	$f0, 0($a2)
+	fsw	$f0, 0($a1)
+	flw	$f0, 4($a2)
+	fsw	$f0, 4($a1)
+	flw	$f0, 8($a2)
+	fsw	$f0, 8($a1)
+	li	$a1, 0
+	lw	$a1, 0($a1)
+	subi	$a1, $a1, 1
+	sw	$a0, 28($sp)
+	move	$a0, $a2
 	sw	$ra, 36($sp)
 	addi	$sp, $sp, 40
-	jal	veccpy.2511
+	jal	setup_startp_constants.2907
 	subi	$sp, $sp, 40
 	lw	$ra, 36($sp)
 	fmove	$f30, $fv
-	lw	$a0, 16($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	p_group_id.2601
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	lw	$a1, 12($sp)
+	li	$a3, 118
+	lw	$a0, 28($sp)
+	lw	$a1, 0($sp)
+	lw	$a2, 4($sp)
+	j	iter_trace_diffuse_rays.3005
+calc_diffuse_using_1point.3018:
+	lw	$a2, 20($a0)
+	lw	$a3, 28($a0)
+	lw	$a4, 4($a0)
+	lw	$a5, 16($a0)
+	li	$a6, 592
+	sll	$a7, $a1, 2
+	add	$a7, $a2, $a7
+	lw	$a2, 0($a7)
+	flw	$f0, 0($a2)
+	fsw	$f0, 0($a6)
+	flw	$f0, 4($a2)
+	fsw	$f0, 4($a6)
+	flw	$f0, 8($a2)
+	fsw	$f0, 8($a6)
+	lw	$a0, 24($a0)
+	lw	$a0, 0($a0)
 	sll	$a2, $a1, 2
-	lw	$a3, 24($sp)
 	add	$a2, $a3, $a2
 	lw	$a2, 0($a2)
 	sll	$a3, $a1, 2
-	lw	$a4, 28($sp)
 	add	$a3, $a4, $a3
 	lw	$a3, 0($a3)
-	lw	$a26, 4($sp)
-	move	$a1, $a2
-	move	$a2, $a3
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	trace_diffuse_ray_80percent.2846
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f30, $fv
-	lw	$a0, 12($sp)
-	sll	$a0, $a0, 2
-	lw	$a1, 32($sp)
-	add	$a0, $a1, $a0
-	lw	$a1, 0($a0)
-	lw	$a0, 0($sp)
-	lw	$a2, 8($sp)
-	j	vecaccumv.2543
-calc_diffuse_using_5points.2853:
-	lw	$a5, 8($a26)
-	lw	$a6, 4($a26)
-	sll	$a7, $a0, 2
-	add	$a7, $a1, $a7
-	lw	$a1, 0($a7)
+	li	$a4, 0
 	sw	$a5, 0($sp)
-	sw	$a6, 4($sp)
-	sw	$a4, 8($sp)
+	sw	$a1, 4($sp)
+	sw	$a2, 8($sp)
 	sw	$a3, 12($sp)
-	sw	$a2, 16($sp)
-	sw	$a0, 20($sp)
+	sw	$a0, 16($sp)
+	bne	$a0, $a4, bne_else.18130
+	j	bne_cont.18131
+bne_else.18130:
+	li	$a4, 716
+	lw	$a4, 0($a4)
+	li	$a6, 648
+	flw	$f0, 0($a3)
+	fsw	$f0, 0($a6)
+	flw	$f0, 4($a3)
+	fsw	$f0, 4($a6)
+	flw	$f0, 8($a3)
+	fsw	$f0, 8($a6)
+	li	$a6, 0
+	lw	$a6, 0($a6)
+	subi	$a6, $a6, 1
+	sw	$a4, 20($sp)
+	move	$a1, $a6
+	move	$a0, $a3
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	setup_startp_constants.2907
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	lw	$a0, 20($sp)
+	lw	$a1, 472($a0)
+	lw	$a1, 0($a1)
+	flw	$f0, 0($a1)
+	lw	$a2, 8($sp)
+	flw	$f1, 0($a2)
+	fmul	$f0, $f0, $f1
+	flw	$f1, 4($a1)
+	flw	$f2, 4($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a1)
+	flw	$f2, 8($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.18132
+	li	$a1, 0
+	j	fbge_cont.18133
+fbge_else.18132:
+	li	$a1, 1
+fbge_cont.18133:
+	li	$a3, 0
+	bne	$a1, $a3, bne_else.18134
+	lw	$a1, 472($a0)
+	li	$v0, 17174
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
 	move	$a0, $a1
 	sw	$ra, 28($sp)
 	addi	$sp, $sp, 32
-	jal	p_received_ray_20percent.2599
+	jal	trace_diffuse_ray.3002
 	subi	$sp, $sp, 32
 	lw	$ra, 28($sp)
-	move	$a0, $v0
-	lw	$a1, 20($sp)
-	subi	$a2, $a1, 1
-	sll	$a2, $a2, 2
-	lw	$a3, 16($sp)
-	add	$a2, $a3, $a2
-	lw	$a2, 0($a2)
-	sw	$a0, 24($sp)
-	move	$a0, $a2
+	fmove	$f30, $fv
+	j	bne_cont.18135
+bne_else.18134:
+	lw	$a1, 476($a0)
+	li	$v0, -15594
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	move	$a0, $a1
 	sw	$ra, 28($sp)
 	addi	$sp, $sp, 32
-	jal	p_received_ray_20percent.2599
+	jal	trace_diffuse_ray.3002
 	subi	$sp, $sp, 32
 	lw	$ra, 28($sp)
-	move	$a0, $v0
-	lw	$a1, 20($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 16($sp)
-	add	$a2, $a3, $a2
-	lw	$a2, 0($a2)
-	sw	$a0, 28($sp)
-	move	$a0, $a2
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	p_received_ray_20percent.2599
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	lw	$a1, 20($sp)
-	addi	$a2, $a1, 1
-	sll	$a2, $a2, 2
-	lw	$a3, 16($sp)
-	add	$a2, $a3, $a2
-	lw	$a2, 0($a2)
-	sw	$a0, 32($sp)
-	move	$a0, $a2
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	p_received_ray_20percent.2599
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	lw	$a1, 20($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 12($sp)
-	add	$a2, $a3, $a2
-	lw	$a2, 0($a2)
-	sw	$a0, 36($sp)
-	move	$a0, $a2
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	p_received_ray_20percent.2599
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	move	$a0, $v0
+	fmove	$f30, $fv
+bne_cont.18135:
+	li	$a3, 116
+	lw	$a0, 20($sp)
 	lw	$a1, 8($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 24($sp)
-	add	$a2, $a3, $a2
+	lw	$a2, 12($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	iter_trace_diffuse_rays.3005
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+bne_cont.18131:
+	li	$a0, 1
+	lw	$a1, 16($sp)
+	bne	$a1, $a0, bne_else.18136
+	j	bne_cont.18137
+bne_else.18136:
+	li	$a0, 716
+	lw	$a0, 4($a0)
+	li	$a2, 648
+	lw	$a3, 12($sp)
+	flw	$f0, 0($a3)
+	fsw	$f0, 0($a2)
+	flw	$f0, 4($a3)
+	fsw	$f0, 4($a2)
+	flw	$f0, 8($a3)
+	fsw	$f0, 8($a2)
+	li	$a2, 0
 	lw	$a2, 0($a2)
-	lw	$a3, 4($sp)
-	sw	$a0, 40($sp)
+	subi	$a2, $a2, 1
+	sw	$a0, 24($sp)
 	move	$a1, $a2
 	move	$a0, $a3
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	veccpy.2511
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f30, $fv
-	lw	$a0, 8($sp)
-	sll	$a1, $a0, 2
-	lw	$a2, 28($sp)
-	add	$a1, $a2, $a1
-	lw	$a1, 0($a1)
-	lw	$a2, 4($sp)
-	move	$a0, $a2
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	vecadd.2534
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f30, $fv
-	lw	$a0, 8($sp)
-	sll	$a1, $a0, 2
-	lw	$a2, 32($sp)
-	add	$a1, $a2, $a1
-	lw	$a1, 0($a1)
-	lw	$a2, 4($sp)
-	move	$a0, $a2
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	vecadd.2534
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f30, $fv
-	lw	$a0, 8($sp)
-	sll	$a1, $a0, 2
-	lw	$a2, 36($sp)
-	add	$a1, $a2, $a1
-	lw	$a1, 0($a1)
-	lw	$a2, 4($sp)
-	move	$a0, $a2
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	vecadd.2534
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f30, $fv
-	lw	$a0, 8($sp)
-	sll	$a1, $a0, 2
-	lw	$a2, 40($sp)
-	add	$a1, $a2, $a1
-	lw	$a1, 0($a1)
-	lw	$a2, 4($sp)
-	move	$a0, $a2
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	vecadd.2534
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f30, $fv
-	lw	$a0, 20($sp)
-	sll	$a0, $a0, 2
-	lw	$a1, 16($sp)
-	add	$a0, $a1, $a0
-	lw	$a0, 0($a0)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	p_energy.2597
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	move	$a0, $v0
-	lw	$a1, 8($sp)
-	sll	$a1, $a1, 2
-	add	$a1, $a0, $a1
-	lw	$a1, 0($a1)
-	lw	$a0, 0($sp)
-	lw	$a2, 4($sp)
-	j	vecaccumv.2543
-do_without_neighbors.2859:
-	lw	$a2, 4($a26)
-	li	$a3, 4
-	blt	$a3, $a1, bge_else.9021
-	sw	$a26, 0($sp)
-	sw	$a2, 4($sp)
-	sw	$a0, 8($sp)
-	sw	$a1, 12($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	p_surface_ids.2593
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	lw	$a2, 12($sp)
-	sll	$a3, $a2, 2
-	add	$a3, $a0, $a3
-	lw	$a0, 0($a3)
-	blt	$a0, $a1, bge_else.9022
-	lw	$a0, 8($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	p_calc_diffuse.2595
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	lw	$a1, 12($sp)
-	sll	$a2, $a1, 2
-	add	$a2, $a0, $a2
-	lw	$a0, 0($a2)
-	li	$a2, 0
-	bne	$a0, $a2, bne_else.9023
-	j	bne_cont.9024
-bne_else.9023:
-	lw	$a0, 8($sp)
-	lw	$a26, 4($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	calc_diffuse_using_1point.2850
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f30, $fv
-bne_cont.9024:
-	lw	$a0, 12($sp)
-	addi	$a1, $a0, 1
-	lw	$a0, 8($sp)
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	do_without_neighbors.2859
-bge_else.9022:
-	jr	$ra
-bge_else.9021:
-	jr	$ra
-neighbors_exist.2862:
-	lw	$a2, 4($a26)
-	lw	$a3, 4($a2)
-	addi	$a4, $a1, 1
-	blt	$a4, $a3, bge_else.9027
-	li	$v0, 0
-	jr	$ra
-bge_else.9027:
-	li	$a3, 0
-	blt	$a3, $a1, bge_else.9028
-	li	$v0, 0
-	jr	$ra
-bge_else.9028:
-	lw	$a1, 0($a2)
-	addi	$a2, $a0, 1
-	blt	$a2, $a1, bge_else.9029
-	li	$v0, 0
-	jr	$ra
-bge_else.9029:
-	li	$a1, 0
-	blt	$a1, $a0, bge_else.9030
-	li	$v0, 0
-	jr	$ra
-bge_else.9030:
-	li	$v0, 1
-	jr	$ra
-get_surface_id.2866:
-	sw	$a1, 0($sp)
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	p_surface_ids.2593
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	move	$a0, $v0
-	lw	$a1, 0($sp)
-	sll	$a1, $a1, 2
-	add	$a1, $a0, $a1
-	lw	$v0, 0($a1)
-	jr	$ra
-neighbors_are_available.2869:
-	sll	$a5, $a0, 2
-	add	$a5, $a2, $a5
-	lw	$a5, 0($a5)
-	sw	$a2, 0($sp)
-	sw	$a3, 4($sp)
-	sw	$a4, 8($sp)
-	sw	$a1, 12($sp)
-	sw	$a0, 16($sp)
-	move	$a1, $a4
-	move	$a0, $a5
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	get_surface_id.2866
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	lw	$a1, 16($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 12($sp)
-	add	$a2, $a3, $a2
-	lw	$a2, 0($a2)
-	lw	$a3, 8($sp)
-	sw	$a0, 20($sp)
-	move	$a1, $a3
-	move	$a0, $a2
 	sw	$ra, 28($sp)
 	addi	$sp, $sp, 32
-	jal	get_surface_id.2866
+	jal	setup_startp_constants.2907
 	subi	$sp, $sp, 32
 	lw	$ra, 28($sp)
-	move	$a0, $v0
-	lw	$a1, 20($sp)
-	bne	$a0, $a1, beq_else.9031
-	lw	$a0, 16($sp)
-	sll	$a2, $a0, 2
+	fmove	$f30, $fv
+	lw	$a0, 24($sp)
+	lw	$a1, 472($a0)
+	lw	$a1, 0($a1)
+	flw	$f0, 0($a1)
+	lw	$a2, 8($sp)
+	flw	$f1, 0($a2)
+	fmul	$f0, $f0, $f1
+	flw	$f1, 4($a1)
+	flw	$f2, 4($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a1)
+	flw	$f2, 8($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.18138
+	li	$a1, 0
+	j	fbge_cont.18139
+fbge_else.18138:
+	li	$a1, 1
+fbge_cont.18139:
+	li	$a3, 0
+	bne	$a1, $a3, bne_else.18140
+	lw	$a1, 472($a0)
+	li	$v0, 17174
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	move	$a0, $a1
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	trace_diffuse_ray.3002
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	j	bne_cont.18141
+bne_else.18140:
+	lw	$a1, 476($a0)
+	li	$v0, -15594
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	move	$a0, $a1
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	trace_diffuse_ray.3002
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+bne_cont.18141:
+	li	$a3, 116
+	lw	$a0, 24($sp)
+	lw	$a1, 8($sp)
+	lw	$a2, 12($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	iter_trace_diffuse_rays.3005
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+bne_cont.18137:
+	li	$a0, 2
+	lw	$a1, 16($sp)
+	bne	$a1, $a0, bne_else.18142
+	j	bne_cont.18143
+bne_else.18142:
+	li	$a0, 716
+	lw	$a0, 8($a0)
+	li	$a2, 648
+	lw	$a3, 12($sp)
+	flw	$f0, 0($a3)
+	fsw	$f0, 0($a2)
+	flw	$f0, 4($a3)
+	fsw	$f0, 4($a2)
+	flw	$f0, 8($a3)
+	fsw	$f0, 8($a2)
+	li	$a2, 0
+	lw	$a2, 0($a2)
+	subi	$a2, $a2, 1
+	sw	$a0, 28($sp)
+	move	$a1, $a2
+	move	$a0, $a3
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	setup_startp_constants.2907
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+	lw	$a0, 28($sp)
+	lw	$a1, 472($a0)
+	lw	$a1, 0($a1)
+	flw	$f0, 0($a1)
+	lw	$a2, 8($sp)
+	flw	$f1, 0($a2)
+	fmul	$f0, $f0, $f1
+	flw	$f1, 4($a1)
+	flw	$f2, 4($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a1)
+	flw	$f2, 8($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.18144
+	li	$a1, 0
+	j	fbge_cont.18145
+fbge_else.18144:
+	li	$a1, 1
+fbge_cont.18145:
+	li	$a3, 0
+	bne	$a1, $a3, bne_else.18146
+	lw	$a1, 472($a0)
+	li	$v0, 17174
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	move	$a0, $a1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	trace_diffuse_ray.3002
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+	j	bne_cont.18147
+bne_else.18146:
+	lw	$a1, 476($a0)
+	li	$v0, -15594
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	move	$a0, $a1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	trace_diffuse_ray.3002
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+bne_cont.18147:
+	li	$a3, 116
+	lw	$a0, 28($sp)
+	lw	$a1, 8($sp)
+	lw	$a2, 12($sp)
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	iter_trace_diffuse_rays.3005
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+bne_cont.18143:
+	li	$a0, 3
+	lw	$a1, 16($sp)
+	bne	$a1, $a0, bne_else.18148
+	j	bne_cont.18149
+bne_else.18148:
+	li	$a0, 716
+	lw	$a0, 12($a0)
+	li	$a2, 648
+	lw	$a3, 12($sp)
+	flw	$f0, 0($a3)
+	fsw	$f0, 0($a2)
+	flw	$f0, 4($a3)
+	fsw	$f0, 4($a2)
+	flw	$f0, 8($a3)
+	fsw	$f0, 8($a2)
+	li	$a2, 0
+	lw	$a2, 0($a2)
+	subi	$a2, $a2, 1
+	sw	$a0, 32($sp)
+	move	$a1, $a2
+	move	$a0, $a3
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	setup_startp_constants.2907
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+	lw	$a0, 32($sp)
+	lw	$a1, 472($a0)
+	lw	$a1, 0($a1)
+	flw	$f0, 0($a1)
+	lw	$a2, 8($sp)
+	flw	$f1, 0($a2)
+	fmul	$f0, $f0, $f1
+	flw	$f1, 4($a1)
+	flw	$f2, 4($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a1)
+	flw	$f2, 8($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.18150
+	li	$a1, 0
+	j	fbge_cont.18151
+fbge_else.18150:
+	li	$a1, 1
+fbge_cont.18151:
+	li	$a3, 0
+	bne	$a1, $a3, bne_else.18152
+	lw	$a1, 472($a0)
+	li	$v0, 17174
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	move	$a0, $a1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	trace_diffuse_ray.3002
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+	j	bne_cont.18153
+bne_else.18152:
+	lw	$a1, 476($a0)
+	li	$v0, -15594
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	move	$a0, $a1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	trace_diffuse_ray.3002
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+bne_cont.18153:
+	li	$a3, 116
+	lw	$a0, 32($sp)
+	lw	$a1, 8($sp)
+	lw	$a2, 12($sp)
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	iter_trace_diffuse_rays.3005
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+bne_cont.18149:
+	li	$a0, 4
+	lw	$a1, 16($sp)
+	bne	$a1, $a0, bne_else.18154
+	j	bne_cont.18155
+bne_else.18154:
+	li	$a0, 716
+	lw	$a0, 16($a0)
+	li	$a1, 648
+	lw	$a2, 12($sp)
+	flw	$f0, 0($a2)
+	fsw	$f0, 0($a1)
+	flw	$f0, 4($a2)
+	fsw	$f0, 4($a1)
+	flw	$f0, 8($a2)
+	fsw	$f0, 8($a1)
+	li	$a1, 0
+	lw	$a1, 0($a1)
+	subi	$a1, $a1, 1
+	sw	$a0, 36($sp)
+	move	$a0, $a2
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	setup_startp_constants.2907
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	lw	$a0, 36($sp)
+	lw	$a1, 472($a0)
+	lw	$a1, 0($a1)
+	flw	$f0, 0($a1)
+	lw	$a2, 8($sp)
+	flw	$f1, 0($a2)
+	fmul	$f0, $f0, $f1
+	flw	$f1, 4($a1)
+	flw	$f2, 4($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a1)
+	flw	$f2, 8($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.18156
+	li	$a1, 0
+	j	fbge_cont.18157
+fbge_else.18156:
+	li	$a1, 1
+fbge_cont.18157:
+	li	$a3, 0
+	bne	$a1, $a3, bne_else.18158
+	lw	$a1, 472($a0)
+	li	$v0, 17174
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	move	$a0, $a1
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	trace_diffuse_ray.3002
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	j	bne_cont.18159
+bne_else.18158:
+	lw	$a1, 476($a0)
+	li	$v0, -15594
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	move	$a0, $a1
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	trace_diffuse_ray.3002
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+bne_cont.18159:
+	li	$a3, 116
+	lw	$a0, 36($sp)
+	lw	$a1, 8($sp)
+	lw	$a2, 12($sp)
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	iter_trace_diffuse_rays.3005
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+bne_cont.18155:
+	li	$a0, 604
+	lw	$a1, 4($sp)
+	sll	$a1, $a1, 2
+	lw	$a2, 0($sp)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a2, 592
+	flw	$f0, 0($a0)
+	flw	$f1, 0($a1)
+	flw	$f2, 0($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 0($a0)
+	flw	$f0, 4($a0)
+	flw	$f1, 4($a1)
+	flw	$f2, 4($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 4($a0)
+	flw	$f0, 8($a0)
+	flw	$f1, 8($a1)
+	flw	$f2, 8($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 8($a0)
+	jr	$ra
+calc_diffuse_using_5points.3021:
+	sll	$a5, $a0, 2
+	add	$a5, $a1, $a5
+	lw	$a1, 0($a5)
+	lw	$a1, 20($a1)
+	subi	$a5, $a0, 1
+	sll	$a5, $a5, 2
+	add	$a5, $a2, $a5
+	lw	$a5, 0($a5)
+	lw	$a5, 20($a5)
+	sll	$a6, $a0, 2
+	add	$a6, $a2, $a6
+	lw	$a6, 0($a6)
+	lw	$a6, 20($a6)
+	addi	$a7, $a0, 1
+	sll	$a7, $a7, 2
+	add	$a7, $a2, $a7
+	lw	$a7, 0($a7)
+	lw	$a7, 20($a7)
+	sll	$a8, $a0, 2
+	add	$a8, $a3, $a8
+	lw	$a3, 0($a8)
+	lw	$a3, 20($a3)
+	li	$a8, 592
+	sll	$a9, $a4, 2
+	add	$a9, $a1, $a9
+	lw	$a1, 0($a9)
+	flw	$f0, 0($a1)
+	fsw	$f0, 0($a8)
+	flw	$f0, 4($a1)
+	fsw	$f0, 4($a8)
+	flw	$f0, 8($a1)
+	fsw	$f0, 8($a8)
+	li	$a1, 592
+	sll	$a8, $a4, 2
+	add	$a8, $a5, $a8
+	lw	$a5, 0($a8)
+	flw	$f0, 0($a1)
+	flw	$f1, 0($a5)
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 0($a1)
+	flw	$f0, 4($a1)
+	flw	$f1, 4($a5)
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 4($a1)
+	flw	$f0, 8($a1)
+	flw	$f1, 8($a5)
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 8($a1)
+	li	$a1, 592
+	sll	$a5, $a4, 2
+	add	$a5, $a6, $a5
+	lw	$a5, 0($a5)
+	flw	$f0, 0($a1)
+	flw	$f1, 0($a5)
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 0($a1)
+	flw	$f0, 4($a1)
+	flw	$f1, 4($a5)
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 4($a1)
+	flw	$f0, 8($a1)
+	flw	$f1, 8($a5)
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 8($a1)
+	li	$a1, 592
+	sll	$a5, $a4, 2
+	add	$a5, $a7, $a5
+	lw	$a5, 0($a5)
+	flw	$f0, 0($a1)
+	flw	$f1, 0($a5)
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 0($a1)
+	flw	$f0, 4($a1)
+	flw	$f1, 4($a5)
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 4($a1)
+	flw	$f0, 8($a1)
+	flw	$f1, 8($a5)
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 8($a1)
+	li	$a1, 592
+	sll	$a5, $a4, 2
+	add	$a5, $a3, $a5
+	lw	$a3, 0($a5)
+	flw	$f0, 0($a1)
+	flw	$f1, 0($a3)
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 0($a1)
+	flw	$f0, 4($a1)
+	flw	$f1, 4($a3)
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 4($a1)
+	flw	$f0, 8($a1)
+	flw	$f1, 8($a3)
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 8($a1)
+	sll	$a0, $a0, 2
+	add	$a0, $a2, $a0
+	lw	$a0, 0($a0)
+	lw	$a0, 16($a0)
+	li	$a1, 604
+	sll	$a2, $a4, 2
+	add	$a2, $a0, $a2
+	lw	$a0, 0($a2)
+	li	$a2, 592
+	flw	$f0, 0($a1)
+	flw	$f1, 0($a0)
+	flw	$f2, 0($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 0($a1)
+	flw	$f0, 4($a1)
+	flw	$f1, 4($a0)
+	flw	$f2, 4($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 4($a1)
+	flw	$f0, 8($a1)
+	flw	$f1, 8($a0)
+	flw	$f2, 8($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 8($a1)
+	jr	$ra
+do_without_neighbors.3027:
+	li	$a2, 4
+	blt	$a2, $a1, bge_else.18162
+	lw	$a2, 8($a0)
+	li	$a3, 0
+	sll	$a4, $a1, 2
+	add	$a4, $a2, $a4
+	lw	$a2, 0($a4)
+	blt	$a2, $a3, bge_else.18163
+	lw	$a2, 12($a0)
+	sll	$a3, $a1, 2
+	add	$a3, $a2, $a3
+	lw	$a2, 0($a3)
+	li	$a3, 0
+	sw	$a0, 0($sp)
+	bne	$a2, $a3, bne_else.18164
+	j	bne_cont.18165
+bne_else.18164:
+	lw	$a2, 20($a0)
+	lw	$a3, 28($a0)
+	lw	$a4, 4($a0)
+	lw	$a5, 16($a0)
+	li	$a6, 592
+	sll	$a7, $a1, 2
+	add	$a7, $a2, $a7
+	lw	$a2, 0($a7)
+	flw	$f0, 0($a2)
+	fsw	$f0, 0($a6)
+	flw	$f0, 4($a2)
+	fsw	$f0, 4($a6)
+	flw	$f0, 8($a2)
+	fsw	$f0, 8($a6)
+	lw	$a2, 24($a0)
+	lw	$a2, 0($a2)
+	sll	$a6, $a1, 2
+	add	$a6, $a3, $a6
+	lw	$a3, 0($a6)
+	sll	$a6, $a1, 2
+	add	$a6, $a4, $a6
+	lw	$a4, 0($a6)
+	sw	$a5, 4($sp)
+	sw	$a1, 8($sp)
+	move	$a1, $a3
+	move	$a0, $a2
+	move	$a2, $a4
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	trace_diffuse_ray_80percent.3014
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	fmove	$f30, $fv
+	li	$a0, 604
+	lw	$a1, 8($sp)
+	sll	$a2, $a1, 2
 	lw	$a3, 4($sp)
 	add	$a2, $a3, $a2
 	lw	$a2, 0($a2)
-	lw	$a3, 8($sp)
-	move	$a1, $a3
-	move	$a0, $a2
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	get_surface_id.2866
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	lw	$a1, 20($sp)
-	bne	$a0, $a1, beq_else.9032
-	lw	$a0, 16($sp)
-	subi	$a2, $a0, 1
-	sll	$a2, $a2, 2
-	lw	$a3, 0($sp)
-	add	$a2, $a3, $a2
-	lw	$a2, 0($a2)
-	lw	$a4, 8($sp)
-	move	$a1, $a4
-	move	$a0, $a2
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	get_surface_id.2866
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	lw	$a1, 20($sp)
-	bne	$a0, $a1, beq_else.9033
-	lw	$a0, 16($sp)
-	addi	$a0, $a0, 1
-	sll	$a0, $a0, 2
-	lw	$a2, 0($sp)
-	add	$a0, $a2, $a0
-	lw	$a0, 0($a0)
-	lw	$a2, 8($sp)
-	move	$a1, $a2
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	get_surface_id.2866
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	lw	$a1, 20($sp)
-	bne	$a0, $a1, beq_else.9034
-	li	$v0, 1
+	li	$a3, 592
+	flw	$f0, 0($a0)
+	flw	$f1, 0($a2)
+	flw	$f2, 0($a3)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 0($a0)
+	flw	$f0, 4($a0)
+	flw	$f1, 4($a2)
+	flw	$f2, 4($a3)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 4($a0)
+	flw	$f0, 8($a0)
+	flw	$f1, 8($a2)
+	flw	$f2, 8($a3)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 8($a0)
+bne_cont.18165:
+	addi	$a1, $a1, 1
+	li	$a0, 4
+	blt	$a0, $a1, bge_else.18166
+	lw	$a0, 0($sp)
+	lw	$a2, 8($a0)
+	li	$a3, 0
+	sll	$a4, $a1, 2
+	add	$a4, $a2, $a4
+	lw	$a2, 0($a4)
+	blt	$a2, $a3, bge_else.18167
+	lw	$a2, 12($a0)
+	sll	$a3, $a1, 2
+	add	$a3, $a2, $a3
+	lw	$a2, 0($a3)
+	li	$a3, 0
+	sw	$a1, 12($sp)
+	bne	$a2, $a3, bne_else.18168
+	j	bne_cont.18169
+bne_else.18168:
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	calc_diffuse_using_1point.3018
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+bne_cont.18169:
+	lw	$a0, 12($sp)
+	addi	$a1, $a0, 1
+	lw	$a0, 0($sp)
+	j	do_without_neighbors.3027
+bge_else.18167:
 	jr	$ra
-beq_else.9034:
-	li	$v0, 0
+bge_else.18166:
 	jr	$ra
-beq_else.9033:
-	li	$v0, 0
+bge_else.18163:
 	jr	$ra
-beq_else.9032:
-	li	$v0, 0
+bge_else.18162:
 	jr	$ra
-beq_else.9031:
-	li	$v0, 0
-	jr	$ra
-try_exploit_neighbors.2875:
-	lw	$a6, 8($a26)
-	lw	$a7, 4($a26)
+try_exploit_neighbors.3043:
+	sll	$a6, $a0, 2
+	add	$a6, $a3, $a6
+	lw	$a6, 0($a6)
+	li	$a7, 4
+	blt	$a7, $a5, bge_else.18174
+	li	$a7, 0
+	lw	$a8, 8($a6)
+	sll	$a9, $a5, 2
+	add	$a9, $a8, $a9
+	lw	$a8, 0($a9)
+	blt	$a8, $a7, bge_else.18175
+	sll	$a7, $a0, 2
+	add	$a7, $a3, $a7
+	lw	$a7, 0($a7)
+	lw	$a7, 8($a7)
+	sll	$a8, $a5, 2
+	add	$a8, $a7, $a8
+	lw	$a7, 0($a8)
 	sll	$a8, $a0, 2
+	add	$a8, $a2, $a8
+	lw	$a8, 0($a8)
+	lw	$a8, 8($a8)
+	sll	$a9, $a5, 2
+	add	$a9, $a8, $a9
+	lw	$a8, 0($a9)
+	bne	$a8, $a7, bne_else.18176
+	sll	$a8, $a0, 2
+	add	$a8, $a4, $a8
+	lw	$a8, 0($a8)
+	lw	$a8, 8($a8)
+	sll	$a9, $a5, 2
+	add	$a9, $a8, $a9
+	lw	$a8, 0($a9)
+	bne	$a8, $a7, bne_else.18178
+	subi	$a8, $a0, 1
+	sll	$a8, $a8, 2
 	add	$a8, $a3, $a8
 	lw	$a8, 0($a8)
-	li	$a9, 4
-	blt	$a9, $a5, bge_else.9035
-	li	$a9, 0
-	sw	$a1, 0($sp)
-	sw	$a26, 4($sp)
-	sw	$a7, 8($sp)
-	sw	$a8, 12($sp)
-	sw	$a6, 16($sp)
-	sw	$a5, 20($sp)
-	sw	$a4, 24($sp)
-	sw	$a3, 28($sp)
-	sw	$a2, 32($sp)
-	sw	$a0, 36($sp)
-	sw	$a9, 40($sp)
-	move	$a1, $a5
-	move	$a0, $a8
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	get_surface_id.2866
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	move	$a0, $v0
-	lw	$a1, 40($sp)
-	blt	$a0, $a1, bge_else.9036
-	lw	$a0, 36($sp)
-	lw	$a1, 32($sp)
-	lw	$a2, 28($sp)
-	lw	$a3, 24($sp)
-	lw	$a4, 20($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	neighbors_are_available.2869
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.9037
-	lw	$a0, 36($sp)
+	lw	$a8, 8($a8)
+	sll	$a9, $a5, 2
+	add	$a9, $a8, $a9
+	lw	$a8, 0($a9)
+	bne	$a8, $a7, bne_else.18180
+	addi	$a8, $a0, 1
+	sll	$a8, $a8, 2
+	add	$a8, $a3, $a8
+	lw	$a8, 0($a8)
+	lw	$a8, 8($a8)
+	sll	$a9, $a5, 2
+	add	$a9, $a8, $a9
+	lw	$a8, 0($a9)
+	bne	$a8, $a7, bne_else.18182
+	li	$a7, 1
+	j	bne_cont.18183
+bne_else.18182:
+	li	$a7, 0
+bne_cont.18183:
+	j	bne_cont.18181
+bne_else.18180:
+	li	$a7, 0
+bne_cont.18181:
+	j	bne_cont.18179
+bne_else.18178:
+	li	$a7, 0
+bne_cont.18179:
+	j	bne_cont.18177
+bne_else.18176:
+	li	$a7, 0
+bne_cont.18177:
+	li	$a8, 0
+	bne	$a7, $a8, beq_else.18184
 	sll	$a0, $a0, 2
-	lw	$a1, 28($sp)
-	add	$a0, $a1, $a0
+	add	$a0, $a3, $a0
 	lw	$a0, 0($a0)
-	lw	$a1, 20($sp)
-	lw	$a26, 16($sp)
-	lw	$a25, 0($a26)
-	j	do_without_neighbors.2859
-beq_else.9037:
-	lw	$a0, 12($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	p_calc_diffuse.2595
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	move	$a0, $v0
-	lw	$a4, 20($sp)
-	sll	$a1, $a4, 2
-	add	$a1, $a0, $a1
-	lw	$a0, 0($a1)
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.9038
-	j	bne_cont.9039
-bne_else.9038:
-	lw	$a0, 36($sp)
-	lw	$a1, 32($sp)
-	lw	$a2, 28($sp)
-	lw	$a3, 24($sp)
-	lw	$a26, 8($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	calc_diffuse_using_5points.2853
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f30, $fv
-bne_cont.9039:
-	lw	$a0, 20($sp)
-	addi	$a5, $a0, 1
-	lw	$a0, 36($sp)
-	lw	$a1, 0($sp)
-	lw	$a2, 32($sp)
-	lw	$a3, 28($sp)
-	lw	$a4, 24($sp)
-	lw	$a26, 4($sp)
-	lw	$a25, 0($a26)
-	j	try_exploit_neighbors.2875
-bge_else.9036:
-	jr	$ra
-bge_else.9035:
-	jr	$ra
-write_ppm_header.2882:
-	lw	$a0, 4($a26)
-	lw	$a1, 0($a0)
+	li	$a1, 4
+	blt	$a1, $a5, bge_else.18185
+	lw	$a1, 8($a0)
+	li	$a2, 0
+	sll	$a3, $a5, 2
+	add	$a3, $a1, $a3
+	lw	$a1, 0($a3)
+	blt	$a1, $a2, bge_else.18186
+	lw	$a1, 12($a0)
+	sll	$a2, $a5, 2
+	add	$a2, $a1, $a2
+	lw	$a1, 0($a2)
+	li	$a2, 0
 	sw	$a0, 0($sp)
-	move	$a0, $a1
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	min_caml_print_int
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
+	sw	$a5, 4($sp)
+	bne	$a1, $a2, bne_else.18187
+	j	bne_cont.18188
+bne_else.18187:
+	move	$a1, $a5
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	calc_diffuse_using_1point.3018
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
 	fmove	$f30, $fv
+bne_cont.18188:
+	lw	$a0, 4($sp)
+	addi	$a1, $a0, 1
 	lw	$a0, 0($sp)
-	lw	$a0, 4($a0)
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	min_caml_print_int
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
+	j	do_without_neighbors.3027
+bge_else.18186:
+	jr	$ra
+bge_else.18185:
+	jr	$ra
+beq_else.18184:
+	lw	$a6, 12($a6)
+	sll	$a7, $a5, 2
+	add	$a7, $a6, $a7
+	lw	$a6, 0($a7)
+	li	$a7, 0
+	sw	$a1, 8($sp)
+	sw	$a4, 12($sp)
+	sw	$a2, 16($sp)
+	sw	$a3, 20($sp)
+	sw	$a0, 24($sp)
+	sw	$a5, 4($sp)
+	bne	$a6, $a7, bne_else.18191
+	j	bne_cont.18192
+bne_else.18191:
+	move	$a1, $a2
+	move	$a2, $a3
+	move	$a3, $a4
+	move	$a4, $a5
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	calc_diffuse_using_5points.3021
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
 	fmove	$f30, $fv
-	li	$a0, 255
-	j	min_caml_print_int
-write_rgb_element.2884:
+bne_cont.18192:
+	lw	$a0, 4($sp)
+	addi	$a1, $a0, 1
+	lw	$a0, 24($sp)
+	sll	$a2, $a0, 2
+	lw	$a3, 20($sp)
+	add	$a2, $a3, $a2
+	lw	$a2, 0($a2)
+	li	$a4, 4
+	blt	$a4, $a1, bge_else.18193
+	li	$a4, 0
+	lw	$a5, 8($a2)
+	sll	$a6, $a1, 2
+	add	$a6, $a5, $a6
+	lw	$a5, 0($a6)
+	blt	$a5, $a4, bge_else.18194
+	sll	$a4, $a0, 2
+	add	$a4, $a3, $a4
+	lw	$a4, 0($a4)
+	lw	$a4, 8($a4)
+	sll	$a5, $a1, 2
+	add	$a5, $a4, $a5
+	lw	$a4, 0($a5)
+	sll	$a5, $a0, 2
+	lw	$a6, 16($sp)
+	add	$a5, $a6, $a5
+	lw	$a5, 0($a5)
+	lw	$a5, 8($a5)
+	sll	$a7, $a1, 2
+	add	$a7, $a5, $a7
+	lw	$a5, 0($a7)
+	bne	$a5, $a4, bne_else.18195
+	sll	$a5, $a0, 2
+	lw	$a7, 12($sp)
+	add	$a5, $a7, $a5
+	lw	$a5, 0($a5)
+	lw	$a5, 8($a5)
+	sll	$a8, $a1, 2
+	add	$a8, $a5, $a8
+	lw	$a5, 0($a8)
+	bne	$a5, $a4, bne_else.18197
+	subi	$a5, $a0, 1
+	sll	$a5, $a5, 2
+	add	$a5, $a3, $a5
+	lw	$a5, 0($a5)
+	lw	$a5, 8($a5)
+	sll	$a8, $a1, 2
+	add	$a8, $a5, $a8
+	lw	$a5, 0($a8)
+	bne	$a5, $a4, bne_else.18199
+	addi	$a5, $a0, 1
+	sll	$a5, $a5, 2
+	add	$a5, $a3, $a5
+	lw	$a5, 0($a5)
+	lw	$a5, 8($a5)
+	sll	$a8, $a1, 2
+	add	$a8, $a5, $a8
+	lw	$a5, 0($a8)
+	bne	$a5, $a4, bne_else.18201
+	li	$a4, 1
+	j	bne_cont.18202
+bne_else.18201:
+	li	$a4, 0
+bne_cont.18202:
+	j	bne_cont.18200
+bne_else.18199:
+	li	$a4, 0
+bne_cont.18200:
+	j	bne_cont.18198
+bne_else.18197:
+	li	$a4, 0
+bne_cont.18198:
+	j	bne_cont.18196
+bne_else.18195:
+	li	$a4, 0
+bne_cont.18196:
+	li	$a5, 0
+	bne	$a4, $a5, beq_else.18203
+	sll	$a0, $a0, 2
+	add	$a0, $a3, $a0
+	lw	$a0, 0($a0)
+	j	do_without_neighbors.3027
+beq_else.18203:
+	lw	$a2, 12($a2)
+	sll	$a4, $a1, 2
+	add	$a4, $a2, $a4
+	lw	$a2, 0($a4)
+	li	$a4, 0
+	sw	$a1, 28($sp)
+	bne	$a2, $a4, bne_else.18204
+	j	bne_cont.18205
+bne_else.18204:
+	lw	$a2, 12($sp)
+	move	$a4, $a1
+	move	$a1, $a6
+	move	$a25, $a3
+	move	$a3, $a2
+	move	$a2, $a25
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	calc_diffuse_using_5points.3021
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+bne_cont.18205:
+	lw	$a0, 28($sp)
+	addi	$a5, $a0, 1
+	lw	$a0, 24($sp)
+	lw	$a1, 8($sp)
+	lw	$a2, 16($sp)
+	lw	$a3, 20($sp)
+	lw	$a4, 12($sp)
+	j	try_exploit_neighbors.3043
+bge_else.18194:
+	jr	$ra
+bge_else.18193:
+	jr	$ra
+bge_else.18175:
+	jr	$ra
+bge_else.18174:
+	jr	$ra
+write_rgb.3054:
+	li	$a0, 604
+	flw	$f0, 0($a0)
 	sw	$ra, 4($sp)
 	addi	$sp, $sp, 8
 	jal	min_caml_int_of_float
@@ -8246,558 +9759,1227 @@ write_rgb_element.2884:
 	lw	$ra, 4($sp)
 	move	$a0, $v0
 	li	$a1, 255
-	blt	$a1, $a0, bge_else.9042
+	blt	$a1, $a0, bge_else.18210
 	li	$a1, 0
-	blt	$a0, $a1, bge_else.9044
-	j	bge_cont.9045
-bge_else.9044:
+	blt	$a0, $a1, bge_else.18212
+	j	bge_cont.18213
+bge_else.18212:
 	li	$a0, 0
-bge_cont.9045:
-	j	bge_cont.9043
-bge_else.9042:
+bge_cont.18213:
+	j	bge_cont.18211
+bge_else.18210:
 	li	$a0, 255
-bge_cont.9043:
-	j	min_caml_print_int
-write_rgb.2886:
-	lw	$a0, 4($a26)
-	flw	$f0, 0($a0)
-	sw	$a0, 0($sp)
+bge_cont.18211:
 	sw	$ra, 4($sp)
 	addi	$sp, $sp, 8
-	jal	write_rgb_element.2884
+	jal	min_caml_print_int
 	subi	$sp, $sp, 8
 	lw	$ra, 4($sp)
 	fmove	$f30, $fv
-	lw	$a0, 0($sp)
+	li	$a0, 32
+	sw	$ra, 4($sp)
+	addi	$sp, $sp, 8
+	jal	min_caml_print_byte
+	subi	$sp, $sp, 8
+	lw	$ra, 4($sp)
+	fmove	$f30, $fv
+	li	$a0, 604
 	flw	$f0, 4($a0)
 	sw	$ra, 4($sp)
 	addi	$sp, $sp, 8
-	jal	write_rgb_element.2884
+	jal	min_caml_int_of_float
+	subi	$sp, $sp, 8
+	lw	$ra, 4($sp)
+	move	$a0, $v0
+	li	$a1, 255
+	blt	$a1, $a0, bge_else.18214
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18216
+	j	bge_cont.18217
+bge_else.18216:
+	li	$a0, 0
+bge_cont.18217:
+	j	bge_cont.18215
+bge_else.18214:
+	li	$a0, 255
+bge_cont.18215:
+	sw	$ra, 4($sp)
+	addi	$sp, $sp, 8
+	jal	min_caml_print_int
 	subi	$sp, $sp, 8
 	lw	$ra, 4($sp)
 	fmove	$f30, $fv
-	lw	$a0, 0($sp)
+	li	$a0, 32
+	sw	$ra, 4($sp)
+	addi	$sp, $sp, 8
+	jal	min_caml_print_byte
+	subi	$sp, $sp, 8
+	lw	$ra, 4($sp)
+	fmove	$f30, $fv
+	li	$a0, 604
 	flw	$f0, 8($a0)
-	j	write_rgb_element.2884
-pretrace_diffuse_rays.2888:
-	lw	$a2, 12($a26)
-	lw	$a3, 8($a26)
-	lw	$a4, 4($a26)
-	li	$a5, 4
-	blt	$a5, $a1, bge_else.9046
-	sw	$a26, 0($sp)
-	sw	$a2, 4($sp)
-	sw	$a3, 8($sp)
-	sw	$a4, 12($sp)
-	sw	$a1, 16($sp)
-	sw	$a0, 20($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	get_surface_id.2866
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
+	sw	$ra, 4($sp)
+	addi	$sp, $sp, 8
+	jal	min_caml_int_of_float
+	subi	$sp, $sp, 8
+	lw	$ra, 4($sp)
 	move	$a0, $v0
+	li	$a1, 255
+	blt	$a1, $a0, bge_else.18218
 	li	$a1, 0
-	blt	$a0, $a1, bge_else.9047
-	lw	$a0, 20($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	p_calc_diffuse.2595
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	lw	$a1, 16($sp)
-	sll	$a2, $a1, 2
-	add	$a2, $a0, $a2
-	lw	$a0, 0($a2)
-	li	$a2, 0
-	bne	$a0, $a2, bne_else.9048
-	j	bne_cont.9049
-bne_else.9048:
-	lw	$a0, 20($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	p_group_id.2601
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	lw	$a1, 12($sp)
-	sw	$a0, 24($sp)
-	move	$a0, $a1
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	vecbzero.2509
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	fmove	$f30, $fv
-	lw	$a0, 20($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	p_nvectors.2606
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a0, $v0
-	lw	$a1, 20($sp)
-	sw	$a0, 28($sp)
-	move	$a0, $a1
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	p_intersection_points.2591
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	lw	$a1, 24($sp)
-	sll	$a1, $a1, 2
-	lw	$a2, 8($sp)
-	add	$a1, $a2, $a1
-	lw	$a1, 0($a1)
-	lw	$a2, 16($sp)
-	sll	$a3, $a2, 2
-	lw	$a4, 28($sp)
-	add	$a3, $a4, $a3
-	lw	$a3, 0($a3)
-	sll	$a4, $a2, 2
-	add	$a4, $a0, $a4
-	lw	$a0, 0($a4)
-	lw	$a26, 4($sp)
-	move	$a2, $a0
-	move	$a0, $a1
-	move	$a1, $a3
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	trace_diffuse_rays.2842
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f30, $fv
-	lw	$a0, 20($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	p_received_ray_20percent.2599
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a0, $v0
-	lw	$a1, 16($sp)
-	sll	$a2, $a1, 2
-	add	$a2, $a0, $a2
-	lw	$a0, 0($a2)
-	lw	$a2, 12($sp)
-	move	$a1, $a2
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	veccpy.2511
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f30, $fv
-bne_cont.9049:
-	lw	$a0, 16($sp)
-	addi	$a1, $a0, 1
-	lw	$a0, 20($sp)
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	pretrace_diffuse_rays.2888
-bge_else.9047:
-	jr	$ra
-bge_else.9046:
-	jr	$ra
-pretrace_pixels.2891:
-	lw	$a3, 36($a26)
-	lw	$a4, 32($a26)
-	lw	$a5, 28($a26)
-	lw	$a6, 24($a26)
-	lw	$a7, 20($a26)
-	lw	$a8, 16($a26)
-	lw	$a9, 12($a26)
-	lw	$a10, 8($a26)
-	lw	$a11, 4($a26)
-	li	$a12, 0
-	blt	$a1, $a12, bge_else.9052
-	flw	$f3, 0($a7)
-	lw	$a7, 0($a11)
-	sub	$a7, $a1, $a7
-	sw	$a26, 0($sp)
-	sw	$a10, 4($sp)
-	sw	$a2, 8($sp)
-	sw	$a4, 12($sp)
-	sw	$a0, 16($sp)
-	sw	$a1, 20($sp)
-	sw	$a3, 24($sp)
-	sw	$a5, 28($sp)
-	sw	$a8, 32($sp)
-	fsw	$f2, 40($sp)
-	fsw	$f1, 48($sp)
-	sw	$a9, 56($sp)
-	fsw	$f0, 64($sp)
-	sw	$a6, 72($sp)
-	fsw	$f3, 80($sp)
-	move	$a0, $a7
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	min_caml_float_of_int
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f0, $fv
-	flw	$f1, 80($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a0, 72($sp)
-	flw	$f1, 0($a0)
-	fmul	$f1, $f0, $f1
-	flw	$f2, 64($sp)
-	fadd	$f1, $f1, $f2
-	lw	$a1, 56($sp)
-	fsw	$f1, 0($a1)
-	flw	$f1, 4($a0)
-	fmul	$f1, $f0, $f1
-	flw	$f3, 48($sp)
-	fadd	$f1, $f1, $f3
-	fsw	$f1, 4($a1)
-	flw	$f1, 8($a0)
-	fmul	$f0, $f0, $f1
-	flw	$f1, 40($sp)
-	fadd	$f0, $f0, $f1
-	fsw	$f0, 8($a1)
+	blt	$a0, $a1, bge_else.18220
+	j	bge_cont.18221
+bge_else.18220:
 	li	$a0, 0
-	move	$a25, $a1
-	move	$a1, $a0
-	move	$a0, $a25
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	vecunit_sgn.2519
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
+bge_cont.18221:
+	j	bge_cont.18219
+bge_else.18218:
+	li	$a0, 255
+bge_cont.18219:
+	sw	$ra, 4($sp)
+	addi	$sp, $sp, 8
+	jal	min_caml_print_int
+	subi	$sp, $sp, 8
+	lw	$ra, 4($sp)
+	fmove	$f30, $fv
+	li	$a0, 10
+	j	min_caml_print_byte
+pretrace_diffuse_rays.3056:
+	li	$a2, 4
+	blt	$a2, $a1, bge_else.18222
+	lw	$a2, 8($a0)
+	sll	$a3, $a1, 2
+	add	$a3, $a2, $a3
+	lw	$a2, 0($a3)
+	li	$a3, 0
+	blt	$a2, $a3, bge_else.18223
+	lw	$a2, 12($a0)
+	sll	$a3, $a1, 2
+	add	$a3, $a2, $a3
+	lw	$a2, 0($a3)
+	li	$a3, 0
+	sw	$a1, 0($sp)
+	bne	$a2, $a3, bne_else.18224
+	j	bne_cont.18225
+bne_else.18224:
+	lw	$a2, 24($a0)
+	lw	$a2, 0($a2)
+	li	$a3, 592
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	fsw	$f0, 0($a3)
+	fsw	$f0, 4($a3)
+	fsw	$f0, 8($a3)
+	lw	$a3, 28($a0)
+	lw	$a4, 4($a0)
+	li	$a5, 716
+	sll	$a2, $a2, 2
+	add	$a2, $a5, $a2
+	lw	$a2, 0($a2)
+	sll	$a5, $a1, 2
+	add	$a5, $a3, $a5
+	lw	$a3, 0($a5)
+	sll	$a5, $a1, 2
+	add	$a5, $a4, $a5
+	lw	$a4, 0($a5)
+	li	$a5, 648
+	flw	$f0, 0($a4)
+	fsw	$f0, 0($a5)
+	flw	$f0, 4($a4)
+	fsw	$f0, 4($a5)
+	flw	$f0, 8($a4)
+	fsw	$f0, 8($a5)
+	li	$a5, 0
+	lw	$a5, 0($a5)
+	subi	$a5, $a5, 1
+	sw	$a0, 4($sp)
+	sw	$a4, 8($sp)
+	sw	$a3, 12($sp)
+	sw	$a2, 16($sp)
+	move	$a1, $a5
+	move	$a0, $a4
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	setup_startp_constants.2907
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	li	$a3, 118
+	lw	$a0, 16($sp)
+	lw	$a1, 12($sp)
+	lw	$a2, 8($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	iter_trace_diffuse_rays.3005
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	lw	$a0, 4($sp)
+	lw	$a1, 20($a0)
+	lw	$a2, 0($sp)
+	sll	$a3, $a2, 2
+	add	$a3, $a1, $a3
+	lw	$a1, 0($a3)
+	li	$a3, 592
+	flw	$f0, 0($a3)
+	fsw	$f0, 0($a1)
+	flw	$f0, 4($a3)
+	fsw	$f0, 4($a1)
+	flw	$f0, 8($a3)
+	fsw	$f0, 8($a1)
+bne_cont.18225:
+	lw	$a1, 0($sp)
+	addi	$a1, $a1, 1
+	li	$a2, 4
+	blt	$a2, $a1, bge_else.18226
+	lw	$a2, 8($a0)
+	sll	$a3, $a1, 2
+	add	$a3, $a2, $a3
+	lw	$a2, 0($a3)
+	li	$a3, 0
+	blt	$a2, $a3, bge_else.18227
+	lw	$a2, 12($a0)
+	sll	$a3, $a1, 2
+	add	$a3, $a2, $a3
+	lw	$a2, 0($a3)
+	li	$a3, 0
+	sw	$a1, 20($sp)
+	bne	$a2, $a3, bne_else.18228
+	j	bne_cont.18229
+bne_else.18228:
+	lw	$a2, 24($a0)
+	lw	$a2, 0($a2)
+	li	$a3, 592
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	fsw	$f0, 0($a3)
+	fsw	$f0, 4($a3)
+	fsw	$f0, 8($a3)
+	lw	$a3, 28($a0)
+	lw	$a4, 4($a0)
+	li	$a5, 716
+	sll	$a2, $a2, 2
+	add	$a2, $a5, $a2
+	lw	$a2, 0($a2)
+	sll	$a5, $a1, 2
+	add	$a5, $a3, $a5
+	lw	$a3, 0($a5)
+	sll	$a5, $a1, 2
+	add	$a5, $a4, $a5
+	lw	$a4, 0($a5)
+	li	$a5, 648
+	flw	$f0, 0($a4)
+	fsw	$f0, 0($a5)
+	flw	$f0, 4($a4)
+	fsw	$f0, 4($a5)
+	flw	$f0, 8($a4)
+	fsw	$f0, 8($a5)
+	li	$a5, 0
+	lw	$a5, 0($a5)
+	subi	$a5, $a5, 1
+	sw	$a0, 4($sp)
+	sw	$a4, 24($sp)
+	sw	$a3, 28($sp)
+	sw	$a2, 32($sp)
+	move	$a1, $a5
+	move	$a0, $a4
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	setup_startp_constants.2907
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
 	fmove	$f30, $fv
 	lw	$a0, 32($sp)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	vecbzero.2509
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f30, $fv
-	lw	$a0, 28($sp)
-	lw	$a1, 24($sp)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	veccpy.2511
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f30, $fv
-	li	$a0, 0
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	l.6037
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	mtc1	$f0, $a25
-	lw	$a1, 20($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 16($sp)
-	add	$a2, $a3, $a2
-	lw	$a2, 0($a2)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	l.6035
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	mtc1	$f1, $a25
-	lw	$a4, 56($sp)
-	lw	$a26, 12($sp)
-	move	$a1, $a4
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	trace_ray.2828
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f30, $fv
-	lw	$a0, 20($sp)
-	sll	$a1, $a0, 2
-	lw	$a2, 16($sp)
-	add	$a1, $a2, $a1
+	lw	$a1, 472($a0)
 	lw	$a1, 0($a1)
-	move	$a0, $a1
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	p_rgb.2589
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	move	$a0, $v0
-	lw	$a1, 32($sp)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	veccpy.2511
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f30, $fv
-	lw	$a0, 20($sp)
-	sll	$a1, $a0, 2
-	lw	$a2, 16($sp)
-	add	$a1, $a2, $a1
-	lw	$a1, 0($a1)
-	lw	$a3, 8($sp)
-	move	$a0, $a1
-	move	$a1, $a3
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	p_set_group_id.2603
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f30, $fv
-	lw	$a0, 20($sp)
-	sll	$a1, $a0, 2
-	lw	$a2, 16($sp)
-	add	$a1, $a2, $a1
-	lw	$a1, 0($a1)
-	li	$a3, 0
-	lw	$a26, 4($sp)
-	move	$a0, $a1
-	move	$a1, $a3
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	pretrace_diffuse_rays.2888
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f30, $fv
-	lw	$a0, 20($sp)
-	subi	$a0, $a0, 1
+	flw	$f0, 0($a1)
+	lw	$a2, 28($sp)
+	flw	$f1, 0($a2)
+	fmul	$f0, $f0, $f1
+	flw	$f1, 4($a1)
+	flw	$f2, 4($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a1)
+	flw	$f2, 8($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.18230
+	li	$a1, 0
+	j	fbge_cont.18231
+fbge_else.18230:
 	li	$a1, 1
-	lw	$a2, 8($sp)
-	sw	$a0, 88($sp)
-	move	$a0, $a2
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	add_mod5.2498
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	move	$a2, $v0
-	flw	$f0, 64($sp)
-	flw	$f1, 48($sp)
-	flw	$f2, 40($sp)
-	lw	$a0, 16($sp)
-	lw	$a1, 88($sp)
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	pretrace_pixels.2891
-bge_else.9052:
-	jr	$ra
-pretrace_line.2898:
-	lw	$a3, 24($a26)
-	lw	$a4, 20($a26)
-	lw	$a5, 16($a26)
-	lw	$a6, 12($a26)
-	lw	$a7, 8($a26)
-	lw	$a8, 4($a26)
-	flw	$f0, 0($a5)
-	lw	$a5, 4($a8)
-	sub	$a1, $a1, $a5
-	sw	$a2, 0($sp)
-	sw	$a0, 4($sp)
-	sw	$a6, 8($sp)
-	sw	$a7, 12($sp)
-	sw	$a3, 16($sp)
-	sw	$a4, 20($sp)
-	fsw	$f0, 24($sp)
+fbge_cont.18231:
+	li	$a3, 0
+	bne	$a1, $a3, bne_else.18232
+	lw	$a1, 472($a0)
+	li	$v0, 17174
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
 	move	$a0, $a1
 	sw	$ra, 36($sp)
 	addi	$sp, $sp, 40
-	jal	min_caml_float_of_int
+	jal	trace_diffuse_ray.3002
 	subi	$sp, $sp, 40
 	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+	j	bne_cont.18233
+bne_else.18232:
+	lw	$a1, 476($a0)
+	li	$v0, -15594
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	move	$a0, $a1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	trace_diffuse_ray.3002
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+bne_cont.18233:
+	li	$a3, 116
+	lw	$a0, 32($sp)
+	lw	$a1, 28($sp)
+	lw	$a2, 24($sp)
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	iter_trace_diffuse_rays.3005
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+	lw	$a0, 4($sp)
+	lw	$a1, 20($a0)
+	lw	$a2, 20($sp)
+	sll	$a3, $a2, 2
+	add	$a3, $a1, $a3
+	lw	$a1, 0($a3)
+	li	$a3, 592
+	flw	$f0, 0($a3)
+	fsw	$f0, 0($a1)
+	flw	$f0, 4($a3)
+	fsw	$f0, 4($a1)
+	flw	$f0, 8($a3)
+	fsw	$f0, 8($a1)
+bne_cont.18229:
+	lw	$a1, 20($sp)
+	addi	$a1, $a1, 1
+	j	pretrace_diffuse_rays.3056
+bge_else.18227:
+	jr	$ra
+bge_else.18226:
+	jr	$ra
+bge_else.18223:
+	jr	$ra
+bge_else.18222:
+	jr	$ra
+pretrace_pixels.3059:
+	li	$a3, 0
+	blt	$a1, $a3, bge_else.18238
+	li	$a3, 632
+	flw	$f3, 0($a3)
+	li	$a3, 624
+	lw	$a3, 0($a3)
+	sub	$a3, $a1, $a3
+	sw	$a2, 0($sp)
+	sw	$a0, 4($sp)
+	sw	$a1, 8($sp)
+	fsw	$f2, 16($sp)
+	fsw	$f1, 24($sp)
+	fsw	$f0, 32($sp)
+	fsw	$f3, 40($sp)
+	move	$a0, $a3
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	min_caml_float_of_int
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
 	fmove	$f0, $fv
-	flw	$f1, 24($sp)
+	flw	$f1, 40($sp)
 	fmul	$f0, $f1, $f0
-	lw	$a0, 20($sp)
+	li	$a0, 696
+	li	$a1, 660
+	flw	$f1, 0($a1)
+	fmul	$f1, $f0, $f1
+	flw	$f2, 32($sp)
+	fadd	$f1, $f1, $f2
+	fsw	$f1, 0($a0)
+	li	$a0, 696
+	li	$a1, 660
+	flw	$f1, 4($a1)
+	fmul	$f1, $f0, $f1
+	flw	$f3, 24($sp)
+	fadd	$f1, $f1, $f3
+	fsw	$f1, 4($a0)
+	li	$a0, 696
+	li	$a1, 660
+	flw	$f1, 8($a1)
+	fmul	$f0, $f0, $f1
+	flw	$f1, 16($sp)
+	fadd	$f0, $f0, $f1
+	fsw	$f0, 8($a0)
+	li	$a0, 696
+	li	$a1, 0
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	vecunit_sgn.2687
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	fmove	$f30, $fv
+	li	$a0, 604
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	fsw	$f0, 0($a0)
+	fsw	$f0, 4($a0)
+	fsw	$f0, 8($a0)
+	li	$a0, 636
+	li	$a1, 300
+	flw	$f0, 0($a1)
+	fsw	$f0, 0($a0)
+	flw	$f0, 4($a1)
+	fsw	$f0, 4($a0)
+	flw	$f0, 8($a1)
+	fsw	$f0, 8($a0)
+	li	$a0, 0
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$a1, 696
+	lw	$a2, 8($sp)
+	sll	$a3, $a2, 2
+	lw	$a4, 4($sp)
+	add	$a3, $a4, $a3
+	lw	$a3, 0($a3)
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	move	$a2, $a3
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	trace_ray.2996
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	fmove	$f30, $fv
+	lw	$a0, 8($sp)
+	sll	$a1, $a0, 2
+	lw	$a2, 4($sp)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	lw	$a1, 0($a1)
+	li	$a3, 604
+	flw	$f0, 0($a3)
+	fsw	$f0, 0($a1)
+	flw	$f0, 4($a3)
+	fsw	$f0, 4($a1)
+	flw	$f0, 8($a3)
+	fsw	$f0, 8($a1)
+	sll	$a1, $a0, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	lw	$a1, 24($a1)
+	lw	$a3, 0($sp)
+	sw	$a3, 0($a1)
+	sll	$a1, $a0, 2
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	lw	$a4, 8($a1)
+	lw	$a4, 0($a4)
+	li	$a5, 0
+	blt	$a4, $a5, bge_else.18240
+	lw	$a4, 12($a1)
+	lw	$a4, 0($a4)
+	li	$a5, 0
+	sw	$a1, 48($sp)
+	bne	$a4, $a5, bne_else.18242
+	j	bne_cont.18243
+bne_else.18242:
+	lw	$a4, 24($a1)
+	lw	$a4, 0($a4)
+	li	$a5, 592
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	fsw	$f0, 0($a5)
+	fsw	$f0, 4($a5)
+	fsw	$f0, 8($a5)
+	lw	$a5, 28($a1)
+	lw	$a6, 4($a1)
+	li	$a7, 716
+	sll	$a4, $a4, 2
+	add	$a4, $a7, $a4
+	lw	$a4, 0($a4)
+	lw	$a5, 0($a5)
+	lw	$a6, 0($a6)
+	li	$a7, 648
+	flw	$f0, 0($a6)
+	fsw	$f0, 0($a7)
+	flw	$f0, 4($a6)
+	fsw	$f0, 4($a7)
+	flw	$f0, 8($a6)
+	fsw	$f0, 8($a7)
+	li	$a7, 0
+	lw	$a7, 0($a7)
+	subi	$a7, $a7, 1
+	sw	$a6, 52($sp)
+	sw	$a5, 56($sp)
+	sw	$a4, 60($sp)
+	move	$a1, $a7
+	move	$a0, $a6
+	sw	$ra, 68($sp)
+	addi	$sp, $sp, 72
+	jal	setup_startp_constants.2907
+	subi	$sp, $sp, 72
+	lw	$ra, 68($sp)
+	fmove	$f30, $fv
+	lw	$a0, 60($sp)
+	lw	$a1, 472($a0)
+	lw	$a1, 0($a1)
+	flw	$f0, 0($a1)
+	lw	$a2, 56($sp)
+	flw	$f1, 0($a2)
+	fmul	$f0, $f0, $f1
+	flw	$f1, 4($a1)
+	flw	$f2, 4($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	flw	$f1, 8($a1)
+	flw	$f2, 8($a2)
+	fmul	$f1, $f1, $f2
+	fadd	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.18244
+	li	$a1, 0
+	j	fbge_cont.18245
+fbge_else.18244:
+	li	$a1, 1
+fbge_cont.18245:
+	li	$a3, 0
+	bne	$a1, $a3, bne_else.18246
+	lw	$a1, 472($a0)
+	li	$v0, 17174
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	move	$a0, $a1
+	sw	$ra, 68($sp)
+	addi	$sp, $sp, 72
+	jal	trace_diffuse_ray.3002
+	subi	$sp, $sp, 72
+	lw	$ra, 68($sp)
+	fmove	$f30, $fv
+	j	bne_cont.18247
+bne_else.18246:
+	lw	$a1, 476($a0)
+	li	$v0, -15594
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	finv	$f1, $f1
+	fmul	$f0, $f0, $f1
+	move	$a0, $a1
+	sw	$ra, 68($sp)
+	addi	$sp, $sp, 72
+	jal	trace_diffuse_ray.3002
+	subi	$sp, $sp, 72
+	lw	$ra, 68($sp)
+	fmove	$f30, $fv
+bne_cont.18247:
+	li	$a3, 116
+	lw	$a0, 60($sp)
+	lw	$a1, 56($sp)
+	lw	$a2, 52($sp)
+	sw	$ra, 68($sp)
+	addi	$sp, $sp, 72
+	jal	iter_trace_diffuse_rays.3005
+	subi	$sp, $sp, 72
+	lw	$ra, 68($sp)
+	fmove	$f30, $fv
+	lw	$a0, 48($sp)
+	lw	$a1, 20($a0)
+	lw	$a1, 0($a1)
+	li	$a2, 592
+	flw	$f0, 0($a2)
+	fsw	$f0, 0($a1)
+	flw	$f0, 4($a2)
+	fsw	$f0, 4($a1)
+	flw	$f0, 8($a2)
+	fsw	$f0, 8($a1)
+bne_cont.18243:
+	li	$a1, 1
+	lw	$a0, 48($sp)
+	sw	$ra, 68($sp)
+	addi	$sp, $sp, 72
+	jal	pretrace_diffuse_rays.3056
+	subi	$sp, $sp, 72
+	lw	$ra, 68($sp)
+	fmove	$f30, $fv
+	j	bge_cont.18241
+bge_else.18240:
+bge_cont.18241:
+	lw	$a0, 8($sp)
+	subi	$a1, $a0, 1
+	lw	$a0, 0($sp)
+	addi	$a0, $a0, 1
+	li	$a2, 5
+	blt	$a0, $a2, bge_else.18248
+	subi	$a2, $a0, 5
+	j	bge_cont.18249
+bge_else.18248:
+	move	$a2, $a0
+bge_cont.18249:
+	flw	$f0, 32($sp)
+	flw	$f1, 24($sp)
+	flw	$f2, 16($sp)
+	lw	$a0, 4($sp)
+	j	pretrace_pixels.3059
+bge_else.18238:
+	jr	$ra
+pretrace_line.3066:
+	li	$a3, 632
+	flw	$f0, 0($a3)
+	li	$a3, 624
+	lw	$a3, 4($a3)
+	sub	$a1, $a1, $a3
+	sw	$a2, 0($sp)
+	sw	$a0, 4($sp)
+	fsw	$f0, 8($sp)
+	move	$a0, $a1
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_float_of_int
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f0, $fv
+	flw	$f1, 8($sp)
+	fmul	$f0, $f1, $f0
+	li	$a0, 672
 	flw	$f1, 0($a0)
 	fmul	$f1, $f0, $f1
-	lw	$a1, 16($sp)
-	flw	$f2, 0($a1)
+	li	$a0, 684
+	flw	$f2, 0($a0)
 	fadd	$f1, $f1, $f2
+	li	$a0, 672
 	flw	$f2, 4($a0)
 	fmul	$f2, $f0, $f2
-	flw	$f3, 4($a1)
+	li	$a0, 684
+	flw	$f3, 4($a0)
 	fadd	$f2, $f2, $f3
+	li	$a0, 672
 	flw	$f3, 8($a0)
 	fmul	$f0, $f0, $f3
-	flw	$f3, 8($a1)
+	li	$a0, 684
+	flw	$f3, 8($a0)
 	fadd	$f0, $f0, $f3
-	lw	$a0, 12($sp)
+	li	$a0, 616
 	lw	$a0, 0($a0)
 	subi	$a1, $a0, 1
 	lw	$a0, 4($sp)
 	lw	$a2, 0($sp)
-	lw	$a26, 8($sp)
 	fmove	$f30, $f2
 	fmove	$f2, $f0
 	fmove	$f0, $f1
 	fmove	$f1, $f30
-	lw	$a25, 0($a26)
-	j	pretrace_pixels.2891
-scan_pixel.2902:
-	lw	$a5, 24($a26)
-	lw	$a6, 20($a26)
-	lw	$a7, 16($a26)
-	lw	$a8, 12($a26)
-	lw	$a9, 8($a26)
-	lw	$a10, 4($a26)
-	lw	$a9, 0($a9)
-	blt	$a0, $a9, bge_else.9057
+	j	pretrace_pixels.3059
+scan_pixel.3070:
+	li	$a5, 616
+	lw	$a5, 0($a5)
+	blt	$a0, $a5, bge_else.18251
 	jr	$ra
-bge_else.9057:
-	sll	$a9, $a0, 2
-	add	$a9, $a3, $a9
-	lw	$a9, 0($a9)
-	sw	$a26, 0($sp)
-	sw	$a5, 4($sp)
-	sw	$a2, 8($sp)
-	sw	$a6, 12($sp)
-	sw	$a10, 16($sp)
-	sw	$a3, 20($sp)
-	sw	$a4, 24($sp)
-	sw	$a1, 28($sp)
-	sw	$a0, 32($sp)
-	sw	$a8, 36($sp)
-	sw	$a7, 40($sp)
-	move	$a0, $a9
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	p_rgb.2589
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	move	$a1, $v0
-	lw	$a0, 40($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	veccpy.2511
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f30, $fv
-	lw	$a0, 32($sp)
-	lw	$a1, 28($sp)
-	lw	$a2, 24($sp)
-	lw	$a26, 36($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	neighbors_exist.2862
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, bne_else.9059
-	lw	$a0, 32($sp)
-	sll	$a1, $a0, 2
-	lw	$a2, 20($sp)
-	add	$a1, $a2, $a1
-	lw	$a1, 0($a1)
-	li	$a3, 0
-	lw	$a26, 16($sp)
-	move	$a0, $a1
-	move	$a1, $a3
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	do_without_neighbors.2859
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f30, $fv
-	j	bne_cont.9060
-bne_else.9059:
+bge_else.18251:
+	li	$a5, 604
+	sll	$a6, $a0, 2
+	add	$a6, $a3, $a6
+	lw	$a6, 0($a6)
+	lw	$a6, 0($a6)
+	flw	$f0, 0($a6)
+	fsw	$f0, 0($a5)
+	flw	$f0, 4($a6)
+	fsw	$f0, 4($a5)
+	flw	$f0, 8($a6)
+	fsw	$f0, 8($a5)
+	li	$a5, 616
+	lw	$a5, 4($a5)
+	addi	$a6, $a1, 1
+	blt	$a6, $a5, bge_else.18253
 	li	$a5, 0
-	lw	$a0, 32($sp)
-	lw	$a1, 28($sp)
-	lw	$a2, 8($sp)
-	lw	$a3, 20($sp)
-	lw	$a4, 24($sp)
-	lw	$a26, 12($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	try_exploit_neighbors.2875
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f30, $fv
-bne_cont.9060:
-	lw	$a26, 4($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	write_rgb.2886
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f30, $fv
-	lw	$a0, 32($sp)
-	addi	$a0, $a0, 1
-	lw	$a1, 28($sp)
-	lw	$a2, 8($sp)
-	lw	$a3, 20($sp)
-	lw	$a4, 24($sp)
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	scan_pixel.2902
-scan_line.2908:
-	lw	$a5, 12($a26)
-	lw	$a6, 8($a26)
-	lw	$a7, 4($a26)
-	lw	$a8, 4($a7)
-	blt	$a0, $a8, bge_else.9061
-	jr	$ra
-bge_else.9061:
-	lw	$a7, 4($a7)
-	subi	$a7, $a7, 1
-	sw	$a26, 0($sp)
-	sw	$a4, 4($sp)
-	sw	$a3, 8($sp)
-	sw	$a2, 12($sp)
-	sw	$a1, 16($sp)
-	sw	$a0, 20($sp)
-	sw	$a5, 24($sp)
-	blt	$a0, $a7, bge_else.9063
-	j	bge_cont.9064
-bge_else.9063:
-	addi	$a7, $a0, 1
-	move	$a2, $a4
-	move	$a1, $a7
-	move	$a0, $a3
-	move	$a26, $a6
+	j	bge_cont.18254
+bge_else.18253:
+	li	$a5, 0
+	blt	$a5, $a1, bge_else.18255
+	li	$a5, 0
+	j	bge_cont.18256
+bge_else.18255:
+	li	$a5, 616
+	lw	$a5, 0($a5)
+	addi	$a6, $a0, 1
+	blt	$a6, $a5, bge_else.18257
+	li	$a5, 0
+	j	bge_cont.18258
+bge_else.18257:
+	li	$a5, 0
+	blt	$a5, $a0, bge_else.18259
+	li	$a5, 0
+	j	bge_cont.18260
+bge_else.18259:
+	li	$a5, 1
+bge_cont.18260:
+bge_cont.18258:
+bge_cont.18256:
+bge_cont.18254:
+	li	$a6, 0
+	sw	$a4, 0($sp)
+	sw	$a2, 4($sp)
+	sw	$a1, 8($sp)
+	sw	$a3, 12($sp)
+	sw	$a0, 16($sp)
+	bne	$a5, $a6, bne_else.18261
+	sll	$a5, $a0, 2
+	add	$a5, $a3, $a5
+	lw	$a5, 0($a5)
+	li	$a6, 0
+	lw	$a7, 8($a5)
+	li	$a8, 0
+	lw	$a7, 0($a7)
+	blt	$a7, $a8, bge_else.18263
+	lw	$a7, 12($a5)
+	lw	$a7, 0($a7)
+	li	$a8, 0
+	sw	$a5, 20($sp)
+	bne	$a7, $a8, bne_else.18265
+	j	bne_cont.18266
+bne_else.18265:
+	move	$a1, $a6
+	move	$a0, $a5
 	sw	$ra, 28($sp)
 	addi	$sp, $sp, 32
-	jal	pretrace_line.2898
+	jal	calc_diffuse_using_1point.3018
 	subi	$sp, $sp, 32
 	lw	$ra, 28($sp)
 	fmove	$f30, $fv
-bge_cont.9064:
-	li	$a0, 0
-	lw	$a1, 20($sp)
-	lw	$a2, 16($sp)
-	lw	$a3, 12($sp)
-	lw	$a4, 8($sp)
-	lw	$a26, 24($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	scan_pixel.2902
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	fmove	$f30, $fv
+bne_cont.18266:
+	li	$a1, 1
 	lw	$a0, 20($sp)
-	addi	$a0, $a0, 1
-	li	$a1, 2
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	do_without_neighbors.3027
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	j	bge_cont.18264
+bge_else.18263:
+bge_cont.18264:
+	j	bne_cont.18262
+bne_else.18261:
+	li	$a5, 0
+	sll	$a6, $a0, 2
+	add	$a6, $a3, $a6
+	lw	$a6, 0($a6)
+	li	$a7, 0
+	lw	$a8, 8($a6)
+	lw	$a8, 0($a8)
+	blt	$a8, $a7, bge_else.18267
+	sll	$a7, $a0, 2
+	add	$a7, $a3, $a7
+	lw	$a7, 0($a7)
+	lw	$a7, 8($a7)
+	lw	$a7, 0($a7)
+	sll	$a8, $a0, 2
+	add	$a8, $a2, $a8
+	lw	$a8, 0($a8)
+	lw	$a8, 8($a8)
+	lw	$a8, 0($a8)
+	bne	$a8, $a7, bne_else.18269
+	sll	$a8, $a0, 2
+	add	$a8, $a4, $a8
+	lw	$a8, 0($a8)
+	lw	$a8, 8($a8)
+	lw	$a8, 0($a8)
+	bne	$a8, $a7, bne_else.18271
+	subi	$a8, $a0, 1
+	sll	$a8, $a8, 2
+	add	$a8, $a3, $a8
+	lw	$a8, 0($a8)
+	lw	$a8, 8($a8)
+	lw	$a8, 0($a8)
+	bne	$a8, $a7, bne_else.18273
+	addi	$a8, $a0, 1
+	sll	$a8, $a8, 2
+	add	$a8, $a3, $a8
+	lw	$a8, 0($a8)
+	lw	$a8, 8($a8)
+	lw	$a8, 0($a8)
+	bne	$a8, $a7, bne_else.18275
+	li	$a7, 1
+	j	bne_cont.18276
+bne_else.18275:
+	li	$a7, 0
+bne_cont.18276:
+	j	bne_cont.18274
+bne_else.18273:
+	li	$a7, 0
+bne_cont.18274:
+	j	bne_cont.18272
+bne_else.18271:
+	li	$a7, 0
+bne_cont.18272:
+	j	bne_cont.18270
+bne_else.18269:
+	li	$a7, 0
+bne_cont.18270:
+	li	$a8, 0
+	bne	$a7, $a8, bne_else.18277
+	sll	$a6, $a0, 2
+	add	$a6, $a3, $a6
+	lw	$a6, 0($a6)
+	move	$a1, $a5
+	move	$a0, $a6
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	do_without_neighbors.3027
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	j	bne_cont.18278
+bne_else.18277:
+	lw	$a6, 12($a6)
+	lw	$a6, 0($a6)
+	li	$a7, 0
+	bne	$a6, $a7, bne_else.18279
+	j	bne_cont.18280
+bne_else.18279:
+	move	$a1, $a2
+	move	$a2, $a3
+	move	$a3, $a4
+	move	$a4, $a5
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	calc_diffuse_using_5points.3021
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+bne_cont.18280:
+	li	$a5, 1
+	lw	$a0, 16($sp)
+	lw	$a1, 8($sp)
 	lw	$a2, 4($sp)
-	sw	$a0, 28($sp)
-	move	$a0, $a2
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	add_mod5.2498
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a4, $v0
-	lw	$a0, 28($sp)
+	lw	$a3, 12($sp)
+	lw	$a4, 0($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	try_exploit_neighbors.3043
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+bne_cont.18278:
+	j	bge_cont.18268
+bge_else.18267:
+bge_cont.18268:
+bne_cont.18262:
+	li	$a0, 604
+	flw	$f0, 0($a0)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_int_of_float
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	li	$a1, 255
+	blt	$a1, $a0, bge_else.18281
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18283
+	j	bge_cont.18284
+bge_else.18283:
+	li	$a0, 0
+bge_cont.18284:
+	j	bge_cont.18282
+bge_else.18281:
+	li	$a0, 255
+bge_cont.18282:
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_print_int
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	li	$a0, 32
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_print_byte
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	li	$a0, 604
+	flw	$f0, 4($a0)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_int_of_float
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	li	$a1, 255
+	blt	$a1, $a0, bge_else.18285
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18287
+	j	bge_cont.18288
+bge_else.18287:
+	li	$a0, 0
+bge_cont.18288:
+	j	bge_cont.18286
+bge_else.18285:
+	li	$a0, 255
+bge_cont.18286:
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_print_int
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	li	$a0, 32
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_print_byte
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	li	$a0, 604
+	flw	$f0, 8($a0)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_int_of_float
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	li	$a1, 255
+	blt	$a1, $a0, bge_else.18289
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18291
+	j	bge_cont.18292
+bge_else.18291:
+	li	$a0, 0
+bge_cont.18292:
+	j	bge_cont.18290
+bge_else.18289:
+	li	$a0, 255
+bge_cont.18290:
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_print_int
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	li	$a0, 10
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_print_byte
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	lw	$a0, 16($sp)
+	addi	$a0, $a0, 1
+	li	$a1, 616
+	lw	$a1, 0($a1)
+	blt	$a0, $a1, bge_else.18293
+	jr	$ra
+bge_else.18293:
+	li	$a1, 604
+	sll	$a2, $a0, 2
+	lw	$a3, 12($sp)
+	add	$a2, $a3, $a2
+	lw	$a2, 0($a2)
+	lw	$a2, 0($a2)
+	flw	$f0, 0($a2)
+	fsw	$f0, 0($a1)
+	flw	$f0, 4($a2)
+	fsw	$f0, 4($a1)
+	flw	$f0, 8($a2)
+	fsw	$f0, 8($a1)
+	li	$a1, 616
+	lw	$a1, 4($a1)
+	lw	$a2, 8($sp)
+	addi	$a4, $a2, 1
+	blt	$a4, $a1, bge_else.18295
+	li	$a1, 0
+	j	bge_cont.18296
+bge_else.18295:
+	li	$a1, 0
+	blt	$a1, $a2, bge_else.18297
+	li	$a1, 0
+	j	bge_cont.18298
+bge_else.18297:
+	li	$a1, 616
+	lw	$a1, 0($a1)
+	addi	$a4, $a0, 1
+	blt	$a4, $a1, bge_else.18299
+	li	$a1, 0
+	j	bge_cont.18300
+bge_else.18299:
+	li	$a1, 0
+	blt	$a1, $a0, bge_else.18301
+	li	$a1, 0
+	j	bge_cont.18302
+bge_else.18301:
+	li	$a1, 1
+bge_cont.18302:
+bge_cont.18300:
+bge_cont.18298:
+bge_cont.18296:
+	li	$a4, 0
+	sw	$a0, 24($sp)
+	bne	$a1, $a4, bne_else.18303
+	sll	$a1, $a0, 2
+	add	$a1, $a3, $a1
+	lw	$a1, 0($a1)
+	li	$a4, 0
+	move	$a0, $a1
+	move	$a1, $a4
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	do_without_neighbors.3027
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	j	bne_cont.18304
+bne_else.18303:
+	li	$a5, 0
+	lw	$a1, 4($sp)
+	lw	$a4, 0($sp)
+	move	$a25, $a2
+	move	$a2, $a1
+	move	$a1, $a25
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	try_exploit_neighbors.3043
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+bne_cont.18304:
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	write_rgb.3054
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	lw	$a0, 24($sp)
+	addi	$a0, $a0, 1
+	lw	$a1, 8($sp)
+	lw	$a2, 4($sp)
+	lw	$a3, 12($sp)
+	lw	$a4, 0($sp)
+	j	scan_pixel.3070
+scan_line.3076:
+	li	$a5, 616
+	lw	$a5, 4($a5)
+	blt	$a0, $a5, bge_else.18305
+	jr	$ra
+bge_else.18305:
+	li	$a5, 616
+	lw	$a5, 4($a5)
+	subi	$a5, $a5, 1
+	sw	$a4, 0($sp)
+	sw	$a3, 4($sp)
+	sw	$a1, 8($sp)
+	sw	$a0, 12($sp)
+	sw	$a2, 16($sp)
+	blt	$a0, $a5, bge_else.18307
+	j	bge_cont.18308
+bge_else.18307:
+	addi	$a5, $a0, 1
+	move	$a2, $a4
+	move	$a1, $a5
+	move	$a0, $a3
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	pretrace_line.3066
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+bge_cont.18308:
+	li	$a0, 0
+	li	$a1, 616
+	lw	$a1, 0($a1)
+	blt	$a0, $a1, bge_else.18309
+	j	bge_cont.18310
+bge_else.18309:
+	li	$a1, 604
+	lw	$a3, 16($sp)
+	lw	$a2, 0($a3)
+	lw	$a2, 0($a2)
+	flw	$f0, 0($a2)
+	fsw	$f0, 0($a1)
+	flw	$f0, 4($a2)
+	fsw	$f0, 4($a1)
+	flw	$f0, 8($a2)
+	fsw	$f0, 8($a1)
+	li	$a1, 616
+	lw	$a1, 4($a1)
+	lw	$a2, 12($sp)
+	addi	$a4, $a2, 1
+	blt	$a4, $a1, bge_else.18311
+	li	$a1, 0
+	j	bge_cont.18312
+bge_else.18311:
+	li	$a1, 0
+	blt	$a1, $a2, bge_else.18313
+	li	$a1, 0
+	j	bge_cont.18314
+bge_else.18313:
+	li	$a1, 616
+	lw	$a1, 0($a1)
+	li	$a4, 1
+	blt	$a4, $a1, bge_else.18315
+	li	$a1, 0
+	j	bge_cont.18316
+bge_else.18315:
+	li	$a1, 0
+bge_cont.18316:
+bge_cont.18314:
+bge_cont.18312:
+	li	$a4, 0
+	bne	$a1, $a4, bne_else.18317
+	lw	$a0, 0($a3)
+	li	$a1, 0
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	do_without_neighbors.3027
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	j	bne_cont.18318
+bne_else.18317:
+	li	$a5, 0
+	lw	$a1, 8($sp)
+	lw	$a4, 4($sp)
+	move	$a25, $a2
+	move	$a2, $a1
+	move	$a1, $a25
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	try_exploit_neighbors.3043
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+bne_cont.18318:
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	write_rgb.3054
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	li	$a0, 1
 	lw	$a1, 12($sp)
 	lw	$a2, 8($sp)
 	lw	$a3, 16($sp)
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	scan_line.2908
-create_float5x3array.2914:
+	lw	$a4, 4($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	scan_pixel.3070
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+bge_cont.18310:
+	lw	$a0, 12($sp)
+	addi	$a1, $a0, 1
+	lw	$a0, 0($sp)
+	addi	$a0, $a0, 2
+	li	$a2, 5
+	blt	$a0, $a2, bge_else.18319
+	subi	$a2, $a0, 5
+	j	bge_cont.18320
+bge_else.18319:
+	move	$a2, $a0
+bge_cont.18320:
+	li	$a0, 616
+	lw	$a0, 4($a0)
+	blt	$a1, $a0, bge_else.18321
+	jr	$ra
+bge_else.18321:
+	li	$a0, 616
+	lw	$a0, 4($a0)
+	subi	$a0, $a0, 1
+	sw	$a2, 20($sp)
+	sw	$a1, 24($sp)
+	blt	$a1, $a0, bge_else.18323
+	j	bge_cont.18324
+bge_else.18323:
+	addi	$a0, $a1, 1
+	lw	$a3, 8($sp)
+	move	$a1, $a0
+	move	$a0, $a3
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	pretrace_line.3066
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+bge_cont.18324:
+	li	$a0, 0
+	lw	$a1, 24($sp)
+	lw	$a2, 16($sp)
+	lw	$a3, 4($sp)
+	lw	$a4, 8($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	scan_pixel.3070
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	lw	$a0, 24($sp)
+	addi	$a0, $a0, 1
+	lw	$a1, 20($sp)
+	addi	$a1, $a1, 2
+	li	$a2, 5
+	blt	$a1, $a2, bge_else.18325
+	subi	$a4, $a1, 5
+	j	bge_cont.18326
+bge_else.18325:
+	move	$a4, $a1
+bge_cont.18326:
+	lw	$a1, 4($sp)
+	lw	$a2, 8($sp)
+	lw	$a3, 16($sp)
+	j	scan_line.3076
+create_pixel.3084:
 	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	sw	$ra, 4($sp)
 	addi	$sp, $sp, 8
-	jal	l.6035
+	jal	min_caml_create_float_array
 	subi	$sp, $sp, 8
 	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
+	move	$a0, $v0
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$a0, 0($sp)
+	move	$a0, $a1
 	sw	$ra, 4($sp)
 	addi	$sp, $sp, 8
 	jal	min_caml_create_float_array
@@ -8812,94 +10994,61 @@ create_float5x3array.2914:
 	lw	$ra, 4($sp)
 	move	$a0, $v0
 	li	$a1, 3
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6035
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 0($sp)
-	move	$a0, $a1
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	move	$a0, $v0
-	lw	$a1, 0($sp)
-	sw	$a0, 4($a1)
-	li	$a0, 3
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6035
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	move	$a0, $v0
-	lw	$a1, 0($sp)
-	sw	$a0, 8($a1)
-	li	$a0, 3
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6035
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	move	$a0, $v0
-	lw	$a1, 0($sp)
-	sw	$a0, 12($a1)
-	li	$a0, 3
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6035
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	move	$a0, $v0
-	lw	$a1, 0($sp)
-	sw	$a0, 16($a1)
-	move	$v0, $a1
-	jr	$ra
-create_pixel.2916:
-	li	$a0, 3
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6035
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	move	$a0, $v0
-	sw	$a0, 0($sp)
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	create_float5x3array.2914
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	move	$a0, $v0
-	li	$a1, 5
-	li	$a2, 0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	sw	$a0, 4($sp)
 	move	$a0, $a1
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	lw	$a1, 4($sp)
+	sw	$a0, 4($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	lw	$a1, 4($sp)
+	sw	$a0, 8($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	lw	$a1, 4($sp)
+	sw	$a0, 12($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	lw	$a1, 4($sp)
+	sw	$a0, 16($a1)
+	li	$a0, 5
+	li	$a2, 0
 	move	$a1, $a2
 	sw	$ra, 12($sp)
 	addi	$sp, $sp, 16
@@ -8918,24 +11067,154 @@ create_pixel.2916:
 	subi	$sp, $sp, 16
 	lw	$ra, 12($sp)
 	move	$a0, $v0
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	sw	$a0, 12($sp)
+	move	$a0, $a1
 	sw	$ra, 20($sp)
 	addi	$sp, $sp, 24
-	jal	create_float5x3array.2914
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a1, $v0
+	li	$a0, 5
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_array
 	subi	$sp, $sp, 24
 	lw	$ra, 20($sp)
 	move	$a0, $v0
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	sw	$a0, 16($sp)
+	move	$a0, $a1
 	sw	$ra, 20($sp)
 	addi	$sp, $sp, 24
-	jal	create_float5x3array.2914
+	jal	min_caml_create_float_array
 	subi	$sp, $sp, 24
 	lw	$ra, 20($sp)
 	move	$a0, $v0
-	li	$a1, 1
-	li	$a2, 0
+	lw	$a1, 16($sp)
+	sw	$a0, 4($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	lw	$a1, 16($sp)
+	sw	$a0, 8($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	lw	$a1, 16($sp)
+	sw	$a0, 12($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	lw	$a1, 16($sp)
+	sw	$a0, 16($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a1, $v0
+	li	$a0, 5
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	sw	$a0, 20($sp)
 	move	$a0, $a1
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	lw	$a1, 20($sp)
+	sw	$a0, 4($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	lw	$a1, 20($sp)
+	sw	$a0, 8($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	lw	$a1, 20($sp)
+	sw	$a0, 12($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	lw	$a1, 20($sp)
+	sw	$a0, 16($a1)
+	li	$a0, 1
+	li	$a2, 0
 	move	$a1, $a2
 	sw	$ra, 28($sp)
 	addi	$sp, $sp, 32
@@ -8943,1389 +11222,110 @@ create_pixel.2916:
 	subi	$sp, $sp, 32
 	lw	$ra, 28($sp)
 	move	$a0, $v0
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	sw	$a0, 24($sp)
+	move	$a0, $a1
 	sw	$ra, 28($sp)
 	addi	$sp, $sp, 32
-	jal	create_float5x3array.2914
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a1, $v0
+	li	$a0, 5
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_array
 	subi	$sp, $sp, 32
 	lw	$ra, 28($sp)
 	move	$a0, $v0
-	move	$a1, $fp
-	addi	$fp, $fp, 32
-	sw	$a0, 28($a1)
-	lw	$a0, 24($sp)
-	sw	$a0, 24($a1)
-	lw	$a0, 20($sp)
-	sw	$a0, 20($a1)
-	lw	$a0, 16($sp)
-	sw	$a0, 16($a1)
-	lw	$a0, 12($sp)
-	sw	$a0, 12($a1)
-	lw	$a0, 8($sp)
-	sw	$a0, 8($a1)
-	lw	$a0, 4($sp)
-	sw	$a0, 4($a1)
-	lw	$a0, 0($sp)
-	sw	$a0, 0($a1)
-	move	$v0, $a1
-	jr	$ra
-init_line_elements.2918:
-	li	$a2, 0
-	blt	$a1, $a2, bge_else.9065
-	sw	$a0, 0($sp)
-	sw	$a1, 4($sp)
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	create_pixel.2916
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$a0, 28($sp)
+	move	$a0, $a1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
 	move	$a0, $v0
+	lw	$a1, 28($sp)
+	sw	$a0, 4($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	lw	$a1, 28($sp)
+	sw	$a0, 8($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	lw	$a1, 28($sp)
+	sw	$a0, 12($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	lw	$a1, 28($sp)
+	sw	$a0, 16($a1)
+	move	$a0, $fp
+	addi	$fp, $fp, 32
+	sw	$a1, 28($a0)
+	lw	$a1, 24($sp)
+	sw	$a1, 24($a0)
+	lw	$a1, 20($sp)
+	sw	$a1, 20($a0)
+	lw	$a1, 16($sp)
+	sw	$a1, 16($a0)
+	lw	$a1, 12($sp)
+	sw	$a1, 12($a0)
+	lw	$a1, 8($sp)
+	sw	$a1, 8($a0)
 	lw	$a1, 4($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 0($sp)
-	add	$a2, $a3, $a2
-	sw	$a0, 0($a2)
-	subi	$a1, $a1, 1
-	move	$a0, $a3
-	j	init_line_elements.2918
-bge_else.9065:
+	sw	$a1, 4($a0)
+	lw	$a1, 0($sp)
+	sw	$a1, 0($a0)
 	move	$v0, $a0
 	jr	$ra
-create_pixelline.2921:
-	lw	$a0, 4($a26)
-	lw	$a1, 0($a0)
+init_line_elements.3086:
+	li	$a2, 0
+	blt	$a1, $a2, bge_else.18327
+	li	$a2, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	sw	$a0, 0($sp)
 	sw	$a1, 4($sp)
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	create_pixel.2916
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	move	$a1, $v0
-	lw	$a0, 4($sp)
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	min_caml_create_array
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	move	$a0, $v0
-	lw	$a1, 0($sp)
-	lw	$a1, 0($a1)
-	subi	$a1, $a1, 2
-	j	init_line_elements.2918
-tan.2923:
-	fsw	$f0, 0($sp)
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	min_caml_sin
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	fmove	$f0, $fv
-	flw	$f1, 0($sp)
-	fsw	$f0, 8($sp)
-	fmove	$f0, $f1
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	min_caml_cos
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	finv	$f0, $f0
-	flw	$f1, 8($sp)
-	fmul	$fv, $f1, $f0
-	jr $ra
-adjust_position.2925:
-	fmul	$f0, $f0, $f0
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6480
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f2, $a25
-	fadd	$f0, $f0, $f2
-	fsw	$f1, 0($sp)
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	min_caml_sqrt
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	fmove	$f0, $fv
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	l.6037
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	mtc1	$f1, $a25
-	finv	$f2, $f0
-	fmul	$f1, $f1, $f2
-	fsw	$f0, 8($sp)
-	fmove	$f0, $f1
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	min_caml_atan
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	flw	$f1, 0($sp)
-	fmul	$f0, $f0, $f1
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	tan.2923
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	flw	$f1, 8($sp)
-	fmul	$fv, $f0, $f1
-	jr $ra
-calc_dirvec.2928:
-	lw	$a3, 4($a26)
-	li	$a4, 5
-	blt	$a0, $a4, bge_else.9066
-	sw	$a2, 0($sp)
-	sw	$a3, 4($sp)
-	sw	$a1, 8($sp)
-	fsw	$f0, 16($sp)
-	fsw	$f1, 24($sp)
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	fsqr.2483
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	flw	$f1, 24($sp)
-	fsw	$f0, 32($sp)
-	fmove	$f0, $f1
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	fsqr.2483
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f0, $fv
-	flw	$f1, 32($sp)
-	fadd	$f0, $f1, $f0
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	l.6037
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	mtc1	$f1, $a25
-	fadd	$f0, $f0, $f1
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	min_caml_sqrt
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f0, $fv
-	finv	$f1, $f0
-	flw	$f2, 16($sp)
-	fmul	$f1, $f2, $f1
-	finv	$f2, $f0
-	flw	$f3, 24($sp)
-	fmul	$f2, $f3, $f2
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	l.6037
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	mtc1	$f3, $a25
-	finv	$f0, $f0
-	fmul	$f0, $f3, $f0
-	lw	$a0, 8($sp)
-	sll	$a0, $a0, 2
-	lw	$a1, 4($sp)
-	add	$a0, $a1, $a0
-	lw	$a0, 0($a0)
-	lw	$a1, 0($sp)
-	sll	$a2, $a1, 2
-	add	$a2, $a0, $a2
-	lw	$a2, 0($a2)
-	sw	$a0, 40($sp)
-	fsw	$f0, 48($sp)
-	fsw	$f2, 56($sp)
-	fsw	$f1, 64($sp)
 	move	$a0, $a2
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	d_vec.2608
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	move	$a0, $v0
-	flw	$f0, 64($sp)
-	flw	$f1, 56($sp)
-	flw	$f2, 48($sp)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	vecset.2501
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	fmove	$f30, $fv
-	lw	$a0, 0($sp)
-	addi	$a1, $a0, 40
-	sll	$a1, $a1, 2
-	lw	$a2, 40($sp)
-	add	$a1, $a2, $a1
-	lw	$a1, 0($a1)
-	move	$a0, $a1
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	d_vec.2608
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	move	$a0, $v0
-	flw	$f0, 56($sp)
-	sw	$a0, 72($sp)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	fneg.2473
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	fmove	$f2, $fv
-	flw	$f0, 64($sp)
-	flw	$f1, 48($sp)
-	lw	$a0, 72($sp)
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	vecset.2501
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	fmove	$f30, $fv
-	lw	$a0, 0($sp)
-	addi	$a1, $a0, 80
-	sll	$a1, $a1, 2
-	lw	$a2, 40($sp)
-	add	$a1, $a2, $a1
-	lw	$a1, 0($a1)
-	move	$a0, $a1
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	d_vec.2608
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	move	$a0, $v0
-	flw	$f0, 64($sp)
-	sw	$a0, 76($sp)
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	fneg.2473
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	fsw	$f0, 80($sp)
-	fmove	$f0, $f1
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	fneg.2473
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f2, $fv
-	flw	$f0, 48($sp)
-	flw	$f1, 80($sp)
-	lw	$a0, 76($sp)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	vecset.2501
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f30, $fv
-	lw	$a0, 0($sp)
-	addi	$a1, $a0, 1
-	sll	$a1, $a1, 2
-	lw	$a2, 40($sp)
-	add	$a1, $a2, $a1
-	lw	$a1, 0($a1)
-	move	$a0, $a1
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	d_vec.2608
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	move	$a0, $v0
-	flw	$f0, 64($sp)
-	sw	$a0, 88($sp)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	fneg.2473
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f0, $fv
-	flw	$f1, 56($sp)
-	fsw	$f0, 96($sp)
-	fmove	$f0, $f1
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	fneg.2473
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	fmove	$f0, $fv
-	flw	$f1, 48($sp)
-	fsw	$f0, 104($sp)
-	fmove	$f0, $f1
-	sw	$ra, 116($sp)
-	addi	$sp, $sp, 120
-	jal	fneg.2473
-	subi	$sp, $sp, 120
-	lw	$ra, 116($sp)
-	fmove	$f2, $fv
-	flw	$f0, 96($sp)
-	flw	$f1, 104($sp)
-	lw	$a0, 88($sp)
-	sw	$ra, 116($sp)
-	addi	$sp, $sp, 120
-	jal	vecset.2501
-	subi	$sp, $sp, 120
-	lw	$ra, 116($sp)
-	fmove	$f30, $fv
-	lw	$a0, 0($sp)
-	addi	$a1, $a0, 41
-	sll	$a1, $a1, 2
-	lw	$a2, 40($sp)
-	add	$a1, $a2, $a1
-	lw	$a1, 0($a1)
-	move	$a0, $a1
-	sw	$ra, 116($sp)
-	addi	$sp, $sp, 120
-	jal	d_vec.2608
-	subi	$sp, $sp, 120
-	lw	$ra, 116($sp)
-	move	$a0, $v0
-	flw	$f0, 64($sp)
-	sw	$a0, 112($sp)
-	sw	$ra, 116($sp)
-	addi	$sp, $sp, 120
-	jal	fneg.2473
-	subi	$sp, $sp, 120
-	lw	$ra, 116($sp)
-	fmove	$f0, $fv
-	flw	$f1, 48($sp)
-	fsw	$f0, 120($sp)
-	fmove	$f0, $f1
-	sw	$ra, 132($sp)
-	addi	$sp, $sp, 136
-	jal	fneg.2473
-	subi	$sp, $sp, 136
-	lw	$ra, 132($sp)
-	fmove	$f1, $fv
-	flw	$f0, 120($sp)
-	flw	$f2, 56($sp)
-	lw	$a0, 112($sp)
-	sw	$ra, 132($sp)
-	addi	$sp, $sp, 136
-	jal	vecset.2501
-	subi	$sp, $sp, 136
-	lw	$ra, 132($sp)
-	fmove	$f30, $fv
-	lw	$a0, 0($sp)
-	addi	$a0, $a0, 81
-	sll	$a0, $a0, 2
-	lw	$a1, 40($sp)
-	add	$a0, $a1, $a0
-	lw	$a0, 0($a0)
-	sw	$ra, 132($sp)
-	addi	$sp, $sp, 136
-	jal	d_vec.2608
-	subi	$sp, $sp, 136
-	lw	$ra, 132($sp)
-	move	$a0, $v0
-	flw	$f0, 48($sp)
-	sw	$a0, 128($sp)
-	sw	$ra, 132($sp)
-	addi	$sp, $sp, 136
-	jal	fneg.2473
-	subi	$sp, $sp, 136
-	lw	$ra, 132($sp)
-	fmove	$f0, $fv
-	flw	$f1, 64($sp)
-	flw	$f2, 56($sp)
-	lw	$a0, 128($sp)
-	j	vecset.2501
-bge_else.9066:
-	fsw	$f2, 136($sp)
-	sw	$a2, 0($sp)
-	sw	$a1, 8($sp)
-	sw	$a26, 144($sp)
-	fsw	$f3, 152($sp)
-	sw	$a0, 160($sp)
-	fmove	$f0, $f1
-	fmove	$f1, $f2
-	sw	$ra, 164($sp)
-	addi	$sp, $sp, 168
-	jal	adjust_position.2925
-	subi	$sp, $sp, 168
-	lw	$ra, 164($sp)
-	fmove	$f0, $fv
-	lw	$a0, 160($sp)
-	addi	$a0, $a0, 1
-	flw	$f1, 152($sp)
-	fsw	$f0, 168($sp)
-	sw	$a0, 176($sp)
-	sw	$ra, 180($sp)
-	addi	$sp, $sp, 184
-	jal	adjust_position.2925
-	subi	$sp, $sp, 184
-	lw	$ra, 180($sp)
-	fmove	$f1, $fv
-	flw	$f0, 168($sp)
-	flw	$f2, 136($sp)
-	flw	$f3, 152($sp)
-	lw	$a0, 176($sp)
-	lw	$a1, 8($sp)
-	lw	$a2, 0($sp)
-	lw	$a26, 144($sp)
-	lw	$a25, 0($a26)
-	j	calc_dirvec.2928
-calc_dirvecs.2936:
-	lw	$a3, 4($a26)
-	li	$a4, 0
-	blt	$a0, $a4, bge_else.9074
-	sw	$a26, 0($sp)
-	sw	$a0, 4($sp)
-	fsw	$f0, 8($sp)
-	sw	$a2, 16($sp)
-	sw	$a1, 20($sp)
-	sw	$a3, 24($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	min_caml_float_of_int
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	fmove	$f0, $fv
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	l.6592
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	mtc1	$f1, $a25
-	fmul	$f0, $f0, $f1
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	l.6593
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	mtc1	$f1, $a25
-	fsub	$f2, $f0, $f1
-	li	$a0, 0
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	l.6035
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	mtc1	$f0, $a25
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	l.6035
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	mtc1	$f1, $a25
-	flw	$f3, 8($sp)
-	lw	$a1, 20($sp)
-	lw	$a2, 16($sp)
-	lw	$a26, 24($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	calc_dirvec.2928
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	fmove	$f30, $fv
-	lw	$a0, 4($sp)
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	min_caml_float_of_int
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	fmove	$f0, $fv
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	l.6592
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	mtc1	$f1, $a25
-	fmul	$f0, $f0, $f1
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	l.6480
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	mtc1	$f1, $a25
-	fadd	$f2, $f0, $f1
-	li	$a0, 0
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	l.6035
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	mtc1	$f0, $a25
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	l.6035
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	mtc1	$f1, $a25
-	lw	$a1, 16($sp)
-	addi	$a2, $a1, 2
-	flw	$f3, 8($sp)
-	lw	$a3, 20($sp)
-	lw	$a26, 24($sp)
-	move	$a1, $a3
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	calc_dirvec.2928
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	fmove	$f30, $fv
-	lw	$a0, 4($sp)
-	subi	$a0, $a0, 1
-	li	$a1, 1
-	lw	$a2, 20($sp)
-	sw	$a0, 28($sp)
-	move	$a0, $a2
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	add_mod5.2498
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	move	$a1, $v0
-	flw	$f0, 8($sp)
-	lw	$a0, 28($sp)
-	lw	$a2, 16($sp)
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	calc_dirvecs.2936
-bge_else.9074:
-	jr	$ra
-calc_dirvec_rows.2941:
-	lw	$a3, 4($a26)
-	li	$a4, 0
-	blt	$a0, $a4, bge_else.9076
-	sw	$a26, 0($sp)
-	sw	$a0, 4($sp)
-	sw	$a2, 8($sp)
-	sw	$a1, 12($sp)
-	sw	$a3, 16($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	min_caml_float_of_int
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	l.6592
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	mtc1	$f1, $a25
-	fmul	$f0, $f0, $f1
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	l.6593
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	mtc1	$f1, $a25
-	fsub	$f0, $f0, $f1
-	li	$a0, 4
-	lw	$a1, 12($sp)
-	lw	$a2, 8($sp)
-	lw	$a26, 16($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	calc_dirvecs.2936
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f30, $fv
-	lw	$a0, 4($sp)
-	subi	$a0, $a0, 1
-	li	$a1, 2
-	lw	$a2, 12($sp)
-	sw	$a0, 20($sp)
-	move	$a0, $a2
-	sw	$ra, 28($sp)
-	addi	$sp, $sp, 32
-	jal	add_mod5.2498
-	subi	$sp, $sp, 32
-	lw	$ra, 28($sp)
-	move	$a1, $v0
-	lw	$a0, 8($sp)
-	addi	$a2, $a0, 4
-	lw	$a0, 20($sp)
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	calc_dirvec_rows.2941
-bge_else.9076:
-	jr	$ra
-create_dirvec.2945:
-	lw	$a0, 4($a26)
-	li	$a1, 3
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6035
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 0($sp)
-	move	$a0, $a1
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	move	$a1, $v0
-	lw	$a0, 0($sp)
-	lw	$a0, 0($a0)
-	sw	$a1, 4($sp)
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	min_caml_create_array
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	move	$a0, $v0
-	move	$a1, $fp
-	addi	$fp, $fp, 8
-	sw	$a0, 4($a1)
-	lw	$a0, 4($sp)
-	sw	$a0, 0($a1)
-	move	$v0, $a1
-	jr	$ra
-create_dirvec_elements.2947:
-	lw	$a2, 4($a26)
-	li	$a3, 0
-	blt	$a1, $a3, bge_else.9078
-	sw	$a26, 0($sp)
-	sw	$a0, 4($sp)
-	sw	$a1, 8($sp)
-	move	$a26, $a2
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	create_dirvec.2945
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	move	$a0, $v0
-	lw	$a1, 8($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 4($sp)
-	add	$a2, $a3, $a2
-	sw	$a0, 0($a2)
-	subi	$a1, $a1, 1
-	lw	$a26, 0($sp)
-	move	$a0, $a3
-	lw	$a25, 0($a26)
-	j	create_dirvec_elements.2947
-bge_else.9078:
-	jr	$ra
-create_dirvecs.2950:
-	lw	$a1, 12($a26)
-	lw	$a2, 8($a26)
-	lw	$a3, 4($a26)
-	li	$a4, 0
-	blt	$a0, $a4, bge_else.9080
-	li	$a4, 120
-	sw	$a26, 0($sp)
-	sw	$a2, 4($sp)
-	sw	$a1, 8($sp)
-	sw	$a0, 12($sp)
-	sw	$a4, 16($sp)
-	move	$a26, $a3
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	create_dirvec.2945
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a1, $v0
-	lw	$a0, 16($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	min_caml_create_array
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	lw	$a1, 12($sp)
-	sll	$a2, $a1, 2
-	lw	$a3, 8($sp)
-	add	$a2, $a3, $a2
-	sw	$a0, 0($a2)
-	sll	$a0, $a1, 2
-	add	$a0, $a3, $a0
-	lw	$a0, 0($a0)
-	li	$a2, 118
-	lw	$a26, 4($sp)
-	move	$a1, $a2
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	create_dirvec_elements.2947
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f30, $fv
-	lw	$a0, 12($sp)
-	subi	$a0, $a0, 1
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	create_dirvecs.2950
-bge_else.9080:
-	jr	$ra
-init_dirvec_constants.2952:
-	lw	$a2, 4($a26)
-	li	$a3, 0
-	blt	$a1, $a3, bge_else.9082
-	sll	$a3, $a1, 2
-	add	$a3, $a0, $a3
-	lw	$a3, 0($a3)
-	sw	$a0, 0($sp)
-	sw	$a26, 4($sp)
-	sw	$a1, 8($sp)
-	move	$a0, $a3
-	move	$a26, $a2
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	setup_dirvec_constants.2737
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	fmove	$f30, $fv
-	lw	$a0, 8($sp)
-	subi	$a1, $a0, 1
-	lw	$a0, 0($sp)
-	lw	$a26, 4($sp)
-	lw	$a25, 0($a26)
-	j	init_dirvec_constants.2952
-bge_else.9082:
-	jr	$ra
-init_vecset_constants.2955:
-	lw	$a1, 8($a26)
-	lw	$a2, 4($a26)
-	li	$a3, 0
-	blt	$a0, $a3, bge_else.9084
-	sll	$a3, $a0, 2
-	add	$a3, $a2, $a3
-	lw	$a2, 0($a3)
-	li	$a3, 119
-	sw	$a26, 0($sp)
-	sw	$a0, 4($sp)
-	move	$a0, $a2
-	move	$a26, $a1
-	move	$a1, $a3
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	init_dirvec_constants.2952
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	fmove	$f30, $fv
-	lw	$a0, 4($sp)
-	subi	$a0, $a0, 1
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	init_vecset_constants.2955
-bge_else.9084:
-	jr	$ra
-init_dirvecs.2957:
-	lw	$a0, 12($a26)
-	lw	$a1, 8($a26)
-	lw	$a2, 4($a26)
-	li	$a3, 4
-	sw	$a0, 0($sp)
-	sw	$a2, 4($sp)
-	move	$a0, $a3
-	move	$a26, $a1
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	create_dirvecs.2950
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	fmove	$f30, $fv
-	li	$a0, 9
-	li	$a1, 0
-	li	$a2, 0
-	lw	$a26, 4($sp)
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	calc_dirvec_rows.2941
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	fmove	$f30, $fv
-	li	$a0, 4
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	init_vecset_constants.2955
-add_reflection.2959:
-	lw	$a2, 12($a26)
-	lw	$a3, 8($a26)
-	lw	$a26, 4($a26)
-	sw	$a3, 0($sp)
-	sw	$a0, 4($sp)
-	sw	$a1, 8($sp)
-	fsw	$f0, 16($sp)
-	sw	$a2, 24($sp)
-	fsw	$f3, 32($sp)
-	fsw	$f2, 40($sp)
-	fsw	$f1, 48($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	create_dirvec.2945
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	move	$a0, $v0
-	sw	$a0, 56($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	d_vec.2608
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	move	$a0, $v0
-	flw	$f0, 48($sp)
-	flw	$f1, 40($sp)
-	flw	$f2, 32($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	vecset.2501
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	fmove	$f30, $fv
-	lw	$a0, 56($sp)
-	lw	$a26, 24($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	setup_dirvec_constants.2737
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	fmove	$f30, $fv
-	move	$a0, $fp
-	addi	$fp, $fp, 16
-	flw	$f0, 16($sp)
-	fsw	$f0, 8($a0)
-	lw	$a1, 56($sp)
-	sw	$a1, 4($a0)
-	lw	$a1, 8($sp)
-	sw	$a1, 0($a0)
-	lw	$a1, 4($sp)
-	sll	$a1, $a1, 2
-	lw	$a2, 0($sp)
-	add	$a1, $a2, $a1
-	sw	$a0, 0($a1)
-	jr	$ra
-setup_rect_reflection.2966:
-	lw	$a2, 12($a26)
-	lw	$a3, 8($a26)
-	lw	$a4, 4($a26)
-	sla	$a0, $a0, 2
-	lw	$a5, 0($a2)
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6037
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	sw	$a2, 0($sp)
-	sw	$a5, 4($sp)
-	sw	$a4, 8($sp)
-	sw	$a0, 12($sp)
-	sw	$a3, 16($sp)
-	fsw	$f0, 24($sp)
-	move	$a0, $a1
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	o_diffuse.2571
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	flw	$f1, 24($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 16($sp)
-	flw	$f1, 0($a0)
-	fsw	$f0, 32($sp)
-	fmove	$f0, $f1
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	fneg.2473
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f0, $fv
-	lw	$a0, 16($sp)
-	flw	$f1, 4($a0)
-	fsw	$f0, 40($sp)
-	fmove	$f0, $f1
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	fneg.2473
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	fmove	$f0, $fv
-	lw	$a0, 16($sp)
-	flw	$f1, 8($a0)
-	fsw	$f0, 48($sp)
-	fmove	$f0, $f1
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	fneg.2473
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	fmove	$f3, $fv
-	lw	$a0, 12($sp)
-	addi	$a1, $a0, 1
-	lw	$a2, 16($sp)
-	flw	$f1, 0($a2)
-	flw	$f0, 32($sp)
-	flw	$f2, 48($sp)
-	lw	$a3, 4($sp)
-	lw	$a26, 8($sp)
-	fsw	$f3, 56($sp)
-	move	$a0, $a3
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	add_reflection.2959
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f30, $fv
-	lw	$a0, 4($sp)
-	addi	$a1, $a0, 1
-	lw	$a2, 12($sp)
-	addi	$a3, $a2, 2
-	lw	$a4, 16($sp)
-	flw	$f2, 4($a4)
-	flw	$f0, 32($sp)
-	flw	$f1, 40($sp)
-	flw	$f3, 56($sp)
-	lw	$a26, 8($sp)
-	move	$a0, $a1
-	move	$a1, $a3
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	add_reflection.2959
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f30, $fv
-	lw	$a0, 4($sp)
-	addi	$a1, $a0, 2
-	lw	$a2, 12($sp)
-	addi	$a2, $a2, 3
-	lw	$a3, 16($sp)
-	flw	$f3, 8($a3)
-	flw	$f0, 32($sp)
-	flw	$f1, 40($sp)
-	flw	$f2, 48($sp)
-	lw	$a26, 8($sp)
-	move	$a0, $a1
-	move	$a1, $a2
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	add_reflection.2959
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f30, $fv
-	lw	$a0, 4($sp)
-	addi	$a0, $a0, 3
-	lw	$a1, 0($sp)
-	sw	$a0, 0($a1)
-	jr	$ra
-setup_surface_reflection.2969:
-	lw	$a2, 12($a26)
-	lw	$a3, 8($a26)
-	lw	$a4, 4($a26)
-	sla	$a0, $a0, 2
-	addi	$a0, $a0, 1
-	lw	$a5, 0($a2)
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6037
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	sw	$a2, 0($sp)
-	sw	$a0, 4($sp)
-	sw	$a5, 8($sp)
-	sw	$a4, 12($sp)
-	sw	$a3, 16($sp)
-	sw	$a1, 20($sp)
-	fsw	$f0, 24($sp)
-	move	$a0, $a1
-	sw	$ra, 36($sp)
-	addi	$sp, $sp, 40
-	jal	o_diffuse.2571
-	subi	$sp, $sp, 40
-	lw	$ra, 36($sp)
-	fmove	$f0, $fv
-	flw	$f1, 24($sp)
-	fsub	$f0, $f1, $f0
-	lw	$a0, 20($sp)
-	fsw	$f0, 32($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	o_param_abc.2563
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	move	$a1, $v0
-	lw	$a0, 16($sp)
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	veciprod.2522
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	fmove	$f0, $fv
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	l.6161
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	mtc1	$f1, $a25
-	lw	$a0, 20($sp)
-	fsw	$f0, 40($sp)
-	fsw	$f1, 48($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	o_param_a.2557
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	fmove	$f0, $fv
-	flw	$f1, 48($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 40($sp)
-	fmul	$f0, $f0, $f1
-	lw	$a0, 16($sp)
-	flw	$f2, 0($a0)
-	fsub	$f0, $f0, $f2
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	l.6161
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	mtc1	$f2, $a25
-	lw	$a1, 20($sp)
-	fsw	$f0, 56($sp)
-	fsw	$f2, 64($sp)
-	move	$a0, $a1
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	o_param_b.2559
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	fmove	$f0, $fv
-	flw	$f1, 64($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 40($sp)
-	fmul	$f0, $f0, $f1
-	lw	$a0, 16($sp)
-	flw	$f2, 4($a0)
-	fsub	$f0, $f0, $f2
-	sw	$ra, 76($sp)
-	addi	$sp, $sp, 80
-	jal	l.6161
-	subi	$sp, $sp, 80
-	lw	$ra, 76($sp)
-	mtc1	$f2, $a25
-	lw	$a1, 20($sp)
-	fsw	$f0, 72($sp)
-	fsw	$f2, 80($sp)
-	move	$a0, $a1
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	o_param_c.2561
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f0, $fv
-	flw	$f1, 80($sp)
-	fmul	$f0, $f1, $f0
-	flw	$f1, 40($sp)
-	fmul	$f0, $f0, $f1
-	lw	$a0, 16($sp)
-	flw	$f1, 8($a0)
-	fsub	$f3, $f0, $f1
-	flw	$f0, 32($sp)
-	flw	$f1, 56($sp)
-	flw	$f2, 72($sp)
-	lw	$a0, 8($sp)
-	lw	$a1, 4($sp)
-	lw	$a26, 12($sp)
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	add_reflection.2959
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	fmove	$f30, $fv
-	lw	$a0, 8($sp)
-	addi	$a0, $a0, 1
-	lw	$a1, 0($sp)
-	sw	$a0, 0($a1)
-	jr	$ra
-setup_reflections.2972:
-	lw	$a1, 12($a26)
-	lw	$a2, 8($a26)
-	lw	$a3, 4($a26)
-	li	$a4, 0
-	blt	$a0, $a4, bge_else.9092
-	sll	$a4, $a0, 2
-	add	$a4, $a3, $a4
-	lw	$a3, 0($a4)
-	sw	$a1, 0($sp)
-	sw	$a0, 4($sp)
-	sw	$a2, 8($sp)
-	sw	$a3, 12($sp)
-	move	$a0, $a3
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	o_reflectiontype.2551
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	li	$a1, 2
-	bne	$a0, $a1, beq_else.9093
-	lw	$a0, 12($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	o_diffuse.2571
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	fmove	$f0, $fv
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	l.6037
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	mtc1	$f1, $a25
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	fless.2487
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	bne	$a0, $a1, beq_else.9094
-	jr	$ra
-beq_else.9094:
-	lw	$a0, 12($sp)
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	o_form.2549
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	move	$a0, $v0
-	li	$a1, 1
-	bne	$a0, $a1, beq_else.9096
-	lw	$a0, 4($sp)
-	lw	$a1, 12($sp)
-	lw	$a26, 8($sp)
-	lw	$a25, 0($a26)
-	j	setup_rect_reflection.2966
-beq_else.9096:
-	li	$a1, 2
-	bne	$a0, $a1, beq_else.9097
-	lw	$a0, 4($sp)
-	lw	$a1, 12($sp)
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	setup_surface_reflection.2969
-beq_else.9097:
-	jr	$ra
-beq_else.9093:
-	jr	$ra
-bge_else.9092:
-	jr	$ra
-rt.2974:
-	lw	$a2, 56($a26)
-	lw	$a3, 52($a26)
-	lw	$a4, 48($a26)
-	lw	$a5, 44($a26)
-	lw	$a6, 40($a26)
-	lw	$a7, 36($a26)
-	lw	$a8, 32($a26)
-	lw	$a9, 28($a26)
-	lw	$a10, 24($a26)
-	lw	$a11, 20($a26)
-	lw	$a12, 16($a26)
-	lw	$a13, 12($a26)
-	lw	$a14, 8($a26)
-	lw	$a15, 4($a26)
-	sw	$a0, 0($a13)
-	sw	$a1, 4($a13)
-	sra	$a13, $a0, 1
-	sw	$a13, 0($a14)
-	sra	$a1, $a1, 1
-	sw	$a1, 4($a14)
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6626
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	sw	$a6, 0($sp)
-	sw	$a8, 4($sp)
-	sw	$a3, 8($sp)
-	sw	$a9, 12($sp)
-	sw	$a4, 16($sp)
-	sw	$a11, 20($sp)
-	sw	$a10, 24($sp)
-	sw	$a12, 28($sp)
-	sw	$a2, 32($sp)
-	sw	$a7, 36($sp)
-	sw	$a15, 40($sp)
-	sw	$a5, 44($sp)
-	fsw	$f0, 48($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	min_caml_float_of_int
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	fmove	$f0, $fv
-	finv	$f0, $f0
-	flw	$f1, 48($sp)
-	fmul	$f0, $f1, $f0
-	lw	$a0, 44($sp)
-	fsw	$f0, 0($a0)
-	lw	$a26, 40($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	create_pixelline.2921
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	move	$a0, $v0
-	lw	$a26, 40($sp)
-	sw	$a0, 56($sp)
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	create_pixelline.2921
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	move	$a0, $v0
-	lw	$a26, 40($sp)
-	sw	$a0, 60($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	create_pixelline.2921
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	move	$a0, $v0
-	lw	$a26, 36($sp)
-	sw	$a0, 64($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	read_parameter.2639
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f30, $fv
-	lw	$a26, 32($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	write_ppm_header.2882
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f30, $fv
-	lw	$a26, 28($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	init_dirvecs.2957
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f30, $fv
-	lw	$a0, 24($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	d_vec.2608
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	move	$a0, $v0
-	lw	$a1, 20($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	veccpy.2511
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f30, $fv
-	lw	$a0, 24($sp)
-	lw	$a26, 16($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	setup_dirvec_constants.2737
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f30, $fv
-	lw	$a0, 12($sp)
-	lw	$a0, 0($a0)
-	subi	$a0, $a0, 1
-	lw	$a26, 8($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	setup_reflections.2972
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f30, $fv
-	li	$a1, 0
-	li	$a2, 0
-	lw	$a0, 60($sp)
-	lw	$a26, 4($sp)
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	pretrace_line.2898
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	fmove	$f30, $fv
-	li	$a0, 0
-	li	$a4, 2
-	lw	$a1, 56($sp)
-	lw	$a2, 60($sp)
-	lw	$a3, 64($sp)
-	lw	$a26, 0($sp)
-	lw	$a25, 0($a26)
-	j	scan_line.2908
-exit:
-	hlt
-_min_caml_start: # main entry point
-   # main program start
-	li	$a0, 1
-	li	$a1, 0
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	min_caml_create_array
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6035
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 0($sp)
-	move	$a0, $a1
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	move	$a0, $v0
-	li	$a1, 60
-	li	$a2, 0
-	li	$a3, 0
-	li	$a4, 0
-	li	$a5, 0
-	li	$a6, 0
-	move	$a7, $fp
-	addi	$fp, $fp, 48
-	sw	$a0, 40($a7)
-	sw	$a0, 36($a7)
-	sw	$a0, 32($a7)
-	sw	$a0, 28($a7)
-	sw	$a6, 24($a7)
-	sw	$a0, 20($a7)
-	sw	$a0, 16($a7)
-	sw	$a5, 12($a7)
-	sw	$a4, 8($a7)
-	sw	$a3, 4($a7)
-	sw	$a2, 0($a7)
-	move	$a0, $a7
-	move	$a25, $a1
-	move	$a1, $a0
-	move	$a0, $a25
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	min_caml_create_array
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	move	$a0, $v0
-	li	$a1, 3
-	sw	$ra, 4($sp)
-	addi	$sp, $sp, 8
-	jal	l.6035
-	subi	$sp, $sp, 8
-	lw	$ra, 4($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 4($sp)
-	move	$a0, $a1
 	sw	$ra, 12($sp)
 	addi	$sp, $sp, 16
 	jal	min_caml_create_float_array
@@ -10333,12 +11333,10 @@ _min_caml_start: # main entry point
 	lw	$ra, 12($sp)
 	move	$a0, $v0
 	li	$a1, 3
-	sw	$ra, 12($sp)
-	addi	$sp, $sp, 16
-	jal	l.6035
-	subi	$sp, $sp, 16
-	lw	$ra, 12($sp)
-	mtc1	$f0, $a25
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	sw	$a0, 8($sp)
 	move	$a0, $a1
 	sw	$ra, 12($sp)
@@ -10346,14 +11344,19 @@ _min_caml_start: # main entry point
 	jal	min_caml_create_float_array
 	subi	$sp, $sp, 16
 	lw	$ra, 12($sp)
-	move	$a0, $v0
-	li	$a1, 3
+	move	$a1, $v0
+	li	$a0, 5
 	sw	$ra, 12($sp)
 	addi	$sp, $sp, 16
-	jal	l.6035
+	jal	min_caml_create_array
 	subi	$sp, $sp, 16
 	lw	$ra, 12($sp)
-	mtc1	$f0, $a25
+	move	$a0, $v0
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	sw	$a0, 12($sp)
 	move	$a0, $a1
 	sw	$ra, 20($sp)
@@ -10362,68 +11365,247 @@ _min_caml_start: # main entry point
 	subi	$sp, $sp, 24
 	lw	$ra, 20($sp)
 	move	$a0, $v0
-	li	$a1, 1
-	sw	$ra, 20($sp)
-	addi	$sp, $sp, 24
-	jal	l.6439
-	subi	$sp, $sp, 24
-	lw	$ra, 20($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 16($sp)
-	move	$a0, $a1
+	lw	$a1, 12($sp)
+	sw	$a0, 4($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	sw	$ra, 20($sp)
 	addi	$sp, $sp, 24
 	jal	min_caml_create_float_array
 	subi	$sp, $sp, 24
 	lw	$ra, 20($sp)
 	move	$a0, $v0
-	li	$a1, 50
-	li	$a2, 1
-	li	$a3, -1
+	lw	$a1, 12($sp)
+	sw	$a0, 8($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	lw	$a1, 12($sp)
+	sw	$a0, 12($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	lw	$a1, 12($sp)
+	sw	$a0, 16($a1)
+	li	$a0, 5
+	li	$a2, 0
+	move	$a1, $a2
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	li	$a1, 5
+	li	$a2, 0
+	sw	$a0, 16($sp)
+	move	$a0, $a1
+	move	$a1, $a2
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	sw	$a0, 20($sp)
-	sw	$a1, 24($sp)
-	move	$a1, $a3
-	move	$a0, $a2
+	move	$a0, $a1
 	sw	$ra, 28($sp)
 	addi	$sp, $sp, 32
-	jal	min_caml_create_array
+	jal	min_caml_create_float_array
 	subi	$sp, $sp, 32
 	lw	$ra, 28($sp)
 	move	$a1, $v0
-	lw	$a0, 24($sp)
+	li	$a0, 5
 	sw	$ra, 28($sp)
 	addi	$sp, $sp, 32
 	jal	min_caml_create_array
 	subi	$sp, $sp, 32
 	lw	$ra, 28($sp)
 	move	$a0, $v0
-	li	$a1, 1
-	li	$a2, 1
-	lw	$a3, 0($a0)
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$a0, 24($sp)
+	move	$a0, $a1
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	lw	$a1, 24($sp)
+	sw	$a0, 4($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	lw	$a1, 24($sp)
+	sw	$a0, 8($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	lw	$a1, 24($sp)
+	sw	$a0, 12($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	lw	$a1, 24($sp)
+	sw	$a0, 16($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a1, $v0
+	li	$a0, 5
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	sw	$a0, 28($sp)
-	sw	$a1, 32($sp)
-	move	$a1, $a3
-	move	$a0, $a2
+	move	$a0, $a1
 	sw	$ra, 36($sp)
 	addi	$sp, $sp, 40
-	jal	min_caml_create_array
+	jal	min_caml_create_float_array
 	subi	$sp, $sp, 40
 	lw	$ra, 36($sp)
-	move	$a1, $v0
-	lw	$a0, 32($sp)
+	move	$a0, $v0
+	lw	$a1, 28($sp)
+	sw	$a0, 4($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	lw	$a1, 28($sp)
+	sw	$a0, 8($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	lw	$a1, 28($sp)
+	sw	$a0, 12($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	lw	$a1, 28($sp)
+	sw	$a0, 16($a1)
+	li	$a0, 1
+	li	$a2, 0
+	move	$a1, $a2
 	sw	$ra, 36($sp)
 	addi	$sp, $sp, 40
 	jal	min_caml_create_array
 	subi	$sp, $sp, 40
 	lw	$ra, 36($sp)
 	move	$a0, $v0
-	li	$a1, 1
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$a0, 32($sp)
+	move	$a0, $a1
 	sw	$ra, 36($sp)
 	addi	$sp, $sp, 40
-	jal	l.6035
+	jal	min_caml_create_float_array
 	subi	$sp, $sp, 40
 	lw	$ra, 36($sp)
-	mtc1	$f0, $a25
+	move	$a1, $v0
+	li	$a0, 5
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_create_array
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
 	sw	$a0, 36($sp)
 	move	$a0, $a1
 	sw	$ra, 44($sp)
@@ -10432,978 +11614,2907 @@ _min_caml_start: # main entry point
 	subi	$sp, $sp, 48
 	lw	$ra, 44($sp)
 	move	$a0, $v0
-	li	$a1, 1
-	li	$a2, 0
+	lw	$a1, 36($sp)
+	sw	$a0, 4($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	lw	$a1, 36($sp)
+	sw	$a0, 8($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	lw	$a1, 36($sp)
+	sw	$a0, 12($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	lw	$a1, 36($sp)
+	sw	$a0, 16($a1)
+	move	$a0, $fp
+	addi	$fp, $fp, 32
+	sw	$a1, 28($a0)
+	lw	$a1, 32($sp)
+	sw	$a1, 24($a0)
+	lw	$a1, 28($sp)
+	sw	$a1, 20($a0)
+	lw	$a1, 24($sp)
+	sw	$a1, 16($a0)
+	lw	$a1, 20($sp)
+	sw	$a1, 12($a0)
+	lw	$a1, 16($sp)
+	sw	$a1, 8($a0)
+	lw	$a1, 12($sp)
+	sw	$a1, 4($a0)
+	lw	$a1, 8($sp)
+	sw	$a1, 0($a0)
+	lw	$a1, 4($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 0($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	subi	$a0, $a1, 1
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18328
 	sw	$a0, 40($sp)
-	move	$a0, $a1
-	move	$a1, $a2
 	sw	$ra, 44($sp)
 	addi	$sp, $sp, 48
-	jal	min_caml_create_array
+	jal	create_pixel.3084
 	subi	$sp, $sp, 48
 	lw	$ra, 44($sp)
 	move	$a0, $v0
-	li	$a1, 1
-	sw	$ra, 44($sp)
-	addi	$sp, $sp, 48
-	jal	l.6386
-	subi	$sp, $sp, 48
-	lw	$ra, 44($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 44($sp)
-	move	$a0, $a1
+	lw	$a1, 40($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 0($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	subi	$a1, $a1, 1
+	move	$a0, $a3
+	j	init_line_elements.3086
+bge_else.18328:
+	move	$v0, $a3
+	jr	$ra
+bge_else.18327:
+	move	$v0, $a0
+	jr	$ra
+calc_dirvec.3096:
+	li	$a3, 5
+	blt	$a0, $a3, bge_else.18329
+	fmul	$f2, $f0, $f0
+	fmul	$f3, $f1, $f1
+	fadd	$f2, $f2, $f3
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fadd	$f2, $f2, $f3
+	sw	$a2, 0($sp)
+	sw	$a1, 4($sp)
+	fsw	$f1, 8($sp)
+	fsw	$f0, 16($sp)
+	fmove	$f0, $f2
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_sqrt
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f0, $fv
+	finv	$f1, $f0
+	flw	$f2, 16($sp)
+	fmul	$f1, $f2, $f1
+	finv	$f2, $f0
+	flw	$f3, 8($sp)
+	fmul	$f2, $f3, $f2
+	finv	$f0, $f0
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fmul	$f0, $f3, $f0
+	li	$a0, 716
+	lw	$a1, 4($sp)
+	sll	$a1, $a1, 2
+	add	$a1, $a0, $a1
+	lw	$a0, 0($a1)
+	lw	$a1, 0($sp)
+	sll	$a2, $a1, 2
+	add	$a2, $a0, $a2
+	lw	$a2, 0($a2)
+	lw	$a2, 0($a2)
+	fsw	$f1, 0($a2)
+	fsw	$f2, 4($a2)
+	fsw	$f0, 8($a2)
+	addi	$a2, $a1, 40
+	sll	$a2, $a2, 2
+	add	$a2, $a0, $a2
+	lw	$a2, 0($a2)
+	lw	$a2, 0($a2)
+	fneg	$f3, $f2
+	fsw	$f1, 0($a2)
+	fsw	$f0, 4($a2)
+	fsw	$f3, 8($a2)
+	addi	$a2, $a1, 80
+	sll	$a2, $a2, 2
+	add	$a2, $a0, $a2
+	lw	$a2, 0($a2)
+	lw	$a2, 0($a2)
+	fneg	$f3, $f1
+	fneg	$f4, $f2
+	fsw	$f0, 0($a2)
+	fsw	$f3, 4($a2)
+	fsw	$f4, 8($a2)
+	addi	$a2, $a1, 1
+	sll	$a2, $a2, 2
+	add	$a2, $a0, $a2
+	lw	$a2, 0($a2)
+	lw	$a2, 0($a2)
+	fneg	$f3, $f1
+	fneg	$f4, $f2
+	fneg	$f5, $f0
+	fsw	$f3, 0($a2)
+	fsw	$f4, 4($a2)
+	fsw	$f5, 8($a2)
+	addi	$a2, $a1, 41
+	sll	$a2, $a2, 2
+	add	$a2, $a0, $a2
+	lw	$a2, 0($a2)
+	lw	$a2, 0($a2)
+	fneg	$f3, $f1
+	fneg	$f4, $f0
+	fsw	$f3, 0($a2)
+	fsw	$f4, 4($a2)
+	fsw	$f2, 8($a2)
+	addi	$a1, $a1, 81
+	sll	$a1, $a1, 2
+	add	$a1, $a0, $a1
+	lw	$a0, 0($a1)
+	lw	$a0, 0($a0)
+	fneg	$f0, $f0
+	fsw	$f0, 0($a0)
+	fsw	$f1, 4($a0)
+	fsw	$f2, 8($a0)
+	jr	$ra
+bge_else.18329:
+	fmul	$f0, $f1, $f1
+	li	$v0, 15820
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fadd	$f0, $f0, $f1
+	sw	$a2, 0($sp)
+	sw	$a1, 4($sp)
+	fsw	$f3, 24($sp)
+	sw	$a0, 32($sp)
+	fsw	$f2, 40($sp)
 	sw	$ra, 52($sp)
 	addi	$sp, $sp, 56
-	jal	min_caml_create_float_array
+	jal	min_caml_sqrt
 	subi	$sp, $sp, 56
 	lw	$ra, 52($sp)
-	move	$a0, $v0
-	li	$a1, 3
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	l.6035
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 48($sp)
-	move	$a0, $a1
-	sw	$ra, 52($sp)
-	addi	$sp, $sp, 56
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 56
-	lw	$ra, 52($sp)
-	move	$a0, $v0
-	li	$a1, 1
-	li	$a2, 0
-	sw	$a0, 52($sp)
-	move	$a0, $a1
-	move	$a1, $a2
+	fmove	$f0, $fv
+	finv	$f1, $f0
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fmul	$f1, $f2, $f1
+	fsw	$f0, 48($sp)
+	fmove	$f0, $f1
 	sw	$ra, 60($sp)
 	addi	$sp, $sp, 64
-	jal	min_caml_create_array
+	jal	min_caml_atan
 	subi	$sp, $sp, 64
 	lw	$ra, 60($sp)
-	move	$a0, $v0
-	li	$a1, 3
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	l.6035
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 56($sp)
-	move	$a0, $a1
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	move	$a0, $v0
-	li	$a1, 3
-	sw	$ra, 60($sp)
-	addi	$sp, $sp, 64
-	jal	l.6035
-	subi	$sp, $sp, 64
-	lw	$ra, 60($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 60($sp)
-	move	$a0, $a1
+	fmove	$f0, $fv
+	flw	$f1, 40($sp)
+	fmul	$f0, $f0, $f1
+	fsw	$f0, 56($sp)
 	sw	$ra, 68($sp)
 	addi	$sp, $sp, 72
-	jal	min_caml_create_float_array
+	jal	min_caml_sin
 	subi	$sp, $sp, 72
 	lw	$ra, 68($sp)
-	move	$a0, $v0
-	li	$a1, 3
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	l.6035
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 64($sp)
-	move	$a0, $a1
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	move	$a0, $v0
-	li	$a1, 3
-	sw	$ra, 68($sp)
-	addi	$sp, $sp, 72
-	jal	l.6035
-	subi	$sp, $sp, 72
-	lw	$ra, 68($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 68($sp)
-	move	$a0, $a1
+	fmove	$f0, $fv
+	flw	$f1, 56($sp)
+	fsw	$f0, 64($sp)
+	fmove	$f0, $f1
 	sw	$ra, 76($sp)
 	addi	$sp, $sp, 80
+	jal	min_caml_cos
+	subi	$sp, $sp, 80
+	lw	$ra, 76($sp)
+	fmove	$f0, $fv
+	finv	$f0, $f0
+	flw	$f1, 64($sp)
+	fmul	$f0, $f1, $f0
+	flw	$f1, 48($sp)
+	fmul	$f0, $f0, $f1
+	lw	$a0, 32($sp)
+	addi	$a0, $a0, 1
+	fmul	$f1, $f0, $f0
+	li	$v0, 15820
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f2, $v0
+	fadd	$f1, $f1, $f2
+	fsw	$f0, 72($sp)
+	sw	$a0, 80($sp)
+	fmove	$f0, $f1
+	sw	$ra, 84($sp)
+	addi	$sp, $sp, 88
+	jal	min_caml_sqrt
+	subi	$sp, $sp, 88
+	lw	$ra, 84($sp)
+	fmove	$f0, $fv
+	finv	$f1, $f0
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	fmul	$f1, $f2, $f1
+	fsw	$f0, 88($sp)
+	fmove	$f0, $f1
+	sw	$ra, 100($sp)
+	addi	$sp, $sp, 104
+	jal	min_caml_atan
+	subi	$sp, $sp, 104
+	lw	$ra, 100($sp)
+	fmove	$f0, $fv
+	flw	$f1, 24($sp)
+	fmul	$f0, $f0, $f1
+	fsw	$f0, 96($sp)
+	sw	$ra, 108($sp)
+	addi	$sp, $sp, 112
+	jal	min_caml_sin
+	subi	$sp, $sp, 112
+	lw	$ra, 108($sp)
+	fmove	$f0, $fv
+	flw	$f1, 96($sp)
+	fsw	$f0, 104($sp)
+	fmove	$f0, $f1
+	sw	$ra, 116($sp)
+	addi	$sp, $sp, 120
+	jal	min_caml_cos
+	subi	$sp, $sp, 120
+	lw	$ra, 116($sp)
+	fmove	$f0, $fv
+	finv	$f0, $f0
+	flw	$f1, 104($sp)
+	fmul	$f0, $f1, $f0
+	flw	$f1, 88($sp)
+	fmul	$f1, $f0, $f1
+	flw	$f0, 72($sp)
+	flw	$f2, 40($sp)
+	flw	$f3, 24($sp)
+	lw	$a0, 80($sp)
+	lw	$a1, 4($sp)
+	lw	$a2, 0($sp)
+	j	calc_dirvec.3096
+calc_dirvecs.3104:
+	li	$a3, 0
+	blt	$a0, $a3, bge_else.18333
+	sw	$a0, 0($sp)
+	fsw	$f0, 8($sp)
+	sw	$a2, 16($sp)
+	sw	$a1, 20($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_float_of_int
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f0, $fv
+	li	$v0, 15948
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	li	$v0, 16230
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 26214
+	mtc1	$f1, $v0
+	fsub	$f2, $f0, $f1
+	li	$a0, 0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	flw	$f3, 8($sp)
+	lw	$a1, 20($sp)
+	lw	$a2, 16($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	calc_dirvec.3096
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	lw	$a0, 0($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_float_of_int
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f0, $fv
+	li	$v0, 15948
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	li	$v0, 15820
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fadd	$f2, $f0, $f1
+	li	$a0, 0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	lw	$a1, 16($sp)
+	addi	$a2, $a1, 2
+	flw	$f3, 8($sp)
+	lw	$a3, 20($sp)
+	move	$a1, $a3
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	calc_dirvec.3096
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	lw	$a0, 0($sp)
+	subi	$a0, $a0, 1
+	lw	$a1, 20($sp)
+	addi	$a1, $a1, 1
+	li	$a2, 5
+	blt	$a1, $a2, bge_else.18335
+	subi	$a1, $a1, 5
+	j	bge_cont.18336
+bge_else.18335:
+bge_cont.18336:
+	li	$a2, 0
+	blt	$a0, $a2, bge_else.18337
+	sw	$a0, 24($sp)
+	sw	$a1, 28($sp)
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_float_of_int
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f0, $fv
+	li	$v0, 15948
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	li	$v0, 16230
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 26214
+	mtc1	$f1, $v0
+	fsub	$f2, $f0, $f1
+	li	$a0, 0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	flw	$f3, 8($sp)
+	lw	$a1, 28($sp)
+	lw	$a2, 16($sp)
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	calc_dirvec.3096
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+	lw	$a0, 24($sp)
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_float_of_int
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f0, $fv
+	li	$v0, 15948
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	li	$v0, 15820
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fadd	$f2, $f0, $f1
+	li	$a0, 0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	lw	$a1, 16($sp)
+	addi	$a2, $a1, 2
+	flw	$f3, 8($sp)
+	lw	$a3, 28($sp)
+	move	$a1, $a3
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	calc_dirvec.3096
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+	lw	$a0, 24($sp)
+	subi	$a0, $a0, 1
+	lw	$a1, 28($sp)
+	addi	$a1, $a1, 1
+	li	$a2, 5
+	blt	$a1, $a2, bge_else.18338
+	subi	$a1, $a1, 5
+	j	bge_cont.18339
+bge_else.18338:
+bge_cont.18339:
+	flw	$f0, 8($sp)
+	lw	$a2, 16($sp)
+	j	calc_dirvecs.3104
+bge_else.18337:
+	jr	$ra
+bge_else.18333:
+	jr	$ra
+calc_dirvec_rows.3109:
+	li	$a3, 0
+	blt	$a0, $a3, bge_else.18342
+	sw	$a0, 0($sp)
+	sw	$a2, 4($sp)
+	sw	$a1, 8($sp)
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_float_of_int
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	fmove	$f0, $fv
+	li	$v0, 15948
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	li	$v0, 16230
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 26214
+	mtc1	$f1, $v0
+	fsub	$f0, $f0, $f1
+	li	$a0, 4
+	sw	$a0, 12($sp)
+	fsw	$f0, 16($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_float_of_int
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f0, $fv
+	li	$v0, 15948
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	li	$v0, 16230
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 26214
+	mtc1	$f1, $v0
+	fsub	$f2, $f0, $f1
+	li	$a0, 0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	flw	$f3, 16($sp)
+	lw	$a1, 8($sp)
+	lw	$a2, 4($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	calc_dirvec.3096
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	lw	$a0, 12($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_float_of_int
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f0, $fv
+	li	$v0, 15948
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	li	$v0, 15820
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fadd	$f2, $f0, $f1
+	li	$a0, 0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	lw	$a1, 4($sp)
+	addi	$a2, $a1, 2
+	flw	$f3, 16($sp)
+	lw	$a3, 8($sp)
+	move	$a1, $a3
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	calc_dirvec.3096
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	li	$a0, 3
+	lw	$a1, 8($sp)
+	addi	$a2, $a1, 1
+	li	$a3, 5
+	blt	$a2, $a3, bge_else.18343
+	subi	$a2, $a2, 5
+	j	bge_cont.18344
+bge_else.18343:
+bge_cont.18344:
+	flw	$f0, 16($sp)
+	lw	$a3, 4($sp)
+	move	$a1, $a2
+	move	$a2, $a3
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	calc_dirvecs.3104
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	lw	$a0, 0($sp)
+	subi	$a0, $a0, 1
+	lw	$a1, 8($sp)
+	addi	$a1, $a1, 2
+	li	$a2, 5
+	blt	$a1, $a2, bge_else.18345
+	subi	$a1, $a1, 5
+	j	bge_cont.18346
+bge_else.18345:
+bge_cont.18346:
+	lw	$a2, 4($sp)
+	addi	$a2, $a2, 4
+	li	$a3, 0
+	blt	$a0, $a3, bge_else.18347
+	sw	$a0, 24($sp)
+	sw	$a2, 28($sp)
+	sw	$a1, 32($sp)
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_float_of_int
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f0, $fv
+	li	$v0, 15948
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 52429
+	mtc1	$f1, $v0
+	fmul	$f0, $f0, $f1
+	li	$v0, 16230
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 26214
+	mtc1	$f1, $v0
+	fsub	$f0, $f0, $f1
+	li	$a0, 4
+	lw	$a1, 32($sp)
+	lw	$a2, 28($sp)
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	calc_dirvecs.3104
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+	lw	$a0, 24($sp)
+	subi	$a0, $a0, 1
+	lw	$a1, 32($sp)
+	addi	$a1, $a1, 2
+	li	$a2, 5
+	blt	$a1, $a2, bge_else.18348
+	subi	$a1, $a1, 5
+	j	bge_cont.18349
+bge_else.18348:
+bge_cont.18349:
+	lw	$a2, 28($sp)
+	addi	$a2, $a2, 4
+	j	calc_dirvec_rows.3109
+bge_else.18347:
+	jr	$ra
+bge_else.18342:
+	jr	$ra
+create_dirvec_elements.3115:
+	li	$a2, 0
+	blt	$a1, $a2, bge_else.18352
+	li	$a2, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$a0, 0($sp)
+	sw	$a1, 4($sp)
+	move	$a0, $a2
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
 	jal	min_caml_create_float_array
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a1, $v0
+	li	$a0, 0
+	lw	$a0, 0($a0)
+	sw	$a1, 8($sp)
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_create_array
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	move	$a1, $fp
+	addi	$fp, $fp, 8
+	sw	$a0, 4($a1)
+	lw	$a0, 8($sp)
+	sw	$a0, 0($a1)
+	move	$a0, $a1
+	lw	$a1, 4($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 0($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	subi	$a0, $a1, 1
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18353
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$a0, 12($sp)
+	move	$a0, $a1
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a1, $v0
+	li	$a0, 0
+	lw	$a0, 0($a0)
+	sw	$a1, 16($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	move	$a1, $fp
+	addi	$fp, $fp, 8
+	sw	$a0, 4($a1)
+	lw	$a0, 16($sp)
+	sw	$a0, 0($a1)
+	move	$a0, $a1
+	lw	$a1, 12($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 0($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	subi	$a0, $a1, 1
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18354
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$a0, 20($sp)
+	move	$a0, $a1
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a1, $v0
+	li	$a0, 0
+	lw	$a0, 0($a0)
+	sw	$a1, 24($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	move	$a1, $fp
+	addi	$fp, $fp, 8
+	sw	$a0, 4($a1)
+	lw	$a0, 24($sp)
+	sw	$a0, 0($a1)
+	move	$a0, $a1
+	lw	$a1, 20($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 0($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	subi	$a0, $a1, 1
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18355
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$a0, 28($sp)
+	move	$a0, $a1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a1, $v0
+	li	$a0, 0
+	lw	$a0, 0($a0)
+	sw	$a1, 32($sp)
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_create_array
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	move	$a1, $fp
+	addi	$fp, $fp, 8
+	sw	$a0, 4($a1)
+	lw	$a0, 32($sp)
+	sw	$a0, 0($a1)
+	move	$a0, $a1
+	lw	$a1, 28($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 0($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	subi	$a1, $a1, 1
+	move	$a0, $a3
+	j	create_dirvec_elements.3115
+bge_else.18355:
+	jr	$ra
+bge_else.18354:
+	jr	$ra
+bge_else.18353:
+	jr	$ra
+bge_else.18352:
+	jr	$ra
+create_dirvecs.3118:
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18360
+	li	$a1, 716
+	li	$a2, 120
+	li	$a3, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$a1, 0($sp)
+	sw	$a0, 4($sp)
+	sw	$a2, 8($sp)
+	move	$a0, $a3
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a1, $v0
+	li	$a0, 0
+	lw	$a0, 0($a0)
+	sw	$a1, 12($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	move	$a1, $fp
+	addi	$fp, $fp, 8
+	sw	$a0, 4($a1)
+	lw	$a0, 12($sp)
+	sw	$a0, 0($a1)
+	lw	$a0, 8($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	lw	$a1, 4($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 0($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	li	$a0, 716
+	sll	$a2, $a1, 2
+	add	$a2, $a0, $a2
+	lw	$a0, 0($a2)
+	li	$a2, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$a0, 16($sp)
+	move	$a0, $a2
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a1, $v0
+	li	$a0, 0
+	lw	$a0, 0($a0)
+	sw	$a1, 20($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	move	$a1, $fp
+	addi	$fp, $fp, 8
+	sw	$a0, 4($a1)
+	lw	$a0, 20($sp)
+	sw	$a0, 0($a1)
+	move	$a0, $a1
+	lw	$a1, 16($sp)
+	sw	$a0, 472($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a1, $v0
+	li	$a0, 0
+	lw	$a0, 0($a0)
+	sw	$a1, 24($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	move	$a1, $fp
+	addi	$fp, $fp, 8
+	sw	$a0, 4($a1)
+	lw	$a0, 24($sp)
+	sw	$a0, 0($a1)
+	move	$a0, $a1
+	lw	$a1, 16($sp)
+	sw	$a0, 468($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a1, $v0
+	li	$a0, 0
+	lw	$a0, 0($a0)
+	sw	$a1, 28($sp)
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_create_array
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	move	$a1, $fp
+	addi	$fp, $fp, 8
+	sw	$a0, 4($a1)
+	lw	$a0, 28($sp)
+	sw	$a0, 0($a1)
+	move	$a0, $a1
+	lw	$a1, 16($sp)
+	sw	$a0, 464($a1)
+	li	$a0, 115
+	move	$a25, $a1
+	move	$a1, $a0
+	move	$a0, $a25
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	create_dirvec_elements.3115
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+	lw	$a0, 4($sp)
+	subi	$a0, $a0, 1
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18361
+	li	$a1, 716
+	li	$a2, 120
+	li	$a3, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$a1, 32($sp)
+	sw	$a0, 36($sp)
+	sw	$a2, 40($sp)
+	move	$a0, $a3
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a1, $v0
+	li	$a0, 0
+	lw	$a0, 0($a0)
+	sw	$a1, 44($sp)
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	min_caml_create_array
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	move	$a0, $v0
+	move	$a1, $fp
+	addi	$fp, $fp, 8
+	sw	$a0, 4($a1)
+	lw	$a0, 44($sp)
+	sw	$a0, 0($a1)
+	lw	$a0, 40($sp)
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	min_caml_create_array
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	move	$a0, $v0
+	lw	$a1, 36($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 32($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	li	$a0, 716
+	sll	$a2, $a1, 2
+	add	$a2, $a0, $a2
+	lw	$a0, 0($a2)
+	li	$a2, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$a0, 48($sp)
+	move	$a0, $a2
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	move	$a1, $v0
+	li	$a0, 0
+	lw	$a0, 0($a0)
+	sw	$a1, 52($sp)
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	min_caml_create_array
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	move	$a0, $v0
+	move	$a1, $fp
+	addi	$fp, $fp, 8
+	sw	$a0, 4($a1)
+	lw	$a0, 52($sp)
+	sw	$a0, 0($a1)
+	move	$a0, $a1
+	lw	$a1, 48($sp)
+	sw	$a0, 472($a1)
+	li	$a0, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f0, $v0
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	move	$a1, $v0
+	li	$a0, 0
+	lw	$a0, 0($a0)
+	sw	$a1, 56($sp)
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	min_caml_create_array
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	move	$a0, $v0
+	move	$a1, $fp
+	addi	$fp, $fp, 8
+	sw	$a0, 4($a1)
+	lw	$a0, 56($sp)
+	sw	$a0, 0($a1)
+	move	$a0, $a1
+	lw	$a1, 48($sp)
+	sw	$a0, 468($a1)
+	li	$a0, 116
+	move	$a25, $a1
+	move	$a1, $a0
+	move	$a0, $a25
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	create_dirvec_elements.3115
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	fmove	$f30, $fv
+	lw	$a0, 36($sp)
+	subi	$a0, $a0, 1
+	j	create_dirvecs.3118
+bge_else.18361:
+	jr	$ra
+bge_else.18360:
+	jr	$ra
+init_dirvec_constants.3120:
+	li	$a2, 0
+	blt	$a1, $a2, bge_else.18364
+	sll	$a2, $a1, 2
+	add	$a2, $a0, $a2
+	lw	$a2, 0($a2)
+	li	$a3, 0
+	lw	$a3, 0($a3)
+	subi	$a3, $a3, 1
+	sw	$a0, 0($sp)
+	sw	$a1, 4($sp)
+	move	$a1, $a3
+	move	$a0, $a2
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	iter_setup_dirvec_constants.2902
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	fmove	$f30, $fv
+	lw	$a0, 4($sp)
+	subi	$a0, $a0, 1
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18365
+	sll	$a1, $a0, 2
+	lw	$a2, 0($sp)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a3, 0
+	lw	$a3, 0($a3)
+	subi	$a3, $a3, 1
+	li	$a4, 0
+	sw	$a0, 8($sp)
+	blt	$a3, $a4, bge_else.18366
+	li	$a4, 48
+	sll	$a5, $a3, 2
+	add	$a5, $a4, $a5
+	lw	$a4, 0($a5)
+	lw	$a5, 4($a1)
+	lw	$a6, 0($a1)
+	lw	$a7, 4($a4)
+	li	$a8, 1
+	sw	$a1, 12($sp)
+	bne	$a7, $a8, bne_else.18368
+	sw	$a5, 16($sp)
+	sw	$a3, 20($sp)
+	move	$a1, $a4
+	move	$a0, $a6
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	setup_rect_table.2893
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	lw	$a1, 20($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 16($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18369
+bne_else.18368:
+	li	$a8, 2
+	bne	$a7, $a8, bne_else.18370
+	sw	$a5, 16($sp)
+	sw	$a3, 20($sp)
+	move	$a1, $a4
+	move	$a0, $a6
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	setup_surface_table.2896
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	lw	$a1, 20($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 16($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18371
+bne_else.18370:
+	sw	$a5, 16($sp)
+	sw	$a3, 20($sp)
+	move	$a1, $a4
+	move	$a0, $a6
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	setup_second_table.2899
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	lw	$a1, 20($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 16($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+bne_cont.18371:
+bne_cont.18369:
+	subi	$a1, $a1, 1
+	lw	$a0, 12($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	iter_setup_dirvec_constants.2902
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	j	bge_cont.18367
+bge_else.18366:
+bge_cont.18367:
+	lw	$a0, 8($sp)
+	subi	$a0, $a0, 1
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18372
+	sll	$a1, $a0, 2
+	lw	$a2, 0($sp)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a3, 0
+	lw	$a3, 0($a3)
+	subi	$a3, $a3, 1
+	sw	$a0, 24($sp)
+	move	$a0, $a1
+	move	$a1, $a3
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	iter_setup_dirvec_constants.2902
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	lw	$a0, 24($sp)
+	subi	$a0, $a0, 1
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18373
+	sll	$a1, $a0, 2
+	lw	$a2, 0($sp)
+	add	$a1, $a2, $a1
+	lw	$a1, 0($a1)
+	li	$a3, 0
+	lw	$a3, 0($a3)
+	subi	$a3, $a3, 1
+	li	$a4, 0
+	sw	$a0, 28($sp)
+	blt	$a3, $a4, bge_else.18374
+	li	$a4, 48
+	sll	$a5, $a3, 2
+	add	$a5, $a4, $a5
+	lw	$a4, 0($a5)
+	lw	$a5, 4($a1)
+	lw	$a6, 0($a1)
+	lw	$a7, 4($a4)
+	li	$a8, 1
+	sw	$a1, 32($sp)
+	bne	$a7, $a8, bne_else.18376
+	sw	$a5, 36($sp)
+	sw	$a3, 40($sp)
+	move	$a1, $a4
+	move	$a0, $a6
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	setup_rect_table.2893
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	lw	$a1, 40($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 36($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18377
+bne_else.18376:
+	li	$a8, 2
+	bne	$a7, $a8, bne_else.18378
+	sw	$a5, 36($sp)
+	sw	$a3, 40($sp)
+	move	$a1, $a4
+	move	$a0, $a6
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	setup_surface_table.2896
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	lw	$a1, 40($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 36($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18379
+bne_else.18378:
+	sw	$a5, 36($sp)
+	sw	$a3, 40($sp)
+	move	$a1, $a4
+	move	$a0, $a6
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	setup_second_table.2899
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	lw	$a1, 40($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 36($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+bne_cont.18379:
+bne_cont.18377:
+	subi	$a1, $a1, 1
+	lw	$a0, 32($sp)
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	iter_setup_dirvec_constants.2902
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	j	bge_cont.18375
+bge_else.18374:
+bge_cont.18375:
+	lw	$a0, 28($sp)
+	subi	$a1, $a0, 1
+	lw	$a0, 0($sp)
+	j	init_dirvec_constants.3120
+bge_else.18373:
+	jr	$ra
+bge_else.18372:
+	jr	$ra
+bge_else.18365:
+	jr	$ra
+bge_else.18364:
+	jr	$ra
+init_vecset_constants.3123:
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18384
+	li	$a1, 716
+	sll	$a2, $a0, 2
+	add	$a2, $a1, $a2
+	lw	$a1, 0($a2)
+	lw	$a2, 476($a1)
+	li	$a3, 0
+	lw	$a3, 0($a3)
+	subi	$a3, $a3, 1
+	li	$a4, 0
+	sw	$a0, 0($sp)
+	sw	$a1, 4($sp)
+	blt	$a3, $a4, bge_else.18385
+	li	$a4, 48
+	sll	$a5, $a3, 2
+	add	$a5, $a4, $a5
+	lw	$a4, 0($a5)
+	lw	$a5, 4($a2)
+	lw	$a6, 0($a2)
+	lw	$a7, 4($a4)
+	li	$a8, 1
+	sw	$a2, 8($sp)
+	bne	$a7, $a8, bne_else.18387
+	sw	$a5, 12($sp)
+	sw	$a3, 16($sp)
+	move	$a1, $a4
+	move	$a0, $a6
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	setup_rect_table.2893
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	lw	$a1, 16($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 12($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18388
+bne_else.18387:
+	li	$a8, 2
+	bne	$a7, $a8, bne_else.18389
+	sw	$a5, 12($sp)
+	sw	$a3, 16($sp)
+	move	$a1, $a4
+	move	$a0, $a6
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	setup_surface_table.2896
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	lw	$a1, 16($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 12($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18390
+bne_else.18389:
+	sw	$a5, 12($sp)
+	sw	$a3, 16($sp)
+	move	$a1, $a4
+	move	$a0, $a6
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	setup_second_table.2899
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	lw	$a1, 16($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 12($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+bne_cont.18390:
+bne_cont.18388:
+	subi	$a1, $a1, 1
+	lw	$a0, 8($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	iter_setup_dirvec_constants.2902
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	j	bge_cont.18386
+bge_else.18385:
+bge_cont.18386:
+	lw	$a0, 4($sp)
+	lw	$a1, 472($a0)
+	li	$a2, 0
+	lw	$a2, 0($a2)
+	subi	$a2, $a2, 1
+	move	$a0, $a1
+	move	$a1, $a2
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	iter_setup_dirvec_constants.2902
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	fmove	$f30, $fv
+	lw	$a0, 4($sp)
+	lw	$a1, 468($a0)
+	li	$a2, 0
+	lw	$a2, 0($a2)
+	subi	$a2, $a2, 1
+	li	$a3, 0
+	blt	$a2, $a3, bge_else.18391
+	li	$a3, 48
+	sll	$a4, $a2, 2
+	add	$a4, $a3, $a4
+	lw	$a3, 0($a4)
+	lw	$a4, 4($a1)
+	lw	$a5, 0($a1)
+	lw	$a6, 4($a3)
+	li	$a7, 1
+	sw	$a1, 20($sp)
+	bne	$a6, $a7, bne_else.18393
+	sw	$a4, 24($sp)
+	sw	$a2, 28($sp)
+	move	$a1, $a3
+	move	$a0, $a5
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	setup_rect_table.2893
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	lw	$a1, 28($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 24($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18394
+bne_else.18393:
+	li	$a7, 2
+	bne	$a6, $a7, bne_else.18395
+	sw	$a4, 24($sp)
+	sw	$a2, 28($sp)
+	move	$a1, $a3
+	move	$a0, $a5
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	setup_surface_table.2896
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	lw	$a1, 28($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 24($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18396
+bne_else.18395:
+	sw	$a4, 24($sp)
+	sw	$a2, 28($sp)
+	move	$a1, $a3
+	move	$a0, $a5
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	setup_second_table.2899
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	lw	$a1, 28($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 24($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+bne_cont.18396:
+bne_cont.18394:
+	subi	$a1, $a1, 1
+	lw	$a0, 20($sp)
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	iter_setup_dirvec_constants.2902
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+	j	bge_cont.18392
+bge_else.18391:
+bge_cont.18392:
+	li	$a1, 116
+	lw	$a0, 4($sp)
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	init_dirvec_constants.3120
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+	lw	$a0, 0($sp)
+	subi	$a0, $a0, 1
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18397
+	li	$a1, 716
+	sll	$a2, $a0, 2
+	add	$a2, $a1, $a2
+	lw	$a1, 0($a2)
+	lw	$a2, 476($a1)
+	li	$a3, 0
+	lw	$a3, 0($a3)
+	subi	$a3, $a3, 1
+	sw	$a0, 32($sp)
+	sw	$a1, 36($sp)
+	move	$a1, $a3
+	move	$a0, $a2
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	iter_setup_dirvec_constants.2902
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	lw	$a0, 36($sp)
+	lw	$a1, 472($a0)
+	li	$a2, 0
+	lw	$a2, 0($a2)
+	subi	$a2, $a2, 1
+	li	$a3, 0
+	blt	$a2, $a3, bge_else.18398
+	li	$a3, 48
+	sll	$a4, $a2, 2
+	add	$a4, $a3, $a4
+	lw	$a3, 0($a4)
+	lw	$a4, 4($a1)
+	lw	$a5, 0($a1)
+	lw	$a6, 4($a3)
+	li	$a7, 1
+	sw	$a1, 40($sp)
+	bne	$a6, $a7, bne_else.18400
+	sw	$a4, 44($sp)
+	sw	$a2, 48($sp)
+	move	$a1, $a3
+	move	$a0, $a5
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	setup_rect_table.2893
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	move	$a0, $v0
+	lw	$a1, 48($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 44($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18401
+bne_else.18400:
+	li	$a7, 2
+	bne	$a6, $a7, bne_else.18402
+	sw	$a4, 44($sp)
+	sw	$a2, 48($sp)
+	move	$a1, $a3
+	move	$a0, $a5
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	setup_surface_table.2896
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	move	$a0, $v0
+	lw	$a1, 48($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 44($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18403
+bne_else.18402:
+	sw	$a4, 44($sp)
+	sw	$a2, 48($sp)
+	move	$a1, $a3
+	move	$a0, $a5
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	setup_second_table.2899
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	move	$a0, $v0
+	lw	$a1, 48($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 44($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+bne_cont.18403:
+bne_cont.18401:
+	subi	$a1, $a1, 1
+	lw	$a0, 40($sp)
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	iter_setup_dirvec_constants.2902
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	fmove	$f30, $fv
+	j	bge_cont.18399
+bge_else.18398:
+bge_cont.18399:
+	li	$a1, 117
+	lw	$a0, 36($sp)
+	sw	$ra, 52($sp)
+	addi	$sp, $sp, 56
+	jal	init_dirvec_constants.3120
+	subi	$sp, $sp, 56
+	lw	$ra, 52($sp)
+	fmove	$f30, $fv
+	lw	$a0, 32($sp)
+	subi	$a0, $a0, 1
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18404
+	li	$a1, 716
+	sll	$a2, $a0, 2
+	add	$a2, $a1, $a2
+	lw	$a1, 0($a2)
+	lw	$a2, 476($a1)
+	li	$a3, 0
+	lw	$a3, 0($a3)
+	subi	$a3, $a3, 1
+	li	$a4, 0
+	sw	$a0, 52($sp)
+	sw	$a1, 56($sp)
+	blt	$a3, $a4, bge_else.18405
+	li	$a4, 48
+	sll	$a5, $a3, 2
+	add	$a5, $a4, $a5
+	lw	$a4, 0($a5)
+	lw	$a5, 4($a2)
+	lw	$a6, 0($a2)
+	lw	$a7, 4($a4)
+	li	$a8, 1
+	sw	$a2, 60($sp)
+	bne	$a7, $a8, bne_else.18407
+	sw	$a5, 64($sp)
+	sw	$a3, 68($sp)
+	move	$a1, $a4
+	move	$a0, $a6
+	sw	$ra, 76($sp)
+	addi	$sp, $sp, 80
+	jal	setup_rect_table.2893
 	subi	$sp, $sp, 80
 	lw	$ra, 76($sp)
 	move	$a0, $v0
-	li	$a1, 2
-	li	$a2, 0
+	lw	$a1, 68($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 64($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18408
+bne_else.18407:
+	li	$a8, 2
+	bne	$a7, $a8, bne_else.18409
+	sw	$a5, 64($sp)
+	sw	$a3, 68($sp)
+	move	$a1, $a4
+	move	$a0, $a6
+	sw	$ra, 76($sp)
+	addi	$sp, $sp, 80
+	jal	setup_surface_table.2896
+	subi	$sp, $sp, 80
+	lw	$ra, 76($sp)
+	move	$a0, $v0
+	lw	$a1, 68($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 64($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18410
+bne_else.18409:
+	sw	$a5, 64($sp)
+	sw	$a3, 68($sp)
+	move	$a1, $a4
+	move	$a0, $a6
+	sw	$ra, 76($sp)
+	addi	$sp, $sp, 80
+	jal	setup_second_table.2899
+	subi	$sp, $sp, 80
+	lw	$ra, 76($sp)
+	move	$a0, $v0
+	lw	$a1, 68($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 64($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+bne_cont.18410:
+bne_cont.18408:
+	subi	$a1, $a1, 1
+	lw	$a0, 60($sp)
+	sw	$ra, 76($sp)
+	addi	$sp, $sp, 80
+	jal	iter_setup_dirvec_constants.2902
+	subi	$sp, $sp, 80
+	lw	$ra, 76($sp)
+	fmove	$f30, $fv
+	j	bge_cont.18406
+bge_else.18405:
+bge_cont.18406:
+	li	$a1, 118
+	lw	$a0, 56($sp)
+	sw	$ra, 76($sp)
+	addi	$sp, $sp, 80
+	jal	init_dirvec_constants.3120
+	subi	$sp, $sp, 80
+	lw	$ra, 76($sp)
+	fmove	$f30, $fv
+	lw	$a0, 52($sp)
+	subi	$a0, $a0, 1
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18411
+	li	$a1, 716
+	sll	$a2, $a0, 2
+	add	$a2, $a1, $a2
+	lw	$a1, 0($a2)
+	li	$a2, 119
 	sw	$a0, 72($sp)
 	move	$a0, $a1
 	move	$a1, $a2
 	sw	$ra, 76($sp)
 	addi	$sp, $sp, 80
+	jal	init_dirvec_constants.3120
+	subi	$sp, $sp, 80
+	lw	$ra, 76($sp)
+	fmove	$f30, $fv
+	lw	$a0, 72($sp)
+	subi	$a0, $a0, 1
+	j	init_vecset_constants.3123
+bge_else.18411:
+	jr	$ra
+bge_else.18404:
+	jr	$ra
+bge_else.18397:
+	jr	$ra
+bge_else.18384:
+	jr	$ra
+setup_rect_reflection.3134:
+	sla	$a0, $a0, 2
+	li	$a2, 1736
+	lw	$a2, 0($a2)
+	lw	$a1, 28($a1)
+	flw	$f0, 0($a1)
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fsub	$f0, $f1, $f0
+	li	$a1, 312
+	flw	$f1, 0($a1)
+	fneg	$f1, $f1
+	li	$a1, 312
+	flw	$f2, 4($a1)
+	fneg	$f2, $f2
+	li	$a1, 312
+	flw	$f3, 8($a1)
+	fneg	$f3, $f3
+	addi	$a1, $a0, 1
+	li	$a3, 312
+	flw	$f4, 0($a3)
+	li	$a3, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f5, $v0
+	fsw	$f1, 0($sp)
+	sw	$a0, 8($sp)
+	sw	$a2, 12($sp)
+	sw	$a1, 16($sp)
+	fsw	$f0, 24($sp)
+	fsw	$f3, 32($sp)
+	fsw	$f2, 40($sp)
+	fsw	$f4, 48($sp)
+	move	$a0, $a3
+	fmove	$f0, $f5
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	move	$a1, $v0
+	li	$a0, 0
+	lw	$a0, 0($a0)
+	sw	$a1, 56($sp)
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
 	jal	min_caml_create_array
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	move	$a0, $v0
+	move	$a1, $fp
+	addi	$fp, $fp, 8
+	sw	$a0, 4($a1)
+	lw	$a2, 56($sp)
+	sw	$a2, 0($a1)
+	flw	$f0, 48($sp)
+	fsw	$f0, 0($a2)
+	flw	$f0, 40($sp)
+	fsw	$f0, 4($a2)
+	flw	$f1, 32($sp)
+	fsw	$f1, 8($a2)
+	li	$a3, 0
+	lw	$a3, 0($a3)
+	subi	$a3, $a3, 1
+	li	$a4, 0
+	sw	$a1, 60($sp)
+	blt	$a3, $a4, bge_else.18417
+	li	$a4, 48
+	sll	$a5, $a3, 2
+	add	$a5, $a4, $a5
+	lw	$a4, 0($a5)
+	lw	$a5, 4($a4)
+	li	$a6, 1
+	bne	$a5, $a6, bne_else.18419
+	sw	$a0, 64($sp)
+	sw	$a3, 68($sp)
+	move	$a1, $a4
+	move	$a0, $a2
+	sw	$ra, 76($sp)
+	addi	$sp, $sp, 80
+	jal	setup_rect_table.2893
 	subi	$sp, $sp, 80
 	lw	$ra, 76($sp)
 	move	$a0, $v0
-	li	$a1, 2
-	li	$a2, 0
-	sw	$a0, 76($sp)
-	move	$a0, $a1
-	move	$a1, $a2
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	min_caml_create_array
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	move	$a0, $v0
-	li	$a1, 1
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	l.6035
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 80($sp)
-	move	$a0, $a1
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	move	$a0, $v0
-	li	$a1, 3
-	sw	$ra, 84($sp)
-	addi	$sp, $sp, 88
-	jal	l.6035
-	subi	$sp, $sp, 88
-	lw	$ra, 84($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 84($sp)
-	move	$a0, $a1
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	move	$a0, $v0
-	li	$a1, 3
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	l.6035
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 88($sp)
-	move	$a0, $a1
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	move	$a0, $v0
-	li	$a1, 3
-	sw	$ra, 92($sp)
-	addi	$sp, $sp, 96
-	jal	l.6035
-	subi	$sp, $sp, 96
-	lw	$ra, 92($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 92($sp)
-	move	$a0, $a1
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	move	$a0, $v0
-	li	$a1, 3
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	l.6035
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 96($sp)
-	move	$a0, $a1
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	move	$a0, $v0
-	li	$a1, 3
-	sw	$ra, 100($sp)
-	addi	$sp, $sp, 104
-	jal	l.6035
-	subi	$sp, $sp, 104
-	lw	$ra, 100($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 100($sp)
-	move	$a0, $a1
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	move	$a0, $v0
-	li	$a1, 3
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	l.6035
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 104($sp)
-	move	$a0, $a1
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	sw	$ra, 108($sp)
-	addi	$sp, $sp, 112
-	jal	l.6035
-	subi	$sp, $sp, 112
-	lw	$ra, 108($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 108($sp)
-	move	$a0, $a1
-	sw	$ra, 116($sp)
-	addi	$sp, $sp, 120
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 120
-	lw	$ra, 116($sp)
-	move	$a1, $v0
-	li	$a0, 0
-	sw	$a1, 112($sp)
-	sw	$ra, 116($sp)
-	addi	$sp, $sp, 120
-	jal	min_caml_create_array
-	subi	$sp, $sp, 120
-	lw	$ra, 116($sp)
-	move	$a0, $v0
-	li	$a1, 0
-	move	$a2, $fp
-	addi	$fp, $fp, 8
-	sw	$a0, 4($a2)
-	lw	$a0, 112($sp)
+	lw	$a1, 68($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 64($sp)
+	add	$a2, $a3, $a2
 	sw	$a0, 0($a2)
+	j	bne_cont.18420
+bne_else.18419:
+	li	$a6, 2
+	bne	$a5, $a6, bne_else.18421
+	sw	$a0, 64($sp)
+	sw	$a3, 68($sp)
+	move	$a1, $a4
 	move	$a0, $a2
-	move	$a25, $a1
-	move	$a1, $a0
-	move	$a0, $a25
-	sw	$ra, 116($sp)
-	addi	$sp, $sp, 120
-	jal	min_caml_create_array
-	subi	$sp, $sp, 120
-	lw	$ra, 116($sp)
-	move	$a1, $v0
-	li	$a0, 5
-	sw	$ra, 116($sp)
-	addi	$sp, $sp, 120
-	jal	min_caml_create_array
-	subi	$sp, $sp, 120
-	lw	$ra, 116($sp)
+	sw	$ra, 76($sp)
+	addi	$sp, $sp, 80
+	jal	setup_surface_table.2896
+	subi	$sp, $sp, 80
+	lw	$ra, 76($sp)
 	move	$a0, $v0
-	li	$a1, 0
-	sw	$ra, 116($sp)
-	addi	$sp, $sp, 120
-	jal	l.6035
-	subi	$sp, $sp, 120
-	lw	$ra, 116($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 116($sp)
-	move	$a0, $a1
-	sw	$ra, 124($sp)
-	addi	$sp, $sp, 128
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 128
-	lw	$ra, 124($sp)
+	lw	$a1, 68($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 64($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18422
+bne_else.18421:
+	sw	$a0, 64($sp)
+	sw	$a3, 68($sp)
+	move	$a1, $a4
+	move	$a0, $a2
+	sw	$ra, 76($sp)
+	addi	$sp, $sp, 80
+	jal	setup_second_table.2899
+	subi	$sp, $sp, 80
+	lw	$ra, 76($sp)
 	move	$a0, $v0
-	li	$a1, 3
-	sw	$ra, 124($sp)
-	addi	$sp, $sp, 128
-	jal	l.6035
-	subi	$sp, $sp, 128
-	lw	$ra, 124($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 120($sp)
-	move	$a0, $a1
-	sw	$ra, 124($sp)
-	addi	$sp, $sp, 128
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 128
-	lw	$ra, 124($sp)
-	move	$a0, $v0
-	li	$a1, 60
-	lw	$a2, 120($sp)
-	sw	$a0, 124($sp)
-	move	$a0, $a1
-	move	$a1, $a2
-	sw	$ra, 132($sp)
-	addi	$sp, $sp, 136
-	jal	min_caml_create_array
-	subi	$sp, $sp, 136
-	lw	$ra, 132($sp)
-	move	$a0, $v0
+	lw	$a1, 68($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 64($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+bne_cont.18422:
+bne_cont.18420:
+	subi	$a1, $a1, 1
+	lw	$a0, 60($sp)
+	sw	$ra, 76($sp)
+	addi	$sp, $sp, 80
+	jal	iter_setup_dirvec_constants.2902
+	subi	$sp, $sp, 80
+	lw	$ra, 76($sp)
+	fmove	$f30, $fv
+	j	bge_cont.18418
+bge_else.18417:
+bge_cont.18418:
+	li	$a0, 1016
 	move	$a1, $fp
-	addi	$fp, $fp, 8
-	sw	$a0, 4($a1)
-	lw	$a0, 124($sp)
-	sw	$a0, 0($a1)
-	move	$a0, $a1
-	li	$a1, 0
-	sw	$ra, 132($sp)
-	addi	$sp, $sp, 136
-	jal	l.6035
-	subi	$sp, $sp, 136
-	lw	$ra, 132($sp)
-	mtc1	$f0, $a25
-	sw	$a0, 128($sp)
-	move	$a0, $a1
-	sw	$ra, 132($sp)
-	addi	$sp, $sp, 136
-	jal	min_caml_create_float_array
-	subi	$sp, $sp, 136
-	lw	$ra, 132($sp)
-	move	$a1, $v0
-	li	$a0, 0
-	sw	$a1, 132($sp)
-	sw	$ra, 140($sp)
-	addi	$sp, $sp, 144
-	jal	min_caml_create_array
-	subi	$sp, $sp, 144
-	lw	$ra, 140($sp)
-	move	$a0, $v0
-	move	$a1, $fp
-	addi	$fp, $fp, 8
-	sw	$a0, 4($a1)
-	lw	$a0, 132($sp)
-	sw	$a0, 0($a1)
-	move	$a0, $a1
-	li	$a1, 180
-	li	$a2, 0
-	sw	$ra, 140($sp)
-	addi	$sp, $sp, 144
-	jal	l.6035
-	subi	$sp, $sp, 144
-	lw	$ra, 140($sp)
-	mtc1	$f0, $a25
-	move	$a3, $fp
 	addi	$fp, $fp, 16
-	fsw	$f0, 8($a3)
-	sw	$a0, 4($a3)
-	sw	$a2, 0($a3)
-	move	$a0, $a3
-	move	$a25, $a1
-	move	$a1, $a0
-	move	$a0, $a25
-	sw	$ra, 140($sp)
-	addi	$sp, $sp, 144
-	jal	min_caml_create_array
-	subi	$sp, $sp, 144
-	lw	$ra, 140($sp)
-	move	$a0, $v0
-	li	$a1, 1
-	li	$a2, 0
-	sw	$a0, 136($sp)
-	move	$a0, $a1
-	move	$a1, $a2
-	sw	$ra, 140($sp)
-	addi	$sp, $sp, 144
-	jal	min_caml_create_array
-	subi	$sp, $sp, 144
-	lw	$ra, 140($sp)
-	move	$a0, $v0
-	move	$a1, $fp
-	addi	$fp, $fp, 24
-	lil	$a2, read_screen_settings.2620
+	flw	$f0, 24($sp)
+	fsw	$f0, 8($a1)
+	lw	$a2, 60($sp)
+	sw	$a2, 4($a1)
+	lw	$a2, 16($sp)
 	sw	$a2, 0($a1)
 	lw	$a2, 12($sp)
-	sw	$a2, 20($a1)
-	lw	$a3, 104($sp)
-	sw	$a3, 16($a1)
-	lw	$a4, 100($sp)
-	sw	$a4, 12($a1)
-	lw	$a5, 96($sp)
-	sw	$a5, 8($a1)
-	lw	$a6, 8($sp)
-	sw	$a6, 4($a1)
-	move	$a6, $fp
-	addi	$fp, $fp, 16
-	lil	$a7, read_light.2622
-	sw	$a7, 0($a6)
-	lw	$a7, 16($sp)
-	sw	$a7, 8($a6)
-	lw	$a8, 20($sp)
-	sw	$a8, 4($a6)
-	move	$a9, $fp
-	addi	$fp, $fp, 8
-	lil	$a10, read_nth_object.2627
-	sw	$a10, 0($a9)
-	lw	$a10, 4($sp)
-	sw	$a10, 4($a9)
-	move	$a11, $fp
-	addi	$fp, $fp, 16
-	lil	$a12, read_object.2629
-	sw	$a12, 0($a11)
-	sw	$a9, 8($a11)
-	lw	$a9, 0($sp)
-	sw	$a9, 4($a11)
-	move	$a12, $fp
-	addi	$fp, $fp, 8
-	lil	$a13, read_all_object.2631
-	sw	$a13, 0($a12)
-	sw	$a11, 4($a12)
-	move	$a11, $fp
-	addi	$fp, $fp, 8
-	lil	$a13, read_and_network.2637
-	sw	$a13, 0($a11)
-	lw	$a13, 28($sp)
-	sw	$a13, 4($a11)
-	move	$a14, $fp
-	addi	$fp, $fp, 24
-	lil	$a15, read_parameter.2639
-	sw	$a15, 0($a14)
-	sw	$a1, 20($a14)
-	sw	$a6, 16($a14)
-	sw	$a11, 12($a14)
-	sw	$a12, 8($a14)
-	lw	$a1, 36($sp)
-	sw	$a1, 4($a14)
-	move	$a6, $fp
-	addi	$fp, $fp, 8
-	lil	$a11, solver_rect_surface.2641
-	sw	$a11, 0($a6)
-	lw	$a11, 40($sp)
-	sw	$a11, 4($a6)
-	move	$a12, $fp
-	addi	$fp, $fp, 8
-	lil	$a15, solver_rect.2650
-	sw	$a15, 0($a12)
-	sw	$a6, 4($a12)
-	move	$a6, $fp
-	addi	$fp, $fp, 8
-	lil	$a15, solver_surface.2656
-	sw	$a15, 0($a6)
-	sw	$a11, 4($a6)
-	move	$a15, $fp
-	addi	$fp, $fp, 8
-	lil	$a16, solver_second.2675
-	sw	$a16, 0($a15)
-	sw	$a11, 4($a15)
-	move	$a16, $fp
-	addi	$fp, $fp, 24
-	lil	$a17, solver.2681
-	sw	$a17, 0($a16)
-	sw	$a6, 16($a16)
-	sw	$a15, 12($a16)
-	sw	$a12, 8($a16)
-	sw	$a10, 4($a16)
-	move	$a6, $fp
-	addi	$fp, $fp, 8
-	lil	$a12, solver_rect_fast.2685
-	sw	$a12, 0($a6)
-	sw	$a11, 4($a6)
-	move	$a12, $fp
-	addi	$fp, $fp, 8
-	lil	$a15, solver_surface_fast.2692
-	sw	$a15, 0($a12)
-	sw	$a11, 4($a12)
-	move	$a15, $fp
-	addi	$fp, $fp, 8
-	lil	$a17, solver_second_fast.2698
-	sw	$a17, 0($a15)
-	sw	$a11, 4($a15)
-	move	$a17, $fp
-	addi	$fp, $fp, 24
-	lil	$a18, solver_fast.2704
-	sw	$a18, 0($a17)
-	sw	$a12, 16($a17)
-	sw	$a15, 12($a17)
-	sw	$a6, 8($a17)
-	sw	$a10, 4($a17)
-	move	$a12, $fp
-	addi	$fp, $fp, 8
-	lil	$a15, solver_surface_fast2.2708
-	sw	$a15, 0($a12)
-	sw	$a11, 4($a12)
-	move	$a15, $fp
-	addi	$fp, $fp, 8
-	lil	$a18, solver_second_fast2.2715
-	sw	$a18, 0($a15)
-	sw	$a11, 4($a15)
-	move	$a18, $fp
-	addi	$fp, $fp, 24
-	lil	$a19, solver_fast2.2722
-	sw	$a19, 0($a18)
-	sw	$a12, 16($a18)
-	sw	$a15, 12($a18)
-	sw	$a6, 8($a18)
-	sw	$a10, 4($a18)
-	move	$a6, $fp
-	addi	$fp, $fp, 8
-	lil	$a12, iter_setup_dirvec_constants.2734
-	sw	$a12, 0($a6)
-	sw	$a10, 4($a6)
-	move	$a12, $fp
-	addi	$fp, $fp, 16
-	lil	$a15, setup_dirvec_constants.2737
-	sw	$a15, 0($a12)
-	sw	$a9, 8($a12)
-	sw	$a6, 4($a12)
-	move	$a6, $fp
-	addi	$fp, $fp, 8
-	lil	$a15, setup_startp_constants.2739
-	sw	$a15, 0($a6)
-	sw	$a10, 4($a6)
-	move	$a15, $fp
-	addi	$fp, $fp, 16
-	lil	$a19, setup_startp.2742
-	sw	$a19, 0($a15)
-	lw	$a19, 92($sp)
-	sw	$a19, 12($a15)
-	sw	$a6, 8($a15)
-	sw	$a9, 4($a15)
-	move	$a6, $fp
-	addi	$fp, $fp, 8
-	lil	$a20, check_all_inside.2764
-	sw	$a20, 0($a6)
-	sw	$a10, 4($a6)
-	move	$a20, $fp
-	addi	$fp, $fp, 32
-	lil	$a21, shadow_check_and_group.2770
-	sw	$a21, 0($a20)
-	sw	$a17, 28($a20)
-	sw	$a11, 24($a20)
-	sw	$a10, 20($a20)
-	lw	$a21, 128($sp)
-	sw	$a21, 16($a20)
-	sw	$a7, 12($a20)
-	lw	$a22, 52($sp)
-	sw	$a22, 8($a20)
-	sw	$a6, 4($a20)
-	move	$a23, $fp
-	addi	$fp, $fp, 16
-	lil	$a24, shadow_check_one_or_group.2773
-	sw	$a24, 0($a23)
-	sw	$a20, 8($a23)
-	sw	$a13, 4($a23)
-	move	$a20, $fp
-	addi	$fp, $fp, 24
-	lil	$a24, shadow_check_one_or_matrix.2776
-	sw	$a24, 0($a20)
-	sw	$a17, 20($a20)
-	sw	$a11, 16($a20)
-	sw	$a23, 12($a20)
-	sw	$a21, 8($a20)
-	sw	$a22, 4($a20)
-	move	$a17, $fp
-	addi	$fp, $fp, 40
-	lil	$a23, solve_each_element.2779
-	sw	$a23, 0($a17)
-	lw	$a23, 48($sp)
-	sw	$a23, 36($a17)
-	lw	$a24, 88($sp)
-	sw	$a24, 32($a17)
-	sw	$a11, 28($a17)
-	sw	$a16, 24($a17)
-	sw	$a10, 20($a17)
-	lw	$a25, 44($sp)
-	sw	$a25, 16($a17)
-	sw	$a22, 12($a17)
-	lw	$a26, 56($sp)
-	sw	$a26, 8($a17)
-	sw	$a6, 4($a17)
-	move	$a21, $fp
-	addi	$fp, $fp, 16
-	sw	$a14, 140($sp)
-	lil	$a14, solve_one_or_network.2783
-	sw	$a14, 0($a21)
-	sw	$a17, 8($a21)
-	sw	$a13, 4($a21)
-	move	$a14, $fp
-	addi	$fp, $fp, 24
-	lil	$a17, trace_or_matrix.2787
-	sw	$a17, 0($a14)
-	sw	$a23, 20($a14)
-	sw	$a24, 16($a14)
-	sw	$a11, 12($a14)
-	sw	$a16, 8($a14)
-	sw	$a21, 4($a14)
-	move	$a16, $fp
-	addi	$fp, $fp, 16
-	lil	$a17, judge_intersection.2791
-	sw	$a17, 0($a16)
-	sw	$a14, 12($a16)
-	sw	$a23, 8($a16)
-	sw	$a1, 4($a16)
-	move	$a14, $fp
-	addi	$fp, $fp, 40
-	lil	$a17, solve_each_element_fast.2793
-	sw	$a17, 0($a14)
-	sw	$a23, 36($a14)
-	sw	$a19, 32($a14)
-	sw	$a18, 28($a14)
-	sw	$a11, 24($a14)
-	sw	$a10, 20($a14)
-	sw	$a25, 16($a14)
-	sw	$a22, 12($a14)
-	sw	$a26, 8($a14)
-	sw	$a6, 4($a14)
-	move	$a6, $fp
-	addi	$fp, $fp, 16
-	lil	$a17, solve_one_or_network_fast.2797
-	sw	$a17, 0($a6)
-	sw	$a14, 8($a6)
-	sw	$a13, 4($a6)
-	move	$a13, $fp
-	addi	$fp, $fp, 24
-	lil	$a14, trace_or_matrix_fast.2801
-	sw	$a14, 0($a13)
-	sw	$a23, 16($a13)
-	sw	$a18, 12($a13)
-	sw	$a11, 8($a13)
-	sw	$a6, 4($a13)
-	move	$a6, $fp
-	addi	$fp, $fp, 16
-	lil	$a11, judge_intersection_fast.2805
-	sw	$a11, 0($a6)
-	sw	$a13, 12($a6)
-	sw	$a23, 8($a6)
-	sw	$a1, 4($a6)
-	move	$a11, $fp
-	addi	$fp, $fp, 16
-	lil	$a13, get_nvector_rect.2807
-	sw	$a13, 0($a11)
-	lw	$a13, 60($sp)
-	sw	$a13, 8($a11)
-	sw	$a25, 4($a11)
-	move	$a14, $fp
-	addi	$fp, $fp, 8
-	lil	$a17, get_nvector_plane.2809
-	sw	$a17, 0($a14)
-	sw	$a13, 4($a14)
-	move	$a17, $fp
-	addi	$fp, $fp, 16
-	lil	$a18, get_nvector_second.2811
-	sw	$a18, 0($a17)
-	sw	$a13, 8($a17)
-	sw	$a22, 4($a17)
-	move	$a18, $fp
-	addi	$fp, $fp, 16
-	lil	$a19, get_nvector.2813
-	sw	$a19, 0($a18)
-	sw	$a17, 12($a18)
-	sw	$a11, 8($a18)
-	sw	$a14, 4($a18)
-	move	$a11, $fp
-	addi	$fp, $fp, 8
-	lil	$a14, utexture.2816
-	sw	$a14, 0($a11)
-	lw	$a14, 64($sp)
-	sw	$a14, 4($a11)
-	move	$a17, $fp
-	addi	$fp, $fp, 16
-	lil	$a19, add_light.2819
-	sw	$a19, 0($a17)
-	sw	$a14, 8($a17)
-	lw	$a19, 72($sp)
-	sw	$a19, 4($a17)
-	move	$a21, $fp
-	addi	$fp, $fp, 40
-	sw	$a12, 144($sp)
-	lil	$a12, trace_reflections.2823
-	sw	$a12, 0($a21)
-	sw	$a20, 32($a21)
-	lw	$a12, 136($sp)
-	sw	$a12, 28($a21)
-	sw	$a1, 24($a21)
-	sw	$a13, 20($a21)
-	sw	$a6, 16($a21)
-	sw	$a25, 12($a21)
-	sw	$a26, 8($a21)
-	sw	$a17, 4($a21)
-	move	$a12, $fp
-	addi	$fp, $fp, 88
-	lil	$a9, trace_ray.2828
-	sw	$a9, 0($a12)
-	sw	$a11, 80($a12)
-	sw	$a21, 76($a12)
-	sw	$a23, 72($a12)
-	sw	$a14, 68($a12)
-	sw	$a24, 64($a12)
-	sw	$a20, 60($a12)
-	sw	$a15, 56($a12)
-	sw	$a19, 52($a12)
-	sw	$a1, 48($a12)
-	sw	$a10, 44($a12)
-	sw	$a13, 40($a12)
-	sw	$a0, 36($a12)
-	sw	$a7, 32($a12)
-	sw	$a16, 28($a12)
-	sw	$a25, 24($a12)
-	sw	$a22, 20($a12)
-	sw	$a26, 16($a12)
-	sw	$a18, 12($a12)
-	sw	$a8, 8($a12)
-	sw	$a17, 4($a12)
-	move	$a8, $fp
-	addi	$fp, $fp, 56
-	lil	$a9, trace_diffuse_ray.2834
-	sw	$a9, 0($a8)
-	sw	$a11, 48($a8)
-	sw	$a14, 44($a8)
-	sw	$a20, 40($a8)
-	sw	$a1, 36($a8)
-	sw	$a10, 32($a8)
-	sw	$a13, 28($a8)
-	sw	$a7, 24($a8)
-	sw	$a6, 20($a8)
-	sw	$a22, 16($a8)
-	sw	$a26, 12($a8)
-	sw	$a18, 8($a8)
-	lw	$a1, 68($sp)
-	sw	$a1, 4($a8)
-	move	$a6, $fp
-	addi	$fp, $fp, 8
-	lil	$a9, iter_trace_diffuse_rays.2837
-	sw	$a9, 0($a6)
-	sw	$a8, 4($a6)
-	move	$a8, $fp
-	addi	$fp, $fp, 16
-	lil	$a9, trace_diffuse_rays.2842
-	sw	$a9, 0($a8)
-	sw	$a15, 8($a8)
-	sw	$a6, 4($a8)
-	move	$a6, $fp
-	addi	$fp, $fp, 16
-	lil	$a9, trace_diffuse_ray_80percent.2846
-	sw	$a9, 0($a6)
-	sw	$a8, 8($a6)
-	lw	$a9, 116($sp)
-	sw	$a9, 4($a6)
-	move	$a11, $fp
-	addi	$fp, $fp, 16
-	lil	$a13, calc_diffuse_using_1point.2850
-	sw	$a13, 0($a11)
-	sw	$a6, 12($a11)
-	sw	$a19, 8($a11)
-	sw	$a1, 4($a11)
-	move	$a6, $fp
-	addi	$fp, $fp, 16
-	lil	$a13, calc_diffuse_using_5points.2853
-	sw	$a13, 0($a6)
-	sw	$a19, 8($a6)
-	sw	$a1, 4($a6)
-	move	$a13, $fp
-	addi	$fp, $fp, 8
-	lil	$a14, do_without_neighbors.2859
-	sw	$a14, 0($a13)
-	sw	$a11, 4($a13)
-	move	$a11, $fp
-	addi	$fp, $fp, 8
-	lil	$a14, neighbors_exist.2862
-	sw	$a14, 0($a11)
-	lw	$a14, 76($sp)
-	sw	$a14, 4($a11)
-	move	$a15, $fp
-	addi	$fp, $fp, 16
-	lil	$a16, try_exploit_neighbors.2875
-	sw	$a16, 0($a15)
-	sw	$a13, 8($a15)
-	sw	$a6, 4($a15)
-	move	$a6, $fp
-	addi	$fp, $fp, 8
-	lil	$a16, write_ppm_header.2882
-	sw	$a16, 0($a6)
-	sw	$a14, 4($a6)
-	move	$a16, $fp
-	addi	$fp, $fp, 8
-	lil	$a17, write_rgb.2886
-	sw	$a17, 0($a16)
-	sw	$a19, 4($a16)
-	move	$a17, $fp
-	addi	$fp, $fp, 16
-	lil	$a18, pretrace_diffuse_rays.2888
-	sw	$a18, 0($a17)
-	sw	$a8, 12($a17)
-	sw	$a9, 8($a17)
-	sw	$a1, 4($a17)
-	move	$a1, $fp
-	addi	$fp, $fp, 40
-	lil	$a8, pretrace_pixels.2891
-	sw	$a8, 0($a1)
-	sw	$a2, 36($a1)
-	sw	$a12, 32($a1)
-	sw	$a24, 28($a1)
-	sw	$a5, 24($a1)
-	lw	$a2, 84($sp)
-	sw	$a2, 20($a1)
-	sw	$a19, 16($a1)
-	lw	$a5, 108($sp)
-	sw	$a5, 12($a1)
-	sw	$a17, 8($a1)
-	lw	$a5, 80($sp)
-	sw	$a5, 4($a1)
-	move	$a8, $fp
-	addi	$fp, $fp, 32
-	lil	$a12, pretrace_line.2898
-	sw	$a12, 0($a8)
-	sw	$a3, 24($a8)
-	sw	$a4, 20($a8)
-	sw	$a2, 16($a8)
-	sw	$a1, 12($a8)
-	sw	$a14, 8($a8)
-	sw	$a5, 4($a8)
-	move	$a1, $fp
-	addi	$fp, $fp, 32
-	lil	$a3, scan_pixel.2902
-	sw	$a3, 0($a1)
-	sw	$a16, 24($a1)
-	sw	$a15, 20($a1)
-	sw	$a19, 16($a1)
-	sw	$a11, 12($a1)
-	sw	$a14, 8($a1)
-	sw	$a13, 4($a1)
-	move	$a3, $fp
-	addi	$fp, $fp, 16
-	lil	$a4, scan_line.2908
-	sw	$a4, 0($a3)
-	sw	$a1, 12($a3)
-	sw	$a8, 8($a3)
-	sw	$a14, 4($a3)
+	sll	$a3, $a2, 2
+	add	$a3, $a0, $a3
+	sw	$a1, 0($a3)
+	addi	$a0, $a2, 1
+	lw	$a1, 8($sp)
+	addi	$a3, $a1, 2
+	li	$a4, 312
+	flw	$f1, 4($a4)
+	li	$a4, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	sw	$a0, 72($sp)
+	sw	$a3, 76($sp)
+	fsw	$f1, 80($sp)
+	move	$a0, $a4
+	fmove	$f0, $f2
+	sw	$ra, 92($sp)
+	addi	$sp, $sp, 96
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 96
+	lw	$ra, 92($sp)
+	move	$a1, $v0
+	li	$a0, 0
+	lw	$a0, 0($a0)
+	sw	$a1, 88($sp)
+	sw	$ra, 92($sp)
+	addi	$sp, $sp, 96
+	jal	min_caml_create_array
+	subi	$sp, $sp, 96
+	lw	$ra, 92($sp)
+	move	$a0, $v0
 	move	$a1, $fp
 	addi	$fp, $fp, 8
-	lil	$a4, create_pixelline.2921
-	sw	$a4, 0($a1)
-	sw	$a14, 4($a1)
-	move	$a4, $fp
+	sw	$a0, 4($a1)
+	lw	$a2, 88($sp)
+	sw	$a2, 0($a1)
+	flw	$f0, 0($sp)
+	fsw	$f0, 0($a2)
+	flw	$f1, 80($sp)
+	fsw	$f1, 4($a2)
+	flw	$f1, 32($sp)
+	fsw	$f1, 8($a2)
+	li	$a3, 0
+	lw	$a3, 0($a3)
+	subi	$a3, $a3, 1
+	li	$a4, 0
+	sw	$a1, 92($sp)
+	blt	$a3, $a4, bge_else.18423
+	li	$a4, 48
+	sll	$a5, $a3, 2
+	add	$a5, $a4, $a5
+	lw	$a4, 0($a5)
+	lw	$a5, 4($a4)
+	li	$a6, 1
+	bne	$a5, $a6, bne_else.18425
+	sw	$a0, 96($sp)
+	sw	$a3, 100($sp)
+	move	$a1, $a4
+	move	$a0, $a2
+	sw	$ra, 108($sp)
+	addi	$sp, $sp, 112
+	jal	setup_rect_table.2893
+	subi	$sp, $sp, 112
+	lw	$ra, 108($sp)
+	move	$a0, $v0
+	lw	$a1, 100($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 96($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18426
+bne_else.18425:
+	li	$a6, 2
+	bne	$a5, $a6, bne_else.18427
+	sw	$a0, 96($sp)
+	sw	$a3, 100($sp)
+	move	$a1, $a4
+	move	$a0, $a2
+	sw	$ra, 108($sp)
+	addi	$sp, $sp, 112
+	jal	setup_surface_table.2896
+	subi	$sp, $sp, 112
+	lw	$ra, 108($sp)
+	move	$a0, $v0
+	lw	$a1, 100($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 96($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18428
+bne_else.18427:
+	sw	$a0, 96($sp)
+	sw	$a3, 100($sp)
+	move	$a1, $a4
+	move	$a0, $a2
+	sw	$ra, 108($sp)
+	addi	$sp, $sp, 112
+	jal	setup_second_table.2899
+	subi	$sp, $sp, 112
+	lw	$ra, 108($sp)
+	move	$a0, $v0
+	lw	$a1, 100($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 96($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+bne_cont.18428:
+bne_cont.18426:
+	subi	$a1, $a1, 1
+	lw	$a0, 92($sp)
+	sw	$ra, 108($sp)
+	addi	$sp, $sp, 112
+	jal	iter_setup_dirvec_constants.2902
+	subi	$sp, $sp, 112
+	lw	$ra, 108($sp)
+	fmove	$f30, $fv
+	j	bge_cont.18424
+bge_else.18423:
+bge_cont.18424:
+	li	$a0, 1016
+	move	$a1, $fp
+	addi	$fp, $fp, 16
+	flw	$f0, 24($sp)
+	fsw	$f0, 8($a1)
+	lw	$a2, 92($sp)
+	sw	$a2, 4($a1)
+	lw	$a2, 76($sp)
+	sw	$a2, 0($a1)
+	lw	$a2, 72($sp)
+	sll	$a2, $a2, 2
+	add	$a2, $a0, $a2
+	sw	$a1, 0($a2)
+	lw	$a0, 12($sp)
+	addi	$a1, $a0, 2
+	lw	$a2, 8($sp)
+	addi	$a2, $a2, 3
+	li	$a3, 312
+	flw	$f1, 8($a3)
+	li	$a3, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f2, $v0
+	sw	$a1, 104($sp)
+	sw	$a2, 108($sp)
+	fsw	$f1, 112($sp)
+	move	$a0, $a3
+	fmove	$f0, $f2
+	sw	$ra, 124($sp)
+	addi	$sp, $sp, 128
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 128
+	lw	$ra, 124($sp)
+	move	$a1, $v0
+	li	$a0, 0
+	lw	$a0, 0($a0)
+	sw	$a1, 120($sp)
+	sw	$ra, 124($sp)
+	addi	$sp, $sp, 128
+	jal	min_caml_create_array
+	subi	$sp, $sp, 128
+	lw	$ra, 124($sp)
+	move	$a0, $v0
+	move	$a1, $fp
 	addi	$fp, $fp, 8
-	lil	$a11, calc_dirvec.2928
-	sw	$a11, 0($a4)
-	sw	$a9, 4($a4)
-	move	$a11, $fp
+	sw	$a0, 4($a1)
+	lw	$a2, 120($sp)
+	sw	$a2, 0($a1)
+	flw	$f0, 0($sp)
+	fsw	$f0, 0($a2)
+	flw	$f0, 40($sp)
+	fsw	$f0, 4($a2)
+	flw	$f0, 112($sp)
+	fsw	$f0, 8($a2)
+	li	$a3, 0
+	lw	$a3, 0($a3)
+	subi	$a3, $a3, 1
+	li	$a4, 0
+	sw	$a1, 124($sp)
+	blt	$a3, $a4, bge_else.18429
+	li	$a4, 48
+	sll	$a5, $a3, 2
+	add	$a5, $a4, $a5
+	lw	$a4, 0($a5)
+	lw	$a5, 4($a4)
+	li	$a6, 1
+	bne	$a5, $a6, bne_else.18431
+	sw	$a0, 128($sp)
+	sw	$a3, 132($sp)
+	move	$a1, $a4
+	move	$a0, $a2
+	sw	$ra, 140($sp)
+	addi	$sp, $sp, 144
+	jal	setup_rect_table.2893
+	subi	$sp, $sp, 144
+	lw	$ra, 140($sp)
+	move	$a0, $v0
+	lw	$a1, 132($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 128($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18432
+bne_else.18431:
+	li	$a6, 2
+	bne	$a5, $a6, bne_else.18433
+	sw	$a0, 128($sp)
+	sw	$a3, 132($sp)
+	move	$a1, $a4
+	move	$a0, $a2
+	sw	$ra, 140($sp)
+	addi	$sp, $sp, 144
+	jal	setup_surface_table.2896
+	subi	$sp, $sp, 144
+	lw	$ra, 140($sp)
+	move	$a0, $v0
+	lw	$a1, 132($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 128($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18434
+bne_else.18433:
+	sw	$a0, 128($sp)
+	sw	$a3, 132($sp)
+	move	$a1, $a4
+	move	$a0, $a2
+	sw	$ra, 140($sp)
+	addi	$sp, $sp, 144
+	jal	setup_second_table.2899
+	subi	$sp, $sp, 144
+	lw	$ra, 140($sp)
+	move	$a0, $v0
+	lw	$a1, 132($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 128($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+bne_cont.18434:
+bne_cont.18432:
+	subi	$a1, $a1, 1
+	lw	$a0, 124($sp)
+	sw	$ra, 140($sp)
+	addi	$sp, $sp, 144
+	jal	iter_setup_dirvec_constants.2902
+	subi	$sp, $sp, 144
+	lw	$ra, 140($sp)
+	fmove	$f30, $fv
+	j	bge_cont.18430
+bge_else.18429:
+bge_cont.18430:
+	li	$a0, 1016
+	move	$a1, $fp
+	addi	$fp, $fp, 16
+	flw	$f0, 24($sp)
+	fsw	$f0, 8($a1)
+	lw	$a2, 124($sp)
+	sw	$a2, 4($a1)
+	lw	$a2, 108($sp)
+	sw	$a2, 0($a1)
+	lw	$a2, 104($sp)
+	sll	$a2, $a2, 2
+	add	$a2, $a0, $a2
+	sw	$a1, 0($a2)
+	li	$a0, 1736
+	lw	$a1, 12($sp)
+	addi	$a1, $a1, 3
+	sw	$a1, 0($a0)
+	jr	$ra
+setup_surface_reflection.3137:
+	sla	$a0, $a0, 2
+	addi	$a0, $a0, 1
+	li	$a2, 1736
+	lw	$a2, 0($a2)
+	lw	$a3, 28($a1)
+	flw	$f0, 0($a3)
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fsub	$f0, $f1, $f0
+	li	$a3, 312
+	lw	$a4, 16($a1)
+	flw	$f1, 0($a3)
+	flw	$f2, 0($a4)
+	fmul	$f1, $f1, $f2
+	flw	$f2, 4($a3)
+	flw	$f3, 4($a4)
+	fmul	$f2, $f2, $f3
+	fadd	$f1, $f1, $f2
+	flw	$f2, 8($a3)
+	flw	$f3, 8($a4)
+	fmul	$f2, $f2, $f3
+	fadd	$f1, $f1, $f2
+	lw	$a3, 16($a1)
+	flw	$f2, 0($a3)
+	li	$v0, 16384
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f3, $v0
+	fmul	$f2, $f3, $f2
+	fmul	$f2, $f2, $f1
+	li	$a3, 312
+	flw	$f3, 0($a3)
+	fsub	$f2, $f2, $f3
+	lw	$a3, 16($a1)
+	flw	$f3, 4($a3)
+	li	$v0, 16384
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f4, $v0
+	fmul	$f3, $f4, $f3
+	fmul	$f3, $f3, $f1
+	li	$a3, 312
+	flw	$f4, 4($a3)
+	fsub	$f3, $f3, $f4
+	lw	$a1, 16($a1)
+	flw	$f4, 8($a1)
+	li	$v0, 16384
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f5, $v0
+	fmul	$f4, $f5, $f4
+	fmul	$f1, $f4, $f1
+	li	$a1, 312
+	flw	$f4, 8($a1)
+	fsub	$f1, $f1, $f4
+	li	$a1, 3
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f4, $v0
+	sw	$a2, 0($sp)
+	sw	$a0, 4($sp)
+	fsw	$f0, 8($sp)
+	fsw	$f1, 16($sp)
+	fsw	$f3, 24($sp)
+	fsw	$f2, 32($sp)
+	move	$a0, $a1
+	fmove	$f0, $f4
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	min_caml_create_float_array
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a1, $v0
+	li	$a0, 0
+	lw	$a0, 0($a0)
+	sw	$a1, 40($sp)
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	min_caml_create_array
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	move	$a1, $fp
 	addi	$fp, $fp, 8
-	lil	$a12, calc_dirvecs.2936
-	sw	$a12, 0($a11)
-	sw	$a4, 4($a11)
-	move	$a4, $fp
-	addi	$fp, $fp, 8
-	lil	$a12, calc_dirvec_rows.2941
-	sw	$a12, 0($a4)
-	sw	$a11, 4($a4)
-	move	$a11, $fp
-	addi	$fp, $fp, 8
-	lil	$a12, create_dirvec.2945
-	sw	$a12, 0($a11)
-	lw	$a12, 0($sp)
-	sw	$a12, 4($a11)
-	move	$a13, $fp
-	addi	$fp, $fp, 8
-	lil	$a15, create_dirvec_elements.2947
-	sw	$a15, 0($a13)
-	sw	$a11, 4($a13)
-	move	$a15, $fp
+	sw	$a0, 4($a1)
+	lw	$a2, 40($sp)
+	sw	$a2, 0($a1)
+	flw	$f0, 32($sp)
+	fsw	$f0, 0($a2)
+	flw	$f0, 24($sp)
+	fsw	$f0, 4($a2)
+	flw	$f0, 16($sp)
+	fsw	$f0, 8($a2)
+	li	$a3, 0
+	lw	$a3, 0($a3)
+	subi	$a3, $a3, 1
+	li	$a4, 0
+	sw	$a1, 44($sp)
+	blt	$a3, $a4, bge_else.18436
+	li	$a4, 48
+	sll	$a5, $a3, 2
+	add	$a5, $a4, $a5
+	lw	$a4, 0($a5)
+	lw	$a5, 4($a4)
+	li	$a6, 1
+	bne	$a5, $a6, bne_else.18438
+	sw	$a0, 48($sp)
+	sw	$a3, 52($sp)
+	move	$a1, $a4
+	move	$a0, $a2
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	setup_rect_table.2893
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	move	$a0, $v0
+	lw	$a1, 52($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 48($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18439
+bne_else.18438:
+	li	$a6, 2
+	bne	$a5, $a6, bne_else.18440
+	sw	$a0, 48($sp)
+	sw	$a3, 52($sp)
+	move	$a1, $a4
+	move	$a0, $a2
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	setup_surface_table.2896
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	move	$a0, $v0
+	lw	$a1, 52($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 48($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18441
+bne_else.18440:
+	sw	$a0, 48($sp)
+	sw	$a3, 52($sp)
+	move	$a1, $a4
+	move	$a0, $a2
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	setup_second_table.2899
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	move	$a0, $v0
+	lw	$a1, 52($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 48($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+bne_cont.18441:
+bne_cont.18439:
+	subi	$a1, $a1, 1
+	lw	$a0, 44($sp)
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	iter_setup_dirvec_constants.2902
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	fmove	$f30, $fv
+	j	bge_cont.18437
+bge_else.18436:
+bge_cont.18437:
+	li	$a0, 1016
+	move	$a1, $fp
 	addi	$fp, $fp, 16
-	lil	$a16, create_dirvecs.2950
-	sw	$a16, 0($a15)
-	sw	$a9, 12($a15)
-	sw	$a13, 8($a15)
-	sw	$a11, 4($a15)
-	move	$a13, $fp
-	addi	$fp, $fp, 8
-	lil	$a16, init_dirvec_constants.2952
-	sw	$a16, 0($a13)
-	lw	$a16, 144($sp)
-	sw	$a16, 4($a13)
-	move	$a17, $fp
-	addi	$fp, $fp, 16
-	lil	$a18, init_vecset_constants.2955
-	sw	$a18, 0($a17)
-	sw	$a13, 8($a17)
-	sw	$a9, 4($a17)
-	move	$a9, $fp
-	addi	$fp, $fp, 16
-	lil	$a13, init_dirvecs.2957
-	sw	$a13, 0($a9)
-	sw	$a17, 12($a9)
-	sw	$a15, 8($a9)
-	sw	$a4, 4($a9)
-	move	$a4, $fp
-	addi	$fp, $fp, 16
-	lil	$a13, add_reflection.2959
-	sw	$a13, 0($a4)
-	sw	$a16, 12($a4)
-	lw	$a13, 136($sp)
-	sw	$a13, 8($a4)
-	sw	$a11, 4($a4)
-	move	$a11, $fp
-	addi	$fp, $fp, 16
-	lil	$a13, setup_rect_reflection.2966
-	sw	$a13, 0($a11)
-	sw	$a0, 12($a11)
-	sw	$a7, 8($a11)
-	sw	$a4, 4($a11)
-	move	$a13, $fp
-	addi	$fp, $fp, 16
-	lil	$a15, setup_surface_reflection.2969
-	sw	$a15, 0($a13)
-	sw	$a0, 12($a13)
-	sw	$a7, 8($a13)
-	sw	$a4, 4($a13)
-	move	$a0, $fp
-	addi	$fp, $fp, 16
-	lil	$a4, setup_reflections.2972
-	sw	$a4, 0($a0)
-	sw	$a13, 12($a0)
-	sw	$a11, 8($a0)
-	sw	$a10, 4($a0)
-	move	$a26, $fp
-	addi	$fp, $fp, 64
-	lil	$a4, rt.2974
-	sw	$a4, 0($a26)
-	sw	$a6, 56($a26)
-	sw	$a0, 52($a26)
-	sw	$a16, 48($a26)
-	sw	$a2, 44($a26)
-	sw	$a3, 40($a26)
-	lw	$a0, 140($sp)
-	sw	$a0, 36($a26)
-	sw	$a8, 32($a26)
-	sw	$a12, 28($a26)
-	lw	$a0, 128($sp)
-	sw	$a0, 24($a26)
-	sw	$a7, 20($a26)
-	sw	$a9, 16($a26)
-	sw	$a14, 12($a26)
-	sw	$a5, 8($a26)
-	sw	$a1, 4($a26)
-	li	$a0, 128
-	li	$a1, 128
-	sw	$ra, 148($sp)
-	addi	$sp, $sp, 152
-	jal	rt.2974
-	subi	$sp, $sp, 152
-	lw	$ra, 148($sp)
+	flw	$f0, 8($sp)
+	fsw	$f0, 8($a1)
+	lw	$a2, 44($sp)
+	sw	$a2, 4($a1)
+	lw	$a2, 4($sp)
+	sw	$a2, 0($a1)
+	lw	$a2, 0($sp)
+	sll	$a3, $a2, 2
+	add	$a3, $a0, $a3
+	sw	$a1, 0($a3)
+	li	$a0, 1736
+	addi	$a1, $a2, 1
+	sw	$a1, 0($a0)
+	jr	$ra
+rt.3142:
+	li	$a2, 616
+	sw	$a0, 0($a2)
+	li	$a2, 616
+	sw	$a1, 4($a2)
+	li	$a2, 624
+	sra	$a3, $a0, 1
+	sw	$a3, 0($a2)
+	li	$a2, 624
+	sra	$a1, $a1, 1
+	sw	$a1, 4($a2)
+	li	$a1, 632
+	sw	$a1, 0($sp)
+	sw	$ra, 4($sp)
+	addi	$sp, $sp, 8
+	jal	min_caml_float_of_int
+	subi	$sp, $sp, 8
+	lw	$ra, 4($sp)
+	fmove	$f0, $fv
+	finv	$f0, $f0
+	li	$v0, 17152
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fmul	$f0, $f1, $f0
+	lw	$a0, 0($sp)
+	fsw	$f0, 0($a0)
+	li	$a0, 616
+	lw	$a0, 0($a0)
+	sw	$a0, 4($sp)
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	create_pixel.3084
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a1, $v0
+	lw	$a0, 4($sp)
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	min_caml_create_array
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	li	$a1, 616
+	lw	$a1, 0($a1)
+	subi	$a1, $a1, 2
+	sw	$ra, 12($sp)
+	addi	$sp, $sp, 16
+	jal	init_line_elements.3086
+	subi	$sp, $sp, 16
+	lw	$ra, 12($sp)
+	move	$a0, $v0
+	li	$a1, 616
+	lw	$a1, 0($a1)
+	sw	$a0, 8($sp)
+	sw	$a1, 12($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	create_pixel.3084
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a1, $v0
+	lw	$a0, 12($sp)
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	min_caml_create_array
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	li	$a1, 616
+	lw	$a1, 0($a1)
+	subi	$a1, $a1, 2
+	sw	$ra, 20($sp)
+	addi	$sp, $sp, 24
+	jal	init_line_elements.3086
+	subi	$sp, $sp, 24
+	lw	$ra, 20($sp)
+	move	$a0, $v0
+	li	$a1, 616
+	lw	$a1, 0($a1)
+	sw	$a0, 16($sp)
+	sw	$a1, 20($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	create_pixel.3084
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a1, $v0
+	lw	$a0, 20($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	min_caml_create_array
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	li	$a1, 616
+	lw	$a1, 0($a1)
+	subi	$a1, $a1, 2
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	init_line_elements.3086
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	move	$a0, $v0
+	sw	$a0, 24($sp)
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	read_screen_settings.2788
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
+	fmove	$f30, $fv
+	sw	$ra, 28($sp)
+	addi	$sp, $sp, 32
+	jal	read_light.2790
+	subi	$sp, $sp, 32
+	lw	$ra, 28($sp)
 	fmove	$f30, $fv
 	li	$a0, 0
-	sw	$ra, 148($sp)
-	addi	$sp, $sp, 152
+	sw	$a0, 28($sp)
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	read_nth_object.2795
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	li	$a1, 0
+	bne	$a0, $a1, bne_else.18443
+	li	$a0, 0
+	lw	$a1, 28($sp)
+	sw	$a1, 0($a0)
+	j	bne_cont.18444
+bne_else.18443:
+	li	$a0, 1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	read_object.2797
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+bne_cont.18444:
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_read_int
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	li	$a1, -1
+	bne	$a0, $a1, bne_else.18445
+	li	$a0, 1
+	li	$a1, -1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	min_caml_create_array
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	j	bne_cont.18446
+bne_else.18445:
+	li	$a1, 1
+	sw	$a0, 32($sp)
+	move	$a0, $a1
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	read_net_item.2801
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	lw	$a1, 32($sp)
+	sw	$a1, 0($a0)
+bne_cont.18446:
+	lw	$a1, 0($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.18447
+	j	bne_cont.18448
+bne_else.18447:
+	li	$a1, 332
+	sw	$a0, 0($a1)
+	li	$a0, 0
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	read_net_item.2801
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	move	$a0, $v0
+	lw	$a1, 0($a0)
+	li	$a2, -1
+	bne	$a1, $a2, bne_else.18449
+	j	bne_cont.18450
+bne_else.18449:
+	li	$a1, 332
+	sw	$a0, 4($a1)
+	li	$a0, 2
+	sw	$ra, 36($sp)
+	addi	$sp, $sp, 40
+	jal	read_and_network.2805
+	subi	$sp, $sp, 40
+	lw	$ra, 36($sp)
+	fmove	$f30, $fv
+bne_cont.18450:
+bne_cont.18448:
+	li	$a0, 536
+	li	$a1, 0
+	sw	$a0, 36($sp)
+	move	$a0, $a1
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	read_or_network.2803
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	move	$a0, $v0
+	lw	$a1, 36($sp)
+	sw	$a0, 0($a1)
+	li	$a0, 80
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	min_caml_print_byte
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	li	$a0, 51
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	min_caml_print_byte
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	li	$a0, 10
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	min_caml_print_byte
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	li	$a0, 616
+	lw	$a0, 0($a0)
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
 	jal	min_caml_print_int
-	subi	$sp, $sp, 152
-	lw	$ra, 148($sp)
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	li	$a0, 32
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	min_caml_print_byte
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	li	$a0, 616
+	lw	$a0, 4($a0)
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	min_caml_print_int
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	li	$a0, 32
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	min_caml_print_byte
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	li	$a0, 255
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	min_caml_print_int
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	li	$a0, 10
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	min_caml_print_byte
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	li	$a0, 4
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	create_dirvecs.3118
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	li	$a0, 9
+	li	$a1, 0
+	li	$a2, 0
+	sw	$ra, 44($sp)
+	addi	$sp, $sp, 48
+	jal	calc_dirvec_rows.3109
+	subi	$sp, $sp, 48
+	lw	$ra, 44($sp)
+	fmove	$f30, $fv
+	li	$a0, 716
+	lw	$a0, 16($a0)
+	lw	$a1, 476($a0)
+	li	$a2, 0
+	lw	$a2, 0($a2)
+	subi	$a2, $a2, 1
+	li	$a3, 0
+	sw	$a0, 40($sp)
+	blt	$a2, $a3, bge_else.18451
+	li	$a3, 48
+	sll	$a4, $a2, 2
+	add	$a4, $a3, $a4
+	lw	$a3, 0($a4)
+	lw	$a4, 4($a1)
+	lw	$a5, 0($a1)
+	lw	$a6, 4($a3)
+	li	$a7, 1
+	sw	$a1, 44($sp)
+	bne	$a6, $a7, bne_else.18453
+	sw	$a4, 48($sp)
+	sw	$a2, 52($sp)
+	move	$a1, $a3
+	move	$a0, $a5
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	setup_rect_table.2893
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	move	$a0, $v0
+	lw	$a1, 52($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 48($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18454
+bne_else.18453:
+	li	$a7, 2
+	bne	$a6, $a7, bne_else.18455
+	sw	$a4, 48($sp)
+	sw	$a2, 52($sp)
+	move	$a1, $a3
+	move	$a0, $a5
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	setup_surface_table.2896
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	move	$a0, $v0
+	lw	$a1, 52($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 48($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+	j	bne_cont.18456
+bne_else.18455:
+	sw	$a4, 48($sp)
+	sw	$a2, 52($sp)
+	move	$a1, $a3
+	move	$a0, $a5
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	setup_second_table.2899
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	move	$a0, $v0
+	lw	$a1, 52($sp)
+	sll	$a2, $a1, 2
+	lw	$a3, 48($sp)
+	add	$a2, $a3, $a2
+	sw	$a0, 0($a2)
+bne_cont.18456:
+bne_cont.18454:
+	subi	$a1, $a1, 1
+	lw	$a0, 44($sp)
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	iter_setup_dirvec_constants.2902
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	fmove	$f30, $fv
+	j	bge_cont.18452
+bge_else.18451:
+bge_cont.18452:
+	li	$a1, 118
+	lw	$a0, 40($sp)
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	init_dirvec_constants.3120
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	fmove	$f30, $fv
+	li	$a0, 716
+	lw	$a0, 12($a0)
+	li	$a1, 119
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	init_dirvec_constants.3120
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	fmove	$f30, $fv
+	li	$a0, 2
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	init_vecset_constants.3123
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	fmove	$f30, $fv
+	li	$a0, 988
+	lw	$a0, 0($a0)
+	li	$a1, 312
+	flw	$f0, 0($a1)
+	fsw	$f0, 0($a0)
+	flw	$f0, 4($a1)
+	fsw	$f0, 4($a0)
+	flw	$f0, 8($a1)
+	fsw	$f0, 8($a0)
+	li	$a0, 988
+	li	$a1, 0
+	lw	$a1, 0($a1)
+	subi	$a1, $a1, 1
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	iter_setup_dirvec_constants.2902
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	fmove	$f30, $fv
+	li	$a0, 0
+	lw	$a0, 0($a0)
+	subi	$a0, $a0, 1
+	li	$a1, 0
+	blt	$a0, $a1, bge_else.18457
+	li	$a1, 48
+	sll	$a2, $a0, 2
+	add	$a2, $a1, $a2
+	lw	$a1, 0($a2)
+	lw	$a2, 8($a1)
+	li	$a3, 2
+	bne	$a2, $a3, bne_else.18459
+	lw	$a2, 28($a1)
+	flw	$f0, 0($a2)
+	li	$v0, 16256
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fsub	$f0, $f0, $f1
+	li	$v0, 0
+	sll	$v0, $v0, 16
+	ori	$v0, $v0, 0
+	mtc1	$f1, $v0
+	fblt	$f0, $f1, fbge_else.18461
+	li	$a2, 0
+	j	fbge_cont.18462
+fbge_else.18461:
+	li	$a2, 1
+fbge_cont.18462:
+	li	$a3, 0
+	bne	$a2, $a3, bne_else.18463
+	j	bne_cont.18464
+bne_else.18463:
+	lw	$a2, 4($a1)
+	li	$a3, 1
+	bne	$a2, $a3, bne_else.18465
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	setup_rect_reflection.3134
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	fmove	$f30, $fv
+	j	bne_cont.18466
+bne_else.18465:
+	li	$a3, 2
+	bne	$a2, $a3, bne_else.18467
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	setup_surface_reflection.3137
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	fmove	$f30, $fv
+	j	bne_cont.18468
+bne_else.18467:
+bne_cont.18468:
+bne_cont.18466:
+bne_cont.18464:
+	j	bne_cont.18460
+bne_else.18459:
+bne_cont.18460:
+	j	bge_cont.18458
+bge_else.18457:
+bge_cont.18458:
+	li	$a1, 0
+	li	$a2, 0
+	lw	$a0, 16($sp)
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	pretrace_line.3066
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	fmove	$f30, $fv
+	li	$a1, 0
+	li	$a2, 2
+	li	$a0, 616
+	lw	$a0, 4($a0)
+	blt	$a1, $a0, bge_else.18469
+	jr	$ra
+bge_else.18469:
+	li	$a0, 616
+	lw	$a0, 4($a0)
+	subi	$a0, $a0, 1
+	sw	$a1, 56($sp)
+	blt	$a1, $a0, bge_else.18471
+	j	bge_cont.18472
+bge_else.18471:
+	li	$a0, 1
+	lw	$a3, 24($sp)
+	move	$a1, $a0
+	move	$a0, $a3
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	pretrace_line.3066
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	fmove	$f30, $fv
+bge_cont.18472:
+	li	$a0, 0
+	lw	$a1, 56($sp)
+	lw	$a2, 8($sp)
+	lw	$a3, 16($sp)
+	lw	$a4, 24($sp)
+	sw	$ra, 60($sp)
+	addi	$sp, $sp, 64
+	jal	scan_pixel.3070
+	subi	$sp, $sp, 64
+	lw	$ra, 60($sp)
+	fmove	$f30, $fv
+	li	$a0, 1
+	li	$a4, 4
+	lw	$a1, 16($sp)
+	lw	$a2, 24($sp)
+	lw	$a3, 8($sp)
+	j	scan_line.3076
+exit:
+	hlt
+_min_caml_start2: # main entry point
+   # main program start
+	li	$a0, 128
+	li	$a1, 128
+	sw	$ra, 4($sp)
+	addi	$sp, $sp, 8
+	jal	rt.3142
+	subi	$sp, $sp, 8
+	lw	$ra, 4($sp)
+	fmove	$f30, $fv
+	li	$a0, 0
+	sw	$ra, 4($sp)
+	addi	$sp, $sp, 8
+	jal	min_caml_print_float
+	subi	$sp, $sp, 8
+	lw	$ra, 4($sp)
 	move	$a0, $v0
 	j exit   # main program end

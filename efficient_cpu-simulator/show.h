@@ -3,9 +3,6 @@
 
 #include "cpu.h"
 
-void showInstAll(Cpu&);
-void showInst(Cpu&);
-void showStatus(Cpu&);
-void showCurrentInst(Cpu&);
+void showAll(int y, int x, Cpu&);
 
 #endif

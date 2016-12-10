@@ -48,6 +48,14 @@ rule token = parse
     { SLASH_DOT }
 | '='
     { EQUAL }
+| "fless"
+    { FLESS }
+| "fispos"
+    { FISPOS }
+| "fiszero"
+    { FISZERO }
+| "fisneg"
+    { FISNEG }
 | "<>"
     { LESS_GREATER }
 | "<="
@@ -86,6 +94,14 @@ rule token = parse
     { SEMICOLON }
 | eof
     { EOF }
+| "sqrt"
+    { SQRT }
+| "xor"
+    { XOR }
+| "print_char"
+    { PRINTCHAR }
+| "fabs"
+    { FABS}
 | lower (digit|lower|upper|'_')* (* 他の「予約語」より後でないといけない *)
     { IDENT(Lexing.lexeme lexbuf) }
 | _
