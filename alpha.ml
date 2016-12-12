@@ -35,6 +35,7 @@ let rec cse e csel =
     | FAbs(x) -> cse_find e csel
     | Sqrt(x) -> cse_find e csel
     | Printchar(x) -> cse_find e csel
+    | Readint | Readfloat -> e
     | IfEq(x, y, e1, e2) -> IfEq(x, y, cse_find e1 csel, cse_find e2 csel)
     | IfLE(x, y, e1, e2) -> IfLE(x, y, cse_find e1 csel, cse_find e2 csel)
     | Let(x, e1, e2) ->
@@ -80,6 +81,7 @@ let rec g env = function (* α変換ルーチン本体 (caml2html: alpha_g) *)
   | FAbs(x) -> FAbs(find x env)
   | Sqrt(x) -> Sqrt(find x env)
   | Printchar(x) -> Printchar(find x env)
+  | Readint | Readfloat as e -> e
   | IfEq(x, y, e1, e2) -> IfEq(find x env, find y env, g env e1, g env e2)
   | IfLE(x, y, e1, e2) -> IfLE(find x env, find y env, g env e1, g env e2)
   | Let((x, t), e1, e2) -> (* letのα変換 (caml2html: alpha_let) *)

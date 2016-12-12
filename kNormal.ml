@@ -21,6 +21,8 @@ type t = (* K正規化後の式 (caml2html: knormal_t) *)
   | FAbs of Id.t
   | Sqrt of Id.t
   | Printchar of Id.t
+  | Readint
+  | Readfloat
   | IfEq of Id.t * Id.t * t * t (* 比較 + 分岐 (caml2html: knormal_branch) *)
   | IfLE of Id.t * Id.t * t * t (* 比較 + 分岐 *)
   | Let of (Id.t * Type.t) * t * t
@@ -38,7 +40,7 @@ type t = (* K正規化後の式 (caml2html: knormal_t) *)
 and fundef = { name : Id.t * Type.t; args : (Id.t * Type.t) list; body : t }
 
 let rec fv = function (* 式に出現する（自由な）変数 (caml2html: knormal_fv) *)
-  | Unit | Int(_) | Float(_) | ExtArray(_) | ExtTuple(_) -> S.empty
+  | Unit | Int(_) | Float(_) | ExtArray(_) | ExtTuple(_) | Readint | Readfloat -> S.empty
   | Neg(x) | FNeg(x) | ShiftR1(x) | ShiftL2(x) | FReciprocal(x) | FAbs(x) | Sqrt(x) | Printchar(x) -> S.singleton x
   | Add(x, y) | Sub(x, y) | Mul(x, y) | FAdd(x, y) | FSub(x, y) | FMul(x, y) | FDiv(x, y) | Xor(x, y) | Get(x, y) -> S.of_list [x; y]
   | IfEq(x, y, e1, e2) | IfLE(x, y, e1, e2) -> S.add x (S.add y (S.union (fv e1) (fv e2)))
@@ -122,7 +124,9 @@ let rec g env gd = function (* K正規化ルーチン本体 (caml2html: knormal_
 	(fun x -> Sqrt(x), Type.Float)
   | Syntax.Printchar(e) ->
       insert_let (g env gd e)
-	(fun x -> Printchar(x), Type.Int)
+	(fun x -> Printchar(x), Type.Unit)
+  | Syntax.Readint(_) -> (Readint, Type.Int)
+  | Syntax.Readfloat(_) -> (Readfloat, Type.Float)
   | Syntax.Eq _ | Syntax.LE _ as cmp ->
       g env gd (Syntax.If(cmp, Syntax.Bool(true), Syntax.Bool(false)))
   | Syntax.If(Syntax.Not(e1), e2, e3) -> g env gd (Syntax.If(e1, e3, e2)) (* notによる分岐を変換 (caml2html: knormal_not) *)

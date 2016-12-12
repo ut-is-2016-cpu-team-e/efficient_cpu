@@ -54,6 +54,8 @@ and out_asm_e oc e tabnum =
   | Sqrt(t1) -> Printf.fprintf oc "sqrt %s\n" t1
   | Printchar(V(t1)) -> Printf.fprintf oc "printchar %s\n" t1
   | Printchar(C(t1)) -> Printf.fprintf oc "printchar %d\n" t1
+  | Readint -> Printf.fprintf oc "Readint\n";
+  | Readfloat -> Printf.fprintf oc "Readfloat\n";
   | Lfd(t1, V(t2)) -> Printf.fprintf oc "Lfd %s %s\n" t1 t2
   | Lfd(t1,  C(x)) -> Printf.fprintf oc "Lfd %s %d\n" t1 x
   | Stfd(t1, t2, V(t3)) -> Printf.fprintf oc "Stfd %s %s %s\n" t1 t2 t3

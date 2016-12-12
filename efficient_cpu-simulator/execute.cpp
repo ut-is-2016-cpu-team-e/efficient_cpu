@@ -246,8 +246,9 @@ void Exec::executeF() {
     clrtobot();
     if (fscanf(mPrint, "%f", &mFloatVal)) {
       mU.freg = mFloatVal;
-      cpu(0) = mU.reg;
-    }
+      cpu(mRs) = mU.reg;
+    } else { cout << "can't open *.sld file." << endl; assert(false); }
+    
     cpu.incInstCnt(Cpu::NUM_READ_FLOAT);
   } else {
     mvaddstr(mY-1, 0, "Failed to load the instruction.");
@@ -361,12 +362,14 @@ void Exec::execRom() {
   case 0x21 : refresh();
               mvaddstr(mY-1, 0, "read_int :");
               clrtobot();
-              if (fscanf(mPrint, "%d", &mIntVal)) { cpu[1] = mIntVal; }
+              if (fscanf(mPrint, "%d", &mIntVal)) { cpu[mRs] = mIntVal; }
+              else { cout << "can't open *.sld file." << endl; assert(false); }
+              
               cpu.incInstCnt(Cpu::NUM_READ_INT);
               break;
-    // print_byte
+    // print_char
   case 0x22 : refresh();
-              mvprintw(mY-1, 0, "print_byte : %d >> \"sim.ppm\"", cpu[mRs]);
+              mvprintw(mY-1, 0, "print_char : %d >> \"sim.ppm\"", cpu[mRs]);
               clrtobot();
               fprintf(cpu.ppm, "%c", cpu[mRs]);
               fflush(cpu.ppm);

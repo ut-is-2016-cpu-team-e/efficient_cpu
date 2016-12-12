@@ -245,9 +245,13 @@ and g' oc = function (* 各命令のアセンブリ生成 *)
       Printf.fprintf oc "\tsqrt\t%s, %s\n" (reg x) (reg y)
   | (NonTail(_), Printchar(C(y))) ->
       Printf.fprintf oc "\tli\t$a23, %d\n" y;
-      Printf.fprintf oc "\tprint_byte\t$a23\n";
+      Printf.fprintf oc "\tprint_char\t$a23\n";
   | (NonTail(_), Printchar(V(y))) ->
-      Printf.fprintf oc "\tprint_byte\t%s\n" (reg y)
+      Printf.fprintf oc "\tprint_char\t%s\n" (reg y)
+  | (NonTail(x), Readint) ->
+      Printf.fprintf oc "\tread_int\t%s\n" (reg x)
+  | (NonTail(x), Readfloat) ->
+      Printf.fprintf oc "\tread_float\t%s\n" (reg x)
   | (NonTail(x), Lfd(y, V(z))) ->
       Printf.fprintf oc "\tadd\t%s, %s, %s\n" (reg z) (reg y) (reg z);
       Printf.fprintf oc "\tflw\t%s, 0(%s)\n" (reg x) (reg z)
@@ -279,11 +283,11 @@ and g' oc = function (* 各命令のアセンブリ生成 *)
   | (Tail, (Nop | Stw _ | Stfd _ | Comment _ | Save _  | Printchar _ as exp)) ->
       g' oc (NonTail(Id.gentmp Type.Unit), exp);
       Printf.fprintf oc "\tjr\t$ra\n";
-  | (Tail, (Li _ | SetL _ | SetExt _ | Mr _ | Neg _ | Add _ | Sub _ | Mul _ | Div _ | ShiftL2 _ | ShiftR1 _ | Slw _ | Xor _ |
+  | (Tail, (Li _ | SetL _ | SetExt _ | Mr _ | Neg _ | Add _ | Sub _ | Mul _ | Div _ | ShiftL2 _ | ShiftR1 _ | Slw _ | Xor _ | Readint |
             Lwz _ as exp)) ->
       g' oc (NonTail(reg_re), exp);
       Printf.fprintf oc "\tjr\t$ra\n";
-  | (Tail, (FLi _ | FMr _ | FNeg _ | FAdd _ | FSub _ | FMul _ | FDiv _ | FReciprocal _ | FAbs _ | Sqrt _ | Lfd _ as exp)) ->
+  | (Tail, (FLi _ | FMr _ | FNeg _ | FAdd _ | FSub _ | FMul _ | FDiv _ | FReciprocal _ | FAbs _ | Sqrt _ | Readfloat | Lfd _ as exp)) ->
       g' oc (NonTail(freg_re), exp);
       Printf.fprintf oc "\tjr $ra\n";
   | (Tail, (Restore(x) as exp)) ->

@@ -40,6 +40,8 @@ let rec deref_term = function
   | FAbs(e1) -> FAbs(deref_term e1)
   | Sqrt(e1) -> Sqrt(deref_term e1)
   | Printchar(e1) -> Printchar(deref_term e1)
+  | Readint(e1) -> Readint(deref_term e1)
+  | Readfloat(e1) -> Readfloat(deref_term e1)
   | If(e1, e2, e3) -> If(deref_term e1, deref_term e2, deref_term e3)
   | Let(xt, e1, e2) -> Let(deref_id_typ xt, deref_term e1, deref_term e2)
   | LetRec({ name = xt; args = yts; body = e1 }, e2) ->
@@ -141,6 +143,12 @@ let rec g env e = (* 型推論ルーチン (caml2html: typing_g) *)
     | Printchar(e) ->
   unify Type.Int (g env e);
   Type.Unit
+    | Readint(e) ->
+  unify Type.Unit (g env e);
+  Type.Int
+    | Readfloat(e) ->
+  unify Type.Unit (g env e);
+  Type.Float
     | Add(e1, e2) | Sub(e1, e2) | Mul(e1, e2) | Div(e1, e2) -> (* 足し算（と引き算）(と掛け算)の型推論 (caml2html: typing_add) *)
 	unify Type.Int (g env e1);
 	unify Type.Int (g env e2);

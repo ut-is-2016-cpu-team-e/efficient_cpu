@@ -26,6 +26,8 @@ let rec outsyntax oc e tabnum =
    | FAbs(t1) -> Printf.fprintf oc "fabs\n"; outsyntax oc t1 (tabnum+1)
    | Sqrt(t1) -> Printf.fprintf oc "sqrt\n"; outsyntax oc t1 (tabnum+1)
    | Printchar(t1) -> Printf.fprintf oc "printchar\n"; outsyntax oc t1 (tabnum+1)
+   | Readint(_) -> Printf.fprintf oc "Readint\n";
+   | Readfloat(_) -> Printf.fprintf oc "Readfloat\n";
    | Eq(t1, t2) -> Printf.fprintf oc "Eq\n"; outsyntax oc t1 (tabnum+1); outsyntax oc t2 (tabnum+1)
    | LE(t1, t2) -> Printf.fprintf oc "LE\n"; outsyntax oc t1 (tabnum+1); outsyntax oc t2 (tabnum+1)
    | If(t1, t2, t3) -> Printf.fprintf oc "If\n"; outsyntax oc t1 (tabnum+1); outsyntax oc t2 (tabnum+1); outsyntax oc t3 (tabnum+1)

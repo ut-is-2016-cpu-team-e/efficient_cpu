@@ -56,6 +56,8 @@ let rec g env = function (* 式の仮想マシンコード生成 *)
   | Closure.FAbs(x) -> Ans(FAbs(x))
   | Closure.Sqrt(x) -> Ans(Sqrt(x))
   | Closure.Printchar(x) -> Ans(Printchar(V(x)))
+  | Closure.Readint -> Ans(Readint)
+  | Closure.Readfloat -> Ans(Readfloat)
   | Closure.IfEq (x, y, e1, e2) ->
       (match M.find x env with
 	 | Type.Bool | Type.Int -> Ans (IfEq (x, y, g env e1, g env e2))

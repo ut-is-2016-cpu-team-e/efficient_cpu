@@ -29,6 +29,8 @@ and exp =
   | FAbs of Id.t
   | Sqrt of Id.t
   | Printchar of id_or_imm
+  | Readint
+  | Readfloat
   | Lfd of Id.t * id_or_imm
   | Stfd of Id.t * Id.t * id_or_imm
   | Comment of string

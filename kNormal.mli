@@ -19,6 +19,8 @@ type t =
   | FAbs of Id.t
   | Sqrt of Id.t
   | Printchar of Id.t
+  | Readint
+  | Readfloat
   | IfEq of Id.t * Id.t * t * t
   | IfLE of Id.t * Id.t * t * t
   | Let of (Id.t * Type.t) * t * t

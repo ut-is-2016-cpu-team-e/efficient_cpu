@@ -29,7 +29,7 @@ Asm::Asm(const char* filename) : isJoutOn(true), isDumpOn(true) {
     inst.push_back("jout");
   }
 
-  setLibLab(addr, label, inst);
+  // setLibLab(addr, label, inst);
 
   if (label.find("_min_caml_start") != label.end()) {
     inst.insert(inst.begin(), "j   _min_caml_start");
@@ -135,7 +135,7 @@ void Asm::divideRegOff(string& s, string& t) {
   s = s.substr(pos + 1, offRegSize - pos - 2);
   s = gReg2bin[s];
 }
-
+/*
 void Asm::setLibLab(int& addr, unordered_map<string, int>& label, vector<string>& inst) {
   label["min_caml_sqrt"] = addr;
   inst.push_back("sqrt  $fv $f0");
@@ -169,8 +169,8 @@ void Asm::setLibLab(int& addr, unordered_map<string, int>& label, vector<string>
   inst.push_back("print_int");
   inst.push_back("jr    $ra");
   addr += 2;
-  label["min_caml_print_byte"] = addr;
-  inst.push_back("print_byte");
+  label["min_caml_print_char"] = addr;
+  inst.push_back("print_char");
   inst.push_back("jr    $ra");
   addr += 2;
   label["min_caml_read_int"] = addr;
@@ -182,23 +182,16 @@ void Asm::setLibLab(int& addr, unordered_map<string, int>& label, vector<string>
   inst.push_back("jr    $ra");
   addr += 2;
 }
-
+*/
 string Asm::assemble(string& cmd, const int addr, unordered_map<string, int>& label) {
   stringstream ss(cmd);
   string op, r[3];
   ss >> op; // split by space
+
   if (op == "nop") {
    return "00000000000000000000000000000000";
   } else if (op == "hlt") {
     return "00111100000000000000000000000000";
-  } else if (op == "print_int") {
-    return "10000000010000000000000000000000";
-  } else if (op == "print_byte") {
-    return "10001000010000000000000000000000";
-  } else if (op == "read_int") {
-    return "10000100000000000000000000000000";
-  } else if (op == "read_float") {
-    return "01011000000000000000000000000000";
   } else if (op == "jout") {
     return "11111100000000000000000000000000";
   }
@@ -208,6 +201,7 @@ string Asm::assemble(string& cmd, const int addr, unordered_map<string, int>& la
   // convert to bin
   for (int i = 0; i < as.mOperandNum; i++) {
     ss >> r[i]; // register, imm, or mShamt
+
     if (as.mRegNum == -2) { // lw, sw, flw, fsw
       if (i == 0) {
         r[i] = gReg2bin[r[i]]; // register(rt)
@@ -246,6 +240,7 @@ string Asm::assemble(string& cmd, const int addr, unordered_map<string, int>& la
       dec2bin(r[i], 16);
     }
   }
+
   if (op == "move" || op == "fmove" || op == "mfc1" || op == "mtc1") {
     r[2] = "0";
     dec2bin(r[2], 16);
@@ -262,6 +257,8 @@ string Asm::assemble(string& cmd, const int addr, unordered_map<string, int>& la
     } 
   } else if (as.mFormat == "I" && (op == "fmove" || op == "mfc1" || op == "mtc1")) {
     return as.mOpcd + r[1] + r[0] + "00000" + as.mShamt + as.mFunct;
+  } else if (as.mFormat == "I" && (op == "print_int" || op == "print_char" || op == "read_int" || op == "read_float")) {
+    return as.mOpcd + r[0] + "0000000000" + as.mShamt + as.mFunct;
   } else if (as.mFormat == "I" && op != "li") {
     return as.mOpcd + r[1] + r[0] + r[2];
   } else if (as.mFormat == "I" && op == "li") {
@@ -330,10 +327,10 @@ void Asm::setInit() {
   gAsmb["floor"] = AsmT(2, 2, "R", "010000", "00000", "010000");
   gAsmb["itof"] = AsmT(2, 2, "R", "010000", "00000", "010001");
   gAsmb["ftoi"] = AsmT(2, 2, "R", "010000", "00000", "010010");
-  gAsmb["print_int"] = AsmT(0, 0, "I", "100000", "", "");
-  gAsmb["print_byte"] = AsmT(0, 0, "I", "100010", "", "");
-  gAsmb["read_int"] = AsmT(0, 0, "I", "100001", "00000", "000000");
-  gAsmb["read_float"] = AsmT(0, 0, "I", "010110", "00000", "000000");
+  gAsmb["print_int"] = AsmT(1, 1, "I", "100000", "00000", "000000");
+  gAsmb["print_char"] = AsmT(1, 1, "I", "100010", "00000", "000000");
+  gAsmb["read_int"] = AsmT(1, 1, "I", "100001", "00000", "000000");
+  gAsmb["read_float"] = AsmT(1, 1, "I", "010110", "00000", "000000");
 
   gAsmb["hlt"] = AsmT(0, 0, "I", "001111", "00000", "000000");
 
@@ -347,5 +344,3 @@ void Asm::setInit() {
   gReg2bin["$fp"] = gReg2bin["$f29"] = "11110";
   gReg2bin["$ra"] = gReg2bin["$f30"] = "11111";
 }
-
-

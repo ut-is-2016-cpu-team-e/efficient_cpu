@@ -1,13 +1,13 @@
 let rec write_header _ =
-  print_byte 80;                (* P *)
-  print_byte (48+3);            (* +6 if binary *)
-  print_byte 10;                (* new line *)
+  print_char 80;                (* P *)
+  print_char (48+3);            (* +6 if binary *)
+  print_char 10;                (* new line *)
   print_int 100;
-  print_byte 32;                (* space *)
+  print_char 32;                (* space *)
   print_int 100;
-  print_byte 32;                (* space *)
+  print_char 32;                (* space *)
   print_int 255;               (* 0~255 *)
-  print_byte 10                 (* new line *)
+  print_char 10                 (* new line *)
 in
 
 let step = let a = Array.create 6 0 in
@@ -27,11 +27,11 @@ let rec write_rgb x =
     let r = int_of_float fr in
     let g = int_of_float fg in
     let b = int_of_float fb in
-    print_byte 32;                (* space *)
+    print_char 32;                (* space *)
     print_int r;
-    print_byte 32;                (* space *)
+    print_char 32;                (* space *)
     print_int g;
-    print_byte 32;                (* space *)
+    print_char 32;                (* space *)
     print_int b
   in
   let fx = float_of_int x in

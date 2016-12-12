@@ -6,7 +6,7 @@ type tcsv =
 
 let replace_comp x x1 y = if x = x1 then y else x1
 let rec replace x y = function
-  | Unit | Int(_) | Float(_) | ExtArray(_) | ExtTuple(_) as e -> e
+  | Unit | Int(_) | Float(_) | ExtArray(_) | ExtTuple(_) | Readint | Readfloat as e -> e
   | Neg(x1) -> Neg(replace_comp x x1 y)
   | ShiftL2(x1) -> ShiftL2(replace_comp x x1 y)
   | ShiftR1(x1) -> ShiftR1(replace_comp x x1 y)

@@ -24,9 +24,3 @@ create_float_array_cont:
   subi  $a1, $a1, 1
   addi  $fp, $fp, 4
   j create_float_array_loop
-min_caml_read_int:
-  read_int $v0
-  jr  $ra
-min_caml_read_float:
-  read_float  $fv
-  jr  $ra

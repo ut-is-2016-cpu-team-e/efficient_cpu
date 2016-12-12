@@ -1,57 +1,10 @@
-let rec countn a b c =
-	if (a < b) then
-		c
-	else
-		countn (a-b) b (c+1) in
-
-let rec mymul a b sum =
-	if a = 0 then sum
-	else mymul (a-1) b (sum+b) in
-
-let rec print_int a =
-	let b =
-		if a < 0 then
-			(print_char 45;
-			-a)
-		else a in
-	(*let x = countn b 10000 0 in
-	let b = b - (mymul x 10000 0) in
-	let flag =
-		if x > 0 then
-			(print_char (48 + x);
-				1)
-		else 0 in
-	let x = countn b 1000 0 in
-	let b = b - (mymul x 1000 0) in
-	let flag =
-		if x > 0 then
-			(print_char (48 + x);
-			1)
-		else if flag = 1 then
-			(print_char 48;
-			1)
-		else 0 in
-	let x = countn b 100 0 in
-	let b = b - x*100 in
-	let flag =
-		if x > 0 then
-			(print_char (48 + x);
-			1)
-		else if flag = 1 then
-			(print_char 48;
-			1)
-		else 0 in*)
-	let x = countn b 10 0 in
-	let b = b - (mymul x 10 0) in
-	let flag =
-		if x > 0 then
-			(print_char (48 + x);
-			1)
-		(*else if flag = 1 then
-			(print_char 48;
-			1)*)
-		else 0 in
-	print_char (48 + b)
-	in
-
-print_int(18)
+let x = 3.0 in
+let y = 4.0 in
+let z = 5.0 in
+screen.(0) <- read_float ();
+screen.(1) <- read_float ();
+screen.(2) <- read_float ();
+let xx = x +. screen.(0) in
+let yy = y +. screen.(1) in
+let zz = z +. screen.(2) in
+if xx = 6.0 then print_int(3) else print_int(2)

@@ -46,12 +46,14 @@ let addtyp x = (x, Type.gentyp ())
 %token SQRT
 %token PRINTCHAR
 %token FABS
+%token READINT
+%token READFLOAT
 
 /* 優先順位とassociativityの定義（低い方から高い方へ） (caml2html: parser_prior) */
 %right prec_let
 %right SEMICOLON
 %right prec_if
-%right LESS_MINUS PRINTCHAR
+%right LESS_MINUS PRINTCHAR READINT READFLOAT
 %left COMMA
 %left EQUAL LESS_GREATER LESS GREATER LESS_EQUAL GREATER_EQUAL
 %left PLUS MINUS PLUS_DOT MINUS_DOT
@@ -132,6 +134,10 @@ exp: /* 一般の式 (caml2html: parser_exp) */
     { Sqrt($2) }
 | XOR exp exp
     { Xor($2, $3) }
+| READINT exp
+    { Readint($2) }
+| READFLOAT exp
+    { Readfloat($2) }
 | MINUS_DOT exp
     %prec prec_unary_minus
     { FNeg($2) }

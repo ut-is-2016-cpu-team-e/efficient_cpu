@@ -64,7 +64,7 @@ let rec print_int a =
 	in
 
 
-(*let rec int_of_float a =
+let rec int_of_float a =
 	let abs = fabs a in
 	let flag = fflag a in
 	let rec ftoi_ret a =
@@ -144,11 +144,11 @@ let rec float_of_int a =
 let rec floor a =
 	let abs = fabs a in
 	let rec floor_pos_ker a =
-		a -. 1.0 in
+		a -. 1. in
 	let rec floor_pos_small a =
 		let b = a +. 8388608. in
 		let c = b -. 8388608. in
-		if  (c < a) then
+		if  (a < c) then
 			floor_pos_ker c
 		else
 			c in
@@ -158,9 +158,7 @@ let rec floor a =
 		else
 			floor_pos_small a in
 	let rec floor_neg_ker a =
-		let b = a +. 8388608. in
-		let c = b +. 1. in
-		c -. 8388608. in
+		a +. 1. in
 	let rec floor_neg_small a =
 		let b = a +. 8388608. in
 		let c = b -. 8388608. in
@@ -170,13 +168,14 @@ let rec floor a =
 			-. c in
 	let rec floor_neg a =
 		if (a > 8388608.) then
-			-. a
+			-. (floor_neg_ker a)
 		else
 			floor_neg_small a in
 	if (a > 0.) then
 		floor_pos abs
 	else
 		floor_neg abs in
+
 (*三角関数*)
 (*円周率定義*)
 let pi = 3.1415926535897932384 in
@@ -260,4 +259,3 @@ let rec atan a =
 			addflag (pi *. 0.25 -. (atan_kernel ((1.0 -. abs) /. (abs +. 1.0)))) flag
 		else
 addflag (pi *. 0.5 -. (atan_kernel (1.0 /. abs))) flag in
-*)
