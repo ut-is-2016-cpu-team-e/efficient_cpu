@@ -1,96 +1,72 @@
-(*****************************************************************
- miniMLRuntime.mlにある関数を片っ端から作成したので不必要なものは
- 適宜コメントアウトして使用してください
- *****************************************************************)
-
-(*float(1)*)
-let rec fequal a b =
-	a = b in
-
-let rec fless a b =
-	a < b in
-
-
-
-(*int*)
-let rec equal a b =
-	a = b in
-
-let rec notequal a b =
-	a <> b in
-
-let rec lessthan a b =
-	a < b in
-
-let rec greaterthan a b =
-	b > a in
-
-let rec lessequal a b =
-	a <= b in
-
-let rec greaterequal a b =
-	b <= a in
-
-let rec addint a b =
-	a + b in
-
-let rec subint a b =
-	a - b in
-
-
-
-(*logic*)
-let rec xor a b =
-	if(a) then
-		(not b)
-	else
-		b in
-
-
-
-(*float(2)*)
-let rec addfloat a b =
-	a +. b in
-
-let rec subfloat a b =
-	a -. b in
-
-let rec mulfloat a b =
-	a *. b in
-
-let rec divfloat a b =
-	a /. b in
+let rec fneg x = -.x in
 
 let rec fhalf x = x *. 0.5 in
 let rec fsqr x = x *. x in
 
-(*絶対値を求める*)
-let rec fabs a =
-	if (a >= 0.0) then
-		a
-	else
-		(-. a) in
-	
-(*aの符号が正なら1,負なら-1を返す*)
 let rec fflag a =
 	if (a >= 0.0) then 1
 	else -1 in
 
-let rec fneg a =
-	(-. a) in
+let rec countn a b c =
+	if (a < b) then
+		c
+	else
+		countn (a-b) b (c+1) in
 
-let rec sqrt a =
-	let rec newton x =
-		let y = (x +. a /. x) *. 0.5 in
-		if (fabs (x -. y) < 0.0000000001) then
-			y
-		else
-			newton y in
-	newton 1.0 in
+let rec mymul a b sum =
+	if a = 0 then sum
+	else mymul (a-1) b (sum+b) in
 
+let rec print_int a =
+	let b =
+		if a < 0 then
+			(print_char 45;
+			-a)
+		else a in
+	let x = countn b 10000 0 in
+	let b = b - (mymul x 10000 0) in
+	let flag =
+		if x > 0 then
+			(print_char (48 + x);
+				1)
+		else 0 in
+	let x = countn b 1000 0 in
+	let b = b - (mymul x 1000 0) in
+	let flag =
+		if x > 0 then
+			(print_char (48 + x);
+			1)
+		else if flag = 1 then
+			(print_char 48;
+			1)
+		else 0 in
+	let x = countn b 100 0 in
+	let b = b - (mymul x 100 0) in
+	let flag =
+		if x > 0 then
+			(print_char (48 + x);
+			1)
+		else if flag = 1 then
+			(print_char 48;
+			1)
+		else 0 in
+	let x = countn b 10 0 in
+	let b = b - (mymul x 10 0) in
+	let flag =
+		if x > 0 then
+			(print_char (48 + x);
+			1)
+		else if flag = 1 then
+			(print_char 48;
+			1)
+		else 0 in
+	print_char (48 + b)
+	in
+
+
+
+(* float -> int *)
 let rec int_of_float a =
-	let abs = fabs a in
-	let flag = fflag a in
 	let rec ftoi_ret a =
 		let rec div2like a =
 			let rec div2like_sub a b =
@@ -100,104 +76,136 @@ let rec int_of_float a =
 					div2like_sub (a -. 2.0) (b +. 1.0) in
 			div2like_sub a 0.0 in
 		let rec ftoi_ret_sub a b c =
-			let a_sub = div2like a in
 			if (a < 1.0) then
 				b
 			else
-				if ((a -. a_sub *. 2.0) < 1.0) then
-					ftoi_ret_sub a_sub b (c + c)
+				if ((a -. (div2like a) *. 2.0) < 1.0) then
+					ftoi_ret_sub (div2like a) b (c + c)
 				else
-					ftoi_ret_sub a_sub (b + c) (c + c) in
+					ftoi_ret_sub (div2like a) (b + c) (c + c) in
 			ftoi_ret_sub a 0 1 in
 		let rec ftoi_big a b =
-			let a_sub = a -. 8388608.0 in
-			let b_sub = b + 8388608 in
-			if (a_sub < 8388608.0) then
-				b_sub + (ftoi_ret a_sub)
+			if ((a -. 8388608.0) < 8388608.0) then
+				(b + 8388608) + (ftoi_ret (a -. 8388608.0))
 			else
-				ftoi_big a_sub b_sub in
-	if (flag = 1) then
-		if (abs > 8388608.0) then
-			ftoi_big abs 0
+				ftoi_big (a -. 8388608.0) (b + 8388608) in
+	if ((fflag a) = 1) then
+		if ((fabs a) > 8388608.0) then
+			ftoi_big (fabs a) 0
 		else
-			ftoi_ret abs
+			ftoi_ret (fabs a)
 	else
-		if (abs > 8388608.0) then
-			- (ftoi_big abs 0)
+		if ((fabs a) > 8388608.0) then
+			- (ftoi_big (fabs a) 0)
 		else
-			- (ftoi_ret abs) in
+			- (ftoi_ret (fabs a)) in
 
+(* int -> float *)
 let rec float_of_int a =
-	let abs = 
-		if (a > 0) then
-			a
-		else
-			- a in
-	let flag = 
-		if (a > 0) then
-			1
-		else
-			-1 in
+	let rec abs a = if (a > 0) then a else (-a) in
+	let rec flag a = if (a > 0) then 1 else 0 in
 	let rec itof_ret a =
 		let rec itof_ret_sub a b c =
-			let a_sub = a/2 in
 			if (a = 0) then
 				b
 			else
-				if ((a - a_sub - a_sub ) > 0) then
-					itof_ret_sub a_sub (b +. c) (c *. 2.0)
+				if ((a - (a / 2 + a / 2)) > 0) then
+					itof_ret_sub (a / 2) (b +. c) (c *. 2.0)
 				else
-					itof_ret_sub a_sub b (c *. 2.0) in
+					itof_ret_sub (a / 2) b (c *. 2.0) in
 		itof_ret_sub a 0.0 1.0 in
 	let rec itof_big a b =
-		let a_sub = a - 8388608 in
-		let b_sub = b +. 8388608.0 in
-		if (a_sub < 8388608) then
-			b_sub +. (itof_ret a_sub)
+		if ((a - 8388608) < 8388608) then
+			(b +. 8388608.0) +. (itof_ret (a - 8388608))
 		else
-			itof_big a_sub b_sub in
-	if (flag = 1) then
-		if (abs > 8388608) then
-			itof_big abs 0.0
+			itof_big (a - 8388608) (b +. 8388608.0) in
+	if ((flag a) = 1) then
+		if ((abs a) > 8388608) then
+			itof_big (abs a) 0.0
 		else
-			itof_ret abs
+			itof_ret (abs a)
+	else if ((abs a) > 8388608) then
+		-. (itof_big (abs a) 0.0)
 	else
-		if (abs > 8388608) then
-			-. (itof_big abs 0.0)
-		else
-			-. (itof_ret abs) in
+		-. (itof_ret (abs a)) in
 
+(* floor *)
 let rec floor a =
-	let abs = fabs a in
-	let flag = fflag a in
-	let c = float_of_int (int_of_float (a /. 32767.)) in
-	let kernel = abs -. 32767. *. c in
-	let ans_abs = c *. 32767. +. (float_of_int (int_of_float kernel)) in
-	if (flag = 1) then
-		ans_abs
+	let rec floor_pos_ker a =
+		a -. 1. in
+	let rec floor_pos_small a =
+		if  (a < ((a +. 8388608.) -. 8388608.)) then
+			floor_pos_ker ((a +. 8388608.) -. 8388608.)
+		else
+			((a +. 8388608.) -. 8388608.) in
+	let rec floor_pos a =
+		if (a > 8388608.) then
+			floor_pos_ker a
+		else
+			floor_pos_small a in
+	let rec floor_neg_ker a =
+		a +. 1. in
+	let rec floor_neg_small a =
+		if (((a +. 8388608.) -. 8388608.) < a) then
+			-. (floor_neg_ker ((a +. 8388608.) -. 8388608.))
+		else
+			-. ((a +. 8388608.) -. 8388608.) in
+	let rec floor_neg a =
+		if (a > 8388608.) then
+			-. (floor_neg_ker a)
+		else
+			floor_neg_small a in
+	if (a > 0.) then
+		floor_pos (fabs a)
 	else
-		-. ans_abs in
+		floor_neg (fabs a) in
+
+(*sqrt*)
+let rec sqrt a =
+	let rec count2 a n =
+		if (a >= 2.) then
+			count2 (a *. 0.5) (n + 1)
+		else if (a < 1.) then
+			count2 (a *. 2.) (n - 1)
+		else
+			n in
+	let rec pow2 n x =
+		if (n > 0) then
+			pow2 (n - 1) (x *. 2.0)
+		else if (n < 0) then
+			pow2 (n + 1) (x *. 0.5)
+		else
+			x in
+	let rec newton x k =
+		if ((fabs (k -. x *. x)) < 0.000001 ) then
+			x
+		else
+			newton ((x +. k /. x) *. 0.5) k in
+	let n = count2 a 0 in
+	let flag = n - (n / 2) - (n / 2) in
+	let sqrt_sub = newton 1.0 (a *. (pow2 (- n) 1.0)) in
+	if (flag = 1) then
+		pow2 (n / 2) 1.0 *. sqrt_sub *. 1.41421356
+	else if (flag = (-1)) then
+		pow2 (n / 2) 1.0 *. sqrt_sub *. 0.70710678
+	else
+		pow2 (n / 2) 1.0 *. sqrt_sub in
 
 
 
 (*三角関数*)
-(*円周率定義*)
-let pi = 3.1415926535897932384 in
-let pidouble = 6.28318530718 in
-
-
 
 (*aを2πで割った余りを求める*)
-let rec reduction_pi2 a = 
-	if (a <= pidouble) then a
-	else reduction_pi2 (a -. pidouble) in
+let rec reduction_pi2 a =
+	if (a <= 6.28318531) then a
+	else reduction_pi2 (a -. 6.28318531) in
 
 (*cに符号を加える*)
 let rec addflag c flag =
 	if(flag = 1) then
 		c
 	else
-		c *. -1.0 in
+		-. c in
 
 (*sin(a) (0 <= a <= (pi / 4)) を求める*)
 let rec sin_kernel a =
@@ -214,53 +222,41 @@ let rec cos_kernel a =
 (*sin(a) を求める*)
 let rec sin a =
 	let rec sin3 a flag =
-		if(a <= (pi *. 0.25)) then
-			let tmp = sin_kernel a in
-			addflag tmp flag
+		if(a <= 0.7853981634) then
+			addflag (sin_kernel a) flag
 		else
-			let tmp = cos_kernel ((pi *. 0.5) -. a) in
-			addflag tmp flag in
+			addflag (cos_kernel (1.570796326 -. a)) flag in
 
 	let rec sin2 a flag =
-		if(a >= (pi *. 0.5)) then
-			sin3 (pi -. a) flag
+		if(a >= 1.570796326) then
+			sin3 (3.14159265 -. a) flag
 		else
 			sin3 a flag in
 
-		let abs = fabs a in
-		let flag = fflag a in
-		let r_abs = reduction_pi2 abs in
-
-		if (r_abs >= pi) then
-			sin2 (r_abs -. pi) (- flag)
+		if ((reduction_pi2 (fabs a)) >= 3.14159265) then
+			sin2 ((reduction_pi2 (fabs a)) -. 3.14159265) (- (fflag a))
 		else
-			sin2 r_abs flag in
+			sin2 (reduction_pi2 (fabs a)) (fflag a) in
 
 let rec cos a =
 	let rec cos3 a flag =
-		if(a <= (pi *. 0.25)) then
-			let tmp = cos_kernel a in
-			addflag tmp flag
+		if(a <= 0.7853981634) then
+			addflag (cos_kernel a) flag
 		else
-			let tmp = sin_kernel ((pi *. 0.5) -. a) in
-			addflag tmp flag in
+			addflag (sin_kernel (1.570796326 -. a)) flag in
 
 	let rec cos2 a flag =
-		if(a >= (pi *. 0.5)) then
-			cos3 (pi -. a) (- flag)
+		if(a >= 1.570796326) then
+			cos3 (3.14159265 -. a) (- flag)
 		else
 			cos3 a flag in
-	
-	let abs = fabs a in
-	let r_abs = reduction_pi2 abs in
-	if(r_abs >= pi) then
-		cos2 (r_abs -. pi) (-1)
+
+	if((reduction_pi2 (fabs a)) >= 3.14159265) then
+		cos2 ((reduction_pi2 (fabs a)) -. 3.14159265) (-1)
 	else
-		cos2 r_abs 1 in
+		cos2 (reduction_pi2 (fabs a)) 1 in
 
 let rec atan a =
-	let abs = fabs a in
-	let flag = fflag a in
 	let rec atan_kernel a =
 		let a1 = 0.060035485 *. a *. a -. 0.08976446 in
 		let a2 = 0.111111104 +. a1 *. a *. a in
@@ -268,11 +264,11 @@ let rec atan a =
 		let a4 = a3 *. a *. a +. 0.2 in
 		let a5 = a4 *. a *. a -. 0.3333333 in
 		a*. (1.0 +. a5 *. a *. a) in
-		if (abs < 0.4375) then
-			addflag (atan_kernel abs) flag
-		else if (abs < 1.0) then
-			addflag (pi *. 0.25 -. (atan_kernel ((1.0 -. abs) /. (abs +. 1.0)))) flag
-		else if (abs < 2.4375) then
-			addflag (pi *. 0.25 -. (atan_kernel ((1.0 -. abs) /. (abs +. 1.0)))) flag
+		if ((fabs a) < 0.4375) then
+			addflag (atan_kernel (fabs a)) (fflag a)
+		else if ((fabs a) < 1.0) then
+			addflag (0.7853981634 -. (atan_kernel ((1.0 -. (fabs a)) /. ((fabs a) +. 1.0)))) (fflag a)
+		else if ((fabs a) < 2.4375) then
+			addflag (0.7853981634 -. (atan_kernel ((1.0 -. (fabs a)) /. ((fabs a) +. 1.0)))) (fflag a)
 		else
-			addflag (pi *. 0.5 -. (atan_kernel (1.0 /. abs))) flag in
+			addflag (1.570796326 -. (atan_kernel (1.0 /. (fabs a)))) (fflag a) in
