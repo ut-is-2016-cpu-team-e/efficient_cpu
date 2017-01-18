@@ -26,6 +26,8 @@ and exp = (* 一つ一つの命令に対応する式 *)
   | FSub of Id.t * Id.t
   | FMul of Id.t * Id.t
   | FDiv of Id.t * Id.t
+  | FMAdd of Id.t * Id.t * Id.t
+  | FMSub of Id.t * Id.t * Id.t
   | FReciprocal of Id.t
   | Xor of Id.t * Id.t
   | FAbs of Id.t
@@ -37,11 +39,12 @@ and exp = (* 一つ一つの命令に対応する式 *)
   | Stfd of Id.t * Id.t * id_or_imm
   | Comment of string
   (* virtual instructions *)
-  | IfEq of Id.t * Id.t * t * t
+  | IfEq of Id.t * id_or_imm * t * t
   | IfLE of Id.t * Id.t * t * t
   | IfGE of Id.t * Id.t * t * t
   | IfFEq of Id.t * Id.t * t * t
   | IfFLE of Id.t * Id.t * t * t
+  | IfFAbsLE of Id.t * Id.t * t * t
   (* closure address, integer arguments, and float arguments *)
   | CallCls of Id.t * Id.t * Id.t list * Id.t list
   | CallCls2 of Id.t * Id.t list * Id.t list
@@ -66,19 +69,20 @@ let regs = [| "$a0"; "$a1"; "$a2"; "$a3"; "$a4"; "a5"; "$a6"; "$a7"; "$a8"; "$a9
   "$a19"; "$a20"; "$a21"; "$a22"; "$a23"; "$a24"; "$a25"; "$a26" |]
 (* let regs = Array.init 27 (fun i -> Printf.sprintf "_R_%d" i) *)
 let fregs = Array.init 31 (fun i -> Printf.sprintf "$f%d" i)
-let allregs = Array.to_list regs
-let allfregs = Array.to_list fregs
-let reg_cl = regs.(Array.length regs - 1) (* closure address *)
-let reg_sw = regs.(Array.length regs - 2) (* temporary for swap *)
-let reg_next = regs.(Array.length regs - 3)
-let reg_fsw = fregs.(Array.length fregs - 1) (* temporary for swap *)
 
-(*MIPSレジスタ*)
+let dummyreg = "$dummy"
 let reg_re = "$v0" (*28番*)
 let reg_hp = "$fp" (*29番*)
 let reg_sp = "$sp" (*30番*)
 let reg_tmp = "$ra" (*31番*)
 let freg_re = "$fv"
+
+let allregs = reg_re::(Array.to_list regs)
+let allfregs = freg_re::(Array.to_list fregs)
+let reg_cl = regs.(Array.length regs - 1) (* closure address *)
+let reg_sw = regs.(Array.length regs - 2) (* temporary for swap *)
+let reg_next = regs.(Array.length regs - 3)
+let reg_fsw = fregs.(Array.length fregs - 1) (* temporary for swap *)
 
 
 (* is_reg : Id.t -> bool *)
@@ -102,8 +106,10 @@ let rec fv_exp = function
   | Printchar(x') -> fv_id_or_imm x'
   | FAdd (x, y) | FSub (x, y) | FMul (x, y) | FDiv (x, y) | Xor(x, y) ->
       [x; y]
+  | FMAdd(x, y, z) | FMSub(x, y, z) -> [x; y; z]
   | Stw (x, y, z') | Stfd (x, y, z') -> x :: y :: fv_id_or_imm z'
-  | IfEq (x, y, e1, e2) | IfLE (x, y, e1, e2) | IfGE (x, y, e1, e2) ->
+  | IfEq (x, y', e1, e2) -> x :: (fv_id_or_imm y') @ remove_and_uniq S.empty (fv e1 @ fv e2)
+  | IfLE (x, y, e1, e2) | IfFAbsLE(x, y, e1, e2) | IfGE (x, y, e1, e2) ->
       x :: y :: remove_and_uniq S.empty (fv e1 @ fv e2)
   | IfFEq (x, y, e1, e2) | IfFLE (x, y, e1, e2) ->
       x :: y :: remove_and_uniq S.empty (fv e1 @ fv e2)
@@ -125,4 +131,5 @@ let rec concat e1 xt e2 = match e1 with
   | Let (yt, exp, e1') -> Let (yt, exp, concat e1' xt e2)
 
 (* align : int -> int *)
-let align i = if i mod 8 = 0 then i else i + 4
+(*let align i = if i mod 8 = 0 then i else i + 4*)
+let align i = if i mod 2 = 0 then i else i + 1

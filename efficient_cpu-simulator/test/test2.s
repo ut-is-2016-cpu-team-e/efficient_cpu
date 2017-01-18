@@ -1,20 +1,47 @@
-# <test>neg, sla, sra, fneg, flw, fsw
-start:
-        li      $a0,    24
-        neg     $a1,    $a0 # $a1 = -24
-        sla     $a0,    $a0,    1 # $a0 = 48
-        sra     $a1,    $a1,    2 # $a1 = -6
-        sla     $a1,    $a1,    4 # $a1 = -96
-        j       next2
-next1:
-        nop
-next2:
-        li      $a2,    16486
-        sll     $a2,    $a2,    16  
-        ori     $a3,    $a2,    26214
-        li      $a4,    4
-        mtc1    $f0,    $a3 # $f0 = 3.6
-        fsw     $f0,    6($a4)
-        flw     $f1,    6($a4)
-        fneg    $f2,    $f1
-        hlt
+# <test>mul, bltfabs, flihi, flilo, bni, sl2add, fmadd
+Label0:
+      li  $a1  12
+      li  $a2  60
+      mul $a3  $a1  $a2 # mul  ($a3 <-- 12 * 60)
+      li  $a5  -10
+
+      li  $a9 16486 # 3.600000
+      mtc1 $fv $a9
+      mfc1 $a10 $fv
+      sll	$a10 $a10 16
+      ori	$a10 $a10 26214
+      mtc1 $f0 $a10
+
+      li	$a8 16384 # 2.000000
+      mtc1 $fv $a8
+      mfc1 $a11 $fv
+      sll	$a11 $a11 16
+      ori	$a11 $a11 0
+      mtc1 $f1 $a11
+
+      bltfabs  $f1  $f0  bfLabel # bltfabs  (2.0 < 3.6 ?)
+      nop
+      nop
+
+Label1:
+      flihi  $f2  1000  # flihi
+      flilo  $f2  1000  # flilo
+
+      bni  $a5  -10  Label2 # bni  ($a5 != -10 ?)
+      nop
+      bni  $a5  10  Label2
+      nop
+
+Label2:
+      sl2add  $a4  $a1  $a2 # sl2add  ($a4 <-- (12 << 2) + 60) 
+      fmadd  $f4  $f0  $f1  $f0 # fmadd  ($f4 <-- 3.6 * 2.0 + 3.6)
+      nop
+      j  exit
+
+bfLabel:
+      nop
+      bltfabs  $f0  $f1  bfLabel # (3.6 < 2.0 ?)
+      j  Label1
+      
+exit:
+      hlt

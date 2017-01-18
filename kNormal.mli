@@ -14,6 +14,8 @@ type t =
   | FSub of Id.t * Id.t
   | FMul of Id.t * Id.t
   | FDiv of Id.t * Id.t
+  | FMAdd of Id.t * Id.t * Id.t
+  | FMSub of Id.t * Id.t * Id.t
   | FReciprocal of Id.t
   | Xor of Id.t * Id.t
   | FAbs of Id.t
@@ -23,6 +25,7 @@ type t =
   | Readfloat
   | IfEq of Id.t * Id.t * t * t
   | IfLE of Id.t * Id.t * t * t
+  | IfFAbsLE of Id.t * Id.t * t * t
   | Let of (Id.t * Type.t) * t * t
   | Var of Id.t
   | LetRec of fundef * t

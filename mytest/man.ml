@@ -72,4 +72,4 @@ let rec yloop y =
 in
 write_header ();
 yloop 0;
-print_int(0)
+()

@@ -15,6 +15,8 @@ type t = (* クロージャ変換後の式 (caml2html: closure_t) *)
   | FSub of Id.t * Id.t
   | FMul of Id.t * Id.t
   | FDiv of Id.t * Id.t
+  | FMAdd of Id.t * Id.t * Id.t
+  | FMSub of Id.t * Id.t * Id.t
   | FReciprocal of Id.t
   | Xor of Id.t * Id.t
   | FAbs of Id.t
@@ -24,6 +26,7 @@ type t = (* クロージャ変換後の式 (caml2html: closure_t) *)
   | Readfloat
   | IfEq of Id.t * Id.t * t * t
   | IfLE of Id.t * Id.t * t * t
+  | IfFAbsLE of Id.t * Id.t * t * t
   | Let of (Id.t * Type.t) * t * t
   | Var of Id.t
   | MakeCls of (Id.t * Type.t) * closure * t
@@ -46,7 +49,8 @@ let rec fv = function
   | Unit | Int(_) | Float(_) | ExtArray(_) | ExtTuple(_) | Readint | Readfloat -> S.empty
   | Neg(x) | ShiftR1(x) | ShiftL2(x) | FNeg(x) | FReciprocal(x) | FAbs(x) | Sqrt(x) | Printchar(x) -> S.singleton x
   | Add(x, y) | Sub(x, y) | Mul(x, y) | Div(x, y) | FAdd(x, y) | FSub(x, y) | FMul(x, y) | FDiv(x, y) | Get(x, y) | Xor(x, y) -> S.of_list [x; y]
-  | IfEq(x, y, e1, e2)| IfLE(x, y, e1, e2) -> S.add x (S.add y (S.union (fv e1) (fv e2)))
+  | FMAdd(x, y, z) | FMSub(x, y, z) -> S.of_list [x; y; z]
+  | IfEq(x, y, e1, e2) | IfLE(x, y, e1, e2) | IfFAbsLE(x, y, e1, e2) -> S.add x (S.add y (S.union (fv e1) (fv e2)))
   | Let((x, t), e1, e2) -> S.union (fv e1) (S.remove x (fv e2))
   | Var(x) -> S.singleton x
   | MakeCls((x, t), { entry = l; actual_fv = ys }, e) -> S.remove x (S.union (S.of_list ys) (fv e))
@@ -74,6 +78,8 @@ let rec g env known = function (* クロージャ変換ルーチン本体 (caml2
   | KNormal.FSub(x, y) -> FSub(x, y)
   | KNormal.FMul(x, y) -> FMul(x, y)
   | KNormal.FDiv(x, y) -> FDiv(x, y)
+  | KNormal.FMAdd(x, y, z) -> FMAdd(x, y, z)
+  | KNormal.FMSub(x, y, z) -> FMSub(x, y, z)
   | KNormal.FReciprocal(x) -> FReciprocal(x)
   | KNormal.Xor(x, y) -> Xor(x, y)
   | KNormal.FAbs(x) -> FAbs(x)
@@ -83,6 +89,7 @@ let rec g env known = function (* クロージャ変換ルーチン本体 (caml2
   | KNormal.Readfloat -> Readfloat
   | KNormal.IfEq(x, y, e1, e2) -> IfEq(x, y, g env known e1, g env known e2)
   | KNormal.IfLE(x, y, e1, e2) -> IfLE(x, y, g env known e1, g env known e2)
+  | KNormal.IfFAbsLE(x, y, e1, e2) -> IfFAbsLE(x, y, g env known e1, g env known e2)
   | KNormal.Let((x, t), e1, e2) -> Let((x, t), g env known e1, g (M.add x t env) known e2)
   | KNormal.Var(x) -> Var(x)
   | KNormal.LetRec({ KNormal.name = (x, t); KNormal.args = yts; KNormal.body = e1 }, e2) -> (* 関数定義の場合 (caml2html: closure_letrec) *)

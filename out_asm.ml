@@ -48,6 +48,8 @@ and out_asm_e oc e tabnum =
   | FSub(t1, t2) -> Printf.fprintf oc "FSub %s %s\n" t1 t2
   | FMul(t1, t2) -> Printf.fprintf oc "FMul %s %s\n" t1 t2
   | FDiv(t1, t2) -> Printf.fprintf oc "FDiv %s %s\n" t1 t2
+  | FMAdd(t1, t2, t3) -> Printf.fprintf oc "FMAdd %s %s %s\n" t1 t2 t3
+  | FMSub(t1, t2, t3) -> Printf.fprintf oc "FMSub %s %s %s\n" t1 t2 t3
   | FReciprocal(t1) -> Printf.fprintf oc "FReciprocal %s\n" t1
   | Xor(t1, t2) -> Printf.fprintf oc "xor %s %s\n" t1 t2
   | FAbs(t1) -> Printf.fprintf oc "fabs %s\n" t1
@@ -61,11 +63,13 @@ and out_asm_e oc e tabnum =
   | Stfd(t1, t2, V(t3)) -> Printf.fprintf oc "Stfd %s %s %s\n" t1 t2 t3
   | Stfd(t1, t2, C(x)) -> Printf.fprintf oc "Stfd %s %s %d\n" t1 t2 x
   | Comment(s) -> Printf.fprintf oc "Comment %s\n" s
-  | IfEq(t1, t2, e1, e2) -> Printf.fprintf oc "IfEq %s %s\n" t1 t2; out_asm_t oc e1 (tabnum+1); out_asm_t oc e2 (tabnum+1)
+  | IfEq(t1, V(t2), e1, e2) -> Printf.fprintf oc "IfEq %s %s\n" t1 t2; out_asm_t oc e1 (tabnum+1); out_asm_t oc e2 (tabnum+1)
+  | IfEq(t1, C(t2), e1, e2) -> Printf.fprintf oc "IfEq %s %d\n" t1 t2; out_asm_t oc e1 (tabnum+1); out_asm_t oc e2 (tabnum+1)
   | IfLE(t1, t2, e1, e2) -> Printf.fprintf oc "IfLE %s %s\n" t1 t2; out_asm_t oc e1 (tabnum+1); out_asm_t oc e2 (tabnum+1)
   | IfGE(t1, t2, e1, e2) -> Printf.fprintf oc "IfGE %s %s\n" t1 t2; out_asm_t oc e1 (tabnum+1); out_asm_t oc e2 (tabnum+1)
   | IfFEq(t1, t2, e1, e2) -> Printf.fprintf oc "IfFEq %s %s\n" t1 t2; out_asm_t oc e1 (tabnum+1); out_asm_t oc e2 (tabnum+1)
   | IfFLE(t1, t2, e1, e2) -> Printf.fprintf oc "IfFLE %s %s\n" t1 t2; out_asm_t oc e1 (tabnum+1); out_asm_t oc e2 (tabnum+1)
+  | IfFAbsLE(t1, t2, e1, e2) -> Printf.fprintf oc "IfFAbsLE %s %s\n" t1 t2; out_asm_t oc e1 (tabnum+1); out_asm_t oc e2 (tabnum+1)
   | CallCls(t1, t1name, t2list, t3list) -> Printf.fprintf oc "CallCls %s (%s) d:" t1 t1name; out_tlist t2list; Printf.fprintf oc "f:"; out_tlist t3list; Printf.fprintf oc "\n"
   | CallCls2(t1, t2list, t3list) -> Printf.fprintf oc "CallCls2 %s d: " t1;
     out_tlist t2list; Printf.fprintf oc "f:"; out_tlist t3list; Printf.fprintf oc "\n"

@@ -23,8 +23,8 @@ let expand xts ini addf addi =
     xts
     ini
     (fun (offset, acc) x -> let offset = align offset in
-       (offset + 4, addf x offset acc))
-    (fun (offset, acc) x t -> (offset + 4, addi x t offset acc))
+       (offset + 1(*4*), addf x offset acc))
+    (fun (offset, acc) x t -> (offset + 1(*4*), addi x t offset acc))
 
 let rec g env = function (* 式の仮想マシンコード生成 *)
   | Closure.Unit -> Ans (Nop)
@@ -51,6 +51,8 @@ let rec g env = function (* 式の仮想マシンコード生成 *)
   | Closure.FSub (x, y) -> Ans (FSub (x, y))
   | Closure.FMul (x, y) -> Ans (FMul (x, y))
   | Closure.FDiv (x, y) -> Ans (FDiv (x, y))
+  | Closure.FMAdd (x, y, z) -> Ans (FMAdd(x, y, z))
+  | Closure.FMSub (x, y, z) -> Ans (FMSub(x, y, z))
   | Closure.FReciprocal(x) -> Ans(FReciprocal (x))
   | Closure.Xor(x, y) -> Ans(Xor(x, y))
   | Closure.FAbs(x) -> Ans(FAbs(x))
@@ -60,7 +62,7 @@ let rec g env = function (* 式の仮想マシンコード生成 *)
   | Closure.Readfloat -> Ans(Readfloat)
   | Closure.IfEq (x, y, e1, e2) ->
       (match M.find x env with
-	 | Type.Bool | Type.Int -> Ans (IfEq (x, y, g env e1, g env e2))
+	 | Type.Bool | Type.Int -> Ans (IfEq (x, V(y), g env e1, g env e2))
 	 | Type.Float -> Ans (IfFEq (x, y, g env e1, g env e2))
 	 | _ -> failwith "equality supported only for bool, int, and float")
   | Closure.IfLE (x, y, e1, e2) ->
@@ -68,6 +70,10 @@ let rec g env = function (* 式の仮想マシンコード生成 *)
 	 | Type.Bool | Type.Int -> Ans (IfLE (x, y, g env e1, g env e2))
 	 | Type.Float -> Ans (IfFLE (x, y, g env e1, g env e2))
 	 | _ -> failwith "inequality supported only for bool, int, and float")
+  | Closure.IfFAbsLE (x, y, e1, e2) ->
+      (match M.find x env with
+	 | Type.Float -> Ans (IfFAbsLE (x, y, g env e1, g env e2))
+	 | _ -> failwith "iffabslt supported only for float")
   | Closure.Let ((x, t1), e1, e2) ->
       let e1' = g env e1 in
       let e2' = g (M.add x t1 env) e2 in
@@ -83,7 +89,7 @@ let rec g env = function (* 式の仮想マシンコード生成 *)
       let (offset, store_fv) =
 	expand
 	  (List.map (fun y -> (y, M.find y env)) ys)
-	  (4, e2')                                      (*初期値を4から0に変更(10月16日)*)
+	  (1(*4*), e2')                                      (*初期値を4から0に変更(10月16日)*)
 	  (fun y offset store_fv -> seq (Stfd (y, x, C (offset)), store_fv))
 	  (fun y _ offset store_fv -> seq (Stw (y, x, C (offset)), store_fv)) in
 	Let ((x, t), Mr (reg_hp),
@@ -128,22 +134,26 @@ let rec g env = function (* 式の仮想マシンコード生成 *)
 	(match M.find x env with
 	   | Type.Array (Type.Unit) -> Ans (Nop)
 	   | Type.Array (Type.Float) ->
-	       Let ((offset, Type.Int), Slw (y, C (2)),
-		    Ans (Lfd (x, V (offset))))
+	       (*Let ((offset, Type.Int), Slw (y, C (0)),
+		    Ans (Lfd (x, V (offset))))*)
+        Ans (Lfd (x, V (y)))
 	   | Type.Array (_) ->
-	       Let ((offset, Type.Int), Slw (y, C (2)),
-		    Ans (Lwz (x, V (offset))))
+	      (*Let ((offset, Type.Int), Slw (y, C (0)),
+		    Ans (Lwz (x, V (offset)))) *)
+        Ans (Lwz (x, V (y)))
 	   | _ -> assert false)
   | Closure.Put (x, y, z) ->
       let offset = Id.genid "o" in
 	(match M.find x env with
 	   | Type.Array (Type.Unit) -> Ans (Nop)
 	   | Type.Array (Type.Float) ->
-	       Let ((offset, Type.Int), Slw (y, C (2)),
-		    Ans (Stfd (z, x, V (offset))))
+	      (*Let ((offset, Type.Int), Slw (y, C (0)),
+		    Ans (Stfd (z, x, V (offset)))) *)
+        Ans (Stfd (z, x, V (y)))
 	   | Type.Array (_) ->
-	       Let ((offset, Type.Int), Slw (y, C (2)),
-		    Ans (Stw (z, x, V (offset))))
+	       (*Let ((offset, Type.Int), Slw (y, C (0)),
+		    Ans (Stw (z, x, V (offset)))) *)
+        Ans (Stw (z, x, V (y)))
 	   | _ -> assert false)
   | Closure.ExtArray (x) -> Ans(SetExt(x))
   | Closure.ExtTuple (x) -> Ans(SetExt(x))
@@ -155,7 +165,7 @@ let h { Closure.name = (Id.L(x), t); Closure.args = yts;
   let (offset, load) =
     expand
       zts
-      (4, g (M.add x t (M.add_list yts (M.add_list zts M.empty))) e) (*4から0に変更(10/16)*)
+      (1(*4*), g (M.add x t (M.add_list yts (M.add_list zts M.empty))) e) (*4から0に変更(10/16)*)
       (fun z offset load -> fletd (z, Lfd (reg_cl, C (offset)), load))
       (fun z t offset load -> Let ((z, t), Lwz (reg_cl, C (offset)), load)) in
     match t with

@@ -24,6 +24,8 @@ and exp =
   | FSub of Id.t * Id.t
   | FMul of Id.t * Id.t
   | FDiv of Id.t * Id.t
+  | FMAdd of Id.t * Id.t * Id.t
+  | FMSub of Id.t * Id.t * Id.t
   | FReciprocal of Id.t
   | Xor of Id.t * Id.t
   | FAbs of Id.t
@@ -35,11 +37,12 @@ and exp =
   | Stfd of Id.t * Id.t * id_or_imm
   | Comment of string
   (* virtual instructions *)
-  | IfEq of Id.t * Id.t * t * t
+  | IfEq of Id.t * id_or_imm * t * t
   | IfLE of Id.t * Id.t * t * t
   | IfGE of Id.t * Id.t * t * t (* for simm *)
   | IfFEq of Id.t * Id.t * t * t
   | IfFLE of Id.t * Id.t * t * t
+  | IfFAbsLE of Id.t * Id.t * t * t
   (* closure address, integer arguments, and float arguments *)
   | CallCls of Id.t * Id.t * Id.t list * Id.t list
   | CallCls2 of Id.t * Id.t list * Id.t list
@@ -67,6 +70,7 @@ val reg_next : Id.t
 val reg_tmp : Id.t
 val reg_re : Id.t
 val freg_re : Id.t
+val dummyreg : Id.t
 val is_reg : Id.t -> bool
 
 

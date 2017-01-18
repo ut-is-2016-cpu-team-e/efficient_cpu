@@ -7,15 +7,15 @@ let rec fflag a =
 	if (a >= 0.0) then 1
 	else -1 in
 
+let rec fflag2 a =
+	if a >= 0.0 then 1.0
+	else -.1.0 in
+
 let rec countn a b c =
 	if (a < b) then
 		c
 	else
 		countn (a-b) b (c+1) in
-
-let rec mymul a b sum =
-	if a = 0 then sum
-	else mymul (a-1) b (sum+b) in
 
 let rec print_int a =
 	let b =
@@ -24,14 +24,14 @@ let rec print_int a =
 			-a)
 		else a in
 	let x = countn b 10000 0 in
-	let b = b - (mymul x 10000 0) in
+	let b = b - x * 10000 in
 	let flag =
 		if x > 0 then
 			(print_char (48 + x);
 				1)
 		else 0 in
 	let x = countn b 1000 0 in
-	let b = b - (mymul x 1000 0) in
+	let b = b - x * 1000 in
 	let flag =
 		if x > 0 then
 			(print_char (48 + x);
@@ -41,7 +41,7 @@ let rec print_int a =
 			1)
 		else 0 in
 	let x = countn b 100 0 in
-	let b = b - (mymul x 100 0) in
+	let b = b - x * 100 in
 	let flag =
 		if x > 0 then
 			(print_char (48 + x);
@@ -51,7 +51,7 @@ let rec print_int a =
 			1)
 		else 0 in
 	let x = countn b 10 0 in
-	let b = b - (mymul x 10 0) in
+	let b = b - x * 10 in
 	let flag =
 		if x > 0 then
 			(print_char (48 + x);
@@ -80,7 +80,7 @@ let rec int_of_float a =
 			if (a < 1.0) then
 				b
 			else
-				if ((a -. a_sub *. 2.0) < 1.0) then
+				if ((a -. a_sub -. a_sub) < 1.0) then
 					ftoi_ret_sub a_sub b (c + c)
 				else
 					ftoi_ret_sub a_sub (b + c) (c + c) in
@@ -177,19 +177,19 @@ let rec floor a =
 		floor_neg abs in
 
 (*三角関数*)
-(*円周率定義*)
-let pi = 3.1415926535897932384 in
-let pidouble = 6.28318530718 in
+
 (*aを2πで割った余りを求める*)
 let rec reduction_pi2 a =
+	let pidouble = 6.28318530718 in
 	if (a <= pidouble) then a
 	else reduction_pi2 (a -. pidouble) in
 (*cに符号を加える*)
 let rec addflag c flag =
-	if(flag = 1) then
+	c *. flag in
+	(*if(flag = 1) then
 		c
 	else
-		c *. -1.0 in
+		c *. -1.0 in *)
 (*sin(a) (0 <= a <= (pi / 4)) を求める*)
 let rec sin_kernel a =
 	let a3 = a *. a *. a in
@@ -203,7 +203,9 @@ let rec cos_kernel a =
 	1.0 -. (0.5 *. a2) +. (0.04166368 *. a4) -. (0.0013695068 *. a6) in
 (*sin(a) を求める*)
 let rec sin a =
+	let pi = 3.1415926535897932384 in
 	let rec sin3 a flag =
+		let pi = 3.1415926535897932384 in
 		if(a <= (pi *. 0.25)) then
 			let tmp = sin_kernel a in
 			addflag tmp flag
@@ -211,19 +213,22 @@ let rec sin a =
 			let tmp = cos_kernel ((pi *. 0.5) -. a) in
 			addflag tmp flag in
 	let rec sin2 a flag =
+		let pi = 3.1415926535897932384 in
 		if(a >= (pi *. 0.5)) then
 			sin3 (pi -. a) flag
 		else
 			sin3 a flag in
 		let abs = fabs a in
-		let flag = fflag a in
+		let flag = fflag2 a in
 		let r_abs = reduction_pi2 abs in
 		if (r_abs >= pi) then
-			sin2 (r_abs -. pi) (- flag)
+			sin2 (r_abs -. pi) (-. flag)
 		else
 			sin2 r_abs flag in
 let rec cos a =
+	let pi = 3.1415926535897932384 in
 	let rec cos3 a flag =
+		let pi = 3.1415926535897932384 in
 		if(a <= (pi *. 0.25)) then
 			let tmp = cos_kernel a in
 			addflag tmp flag
@@ -231,26 +236,29 @@ let rec cos a =
 			let tmp = sin_kernel ((pi *. 0.5) -. a) in
 			addflag tmp flag in
 	let rec cos2 a flag =
+		let pi = 3.1415926535897932384 in
 		if(a >= (pi *. 0.5)) then
-			cos3 (pi -. a) (- flag)
+			cos3 (pi -. a) (-. flag)
 		else
 			cos3 a flag in
 	let abs = fabs a in
 	let r_abs = reduction_pi2 abs in
 	if(r_abs >= pi) then
-		cos2 (r_abs -. pi) (-1)
+		cos2 (r_abs -. pi) (-.1.0)
 	else
-		cos2 r_abs 1 in
+		cos2 r_abs 1.0 in
 let rec atan a =
+	let pi = 3.1415926535897932384 in
 	let abs = fabs a in
-	let flag = fflag a in
+	let flag = fflag2 a in
 	let rec atan_kernel a =
+		let pi = 3.1415926535897932384 in
 		let a1 = 0.060035485 *. a *. a -. 0.08976446 in
 		let a2 = 0.111111104 +. a1 *. a *. a in
 		let a3 = a2 *. a *. a -. 0.142857142 in
 		let a4 = a3 *. a *. a +. 0.2 in
 		let a5 = a4 *. a *. a -. 0.3333333 in
-		a*. (1.0 +. a5 *. a *. a) in
+		a *. (1.0 +. a5 *. a *. a) in
 		if (abs < 0.4375) then
 			addflag (atan_kernel abs) flag
 		else if (abs < 1.0) then

@@ -22,6 +22,8 @@ let rec out_kNormal oc e tabnum =
   | FSub(id1, id2) -> Printf.fprintf oc "FSub %s %s\n" id1 id2
   | FMul(id1, id2) -> Printf.fprintf oc "FMul %s %s\n" id1 id2
   | FDiv(id1, id2) -> Printf.fprintf oc "FDiv %s %s\n" id1 id2
+  | FMAdd(id1, id2, id3) -> Printf.fprintf oc "FDiv %s %s %s\n" id1 id2 id3
+  | FMSub(id1, id2, id3) -> Printf.fprintf oc "FMSub %s %s %s\n" id1 id2 id3
   | FReciprocal(id1) -> Printf.fprintf oc "FReciprocal %s\n" id1
   | Xor(t1, t2) -> Printf.fprintf oc "xor %s %s\n" t1 t2
   | FAbs(t1) -> Printf.fprintf oc "fabs %s\n" t1
@@ -31,6 +33,7 @@ let rec out_kNormal oc e tabnum =
   | Readfloat -> Printf.fprintf oc "Readfloat\n";
   | IfEq(id1, id2, e1, e2) -> Printf.fprintf oc "IfEq %s %s\n" id1 id2; out_kNormal oc e1 (tabnum+1); out_kNormal oc e2 (tabnum+1)
   | IfLE(id1, id2, e1, e2) -> Printf.fprintf oc "IfLE %s %s\n" id1 id2; out_kNormal oc e1 (tabnum+1); out_kNormal oc e2 (tabnum+1)
+  | IfFAbsLE(id1, id2, e1, e2) -> Printf.fprintf oc "IfFAbsLE %s %s\n" id1 id2; out_kNormal oc e1 (tabnum+1); out_kNormal oc e2 (tabnum+1)
   | Let((id, t'), e1, e2) -> Printf.fprintf oc "Let %s\n" id; out_kNormal oc e1 (tabnum+1); out_kNormal oc e2 (tabnum+1)
   | Var(id) -> Printf.fprintf oc "Var %s\n" id
   | LetRec({ name = (x1, t1); args = yts; body = e1 }, e2) ->

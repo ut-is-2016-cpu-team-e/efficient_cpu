@@ -42,12 +42,16 @@ let rec g env = function (* 定数畳み込みルーチン本体 (caml2html: con
   | FDiv(x, y) when memf x env && memf y env -> Float(findf x env /. findf y env)
   | FDiv(x, y) when memf x env && ((Id.by_const x) = false) -> let t = Id.gentmp2 Type.Float in Let((t, Type.Float), Float(findf x env), FDiv(t, y))
   | FDiv(x, y) when memf y env && ((Id.by_const y) = false) -> let t = Id.gentmp2 Type.Float in Let((t, Type.Float), Float(findf y env), FDiv(x, t))
+  | FMAdd(x, y, z) when memf x env && memf y env && memf z env -> Float(findf x env *. findf y env +. findf z env)
+  | FMAdd(x, y, z) when memf x env && memf y env -> let t = Id.gentmp2 Type.Float in
+  Let((t, Type.Float), Float(findf x env *. findf y env), FAdd(t, z))
   | IfEq(x, y, e1, e2) when memi x env && memi y env -> if findi x env = findi y env then g env e1 else g env e2
   | IfEq(x, y, e1, e2) when memf x env && memf y env -> if findf x env = findf y env then g env e1 else g env e2
   | IfEq(x, y, e1, e2) -> IfEq(x, y, g env e1, g env e2)
   | IfLE(x, y, e1, e2) when memi x env && memi y env -> if findi x env <= findi y env then g env e1 else g env e2
   | IfLE(x, y, e1, e2) when memf x env && memf y env -> if findf x env <= findf y env then g env e1 else g env e2
   | IfLE(x, y, e1, e2) -> IfLE(x, y, g env e1, g env e2)
+  | IfFAbsLE(x, y, e1, e2) -> IfFAbsLE(x, y, g env e1, g env e2)
   | Let((x, t), e1, e2) -> (* letのケース (caml2html: constfold_let) *)
       let e1' = g env e1 in
       let e2' = g (M.add x e1' env) e2 in

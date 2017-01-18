@@ -1,1133 +1,1077 @@
 LetRec fneg x 
 	FNeg x
 	LetRec fhalf x 
-		Let Td409
+		Let Td383
 			Float:0.500000
-			FMul x Td409
+			FMul x Td383
 		LetRec fsqr x 
 			FMul x x
 			LetRec fflag a 
-				Let Td407
+				Let Td381
 					Float:0.000000
-					IfLE Td407 a
+					IfLE Td381 a
 						Int:1
-						Let Ti408
+						Let Ti382
 							Int:1
-							Neg Ti408
+							Neg Ti382
 				LetRec countn a b c 
 					IfLE b a
-						Let Ti404
+						Let Ti378
 							Sub a b
-							Let Ti406
-								Let Ti405
+							Let Ti380
+								Let Ti379
 									Int:1
-									Add c Ti405
-								App countnTi404 b Ti406 
+									Add c Ti379
+								App countnTi378 b Ti380 
 						Var c
-					LetRec mymul a b sum 
-						Let Ti400
-							Int:0
-							IfEq a Ti400
-								Var sum
-								Let Ti402
-									Let Ti401
-										Int:1
-										Sub a Ti401
-									Let Ti403
-										Add sum b
-										App mymulTi402 b Ti403 
-						LetRec print_int a 
-							Let b
-								Let Ti358
-									Int:0
-									IfLE Ti358 a
-										Var a
-										Let Tu1
-											Let Ti359
-												Int:45
-												printchar Ti359
-											Neg a
-								Let x
-									Let Ti360
-										Int:10000
-										Let Ti361
-											Int:0
-											App countnb Ti360 Ti361 
-									Let b
-										Let Ti364
-											Let Ti362
-												Int:10000
-												Let Ti363
-													Int:0
-													App mymulx Ti362 Ti363 
-											Sub b Ti364
-										Let flag
-											Let Ti365
-												Int:0
-												IfLE x Ti365
-													Int:0
-													Let Tu2
-														Let Ti367
-															Let Ti366
-																Int:48
-																Add Ti366 x
-															printchar Ti367
-														Int:1
-											Let x
-												Let Ti368
-													Int:1000
-													Let Ti369
-														Int:0
-														App countnb Ti368 Ti369 
-												Let b
-													Let Ti372
-														Let Ti370
-															Int:1000
-															Let Ti371
-																Int:0
-																App mymulx Ti370 Ti371 
-														Sub b Ti372
-													Let flag
-														Let Ti373
-															Int:0
-															IfLE x Ti373
-																Let Ti374
-																	Int:1
-																	IfEq flag Ti374
-																		Let Tu4
-																			Let Ti375
-																				Int:48
-																				printchar Ti375
-																			Int:1
-																		Int:0
-																Let Tu3
-																	Let Ti377
-																		Let Ti376
-																			Int:48
-																			Add Ti376 x
-																		printchar Ti377
-																	Int:1
-														Let x
-															Let Ti378
-																Int:100
-																Let Ti379
-																	Int:0
-																	App countnb Ti378 Ti379 
-															Let b
-																Let Ti382
-																	Let Ti380
-																		Int:100
-																		Let Ti381
-																			Int:0
-																			App mymulx Ti380 Ti381 
-																	Sub b Ti382
-																Let flag
-																	Let Ti383
-																		Int:0
-																		IfLE x Ti383
-																			Let Ti384
-																				Int:1
-																				IfEq flag Ti384
-																					Let Tu6
-																						Let Ti385
-																							Int:48
-																							printchar Ti385
-																						Int:1
-																					Int:0
-																			Let Tu5
-																				Let Ti387
-																					Let Ti386
-																						Int:48
-																						Add Ti386 x
-																					printchar Ti387
-																				Int:1
-																	Let x
-																		Let Ti388
-																			Int:10
-																			Let Ti389
-																				Int:0
-																				App countnb Ti388 Ti389 
-																		Let b
-																			Let Ti392
-																				Let Ti390
-																					Int:10
-																					Let Ti391
-																						Int:0
-																						App mymulx Ti390 Ti391 
-																				Sub b Ti392
-																			Let flag
-																				Let Ti393
-																					Int:0
-																					IfLE x Ti393
-																						Let Ti394
-																							Int:1
-																							IfEq flag Ti394
-																								Let Tu8
-																									Let Ti395
-																										Int:48
-																										printchar Ti395
-																									Int:1
-																								Int:0
-																						Let Tu7
-																							Let Ti397
-																								Let Ti396
-																									Int:48
-																									Add Ti396 x
-																								printchar Ti397
-																							Int:1
-																				Let Ti399
-																					Let Ti398
-																						Int:48
-																						Add Ti398 b
-																					printchar Ti399
-							LetRec int_of_float a 
-								Let abs
-									fabs a
+					LetRec print_int a 
+						Let b
+							Let Ti340
+								Int:0
+								IfLE Ti340 a
+									Var a
+									Let Tu1
+										Let Ti341
+											Int:45
+											printchar Ti341
+										Neg a
+							Let x
+								Let Ti342
+									Int:10000
+									Let Ti343
+										Int:0
+										App countnb Ti342 Ti343 
+								Let b
+									Let Ti345
+										Let Ti344
+											Int:10000
+											Mul x Ti344
+										Sub b Ti345
 									Let flag
-										App fflaga 
-										LetRec ftoi_ret a 
-											LetRec div2like a 
-												LetRec div2like_sub a b 
-													Let Td353
-														Float:2.000000
-														IfLE Td353 a
-															Let Td355
-																Let Td354
-																	Float:2.000000
-																	FSub a Td354
-																Let Td357
-																	Let Td356
-																		Float:1.000000
-																		FAdd b Td356
-																	App div2like_subTd355 Td357 
-															Var b
-													Let Td352
-														Float:0.000000
-														App div2like_suba Td352 
-												LetRec ftoi_ret_sub a b c 
-													Let a_sub
-														App div2likea 
-														Let Td344
-															Float:1.000000
-															IfLE Td344 a
-																Let Td345
-																	Float:1.000000
-																	Let Td348
-																		Let Td347
-																			Let Td346
-																				Float:2.000000
-																				FMul a_sub Td346
-																			FSub a Td347
-																		IfLE Td345 Td348
-																			Let Ti349
-																				Add b c
-																				Let Ti350
-																					Add c c
-																					App ftoi_ret_suba_sub Ti349 Ti350 
-																			Let Ti351
-																				Add c c
-																				App ftoi_ret_suba_sub b Ti351 
-																Var b
-													Let Ti342
-														Int:0
-														Let Ti343
-															Int:1
-															App ftoi_ret_suba Ti342 Ti343 
-											LetRec ftoi_big a b 
-												Let a_sub
-													Let Td338
-														Float:8388608.000000
-														FSub a Td338
-													Let b_sub
-														Let Ti339
-															Int:8388608
-															Add b Ti339
-														Let Td340
-															Float:8388608.000000
-															IfLE Td340 a_sub
-																App ftoi_biga_sub b_sub 
-																Let Ti341
-																	App ftoi_reta_sub 
-																	Add b_sub Ti341
-												Let Ti331
-													Int:1
-													IfEq flag Ti331
-														Let Td332
-															Float:8388608.000000
-															IfLE abs Td332
-																App ftoi_retabs 
-																Let Ti333
-																	Int:0
-																	App ftoi_bigabs Ti333 
-														Let Td334
-															Float:8388608.000000
-															IfLE abs Td334
-																Let Ti335
-																	App ftoi_retabs 
-																	Neg Ti335
-																Let Ti337
-																	Let Ti336
-																		Int:0
-																		App ftoi_bigabs Ti336 
-																	Neg Ti337
-								LetRec float_of_int a 
-									Let abs
-										Let Ti306
+										Let Ti346
 											Int:0
-											IfLE a Ti306
-												Neg a
-												Var a
-										Let flag
-											Let Ti307
+											IfLE x Ti346
 												Int:0
-												IfLE a Ti307
-													Let Ti308
-														Int:1
-														Neg Ti308
+												Let Tu2
+													Let Ti348
+														Let Ti347
+															Int:48
+															Add Ti347 x
+														printchar Ti348
 													Int:1
-											LetRec itof_ret a 
-												LetRec itof_ret_sub a b c 
-													Let a_sub
-														ShiftR1 a
-														Let Ti322
-															Int:0
-															IfEq a Ti322
-																Var b
-																Let Ti324
-																	Let Ti323
-																		Sub a a_sub
-																		Sub Ti323 a_sub
-																	Let Ti325
-																		Int:0
-																		IfLE Ti324 Ti325
-																			Let Td327
-																				Let Td326
-																					Float:2.000000
-																					FMul c Td326
-																				App itof_ret_suba_sub b Td327 
-																			Let Td328
-																				FAdd b c
-																				Let Td330
-																					Let Td329
-																						Float:2.000000
-																						FMul c Td329
-																					App itof_ret_suba_sub Td328 Td330 
-													Let Td320
-														Float:0.000000
-														Let Td321
-															Float:1.000000
-															App itof_ret_suba Td320 Td321 
-												LetRec itof_big a b 
-													Let a_sub
-														Let Ti316
-															Int:8388608
-															Sub a Ti316
-														Let b_sub
-															Let Td317
-																Float:8388608.000000
-																FAdd b Td317
-															Let Ti318
-																Int:8388608
-																IfLE Ti318 a_sub
-																	App itof_biga_sub b_sub 
-																	Let Td319
-																		App itof_reta_sub 
-																		FAdd b_sub Td319
-													Let Ti309
-														Int:1
-														IfEq flag Ti309
-															Let Ti310
-																Int:8388608
-																IfLE abs Ti310
-																	App itof_retabs 
-																	Let Td311
-																		Float:0.000000
-																		App itof_bigabs Td311 
-															Let Ti312
-																Int:8388608
-																IfLE abs Ti312
-																	Let Td313
-																		App itof_retabs 
-																		FNeg Td313
-																	Let Td315
-																		Let Td314
-																			Float:0.000000
-																			App itof_bigabs Td314 
-																		FNeg Td315
-									LetRec floor a 
-										Let abs
-											fabs a
-											LetRec floor_pos_ker a 
-												Let Td305
-													Float:1.000000
-													FSub a Td305
-												LetRec floor_pos_small a 
-													Let b
-														Let Td303
-															Float:8388608.000000
-															FAdd a Td303
-														Let c
-															Let Td304
-																Float:8388608.000000
-																FSub b Td304
-															IfLE c a
-																Var c
-																App floor_pos_kerc 
-													LetRec floor_pos a 
-														Let Td302
-															Float:8388608.000000
-															IfLE a Td302
-																App floor_pos_smalla 
-																App floor_pos_kera 
-														LetRec floor_neg_ker a 
-															Let Td301
+										Let x
+											Let Ti349
+												Int:1000
+												Let Ti350
+													Int:0
+													App countnb Ti349 Ti350 
+											Let b
+												Let Ti352
+													Let Ti351
+														Int:1000
+														Mul x Ti351
+													Sub b Ti352
+												Let flag
+													Let Ti353
+														Int:0
+														IfLE x Ti353
+															Let Ti354
+																Int:1
+																IfEq flag Ti354
+																	Let Tu4
+																		Let Ti355
+																			Int:48
+																			printchar Ti355
+																		Int:1
+																	Int:0
+															Let Tu3
+																Let Ti357
+																	Let Ti356
+																		Int:48
+																		Add Ti356 x
+																	printchar Ti357
+																Int:1
+													Let x
+														Let Ti358
+															Int:100
+															Let Ti359
+																Int:0
+																App countnb Ti358 Ti359 
+														Let b
+															Let Ti361
+																Let Ti360
+																	Int:100
+																	Mul x Ti360
+																Sub b Ti361
+															Let flag
+																Let Ti362
+																	Int:0
+																	IfLE x Ti362
+																		Let Ti363
+																			Int:1
+																			IfEq flag Ti363
+																				Let Tu6
+																					Let Ti364
+																						Int:48
+																						printchar Ti364
+																					Int:1
+																				Int:0
+																		Let Tu5
+																			Let Ti366
+																				Let Ti365
+																					Int:48
+																					Add Ti365 x
+																				printchar Ti366
+																			Int:1
+																Let x
+																	Let Ti367
+																		Int:10
+																		Let Ti368
+																			Int:0
+																			App countnb Ti367 Ti368 
+																	Let b
+																		Let Ti370
+																			Let Ti369
+																				Int:10
+																				Mul x Ti369
+																			Sub b Ti370
+																		Let flag
+																			Let Ti371
+																				Int:0
+																				IfLE x Ti371
+																					Let Ti372
+																						Int:1
+																						IfEq flag Ti372
+																							Let Tu8
+																								Let Ti373
+																									Int:48
+																									printchar Ti373
+																								Int:1
+																							Int:0
+																					Let Tu7
+																						Let Ti375
+																							Let Ti374
+																								Int:48
+																								Add Ti374 x
+																							printchar Ti375
+																						Int:1
+																			Let Ti377
+																				Let Ti376
+																					Int:48
+																					Add Ti376 b
+																				printchar Ti377
+						LetRec int_of_float a 
+							Let abs
+								fabs a
+								Let flag
+									App fflaga 
+									LetRec ftoi_ret a 
+										LetRec div2like a 
+											LetRec div2like_sub a b 
+												Let Td335
+													Float:2.000000
+													IfLE Td335 a
+														Let Td337
+															Let Td336
+																Float:2.000000
+																FSub a Td336
+															Let Td339
+																Let Td338
+																	Float:1.000000
+																	FAdd b Td338
+																App div2like_subTd337 Td339 
+														Var b
+												Let Td334
+													Float:0.000000
+													App div2like_suba Td334 
+											LetRec ftoi_ret_sub a b c 
+												Let a_sub
+													App div2likea 
+													Let Td326
+														Float:1.000000
+														IfLE Td326 a
+															Let Td327
 																Float:1.000000
-																FAdd a Td301
-															LetRec floor_neg_small a 
-																Let b
-																	Let Td298
-																		Float:8388608.000000
-																		FAdd a Td298
-																	Let c
-																		Let Td299
-																			Float:8388608.000000
-																			FSub b Td299
-																		IfLE a c
-																			FNeg c
-																			Let Td300
-																				App floor_neg_kerc 
-																				FNeg Td300
-																LetRec floor_neg a 
-																	Let Td296
-																		Float:8388608.000000
-																		IfLE a Td296
-																			App floor_neg_smalla 
-																			Let Td297
-																				App floor_neg_kera 
-																				FNeg Td297
-																	Let Td295
-																		Float:0.000000
-																		IfLE a Td295
-																			App floor_negabs 
-																			App floor_posabs 
-										Let pi
-											Float:3.141593
-											Let pidouble
-												Float:6.283185
-												LetRec reduction_pi2 a 
-													IfLE a pidouble
-														Var a
-														Let Td294
-															FSub a pidouble
-															App reduction_pi2Td294 
-													LetRec addflag c flag 
+																Let Td330
+																	Let Td329
+																		Let Td328
+																			Float:2.000000
+																			FMul a_sub Td328
+																		FSub a Td329
+																	IfLE Td327 Td330
+																		Let Ti331
+																			Add b c
+																			Let Ti332
+																				Add c c
+																				App ftoi_ret_suba_sub Ti331 Ti332 
+																		Let Ti333
+																			Add c c
+																			App ftoi_ret_suba_sub b Ti333 
+															Var b
+												Let Ti324
+													Int:0
+													Let Ti325
+														Int:1
+														App ftoi_ret_suba Ti324 Ti325 
+										LetRec ftoi_big a b 
+											Let a_sub
+												Let Td320
+													Float:8388608.000000
+													FSub a Td320
+												Let b_sub
+													Let Ti321
+														Int:8388608
+														Add b Ti321
+													Let Td322
+														Float:8388608.000000
+														IfLE Td322 a_sub
+															App ftoi_biga_sub b_sub 
+															Let Ti323
+																App ftoi_reta_sub 
+																Add b_sub Ti323
+											Let Ti313
+												Int:1
+												IfEq flag Ti313
+													Let Td314
+														Float:8388608.000000
+														IfLE abs Td314
+															App ftoi_retabs 
+															Let Ti315
+																Int:0
+																App ftoi_bigabs Ti315 
+													Let Td316
+														Float:8388608.000000
+														IfLE abs Td316
+															Let Ti317
+																App ftoi_retabs 
+																Neg Ti317
+															Let Ti319
+																Let Ti318
+																	Int:0
+																	App ftoi_bigabs Ti318 
+																Neg Ti319
+							LetRec float_of_int a 
+								Let abs
+									Let Ti288
+										Int:0
+										IfLE a Ti288
+											Neg a
+											Var a
+									Let flag
+										Let Ti289
+											Int:0
+											IfLE a Ti289
+												Let Ti290
+													Int:1
+													Neg Ti290
+												Int:1
+										LetRec itof_ret a 
+											LetRec itof_ret_sub a b c 
+												Let a_sub
+													ShiftR1 a
+													Let Ti304
+														Int:0
+														IfEq a Ti304
+															Var b
+															Let Ti306
+																Let Ti305
+																	Sub a a_sub
+																	Sub Ti305 a_sub
+																Let Ti307
+																	Int:0
+																	IfLE Ti306 Ti307
+																		Let Td309
+																			Let Td308
+																				Float:2.000000
+																				FMul c Td308
+																			App itof_ret_suba_sub b Td309 
+																		Let Td310
+																			FAdd b c
+																			Let Td312
+																				Let Td311
+																					Float:2.000000
+																					FMul c Td311
+																				App itof_ret_suba_sub Td310 Td312 
+												Let Td302
+													Float:0.000000
+													Let Td303
+														Float:1.000000
+														App itof_ret_suba Td302 Td303 
+											LetRec itof_big a b 
+												Let a_sub
+													Let Ti298
+														Int:8388608
+														Sub a Ti298
+													Let b_sub
+														Let Td299
+															Float:8388608.000000
+															FAdd b Td299
+														Let Ti300
+															Int:8388608
+															IfLE Ti300 a_sub
+																App itof_biga_sub b_sub 
+																Let Td301
+																	App itof_reta_sub 
+																	FAdd b_sub Td301
+												Let Ti291
+													Int:1
+													IfEq flag Ti291
 														Let Ti292
-															Int:1
-															IfEq flag Ti292
-																Var c
+															Int:8388608
+															IfLE abs Ti292
+																App itof_retabs 
 																Let Td293
-																	Float:-1.000000
-																	FMul c Td293
-														LetRec sin_kernel a 
-															Let a3
-																Let Td281
-																	FMul a a
-																	FMul Td281 a
-																Let a5
-																	Let Td282
-																		FMul a3 a
-																		FMul Td282 a
-																	Let a7
-																		Let Td283
-																			FMul a5 a
-																			FMul Td283 a
-																		Let Td289
-																			Let Td286
-																				Let Td285
-																					Let Td284
-																						Float:0.166667
-																						FMul Td284 a3
-																					FSub a Td285
-																				Let Td288
-																					Let Td287
-																						Float:0.008333
-																						FMul Td287 a5
-																					FAdd Td286 Td288
-																			Let Td291
-																				Let Td290
-																					Float:0.000196
-																					FMul Td290 a7
-																				FSub Td289 Td291
-															LetRec cos_kernel a 
-																Let a2
-																	FMul a a
-																	Let a4
-																		Let Td270
-																			FMul a2 a
-																			FMul Td270 a
-																		Let a6
-																			Let Td271
-																				FMul a4 a
-																				FMul Td271 a
-																			Let Td278
-																				Let Td275
-																					Let Td272
-																						Float:1.000000
-																						Let Td274
-																							Let Td273
-																								Float:0.500000
-																								FMul Td273 a2
-																							FSub Td272 Td274
-																					Let Td277
-																						Let Td276
-																							Float:0.041664
-																							FMul Td276 a4
-																						FAdd Td275 Td277
-																				Let Td280
-																					Let Td279
-																						Float:0.001370
-																						FMul Td279 a6
-																					FSub Td278 Td280
-																LetRec sin a 
-																	LetRec sin3 a flag 
-																		Let Td266
-																			Let Td265
-																				Float:0.250000
-																				FMul pi Td265
-																			IfLE a Td266
-																				Let tmp
-																					App sin_kernela 
-																					App addflagtmp flag 
-																				Let tmp
-																					Let Td269
-																						Let Td268
-																							Let Td267
-																								Float:0.500000
-																								FMul pi Td267
-																							FSub Td268 a
-																						App cos_kernelTd269 
-																					App addflagtmp flag 
-																		LetRec sin2 a flag 
+																	Float:0.000000
+																	App itof_bigabs Td293 
+														Let Ti294
+															Int:8388608
+															IfLE abs Ti294
+																Let Td295
+																	App itof_retabs 
+																	FNeg Td295
+																Let Td297
+																	Let Td296
+																		Float:0.000000
+																		App itof_bigabs Td296 
+																	FNeg Td297
+								LetRec floor a 
+									Let abs
+										fabs a
+										LetRec floor_pos_ker a 
+											Let Td287
+												Float:1.000000
+												FSub a Td287
+											LetRec floor_pos_small a 
+												Let b
+													Let Td285
+														Float:8388608.000000
+														FAdd a Td285
+													Let c
+														Let Td286
+															Float:8388608.000000
+															FSub b Td286
+														IfLE c a
+															Var c
+															App floor_pos_kerc 
+												LetRec floor_pos a 
+													Let Td284
+														Float:8388608.000000
+														IfLE a Td284
+															App floor_pos_smalla 
+															App floor_pos_kera 
+													LetRec floor_neg_ker a 
+														Let Td283
+															Float:1.000000
+															FAdd a Td283
+														LetRec floor_neg_small a 
+															Let b
+																Let Td280
+																	Float:8388608.000000
+																	FAdd a Td280
+																Let c
+																	Let Td281
+																		Float:8388608.000000
+																		FSub b Td281
+																	IfLE a c
+																		FNeg c
+																		Let Td282
+																			App floor_neg_kerc 
+																			FNeg Td282
+															LetRec floor_neg a 
+																Let Td278
+																	Float:8388608.000000
+																	IfLE a Td278
+																		App floor_neg_smalla 
+																		Let Td279
+																			App floor_neg_kera 
+																			FNeg Td279
+																Let Td277
+																	Float:0.000000
+																	IfLE a Td277
+																		App floor_negabs 
+																		App floor_posabs 
+									Let pi
+										Float:3.141593
+										Let pidouble
+											Float:6.283185
+											LetRec reduction_pi2 a 
+												IfLE a pidouble
+													Var a
+													Let Td276
+														FSub a pidouble
+														App reduction_pi2Td276 
+												LetRec addflag c flag 
+													Let Ti274
+														Int:1
+														IfEq flag Ti274
+															Var c
+															Let Td275
+																Float:-1.000000
+																FMul c Td275
+													LetRec sin_kernel a 
+														Let a3
+															Let Td264
+																FMul a a
+																FMul Td264 a
+															Let a5
+																Let Td265
+																	FMul a3 a
+																	FMul Td265 a
+																Let a7
+																	Let Td266
+																		FMul a5 a
+																		FMul Td266 a
+																	Let Td271
+																		Let Td269
+																			Let Td268
+																				Let Td267
+																					Float:0.166667
+																					FMul Td267 a3
+																				FSub a Td268
+																			Let Td270
+																				Float:0.008333
+																				FDiv Td270 a5 Td269
+																		Let Td273
+																			Let Td272
+																				Float:0.000196
+																				FMul Td272 a7
+																			FSub Td271 Td273
+														LetRec cos_kernel a 
+															Let a2
+																FMul a a
+																Let a4
+																	Let Td254
+																		FMul a2 a
+																		FMul Td254 a
+																	Let a6
+																		Let Td255
+																			FMul a4 a
+																			FMul Td255 a
+																		Let Td261
+																			Let Td259
+																				Let Td256
+																					Float:1.000000
+																					Let Td258
+																						Let Td257
+																							Float:0.500000
+																							FMul Td257 a2
+																						FSub Td256 Td258
+																				Let Td260
+																					Float:0.041664
+																					FDiv Td260 a4 Td259
 																			Let Td263
 																				Let Td262
-																					Float:0.500000
-																					FMul pi Td262
-																				IfLE Td263 a
-																					Let Td264
-																						FSub pi a
-																						App sin3Td264 flag 
-																					App sin3a flag 
-																			Let abs
-																				fabs a
-																				Let flag
-																					App fflaga 
-																					Let r_abs
-																						App reduction_pi2abs 
-																						IfLE pi r_abs
-																							Let Td260
-																								FSub r_abs pi
-																								Let Ti261
-																									Neg flag
-																									App sin2Td260 Ti261 
-																							App sin2r_abs flag 
-																	LetRec cos a 
-																		LetRec cos3 a flag 
-																			Let Td256
-																				Let Td255
-																					Float:0.250000
-																					FMul pi Td255
-																				IfLE a Td256
-																					Let tmp
-																						App cos_kernela 
-																						App addflagtmp flag 
-																					Let tmp
-																						Let Td259
-																							Let Td258
-																								Let Td257
-																									Float:0.500000
-																									FMul pi Td257
-																								FSub Td258 a
-																							App sin_kernelTd259 
-																						App addflagtmp flag 
-																			LetRec cos2 a flag 
-																				Let Td252
-																					Let Td251
-																						Float:0.500000
-																						FMul pi Td251
-																					IfLE Td252 a
-																						Let Td253
-																							FSub pi a
-																							Let Ti254
+																					Float:0.001370
+																					FMul Td262 a6
+																				FSub Td261 Td263
+															LetRec sin a 
+																LetRec sin3 a flag 
+																	Let Td250
+																		Let Td249
+																			Float:0.250000
+																			FMul pi Td249
+																		IfLE a Td250
+																			Let tmp
+																				App sin_kernela 
+																				App addflagtmp flag 
+																			Let tmp
+																				Let Td253
+																					Let Td252
+																						Let Td251
+																							Float:0.500000
+																							FMul pi Td251
+																						FSub Td252 a
+																					App cos_kernelTd253 
+																				App addflagtmp flag 
+																	LetRec sin2 a flag 
+																		Let Td247
+																			Let Td246
+																				Float:0.500000
+																				FMul pi Td246
+																			IfLE Td247 a
+																				Let Td248
+																					FSub pi a
+																					App sin3Td248 flag 
+																				App sin3a flag 
+																		Let abs
+																			fabs a
+																			Let flag
+																				App fflaga 
+																				Let r_abs
+																					App reduction_pi2abs 
+																					IfLE pi r_abs
+																						Let Td244
+																							FSub r_abs pi
+																							Let Ti245
 																								Neg flag
-																								App cos3Td253 Ti254 
-																						App cos3a flag 
-																				Let abs
-																					fabs a
-																					Let r_abs
-																						App reduction_pi2abs 
-																						IfLE pi r_abs
-																							Let Td247
-																								FSub r_abs pi
-																								Let Ti249
-																									Let Ti248
-																										Int:1
-																										Neg Ti248
-																									App cos2Td247 Ti249 
-																							Let Ti250
-																								Int:1
-																								App cos2r_abs Ti250 
-																		LetRec atan a 
+																								App sin2Td244 Ti245 
+																						App sin2r_abs flag 
+																LetRec cos a 
+																	LetRec cos3 a flag 
+																		Let Td240
+																			Let Td239
+																				Float:0.250000
+																				FMul pi Td239
+																			IfLE a Td240
+																				Let tmp
+																					App cos_kernela 
+																					App addflagtmp flag 
+																				Let tmp
+																					Let Td243
+																						Let Td242
+																							Let Td241
+																								Float:0.500000
+																								FMul pi Td241
+																							FSub Td242 a
+																						App sin_kernelTd243 
+																					App addflagtmp flag 
+																		LetRec cos2 a flag 
+																			Let Td236
+																				Let Td235
+																					Float:0.500000
+																					FMul pi Td235
+																				IfLE Td236 a
+																					Let Td237
+																						FSub pi a
+																						Let Ti238
+																							Neg flag
+																							App cos3Td237 Ti238 
+																					App cos3a flag 
 																			Let abs
 																				fabs a
-																				Let flag
-																					App fflaga 
-																					LetRec atan_kernel a 
-																						Let a1
-																							Let Td229
-																								Let Td228
-																									Let Td227
-																										Float:0.060035
-																										FMul Td227 a
-																									FMul Td228 a
-																								Let Td230
-																									Float:0.089764
-																									FSub Td229 Td230
-																							Let a2
-																								Let Td231
-																									Float:0.111111
-																									Let Td233
-																										Let Td232
-																											FMul a1 a
-																											FMul Td232 a
-																										FAdd Td231 Td233
-																								Let a3
-																									Let Td235
-																										Let Td234
-																											FMul a2 a
-																											FMul Td234 a
-																										Let Td236
-																											Float:0.142857
-																											FSub Td235 Td236
-																									Let a4
-																										Let Td238
-																											Let Td237
-																												FMul a3 a
-																												FMul Td237 a
-																											Let Td239
-																												Float:0.200000
-																												FAdd Td238 Td239
-																										Let a5
-																											Let Td241
-																												Let Td240
-																													FMul a4 a
-																													FMul Td240 a
-																												Let Td242
-																													Float:0.333333
-																													FSub Td241 Td242
-																											Let Td246
-																												Let Td243
-																													Float:1.000000
-																													Let Td245
-																														Let Td244
-																															FMul a5 a
-																															FMul Td244 a
-																														FAdd Td243 Td245
-																												FMul a Td246
-																						Let Td196
-																							Float:0.437500
-																							IfLE Td196 abs
-																								Let Td197
-																									Float:1.000000
-																									IfLE Td197 abs
-																										Let Td198
-																											Float:2.437500
-																											IfLE Td198 abs
-																												Let Td205
-																													Let Td200
-																														Let Td199
-																															Float:0.500000
-																															FMul pi Td199
-																														Let Td204
-																															Let Td203
-																																Let Td201
+																				Let r_abs
+																					App reduction_pi2abs 
+																					IfLE pi r_abs
+																						Let Td231
+																							FSub r_abs pi
+																							Let Ti233
+																								Let Ti232
+																									Int:1
+																									Neg Ti232
+																								App cos2Td231 Ti233 
+																						Let Ti234
+																							Int:1
+																							App cos2r_abs Ti234 
+																	LetRec atan a 
+																		Let abs
+																			fabs a
+																			Let flag
+																				App fflaga 
+																				LetRec atan_kernel a 
+																					Let a1
+																						Let Td216
+																							Let Td215
+																								Let Td214
+																									Float:0.060035
+																									FMul Td214 a
+																								FMul Td215 a
+																							Let Td217
+																								Float:0.089764
+																								FSub Td216 Td217
+																						Let a2
+																							Let Td218
+																								Float:0.111111
+																								Let Td219
+																									FMul a1 a
+																									FDiv Td219 a Td218
+																							Let a3
+																								Let Td221
+																									Let Td220
+																										FMul a2 a
+																										FMul Td220 a
+																									Let Td222
+																										Float:0.142857
+																										FSub Td221 Td222
+																								Let a4
+																									Let Td223
+																										FMul a3 a
+																										Let Td224
+																											Float:0.200000
+																											FDiv Td223 a Td224
+																									Let a5
+																										Let Td226
+																											Let Td225
+																												FMul a4 a
+																												FMul Td225 a
+																											Let Td227
+																												Float:0.333333
+																												FSub Td226 Td227
+																										Let Td230
+																											Let Td228
+																												Float:1.000000
+																												Let Td229
+																													FMul a5 a
+																													FDiv Td229 a Td228
+																											FMul a Td230
+																					Let Td186
+																						Float:0.437500
+																						IfLE Td186 abs
+																							Let Td187
+																								Float:1.000000
+																								IfLE Td187 abs
+																									Let Td188
+																										Float:2.437500
+																										IfLE Td188 abs
+																											Let Td194
+																												Let Td190
+																													Let Td189
+																														Float:0.500000
+																														FMul pi Td189
+																													Let Td193
+																														Let Td192
+																															Let Td191
+																																Float:1.000000
+																																FDiv Td191 abs
+																															App atan_kernelTd192 
+																														FSub Td190 Td193
+																												App addflagTd194 flag 
+																											Let Td203
+																												Let Td196
+																													Let Td195
+																														Float:0.250000
+																														FMul pi Td195
+																													Let Td202
+																														Let Td201
+																															Let Td198
+																																Let Td197
 																																	Float:1.000000
-																																	Let Td202
-																																		FReciprocal abs
-																																		FMul Td201 Td202
-																																App atan_kernelTd203 
-																															FSub Td200 Td204
-																													App addflagTd205 flag 
-																												Let Td215
+																																	FSub Td197 abs
+																																Let Td200
+																																	Let Td199
+																																		Float:1.000000
+																																		FAdd abs Td199
+																																	FDiv Td198 Td200
+																															App atan_kernelTd201 
+																														FSub Td196 Td202
+																												App addflagTd203 flag 
+																									Let Td212
+																										Let Td205
+																											Let Td204
+																												Float:0.250000
+																												FMul pi Td204
+																											Let Td211
+																												Let Td210
 																													Let Td207
 																														Let Td206
-																															Float:0.250000
-																															FMul pi Td206
-																														Let Td214
-																															Let Td213
-																																Let Td209
-																																	Let Td208
-																																		Float:1.000000
-																																		FSub Td208 abs
-																																	Let Td211
-																																		Let Td210
-																																			Float:1.000000
-																																			FAdd abs Td210
-																																		Let Td212
-																																			FReciprocal Td211
-																																			FMul Td209 Td212
-																																App atan_kernelTd213 
-																															FSub Td207 Td214
-																													App addflagTd215 flag 
-																										Let Td225
-																											Let Td217
-																												Let Td216
-																													Float:0.250000
-																													FMul pi Td216
-																												Let Td224
-																													Let Td223
-																														Let Td219
-																															Let Td218
+																															Float:1.000000
+																															FSub Td206 abs
+																														Let Td209
+																															Let Td208
 																																Float:1.000000
-																																FSub Td218 abs
-																															Let Td221
-																																Let Td220
-																																	Float:1.000000
-																																	FAdd abs Td220
-																																Let Td222
-																																	FReciprocal Td221
-																																	FMul Td219 Td222
-																														App atan_kernelTd223 
-																													FSub Td217 Td224
-																											App addflagTd225 flag 
-																								Let Td226
-																									App atan_kernelabs 
-																									App addflagTd226 flag 
-																			LetRec write_header Tu9 
-																				Let Tu17
-																					Let Ti185
-																						Int:80
-																						printchar Ti185
-																					Let Tu16
-																						Let Ti188
-																							Let Ti186
-																								Int:48
-																								Let Ti187
-																									Int:3
-																									Add Ti186 Ti187
-																							printchar Ti188
-																						Let Tu15
-																							Let Ti189
-																								Int:10
-																								printchar Ti189
-																							Let Tu14
-																								Let Ti190
-																									Int:100
-																									App print_intTi190 
-																								Let Tu13
-																									Let Ti191
-																										Int:32
-																										printchar Ti191
-																									Let Tu12
-																										Let Ti192
-																											Int:100
-																											App print_intTi192 
-																										Let Tu11
-																											Let Ti193
-																												Int:32
-																												printchar Ti193
-																											Let Tu10
-																												Let Ti194
-																													Int:255
-																													App print_intTi194 
-																												Let Ti195
-																													Int:10
-																													printchar Ti195
-																				Let step
-																					Let a
-																						Let Ti33
-																							Int:6
-																							Let Ti34
-																								Int:0
-																								ExtFunApp create_array Ti33,Ti34,
-																						Let Tu23
-																							Let Ti35
-																								Int:0
-																								Let Ti36
-																									Int:3
-																									Put a Ti35 Ti36
-																							Let Tu22
-																								Let Ti37
-																									Int:1
-																									Let Ti38
-																										Int:8
-																										Put a Ti37 Ti38
-																								Let Tu21
-																									Let Ti39
-																										Int:2
-																										Let Ti40
-																											Int:12
-																											Put a Ti39 Ti40
-																									Let Tu20
-																										Let Ti41
-																											Int:3
-																											Let Ti42
-																												Int:16
-																												Put a Ti41 Ti42
-																										Let Tu19
-																											Let Ti43
-																												Int:4
-																												Let Ti44
-																													Int:25
-																													Put a Ti43 Ti44
-																											Let Tu18
-																												Let Ti45
-																													Int:5
-																													Let Ti46
-																														Int:100
-																														Put a Ti45 Ti46
-																												Var a
-																					LetRec write_rgb x 
-																						LetRec write fr fg fb 
-																							Let r
-																								App int_of_floatfr 
-																								Let g
-																									App int_of_floatfg 
-																									Let b
-																										App int_of_floatfb 
-																										Let Tu28
-																											Let Ti182
-																												Int:32
-																												printchar Ti182
-																											Let Tu27
-																												App print_intr 
-																												Let Tu26
-																													Let Ti183
-																														Int:32
-																														printchar Ti183
-																													Let Tu25
-																														App print_intg 
-																														Let Tu24
-																															Let Ti184
-																																Int:32
-																																printchar Ti184
-																															App print_intb 
-																							Let fx
-																								App float_of_intx 
-																								Let Ti85
-																									Let Ti84
-																										Int:0
-																										Get step Ti84
-																									IfLE x Ti85
-																										Let Td86
-																											Float:255.000000
-																											Let Td87
+																																FAdd abs Td208
+																															FDiv Td207 Td209
+																													App atan_kernelTd210 
+																												FSub Td205 Td211
+																										App addflagTd212 flag 
+																							Let Td213
+																								App atan_kernelabs 
+																								App addflagTd213 flag 
+																		LetRec write_header Tu9 
+																			Let Tu17
+																				Let Ti175
+																					Int:80
+																					printchar Ti175
+																				Let Tu16
+																					Let Ti178
+																						Let Ti176
+																							Int:48
+																							Let Ti177
+																								Int:3
+																								Add Ti176 Ti177
+																						printchar Ti178
+																					Let Tu15
+																						Let Ti179
+																							Int:10
+																							printchar Ti179
+																						Let Tu14
+																							Let Ti180
+																								Int:100
+																								App print_intTi180 
+																							Let Tu13
+																								Let Ti181
+																									Int:32
+																									printchar Ti181
+																								Let Tu12
+																									Let Ti182
+																										Int:100
+																										App print_intTi182 
+																									Let Tu11
+																										Let Ti183
+																											Int:32
+																											printchar Ti183
+																										Let Tu10
+																											Let Ti184
+																												Int:255
+																												App print_intTi184 
+																											Let Ti185
+																												Int:10
+																												printchar Ti185
+																			Let step
+																				Let a
+																					Let Ti33
+																						Int:6
+																						Let Ti34
+																							Int:0
+																							ExtFunApp create_array Ti33,Ti34,
+																					Let Tu23
+																						Let Ti35
+																							Int:0
+																							Let Ti36
+																								Int:3
+																								Put a Ti35 Ti36
+																						Let Tu22
+																							Let Ti37
+																								Int:1
+																								Let Ti38
+																									Int:8
+																									Put a Ti37 Ti38
+																							Let Tu21
+																								Let Ti39
+																									Int:2
+																									Let Ti40
+																										Int:12
+																										Put a Ti39 Ti40
+																								Let Tu20
+																									Let Ti41
+																										Int:3
+																										Let Ti42
+																											Int:16
+																											Put a Ti41 Ti42
+																									Let Tu19
+																										Let Ti43
+																											Int:4
+																											Let Ti44
+																												Int:25
+																												Put a Ti43 Ti44
+																										Let Tu18
+																											Let Ti45
+																												Int:5
+																												Let Ti46
+																													Int:100
+																													Put a Ti45 Ti46
+																											Var a
+																				LetRec write_rgb x 
+																					LetRec write fr fg fb 
+																						Let r
+																							App int_of_floatfr 
+																							Let g
+																								App int_of_floatfg 
+																								Let b
+																									App int_of_floatfb 
+																									Let Tu28
+																										Let Ti172
+																											Int:32
+																											printchar Ti172
+																										Let Tu27
+																											App print_intr 
+																											Let Tu26
+																												Let Ti173
+																													Int:32
+																													printchar Ti173
+																												Let Tu25
+																													App print_intg 
+																													Let Tu24
+																														Let Ti174
+																															Int:32
+																															printchar Ti174
+																														App print_intb 
+																						Let fx
+																							App float_of_intx 
+																							Let Ti80
+																								Let Ti79
+																									Int:0
+																									Get step Ti79
+																								IfLE x Ti80
+																									Let Td81
+																										Float:255.000000
+																										Let Td82
+																											Float:0.000000
+																											Let Td83
 																												Float:0.000000
-																												Let Td88
-																													Float:0.000000
-																													App writeTd86 Td87 Td88 
-																										Let Ti90
-																											Let Ti89
-																												Int:1
-																												Get step Ti89
-																											IfLE x Ti90
-																												Let Td91
-																													Float:255.000000
-																													Let Td105
-																														Let Td97
-																															Let Td92
-																																Float:255.000000
-																																Let Td96
-																																	Let Ti95
-																																		Let Ti94
-																																			Let Ti93
-																																				Int:0
-																																				Get step Ti93
-																																			Sub x Ti94
-																																		App float_of_intTi95 
-																																	FMul Td92 Td96
+																												App writeTd81 Td82 Td83 
+																									Let Ti85
+																										Let Ti84
+																											Int:1
+																											Get step Ti84
+																										IfLE x Ti85
+																											Let Td86
+																												Float:255.000000
+																												Let Td99
+																													Let Td92
+																														Let Td87
+																															Float:255.000000
+																															Let Td91
+																																Let Ti90
+																																	Let Ti89
+																																		Let Ti88
+																																			Int:0
+																																			Get step Ti88
+																																		Sub x Ti89
+																																	App float_of_intTi90 
+																																FMul Td87 Td91
+																														Let Td98
+																															Let Ti97
+																																Let Ti94
+																																	Let Ti93
+																																		Int:1
+																																		Get step Ti93
+																																	Let Ti96
+																																		Let Ti95
+																																			Int:0
+																																			Get step Ti95
+																																		Sub Ti94 Ti96
+																																App float_of_intTi97 
+																															FDiv Td92 Td98
+																													Let Td100
+																														Float:0.000000
+																														App writeTd86 Td99 Td100 
+																											Let Ti102
+																												Let Ti101
+																													Int:2
+																													Get step Ti101
+																												IfLE x Ti102
+																													Let Td115
+																														Let Td108
 																															Let Td103
-																																Let Ti102
-																																	Let Ti99
-																																		Let Ti98
-																																			Int:1
-																																			Get step Ti98
-																																		Let Ti101
-																																			Let Ti100
-																																				Int:0
-																																				Get step Ti100
-																																			Sub Ti99 Ti101
-																																	App float_of_intTi102 
-																																Let Td104
-																																	FReciprocal Td103
-																																	FMul Td97 Td104
-																														Let Td106
-																															Float:0.000000
-																															App writeTd91 Td105 Td106 
-																												Let Ti108
-																													Let Ti107
-																														Int:2
-																														Get step Ti107
-																													IfLE x Ti108
-																														Let Td122
+																																Float:255.000000
+																																Let Td107
+																																	Let Ti106
+																																		Let Ti105
+																																			Let Ti104
+																																				Int:2
+																																				Get step Ti104
+																																			Sub Ti105 x
+																																		App float_of_intTi106 
+																																	FMul Td103 Td107
 																															Let Td114
-																																Let Td109
-																																	Float:255.000000
-																																	Let Td113
+																																Let Ti113
+																																	Let Ti110
+																																		Let Ti109
+																																			Int:2
+																																			Get step Ti109
 																																		Let Ti112
 																																			Let Ti111
-																																				Let Ti110
-																																					Int:2
-																																					Get step Ti110
-																																				Sub Ti111 x
-																																			App float_of_intTi112 
-																																		FMul Td109 Td113
-																																Let Td120
-																																	Let Ti119
-																																		Let Ti116
-																																			Let Ti115
-																																				Int:2
-																																				Get step Ti115
-																																			Let Ti118
-																																				Let Ti117
-																																					Int:1
-																																					Get step Ti117
-																																				Sub Ti116 Ti118
-																																		App float_of_intTi119 
-																																	Let Td121
-																																		FReciprocal Td120
-																																		FMul Td114 Td121
-																															Let Td123
-																																Float:255.000000
-																																Let Td124
-																																	Float:0.000000
-																																	App writeTd122 Td123 Td124 
-																														Let Ti126
-																															Let Ti125
-																																Int:3
-																																Get step Ti125
-																															IfLE x Ti126
-																																Let Td127
-																																	Float:0.000000
-																																	Let Td128
-																																		Float:255.000000
-																																		Let Td142
-																																			Let Td134
-																																				Let Td129
-																																					Float:255.000000
-																																					Let Td133
-																																						Let Ti132
-																																							Let Ti131
-																																								Let Ti130
-																																									Int:2
-																																									Get step Ti130
-																																								Sub x Ti131
-																																							App float_of_intTi132 
-																																						FMul Td129 Td133
-																																				Let Td140
-																																					Let Ti139
-																																						Let Ti136
-																																							Let Ti135
-																																								Int:3
-																																								Get step Ti135
-																																							Let Ti138
-																																								Let Ti137
-																																									Int:2
-																																									Get step Ti137
-																																								Sub Ti136 Ti138
-																																						App float_of_intTi139 
-																																					Let Td141
-																																						FReciprocal Td140
-																																						FMul Td134 Td141
-																																			App writeTd127 Td128 Td142 
-																																Let Ti144
-																																	Let Ti143
-																																		Int:4
-																																		Get step Ti143
-																																	IfLE x Ti144
-																																		Let Td145
-																																			Float:0.000000
-																																			Let Td159
-																																				Let Td151
-																																					Let Td146
-																																						Float:255.000000
-																																						Let Td150
-																																							Let Ti149
-																																								Let Ti148
-																																									Let Ti147
-																																										Int:4
-																																										Get step Ti147
-																																									Sub Ti148 x
-																																								App float_of_intTi149 
-																																							FMul Td146 Td150
-																																					Let Td157
-																																						Let Ti156
-																																							Let Ti153
-																																								Let Ti152
-																																									Int:4
-																																									Get step Ti152
-																																								Let Ti155
-																																									Let Ti154
-																																										Int:3
-																																										Get step Ti154
-																																									Sub Ti153 Ti155
-																																							App float_of_intTi156 
-																																						Let Td158
-																																							FReciprocal Td157
-																																							FMul Td151 Td158
-																																				Let Td160
-																																					Float:255.000000
-																																					App writeTd145 Td159 Td160 
-																																		Let Ti162
-																																			Let Ti161
-																																				Int:5
-																																				Get step Ti161
-																																			IfLE x Ti162
-																																				Let Td176
-																																					Let Td168
-																																						Let Td163
-																																							Float:255.000000
-																																							Let Td167
-																																								Let Ti166
-																																									Let Ti165
-																																										Let Ti164
-																																											Int:4
-																																											Get step Ti164
-																																										Sub x Ti165
-																																									App float_of_intTi166 
-																																								FMul Td163 Td167
-																																						Let Td174
-																																							Let Ti173
-																																								Let Ti170
-																																									Let Ti169
-																																										Int:5
-																																										Get step Ti169
-																																									Let Ti172
-																																										Let Ti171
-																																											Int:4
-																																											Get step Ti171
-																																										Sub Ti170 Ti172
-																																								App float_of_intTi173 
-																																							Let Td175
-																																								FReciprocal Td174
-																																								FMul Td168 Td175
-																																					Let Td177
-																																						Float:0.000000
-																																						Let Td178
-																																							Float:255.000000
-																																							App writeTd176 Td177 Td178 
-																																				Let Td179
-																																					Float:0.000000
-																																					Let Td180
-																																						Float:0.000000
-																																						Let Td181
-																																							Float:0.000000
-																																							App writeTd179 Td180 Td181 
-																						LetRec yloop y 
-																							Let Ti50
-																								Int:100
-																								IfLE Ti50 y
-																									Unit
-																									LetRec xloop x y 
-																										Let Ti54
-																											Int:100
-																											IfLE Ti54 x
-																												Unit
-																												Let fx
-																													App float_of_intx 
-																													Let fy
-																														App float_of_inty 
-																														Let cr
-																															Let Td57
-																																Let Td55
-																																	Float:50.000000
-																																	Let Td56
-																																		FReciprocal Td55
-																																		FMul fx Td56
-																																Let Td58
-																																	Float:1.500000
-																																	FSub Td57 Td58
-																															Let ci
-																																Let Td61
-																																	Let Td59
-																																		Float:50.000000
-																																		Let Td60
-																																			FReciprocal Td59
-																																			FMul fy Td60
-																																	Let Td62
-																																		Float:1.000000
-																																		FSub Td61 Td62
-																																LetRec iloop i zr zi cr ci 
-																																	Let Ti68
-																																		Int:256
-																																		IfLE Ti68 i
-																																			Let Ti69
-																																				Int:256
-																																				App write_rgbTi69 
-																																			Let nr
-																																				Let Td72
-																																					Let Td70
-																																						FMul zr zr
-																																						Let Td71
-																																							FMul zi zi
-																																							FSub Td70 Td71
-																																					FAdd Td72 cr
-																																				Let ni
-																																					Let Td75
-																																						Let Td74
-																																							Let Td73
-																																								Float:2.000000
-																																								FMul Td73 zr
-																																							FMul Td74 zi
-																																						FAdd Td75 ci
-																																					Let Td78
-																																						Let Td76
-																																							FMul zr zr
-																																							Let Td77
-																																								FMul zi zi
-																																								FAdd Td76 Td77
-																																						Let Td81
-																																							Let Td79
-																																								Float:2.000000
-																																								Let Td80
-																																									Float:2.000000
-																																									FMul Td79 Td80
-																																							IfLE Td78 Td81
-																																								Let Ti83
-																																									Let Ti82
-																																										Int:1
-																																										Add i Ti82
-																																									App iloopTi83 nr ni cr ci 
-																																								App write_rgbi 
-																																	Let Tu29
-																																		Let Ti63
-																																			Int:0
-																																			Let Td64
-																																				Float:0.000000
-																																				Let Td65
-																																					Float:0.000000
-																																					App iloopTi63 Td64 Td65 cr ci 
-																																		Let Ti67
-																																			Let Ti66
 																																				Int:1
-																																				Add x Ti66
-																																			App xloopTi67 y 
-																										Let Tu30
+																																				Get step Ti111
+																																			Sub Ti110 Ti112
+																																	App float_of_intTi113 
+																																FDiv Td108 Td114
+																														Let Td116
+																															Float:255.000000
+																															Let Td117
+																																Float:0.000000
+																																App writeTd115 Td116 Td117 
+																													Let Ti119
+																														Let Ti118
+																															Int:3
+																															Get step Ti118
+																														IfLE x Ti119
+																															Let Td120
+																																Float:0.000000
+																																Let Td121
+																																	Float:255.000000
+																																	Let Td134
+																																		Let Td127
+																																			Let Td122
+																																				Float:255.000000
+																																				Let Td126
+																																					Let Ti125
+																																						Let Ti124
+																																							Let Ti123
+																																								Int:2
+																																								Get step Ti123
+																																							Sub x Ti124
+																																						App float_of_intTi125 
+																																					FMul Td122 Td126
+																																			Let Td133
+																																				Let Ti132
+																																					Let Ti129
+																																						Let Ti128
+																																							Int:3
+																																							Get step Ti128
+																																						Let Ti131
+																																							Let Ti130
+																																								Int:2
+																																								Get step Ti130
+																																							Sub Ti129 Ti131
+																																					App float_of_intTi132 
+																																				FDiv Td127 Td133
+																																		App writeTd120 Td121 Td134 
+																															Let Ti136
+																																Let Ti135
+																																	Int:4
+																																	Get step Ti135
+																																IfLE x Ti136
+																																	Let Td137
+																																		Float:0.000000
+																																		Let Td150
+																																			Let Td143
+																																				Let Td138
+																																					Float:255.000000
+																																					Let Td142
+																																						Let Ti141
+																																							Let Ti140
+																																								Let Ti139
+																																									Int:4
+																																									Get step Ti139
+																																								Sub Ti140 x
+																																							App float_of_intTi141 
+																																						FMul Td138 Td142
+																																				Let Td149
+																																					Let Ti148
+																																						Let Ti145
+																																							Let Ti144
+																																								Int:4
+																																								Get step Ti144
+																																							Let Ti147
+																																								Let Ti146
+																																									Int:3
+																																									Get step Ti146
+																																								Sub Ti145 Ti147
+																																						App float_of_intTi148 
+																																					FDiv Td143 Td149
+																																			Let Td151
+																																				Float:255.000000
+																																				App writeTd137 Td150 Td151 
+																																	Let Ti153
+																																		Let Ti152
+																																			Int:5
+																																			Get step Ti152
+																																		IfLE x Ti153
+																																			Let Td166
+																																				Let Td159
+																																					Let Td154
+																																						Float:255.000000
+																																						Let Td158
+																																							Let Ti157
+																																								Let Ti156
+																																									Let Ti155
+																																										Int:4
+																																										Get step Ti155
+																																									Sub x Ti156
+																																								App float_of_intTi157 
+																																							FMul Td154 Td158
+																																					Let Td165
+																																						Let Ti164
+																																							Let Ti161
+																																								Let Ti160
+																																									Int:5
+																																									Get step Ti160
+																																								Let Ti163
+																																									Let Ti162
+																																										Int:4
+																																										Get step Ti162
+																																									Sub Ti161 Ti163
+																																							App float_of_intTi164 
+																																						FDiv Td159 Td165
+																																				Let Td167
+																																					Float:0.000000
+																																					Let Td168
+																																						Float:255.000000
+																																						App writeTd166 Td167 Td168 
+																																			Let Td169
+																																				Float:0.000000
+																																				Let Td170
+																																					Float:0.000000
+																																					Let Td171
+																																						Float:0.000000
+																																						App writeTd169 Td170 Td171 
+																					LetRec yloop y 
+																						Let Ti49
+																							Int:100
+																							IfLE Ti49 y
+																								Unit
+																								LetRec xloop x y 
+																									Let Ti53
+																										Int:100
+																										IfLE Ti53 x
+																											Unit
+																											Let fx
+																												App float_of_intx 
+																												Let fy
+																													App float_of_inty 
+																													Let cr
+																														Let Td55
+																															Let Td54
+																																Float:50.000000
+																																FDiv fx Td54
+																															Let Td56
+																																Float:1.500000
+																																FSub Td55 Td56
+																														Let ci
+																															Let Td58
+																																Let Td57
+																																	Float:50.000000
+																																	FDiv fy Td57
+																																Let Td59
+																																	Float:1.000000
+																																	FSub Td58 Td59
+																															LetRec iloop i zr zi cr ci 
+																																Let Ti65
+																																	Int:256
+																																	IfLE Ti65 i
+																																		Let Ti66
+																																			Int:256
+																																			App write_rgbTi66 
+																																		Let nr
+																																			Let Td69
+																																				Let Td67
+																																					FMul zr zr
+																																					Let Td68
+																																						FMul zi zi
+																																						FSub Td67 Td68
+																																				FAdd Td69 cr
+																																			Let ni
+																																				Let Td71
+																																					Let Td70
+																																						Float:2.000000
+																																						FMul Td70 zr
+																																					FDiv Td71 zi ci
+																																				Let Td73
+																																					Let Td72
+																																						FMul zi zi
+																																						FDiv zr zr Td72
+																																					Let Td76
+																																						Let Td74
+																																							Float:2.000000
+																																							Let Td75
+																																								Float:2.000000
+																																								FMul Td74 Td75
+																																						IfLE Td73 Td76
+																																							Let Ti78
+																																								Let Ti77
+																																									Int:1
+																																									Add i Ti77
+																																								App iloopTi78 nr ni cr ci 
+																																							App write_rgbi 
+																																Let Tu29
+																																	Let Ti60
+																																		Int:0
+																																		Let Td61
+																																			Float:0.000000
+																																			Let Td62
+																																				Float:0.000000
+																																				App iloopTi60 Td61 Td62 cr ci 
+																																	Let Ti64
+																																		Let Ti63
+																																			Int:1
+																																			Add x Ti63
+																																		App xloopTi64 y 
+																									Let Tu30
+																										Let Ti50
+																											Int:0
+																											App xloopTi50 y 
+																										Let Ti52
 																											Let Ti51
-																												Int:0
-																												App xloopTi51 y 
-																											Let Ti53
-																												Let Ti52
-																													Int:1
-																													Add y Ti52
-																												App yloopTi53 
-																							Let Tu32
-																								Let Tu47
-																									Unit
-																									App write_headerTu47 
-																								Let Tu31
-																									Let Ti48
-																										Int:0
-																										App yloopTi48 
-																									Let Ti49
-																										Int:0
-																										App print_intTi49 
+																												Int:1
+																												Add y Ti51
+																											App yloopTi52 
+																						Let Tu32
+																							Let Tu47
+																								Unit
+																								App write_headerTu47 
+																							Let Tu31
+																								Let Ti48
+																									Int:0
+																									App yloopTi48 
+																								Unit

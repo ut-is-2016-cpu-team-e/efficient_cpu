@@ -1,14 +1,28 @@
+SRCDIR = src
+INCDIR = include
+OBJDIR = obj
+RESDIR = result
+PROGNAME = sim
+TARGET = $(PROGNAME)
+SRCS = $(wildcard $(SRCDIR)/*.cpp)
+OBJS = $(addprefix $(OBJDIR)/,$(notdir $(patsubst %.cpp,%.o,$(SRCS))))
+
 CC = g++
-CXXFLAGS = -Wall -O2 -std=c++11
+CXXFLAGS = -Wall -O2 -std=c++11 
+LDFLAGS = -lncurses
 
-all: asm sim
+.PHONY: clean
 
-asm: asm.cpp assembler.cpp tools.cpp
-		$(CC) $(CXXFLAGS) -o $@ $^
 
-sim: sim.cpp assembler.cpp cpu.cpp execute.cpp show.cpp tools.cpp
-		$(CC) $(CXXFLAGS) -o $@ $^ -lncurses
+$(TARGET): $(OBJS)
+		@if [ ! -d $(RESDIR) ]; then mkdir $(RESDIR); fi
+		$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS) 
+
+
+$(OBJDIR)/%.o:$(SRCDIR)/%.cpp
+		@if [ ! -d $(OBJDIR) ]; then mkdir $(OBJDIR); fi
+		$(CC) $(CXXFLAGS) -I $(INCDIR) -o $@ -c $< 
 
 
 clean:
-		rm -f asm sim *.log *.ppm
+		rm -rf $(PROGNAME) $(OBJDIR) $(RESDIR)

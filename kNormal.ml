@@ -16,6 +16,8 @@ type t = (* K正規化後の式 (caml2html: knormal_t) *)
   | FSub of Id.t * Id.t
   | FMul of Id.t * Id.t
   | FDiv of Id.t * Id.t
+  | FMAdd of Id.t * Id.t * Id.t
+  | FMSub of Id.t * Id.t * Id.t
   | FReciprocal of Id.t
   | Xor of Id.t * Id.t
   | FAbs of Id.t
@@ -25,6 +27,7 @@ type t = (* K正規化後の式 (caml2html: knormal_t) *)
   | Readfloat
   | IfEq of Id.t * Id.t * t * t (* 比較 + 分岐 (caml2html: knormal_branch) *)
   | IfLE of Id.t * Id.t * t * t (* 比較 + 分岐 *)
+  | IfFAbsLE of Id.t * Id.t * t * t
   | Let of (Id.t * Type.t) * t * t
   | Var of Id.t
   | LetRec of fundef * t
@@ -43,7 +46,8 @@ let rec fv = function (* 式に出現する（自由な）変数 (caml2html: kno
   | Unit | Int(_) | Float(_) | ExtArray(_) | ExtTuple(_) | Readint | Readfloat -> S.empty
   | Neg(x) | FNeg(x) | ShiftR1(x) | ShiftL2(x) | FReciprocal(x) | FAbs(x) | Sqrt(x) | Printchar(x) -> S.singleton x
   | Add(x, y) | Sub(x, y) | Mul(x, y) | FAdd(x, y) | FSub(x, y) | FMul(x, y) | FDiv(x, y) | Xor(x, y) | Get(x, y) -> S.of_list [x; y]
-  | IfEq(x, y, e1, e2) | IfLE(x, y, e1, e2) -> S.add x (S.add y (S.union (fv e1) (fv e2)))
+  | FMAdd(x, y, z) | FMSub(x, y, z) -> S.of_list [x; y; z]
+  | IfEq(x, y, e1, e2) | IfLE(x, y, e1, e2) | IfFAbsLE(x, y, e1, e2) -> S.add x (S.add y (S.union (fv e1) (fv e2)))
   | Let((x, t), e1, e2) -> S.union (fv e1) (S.remove x (fv e2))
   | Var(x) -> S.singleton x
   | LetRec({ name = (x, t); args = yts; body = e1 }, e2) ->
@@ -99,6 +103,21 @@ let rec g env gd = function (* K正規化ルーチン本体 (caml2html: knormal_
   | Syntax.FNeg(e) ->
       insert_let (g env gd e)
 	(fun x -> FNeg(x), Type.Float)
+  | Syntax.FAdd(Syntax.FMul(e1, e2), e3) ->
+      insert_let (g env gd e1)
+	(fun x -> insert_let (g env gd e2)
+	    (fun y -> insert_let (g env gd e3)
+        (fun z -> FMAdd(x, y, z), Type.Float)))
+  | Syntax.FAdd(e1, Syntax.FMul(e2, e3)) ->
+      insert_let (g env gd e1)
+	(fun x -> insert_let (g env gd e2)
+	    (fun y -> insert_let (g env gd e3)
+        (fun z -> FMAdd(y, z, x), Type.Float)))
+  | Syntax.FSub(Syntax.FMul(e1, e2), e3) ->
+      insert_let (g env gd e1)
+	(fun x -> insert_let (g env gd e2)
+	    (fun y -> insert_let (g env gd e3)
+        (fun z -> FMSub(x, y, z), Type.Float)))
   | Syntax.FAdd(e1, e2) ->
       insert_let (g env gd e1)
 	(fun x -> insert_let (g env gd e2)
@@ -114,8 +133,7 @@ let rec g env gd = function (* K正規化ルーチン本体 (caml2html: knormal_
   | Syntax.FDiv(e1, e2) ->
       insert_let (g env gd e1)
 	(fun x -> insert_let (g env gd e2)
-	    (fun y -> insert_let (FReciprocal(y), Type.Float)
-        (fun y' -> FMul(x, y'), Type.Float)))
+      (fun y -> FDiv(x, y), Type.Float))
   | Syntax.FAbs(e) ->
       insert_let (g env gd e)
 	(fun x -> FAbs(x), Type.Float)
@@ -137,6 +155,13 @@ let rec g env gd = function (* K正規化ルーチン本体 (caml2html: knormal_
 	      let e3', t3 = g env gd e3 in
 	      let e4', t4 = g env gd e4 in
 	      IfEq(x, y, e3', e4'), t3))
+  | Syntax.If(Syntax.LE(e1, Syntax.FAbs(e2)), e3, e4) ->
+      insert_let (g env gd e1)
+	(fun x -> insert_let (g env gd e2)
+	    (fun y ->
+	      let e3', t3 = g env gd e3 in
+	      let e4', t4 = g env gd e4 in
+	      IfFAbsLE(x, y, e3', e4'), t3))
   | Syntax.If(Syntax.LE(e1, e2), e3, e4) ->
       insert_let (g env gd e1)
 	(fun x -> insert_let (g env gd e2)

@@ -14,8 +14,12 @@ else
   cat $sml > swap.ml
   cat $sml > temp.ml
 fi
-./min-caml.opt $s -inline 250 -iter 10 -global globals
+./min-caml.opt $s -inline 280 -iter 50 -global globals
+for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+  do
+      ./maniplassem $ss
+  done
 cp swap.ml $sml
 cat $array $ss > temp.s
 cp temp.s $ss
-rm temp.s temp.ml swap.ml
+rm temp.s temp.ml swap.ml temp_assembly.s

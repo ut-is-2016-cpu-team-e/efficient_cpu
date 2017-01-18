@@ -6,7 +6,7 @@ let heap = ref 0
 let rec iter n e = (* 鐃緒申適鐃緒申鐃緒申鐃緒申鐃薯くりか鐃緒申鐃緒申 (caml2html: main_iter) *)
   Format.eprintf "iteration %d@." n;
   if n = 0 then e else
-  let e' = Elim.f (ConstFold.f (Inline.f (Assoc.f (Csv.f (Beta.f e))))) in
+  let e' = Csv.f (Elim.f (ConstFold.f (Fmadd.f (Inline.f (Assoc.f (Cse.f (Beta.f e))))))) in
   (*let e' = Assoc.f (Beta.f (Csv.f e)) in*)
   if e = e' then e else
   iter (n - 1) e'

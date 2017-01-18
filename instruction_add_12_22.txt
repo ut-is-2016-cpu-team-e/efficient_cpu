@@ -1,0 +1,7 @@
+if fabs(r1) < r2  ->これを1まとめにする
+flihi, flilo(浮動小数のロード)
+bni命令
+(loadのレジスタ＋レジスタでのアクセスは見送り)
+li -> addi, subiにすべて書き換え、liをなくす
+shift2+add
+fmulfadd

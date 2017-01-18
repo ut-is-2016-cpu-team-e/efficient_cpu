@@ -12,7 +12,7 @@ let rec target' src (dest, t) = function
       assert (t = Type.Float);
       false, [dest]
   | IfEq(_, _, e1, e2) | IfLE(_, _, e1, e2) | IfGE(_, _, e1, e2)
-  | IfFEq(_, _, e1, e2) | IfFLE(_, _, e1, e2) ->
+  | IfFEq(_, _, e1, e2) | IfFLE(_, _, e1, e2) | IfFAbsLE(_, _, e1, e2) ->
       let c1, rs1 = target src (dest, t) e1 in
       let c2, rs2 = target src (dest, t) e2 in
       c1 && c2, rs1 @ rs2
@@ -40,6 +40,10 @@ and target_args src all n = function (* auxiliary function for Call *)
   | y :: ys when src = y -> all.(n) :: target_args src all (n + 1) ys
   | _ :: ys -> target_args src all (n + 1) ys
 
+(*let rec returnv = function
+  | Let(_, CallCls(_), _) | Let(_, CallCls2(_), _) | Let(_, CallDir(_), _) -> true
+  | _ -> false*)
+
 type alloc_result = (* allocにおいてspillingがあったかどうかを表すデータ型 *)
   | Alloc of Id.t (* allocated register *)
   | Spill of Id.t (* spilled variable *)
@@ -48,11 +52,12 @@ let rec alloc dest cont regenv x t =
   assert (not (M.mem x regenv));
   let all =
     match t with
-    | Type.Unit -> [reg_fsw] (* dummy *)
+    | Type.Unit -> [dummyreg] (* dummy *)
     | Type.Float -> allfregs
     | _ -> allregs in
   if all = [reg_fsw] then Alloc(reg_fsw) else (* [XX] ad hoc optimization *)
   if is_reg x then Alloc(x) else
+  (*if returnv cont then if t = Type.Float then Alloc(freg_re) else Alloc(reg_re) else*)
   let free = fv cont in
   try
     let (c, prefer) = target x dest cont in
@@ -68,7 +73,7 @@ let rec alloc dest cont regenv x t =
       List.find
         (fun r -> not (S.mem r live))
         (prefer @ all) in
-    (* Format.eprintf "allocated %s to %s@." x r; *)
+     (*Format.eprintf "allocated %s to %s@." x r;*)
     Alloc(r)
   with Not_found ->
     Format.eprintf "register allocation failed for %s@." x;
@@ -104,6 +109,12 @@ let rec g dest cont regenv = function (* 命令列のレジスタ割り当て (c
       assert (not (M.mem x regenv));
       let cont' = concat e dest cont in
       let (e1', regenv1) = g'_and_restore xt cont' regenv exp in
+      match exp with
+      | CallCls(_) | CallCls2(_) | CallDir(_) ->
+        let r = if t = Type.Float then freg_re else reg_re in
+        let (e2', regenv2) = g dest cont (add x r regenv1) e in
+    	  (concat e1' (r, t) e2', regenv2)
+      | _ ->
       (match alloc dest cont' regenv1 x t with
       | Spill(y) ->
 	  let r = M.find y regenv1 in
@@ -143,6 +154,8 @@ and g' dest cont regenv = function (* 各命令のレジスタ割り当て (caml
   | FSub(x, y) -> (Ans(FSub(find x Type.Float regenv, find y Type.Float regenv)), regenv)
   | FMul(x, y) -> (Ans(FMul(find x Type.Float regenv, find y Type.Float regenv)), regenv)
   | FDiv(x, y) -> (Ans(FDiv(find x Type.Float regenv, find y Type.Float regenv)), regenv)
+  | FMAdd(x, y, z) -> (Ans(FMAdd(find x Type.Float regenv, find y Type.Float regenv, find z Type.Float regenv)), regenv)
+  | FMSub(x, y, z) -> (Ans(FMSub(find x Type.Float regenv, find y Type.Float regenv, find z Type.Float regenv)), regenv)
   | FReciprocal(x) -> (Ans(FReciprocal(find x Type.Float regenv)), regenv)
   | Xor(x, y) -> (Ans(Xor(find x Type.Int regenv, find y Type.Int regenv)), regenv)
   | FAbs(x) -> (Ans(FAbs(find x Type.Float regenv)), regenv)
@@ -152,11 +165,12 @@ and g' dest cont regenv = function (* 各命令のレジスタ割り当て (caml
   | Readfloat -> (Ans(Readfloat), regenv)
   | Lfd(x, y') -> (Ans(Lfd(find x Type.Int regenv, find' y' regenv)), regenv)
   | Stfd(x, y, z') -> (Ans(Stfd(find x Type.Float regenv, find y Type.Int regenv, find' z' regenv)), regenv)
-  | IfEq(x, y, e1, e2) as exp -> g'_if dest cont regenv exp (fun e1' e2' -> IfEq(find x Type.Int regenv, find y Type.Int regenv, e1', e2')) e1 e2
+  | IfEq(x, y', e1, e2) as exp -> g'_if dest cont regenv exp (fun e1' e2' -> IfEq(find x Type.Int regenv, find' y' regenv, e1', e2')) e1 e2
   | IfLE(x, y, e1, e2) as exp -> g'_if dest cont regenv exp (fun e1' e2' -> IfLE(find x Type.Int regenv, find y Type.Int regenv, e1', e2')) e1 e2
   | IfGE(x, y, e1, e2) as exp -> g'_if dest cont regenv exp (fun e1' e2' -> IfGE(find x Type.Int regenv, find y Type.Int regenv, e1', e2')) e1 e2
   | IfFEq(x, y, e1, e2) as exp -> g'_if dest cont regenv exp (fun e1' e2' -> IfFEq(find x Type.Float regenv, find y Type.Float regenv, e1', e2')) e1 e2
   | IfFLE(x, y, e1, e2) as exp -> g'_if dest cont regenv exp (fun e1' e2' -> IfFLE(find x Type.Float regenv, find y Type.Float regenv, e1', e2')) e1 e2
+  | IfFAbsLE(x, y, e1, e2) as exp -> g'_if dest cont regenv exp (fun e1' e2' -> IfFAbsLE(find x Type.Float regenv, find y Type.Float regenv, e1', e2')) e1 e2
   | CallCls(x, x2, ys, zs) as exp -> g'_call dest cont regenv exp (fun ys zs -> CallCls((*x*)find x Type.Int regenv, x, ys, zs)) ys zs
   | CallCls2(x, ys, zs) as exp -> g'_call dest cont regenv exp (fun ys zs -> CallCls2((*x*)find x Type.Int regenv, ys, zs)) ys zs
   | CallDir(l, ys, zs) as exp -> g'_call dest cont regenv exp (fun ys zs -> CallDir(l, ys, zs)) ys zs
@@ -228,4 +242,4 @@ let f (Prog(data, fundefs, e)) = (* プログラム全体のレジスタ割り�
   Format.eprintf "register allocation: may take some time (up to a few minutes, depending on the size of functions)@.";
   let fundefs' = List.map h fundefs in
   let e', regenv' = g (Id.gentmp Type.Unit, Type.Unit) (Ans(Nop)) M.empty e in
-  Prog(data, fundefs', e')
+Prog(data, fundefs', e')
